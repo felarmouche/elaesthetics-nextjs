@@ -1,0 +1,109 @@
+Arten von Behandlungsseiten:
+
+Typ 1 = Reine Behandlungseite Links auf ähnliche Behandlungen
+	-----
+	Struktur: 
+		- HeroSection
+		- IntroSection
+		- AreasSection
+		- QuickInfoSection
+		- ProcessSection
+		- TreatmentCareSection
+		- ReviewsSection
+		- ConsultationSection [Infos zur Behandlung?]
+		- TreatmentsSection [Andere Behandlungen zur ...]
+		- FAQSection [Immer: Risiken und Nebenwirkungen]
+		- CTASection
+		- LocationSection
+		
+	
+	Typ 2 = Reine Hub seite: Links auf verschiedene konkrete unter Behandlungseiten
+	-----
+	Struktur: 
+		- HeroSection
+		- IntroSection
+		- TreatmentsSection [Alle Behandlungen zur ...]
+		- ReviewsSection
+		- ConsultationSection [Welche Behandlung ist für Sie geeignet?]
+		- FAQSection [Immer: Risiken und Nebenwirkungen]
+		- CTASection
+		- LocationSection
+		
+Ordnerstruktur:
+
+├─ /botox/                         (Behandlungsinfos + HUB)         
+│  ├─ /botox/faltenbehandlung
+│  ├─ /botox/masseter
+│  ├─ /botox/microbotox
+│  ├─ /botox/migraene
+│  └─ /botox/hyperhidrose
+│
+├─ /faltenunterspritzung/          (HUB, keine eigene Behandlung)
+│
+├─ /gesichtsbehandlung/            (HUB, keine eigene Behandlung)
+│
+├─ /haarausfall-behandlung/        (HUB, keine eigene Behandlung)
+│
+├─ /fett-weg-spritze/              (eigene Behandlung)
+|
+│
+├─ /hyaluron/
+│  ├─ /hyaluron/filler
+|  ├─ /hyaluron/hylase
+│  └─ /hyaluron/skinbooster
+│
+├─ /eigenbluttherapie-prf/
+│  ├─ /eigenbluttherapie-prf/microneedling
+│  └─ /eigenbluttherapie-prf/haare
+│
+├─ /mesotherapie
+│  └─ /mesotherapie/haare
+│
+├─ /medizinisches-microneedling
+├─ /chemisches-peeling
+├─ /kollagenstimulation
+├─ /profhilo
+└─ /polynukleotide
+
+Hauptseite verlinkungen:
+
+- elaesthetics-bremen.de/
+	 botox/
+	 faltenunterspritzung/
+	 gesichtsbehandlung/
+	 haare/
+	 fett-weg-spritze/
+	 hyaluron/hylase/
+
+Verlinkungen der Behandlungs-Seiten auf andere Seiten in der TreatmentsSection mit Title der section: 
+
+	botox/ (Typ 2) Title: Speziellere Botulinum Behandlungen in Bremen
+	 faltenbehandlung
+	 masseter
+	 microbotox
+	 migraene
+	 hyperhidrose
+	
+	faltenunterspritzung/ (Typ 2) Title: Unsere Behandlungen zur Faltenuntersprizung in Bremen
+	 /hyaluron/filler
+	 /eigenbluttherapie-prf
+	
+	gesichtsbehandlung/ (Typ 2) Title: Unsere Gesichtsbehandlungen in Bremen
+	 /mesotherapie
+	 /hyaluron/skinbooster
+	 /medizinisches-microneedling
+	 /chemisches-peeling
+	 /kollagenstimulation
+	 /profhilo
+	 /polynukleotide
+	 /eigenbluttherapie-prf/microneedling
+	
+	haarausfall-behandlung/ (Typ 2) Title: Unsere Behandlungen gegen Haarausfall in Bremen
+	 /eigenbluttherapie-prf/haare
+	 /mesotherapie/haare
+	
+	fett-weg-spritze/ (Typ 1) Title: Weitere Behandlungen in Bremen
+	/eigenbluttherapie-prf
+	/hyaluron/
+	/botox
+	
