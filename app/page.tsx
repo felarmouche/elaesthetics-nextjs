@@ -6,6 +6,7 @@ import About from '@/components/About'
 import ImageSlider from '@/components/ImageSlider'
 import PatientReviews from '@/components/PatientReviews'
 import { Review } from '@/types/Review'
+import TreatmentSlider from '@/components/TreatmentsSlider'
 
 export default function Home() {
 
@@ -54,6 +55,7 @@ const reviews : Review[] = [
       <div className='max-w-7xl mx-auto'>
         <Welcome />
         <Services />
+        <TreatmentSlider/>
         <About />
         <PatientReviews reviews={reviews} title="Erfahrungen unserer Patienten" subtitle='Unsere Patienten schätzen vor allem die natürlichen Ergebnisse unserer Behandlungen und den einfühlsamen Umgang in unserer Praxis für ästhetische Medizin in Hanau. Viele berichten, wie zufrieden sie mit den Ergebnissen und der individuellen Beratung sind, die auf ihre persönlichen Wünsche abgestimmt ist.' />
         <ImageSlider />

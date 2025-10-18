@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     images: ['https://elaesthetics-bremen.de/assets/hautverbesserung/og-image-hautverbesserung-bremen.png'],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hautverbesserung',
+    canonical: 'https://elaesthetics-bremen.de/haut-verbesserung',
   },
 };
 
@@ -57,8 +57,8 @@ export default function HautverbesserungHubPage() {
       },
       {
         imageUrl: '/assets/hyaluron/hyaluron-profhilo_hero.png',
-        imageAlt: 'PROFHILO® Behandlung zur Bioremodellierung der Haut',
-        title: 'PROFHILO®',
+        imageAlt: 'Behandlung zur Bioremodellierung der Haut',
+        title: 'Hyaluron-Remodellierung (BAP-Technik)',
         description:
           'Innovativer Skinbooster zur Bioremodellierung: fördert Kollagen & Elastin, spendet intensiv Feuchtigkeit – ohne Volumenwirkung.',
         treatmentUrl: '/hyaluron/profhilo',
@@ -93,7 +93,7 @@ export default function HautverbesserungHubPage() {
         title: 'Microbotox',
         description:
           'Oberflächliche Botulinumtoxin‑Mikrodepots: verfeinern Poren, reduzieren Talg & Glanz – ohne die Mimik zu beeinflussen.',
-        treatmentUrl: '/microbotox',
+        treatmentUrl: 'botox/microbotox',
       },
       {
         imageUrl: '/assets/chemisches-peeling/chemisches-peeling_hero.jpg',

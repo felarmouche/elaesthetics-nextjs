@@ -30,7 +30,7 @@ export default function HyaluronBremenPage() {
     // Title (H1): Hauptkeyword "Hyaluron Bremen" prominent platziert.
     title: "Behandlung mit Hyaluron in Bremen",
     subtitle: "Suchen Sie nach einer professionellen Faltenbehandlung mit Hyaluron in Bremen?\nDann sind Sie bei El Aesthetics genau richtig.",
-    imageSrc: "/assets/hyaluron/hyaluron-hero.png",
+    imageSrc: "/assets/hyaluron/hyaluron-filler_hero.png",
     // Image Alt: Beschreibend und Keyword-optimiert.
     imageAlt: "Eine Frau erhält eine professionelle Hyaluron-Behandlung in Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
@@ -60,12 +60,28 @@ export default function HyaluronBremenPage() {
         treatmentUrl: "/hyaluron/filler"
       },
       {
-        imageUrl: "/assets/hyaluron/water-3902916_1920.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.png",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Symbolbild für Feuchtigkeit durch eine Skinbooster-Behandlung",
         title: "Skinbooster (Hydratation & Glow)",
         description: "Skinbooster revitalisieren Ihre Haut von innen heraus. Durch die tiefe Hydratation mit unvernetzter Hyaluronsäure werden feine Linien geglättet und die Haut erhält eine frische, strahlende Ausstrahlung. Diese Behandlung eignet sich in unserer Praxis in Bremen hervorragend für Gesicht, Hals, Dekolleté und Hände.",
         treatmentUrl: "/hyaluron/skinbooster"
+      },
+      {
+        imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.png",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
+        title: "Hyaluron-Remodellierung (BAP-Technik)",
+        description: "Remodellierung – auch Bioremodulierung genannt – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint. Im Gegensatz zu Volumenbehandlungen steht nicht die Formung im Vordergrund, sondern die Qualität des Gewebes.",
+        treatmentUrl: "/hyaluron/profhilo"
+      },
+      {
+        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.png",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Nahaufnahme einer Hylase-Flasche",
+        title: "Hylase (Hyaluronidase)",
+        description: "Hyaluronidase, häufig als Hylase bezeichnet, ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen.",
+        treatmentUrl: "/hyaluron/hylase"
       }
     ]
   };

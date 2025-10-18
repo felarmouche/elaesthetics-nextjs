@@ -352,20 +352,20 @@ export default function FettWegSpritzePage() {
 
     
   const treatmentsData: TreatmentsSectionProps = {
-    title: 'Weitere Behandlungen für Körperkonturierung & Hautstraffung',
+    title: 'Weitere Behandlungen',
     treatments: [
       {
-        imageUrl: '/assets/botox/botox-masseter_hero.png',
-        imageAlt: 'Botox Masseter Behandlung für definierte Jawline',
-        title: 'Masseter-Botox (Gesichtskonturierung)',
+        imageUrl: '/assets/botox/botox-faltenbehandlung_hero.webp',
+        imageAlt: 'Ein Männer- und ein Frauen-Gesicht nach einer Botox Behandlung',
+        title: 'Botulinum',
         description:
-          'Verschmälerung der Kieferpartie durch gezielte Entspannung des Kaumuskels – für eine harmonische Gesichtsform und V-Line-Kontur.',
-        treatmentUrl: '/botox/masseter',
+          'Botullinumtoxin für Faltenbehandlung oder medizinische Indikationen',
+        treatmentUrl: '/botox/',
       },
       {
-        imageUrl: '/assets/kollagenstimulation/radiesse-hero.webp',
+        imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.png',
         imageAlt: 'Kollagenstimulation mit Radiesse für Hautstraffung',
-        title: 'Kollagenstimulation (Radiesse)',
+        title: 'Kollagenstimulation',
         description:
           'Langanhaltende Hautstraffung und Volumenaufbau durch Calciumhydroxylapatit – ideal für Wangen, Kinn und Hände.',
         treatmentUrl: '/kollagenstimulation',
@@ -373,9 +373,9 @@ export default function FettWegSpritzePage() {
       {
         imageUrl: '/assets/hyaluron/hyaluron-filler_hero.png',
         imageAlt: 'Hyaluron Filler für Gesichtskonturierung',
-        title: 'Hyaluron Filler (Konturierung)',
+        title: 'Hyaluron Filler',
         description:
-          'Präzise Gesichtsformung und Volumenaufbau für harmonische Proportionen – Kinn, Kiefer, Wangen und mehr.',
+          'Präzise Gesichtsformung und Volumenaufbau.',
         treatmentUrl: '/hyaluron/filler',
       },
     ],

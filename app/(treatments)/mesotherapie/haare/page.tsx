@@ -6,7 +6,7 @@ import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Mesotherapie Haare Bremen | Haarausfall behandeln | EL Aesthetics',
-  description: 'Mesotherapie gegen Haarausfall in Bremen ✓ Haarwurzeln stärken ✓ Haarverdichtung ✓ Für Männer & Frauen ✓ Sanft & effektiv ✓ 80% Erfolgsrate ✓ Jetzt Beratung!',
+  description: 'Mesotherapie gegen Haarausfall in Bremen ✓ Haarverdichtung & Haarwurzeln stärken ✓ Jetzt Beraten lassen!',
   keywords: 'Mesotherapie Haare Bremen, Mesotherapie Haarausfall Bremen, Haarmesotherapie Bremen, Haarausfall Behandlung Mesotherapie Bremen, Mesotherapie gegen Haarausfall Bremen, Haarwachstum fördern Bremen, Kopfhautmesotherapie Bremen, Haarverdichtung Mesotherapie Bremen',
   openGraph: {
     title: 'Mesotherapie gegen Haarausfall & für volleres Haar in Bremen - EL Aesthetics',
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     images: ['https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haare-bremen.png'],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/mesotherapie-haare',
+    canonical: 'https://elaesthetics-bremen.de/mesotherapie/haare',
   },
 };
 

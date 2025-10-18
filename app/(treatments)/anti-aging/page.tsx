@@ -101,7 +101,7 @@ export default function AntiAgingHubPage() {
         treatmentUrl: "/eigenbluttherapie-prf/vampire-lifting"
       },
       {
-        imageUrl: "/assets/chemisches-peeling/chemisches-peeling_hero.jpg",
+        imageUrl: "/assets/chemisches-peeling_hero.jpg",
         imageAlt: "Chemisches Peeling für Hauterneuerung und ebenmäßige Haut",
         title: "Chemisches Peeling",
         description: "Hauterneuerung durch kontrollierte Schälung: Fruchtsäuren oder TCA entfernen abgestorbene Hautzellen und regen die Zellerneuerung an. Das Ergebnis: feinere Poren, ebenmäßigerer Teint, reduzierte Pigmentflecken und glattere Hautoberfläche. Verschiedene Intensitätsstufen für individuelle Bedürfnisse.",

@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   title:
     'Eigenbluttherapie (PRF) Bremen | Hautverjüngung & Haarausfall | EL Aesthetics',
   description:
-    'PRF Eigenbluttherapie in Bremen: Natürliche Hautregeneration, feinere Poren & Fältchen, Tränenrinne/Unterlid, Aknenarben sowie PRF gegen Haarausfall. 100% körpereigen – ärztlich durchgeführt.',
+    'PRF Eigenbluttherapie in Bremen: Natürliche Hautregeneration, feinere Poren & Fältchen, Tränenrinne/Unterlid, Aknenarben & Haarausfall. Jetzt beraten lassen!.',
   keywords:
     'Eigenbluttherapie Bremen, PRF Bremen, PRP Bremen, Vampire Lifting Bremen, PRF Unterlid, Tränenrinne PRF, PRF Haarausfall, PRF Haare, Eigenblut Behandlung Bremen, Platelet-Rich Fibrin, PRF Microneedling, PRP vs PRF',
   openGraph: {
@@ -84,12 +84,12 @@ export default function EigenbluttherapiePRFPage() {
         treatmentUrl: '/eigenbluttherapie-prf/vampire-lifting',
       },
       {
-        imageUrl: '/assets/microneedling/dermapen.webp',
+        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.png',
         imageAlt: 'Medizinisches Microneedling mit PRF in Bremen',
         title: 'Microneedling + PRF',
         description:
           'Kombination mit Needling zur intensiven Hauterneuerung – sinnvoll bei Aknenarben, großen Poren und strukturbedingten Unebenheiten.',
-        treatmentUrl: '/microneedling-prf',
+        treatmentUrl: '/eigenbluttherapie-prf/microneedling',
       },
     ],
   };

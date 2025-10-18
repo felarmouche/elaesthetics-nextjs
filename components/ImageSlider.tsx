@@ -165,7 +165,7 @@ export default function ImageSlider() {
                     </p>
 
                     <p className="font-light mb-6 leading-[1.9] text-text-primary text-base">
-                        Hier erhalten Sie Einblicke in die Atmosphäre unserer Praxis, die moderne Ausstattung und die liebevollen Details, die bei Ihrem Besuch bei uns für eine angenehme und entspannte Atmosph sorgen.
+                        Hier erhalten Sie Einblicke in unsere moderne Ausstattung und die liebevollen Details, die bei Ihrem Besuch bei uns für eine angenehme und entspannte Atmosphäre sorgen.
                     </p>
 
                     <div className="flex w-full justify-center mt-4">

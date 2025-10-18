@@ -33,7 +33,7 @@ export default function About() {
             <Link
               href="/kontakt"
               aria-label="Termin bei El Aesthetics Bremen buchen"
-              className="w-full inline-block flex items-center text-center py-3 uppercase text-secondary text-sm tracking-[2px] border-2 rounded-xs border-secondary transition-all duration-300 hover:bg-secondary hover:text-primary hover:border-primary"
+              className="w-full inline-block flex items-center text-center py-3 uppercase text-primary text-sm tracking-[2px] border-2 rounded-xs border-secondary transition-all duration-300 bg-secondary text-primary hover:text-secondary hover:bg-primary"
             >
               Beratungstermin vereinbaren
             </Link>

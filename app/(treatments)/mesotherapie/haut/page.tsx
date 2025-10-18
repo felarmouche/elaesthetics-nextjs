@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     images: ['https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haut-bremen.png'],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/mesotherapie-haut',
+    canonical: 'https://elaesthetics-bremen.de/mesotherapie/haut',
   },
 };
 

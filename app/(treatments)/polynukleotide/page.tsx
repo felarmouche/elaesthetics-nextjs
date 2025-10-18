@@ -29,8 +29,8 @@ import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Polynukleotide Behandlung Bremen | Hautregeneration & Anti-Aging | EL Aesthetics',
-  description: 'Professionelle Polynukleotide-Behandlung in Bremen ✓ DNA-Therapie für Hautregeneration, Faltenreduktion & Haarwachstum ✓ Biostimulatoren der neuesten Generation ✓ Jetzt Beratung!',
-  keywords: 'Polynukleotide Behandlung Bremen, Polynukleotide Injektion Bremen, DNA Filler Bremen, Polynukleotide Therapie Bremen, Hautregeneration Bremen, Biostimulatoren Bremen, Polynukleotide Augenbereich Bremen, Polynukleotide Haarausfall Bremen, DNA Hauttherapie Bremen',
+  description: 'Polynukleotide-Behandlung in Bremen ✓ Hautregeneration, Faltenreduktion & Haarwachstum ✓ Jetzt Beraten lassen!',
+  keywords: 'Polynukleotide Bremen, Polynukleotide Behandlung Bremen, Polynukleotide Augen Bremen, Polynukleotide Haarausfall Bremen, DNA Hauttherapie Bremen',
   openGraph: {
     title: 'Polynukleotide Behandlung Bremen - Biostimulation der neuesten Generation',
     description: 'Erleben Sie die regenerative Kraft von Polynukleotiden: Hautregeneration, Faltenreduktion und Haarwachstumsförderung durch biologische DNA-Therapie in Bremen.',

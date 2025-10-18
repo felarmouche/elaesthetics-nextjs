@@ -222,29 +222,30 @@ export default function SkinboosterBremenPage() {
     title: 'Weitere Hyaluron-Behandlungen',
     treatments: [
       {
-        imageUrl: '/assets/hyaluron/hyaluron-filler_hero.png',
-        imageAlt: 'Hyaluron-Filler für Volumen & Kontur',
-        title: 'Hyaluron-Filler (Volumen & Kontur)',
-        description:
-          'Für gezielten Volumenaufbau, Konturen und Falten – separate Seite.',
-        treatmentUrl: '/hyaluron/filler',
+        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.png",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
+        title: "Hyaluronsäure-Filler (Falten & Volumen)",
+        description: "Die Behandlung mit Hyaluron-Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
+        treatmentUrl: "/hyaluron/filler"
+      },
+      
+      {
+        imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.png",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
+        title: "Hyaluron-Remodellierung (BAP-Technik)",
+        description: "Remodellierung – auch Bioremodulierung genannt – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint. Im Gegensatz zu Volumenbehandlungen steht nicht die Formung im Vordergrund, sondern die Qualität des Gewebes.",
+        treatmentUrl: "/hyaluron/profhilo"
       },
       {
-        imageUrl: '/assets/profhilo/profhilo-hero.webp',
-        imageAlt: 'Profhilo – BAP-Technik',
-        title: 'Profhilo (BAP-Technik)',
-        description:
-          'Besonderes Remodelling-Konzept – erhält eine eigene Unterseite.',
-        treatmentUrl: '/hyaluron/profhilo',
-      },
-      {
-        imageUrl: '/assets/botox/botox-hero.webp',
-        imageAlt: 'Botulinum bei mimischen Falten',
-        title: 'Botulinumtoxin (mimische Falten)',
-        description:
-          'Entspannt dynamische Falten – häufig die perfekte Ergänzung.',
-        treatmentUrl: '/botox',
-      },
+        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.png",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Nahaufnahme einer Hylase-Flasche",
+        title: "Hylase (Hyaluronidase)",
+        description: "Hyaluronidase, häufig als Hylase bezeichnet, ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen.",
+        treatmentUrl: "/hyaluron/hylase"
+      }
     ],
   };
 

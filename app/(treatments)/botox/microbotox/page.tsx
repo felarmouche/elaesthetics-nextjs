@@ -254,14 +254,14 @@ export default function BotoxMicrobotoxPage() {
         treatmentUrl: '/botox/masseter',
       },
       {
-        imageUrl: '/assets/botox/hyperhidrose-treatment.webp',
+        imageUrl: '/assets/botox/botox-hyperhidrose_hero.png',
         imageAlt: 'Botox gegen übermäßiges Schwitzen',
         title: 'Hyperhidrose',
         description: 'Effektiv gegen starkes Schwitzen (Achseln, Hände, Füße).',
         treatmentUrl: '/botox/hyperhidrose',
       },
       {
-        imageUrl: '/assets/botox/migraene-treatment.webp',
+        imageUrl: '/assets/botox/botox-migräne_hero.png',
         imageAlt: 'Botox bei chronischer Migräne',
         title: 'Migräne',
         description: 'Anerkannte Therapieoption bei chronischer Migräne.',

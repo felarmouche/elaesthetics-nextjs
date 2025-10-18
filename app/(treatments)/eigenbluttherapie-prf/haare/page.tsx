@@ -307,33 +307,33 @@ export default function PRFHaarePage() {
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: 'Weitere Behandlungen für Haut und Haare in Bremen',
+    title: 'Weitere Behandlungen gegen Haarausfall in Bremen',
     treatments: [
       {
-        imageUrl: '/assets/prf/prf-haut.webp',
-        imageAlt: 'PRF Eigenbluttherapie für die Haut',
-        title: 'Mesotherapie für die Haare',
+        imageUrl: '/assets/mesotherapie/mesotherapie-haare_hero.png',
+        imageAlt: 'Mesotherapie gegen Haarausfall',
+        title: 'Mesotherapie bei Haarausfall',
         description:
-          'Hautqualität verbessern, feine Fältchen glätten, Poren verfeinern und Aknenarben reduzieren – auch für das sensible Unterlid geeignet.',
-        treatmentUrl: '/eigenbluttherapie-prf/vampire-lifting',
+          'Gezielte Mikroinjektionen von Vitaminen, Aminosäuren und Peptiden in die Kopfhaut: stärken Haarwurzeln, fördern die Durchblutung und können Haarausfall bremsen – geeignet bei diffusem und androgenetischem Haarausfall.',
+        treatmentUrl: '/mesotherapie/haare',
       },
       {
-        imageUrl: '/assets/microneedling/dermapen.webp',
-        imageAlt: 'Microneedling mit PRF',
-        title: 'Microneedling + PRF',
+        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.png',
+        imageAlt: 'Microneedling mit PRF für die Kopfhaut',
+        title: 'Microneedling + PRF (Kopfhaut)',
         description:
-          'Intensive Hauterneuerung durch Kombination von medizinischem Needling und PRF-Biostimulation – ideal bei Narben und Texturstörungen.',
-        treatmentUrl: '/microneedling-prf',
+          'Kombination aus medizinischem Microneedling und PRF-Biostimulation: körpereigenes Fibrin-Konzentrat aktiviert Haarfollikel, fördert Regeneration und kann Haardichte und -qualität verbessern.',
+        treatmentUrl: '/eigenbluttherapie-prf/microneedling',
       },
       {
-        imageUrl: '/assets/mesotherapie/mesotherapie-kopfhaut.webp',
-        imageAlt: 'Kopfhaut Mesotherapie',
-        title: 'Mesotherapie Kopfhaut',
+        imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
+        imageAlt: 'Polynukleotide für die Kopfhaut bei Haarausfall',
+        title: 'Polynukleotide (PN) bei Haarausfall',
         description:
-          'Nährstoff-Cocktails direkt in die Kopfhaut für Haarwachstum und Haargesundheit – kombinierbar mit PRF.',
-        treatmentUrl: '/mesotherapie/kopfhaut',
+          'Biostimulatoren auf Nukleotidbasis verbessern das Kopfhautmilieu, beruhigen Mikroentzündungen und unterstützen Haarwachstum – allein oder kombinierbar, z. B. mit PRF.',
+        treatmentUrl: '/polynukleotide',
       },
-    ],
+    ]
   };
 
   const faqData: FAQSectionProps = {

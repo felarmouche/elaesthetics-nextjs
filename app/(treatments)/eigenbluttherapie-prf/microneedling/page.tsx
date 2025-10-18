@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: ['https://elaesthetics-bremen.de/assets/prf/prf-microneedling-og.webp'],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/prf-microneedling',
+    canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie-prf/microneedling',
   },
 };
 
@@ -51,14 +51,14 @@ export default function PRFMicroneedlingPage() {
     title: "PRF Microneedling (Plasma-Needling) in Bremen",
     subtitle:
       "Microneedling + PRF-Matrix: Die Kombination für gezielte Regeneration, feinere Poren und ein ebenmäßigeres Hautbild – in ärztlicher Hand.",
-    imageSrc: "/assets/prf/prf-microneedling_hero.webp",
+    imageSrc: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.png",
     imageAlt: "PRF Microneedling (Plasma-Needling) in der Praxis EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
   };
 
   const introData: IntroSectionProps = {
-    title: "Warum PRF Microneedling?",
+    title: "Warum Microneedling mit Eigenblut?",
     content: [
       "Beim Plasma-Needling werden zwei wirksame Verfahren kombiniert: Das Microneedling öffnet mikrofeine Kanäle und triggert die Neubildung von Kollagen und Elastin. Parallel wird eine PRF-Matrix (körpereigenes, plättchenreiches Fibrin) eingesetzt, die Wachstumsfaktoren über einen längeren Zeitraum freisetzen kann.",
       "Die Synergie: Needling setzt den Regenerationsreiz, PRF unterstützt Heilung und Gewebeerneuerung – für glattere Textur, verfeinerte Poren und die gezielte Unterstützung bei Aknenarben.",
@@ -101,7 +101,7 @@ export default function PRFMicroneedlingPage() {
   };
 
   const processData: ProcessSectionProps = {
-    title: "Ablauf Ihrer PRF-Needling-Behandlung",
+    title: "Ablauf Ihrer PRF-Microneedling-Behandlung",
     steps: [
       {
         number: "01",
@@ -166,7 +166,7 @@ export default function PRFMicroneedlingPage() {
   ];
 
   const consultationData: ConsultationSectionProps = {
-    title: "Ihre PRF Microneedling-Beratung in Bremen",
+    title: "Ihre persönliche Beratung in Bremen",
     description: [
       "Wir prüfen, ob Plasma-Needling die passende Option für Ihre Indikation ist und definieren realistische Ziele.",
       "Nadeltiefe und PRF-Applikation werden individuell festgelegt; Sie erhalten klare Empfehlungen zu Anzahl und Intervallen der Sitzungen.",
@@ -174,37 +174,37 @@ export default function PRFMicroneedlingPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/prf/beratung-prf-needling-bremen.webp",
+    imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Beratung zu PRF Microneedling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: "Verwandte Behandlungen (gezielt abgegrenzt)",
+    title: "Weitere Behandlungen mit Eigenblut",
     treatments: [
       {
-        imageUrl: "/assets/microneedling/microneedling_hero.webp",
-        imageAlt: "Medizinisches Microneedling ohne PRF",
-        title: "Medizinisches Microneedling",
+        imageUrl: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.png",
+        imageAlt: "Medizinisches Microneedling mit Dermapen 4 ohne PRF",
+        title: "Medizinisches Microneedling ohne PRF",
         description:
           "Kollagen-Induktion ohne PRF-Matrix – sinnvoll, wenn eine reine Needling-Serie ausreicht.",
         treatmentUrl: "/medizinisches-microneedling"
       },
       {
-        imageUrl: "/assets/prf/prf-haut.webp",
-        imageAlt: "PRF-Injektion für die Haut",
-        title: "PRF-Injektion (Haut)",
+        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-vampire-lifting_hero.png",
+        imageAlt: "Gesicht einer Frau bei einer PRF-Eigenbluttherapie",
+        title: "PRF-Eigenbluttherapie (Vampire Lifting)",
         description:
           "Eigenbluttherapie als reine Injektionsbehandlung – ohne Needling; für fokussierte Areale.",
-        treatmentUrl: "/prf#prf-haut"
+        treatmentUrl: "/eigenbluttherapie-prf/vampire-lifting"
       },
       {
-        imageUrl: "/assets/prf/prf-haare.webp",
+        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.png",
         imageAlt: "PRF-Therapie bei Haarausfall",
         title: "PRF bei Haarausfall",
         description:
           "Spezielle PRF-Anwendung für die Kopfhaut zur Unterstützung des Haarwuchses.",
-        treatmentUrl: "/prf#prf-haar"
+        treatmentUrl: "/eigenbluttherapie-prf/haare"
       }
     ]
   };

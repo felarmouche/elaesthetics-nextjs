@@ -223,26 +223,26 @@ export default function HyaluronFillerBremenPage() {
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: 'Weitere Behandlungen, die Filler sinnvoll ergänzen',
+    title: 'Weitere Behandlungen',
     treatments: [
       {
-        imageUrl: '/assets/botox/botox-hero.webp',
+        imageUrl: '/assets/botox/botox-faltenbehandlung_hero.webp',
         imageAlt: 'Botulinumtoxin für mimische Falten',
         title: 'Botulinumtoxin (mimische Falten)',
         description:
           'Perfekte Ergänzung zu Fillern bei Stirn, Zornesfalte & Krähenfüßen.',
-        treatmentUrl: '/botox',
+        treatmentUrl: '/botox/faltenbehandlung',
       },
       {
-        imageUrl: '/assets/hylase/hylase-hero.webp',
+        imageUrl: '/assets/hyaluron/hyaluron-hylase_hero.png',
         imageAlt: 'Hylase Fillerauflösung',
         title: 'Hylase (Fillerauflösung)',
         description:
           'Sicherheitsnetz bei Fehlplatzierung oder Überkorrektur – verantwortungsvoll eingesetzt.',
-        treatmentUrl: '/hylase',
+        treatmentUrl: '/hyaluron/hylase',
       },
       {
-        imageUrl: '/assets/skinbooster/skinbooster-hero.webp',
+        imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.png',
         imageAlt: 'Skinbooster zur Hydratation',
         title: 'Skinbooster (eigene Unterseite)',
         description:

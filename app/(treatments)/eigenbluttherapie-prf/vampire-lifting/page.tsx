@@ -316,15 +316,15 @@ export default function PRFHautPage() {
     title: 'Weitere regenerative Behandlungen für die Haut',
     treatments: [
       {
-        imageUrl: '/assets/microneedling/dermapen.webp',
+        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.png',
         imageAlt: 'Medizinisches Microneedling mit PRF',
         title: 'PRF Microneedling (Plasmaneedling)',
         description:
           'Kombination aus Microneedling und PRF für maximale Hauterneuerung – ideal bei Aknenarben, großen Poren und Pigmentstörungen.',
-        treatmentUrl: '/microneedling-prf',
+        treatmentUrl: '/eigenbluttherapie-prf/microneedling',
       },
       {
-        imageUrl: '/assets/hyaluron/skinbooster.webp',
+        imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.png',
         imageAlt: 'Hyaluron Skinbooster',
         title: 'Hyaluron Skinbooster',
         description:
@@ -332,8 +332,8 @@ export default function PRFHautPage() {
         treatmentUrl: '/hyaluron/skinbooster',
       },
       {
-        imageUrl: '/assets/polynukleotide/polynukleotide-haut.webp',
-        imageAlt: 'Polynukleotide für Hautverjüngung',
+        imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
+        imageAlt: 'Polynukleotide',
         title: 'Polynukleotide',
         description:
           'DNA-basierte Biostimulation für tiefgreifende Hautregeneration und Anti-Aging-Effekte.',

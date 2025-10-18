@@ -315,18 +315,20 @@ export default function HyaluronidaseHylasePage() {
         treatmentUrl: '/hyaluron/filler',
       },
       {
-        imageUrl: '/assets/hyaluron/lippen-aufspritzen_hero.png',
-        imageAlt: 'Lippen aufspritzen mit Hyaluronsäure',
-        title: 'Lippen aufspritzen (Lippenunterspritzung)',
-        description: 'Voluminösere, definierte Lippen mit natürlichem Ergebnis – schonende Behandlung mit Hyaluronsäure.',
-        treatmentUrl: '/hyaluron/lippen',
+        imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.png',
+        imageAlt: 'Skinbooster zur Hydratation',
+        title: 'Skinbooster (eigene Unterseite)',
+        description:
+          'Für Hydratation & Hautqualität. Details auf der Skinbooster-Seite.',
+        treatmentUrl: '/hyaluron/skinbooster',
       },
       {
-        imageUrl: '/assets/hyaluron/faltenunterspritzung_hero.png',
-        imageAlt: 'Faltenunterspritzung mit Hyaluron',
-        title: 'Faltenunterspritzung (Anti-Aging)',
-        description: 'Effektive Glättung von Nasolabialfalten, Marionettenfalten und anderen mimischen Falten für ein jüngeres Aussehen.',
-        treatmentUrl: '/hyaluron/faltenunterspritzung',
+        imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.png",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
+        title: "Hyaluron-Remodellierung (BAP-Technik)",
+        description: "Remodellierung – auch Bioremodulierung genannt – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint. Im Gegensatz zu Volumenbehandlungen steht nicht die Formung im Vordergrund, sondern die Qualität des Gewebes.",
+        treatmentUrl: "/hyaluron/profhilo"
       },
     ],
   };

@@ -192,7 +192,7 @@ export default function MedizinischesMicroneedlingPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/microneedling/beratung-microneedling-bremen.webp",
+    imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Beratung zum medizinischen Microneedling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -201,36 +201,36 @@ export default function MedizinischesMicroneedlingPage() {
     title: "Verwandte Behandlungen",
     treatments: [
       {
-        imageUrl: "/assets/prf/prf-plasma-needling.webp",
-        imageAlt: "PRF/PRP Plasma-Needling zur Intensivierung",
-        title: "PRF/PRP-Microneedling (Plasma-Needling)",
+        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.png",
+        imageAlt: "PRF Plasma-Needling zur Intensivierung",
+        title: "PRF-Microneedling (Plasma-Needling)",
         description:
           "Kombination aus Needling und körpereigenem Plasma (PRF/PRP) zur zusätzlichen Regenerations-Stimulation.",
-        treatmentUrl: "/prf#plasmaneedling"
+        treatmentUrl: "/eigenbluttherapie-prf/microneedling"
       },
       {
-        imageUrl: "/assets/mesotherapie/nctf.webp",
+        imageUrl: "/assets/mesotherapie/mesotherapie-haut_hero.png",
         imageAlt: "Mesotherapie für Hautqualität",
         title: "Mesotherapie (Haut)",
         description:
           "Fein dosierte Wirkstoff-Cocktails für Glow, Feuchtigkeit und Hautqualität – ergänzend oder alternativ.",
-        treatmentUrl: "/nctf"
+        treatmentUrl: "/mesotherapie"
       },
       {
-        imageUrl: "/assets/peeling/peeling.webp",
+        imageUrl: "/assets/chemisches-peeling/chemisches-peeling_hero.webp",
         imageAlt: "Chemisches Peeling",
         title: "Chemisches Peeling",
         description:
           "Peelings unterschiedlicher Stärke für Teint-Verfeinerung und Pigmentausgleich.",
-        treatmentUrl: "/peeling"
+        treatmentUrl: "/chemisches-peeling"
       },
       {
-        imageUrl: "/assets/skinbooster/skinbooster.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.png",
         imageAlt: "Skinbooster",
         title: "Skinbooster",
         description:
           "Intensive, langanhaltende Durchfeuchtung mittels unvernetzter Hyaluronsäure.",
-        treatmentUrl: "/hyaluron#skinbooster"
+        treatmentUrl: "/hyaluron/skinbooster"
       }
     ]
   };

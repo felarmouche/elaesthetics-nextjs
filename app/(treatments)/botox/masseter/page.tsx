@@ -243,7 +243,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botox/faltenbehandlung',
       },
       {
-        imageUrl: '/assets/botox/microbotox-treatment.webp',
+        imageUrl: '/assets/botox/botox-microbotox_hero.png',
         imageAlt: 'Microbotox Behandlung für feinere Hautstruktur',
         title: 'Microbotox',
         description:
@@ -251,7 +251,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botox/microbotox',
       },
       {
-        imageUrl: '/assets/botox/hyperhidrose-treatment.webp',
+        imageUrl: '/assets/botox/botox-hyperhidrose_hero.png',
         imageAlt: 'Botox Behandlung gegen übermäßiges Schwitzen',
         title: 'Hyperhidrose-Behandlung',
         description:
@@ -259,7 +259,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botox/hyperhidrose',
       },
       {
-        imageUrl: '/assets/botox/migraene-treatment.webp',
+        imageUrl: '/assets/botox/botox-migräne_hero.png',
         imageAlt: 'Botox zur Behandlung chronischer Migräne',
         title: 'Migräne-Behandlung',
         description:

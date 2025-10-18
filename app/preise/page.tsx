@@ -18,9 +18,9 @@ export default function PreisePage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Header */}
-      <header className="border-b border-black py-12 px-6">
+      <header className="border-b border-gray-400 py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-5xl font-light tracking-wide mb-2">
+          <h1 className="text-4xl md:text-5xl font-light uppercase tracking-wide mb-2">
             Preisliste
           </h1>
           <p className="text-sm tracking-widest uppercase text-gray-600">
@@ -30,8 +30,8 @@ export default function PreisePage() {
       </header>
 
       {/* Navigation */}
-      <nav className=" bg-white border-b border-gray-200 shadow-sm z-10">
-        <p className="px-[5%] my-4 text-2xl font-semibold uppercase text-accent-dark">
+      <nav className=" bg-white border-b border-gray-400 pb-12 z-10">
+        <p className="px-[5%] w-full my-4 text-2xl md:text-3xl text-left md:text-center font-thin text-accent-dark">
           Alle Behandlungen in Bremen
         </p>
         <div className="max-w-4xl mx-auto px-6 py-4">

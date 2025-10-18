@@ -28,7 +28,7 @@ import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
   title: 'Chemisches Peeling Bremen | TCA Biorevitalisierung ohne Ausfallzeit | EL Aesthetics',
-  description: 'Chemisches Peeling in Bremen ✓ PRX-T33 Biorevitalisierung ✓ TCA ohne Schälung ✓ Keine Ausfallzeit ✓ Für alle Hauttypen ✓ Auch im Sommer ✓ Aknenarben, Pigmente, Falten ✓ Jetzt Beratung!',
+  description: 'Chemisches Peeling in Bremen ✓ PRX-T33 Biorevitalisierung ✓ Bei Aknenarben, Pigmente, Falten ✓ Jetzt Beratung!',
   keywords: 'Chemisches Peeling Bremen, TCA Peeling Bremen, Biorevitalisierung Peeling Bremen, PRX-T33 Bremen, Fruchtsäurepeeling Bremen, Hauterneuerung Bremen, Aknenarben behandeln Bremen, Pigmentflecken entfernen Bremen, Kollagenstimulation Peeling, Hautstraffung Peeling Bremen, Medizinisches Peeling Bremen',
   openGraph: {
     title: 'Chemisches Peeling Bremen – Biorevitalisierung ohne Ausfallzeit | EL Aesthetics',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
 
 export default function ChemischesPeelingPage() {
   const heroData: HeroSectionProps = {
-    title: "Chemisches Peeling & Biorevitalisierung in Bremen",
+    title: "Chemisches Peeling in Bremen",
     subtitle: "Hauterneuerung ohne Ausfallzeit: PRX-T33 kombiniert TCA mit Wasserstoffperoxid für tiefenwirksame Regeneration – ohne sichtbare Schälung, auch im Sommer geeignet.",
     imageSrc: "/assets/chemisches-peeling/chemisches-peeling_hero.jpg",
     imageAlt: "Chemisches Peeling mit Biorevitalisierung bei EL Aesthetics Bremen",
@@ -53,7 +53,7 @@ export default function ChemischesPeelingPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: "Was ist chemisches Peeling mit Biorevitalisierung?",
+    title: "Was ist ein chemisches Peeling?",
     content: [
       "Ein chemisches Peeling ist weit mehr als nur eine oberflächliche Hautschälung. Es ist eine medizinische Behandlung zur Hauterneuerung, die tiefere Hautschichten erreicht und dort biologische Regenerationsprozesse anstößt. Anders als mechanische Peelings, die lediglich abgestorbene Hautschüppchen entfernen, regen chemische Peelings die Kollagenproduktion an, setzen Wachstumsfaktoren frei und erneuern die Hautstruktur von innen heraus.",
       "In unserer Praxis in Bremen setzen wir auf eine besondere Form des chemischen Peelings: Die Biorevitalisierung mit PRX-T33. Diese innovative Methode kombiniert Trichloressigsäure (TCA) mit Wasserstoffperoxid (H2O2) und Kojisäure in einer patentierten Formulierung. Das Besondere: Obwohl TCA normalerweise zu starker Hautschälung führt, verhindert die Synergie mit H2O2 genau dies. Stattdessen dringen die Wirkstoffe bis in mittlere Hautschichten vor und stimulieren dort die Zellregeneration – ohne sichtbare Abschälung, ohne Ausfallzeit.",
@@ -62,7 +62,7 @@ export default function ChemischesPeelingPage() {
   };
 
   const areasData: AreasSectionProps = {
-    title: "Behandlungsbereiche & Indikationen für chemisches Peeling",
+    title: "Behandlungsbereiche & Indikationen",
     categories: [
       {
         category: "Behandlungsbereiche",
@@ -126,7 +126,7 @@ export default function ChemischesPeelingPage() {
   };
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: "Chemisches Peeling auf einen Blick",
+    title: "Die Behandlung auf einen Blick",
     benefits: [
       {
         title: "Preis",
@@ -297,28 +297,22 @@ export default function ChemischesPeelingPage() {
     title: "Weitere Behandlungen zur Hautverbesserung",
     treatments: [
       {
-        imageUrl: "/assets/hautverbesserung/microneedling_card.webp",
+        imageUrl: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.png",
         imageAlt: "Medizinisches Microneedling für Hautstraffung und Kollagenaufbau",
         title: "Medizinisches Microneedling",
         description: "Gezielte Mikroverletzungen stimulieren die Kollagen- und Elastinproduktion. Ideal zur Verbesserung von Hautstruktur, Aknenarben und feinen Linien. Kombinierbar mit Wirkstofftherapie.",
         treatmentUrl: "/medizinisches-microneedling"
       },
+      
       {
-        imageUrl: "/assets/hautverbesserung/profhilo_card.webp",
-        imageAlt: "Profhilo Bio-Remodelling für Hautqualität",
-        title: "Profhilo (Bio-Remodelling)",
-        description: "Hochkonzentrierte Hyaluronsäure wird strategisch injiziert und verbessert die Hautqualität von innen. Für strahlende, befeuchtete und gestraffte Haut ohne Volumenaufbau.",
-        treatmentUrl: "/hautverbesserung/profhilo"
-      },
-      {
-        imageUrl: "/assets/hautverbesserung/eigenbluttherapie_card.webp",
+        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.png",
         imageAlt: "Eigenbluttherapie PRP für natürliche Hautverjüngung",
-        title: "Eigenbluttherapie (PRP/PRF)",
+        title: "Eigenbluttherapie (PRF)",
         description: "Ihr eigenes Blut wird aufbereitet und die Wachstumsfaktoren in die Haut injiziert. Stimuliert Regeneration und Kollagenbildung auf vollkommen natürliche Weise.",
         treatmentUrl: "/hautverbesserung/eigenbluttherapie"
       },
       {
-        imageUrl: "/assets/hautverbesserung/skinbooster_card.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.png",
         imageAlt: "Skinbooster Behandlung für Hautfeuchtigkeit",
         title: "Skinbooster (Klassisch)",
         description: "Flächige Injektion von Hyaluronsäure in die Haut für intensive Befeuchtung, Straffung und Verbesserung der Hautstruktur. Ideal für trockene, müde Haut.",
