@@ -27,15 +27,16 @@ import PatientReviews from '@/components/PatientReviews';
 import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
-  title: 'Chemisches Peeling Bremen | TCA Biorevitalisierung ohne Ausfallzeit | EL Aesthetics',
-  description: 'Chemisches Peeling in Bremen ✓ PRX-T33 Biorevitalisierung ✓ Bei Aknenarben, Pigmente, Falten ✓ Jetzt Beratung!',
-  keywords: 'Chemisches Peeling Bremen, TCA Peeling Bremen, Biorevitalisierung Peeling Bremen, PRX-T33 Bremen, Fruchtsäurepeeling Bremen, Hauterneuerung Bremen, Aknenarben behandeln Bremen, Pigmentflecken entfernen Bremen, Kollagenstimulation Peeling, Hautstraffung Peeling Bremen, Medizinisches Peeling Bremen',
+  title: 'Chemisches Peeling Bremen | PRX-T33 ohne Downtime',
+  description:
+    'PRX-T33 chemisches Peeling in Bremen: ärztliche Biorevitalisierung für Glow, Pigmentflecken und Aknenarben – ganz ohne Ausfallzeit.',
   openGraph: {
-    title: 'Chemisches Peeling Bremen – Biorevitalisierung ohne Ausfallzeit | EL Aesthetics',
-    description: 'PRX-T33 Biorevitalisierung mit TCA, H2O2 & Kojisäure – keine Schälung, keine Ausfallzeit, auch im Sommer geeignet. Für Akne, Pigmente, Falten.',
+    title: 'Chemisches Peeling Bremen | PRX-T33 ohne Downtime',
+    description:
+      'PRX-T33 Biorevitalisierung bei EL Aesthetics Bremen: tiefenwirksame Hauterneuerung für ein ebenmäßigeres Hautbild ohne Schälung.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/peeling/og-chemisches-peeling-bremen.png'],
+    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//peeling/og-chemisches-peeling-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/chemisches-peeling',
@@ -46,7 +47,7 @@ export default function ChemischesPeelingPage() {
   const heroData: HeroSectionProps = {
     title: "Chemisches Peeling in Bremen",
     subtitle: "Hauterneuerung ohne Ausfallzeit: PRX-T33 kombiniert TCA mit Wasserstoffperoxid für tiefenwirksame Regeneration – ohne sichtbare Schälung, auch im Sommer geeignet.",
-    imageSrc: "/assets/chemisches-peeling/chemisches-peeling_hero.jpg",
+    imageSrc: "/elaesthetics-bremen-github/assets//chemisches-peeling/chemisches-peeling_hero.webp",
     imageAlt: "Chemisches Peeling mit Biorevitalisierung bei EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -131,32 +132,32 @@ export default function ChemischesPeelingPage() {
       {
         title: "Preis",
         description: "ab 180€ pro Behandlung*",
-        iconUrl: "/assets/icons/EUR.svg"
+        iconUrl: "/elaesthetics-bremen-github/assets//icons/EUR.svg"
       },
       {
         title: "Dauer",
         description: "ca. 45 Min",
-        iconUrl: "/assets/icons/TIME.svg"
+        iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg"
       },
       {
         title: "Wirkung",
         description: "sofort + Aufbau über Wochen",
-        iconUrl: "/assets/icons/TIME.svg"
+        iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg"
       },
       {
         title: "Haltbarkeit",
         description: "9-12 Monate",
-        iconUrl: "/assets/icons/CAL.svg"
+        iconUrl: "/elaesthetics-bremen-github/assets//icons/CAL.svg"
       },
       {
         title: "Betäubung",
         description: "keine erforderlich",
-        iconUrl: "/assets/icons/Spritze.svg"
+        iconUrl: "/elaesthetics-bremen-github/assets//icons/Spritze.svg"
       },
       {
         title: "Ausfallzeit",
         description: "i.d.R. sofort gesellschaftsfähig",
-        iconUrl: "/assets/icons/gesellschaft.svg"
+        iconUrl: "/elaesthetics-bremen-github/assets//icons/gesellschaft.svg"
       }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
@@ -288,7 +289,7 @@ export default function ChemischesPeelingPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche – Expertin für chemisches Peeling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -297,7 +298,7 @@ export default function ChemischesPeelingPage() {
     title: "Weitere Behandlungen zur Hautverbesserung",
     treatments: [
       {
-        imageUrl: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp",
         imageAlt: "Medizinisches Microneedling für Hautstraffung und Kollagenaufbau",
         title: "Medizinisches Microneedling",
         description: "Gezielte Mikroverletzungen stimulieren die Kollagen- und Elastinproduktion. Ideal zur Verbesserung von Hautstruktur, Aknenarben und feinen Linien. Kombinierbar mit Wirkstofftherapie.",
@@ -305,14 +306,14 @@ export default function ChemischesPeelingPage() {
       },
       
       {
-        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp",
         imageAlt: "Eigenbluttherapie PRP für natürliche Hautverjüngung",
         title: "Eigenbluttherapie (PRF)",
         description: "Ihr eigenes Blut wird aufbereitet und die Wachstumsfaktoren in die Haut injiziert. Stimuliert Regeneration und Kollagenbildung auf vollkommen natürliche Weise.",
         treatmentUrl: "/hautverbesserung/eigenbluttherapie"
       },
       {
-        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//hyaluron/hyaluron-skinbooster_hero.webp",
         imageAlt: "Skinbooster Behandlung für Hautfeuchtigkeit",
         title: "Skinbooster (Klassisch)",
         description: "Flächige Injektion von Hyaluronsäure in die Haut für intensive Befeuchtung, Straffung und Verbesserung der Hautstruktur. Ideal für trockene, müde Haut.",

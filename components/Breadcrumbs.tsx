@@ -1,116 +1,84 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { ChevronRight, Home } from 'lucide-react';
+import { useMemo } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { ChevronRight, Home } from 'lucide-react'
+import { DOMAIN } from '@/lib/constants'
 
 interface BreadcrumbItem {
-  label: string;
-  href: string;
+  label: string
+  href: string
 }
 
 // Mapping für lesbare Namen
 const pathNameMap: Record<string, string> = {
   // Hauptbereiche
-  'botox': 'Botox',
-  'hyaluron': 'Hyaluron',
+  botox: 'Botox',
+  hyaluron: 'Hyaluron',
   'eigenbluttherapie-prf': 'Eigenbluttherapie PRF',
-  'mesotherapie': 'Mesotherapie',
-  'faltenunterspritzung': 'Faltenunterspritzung',
-  'gesichtsbehandlung': 'Gesichtsbehandlung',
+  mesotherapie: 'Mesotherapie',
+  faltenunterspritzung: 'Faltenunterspritzung',
+  gesichtsbehandlung: 'Gesichtsbehandlung',
   'haarausfall-behandlung': 'Haarausfall Behandlung',
   'fett-weg-spritze': 'Fett-weg-Spritze',
   'medizinisches-microneedling': 'Medizinisches Microneedling',
   'chemisches-peeling': 'Chemisches Peeling',
-  'kollagenstimulation': 'Kollagenstimulation',
-  'profhilo': 'Profhilo',
-  'polynukleotide': 'Polynukleotide',
-  
+  kollagenstimulation: 'Kollagenstimulation',
+  profhilo: 'Profhilo',
+  polynukleotide: 'Polynukleotide',
+
   // Botox Unterbereiche
-  'faltenbehandlung': 'Faltenbehandlung',
-  'masseter': 'Masseter',
-  'microbotox': 'Microbotox',
-  'migraene': 'Migräne',
-  'hyperhidrose': 'Hyperhidrose',
-  
+  faltenbehandlung: 'Faltenbehandlung',
+  masseter: 'Masseter',
+  microbotox: 'Microbotox',
+  migraene: 'Migräne',
+  hyperhidrose: 'Hyperhidrose',
+
   // Hyaluron Unterbereiche
-  'filler': 'Filler',
-  'skinbooster': 'Skinbooster',
-  'hylase': 'Hylase',
-  
+  filler: 'Filler',
+  skinbooster: 'Skinbooster',
+  hylase: 'Hylase',
+
   // PRF Unterbereiche
-  'microneedling': 'Microneedling',
-  'haare': 'Haare',
-  
+  microneedling: 'Microneedling',
+  haare: 'Haare',
+
   // Andere
-  'terminanfragen': 'Terminanfrage',
-  'kontakt': 'Kontakt',
+  terminanfragen: 'Terminanfrage',
+  kontakt: 'Kontakt',
   'ueber-uns': 'Über uns',
-  'preise': 'Preise',
-};
+  preise: 'Preise',
+}
 
 export default function Breadcrumbs() {
-  const [breadcrumbs, setBreadcrumbs] = useState<BreadcrumbItem[]>([]);
-  const [isHomePage, setIsHomePage] = useState(true);
-  const [currentPath, setCurrentPath] = useState('');
+  const pathname = usePathname() || '/'
 
-  useEffect(() => {
-    const updateBreadcrumbs = () => {
-      // Client-side: window.location.pathname verwenden
-      const pathname = window.location.pathname;
-      
-      // Nur updaten wenn sich der Pfad geändert hat
-      if (pathname === currentPath) return;
-      setCurrentPath(pathname);
-      
-      // Keine Breadcrumbs auf der Homepage
-      if (pathname === '/' || pathname === '') {
-        setIsHomePage(true);
-        setBreadcrumbs([]);
-        return;
-      }
+  const breadcrumbs = useMemo<BreadcrumbItem[]>(() => {
+    if (pathname === '/' || pathname === '') {
+      return []
+    }
 
-      setIsHomePage(false);
+    const segments = pathname.split('/').filter(Boolean)
+    const items: BreadcrumbItem[] = [{ label: 'Startseite', href: '/' }]
 
-      // Pfad in Segmente aufteilen
-      const segments = pathname.split('/').filter(segment => segment !== '');
-      
-      // Breadcrumb Items erstellen
-      const items: BreadcrumbItem[] = [
-        { label: 'Startseite', href: '/' }
-      ];
+    let builtPath = ''
+    segments.forEach((segment) => {
+      builtPath += `/${segment}`
+      const label =
+        pathNameMap[segment] ??
+        segment
+          .replace(/-/g, ' ')
+          .replace(/\b\w/g, (char) => char.toUpperCase())
 
-      let builtPath = '';
-      segments.forEach((segment) => {
-        builtPath += `/${segment}`;
-        const label = pathNameMap[segment] || segment.charAt(0).toUpperCase() + segment.slice(1);
-        items.push({
-          label,
-          href: builtPath
-        });
-      });
+      items.push({ label, href: builtPath })
+    })
 
-      setBreadcrumbs(items);
-    };
+    return items
+  }, [pathname])
 
-    // Initial update
-    updateBreadcrumbs();
-
-    // Listen to popstate (browser back/forward)
-    window.addEventListener('popstate', updateBreadcrumbs);
-
-    // Poll for URL changes (catches Next.js Link navigation)
-    const interval = setInterval(updateBreadcrumbs, 100);
-
-    return () => {
-      window.removeEventListener('popstate', updateBreadcrumbs);
-      clearInterval(interval);
-    };
-  }, [currentPath]);
-
-  // Nicht rendern auf der Homepage oder während SSG
-  if (isHomePage || breadcrumbs.length === 0) {
-    return null;
+  if (breadcrumbs.length === 0) {
+    return null
   }
 
   return (
@@ -118,6 +86,21 @@ export default function Breadcrumbs() {
       aria-label="Breadcrumb" 
       className="bg-gray-50 border-b border-gray-200"
     >
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: breadcrumbs.map((breadcrumb, index) => ({
+              '@type': 'ListItem',
+              position: index + 1,
+              name: breadcrumb.label,
+              item: breadcrumb.href === '/' ? DOMAIN : `${DOMAIN}${breadcrumb.href}`,
+            })),
+          }),
+        }}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
         <ol className="flex items-center space-x-2 text-sm">
           {breadcrumbs.map((breadcrumb, index) => {

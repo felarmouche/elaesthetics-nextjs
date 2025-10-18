@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Entspannen Sie Ihren Kaumuskel mit Botox: Für eine definierte Jawline und gegen Zähneknirschen. Professionelle Masseter-Behandlung bei EL Aesthetics Bremen.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/botox/og-image-botox-masseter-bremen.png'],
+    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//botox/og-image-botox-masseter-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/botox/masseter',
@@ -25,7 +25,7 @@ export default function BotoxMasseterPage() {
     title: 'Masseter Behandlung mit Botox in Bremen',
     subtitle:
       'Leiden Sie unter Zähneknirschen oder wünschen sich eine definierte Jawline?\nMit einer gezielten Masseter-Behandlung können wir beides erreichen.',
-    imageSrc: '/assets/botox/botox-masseter_hero.png',
+    imageSrc: '/elaesthetics-bremen-github/assets//botox/botox-masseter_hero.webp',
     imageAlt: 'Gesichtskonturierung durch Botulinumtoxin Masseter-Behandlung in Bremen',
     primaryCTA: { text: 'Termin vereinbaren', href: '/terminanfragen' },
     secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
@@ -69,13 +69,13 @@ export default function BotoxMasseterPage() {
   const benefitsData: QuickInfoSectionProps = {
     title: 'Die Masseter-Behandlung auf einen Blick',
     benefits: [
-      { title: 'Preis', description: `ab ${PRICES.botulinum.masseter}€*`, iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Dauer', description: 'max. 30 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: 'nach 10–14 Tagen', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Sichtbare Wirkung', description: 'nach 4–8 Wochen', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Haltbarkeit', description: '3–6 Monate', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Betäubung', description: 'nicht erforderlich', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Preis', description: `ab ${PRICES.botulinum.masseter}€*`, iconUrl: '/elaesthetics-bremen-github/assets//icons/EUR.svg' },
+      { title: 'Dauer', description: 'max. 30 Min', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
+      { title: 'Wirkeintritt', description: 'nach 10–14 Tagen', iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg' },
+      { title: 'Sichtbare Wirkung', description: 'nach 4–8 Wochen', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
+      { title: 'Haltbarkeit', description: '3–6 Monate', iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg' },
+      { title: 'Betäubung', description: 'nicht erforderlich', iconUrl: '/elaesthetics-bremen-github/assets//icons/Spritze.svg' },
+      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/elaesthetics-bremen-github/assets//icons/gesellschaft.svg' },
     ],
     note: '*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt.',
   };
@@ -226,7 +226,7 @@ export default function BotoxMasseterPage() {
     ],
     ctaText: 'Jetzt Beratungstermin anfragen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
+    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Masseter-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
   };
@@ -235,7 +235,7 @@ export default function BotoxMasseterPage() {
     title: 'Weitere Botox Behandlungen in Bremen',
     treatments: [
       {
-        imageUrl: '/assets/botox/botox-faltenbehandlung_hero.webp',
+        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp',
         imageAlt: 'Botox Faltenbehandlung für Stirn, Zornesfalte und Krähenfüße',
         title: 'Faltenbehandlung',
         description:
@@ -243,7 +243,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botox/faltenbehandlung',
       },
       {
-        imageUrl: '/assets/botox/botox-microbotox_hero.png',
+        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-microbotox_hero.webp',
         imageAlt: 'Microbotox Behandlung für feinere Hautstruktur',
         title: 'Microbotox',
         description:
@@ -251,7 +251,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botox/microbotox',
       },
       {
-        imageUrl: '/assets/botox/botox-hyperhidrose_hero.png',
+        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-hyperhidrose_hero.webp',
         imageAlt: 'Botox Behandlung gegen übermäßiges Schwitzen',
         title: 'Hyperhidrose-Behandlung',
         description:
@@ -259,7 +259,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botox/hyperhidrose',
       },
       {
-        imageUrl: '/assets/botox/botox-migräne_hero.png',
+        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-migräne_hero.webp',
         imageAlt: 'Botox zur Behandlung chronischer Migräne',
         title: 'Migräne-Behandlung',
         description:

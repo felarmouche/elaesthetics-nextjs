@@ -31,7 +31,7 @@ export const metadata: Metadata = {
             'EL Aesthetics Bremen: Ärztliche Botox-Therapien für Masseter/Bruxismus, Microbotox zur Hautverfeinerung, Migräneprophylaxe und Hyperhidrose-Behandlung.',
         type: 'website',
         locale: 'de_DE',
-        images: ['https://elaesthetics-bremen.de/assets/botox/og-image-botox-bremen.png'],
+        images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//botox/og-image-botox-bremen.webp'],
     },
     alternates: {
         canonical: 'https://elaesthetics-bremen.de/botox',
@@ -43,7 +43,7 @@ export default function BotoxBehandlungenPage() {
         title: "Medizische Botox Behandlungen in Bremen",
         subtitle:
             "Medizinische Botulinum-Therapien – Masseter/Bruxismus, Migräne- und Hyperhidrose-Behandlung.",
-        imageSrc: "/assets/medizinische-behandlungen/medizinische-behandlunge_hero.webp",
+        imageSrc: "/elaesthetics-bremen-github/assets//medizinische-behandlungen/medizinische-behandlunge_hero.webp",
         imageAlt: "Symbolbild für ärztliche Botox-Behandlungen in der Praxis EL Aesthetics Bremen",
         primaryCTA: { text: "Beratung anfragen", href: "/terminanfragen" },
         secondaryCTA: { text: "Behandlungen ansehen", href: "#treatments" }
@@ -64,7 +64,7 @@ export default function BotoxBehandlungenPage() {
         title: "Unsere Botox-Behandlungen in Bremen",
         treatments: [
             {
-                imageUrl: "/assets/botox/botox-masseter_hero.png",
+                imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-masseter_hero.webp",
                 imageAlt: "Masseter-Botox gegen Zähneknirschen (Bruxismus) in Bremen",
                 title: "Masseter: Entspannung bei Bruxismus & Kieferschmerzen",
                 description:
@@ -73,7 +73,7 @@ export default function BotoxBehandlungenPage() {
             },
 
             {
-                imageUrl: "/assets/botox/botox-migräne_hero.png",
+                imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-migräne_hero.webp",
                 imageAlt: "Botox zur Migräneprophylaxe in Bremen",
                 title: "Migräne: Prophylaxe mit Botulinum",
                 description:
@@ -81,7 +81,7 @@ export default function BotoxBehandlungenPage() {
                 treatmentUrl: "/botox/migraene"
             },
             {
-                imageUrl: "/assets/botox/botox-hyperhidrose_hero.png",
+                imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-hyperhidrose_hero.webp",
                 imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botox in Bremen",
                 title: "Hyperhidrose: Weniger Schwitzen, mehr Freiheit",
                 description:
@@ -124,7 +124,7 @@ export default function BotoxBehandlungenPage() {
         ],
         ctaText: "Jetzt Beratung anfragen",
         ctaHref: "/terminanfragen",
-        imageSrc: "/assets/tinified/IMG_7364.webp",
+        imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
         imageAlt: "Ärztliche Botox-Beratung in der Praxis EL Aesthetics Bremen",
         backgroundColor: "bg-[#F5FAFF]"
     };

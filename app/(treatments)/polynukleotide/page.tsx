@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: 'Erleben Sie die regenerative Kraft von Polynukleotiden: Hautregeneration, Faltenreduktion und Haarwachstumsförderung durch biologische DNA-Therapie in Bremen.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/polynukleotide/og-image-polynukleotide-bremen.png'],
+    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//polynukleotide/og-image-polynukleotide-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/polynukleotide',
@@ -47,7 +47,7 @@ export default function PolynukleotideBehandlungPage() {
   const heroData: HeroSectionProps = {
     title: "Polynukleotide-Behandlung in Bremen",
     subtitle: "Biostimulation der neuesten Generation für natürliche Hautregeneration, Faltenreduktion und Haarwachstum.\nEntdecken Sie die regenerative Kraft biologischer DNA-Therapie.",
-    imageSrc: "/assets/polynukleotide/polynukleotide_hero.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_hero.webp",
     imageAlt: "Polynukleotide-Behandlung für Hautregeneration in Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -101,12 +101,12 @@ export default function PolynukleotideBehandlungPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Die Polynukleotide-Behandlung auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.hyaluronFiller.polynukleotideHautAugenHaare || '280'}€*`, iconUrl: "/assets/icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 30-60 Min", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Wirkeintritt", description: "nach 2-4 Wochen sichtbar", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Behandlungen", description: "3-6 Sitzungen (Abstand 2-3 Wochen)", iconUrl: "/assets/icons/wiederholung.svg" },
-      { title: "Betäubung", description: "auf Wunsch möglich", iconUrl: "/assets/icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "i.d.R. sofort (Augen: 1 Tag)", iconUrl: "/assets/icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.hyaluronFiller.polynukleotideHautAugenHaare || '280'}€*`, iconUrl: "/elaesthetics-bremen-github/assets//icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 30-60 Min", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
+      { title: "Wirkeintritt", description: "nach 2-4 Wochen sichtbar", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
+      { title: "Behandlungen", description: "3-6 Sitzungen (Abstand 2-3 Wochen)", iconUrl: "/elaesthetics-bremen-github/assets//icons/wiederholung.svg" },
+      { title: "Betäubung", description: "auf Wunsch möglich", iconUrl: "/elaesthetics-bremen-github/assets//icons/Spritze.svg" },
+      { title: "Ausfallzeit", description: "i.d.R. sofort (Augen: 1 Tag)", iconUrl: "/elaesthetics-bremen-github/assets//icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -231,7 +231,7 @@ export default function PolynukleotideBehandlungPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Polynukleotide-Behandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -240,32 +240,32 @@ export default function PolynukleotideBehandlungPage() {
     title: "Weitere regenerative Behandlungen in Bremen",
     treatments: [
       {
-        imageUrl: "/assets/skinbooster/profhilo_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//hyaluron/hyaluron-skinbooster_hero.webp",
         imageAlt: "Hyaluronsäure Skinbooster BAP-Technik für Hautregeneration",
         title: "Hyaluronsäure Skinbooster (BAP-Technik)",
         description: "Hyaluronsäure-Skinbooster mit der innovativen BAP-Technik verbessern die Hautqualität durch intensive Hydratation und Stimulation der Kollagenproduktion. Ideal für einen frischen, strahlenden Teint.",
-        treatmentUrl: "/profhilo"
+        treatmentUrl: "/hyaluron/profhilo"
       },
       {
-        imageUrl: "/assets/kollagen/kollagenstimulation_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//kollagenstimulation/kollagenstimulation_hero.webp",
         imageAlt: "Kollagenstimulation mit Calciumhydroxylapatit und Hyaluronsäure",
         title: "Kollagenstimulation",
         description: "Die Kombination aus Calciumhydroxylapatit und Hyaluronsäure stimuliert die körpereigene Kollagenproduktion für natürliche Hautstraffung und langanhaltende Volumengabe.",
         treatmentUrl: "/kollagenstimulation"
       },
       {
-        imageUrl: "/assets/prf/prf-behandlung_hero.png",
-        imageAlt: "PRF Eigenbluttherapie für Hautregeneration",
-        title: "PRF/PRP Eigenbluttherapie",
+        imageUrl: "/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp",
+        imageAlt: "Bild von einer Frau, welche PRF im Gesicht hat",
+        title: "PRF Eigenbluttherapie",
         description: "Mit Eigenblut (Platelet-Rich Fibrin) fördern wir natürliche Regenerationsprozesse für Haut und Haare. Eine biologische Behandlung für nachhaltige Anti-Aging-Effekte.",
         treatmentUrl: "/prf"
       },
       {
-        imageUrl: "/assets/mesotherapie/nctf_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//mesotherapie/mesotherapie-haut_hero.webp",
         imageAlt: "Mesotherapie für die Haut mit Revitalisierung",
         title: "Mesotherapie für die Haut",
         description: "Die Mesotherapie versorgt Ihre Haut mit einem individuellen Wirkstoffcocktail. Vitamine, Mineralstoffe und Hyaluronsäure verbessern die Hautqualität von innen heraus.",
-        treatmentUrl: "/nctf"
+        treatmentUrl: "/mesotherapie"
       }
     ]
   };

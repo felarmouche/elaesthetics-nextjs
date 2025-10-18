@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Leiden Sie unter chronischer Migräne? Erfahren Sie, wie Botox-Behandlungen die Häufigkeit und Intensität Ihrer Migräneattacken reduzieren können.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/botox-migräne_hero.png'],
+    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//botox-migräne_hero.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/botox/migraene',
@@ -24,7 +24,7 @@ export default function BotoxMigraenePage() {
   const heroData: HeroSectionProps = {
     title: "Botolinumtoxin bei chronischer Migräne in Bremen",
     subtitle: "Leiden Sie unter häufigen Migräneattacken?\nBei EL Aesthetics bieten wir Ihnen die zugelassene Botulinumtoxin-Therapie zur Behandlung chronischer Migräne an.",
-    imageSrc: "/assets/botox/botox-migräne_hero.png",
+    imageSrc: "/elaesthetics-bremen-github/assets//botox/botox-migräne_hero.webp",
     imageAlt: "Frau mit chronischer Migräne vor eine Botox Behandlung in Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -43,12 +43,12 @@ export default function BotoxMigraenePage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Die Botulinumtoxin Migränebehandlung auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.botulinum.migraene}€*`, iconUrl: "/assets/icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 30-45 Min", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Wirkung", description: "nach 10-14 Tagen spürbar", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Haltbarkeit", description: "3-6 Monate", iconUrl: "/assets/icons/CAL.svg" },
-      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.botulinum.migraene}€*`, iconUrl: "/elaesthetics-bremen-github/assets//icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 30-45 Min", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
+      { title: "Wirkung", description: "nach 10-14 Tagen spürbar", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
+      { title: "Haltbarkeit", description: "3-6 Monate", iconUrl: "/elaesthetics-bremen-github/assets//icons/CAL.svg" },
+      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/elaesthetics-bremen-github/assets//icons/Spritze.svg" },
+      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/elaesthetics-bremen-github/assets//icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -177,7 +177,7 @@ export default function BotoxMigraenePage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für eine Botox Migränebehandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -186,28 +186,28 @@ export default function BotoxMigraenePage() {
     title: "Weitere Botulinumtoxin Behandlungen in Bremen",
     treatments: [
       {
-        imageUrl: "/assets/botox/botox-faltenbehandlung_hero.webp",
+        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp",
         imageAlt: "Botox Faltenbehandlung für Stirnfalten und Zornesfalten",
         title: "Faltenbehandlung",
         description: "Die klassische Botulinumtoxin-Behandlung reduziert mimische Falten wie Stirnfalten, Zornesfalten und Krähenfüße. Für ein entspanntes, jugendliches Aussehen ohne gefrorene Mimik.",
         treatmentUrl: "/botox/faltenbehandlung"
       },
       {
-        imageUrl: "/assets/botox/botox-masseter_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-masseter_hero.webp",
         imageAlt: "Botox Behandlung des Masseter-Muskels zur Gesichtskonturierung",
         title: "Masseter-Behandlung (Jawline)",
         description: "Durch gezielte Botulinumtoxin-Injektionen in den Kaumuskel (Masseter) kann die Gesichtsform harmonisiert und eine markante Jawline geschaffen werden. Auch bei Zähneknirschen (Bruxismus) ist diese Behandlung sehr wirksam.",
         treatmentUrl: "/botox/masseter"
       },
       {
-        imageUrl: "/assets/botox/botox-hyperhidrose_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-hyperhidrose_hero.webp",
         imageAlt: "Botox Behandlung gegen übermäßiges Schwitzen",
         title: "Hyperhidrose-Behandlung",
         description: "Bei übermäßigem Schwitzen (Hyperhidrose) kann Botox die Schweißproduktion deutlich reduzieren. Die Behandlung ist besonders effektiv an Achseln, Händen und Füßen.",
         treatmentUrl: "/botox/hyperhidrose"
       },
       {
-        imageUrl: "/assets/botox/botox-microbotox_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-microbotox_hero.webp",
         imageAlt: "Microbotox Behandlung für feinere Hautstruktur und Porenverfeinung",
         title: "Microbotox (Skin Quality)",
         description: "Microbotox wird flächig in die oberen Hautschichten injiziert und verbessert die Hautqualität, verfeinert Poren und reduziert die Talgproduktion. Ideal für einen ebenmäßigen, glatten Teint.",

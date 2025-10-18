@@ -10,7 +10,7 @@ export default function Hero() {
     >
       {/* „Background“-Bild via next/image → SEO + LCP */}
       <Image
-        src="/assets/chatGPT-picture-small.webp"
+        src="/elaesthetics-bremen-github/assets//chatGPT-picture-small.webp"
         alt="El Aesthetics Bremen – Praxis für ästhetische und regenerative Medizin"
         fill
         priority

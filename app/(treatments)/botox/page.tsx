@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Von Faltenreduktion über Gesichtskonturierung bis zur medizinischen Anwendung: Entdecken Sie das volle Spektrum der Botox Behandlungen bei EL Aesthetics Bremen.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/botox/og-image-botox-bremen.png'],
+    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//botox/og-image-botox-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen/botox',
@@ -23,7 +23,7 @@ export default function BotulinumtoxinHubPage() {
   const heroData: HeroSectionProps = {
     title: "Botulinumtoxin Behandlung in Bremen",
     subtitle: "Entdecken Sie die vielfältigen Anwendungsmöglichkeiten von Botulinumtoxin (umgangssprachlich auch Botox genannt):\nVon der klassischen Faltenbehandlung bis zur medizinischen Therapie.",
-    imageSrc: "/assets/botox/botox-faltenbehandlung_hero.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp",
     imageAlt: "Übersicht verschiedener Botulinumtoxin-Behandlungen bei EL Aesthetics Bremen",
     primaryCTA: { text: "Beratung anfragen", href: "/terminanfragen" },
     secondaryCTA: { text: "Behandlungen anzeigen", href: "#treatments" }
@@ -44,35 +44,35 @@ export default function BotulinumtoxinHubPage() {
   title: "Unsere Botulinumtoxin-Behandlungen in Bremen im Überblick",
   treatments: [
     {
-      imageUrl: "/assets/botox/botox-faltenbehandlung_hero.webp",
+      imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp",
       imageAlt: "Frau mit glatter Stirn nach Botulinumtoxin Faltenbehandlung",
       title: "Faltenbehandlung – Der Klassiker",
       description: "Die bekannteste Anwendung von Botulinumtoxin: Mimikfalten wie Stirnfalten, Zornesfalten und Krähenfüße können gezielt behandelt werden. Ziel ist ein entspanntes, frisches Aussehen – ohne Ihre natürliche Mimik einzuschränken. Geeignet für alle, die erste Zeichen der Hautalterung adressieren möchten.",
       treatmentUrl: "/botox/faltenbehandlung"
     },
     {
-      imageUrl: "/assets/botox/botox-masseter_hero.png",
+      imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-masseter_hero.webp",
       imageAlt: "Gesichtskonturierung durch Botulinumtoxin Masseter-Behandlung",
       title: "Masseter-Behandlung – Jawline & Bruxismus",
       description: "Durch gezielte Behandlung des Kaumuskels (Masseter) kann die Gesichtsform beeinflusst und eine definierte Jawline angestrebt werden. Diese Behandlung wird auch bei Zähneknirschen (Bruxismus) und damit verbundenen Kieferschmerzen eingesetzt. Ein doppelter ästhetischer und medizinischer Ansatz.",
       treatmentUrl: "/botox/masseter"
     },
     {
-      imageUrl: "/assets/botox/botox-microbotox_hero.png",
+      imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-microbotox_hero.webp",
       imageAlt: "Hautverjüngung durch flächige Microbotox-Behandlung",
       title: "Microbotox – Für feinere Hautstruktur",
       description: "Bei Microbotox wird Botulinumtoxin oberflächlich und flächig in die Haut injiziert. Ziel ist die Verfeinerung der Poren, Reduktion der Talgproduktion und ein ebenmäßigeres, glatteres Hautbild. Geeignet für alle, die ihre Hautqualität verbessern möchten – ohne die typische 'Botulinumtoxin-Optik'.",
       treatmentUrl: "/botox/microbotox"
     },
     {
-      imageUrl: "/assets/botox/botox-migräne_hero.png",
+      imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-migräne_hero.webp",
       imageAlt: "Medizinische Botulinumtoxin-Behandlung gegen chronische Migräne",
       title: "Migräne-Behandlung – Medizinische Anwendung",
       description: "Leiden Sie unter chronischer Migräne? Botulinumtoxin ist eine wissenschaftlich anerkannte Therapie, die bei chronischer Migräne eingesetzt wird. Die Behandlung erfolgt an spezifischen Kopf- und Nackenpunkten. Sprechen Sie uns auf diese medizinische Anwendung an.",
       treatmentUrl: "/botox/migraene"
     },
     {
-      imageUrl: "/assets/botox/botox-hyperhidrose_hero.png",
+      imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-hyperhidrose_hero.webp",
       imageAlt: "Botulinumtoxin-Behandlung gegen übermäßiges Schwitzen",
       title: "Hyperhidrose-Behandlung – Gegen Schwitzen",
       description: "Übermäßiges Schwitzen (Hyperhidrose) an Achseln, Händen oder Füßen kann sehr belastend sein. Botulinumtoxin wird zur Behandlung der Schweißdrüsenaktivität eingesetzt, die Wirkung kann bis zu 6-9 Monate anhalten. Eine Behandlungsoption für mehr Wohlbefinden im Alltag und Beruf.",
@@ -128,7 +128,7 @@ export default function BotulinumtoxinHubPage() {
     ],
     ctaText: "Jetzt Beratungsgespräch vereinbaren",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
     imageAlt: "Dr. Ola El-Armouche berät Patientin zu verschiedenen Botulinumtoxin-Behandlungsmöglichkeiten",
     backgroundColor: "bg-[#FDF6F0]"
   };

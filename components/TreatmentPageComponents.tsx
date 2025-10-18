@@ -2,6 +2,7 @@ import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { DOMAIN } from '@/lib/constants';
 // ============================================================================
 // TYPE DEFINITIONS
 // ============================================================================
@@ -157,7 +158,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                             className="w-full h-full object-cover object-center"
                             fill
                             priority
-                            fetchPriority='high'
+                            fetchPriority="high"
+                            sizes="(min-width: 1024px) 40vw, (min-width: 768px) 50vw, 100vw"
                         />
                     </div>
 
@@ -465,8 +467,29 @@ export const TreatmentCareSection: React.FC<TreatmentCareSectionProps> = ({
 
 
 export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
+    const faqSchema = faqs.length
+        ? {
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: faqs.map((faq) => ({
+                '@type': 'Question',
+                name: faq.question,
+                acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: faq.answer,
+                },
+            })),
+        }
+        : null;
+
     return (
         <section id="faq" className="py-20 md:py-32 bg-white">
+            {faqSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+            )}
             <div className="container mx-auto px-6 max-w-4xl">
                 <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
@@ -528,8 +551,52 @@ export const LocationSection: React.FC<LocationSectionProps> = ({
     description,
     location
 }) => {
+    const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(location.address)}&output=embed`;
+    const addressParts = location.address.split(',');
+    const streetAddress = addressParts[0]?.trim() ?? location.address;
+    const cityPart = addressParts.slice(1).join(',').trim();
+    const postalMatch = cityPart.match(/\b\d{5}\b/);
+    const postalCode = postalMatch?.[0];
+    const addressLocality = (postalCode ? cityPart.replace(postalCode, '').trim() : cityPart) || 'Bremen';
+
+    const postalAddress: {
+        '@type': 'PostalAddress';
+        streetAddress: string;
+        addressCountry: string;
+        postalCode?: string;
+        addressLocality?: string;
+    } = {
+        '@type': 'PostalAddress',
+        streetAddress,
+        addressCountry: 'DE',
+    };
+
+    if (postalCode) {
+        postalAddress.postalCode = postalCode;
+    }
+
+    if (addressLocality) {
+        postalAddress.addressLocality = addressLocality;
+    }
+
+    const locationSchema = {
+        '@context': 'https://schema.org',
+        '@type': 'MedicalClinic',
+        name: title,
+        description,
+        url: `${DOMAIN}/#location`,
+        telephone: location.phone.replace(/\s+/g, ''),
+        email: location.email,
+        address: postalAddress,
+        openingHours: location.openingHours,
+    };
+
     return (
         <section id="location" className="py-20 bg-stone-50">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
+            />
             <div className="container mx-auto px-6 max-w-7xl">
                 <div className="grid md:grid-cols-2 gap-16">
                     <div className="space-y-6">
@@ -560,8 +627,14 @@ export const LocationSection: React.FC<LocationSectionProps> = ({
                             </div>
                         </div>
                     </div>
-                    <div className="bg-stone-200 h-96 flex items-center justify-center">
-                        <span className="text-stone-400 font-light">Google Maps</span>
+                    <div className="h-96 rounded-md overflow-hidden shadow-lg border border-stone-200">
+                        <iframe
+                            title={`Karte zu ${title}`}
+                            src={mapSrc}
+                            className="w-full h-full border-0"
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        />
                     </div>
                 </div>
             </div>

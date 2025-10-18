@@ -1,0 +1,6 @@
+# robots.txt for https://elaesthetics-bremen.de
+User-agent: *
+Allow: /
+Disallow: /danke/
+
+Sitemap: https://elaesthetics-bremen.de/sitemap.xml

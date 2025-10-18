@@ -20,9 +20,9 @@ export default function Contact() {
               Adresse
             </h3>
             <p className="text-white font-light leading-relaxed">
-              El Aesthetics<br/>
-              Musterstraße 123<br/>
-              63450 Bremen
+              EL Aesthetics Bremen<br />
+              Richtepad 14<br />
+              28355 Bremen
             </p>
           </div>
 
@@ -33,13 +33,13 @@ export default function Contact() {
             </h3>
             <div className="text-white font-light leading-relaxed space-y-2">
               <p>
-                <a href="tel:+4961811234567" className="hover:text-gray-300 transition-colors">
-                  +49 (0) 6181 123456
+                <a href="tel:+4915566919635" className="hover:text-gray-300 transition-colors">
+                  +49 155 66919635
                 </a>
               </p>
               <p>
-                <a href="mailto:info@artaesthetics.de" className="hover:text-gray-300 transition-colors">
-                  info@artaesthetics.de
+                <a href="mailto:info@elaesthetics-bremen.de" className="hover:text-gray-300 transition-colors">
+                  info@elaesthetics-bremen.de
                 </a>
               </p>
             </div>
@@ -51,9 +51,7 @@ export default function Contact() {
               Öffnungszeiten
             </h3>
             <p className="text-white font-light leading-relaxed">
-              Mo-Fr: 09:00 - 18:00 Uhr<br/>
-              Sa: Nach Vereinbarung<br/>
-              So: Geschlossen
+              Termine nach Vereinbarung
             </p>
           </div>
         </div>

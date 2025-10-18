@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Professionelle Mesotherapie für strahlende Haut. Hyaluronsäure-Mikronährstoff-Komplex gegen Augenringe, Falten und für verbesserte Hautqualität.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haut-bremen.png'],
+    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//mesotherapie/og-image-mesotherapie-haut-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/mesotherapie/haut',
@@ -24,7 +24,7 @@ export default function MesotherapieHautPage() {
   const heroData: HeroSectionProps = {
     title: "Mesotherapie für Gesicht & Hautqualität in Bremen",
     subtitle: "Möchten Sie Ihre Hautqualität verbessern, Augenringe reduzieren und einen strahlenden Teint?\nMit der Mesotherapie kombinieren wir Hyaluronsäure mit wertvollen Mikronährstoffen für natürliche Hautverjüngung.",
-    imageSrc: "/assets/nctf/NFTC_Skinbooster.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//nctf/NFTC_Skinbooster.webp",
     imageAlt: "Mesotherapie Behandlung für strahlende Gesichtshaut in Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -66,13 +66,13 @@ export default function MesotherapieHautPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Die Mesotherapie für die Haut auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.hyaluronFiller.mesotherapieHaut}€*`, iconUrl: "/assets/icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 45-60 Min (inkl. Peeling & Maske)", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Wirkung", description: "nach 2-3 Behandlungen sichtbar", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Haltbarkeit", description: "6 Monate", iconUrl: "/assets/icons/CAL.svg" },
-      { title: "Behandlungen", description: "3-5 Sitzungen alle 2-4 Wochen\nAuffrischung: 2x pro Jahr", iconUrl: "/assets/icons/wiederholung.svg" },
-      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.hyaluronFiller.mesotherapieHaut}€*`, iconUrl: "/elaesthetics-bremen-github/assets//icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 45-60 Min (inkl. Peeling & Maske)", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
+      { title: "Wirkung", description: "nach 2-3 Behandlungen sichtbar", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
+      { title: "Haltbarkeit", description: "6 Monate", iconUrl: "/elaesthetics-bremen-github/assets//icons/CAL.svg" },
+      { title: "Behandlungen", description: "3-5 Sitzungen alle 2-4 Wochen\nAuffrischung: 2x pro Jahr", iconUrl: "/elaesthetics-bremen-github/assets//icons/wiederholung.svg" },
+      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/elaesthetics-bremen-github/assets//icons/Spritze.svg" },
+      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/elaesthetics-bremen-github/assets//icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -205,7 +205,7 @@ export default function MesotherapieHautPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Mesotherapie in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -214,28 +214,28 @@ export default function MesotherapieHautPage() {
     title: "Weitere Hautverbesserung-Behandlungen in Bremen",
     treatments: [
       {
-        imageUrl: "/assets/skinbooster/profhilo_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//skinbooster/profhilo_hero.webp",
         imageAlt: "Skinbooster Behandlung für intensive Hautfeuchtigkeit",
         title: "Skinbooster (BAP-Technik)",
         description: "Hochkonzentrierte Hyaluronsäure für maximale Feuchtigkeitsversorgung und verbesserte Hautelastizität. Besonders effektiv bei trockener, reifer Haut.",
         treatmentUrl: "/hautverbesserung/skinbooster-bap"
       },
       {
-        imageUrl: "/assets/prf/prf_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//prf/prf_hero.webp",
         imageAlt: "PRF Eigenbluttherapie für natürliche Hautverjüngung",
         title: "PRF/PRP-Eigenbluttherapie für die Haut",
         description: "Nutzen Sie die regenerativen Kräfte Ihres eigenen Blutes für natürliche Hauterneuerung, verbesserte Hautstruktur und strahlenden Teint.",
         treatmentUrl: "/hautverbesserung/eigenbluttherapie"
       },
       {
-        imageUrl: "/assets/polynukleotide/polynukleotide_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_hero.webp",
         imageAlt: "Polynukleotide Behandlung für Hautregeneration",
         title: "Polynukleotide",
         description: "Innovative Behandlung zur Zellregeneration und Reparatur geschädigter Haut. Ideal bei Narben, Pigmentflecken und lichtgeschädigter Haut.",
         treatmentUrl: "/hautverbesserung/polynukleotide"
       },
       {
-        imageUrl: "/assets/peeling/peeling_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//peeling/peeling_hero.webp",
         imageAlt: "Chemisches Peeling für ebenmäßige Haut",
         title: "Chemisches Peeling",
         description: "Entfernen Sie abgestorbene Hautzellen und fördern Sie die Zellerneuerung für einen ebenmäßigen, strahlenden Teint.",

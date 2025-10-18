@@ -2,13 +2,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const services = [
-  { id: 1, title: 'Anti-Aging', image: '/assets/pexels/botox.webp', path: '/anti-aging' },
-  { id: 2, title: 'Unterspritzungen & Fillers', image: '/assets/faltenunterspritzung/faltenunterspritzung_hero.png', path: '/faltenunterspritzung' },
-  { id: 3, title: 'Hautverbesserung', image: '/assets/pexels/hyaluron-rainbow.webp', path: '/haut-verbesserung' },
-  { id: 4, title: 'Haarbehandlungen', image: '/assets/pexels/hair.webp', path: '/haarausfall-behandlung' },
-  { id: 5, title: 'Bodyshaping & Fettreduktion', image: '/assets/pexels/sculpture.webp', path: '/fett-weg-spritze' },
-  { id: 6, title: 'Hylase - Auflösen von Hyaluronsäure', image: '/assets/hyaluron/hyaluron-hylase_hero.png', path: '/hyaluron/hylase' },
-  { id: 7, title: 'Medizinische Behandlungen', image: '/assets/pexels/pexels-thirdman-5922099.webp', path: '/medizinische-behandlungen' },
+  { id: 1, title: 'Anti-Aging', image: '/elaesthetics-bremen-github/assets//pexels/botox.webp', path: '/anti-aging' },
+  { id: 2, title: 'Unterspritzungen & Fillers', image: '/elaesthetics-bremen-github/assets//faltenunterspritzung/faltenunterspritzung_hero.webp', path: '/faltenunterspritzung' },
+  { id: 3, title: 'Hautverbesserung', image: '/elaesthetics-bremen-github/assets//pexels/hyaluron-rainbow.webp', path: '/haut-verbesserung' },
+  { id: 4, title: 'Haarbehandlungen', image: '/elaesthetics-bremen-github/assets//pexels/hair.webp', path: '/haarausfall-behandlung' },
+  { id: 5, title: 'Bodyshaping & Fettreduktion', image: '/elaesthetics-bremen-github/assets//pexels/sculpture.webp', path: '/fett-weg-spritze' },
+  { id: 6, title: 'Hylase - Auflösen von Hyaluronsäure', image: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-hylase_hero.webp', path: '/hyaluron/hylase' },
+  { id: 7, title: 'Medizinische Behandlungen', image: '/elaesthetics-bremen-github/assets//pexels/pexels-thirdman-5922099.webp', path: '/medizinische-behandlungen' },
 ];
 
 export default function Services() {

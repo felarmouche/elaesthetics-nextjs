@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: 'Von Botox über Hyaluron bis Kollagenstimulation: Entdecken Sie moderne Anti-Aging-Methoden für natürliche Verjüngung. Individuell, sicher, effektiv.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/anti-aging/og-anti-aging-bremen.png'],
+    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//anti-aging/og-anti-aging-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/anti-aging',
@@ -38,7 +38,7 @@ export default function AntiAgingHubPage() {
   const heroData: HeroSectionProps = {
     title: "Anti-Aging & Hautverjüngung in Bremen",
     subtitle: "Entdecken Sie moderne Methoden der Hautverjüngung: Von minimal-invasiven Injektionen bis zur regenerativen Medizin – für ein natürlich jüngeres, frischeres Aussehen.",
-    imageSrc: "/assets/botox/botox-faltenbehandlung_hero.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp",
     imageAlt: "Verschiedene Anti-Aging-Behandlungen für natürliche Hautverjüngung bei EL Aesthetics Bremen",
     primaryCTA: { text: "Beratung anfragen", href: "/terminanfragen" },
     secondaryCTA: { text: "Behandlungen entdecken", href: "#treatments" }
@@ -59,56 +59,56 @@ export default function AntiAgingHubPage() {
     title: "Unsere Anti-Aging-Behandlungen in Bremen im Überblick",
     treatments: [
       {
-        imageUrl: "/assets/botox/botox-faltenbehandlung_hero.webp",
+        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp",
         imageAlt: "Botox Faltenbehandlung für glatte Stirn und entspannten Blick",
         title: "Botulinumtoxin gegen mimische Falten",
         description: "Die klassische Anti-Aging-Methode: Stirnfalten, Zornesfalten und Krähenfüße werden durch gezielte Muskelentspannung geglättet. Das Ergebnis: Ein entspanntes, frisches Aussehen ohne eingefrorene Mimik. Ideal für alle, die erste dynamische Falten reduzieren möchten. Wirkung nach 3-14 Tagen, Haltbarkeit 3-6 Monate.",
         treatmentUrl: "/botox/faltenbehandlung"
       },
       {
-        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//hyaluron/hyaluron-filler_hero.webp",
         imageAlt: "Hyaluron Faltenunterspritzung für glatte Haut und Volumenaufbau",
         title: "Hyaluron-Faltenunterspritzung",
         description: "Wenn Falten bereits tiefer geworden sind oder Volumen verloren gegangen ist, kommt Hyaluronsäure zum Einsatz. Nasolabialfalten, Marionettenfalten, Mundwinkel oder eingefallene Wangen werden aufgefüllt. Das Gesicht wirkt voller, frischer und definierter. Sofortige Sichtbarkeit, Haltbarkeit 9-18 Monate.",
         treatmentUrl: "/hyaluron/filler"
       },
       {
-        imageUrl: "/assets/kollagenstimulation/kollagenstimulation_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//kollagenstimulation/kollagenstimulation_hero.webp",
         imageAlt: "Kollagenstimulation mit Radiesse für langanhaltende Hautstraffung",
         title: "Kollagenstimulation",
         description: "Eine besonders innovative Anti-Aging-Methode: Calciumhydroxylapatit regt die körpereigene Kollagenproduktion an. Über Monate hinweg baut Ihre Haut neues Stützgerüst auf – für natürliche Straffung und Volumenzunahme. Ideal für Wangen, Kieferlinie und Hände. Langanhaltende Ergebnisse bis zu 18 Monate.",
         treatmentUrl: "/kollagenstimulation"
       },
       {
-        imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//hyaluron/hyaluron-profhilo_hero.webp",
         imageAlt: "Profhilo Bio-Remodelling für verbesserte Hautqualität",
         title: "Profhilo (Bio-Remodelling)",
         description: "Revolution in der Hautverjüngung: Hochkonzentrierte Hyaluronsäure wird strategisch an wenigen Punkten injiziert und verteilt sich gleichmäßig im Gewebe. Die Haut wird von innen befeuchtet, gestrafft und ihre Qualität deutlich verbessert. Kein Volumenaufbau, sondern pure Hautverjüngung. Haltbarkeit etwa 6 Monate.",
         treatmentUrl: "/hyaluron/profhilo"
       },
       {
-        imageUrl: "/assets/polynukleotide/polynukleotide_hero.webp",
+        imageUrl: "/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_hero.webp",
         imageAlt: "Polynukleotide Behandlung für Zellregeneration und Hauterneuerung",
         title: "Polynukleotide (PDRN-Therapie)",
         description: "Die neueste Generation der Hautverjüngung: DNA-Fragmente (Polynukleotide) stimulieren die Zellerneuerung auf molekularer Ebene. Ideal bei erschlaffter Haut, feinen Linien und zur Verbesserung der Hautstruktur. Besonders wirksam an Unterlid, Wangen und Hals. Natürliche Regeneration von innen heraus.",
         treatmentUrl: "/polynukleotide"
       },
       {
-        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp",
         imageAlt: "Eigenbluttherapie PRP/PRF für natürliche Hautverjüngung",
         title: "Eigenbluttherapie (PRP/PRF)",
         description: "Verjüngung mit Ihrem eigenen Blut: Aus Ihrem Blut wird ein Konzentrat gewonnen, das reich an Wachstumsfaktoren ist. Dieses wird in die Haut injiziert und regt die Regeneration, Kollagenbildung und Durchblutung an. 100% natürlich, keine Fremdsubstanzen. Ideal zur allgemeinen Hautverjüngung und bei feinen Linien.",
         treatmentUrl: "/eigenbluttherapie-prf/vampire-lifting"
       },
       {
-        imageUrl: "/assets/chemisches-peeling_hero.jpg",
+        imageUrl: "/elaesthetics-bremen-github/assets//chemisches-peeling_hero.webp",
         imageAlt: "Chemisches Peeling für Hauterneuerung und ebenmäßige Haut",
         title: "Chemisches Peeling",
         description: "Hauterneuerung durch kontrollierte Schälung: Fruchtsäuren oder TCA entfernen abgestorbene Hautzellen und regen die Zellerneuerung an. Das Ergebnis: feinere Poren, ebenmäßigerer Teint, reduzierte Pigmentflecken und glattere Hautoberfläche. Verschiedene Intensitätsstufen für individuelle Bedürfnisse.",
         treatmentUrl: "/anti-aging/chemisches-peeling"
       },
       {
-        imageUrl: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp",
         imageAlt: "Medizinisches Microneedling für Kollagenaufbau und Hautstraffung",
         title: "Medizinisches Microneedling",
         description: "Durch gezielte Mikroverletzungen der Haut wird die Kollagen- und Elastinproduktion massiv angekurbelt. Die Haut regeneriert sich, wird straffer, praller und ebenmäßiger. Ideal zur Verbesserung der Hautstruktur, bei feinen Linien und zur allgemeinen Hautverjüngung. Kombinierbar mit Wirkstoffen oder PRF.",
@@ -165,7 +165,7 @@ export default function AntiAgingHubPage() {
     ],
     ctaText: "Jetzt persönliche Beratung vereinbaren",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
     imageAlt: "Ola El-Armouche berät Patientin zu individuellen Anti-Aging-Behandlungsmöglichkeiten",
     backgroundColor: "bg-[#FDF6F0]"
   };

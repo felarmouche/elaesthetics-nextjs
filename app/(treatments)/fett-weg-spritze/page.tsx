@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         type: 'website',
         locale: 'de_DE',
         images: [
-            'https://elaesthetics-bremen.de/assets/fett-weg-spritze/og-fett-weg-spritze-bremen.png',
+            'https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//fett-weg-spritze/og-fett-weg-spritze-bremen.webp',
         ],
     },
     alternates: {
@@ -56,7 +56,7 @@ export default function FettWegSpritzePage() {
         title: 'Fett-weg-Spritze (Injektionslipolyse) in Bremen',
         subtitle:
             'Gezielte Fettreduktion ohne Operation: Doppelkinn, Hängebäckchen & lokale Fettdepots dauerhaft auflösen – minimal-invasiv mit langanhaltenden Ergebnissen.',
-        imageSrc: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp',
+        imageSrc: '/elaesthetics-bremen-github/assets//fett-weg-spritze/fett-weg-spritze_hero.webp',
         imageAlt:
             'Fett-weg-Spritze Behandlung für Doppelkinn bei EL Aesthetics in Bremen',
         primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
@@ -153,32 +153,32 @@ export default function FettWegSpritzePage() {
             {
                 title: 'Preis',
                 description: 'ab 180€ pro Behandlung*',
-                iconUrl: '/assets/icons/EUR.svg',
+                iconUrl: '/elaesthetics-bremen-github/assets//icons/EUR.svg',
             },
             {
                 title: 'Dauer',
                 description: '30-45 Min',
-                iconUrl: '/assets/icons/TIME.svg',
+                iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg',
             },
             {
                 title: 'Wirkeintritt',
                 description: 'individuell, nach 2-3 Behandlungen sichtbar',
-                iconUrl: '/assets/icons/CAL.svg',
+                iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg',
             },
             {
                 title: 'Lokalanästhesie',
                 description: 'i.d.R. nicht notwendig',
-                iconUrl: '/assets/icons/Spritze.svg',
+                iconUrl: '/elaesthetics-bremen-github/assets//icons/Spritze.svg',
             },
             {
                 title: 'Gesellschaftsfähig',
                 description: 'i.d.R. sofort',
-                iconUrl: '/assets/icons/gesellschaft.svg',
+                iconUrl: '/elaesthetics-bremen-github/assets//icons/gesellschaft.svg',
             },
             {
                 title: 'Wiederholungen',
                 description: '3-5 Behandlungen, Abstand 2-8 Wochen',
-                iconUrl: '/assets/icons/wiederholung.svg',
+                iconUrl: '/elaesthetics-bremen-github/assets//icons/wiederholung.svg',
             },
         ],
         note: '*Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).',
@@ -344,7 +344,7 @@ export default function FettWegSpritzePage() {
         ],
         ctaText: 'Jetzt Beratungstermin buchen',
         ctaHref: '/terminanfragen',
-        imageSrc: '/assets/tinified/IMG_7364.webp',
+        imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
         imageAlt:
             'Ärztin Ola El-Armouche – Expertin für Fett-weg-Spritze in Bremen',
         backgroundColor: 'bg-[#FDF6F0]',
@@ -355,7 +355,7 @@ export default function FettWegSpritzePage() {
     title: 'Weitere Behandlungen',
     treatments: [
       {
-        imageUrl: '/assets/botox/botox-faltenbehandlung_hero.webp',
+        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp',
         imageAlt: 'Ein Männer- und ein Frauen-Gesicht nach einer Botox Behandlung',
         title: 'Botulinum',
         description:
@@ -363,7 +363,7 @@ export default function FettWegSpritzePage() {
         treatmentUrl: '/botox/',
       },
       {
-        imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.png',
+        imageUrl: '/elaesthetics-bremen-github/assets//kollagenstimulation/kollagenstimulation_hero.webp',
         imageAlt: 'Kollagenstimulation mit Radiesse für Hautstraffung',
         title: 'Kollagenstimulation',
         description:
@@ -371,7 +371,7 @@ export default function FettWegSpritzePage() {
         treatmentUrl: '/kollagenstimulation',
       },
       {
-        imageUrl: '/assets/hyaluron/hyaluron-filler_hero.png',
+        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-filler_hero.webp',
         imageAlt: 'Hyaluron Filler für Gesichtskonturierung',
         title: 'Hyaluron Filler',
         description:

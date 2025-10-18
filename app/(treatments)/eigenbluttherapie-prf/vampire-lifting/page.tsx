@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets/prf/og-prf-vampire-lifting-haut-bremen.png',
+      'https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//prf/og-prf-vampire-lifting-haut-bremen.webp',
     ],
   },
   alternates: {
@@ -54,7 +54,7 @@ export default function PRFHautPage() {
     title: 'PRF Vampire Lifting für die Haut in Bremen',
     subtitle:
       'Natürliche Hautverjüngung mit Eigenblut: Hautstruktur verbessern, Kollagen aufbauen & natürlichen Glow erzeugen – 100% körpereigene Biostimulation.',
-    imageSrc: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.png',
+    imageSrc: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
     imageAlt:
       'PRF Vampire Lifting Hautverjüngung bei EL Aesthetics in Bremen',
     primaryCTA: { text: 'Hautanalyse anfragen', href: '/terminanfragen' },
@@ -134,27 +134,27 @@ export default function PRFHautPage() {
       {
         title: 'Preis',
         description: 'ab 300€ pro Sitzung*',
-        iconUrl: '/assets/icons/EUR.svg',
+        iconUrl: '/elaesthetics-bremen-github/assets//icons/EUR.svg',
       },
       {
         title: 'Dauer',
         description: '1,5-2 Stunden',
-        iconUrl: '/assets/icons/TIME.svg',
+        iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg',
       },
       {
         title: 'Wirkeintritt',
         description: 'nach 2-3 Behandlungen',
-        iconUrl: '/assets/icons/CAL.svg',
+        iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg',
       },
       {
         title: 'Lokalanästhesie',
         description: 'ja, auf Wunsch',
-        iconUrl: '/assets/icons/Spritze.svg',
+        iconUrl: '/elaesthetics-bremen-github/assets//icons/Spritze.svg',
       },
       {
         title: 'Wiederholung',
         description: '4-6 Mal, Abstand 4-6 Wochen, Auffrischung 1-2x/Jahr',
-        iconUrl: '/assets/icons/wiederholung.svg',
+        iconUrl: '/elaesthetics-bremen-github/assets//icons/wiederholung.svg',
       },
     ],
     note: '*Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).',
@@ -306,7 +306,7 @@ export default function PRFHautPage() {
     ],
     ctaText: 'Jetzt Hautanalyse-Termin buchen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
+    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Expertin für PRF Vampire Lifting in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -316,7 +316,7 @@ export default function PRFHautPage() {
     title: 'Weitere regenerative Behandlungen für die Haut',
     treatments: [
       {
-        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.png',
+        imageUrl: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp',
         imageAlt: 'Medizinisches Microneedling mit PRF',
         title: 'PRF Microneedling (Plasmaneedling)',
         description:
@@ -324,7 +324,7 @@ export default function PRFHautPage() {
         treatmentUrl: '/eigenbluttherapie-prf/microneedling',
       },
       {
-        imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.png',
+        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-skinbooster_hero.webp',
         imageAlt: 'Hyaluron Skinbooster',
         title: 'Hyaluron Skinbooster',
         description:
@@ -332,7 +332,7 @@ export default function PRFHautPage() {
         treatmentUrl: '/hyaluron/skinbooster',
       },
       {
-        imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
+        imageUrl: '/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_hero.webp',
         imageAlt: 'Polynukleotide',
         title: 'Polynukleotide',
         description:

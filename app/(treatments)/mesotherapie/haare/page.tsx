@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description: 'Effektive Mesotherapie bei Haarausfall. Stärken Sie Ihre Haarwurzeln, fördern Sie das Haarwachstum und verdichten Sie Ihr Haar – für Männer und Frauen.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haare-bremen.png'],
+    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//mesotherapie/og-image-mesotherapie-haare-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/mesotherapie/haare',
@@ -24,7 +24,7 @@ export default function MesotherapieHaarePage() {
   const heroData: HeroSectionProps = {
     title: "Mesotherapie gegen Haarausfall & für volleres Haar in Bremen",
     subtitle: "Leiden Sie unter Haarausfall oder dünner werdendem Haar?\nMit der Mesotherapie aktivieren wir Ihre Haarwurzeln und fördern das Haarwachstum – natürlich und nachhaltig.",
-    imageSrc: "/assets/mesotherapie/mesotherapie-haare_hero.png",
+    imageSrc: "/elaesthetics-bremen-github/assets//mesotherapie/mesotherapie-haare_hero.webp",
     imageAlt: "Mesotherapie Behandlung gegen Haarausfall in Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -67,13 +67,13 @@ export default function MesotherapieHaarePage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Die Mesotherapie für Haare auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.haare.mesotherapie}€*`, iconUrl: "/assets/icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 30-45 Min", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Wirkung", description: "ab 3. Behandlung spürbar\nvollständig nach 2-3 Monaten", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Haltbarkeit", description: "6-12 Monate", iconUrl: "/assets/icons/CAL.svg" },
-      { title: "Behandlungen", description: "6-10 Sitzungen alle 1-2 Wochen\nAuffrischung: alle 3-6 Monate", iconUrl: "/assets/icons/wiederholung.svg" },
-      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.haare.mesotherapie}€*`, iconUrl: "/elaesthetics-bremen-github/assets//icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 30-45 Min", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
+      { title: "Wirkung", description: "ab 3. Behandlung spürbar\nvollständig nach 2-3 Monaten", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
+      { title: "Haltbarkeit", description: "6-12 Monate", iconUrl: "/elaesthetics-bremen-github/assets//icons/CAL.svg" },
+      { title: "Behandlungen", description: "6-10 Sitzungen alle 1-2 Wochen\nAuffrischung: alle 3-6 Monate", iconUrl: "/elaesthetics-bremen-github/assets//icons/wiederholung.svg" },
+      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/elaesthetics-bremen-github/assets//icons/Spritze.svg" },
+      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/elaesthetics-bremen-github/assets//icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -202,7 +202,7 @@ export default function MesotherapieHaarePage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
+    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Haarmesotherapie in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -211,28 +211,28 @@ export default function MesotherapieHaarePage() {
     title: "Weitere Behandlungen gegen Haarausfall in Bremen",
     treatments: [
       {
-        imageUrl: "/assets/prf/prf_haar_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//prf/prf_haar_hero.webp",
         imageAlt: "PRF Eigenbluttherapie für Haare",
         title: "PRF/PRP-Eigenbluttherapie für Haare",
         description: "Nutzen Sie die regenerativen Kräfte Ihres eigenen Blutes zur Aktivierung der Haarwurzeln. Besonders effektiv in Kombination mit Mesotherapie.",
         treatmentUrl: "/haarausfall-behandlung/eigenbluttherapie"
       },
       {
-        imageUrl: "/assets/polynukleotide/polynukleotide_haar_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_haar_hero.webp",
         imageAlt: "Polynukleotide Behandlung für Haarwurzeln",
         title: "Polynukleotide für Haare",
         description: "Innovative Behandlung zur Regeneration der Haarfollikel und Verbesserung der Kopfhaut-Gesundheit. Ideal bei fortgeschrittenem Haarausfall.",
         treatmentUrl: "/haarausfall-behandlung/polynukleotide"
       },
       {
-        imageUrl: "/assets/microneedling/microneedling_haar_hero.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//microneedling/microneedling_haar_hero.webp",
         imageAlt: "Microneedling der Kopfhaut",
         title: "Medizinisches Microneedling der Kopfhaut",
         description: "Fördern Sie die Durchblutung der Kopfhaut und die Aufnahme von Wirkstoffen durch gezielte Mikroverletzungen. Unterstützt das Haarwachstum effektiv.",
         treatmentUrl: "/haarausfall-behandlung/microneedling"
       },
       {
-        imageUrl: "/assets/beratung/haarausfall_beratung.png",
+        imageUrl: "/elaesthetics-bremen-github/assets//beratung/haarausfall_beratung.webp",
         imageAlt: "Umfassende Haarausfall-Beratung",
         title: "Umfassende Haarausfall-Diagnostik",
         description: "Lassen Sie uns gemeinsam die Ursachen Ihres Haarausfalls analysieren und einen individuellen Behandlungsplan erstellen.",

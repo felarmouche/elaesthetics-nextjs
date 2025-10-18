@@ -1,6 +1,6 @@
 // Alle Preise zentral; Texte bleiben in den Seiten-Komponenten.
 export const API_KEY = "sf_84ccl57a14h5b7gb760h4nec";
-export const DOMAIN = "http://localhost:3000"; // TODO: Anpassen für Produktion
+export const DOMAIN = "https://elaesthetics-bremen.de";
 export const REPO_PREFIX = "elaesthetics-bremen-github"
 
 export const PRICES = {
