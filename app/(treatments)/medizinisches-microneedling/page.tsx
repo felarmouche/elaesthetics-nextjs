@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       'Schonende Kollagen-Induktion mit individuell angepasster Nadeltiefe. Für Aknenarben, Porenverfeinerung und ebenmäßiges Hautbild – in ärztlicher Hand.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//microneedling/og-microneedling-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets//microneedling/og-microneedling-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/medizinisches-microneedling',
@@ -51,7 +51,7 @@ export default function MedizinischesMicroneedlingPage() {
     title: "Medizinisches Microneedling in Bremen",
     subtitle:
       "Schonende Kollagen-Induktion für ein glatteres, feinporiges Hautbild – individuell, präzise und in ärztlicher Hand.",
-    imageSrc: "/elaesthetics-bremen-github/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp",
+    imageSrc: "/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp",
     imageAlt: "Medizinisches Microneedling in der Praxis EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -97,12 +97,12 @@ export default function MedizinischesMicroneedlingPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Microneedling auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.medizinischesMicroneedling}€*`, iconUrl: "/elaesthetics-bremen-github/assets//icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 60 Min", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
-      { title: "Sitzungen", description: "3–6 Behandlungen, alle ~4 Wochen", iconUrl: "/elaesthetics-bremen-github/assets//icons/wiederholung.svg" },
-      { title: "Auffrischung", description: "empfohlen nach ~6 Monaten", iconUrl: "/elaesthetics-bremen-github/assets//icons/CAL.svg" },
-      { title: "Betäubung", description: "i. d. R. nicht nötig (auf Wunsch)", iconUrl: "/elaesthetics-bremen-github/assets//icons/Spritze.svg" },
-      { title: "Downtime", description: "gesellschaftsfähig nach 1–3 Tagen", iconUrl: "/elaesthetics-bremen-github/assets//icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.medizinischesMicroneedling}€*`, iconUrl: "/assets//icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 60 Min", iconUrl: "/assets//icons/TIME.svg" },
+      { title: "Sitzungen", description: "3–6 Behandlungen, alle ~4 Wochen", iconUrl: "/assets//icons/wiederholung.svg" },
+      { title: "Auffrischung", description: "empfohlen nach ~6 Monaten", iconUrl: "/assets//icons/CAL.svg" },
+      { title: "Betäubung", description: "i. d. R. nicht nötig (auf Wunsch)", iconUrl: "/assets//icons/Spritze.svg" },
+      { title: "Downtime", description: "gesellschaftsfähig nach 1–3 Tagen", iconUrl: "/assets//icons/gesellschaft.svg" }
     ],
     note: "*Preise sind Richtwerte nach GOÄ und werden im Beratungsgespräch individuell festgelegt."
   };
@@ -192,7 +192,7 @@ export default function MedizinischesMicroneedlingPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
+    imageSrc: "/assets//tinified/IMG_7364.webp",
     imageAlt: "Beratung zum medizinischen Microneedling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -201,7 +201,7 @@ export default function MedizinischesMicroneedlingPage() {
     title: "Verwandte Behandlungen",
     treatments: [
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp",
+        imageUrl: "/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp",
         imageAlt: "PRF Plasma-Needling zur Intensivierung",
         title: "PRF-Microneedling (Plasma-Needling)",
         description:
@@ -209,7 +209,7 @@ export default function MedizinischesMicroneedlingPage() {
         treatmentUrl: "/eigenbluttherapie-prf/microneedling"
       },
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//mesotherapie/mesotherapie-haut_hero.webp",
+        imageUrl: "/assets//mesotherapie/mesotherapie-haut_hero.webp",
         imageAlt: "Mesotherapie für Hautqualität",
         title: "Mesotherapie (Haut)",
         description:
@@ -217,7 +217,7 @@ export default function MedizinischesMicroneedlingPage() {
         treatmentUrl: "/mesotherapie"
       },
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//chemisches-peeling/chemisches-peeling_hero.webp",
+        imageUrl: "/assets//chemisches-peeling/chemisches-peeling_hero.webp",
         imageAlt: "Chemisches Peeling",
         title: "Chemisches Peeling",
         description:
@@ -225,7 +225,7 @@ export default function MedizinischesMicroneedlingPage() {
         treatmentUrl: "/chemisches-peeling"
       },
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//hyaluron/hyaluron-skinbooster_hero.webp",
+        imageUrl: "/assets//hyaluron/hyaluron-skinbooster_hero.webp",
         imageAlt: "Skinbooster",
         title: "Skinbooster",
         description:
@@ -306,8 +306,7 @@ export default function MedizinischesMicroneedlingPage() {
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }

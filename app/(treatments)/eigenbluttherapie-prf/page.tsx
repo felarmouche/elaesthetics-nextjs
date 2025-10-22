@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       'Platelet-Rich Fibrin (PRF): 100% körpereigene Regeneration für Haut (Glow, Fältchen, Aknenarben) & Haare (Haardichte, -durchmesser).',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/og-eigenbluttherapie-prf.webp'],
+    images: ['https://elaesthetics-bremen.de/assets//eigenbluttherapie-prf/og-eigenbluttherapie-prf.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie-prf',
@@ -44,7 +44,7 @@ export default function EigenbluttherapiePRFPage() {
     title: 'Eigenbluttherapie mit PRF in Bremen',
     subtitle:
       'Natürliche Regeneration mit Platelet‑Rich Fibrin (PRF): Hautqualität verbessern & Haarausfall entgegenwirken – 100% körpereigen.',
-    imageSrc: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
+    imageSrc: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
     imageAlt:
       'Eigenbluttherapie PRF für Haut und Haare bei EL Aesthetics in Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
@@ -67,7 +67,7 @@ export default function EigenbluttherapiePRFPage() {
     title: 'Anwendungen der PRF‑Eigenbluttherapie',
     treatments: [
         {
-        imageUrl: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp',
+        imageUrl: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp',
         imageAlt: 'PRF‑Behandlung gegen Haarausfall in Bremen',
         title: 'PRF für die Haare',
         description:
@@ -75,7 +75,7 @@ export default function EigenbluttherapiePRFPage() {
         treatmentUrl: '/eigenbluttherapie-prf/haare',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
+        imageUrl: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
         imageAlt:
           'PRF‑Eigenbluttherapie für die Haut: Feine Fältchen, Poren, Aknenarben, Unterlid',
         title: 'PRF für die Haut',
@@ -84,7 +84,7 @@ export default function EigenbluttherapiePRFPage() {
         treatmentUrl: '/eigenbluttherapie-prf/vampire-lifting',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp',
+        imageUrl: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp',
         imageAlt: 'Medizinisches Microneedling mit PRF in Bremen',
         title: 'Microneedling + PRF',
         description:
@@ -130,7 +130,7 @@ export default function EigenbluttherapiePRFPage() {
     ],
     ctaText: 'Jetzt Beratungsgespräch vereinbaren',
     ctaHref: '/terminanfragen',
-    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets//tinified/IMG_7364.webp',
     imageAlt:
       'Ärztliche Beratung zur Eigenbluttherapie PRF in Bremen bei EL Aesthetics',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -224,8 +224,7 @@ export default function EigenbluttherapiePRFPage() {
       />
       <ConsultationSection {...consultationData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }

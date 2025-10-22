@@ -13,10 +13,10 @@ export const metadata: Metadata = {
     description: 'Entdecken Sie professionelle Botox-Behandlungen gegen Stirnfalten, Zornesfalten und Krähenfüße in Bremen. Für ein frisches, jugendliches Aussehen ohne gefrorene Mimik.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//botox/og-image-botox-faltenbehandlung-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-faltenbehandlung-bremen.webp'],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/botox/faltenbehandlung',
+    canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/faltenbehandlung',
   },
 };
 
@@ -24,7 +24,7 @@ export default function BotoxFaltenbehandlungPage() {
   const heroData: HeroSectionProps = {
     title: "Botox Faltenbehandlung in Bremen",
     subtitle: "Suchen Sie nach einer effektiven Behandlung gegen Stirnfalten, Zornesfalten oder Krähenfüße?\nBei EL Aesthetics erzielen wir natürliche Ergebnisse mit Botulinumtoxin.",
-    imageSrc: "/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp",
+    imageSrc: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
     imageAlt: "Frau nach erfolgreicher Botox Faltenbehandlung in Bremen mit glattem Stirnbereich",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -66,12 +66,12 @@ export default function BotoxFaltenbehandlungPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Die Botulinumtoxin Faltenbehandlung auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.botulinum.faltenbehandlung}€*`, iconUrl: "/elaesthetics-bremen-github/assets//icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 15-20 Min", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
-      { title: "Wirkung", description: "nach 3-7 Tagen sichtbar", iconUrl: "/elaesthetics-bremen-github/assets//icons/TIME.svg" },
-      { title: "Haltbarkeit", description: "3-6 Monate", iconUrl: "/elaesthetics-bremen-github/assets//icons/CAL.svg" },
-      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/elaesthetics-bremen-github/assets//icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/elaesthetics-bremen-github/assets//icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.botulinum.faltenbehandlung}€*`, iconUrl: "/assets//icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 15-20 Min", iconUrl: "/assets//icons/TIME.svg" },
+      { title: "Wirkung", description: "nach 3-7 Tagen sichtbar", iconUrl: "/assets//icons/TIME.svg" },
+      { title: "Haltbarkeit", description: "3-6 Monate", iconUrl: "/assets//icons/CAL.svg" },
+      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets//icons/Spritze.svg" },
+      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets//icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -196,7 +196,7 @@ export default function BotoxFaltenbehandlungPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp",
+    imageSrc: "/assets//tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für eine Botulinumtoxin Faltenbehandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -205,32 +205,32 @@ export default function BotoxFaltenbehandlungPage() {
     title: "Weitere Botulinumtoxin Behandlungen in Bremen",
     treatments: [
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-masseter_hero.webp",
+        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp",
         imageAlt: "Botox Behandlung des Masseter-Muskels zur Gesichtskonturierung",
         title: "Masseter-Behandlung (Jawline)",
         description: "Durch gezielte Botulinumtoxin-Injektionen in den Kaumuskel (Masseter) kann die Gesichtsform harmonisiert und eine markante Jawline geschaffen werden. Auch bei Zähneknirschen (Bruxismus) ist diese Behandlung sehr wirksam.",
-        treatmentUrl: "/botox/masseter"
+        treatmentUrl: "/botulinumtoxin/masseter"
       },
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-microbotox_hero.webp",
+        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp",
         imageAlt: "Microbotox Behandlung für feinere Hautstruktur und Porenverfeinung",
         title: "Microbotox (Skin Quality)",
         description: "Microbotox wird flächig in die oberen Hautschichten injiziert und verbessert die Hautqualität, verfeinert Poren und reduziert die Talgproduktion. Ideal für einen ebenmäßigen, glatten Teint.",
-        treatmentUrl: "/botox/microbotox"
+        treatmentUrl: "/botulinumtoxin/microbotox"
       },
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-hyperhidrose_hero.webp",
+        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp",
         imageAlt: "Botox Behandlung gegen übermäßiges Schwitzen",
         title: "Hyperhidrose-Behandlung",
         description: "Bei übermäßigem Schwitzen (Hyperhidrose) kann Botulinumtoxin die Schweißproduktion deutlich reduzieren. Die Behandlung ist besonders effektiv an Achseln, Händen und Füßen.",
-        treatmentUrl: "/botox/hyperhidrose"
+        treatmentUrl: "/botulinumtoxin/hyperhidrose"
       },
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//botox/botox-migräne_hero.webp",
+        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp",
         imageAlt: "Botox zur Behandlung chronischer Migräne",
         title: "Migräne-Behandlung",
         description: "Chronische Migränepatienten können durch gezielte Botulinumtoxin-Injektionen an bestimmten Kopf- und Nackenpunkten eine deutliche Reduktion der Anfallshäufigkeit und Schmerzintensität erfahren.",
-        treatmentUrl: "/botox/migraene"
+        treatmentUrl: "/botulinumtoxin/migraene"
       }
     ]
   };
@@ -301,8 +301,7 @@ export default function BotoxFaltenbehandlungPage() {
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }

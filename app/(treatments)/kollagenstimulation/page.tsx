@@ -19,7 +19,7 @@ export const metadata: Metadata = {
       'Schonend und präzise: Kollagenstimulation mit Hyaluronsäure & Calciumhydroxylapatit zur Unterstützung von Hautfestigkeit und -qualität. Ärztliche Behandlung in Bremen.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//kollagen/og-kollagenstimulation-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets//kollagen/og-kollagenstimulation-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/kollagenstimulation',
@@ -31,7 +31,7 @@ export default function KollagenstimulationPage() {
     title: 'Kollagenstimulation in Bremen',
     subtitle:
       'Unterstützung von Hautfestigkeit & -qualität durch eine Kombination aus Hyaluronsäure und Calciumhydroxylapatit – präzise, ärztlich & natürlich wirkend.',
-    imageSrc: '/elaesthetics-bremen-github/assets//kollagenstimulation/kollagenstimulation_hero.webp',
+    imageSrc: '/assets//kollagenstimulation/kollagenstimulation_hero.webp',
     imageAlt: 'Kollagenstimulation in Bremen – ärztliche Injektion mit feiner Kanüle',
     primaryCTA: { text: 'Termin vereinbaren', href: '/terminanfragen' },
     secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
@@ -82,12 +82,12 @@ export default function KollagenstimulationPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Kollagenstimulation – auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 900€*', iconUrl: '/elaesthetics-bremen-github/assets//icons/EUR.svg' },
-      { title: 'Dauer', description: 'ca. 60–90 Min', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
-      { title: 'Wirkung', description: 'Volumen teils sofort; Kollagenaufbau über Wochen', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
-      { title: 'Haltbarkeit', description: 'ca. 18–24 Monate', iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg' },
-      { title: 'Betäubung', description: 'i. d. R. nicht erforderlich', iconUrl: '/elaesthetics-bremen-github/assets//icons/Spritze.svg' },
-      { title: 'Ausfallzeit', description: 'meist sofort gesellschaftsfähig', iconUrl: '/elaesthetics-bremen-github/assets//icons/gesellschaft.svg' },
+      { title: 'Preis', description: 'ab 900€*', iconUrl: '/assets//icons/EUR.svg' },
+      { title: 'Dauer', description: 'ca. 60–90 Min', iconUrl: '/assets//icons/TIME.svg' },
+      { title: 'Wirkung', description: 'Volumen teils sofort; Kollagenaufbau über Wochen', iconUrl: '/assets//icons/TIME.svg' },
+      { title: 'Haltbarkeit', description: 'ca. 18–24 Monate', iconUrl: '/assets//icons/CAL.svg' },
+      { title: 'Betäubung', description: 'i. d. R. nicht erforderlich', iconUrl: '/assets//icons/Spritze.svg' },
+      { title: 'Ausfallzeit', description: 'meist sofort gesellschaftsfähig', iconUrl: '/assets//icons/gesellschaft.svg' },
     ],
     note: '*Individuelle Richtwerte. Die Abrechnung erfolgt nach GOÄ.',
   };
@@ -158,7 +158,7 @@ export default function KollagenstimulationPage() {
     ],
     ctaText: 'Beratungstermin anfragen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets//tinified/IMG_7364.webp',
     imageAlt: 'Ärztliches Beratungsgespräch in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
   };
@@ -167,21 +167,21 @@ export default function KollagenstimulationPage() {
     title: 'Verwandte Behandlungen',
     treatments: [
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-filler_hero.webp',
+        imageUrl: '/assets//hyaluron/hyaluron-filler_hero.webp',
         imageAlt: 'Hyaluronsäure-Filler',
         title: 'Hyaluronsäure-Filler',
         description: 'Kontur, Ausgleich & Support ausgewählter Areale – dezent und maßvoll.',
         treatmentUrl: '/hyaluron',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
+        imageUrl: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
         imageAlt: 'PRF Eigenbluttherapie',
         title: 'PRF/PRP',
         description: 'Autologe Regeneration zur Unterstützung der Hautqualität.',
         treatmentUrl: '/eigenbluttherapie-prf',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp',
+        imageUrl: '/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp',
         imageAlt: 'Microneedling',
         title: 'Medizinisches Microneedling',
         description: 'Struktur & Glow – medizinisches Needling mit Hygiene-Standards.',
@@ -189,14 +189,14 @@ export default function KollagenstimulationPage() {
 
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//mesotherapie/mesotherapie-haut_hero.webp',
+        imageUrl: '/assets//mesotherapie/mesotherapie-haut_hero.webp',
         imageAlt: 'Mesotherapie',
         title: 'Mesotherapie',
         description: 'Feuchtigkeits-Boost und Vitalisierung – individuell abgestimmt.',
         treatmentUrl: '/mesotherapie',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_hero.webp',
+        imageUrl: '/assets//polynukleotide/polynukleotide_hero.webp',
         imageAlt: 'Polynukleotide',
         title: 'Polynukleotide',
         description: 'Biostimulatorische Unterstützung der Hautqualität.',
@@ -277,8 +277,7 @@ export default function KollagenstimulationPage() {
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
       {/* Rechtshinweis gem. HWG: kein Heilsversprechen, individuelle Ergebnisse variieren */}
     </div>
   );

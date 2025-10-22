@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         description: 'Entdecken Sie bei EL Aesthetics Bremen innovative Wege zur Behandlung von Haarausfall. Wir schaffen die Basis für gesundes Haarwachstum mit PRF, Mesotherapie und mehr.',
         type: 'website',
         locale: 'de_DE',
-        images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//haarausfall/og-image-haarausfall-bremen.webp'], // Pfad anpassen
+        images: ['https://elaesthetics-bremen.de/assets//haarausfall/og-image-haarausfall-bremen.webp'], // Pfad anpassen
     },
     alternates: {
         canonical: 'https://elaesthetics-bremen.de/haarausfall-behandlung',
@@ -23,7 +23,7 @@ export default function HaarausfallHubPage() {
     const heroData: HeroSectionProps = {
         title: "Haarausfall Behandlung in Bremen",
         subtitle: "Unsere Ansätze gegen Haarverlust: Nicht nur die Symptome sollen gestoppt werden. Wir schaffen eine Grundlage für gesundes und kräftiges Haarwachstum.",
-        imageSrc: "/elaesthetics-bremen-github/assets//haarausfall-behandlung/haarausfall-behandlung_hero.webp", // Pfad anpassen
+        imageSrc: "/assets//haarausfall-behandlung/haarausfall-behandlung_hero.webp", // Pfad anpassen
         imageAlt: "Symbolbild für eine Haarausfall Behandlung in der Praxis von EL Aesthetics Bremen",
         primaryCTA: { text: "Termin anfragen", href: "/terminanfragen" },
         secondaryCTA: { text: "Behandlungen ansehen", href: "#treatments" }
@@ -43,14 +43,14 @@ export default function HaarausfallHubPage() {
         title: "Unsere Behandlungen gegen Haarausfall in Bremen",
         treatments: [
             {
-                imageUrl: "/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp", // Pfad anpassen
+                imageUrl: "/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp", // Pfad anpassen
                 imageAlt: "PRF Eigenbluttherapie gegen Haarausfall bei EL Aesthetics Bremen",
                 title: "Eigenbluttherapie (PRF) – Kraft der Regeneration",
                 description: "Diese 100% natürliche Methode nutzt die Kraft Ihres eigenen Körpers. Aus Ihrem Blut gewonnenes, plättchenreiches Fibrin (PRF) ist reich an Wachstumsfaktoren, die geschwächte Haarwurzeln reaktivieren, das Haar kräftigen und das Neuwachstum anregen können.",
                 treatmentUrl: "/eigenbluttherapie-prf/haare"
             },
             {
-                imageUrl: "/elaesthetics-bremen-github/assets//mesotherapie/mesotherapie-haare_hero.webp", // Pfad anpassen
+                imageUrl: "/assets//mesotherapie/mesotherapie-haare_hero.webp", // Pfad anpassen
                 imageAlt: "Mesotherapie für die Haare als Behandlung gegen Haarverlust in Bremen",
                 title: "Mesotherapie – Nährstoff-Boost für Haarwurzeln",
                 description: "Durch feine Mikroinjektionen wird ein individuell zusammengestellter Cocktail aus Vitaminen, Aminosäuren und Mineralien direkt an die Haarwurzel gebracht. Diese gezielte Versorgung kann den Haarausfall stoppen und die Basis für gesundes, widerstandsfähiges Haar schaffen.",
@@ -58,14 +58,14 @@ export default function HaarausfallHubPage() {
             },
            
             {
-                imageUrl: "/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_hero.webp", // Pfad anpassen
+                imageUrl: "/assets//polynukleotide/polynukleotide_hero.webp", // Pfad anpassen
                 imageAlt: "Behandlung mit Polynukleotiden zur Stärkung der Haarwurzeln in Bremen",
                 title: "Polynukleotide – Innovative Zell-Revitalisierung",
                 description: "Als einer der modernsten Ansätze in der regenerativen Medizin, nutzen Polynukleotide die Bausteine der DNA, um die zelleigenen Reparatur- und Regenerationsprozesse anzuregen. Sie verbessern das Kopfhautmilieu und fördern das Haarwachstum auf biophysiologischer Ebene.",
                 treatmentUrl: "/polynukleotide"
             },
              {
-                imageUrl: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp',
+                imageUrl: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp',
                 imageAlt: 'Microneedling mit PRF für die Kopfhaut',
                 title: 'Microneedling + PRF (Kopfhaut)',
                 description:
@@ -107,7 +107,7 @@ export default function HaarausfallHubPage() {
         ],
         ctaText: "Jetzt Analyse anfordern",
         ctaHref: "/terminanfragen",
-        imageSrc: "/elaesthetics-bremen-github/assets//beratung/beratung-haarausfall-bremen.webp", // Pfad anpassen
+        imageSrc: "/assets//beratung/beratung-haarausfall-bremen.webp", // Pfad anpassen
         imageAlt: "Dr. Ola El-Armouche bei der Haaranalyse und Beratung zu Haarausfall in Bremen",
         backgroundColor: "bg-[#FDF6F0]"
     };

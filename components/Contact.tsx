@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import GoogleMaps from './GoogleMaps';
 
 export default function Contact() {
   return (
@@ -11,6 +13,7 @@ export default function Contact() {
           <p className="text-primary text-base font-light">
             Vereinbaren Sie einen Beratungstermin in unserer Praxis in Bremen
           </p>
+          <Link className='p-4 border inline-block mt-4 text-black border-white max-w-[600px] w-full bg-white hover:text-white hover:bg-black transition-color' href="/kontakt">Zum Beratungstermin</Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
@@ -24,6 +27,7 @@ export default function Contact() {
               Richtepad 14<br />
               28355 Bremen
             </p>
+            
           </div>
 
           {/* Kontakt */}
@@ -55,6 +59,7 @@ export default function Contact() {
             </p>
           </div>
         </div>
+        <GoogleMaps/>
       </div>
     </section>
   );

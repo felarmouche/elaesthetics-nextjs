@@ -274,12 +274,12 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({ title, tre
                             <p className="text-stone-600 font-light pt-6 leading-relaxed">
                                 {treatment.description}
                             </p>
-                                <Link
-                                    href={treatment.treatmentUrl}
-                                    className="mt-auto inline-block pt-2 text-blue-600 hover:text-blue-400 transition-colors underline"
-                                >
-                                    Mehr erfahren →
-                                </Link>
+                            <Link
+                                href={treatment.treatmentUrl}
+                                className="mt-auto inline-block pt-2 text-blue-600 hover:text-blue-400 transition-colors underline"
+                            >
+                                Mehr erfahren →
+                            </Link>
                         </div>
                     ))}
                 </div>
@@ -369,13 +369,13 @@ export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
                         </h2>
 
                         {description.map((para, idx) => (
-                            <p 
-                                key={idx} 
+                            <p
+                                key={idx}
                                 className="text-base sm:text-lg text-stone-600 font-light leading-relaxed max-w-prose mx-auto md:mx-0 hover:text-stone-900 transition-colors duration-300"
                             >
                                 {para}
                             </p>
-                        ))}                  
+                        ))}
 
                         <div className="pt-4">
                             <a
@@ -415,7 +415,7 @@ export const TreatmentCareSection: React.FC<TreatmentCareSectionProps> = ({
     afterTreatment
 }) => {
     return (
-        <section id= "treatmentsCare" className="py-20 md:py-32 bg-background-primary/50">
+        <section id="treatmentsCare" className="py-20 md:py-32 bg-background-primary/50">
             <div className="container mx-auto px-6 max-w-7xl">
                 <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
@@ -496,7 +496,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
                 </h2>
                 <div className="space-y-8 divide-y divide-stone-200">
                     {faqs.map((faq, index) => (
-                        <details key={index} className="pt-8 first:pt-0 group">
+                        <details key={index} className="pt-8 first:pt-0 group border-b border-stone-200 pb-4">
                             <summary className="font-light text-xl text-stone-900 cursor-pointer list-none flex justify-between items-center">
                                 {faq.question}
                                 <span className="text-stone-400 group-open:rotate-45 transition-transform">+</span>
@@ -506,6 +506,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
                             </p>
                         </details>
                     ))}
+
                 </div>
             </div>
         </section>

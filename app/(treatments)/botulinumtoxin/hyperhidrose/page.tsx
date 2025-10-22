@@ -40,10 +40,10 @@ export const metadata: Metadata = {
       'Botulinumtoxin blockiert vorübergehend die Schweißproduktion. Geeignet bei übermäßigem Schwitzen (Hyperhidrose) – Achseln. Kurze Ausfallzeit, schnelle Wirkung.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//botox/botox-hyperhidrose_hero.webp'],
+    images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp'],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/botox/hyperhidrose',
+    canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/hyperhidrose',
   },
 };
 
@@ -52,7 +52,7 @@ export default function BotoxHyperhidrosePage() {
     title: 'Botulinumtoxin gegen Hyperhidrose (Achseln)',
     subtitle:
       'Beenden Sie lästiges Achselschwitzen: Botullinumtoxin blockiert vorübergehend die Schweißproduktion – mit kurzer Downtime und natürlichem Ergebnis.',
-    imageSrc: '/elaesthetics-bremen-github/assets//botox/botox-hyperhidrose_hero.webp',
+    imageSrc: '/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp',
     imageAlt: 'Botox-Behandlung gegen Achselschwitzen (Hyperhidrose) in Bremen',
     primaryCTA: { text: 'Termin vereinbaren', href: '/terminanfragen' },
     secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
@@ -88,12 +88,12 @@ export default function BotoxHyperhidrosePage() {
   const benefitsData: QuickInfoSectionProps = {
     title: 'Hyperhidrose-Behandlung auf einen Blick',
     benefits: [
-      { title: 'Preis', description: `ab ${PRICES.botulinum.hyperhidrose}\u20AC*`, iconUrl: '/elaesthetics-bremen-github/assets//icons/EUR.svg' },
-      { title: 'Dauer', description: '30–45 Minuten', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: '10–14 Tage', iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg' },
-      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
-      { title: 'Betäubung', description: 'keine (Betäubungscreme möglich)', iconUrl: '/elaesthetics-bremen-github/assets//icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/elaesthetics-bremen-github/assets//icons/gesellschaft.svg' },
+      { title: 'Preis', description: `ab ${PRICES.botulinum.hyperhidrose}\u20AC*`, iconUrl: '/assets//icons/EUR.svg' },
+      { title: 'Dauer', description: '30–45 Minuten', iconUrl: '/assets//icons/TIME.svg' },
+      { title: 'Wirkeintritt', description: '10–14 Tage', iconUrl: '/assets//icons/CAL.svg' },
+      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/assets//icons/TIME.svg' },
+      { title: 'Betäubung', description: 'keine (Betäubungscreme möglich)', iconUrl: '/assets//icons/Spritze.svg' },
+      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets//icons/gesellschaft.svg' },
     ],
     note:
       '*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt.',
@@ -193,7 +193,7 @@ export default function BotoxHyperhidrosePage() {
     ],
     ctaText: 'Jetzt Beratungstermin anfragen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets//tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Hyperhidrose-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
   };
@@ -202,35 +202,35 @@ export default function BotoxHyperhidrosePage() {
     title: 'Weitere Botulinumtoxin Behandlungen in Bremen',
     treatments: [
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
         imageAlt: 'Botox Faltenbehandlung für Stirn, Zornesfalte und Krähenfüße',
         title: 'Faltenbehandlung',
         description:
           'Klassische Behandlung von Mimikfalten (Stirn, Zornesfalte, Krähenfüße) für einen entspannten Look.',
-        treatmentUrl: '/botox/faltenbehandlung',
+        treatmentUrl: '/botulinumtoxin/faltenbehandlung',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-masseter_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp',
         imageAlt: 'Botox Masseter zur Jawline-Definition & gegen Bruxismus',
         title: 'Masseter / Bruxismus',
         description:
           'Entspannung des Kaumuskels für schmalere Kieferkontur und Linderung von Zähneknirschen & Kieferschmerzen.',
-        treatmentUrl: '/botox/masseter',
+        treatmentUrl: '/botulinumtoxin/masseter',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-microbotox_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp',
         imageAlt: 'Microbotox Behandlung zur Verbesserung der Hautqualität',
         title: 'Microbotox',
         description:
           'Oberflächliche Botulinumtoxin-Anwendung zur Porenverfeinerung und Reduktion von Glanz.',
-        treatmentUrl: '/botox/microbotox',
+        treatmentUrl: '/botulinumtoxin/microbotox',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-migräne_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp',
         imageAlt: 'Botox bei chronischer Migräne',
         title: 'Migräne',
         description: 'Anerkannte Therapieoption bei chronischer Migräne.',
-        treatmentUrl: '/botox/migraene',
+        treatmentUrl: '/botulinumtoxin/migraene',
       },
     ],
   };
@@ -317,8 +317,7 @@ export default function BotoxHyperhidrosePage() {
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }

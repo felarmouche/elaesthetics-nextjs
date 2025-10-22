@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       'Natürlich frischer wirken: Hyaluronfiller für gezielten Volumenaufbau, PRF & Polynukleotide für Hautqualität und Kollagenstimulation (CaHA/PLLA) für definiertere Konturen.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//filler/og-image-faltenunterspritzung-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets//filler/og-image-faltenunterspritzung-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/faltenunterspritzung',
@@ -44,7 +44,7 @@ export default function FaltenunterspritzungHubPage() {
     title: 'Faltenunterspritzung & Filler in Bremen',
     subtitle:
       'Hyaluronfiller für Volumen, PRF & Polynukleotide für Hautqualität, Kollagenstimulation (CaHA/PLLA) für präzisere Konturen – natürlich & professionell.',
-    imageSrc: '/elaesthetics-bremen-github/assets//faltenunterspritzung/faltenunterspritzung_hero.webp',
+    imageSrc: '/assets//faltenunterspritzung/faltenunterspritzung_hero.webp',
     imageAlt:
       'Faltenunterspritzung mit Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation bei EL Aesthetics in Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
@@ -66,7 +66,7 @@ export default function FaltenunterspritzungHubPage() {
     title: 'Behandlungen zur Faltenunterspritzung',
     treatments: [
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-filler_hero.webp',
+        imageUrl: '/assets//hyaluron/hyaluron-filler_hero.webp',
         imageAlt:
           'Hyaluronfiller zur Faltenbehandlung und Konturierung (Lippen, Wangen, Kinn, Jawline)',
         title: 'Hyaluronfiller',
@@ -75,7 +75,7 @@ export default function FaltenunterspritzungHubPage() {
         treatmentUrl: '/hyaluron/filler',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
+        imageUrl: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
         imageAlt:
           'PRF-Eigenbluttherapie für Hautqualität, feine Fältchen und sensible Regionen wie die Tränenrinne',
         title: 'Eigenbluttherapie (PRF)',
@@ -84,7 +84,7 @@ export default function FaltenunterspritzungHubPage() {
         treatmentUrl: '/eigenbluttherapie-prf',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_hero.webp',
+        imageUrl: '/assets//polynukleotide/polynukleotide_hero.webp',
         imageAlt:
           'Polynukleotide (PDRN/PN) zur Hautregeneration und Verbesserung der Hautqualität',
         title: 'Polynukleotide (PN/PDRN)',
@@ -93,7 +93,7 @@ export default function FaltenunterspritzungHubPage() {
         treatmentUrl: '/polynukleotide',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//kollagenstimulation/kollagenstimulation_hero.webp',
+        imageUrl: '/assets//kollagenstimulation/kollagenstimulation_hero.webp',
         imageAlt:
           'Kollagenstimulation mit Calciumhydroxylapatit/PLLA zur Konturdefinition von Wangen, Kinn und Jawline',
         title: 'Kollagenstimulation (z. B. CaHA/PLLA)',
@@ -148,7 +148,7 @@ export default function FaltenunterspritzungHubPage() {
     ],
     ctaText: 'Jetzt Beratungsgespräch vereinbaren',
     ctaHref: '/terminanfragen',
-    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets//tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche berät Patientin zu Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -233,8 +233,7 @@ export default function FaltenunterspritzungHubPage() {
       />
       <ConsultationSection {...consultationData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }

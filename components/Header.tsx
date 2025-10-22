@@ -57,7 +57,7 @@ export default function Header() {
                   className="h-12 w-auto object-contain"
                   width={150}
                   height={150}
-                  src="/elaesthetics-bremen-github/assets//logo-el-gemini.webp"
+                  src="/assets//logo-el-gemini.webp"
                   alt="EL Aesthetics Bremen Logo"
                 />
               </Link>
@@ -80,10 +80,10 @@ export default function Header() {
             <div className="hidden lg:flex items-center gap-4">
               <a
                 href="tel:+4915566919635"
-                className="w-[220px] whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-gray-500 shadow-sm text-sm text-black bg-white hover:text-white hover:bg-black transition-colors flex gap-2"
+                className="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-gray-500 shadow-sm text-sm text-black bg-white hover:text-white hover:bg-black transition-colors flex gap-2"
                 aria-label="EL Aesthetics Bremen telefonisch kontaktieren"
               >
-                <Phone className="h-4 w-4" />
+                <Phone className="h-5 w-5" />
                 0155&nbsp;66919635
               </a>
               <Link

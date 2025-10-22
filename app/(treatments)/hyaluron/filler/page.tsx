@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//hyaluron/og-hyaluron-filler-bremen.webp',
+      'https://elaesthetics-bremen.de/assets//hyaluron/og-hyaluron-filler-bremen.webp',
     ],
   },
   alternates: {
@@ -54,7 +54,7 @@ export default function HyaluronFillerBremenPage() {
     title: 'Hyaluron Filler in Bremen',
     subtitle:
       'Lippen aufspritzen, Falten sanft glätten & Konturen präzisieren – individuell, natürlich, ärztlich.',
-    imageSrc: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-filler_hero.webp',
+    imageSrc: '/assets//hyaluron/hyaluron-filler_hero.webp',
     imageAlt:
       'Hyaluron-Filler-Behandlung in Bremen – Lippen, Falten & Konturen',
     primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
@@ -110,12 +110,12 @@ export default function HyaluronFillerBremenPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Hyaluron-Filler auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 250€*', iconUrl: '/elaesthetics-bremen-github/assets//icons/EUR.svg' },
-      { title: 'Dauer', description: 'ca. 30–45 Min', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
-      { title: 'Ergebnis', description: 'sofort sichtbar', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
-      { title: 'Haltbarkeit', description: 'ca. 6–18 Monate', iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg' },
-      { title: 'Betäubung', description: 'i. d. R. nicht nötig (Lidocain im Gel)', iconUrl: '/elaesthetics-bremen-github/assets//icons/Spritze.svg' },
-      { title: 'Ausfallzeit', description: 'meist sofort gesellschaftsfähig', iconUrl: '/elaesthetics-bremen-github/assets//icons/gesellschaft.svg' },
+      { title: 'Preis', description: 'ab 250€*', iconUrl: '/assets//icons/EUR.svg' },
+      { title: 'Dauer', description: 'ca. 30–45 Min', iconUrl: '/assets//icons/TIME.svg' },
+      { title: 'Ergebnis', description: 'sofort sichtbar', iconUrl: '/assets//icons/TIME.svg' },
+      { title: 'Haltbarkeit', description: 'ca. 6–18 Monate', iconUrl: '/assets//icons/CAL.svg' },
+      { title: 'Betäubung', description: 'i. d. R. nicht nötig (Lidocain im Gel)', iconUrl: '/assets//icons/Spritze.svg' },
+      { title: 'Ausfallzeit', description: 'meist sofort gesellschaftsfähig', iconUrl: '/assets//icons/gesellschaft.svg' },
     ],
     note: '*Richtwert; individuelle Abrechnung gemäß GOÄ.',
   };
@@ -216,7 +216,7 @@ export default function HyaluronFillerBremenPage() {
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets//tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Hyaluron-Filler in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -226,15 +226,15 @@ export default function HyaluronFillerBremenPage() {
     title: 'Weitere Behandlungen',
     treatments: [
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
         imageAlt: 'Botulinumtoxin für mimische Falten',
         title: 'Botulinumtoxin (mimische Falten)',
         description:
           'Perfekte Ergänzung zu Fillern bei Stirn, Zornesfalte & Krähenfüßen.',
-        treatmentUrl: '/botox/faltenbehandlung',
+        treatmentUrl: '/botulinumtoxin/faltenbehandlung',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-hylase_hero.webp',
+        imageUrl: '/assets//hyaluron/hyaluron-hylase_hero.webp',
         imageAlt: 'Hylase Fillerauflösung',
         title: 'Hylase (Fillerauflösung)',
         description:
@@ -242,7 +242,7 @@ export default function HyaluronFillerBremenPage() {
         treatmentUrl: '/hyaluron/hylase',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-skinbooster_hero.webp',
+        imageUrl: '/assets//hyaluron/hyaluron-skinbooster_hero.webp',
         imageAlt: 'Skinbooster zur Hydratation',
         title: 'Skinbooster (eigene Unterseite)',
         description:
@@ -319,8 +319,7 @@ export default function HyaluronFillerBremenPage() {
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }

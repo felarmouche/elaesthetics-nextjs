@@ -31,12 +31,12 @@ Typ 1 = Reine Behandlungseite Links auf ähnliche Behandlungen
 		
 Ordnerstruktur:
 
-├─ /botox/                         (Behandlungsinfos + HUB)         
-│  ├─ /botox/faltenbehandlung
-│  ├─ /botox/masseter
-│  ├─ /botox/microbotox
-│  ├─ /botox/migraene
-│  └─ /botox/hyperhidrose
+├─ /botulinumtoxin/                         (Behandlungsinfos + HUB)         
+│  ├─ /botulinumtoxin/faltenbehandlung
+│  ├─ /botulinumtoxin/masseter
+│  ├─ /botulinumtoxin/microbotox
+│  ├─ /botulinumtoxin/migraene
+│  └─ /botulinumtoxin/hyperhidrose
 │
 ├─ /faltenunterspritzung/          (HUB, keine eigene Behandlung)
 │
@@ -105,5 +105,5 @@ Verlinkungen der Behandlungs-Seiten auf andere Seiten in der TreatmentsSection m
 	fett-weg-spritze/ (Typ 1) Title: Weitere Behandlungen in Bremen
 	/eigenbluttherapie-prf
 	/hyaluron/
-	/botox
+	/botulinumtoxin
 	

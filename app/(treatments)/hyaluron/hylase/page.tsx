@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//hylase/og-hyaluronidase-bremen.webp',
+      'https://elaesthetics-bremen.de/assets//hylase/og-hyaluronidase-bremen.webp',
     ],
   },
   alternates: {
@@ -48,7 +48,7 @@ export default function HyaluronidaseHylasePage() {
   const heroData: HeroSectionProps = {
     title: 'Hyaluronidase (Hylase) in Bremen',
     subtitle: 'Sichere Korrektur & Auflösung von Hyaluron-Fillern: Knötchen, Asymmetrien, Überkorrekturen und Granulome gezielt behandeln – schnelle Wirkung, minimal-invasiv.',
-    imageSrc: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-hylase_hero.webp',
+    imageSrc: '/assets//hyaluron/hyaluron-hylase_hero.webp',
     imageAlt: 'Hyaluronidase Hylase Behandlung zur Hyaluron-Korrektur bei EL Aesthetics in Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
     secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
@@ -134,32 +134,32 @@ export default function HyaluronidaseHylasePage() {
       {
         title: 'Preis',
         description: 'ab 180€ pro Behandlung*',
-        iconUrl: '/elaesthetics-bremen-github/assets//icons/EUR.svg',
+        iconUrl: '/assets//icons/EUR.svg',
       },
       {
         title: 'Dauer',
         description: '15-30 Min',
-        iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg',
+        iconUrl: '/assets//icons/TIME.svg',
       },
       {
         title: 'Wirkeintritt',
         description: 'sofort bis wenige Stunden',
-        iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg',
+        iconUrl: '/assets//icons/CAL.svg',
       },
       {
         title: 'Lokalanästhesie',
         description: 'auf Wunsch möglich',
-        iconUrl: '/elaesthetics-bremen-github/assets//icons/Spritze.svg',
+        iconUrl: '/assets//icons/Spritze.svg',
       },
       {
         title: 'Gesellschaftsfähig',
         description: 'i.d.R. sofort',
-        iconUrl: '/elaesthetics-bremen-github/assets//icons/gesellschaft.svg',
+        iconUrl: '/assets//icons/gesellschaft.svg',
       },
       {
         title: 'Wiederholungen',
         description: 'meist 1 Sitzung, bei Bedarf Wiederholung',
-        iconUrl: '/elaesthetics-bremen-github/assets//icons/wiederholung.svg',
+        iconUrl: '/assets//icons/wiederholung.svg',
       },
     ],
     note: '*Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).',
@@ -299,7 +299,7 @@ export default function HyaluronidaseHylasePage() {
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets//tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche – Expertin für Hyaluronidase-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
   };
@@ -308,14 +308,14 @@ export default function HyaluronidaseHylasePage() {
     title: 'Weitere Behandlungen mit Hyaluronsäure',
     treatments: [
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-filler_hero.webp',
+        imageUrl: '/assets//hyaluron/hyaluron-filler_hero.webp',
         imageAlt: 'Hyaluron Filler Behandlung für natürliche Ergebnisse',
         title: 'Hyaluron Filler (Unterspritzung)',
         description: 'Natürliche Faltenglättung und Volumenaufbau mit Hyaluronsäure – für harmonische Gesichtskonturen und frisches Aussehen.',
         treatmentUrl: '/hyaluron/filler',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-skinbooster_hero.webp',
+        imageUrl: '/assets//hyaluron/hyaluron-skinbooster_hero.webp',
         imageAlt: 'Skinbooster zur Hydratation',
         title: 'Skinbooster (eigene Unterseite)',
         description:
@@ -323,7 +323,7 @@ export default function HyaluronidaseHylasePage() {
         treatmentUrl: '/hyaluron/skinbooster',
       },
       {
-        imageUrl: "/elaesthetics-bremen-github/assets//hyaluron/hyaluron-profhilo_hero.webp",
+        imageUrl: "/assets//hyaluron/hyaluron-profhilo_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
         title: "Hyaluron-Remodellierung (BAP-Technik)",
@@ -421,8 +421,7 @@ export default function HyaluronidaseHylasePage() {
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }

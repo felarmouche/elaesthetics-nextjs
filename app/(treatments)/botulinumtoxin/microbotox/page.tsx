@@ -39,10 +39,10 @@ export const metadata: Metadata = {
       'Oberflächliche Botulinumtoxin-Behandlung (Microbotox) zur Verfeinerung des Hautbilds und Reduktion von Talg & Schweiß. Natürliches Ergebnis ohne starre Mimik.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//botox/og-image-botox-microbotox-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-microbotox-bremen.webp'],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/botox/microbotox',
+    canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/microbotox',
   },
 };
 
@@ -51,7 +51,7 @@ export default function BotoxMicrobotoxPage() {
     title: 'Microbotox in Bremen (Mesobotox)',
     subtitle:
       'Feineres, glatteres und strahlenderes Hautbild – mit reduzierter Talg- und Schweißproduktion.\nNatürliche Ergebnisse ohne „starre“ Optik.',
-    imageSrc: '/elaesthetics-bremen-github/assets//botox/botox-microbotox_hero.webp',
+    imageSrc: '/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp',
     imageAlt: 'Microbotox / Mesobotox Behandlung für feinere Poren und weniger Glanz in Bremen',
     primaryCTA: { text: 'Termin vereinbaren', href: '/terminanfragen' },
     secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
@@ -97,12 +97,12 @@ export default function BotoxMicrobotoxPage() {
   const benefitsData: QuickInfoSectionProps = {
     title: 'Microbotox auf einen Blick',
     benefits: [
-      { title: 'Preis', description: `ab ${PRICES.botulinum.microBotox}€*`, iconUrl: '/elaesthetics-bremen-github/assets//icons/EUR.svg' },
-      { title: 'Dauer', description: 'max. 30 Minuten', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: 'spätestens nach 14 Tagen', iconUrl: '/elaesthetics-bremen-github/assets//icons/CAL.svg' },
-      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/elaesthetics-bremen-github/assets//icons/TIME.svg' },
-      { title: 'Betäubung', description: 'Betäubungscreme optional', iconUrl: '/elaesthetics-bremen-github/assets//icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/elaesthetics-bremen-github/assets//icons/gesellschaft.svg' },
+      { title: 'Preis', description: `ab ${PRICES.botulinum.microBotox}€*`, iconUrl: '/assets//icons/EUR.svg' },
+      { title: 'Dauer', description: 'max. 30 Minuten', iconUrl: '/assets//icons/TIME.svg' },
+      { title: 'Wirkeintritt', description: 'spätestens nach 14 Tagen', iconUrl: '/assets//icons/CAL.svg' },
+      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/assets//icons/TIME.svg' },
+      { title: 'Betäubung', description: 'Betäubungscreme optional', iconUrl: '/assets//icons/Spritze.svg' },
+      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets//icons/gesellschaft.svg' },
     ],
     note: '*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt.',
   };
@@ -229,7 +229,7 @@ export default function BotoxMicrobotoxPage() {
     ],
     ctaText: 'Jetzt Beratungstermin anfragen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets//tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Microbotox-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
   };
@@ -238,34 +238,34 @@ export default function BotoxMicrobotoxPage() {
     title: 'Weitere Botox Behandlungen in Bremen',
     treatments: [
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-faltenbehandlung_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
         imageAlt: 'Botox Faltenbehandlung für Stirn, Zornesfalte und Krähenfüße',
         title: 'Faltenbehandlung',
         description:
           'Klassische Mimikfalten-Behandlung (Stirn, Zornesfalte, Krähenfüße) für einen entspannten, frischen Ausdruck.',
-        treatmentUrl: '/botox/faltenbehandlung',
+        treatmentUrl: '/botulinumtoxin/faltenbehandlung',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-masseter_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp',
         imageAlt: 'Botox Masseter zur Jawline-Definition & gegen Bruxismus',
         title: 'Masseter / Bruxismus',
         description:
           'Entspannung des Kaumuskels für schmalere Kieferkontur und Linderung von Zähneknirschen & Kieferschmerzen.',
-        treatmentUrl: '/botox/masseter',
+        treatmentUrl: '/botulinumtoxin/masseter',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-hyperhidrose_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp',
         imageAlt: 'Botox gegen übermäßiges Schwitzen',
         title: 'Hyperhidrose',
         description: 'Effektiv gegen starkes Schwitzen (Achseln, Hände, Füße).',
-        treatmentUrl: '/botox/hyperhidrose',
+        treatmentUrl: '/botulinumtoxin/hyperhidrose',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-migräne_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp',
         imageAlt: 'Botox bei chronischer Migräne',
         title: 'Migräne',
         description: 'Anerkannte Therapieoption bei chronischer Migräne.',
-        treatmentUrl: '/botox/migraene',
+        treatmentUrl: '/botulinumtoxin/migraene',
       },
     ],
   };
@@ -357,8 +357,7 @@ export default function BotoxMicrobotoxPage() {
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }

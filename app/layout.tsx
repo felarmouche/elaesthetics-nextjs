@@ -7,7 +7,7 @@ import Contact from '@/components/Contact'
 import Breadcrumbs from '@/components/Breadcrumbs'
 
 const SITE_URL = 'https://elaesthetics-bremen.de'
-const DEFAULT_OG_IMAGE = '/elaesthetics-bremen-github/assets//chatGPT-picture-small.webp'
+const DEFAULT_OG_IMAGE = '/assets//chatGPT-picture-small.webp'
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

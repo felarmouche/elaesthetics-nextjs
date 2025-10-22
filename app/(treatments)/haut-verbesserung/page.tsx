@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       'Mehr Glow, bessere Hautstruktur & natürliches Strahlen: Entdecken Sie unsere Methoden für Hautqualität – von Skinboostern & Profhilo über PRF/Polynukleotide bis Microneedling & chemische Peelings.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/elaesthetics-bremen-github/assets//hautverbesserung/og-image-hautverbesserung-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets//hautverbesserung/og-image-hautverbesserung-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/haut-verbesserung',
@@ -28,7 +28,7 @@ export default function HautverbesserungHubPage() {
     title: 'Hautverbesserung in Bremen',
     subtitle:
       'Skinbooster & Profhilo für intensive Hydration, PRF & Polynukleotide für Regeneration, Microneedling & Peelings für Ebenmäßigkeit – Microbotox & Kollagenstimulation für verfeinerte Struktur.',
-    imageSrc: '/elaesthetics-bremen-github/assets//haut-verbesserung/haut-verbesserung_hero.webp',
+    imageSrc: '/assets//haut-verbesserung/haut-verbesserung_hero.webp',
     imageAlt: 'Übersicht moderner Behandlungen zur Hautverbesserung bei EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#treatments' },
@@ -48,7 +48,7 @@ export default function HautverbesserungHubPage() {
     title: 'Behandlungen zur Hautverbesserung',
     treatments: [
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-skinbooster_hero.webp',
+        imageUrl: '/assets//hyaluron/hyaluron-skinbooster_hero.webp',
         imageAlt: 'Skinbooster Behandlung für intensive Feuchtigkeit und Glow',
         title: 'Skinbooster (HA)',
         description:
@@ -56,7 +56,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: '/hyaluron/skinbooster',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//hyaluron/hyaluron-profhilo_hero.webp',
+        imageUrl: '/assets//hyaluron/hyaluron-profhilo_hero.webp',
         imageAlt: 'Behandlung zur Bioremodellierung der Haut',
         title: 'Hyaluron-Remodellierung (BAP-Technik)',
         description:
@@ -64,7 +64,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: '/hyaluron/profhilo',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//mesotherapie/mesotherapie-haut_hero.webp',
+        imageUrl: '/assets//mesotherapie/mesotherapie-haut_hero.webp',
         imageAlt: 'Mesotherapie zur Unterstützung der Hautqualität',
         title: 'Mesotherapie',
         description:
@@ -72,7 +72,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: '/mesotherapie',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
+        imageUrl: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
         imageAlt: 'Eigenbluttherapie PRF zur Hautregeneration und Unterlid-Behandlung',
         title: 'Eigenbluttherapie (PRF)',
         description:
@@ -80,7 +80,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: '/eigenbluttherapie-prf',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp',
+        imageUrl: '/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp',
         imageAlt: '(Radiofrequenz-)Microneedling zur Verbesserung von Struktur & Poren',
         title: 'Medizinisches Microneedling',
         description:
@@ -88,7 +88,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: '/medizinisches-microneedling',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//botox/botox-microbotox_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp',
         imageAlt: 'Microbotox für verfeinerte Poren und weniger Glanz',
         title: 'Microbotox',
         description:
@@ -96,7 +96,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: 'botox/microbotox',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//chemisches-peeling/chemisches-peeling_hero.webp',
+        imageUrl: '/assets//chemisches-peeling/chemisches-peeling_hero.webp',
         imageAlt: 'Chemisches Peeling zur Ebenmäßigkeit und gegen Pigmentflecken',
         title: 'Chemisches Peeling',
         description:
@@ -104,7 +104,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: '/chemisches-peeling',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//polynukleotide/polynukleotide_hero.webp',
+        imageUrl: '/assets//polynukleotide/polynukleotide_hero.webp',
         imageAlt: 'Polynukleotide (PN/PDRN) für Regeneration & Hautqualität',
         title: 'Polynukleotide (PN/PDRN)',
         description:
@@ -112,7 +112,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: '/polynukleotide',
       },
       {
-        imageUrl: '/elaesthetics-bremen-github/assets//kollagenstimulation/kollagenstimulation_hero.webp',
+        imageUrl: '/assets//kollagenstimulation/kollagenstimulation_hero.webp',
         imageAlt: 'Kollagenstimulation z. B. mit CaHA/PLLA für straffere Konturen',
         title: 'Kollagenstimulation',
         description:
@@ -166,7 +166,7 @@ export default function HautverbesserungHubPage() {
     ],
     ctaText: 'Jetzt Beratungsgespräch vereinbaren',
     ctaHref: '/terminanfragen',
-    imageSrc: '/elaesthetics-bremen-github/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets//tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche berät Patientin zu Skinbooster, PRF, Microneedling, Peeling und Microbotox in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -241,8 +241,7 @@ export default function HautverbesserungHubPage() {
       />
       <ConsultationSection {...consultationData} />
       <FAQSection {...faqData} />
-      <CTASection {...ctaData} />
-      <LocationSection {...locationData} />
+
     </div>
   );
 }
