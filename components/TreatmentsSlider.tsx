@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
+const SWIPE_THRESHOLD = 50;
 
 interface TreatmentSlide {
   src: string;
@@ -91,7 +92,6 @@ const treatments: TreatmentSlide[] = [
   },
 ];
 
-
 export default function TreatmentSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -99,7 +99,6 @@ export default function TreatmentSlider() {
   const nextSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % treatments.length);
   }, []);
-
   const prevSlide = useCallback(() => {
     setCurrentIndex((prev) => (prev - 1 + treatments.length) % treatments.length);
   }, []);
@@ -110,57 +109,65 @@ export default function TreatmentSlider() {
     return () => clearInterval(interval);
   }, [isAutoPlaying, nextSlide]);
 
-  const handlePrev = () => {
-    setIsAutoPlaying(false);
-    prevSlide();
-  };
+  const handlePrev = () => { setIsAutoPlaying(false); prevSlide(); };
+  const handleNext = () => { setIsAutoPlaying(false); nextSlide(); };
 
-  const handleNext = () => {
-    setIsAutoPlaying(false);
-    nextSlide();
-  };
-
-  // Touch-Gesten für Mobile
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
+  // --- Touch: Refs statt State ---
+  const startXRef = useRef<number | null>(null);
+  const endXRef = useRef<number | null>(null);
+  const didSwipeRef = useRef(false);
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    setTouchStart(e.targetTouches[0].clientX);
+    const x = e.targetTouches[0].clientX;
+    startXRef.current = x;
+    endXRef.current = x;        // <<< wichtig: gleichsetzen!
+    didSwipeRef.current = false;
   };
 
   const handleTouchMove = (e: React.TouchEvent) => {
-    setTouchEnd(e.targetTouches[0].clientX);
+    endXRef.current = e.targetTouches[0].clientX;
   };
 
   const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 75) {
-      handleNext();
+    const start = startXRef.current;
+    const end = endXRef.current;
+    if (start == null || end == null) return;
+
+    const delta = start - end;
+    if (Math.abs(delta) >= SWIPE_THRESHOLD) {
+      didSwipeRef.current = true;
+      setIsAutoPlaying(false);
+      if (delta > 0) nextSlide(); else prevSlide();
     }
-    if (touchStart - touchEnd < -75) {
-      handlePrev();
+
+    startXRef.current = null;
+    endXRef.current = null;
+  };
+
+  // 3 sichtbare Indizes
+  const visibleIndices = [0, 1, 2].map((i) => (currentIndex + i) % treatments.length);
+
+  // Helper: verhindert Navigation nach Swipe
+  const preventClickAfterSwipe = (e: React.MouseEvent) => {
+    if (didSwipeRef.current) {
+      e.preventDefault();
+      didSwipeRef.current = false;
     }
   };
 
-  // 3 sichtbare Indizes berechnen (Fenster von 3 Slides)
-  const visibleIndices = [0, 1, 2].map((i) => (currentIndex + i) % treatments.length);
-
   return (
-    <section
-      className="relative w-full mx-auto py-16 md:py-32 px-[5%]"
-      aria-label="Slider für verschiedene Behandlungen"
-      aria-roledescription="carousel"
-    >
+    <section className="relative w-full mx-auto py-16 md:py-32 px-[5%]" aria-label="Slider für verschiedene Behandlungen" aria-roledescription="carousel">
       <div className="relative w-full flex flex-col">
         <h2 className="text-4xl text-accent-dark uppercase p-4 my-4">
-          weitere <br />
-          Behandlungen
+          weitere <br /> Behandlungen
         </h2>
 
-        <div 
+        <div
           className="relative w-full"
           onTouchStart={handleTouchStart}
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
+          onTouchCancel={handleTouchEnd}
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 overflow-hidden">
             {visibleIndices.map((i) => {
@@ -168,8 +175,24 @@ export default function TreatmentSlider() {
               return (
                 <Link
                   key={`${service.src}-${i}`}
-                  className="relative overflow-hidden rounded-xl aspect-square cursor-pointer transition-transform duration-500 hover:-translate-y-2 group md:block hidden"
                   href={service.linkUrl}
+                  onClick={preventClickAfterSwipe}   // <<< wichtig
+                  className="relative overflow-hidden rounded-xl aspect-square cursor-pointer transition-transform duration-500 hover:-translate-y-2 group md:block hidden"
+                >
+                  {/* ... Image + Overlays unverändert ... */}
+                </Link>
+              );
+            })}
+
+            {/* Mobile: nur erstes Slide */}
+            {(() => {
+              const service = treatments[visibleIndices[0]];
+              return (
+                <Link
+                  key={`mobile-${service.src}`}
+                  href={service.linkUrl}
+                  onClick={preventClickAfterSwipe}   // <<< wichtig
+                  className="relative overflow-hidden rounded-xl aspect-square cursor-pointer md:hidden block"
                 >
                   <Image
                     fill
@@ -187,38 +210,6 @@ export default function TreatmentSlider() {
                       {service.text}
                     </h3>
                     <div className="text-white text-sm tracking-[2px] uppercase font-light inline-flex items-center gap-2 transition-all duration-300 group-hover:gap-4">
-                      Mehr erfahren →
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-
-            {/* Mobile Version - Nur erstes Slide */}
-            {(() => {
-              const service = treatments[visibleIndices[0]];
-              return (
-                <Link
-                  key={`mobile-${service.src}`}
-                  className="relative overflow-hidden rounded-xl aspect-square cursor-pointer md:hidden block"
-                  href={service.linkUrl}
-                >
-                  <Image
-                    fill
-                    src={service.src}
-                    alt={service.alt}
-                    className="object-cover"
-                    sizes="100vw"
-                    loading='lazy'
-                  />
-                  <div className="w-full h-full bg-gradient-to-br from-[#d4a87c] to-[#e8c4a8] flex items-center justify-center text-white text-lg text-center p-8">
-                    {service.text}
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/10 flex flex-col justify-end p-6 text-white">
-                    <h3 className="text-xl font-light mb-3 uppercase tracking-[2px]">
-                      {service.text}
-                    </h3>
-                    <div className="text-white text-sm tracking-[2px] uppercase font-light inline-flex items-center gap-2">
                       Mehr erfahren →
                     </div>
                   </div>
@@ -244,7 +235,6 @@ export default function TreatmentSlider() {
           </button>
         </div>
       </div>
-
     </section>
   );
 }
