@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import GoogleMaps from './GoogleMaps';
+import { Clock } from 'lucide-react';
 
 export default function Contact() {
   return (
@@ -13,7 +14,7 @@ export default function Contact() {
           <p className="text-primary text-base font-light">
             Vereinbaren Sie einen Beratungstermin in unserer Praxis in Bremen
           </p>
-          <Link className='p-4 border inline-block mt-4 text-black border-white max-w-[600px] w-full bg-white hover:text-white hover:bg-black transition-color' href="/kontakt">Zum Beratungstermin</Link>
+          <Link className='p-4 border w-full inline-block mt-4 text-black border-white bg-white hover:text-white hover:bg-black transition-color' href="/kontakt">Zum Beratungstermin</Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
@@ -27,7 +28,7 @@ export default function Contact() {
               Richtepad 14<br />
               28355 Bremen
             </p>
-            
+
           </div>
 
           {/* Kontakt */}
@@ -50,16 +51,17 @@ export default function Contact() {
           </div>
 
           {/* Öffnungszeiten */}
-          <div className="text-center">
+          <div className="text-center ">
             <h3 className="text-sm uppercase tracking-widest text-primary mb-4 font-medium">
               Öffnungszeiten
             </h3>
-            <p className="text-white font-light leading-relaxed">
-              Termine nach Vereinbarung
+            <p className="text-white font-light leading-relaxed ">
+              Mo - Fr: 9:00 - 17:00 Uhr <br/>
+              Sa - So: Geschlossen
             </p>
           </div>
         </div>
-        <GoogleMaps/>
+        <GoogleMaps />
       </div>
     </section>
   );

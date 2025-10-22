@@ -33,6 +33,7 @@ export default function Header() {
   }, [isOpen])
 
   const navLinks = [
+    { href: '/', label: 'Home' },
     { href: '/#services', label: 'Leistungen' },
     { href: '/preise', label: 'Preise' },
     { href: '#contact', label: 'Kontakt' },
@@ -88,7 +89,7 @@ export default function Header() {
               </a>
               <Link
                 href="/kontakt"
-                className="w-[220px] whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-sm text-white bg-secondary hover:border-secondary hover:text-secondary hover:bg-primary transition-colors"
+                className=" whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-sm text-white bg-secondary hover:border-secondary hover:text-secondary hover:bg-primary transition-colors"
                 aria-label="Beratungstermin mit EL Aesthetics Bremen vereinbaren"
               >
                 Termin vereinbaren
@@ -97,6 +98,7 @@ export default function Header() {
 
             {/* Mobiler Menü-Button (Hamburger) */}
             <div className="lg:hidden flex items-center gap-2">
+              {!isOpen ? (
               <Link
                 href="/kontakt"
                 className="flex gap-2 border py-1 uppercase bg-black/70 text-white rounded-xs px-3 font-normal items-center"
@@ -104,7 +106,8 @@ export default function Header() {
               >
                 <CalendarCheck className="text-xs" />
                 Termin
-              </Link>
+              </Link>): null}
+              
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="inline-flex items-center justify-center p-2 rounded-md text-secondary hover:text-black focus:outline-none z-50"
@@ -170,6 +173,7 @@ export default function Header() {
                 href="/kontakt"
                 className="w-[220px] whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-sm text-white bg-secondary hover:border-secondary hover:text-secondary hover:bg-primary transition-colors"
                 aria-label="Beratungstermin mit EL Aesthetics Bremen vereinbaren"
+                onClick={() => setIsOpen(false)}
               >
                 Termin vereinbaren
               </Link>
