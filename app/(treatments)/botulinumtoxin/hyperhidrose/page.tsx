@@ -88,12 +88,12 @@ export default function BotoxHyperhidrosePage() {
   const benefitsData: QuickInfoSectionProps = {
     title: 'Hyperhidrose-Behandlung auf einen Blick',
     benefits: [
-      { title: 'Preis', description: `ab ${PRICES.botulinum.hyperhidrose}\u20AC*`, iconUrl: '/assets//icons/EUR.svg' },
-      { title: 'Dauer', description: '30–45 Minuten', iconUrl: '/assets//icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: '10–14 Tage', iconUrl: '/assets//icons/CAL.svg' },
-      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/assets//icons/TIME.svg' },
-      { title: 'Betäubung', description: 'keine (Betäubungscreme möglich)', iconUrl: '/assets//icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets//icons/gesellschaft.svg' },
+      { title: 'Preis', description: `ab ${PRICES.botulinum.hyperhidrose}\u20AC*`, iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Dauer', description: '30–45 Minuten', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Wirkeintritt', description: '10–14 Tage', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Betäubung', description: 'keine (Betäubungscreme möglich)', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note:
       '*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt.',
@@ -193,7 +193,7 @@ export default function BotoxHyperhidrosePage() {
     ],
     ctaText: 'Jetzt Beratungstermin anfragen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Hyperhidrose-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
   };

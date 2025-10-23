@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets//skinbooster/og-skinbooster-bremen.webp',
+      'https://elaesthetics-bremen.de/assets/skinbooster/og-skinbooster-bremen.webp',
     ],
   },
   alternates: {
@@ -54,7 +54,7 @@ export default function SkinboosterBremenPage() {
     title: 'Skinbooster in Bremen',
     subtitle:
       'Tiefenfeuchtigkeit & frischer Glow: glattere, prallere Haut an Gesicht, Hals, Dekolleté & Händen – minimal-invasiv.',
-    imageSrc: '/assets//hyaluron/hyaluron-skinbooster_hero.webp',
+    imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
     imageAlt:
       'Skinbooster-Behandlung – sanfte Hautauffrischung mit Hyaluron',
     primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
@@ -107,12 +107,12 @@ export default function SkinboosterBremenPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Die Behandlung auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 180€*', iconUrl: '/assets//icons/EUR.svg' },
-      { title: 'Dauer', description: '45–60 Min', iconUrl: '/assets//icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: '3–4 Wochen', iconUrl: '/assets//icons/CAL.svg' },
-      { title: 'Sitzungen', description: '1–4 in der Aufbauphase (produktabhängig)', iconUrl: '/assets//icons/wiederholung.svg' },
-      { title: 'Anästhesie', description: 'auf Wunsch (Betäubungscreme)', iconUrl: '/assets//icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'meist sofort', iconUrl: '/assets//icons/gesellschaft.svg' },
+      { title: 'Preis', description: 'ab 180€*', iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Dauer', description: '45–60 Min', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Wirkeintritt', description: '3–4 Wochen', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Sitzungen', description: '1–4 in der Aufbauphase (produktabhängig)', iconUrl: '/assets/icons/wiederholung.svg' },
+      { title: 'Anästhesie', description: 'auf Wunsch (Betäubungscreme)', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Gesellschaftsfähig', description: 'meist sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note: '*Richtwert; individuelle Abrechnung nach GOÄ.',
   };
@@ -212,7 +212,7 @@ export default function SkinboosterBremenPage() {
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Skinbooster-Beratung',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -222,7 +222,7 @@ export default function SkinboosterBremenPage() {
     title: 'Weitere Hyaluron-Behandlungen',
     treatments: [
       {
-        imageUrl: "/assets//hyaluron/hyaluron-filler_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
         title: "Hyaluronsäure-Filler (Falten & Volumen)",
@@ -231,7 +231,7 @@ export default function SkinboosterBremenPage() {
       },
       
       {
-        imageUrl: "/assets//hyaluron/hyaluron-profhilo_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
         title: "Hyaluron-Remodellierung (BAP-Technik)",
@@ -239,7 +239,7 @@ export default function SkinboosterBremenPage() {
         treatmentUrl: "/hyaluron/profhilo"
       },
       {
-        imageUrl: "/assets//hyaluron/hyaluron-hylase_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hylase-Flasche",
         title: "Hylase (Hyaluronidase)",

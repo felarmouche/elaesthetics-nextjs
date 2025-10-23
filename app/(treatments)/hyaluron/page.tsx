@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     // WICHTIG: Fügen Sie hier eine absolute URL zu einem repräsentativen Bild hinzu.
-    images: ['https://elaesthetics-bremen.de/assets//hyaluron/og-image-hyaluron-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets/hyaluron/og-image-hyaluron-bremen.webp'],
   },
   // Canonical URL: Platzhalter beibehalten, muss durch die echte URL ersetzt werden.
   alternates: {
@@ -30,7 +30,7 @@ export default function HyaluronBremenPage() {
     // Title (H1): Hauptkeyword "Hyaluron Bremen" prominent platziert.
     title: "Behandlung mit Hyaluron in Bremen",
     subtitle: "Suchen Sie nach einer professionellen Faltenbehandlung mit Hyaluron in Bremen?\nDann sind Sie bei El Aesthetics genau richtig.",
-    imageSrc: "/assets//hyaluron/hyaluron-filler_hero.webp",
+    imageSrc: "/assets/hyaluron/hyaluron-filler_hero.webp",
     // Image Alt: Beschreibend und Keyword-optimiert.
     imageAlt: "Eine Frau erhält eine professionelle Hyaluron-Behandlung in Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
@@ -52,7 +52,7 @@ export default function HyaluronBremenPage() {
     title: "Unsere Behandlungen mit Hyaluron in Bremen",
     treatments: [
       {
-        imageUrl: "/assets//hyaluron/hyaluron-filler_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
         title: "Hyaluronsäure-Filler (Falten & Volumen)",
@@ -60,7 +60,7 @@ export default function HyaluronBremenPage() {
         treatmentUrl: "/hyaluron/filler"
       },
       {
-        imageUrl: "/assets//hyaluron/hyaluron-skinbooster_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Symbolbild für Feuchtigkeit durch eine Skinbooster-Behandlung",
         title: "Skinbooster (Hydratation & Glow)",
@@ -68,7 +68,7 @@ export default function HyaluronBremenPage() {
         treatmentUrl: "/hyaluron/skinbooster"
       },
       {
-        imageUrl: "/assets//hyaluron/hyaluron-profhilo_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
         title: "Hyaluron-Remodellierung (BAP-Technik)",
@@ -76,7 +76,7 @@ export default function HyaluronBremenPage() {
         treatmentUrl: "/hyaluron/profhilo"
       },
       {
-        imageUrl: "/assets//hyaluron/hyaluron-hylase_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hylase-Flasche",
         title: "Hylase (Hyaluronidase)",
@@ -129,12 +129,12 @@ export default function HyaluronBremenPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Die Hyaluron-Behandlung auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.hyaluronFiller.fillerUnterspritzung}€*`, iconUrl: "/assets//icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 30-45 Min", iconUrl: "/assets//icons/TIME.svg" },
-      { title: "Ergebnis", description: "sofort sichtbar", iconUrl: "/assets//icons/TIME.svg" },
-      { title: "Haltbarkeit", description: "6-18 Monate", iconUrl: "/assets//icons/CAL.svg" },
-      { title: "Betäubung", description: "Creme möglich, oft nicht nötig", iconUrl: "/assets//icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets//icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.hyaluronFiller.fillerUnterspritzung}€*`, iconUrl: "/assets/icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 30-45 Min", iconUrl: "/assets/icons/TIME.svg" },
+      { title: "Ergebnis", description: "sofort sichtbar", iconUrl: "/assets/icons/TIME.svg" },
+      { title: "Haltbarkeit", description: "6-18 Monate", iconUrl: "/assets/icons/CAL.svg" },
+      { title: "Betäubung", description: "Creme möglich, oft nicht nötig", iconUrl: "/assets/icons/Spritze.svg" },
+      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -167,10 +167,10 @@ export default function HyaluronBremenPage() {
 
   const consultationData: ConsultationSectionProps = {
     title: "Ihr persönlicher Beratungstermin in Bremen",
-    description: ["Sie wünschen sich eine Veränderung und möchten mehr über die Möglichkeiten einer Hyaluron-Behandlung erfahren?", "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und Gründerin von EL Aesthetics. In meiner Praxis kombiniere ich klassische, minimalinvasive Behandlungen wie Botulinumtoxin und Hyaluronsäure-Filler mit innovativen regenerativen Verfahren – individuell abgestimmt auf Ihre Bedürfnisse und Ihre Haut.", "Ich bin zertifiziert für Botulinumtoxin- und Filler-Behandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinum- und Fillertherapie e.V. (DGBT). Durch regelmäßige Fortbildungen, Workshops und Fachkongresse halte ich mein Wissen auf dem neuesten Stand – für sichere und moderne Behandlungen auf fachlich höchstem Niveau.", "In unserer Arztpraxis in Bremen nehmen wir uns Zeit für Sie. Vereinbaren Sie noch heute Ihren unverbindlichen Beratungstermin und fühlen Sie sich wieder wohl in Ihrer Haut."],
+    description: ["Sie wünschen sich eine Veränderung und möchten mehr über die Möglichkeiten einer Hyaluron-Behandlung erfahren?", "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und Gründerin von EL Aesthetics. In meiner Praxis kombiniere ich klassische, minimalinvasive Behandlungen wie Botulinumtoxin und Hyaluronsäure-Filler mit innovativen regenerativen Verfahren – individuell abgestimmt auf Ihre Bedürfnisse und Ihre Haut.", "Ich bin zertifiziert für Botulinumtoxin- und Filler-Behandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT). Durch regelmäßige Fortbildungen, Workshops und Fachkongresse halte ich mein Wissen auf dem neuesten Stand – für sichere und moderne Behandlungen auf fachlich höchstem Niveau.", "In unserer Arztpraxis in Bremen nehmen wir uns Zeit für Sie. Vereinbaren Sie noch heute Ihren unverbindlichen Beratungstermin und fühlen Sie sich wieder wohl in Ihrer Haut."],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets//tinified/IMG_7364.webp",
+    imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für eine Hyaluron-Behandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
 };

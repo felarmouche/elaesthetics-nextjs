@@ -39,7 +39,7 @@ export const metadata: Metadata = {
       'Synergie aus Needling und PRF-Matrix: lang anhaltende Wachstumsfaktor-Freisetzung für ein sichtbar verfeinertes Hautbild.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets//prf/prf-microneedling-og.webp'],
+    images: ['https://elaesthetics-bremen.de/assets/prf/prf-microneedling-og.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie-prf/microneedling',
@@ -51,7 +51,7 @@ export default function PRFMicroneedlingPage() {
     title: "PRF Microneedling (Plasma-Needling) in Bremen",
     subtitle:
       "Microneedling + PRF-Matrix: Die Kombination für gezielte Regeneration, feinere Poren und ein ebenmäßigeres Hautbild – in ärztlicher Hand.",
-    imageSrc: "/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp",
+    imageSrc: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp",
     imageAlt: "PRF Microneedling (Plasma-Needling) in der Praxis EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -90,12 +90,12 @@ export default function PRFMicroneedlingPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Plasma-Needling auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.prpPrf.microneedling}€*`, iconUrl: "/assets//icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 60–90 Min", iconUrl: "/assets//icons/TIME.svg" },
-      { title: "Wirkeintritt", description: "nach 3–5 Behandlungen", iconUrl: "/assets//icons/CAL.svg" },
-      { title: "Intervall", description: "Serienabstand ~4 Wochen", iconUrl: "/assets//icons/wiederholung.svg" },
-      { title: "Betäubung", description: "lokal auf Wunsch", iconUrl: "/assets//icons/Spritze.svg" },
-      { title: "Downtime", description: "ca. 1–3 Tage", iconUrl: "/assets//icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.prpPrf.microneedling}€*`, iconUrl: "/assets/icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 60–90 Min", iconUrl: "/assets/icons/TIME.svg" },
+      { title: "Wirkeintritt", description: "nach 3–5 Behandlungen", iconUrl: "/assets/icons/CAL.svg" },
+      { title: "Intervall", description: "Serienabstand ~4 Wochen", iconUrl: "/assets/icons/wiederholung.svg" },
+      { title: "Betäubung", description: "lokal auf Wunsch", iconUrl: "/assets/icons/Spritze.svg" },
+      { title: "Downtime", description: "ca. 1–3 Tage", iconUrl: "/assets/icons/gesellschaft.svg" }
     ],
     note: "*Preise sind Richtwerte nach GOÄ; individueller Kostenplan im Beratungsgespräch."
   };
@@ -174,7 +174,7 @@ export default function PRFMicroneedlingPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets//tinified/IMG_7364.webp",
+    imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Beratung zu PRF Microneedling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -183,7 +183,7 @@ export default function PRFMicroneedlingPage() {
     title: "Weitere Behandlungen mit Eigenblut",
     treatments: [
       {
-        imageUrl: "/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp",
+        imageUrl: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp",
         imageAlt: "Medizinisches Microneedling mit Dermapen 4 ohne PRF",
         title: "Medizinisches Microneedling ohne PRF",
         description:
@@ -191,7 +191,7 @@ export default function PRFMicroneedlingPage() {
         treatmentUrl: "/medizinisches-microneedling"
       },
       {
-        imageUrl: "/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-vampire-lifting_hero.webp",
+        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-vampire-lifting_hero.webp",
         imageAlt: "Gesicht einer Frau bei einer PRF-Eigenbluttherapie",
         title: "PRF-Eigenbluttherapie (Vampire Lifting)",
         description:
@@ -199,7 +199,7 @@ export default function PRFMicroneedlingPage() {
         treatmentUrl: "/eigenbluttherapie-prf/vampire-lifting"
       },
       {
-        imageUrl: "/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp",
+        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp",
         imageAlt: "PRF-Therapie bei Haarausfall",
         title: "PRF bei Haarausfall",
         description:

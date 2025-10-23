@@ -97,12 +97,12 @@ export default function BotoxMicrobotoxPage() {
   const benefitsData: QuickInfoSectionProps = {
     title: 'Microbotox auf einen Blick',
     benefits: [
-      { title: 'Preis', description: `ab ${PRICES.botulinum.microBotox}€*`, iconUrl: '/assets//icons/EUR.svg' },
-      { title: 'Dauer', description: 'max. 30 Minuten', iconUrl: '/assets//icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: 'spätestens nach 14 Tagen', iconUrl: '/assets//icons/CAL.svg' },
-      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/assets//icons/TIME.svg' },
-      { title: 'Betäubung', description: 'Betäubungscreme optional', iconUrl: '/assets//icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets//icons/gesellschaft.svg' },
+      { title: 'Preis', description: `ab ${PRICES.botulinum.microBotox}€*`, iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Dauer', description: 'max. 30 Minuten', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Wirkeintritt', description: 'spätestens nach 14 Tagen', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Betäubung', description: 'Betäubungscreme optional', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note: '*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt.',
   };
@@ -229,7 +229,7 @@ export default function BotoxMicrobotoxPage() {
     ],
     ctaText: 'Jetzt Beratungstermin anfragen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Microbotox-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
   };

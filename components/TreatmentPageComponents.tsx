@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { DOMAIN } from '@/lib/constants';
@@ -246,6 +246,79 @@ export const AreasSection: React.FC<AreasSectionProps> = ({ title, categories })
     );
 };
 
+
+
+export interface DetailedInfoSectionProps {
+    title: string;
+    description: string;
+    infoPoints: string[];
+    ctaText?: string;
+    ctaHref?: string;
+}
+
+const detailedInfoSectionData = {
+    title: "Detaillierte Informationen zur Behandlung",
+    description: "Umfassende Details zu Preisen, Ablauf, Wirkung und möglichen Nebenwirkungen finden Sie auf den einzelnen Behandlungsseiten.",
+    infoPoints: [
+        "Transparente Preisgestaltung",
+        "Detaillierter Behandlungsablauf",
+        "Erwartete Wirkung & Ergebnisse",
+        "Mögliche Nebenwirkungen",
+        "Nachsorge-Empfehlungen",
+        "Individuelle Beratung"
+    ],
+    ctaText: "Zu den Behandlungen",
+    ctaHref: "#treatments",
+};
+
+export function DetailedInfoSection() {
+    const title=detailedInfoSectionData.title;
+    const description=detailedInfoSectionData.description;
+    const infoPoints=detailedInfoSectionData.infoPoints;
+    const ctaText = detailedInfoSectionData.ctaText;
+    const ctaHref = detailedInfoSectionData.ctaHref;
+    return (
+        <section id="detailedInfo" className="py-20 md:py-32 bg-background-primary/30">
+            <div className="container mx-auto px-6 max-w-5xl">
+                <div className="bg-white p-8 md:p-12 shadow-sm border border-stone-200">
+                    <h2 className="text-2xl md:text-4xl font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-8">
+                        {title}
+                    </h2>
+                    
+                    <p className="text-lg text-stone-600 font-light leading-relaxed mb-10">
+                        {description}
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-6 mb-10">
+                        {infoPoints.map((point, index) => (
+                            <div 
+                                key={index} 
+                                className="flex items-start gap-3 p-4 bg-stone-50 border border-stone-200"
+                            >
+                                <span className="text-stone-400 font-light mt-1">—</span>
+                                <p className="text-stone-700 font-light leading-relaxed">
+                                    {point}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className="pt-4 text-center flex justify-center items-center">
+                        <a
+                            href={ctaHref}
+                            className="group inline-flex items-center justify-center bg-stone-900 px-8 py-4 text-white font-medium tracking-wide shadow-lg shadow-stone-900/10 hover:shadow-stone-900/20 hover:bg-stone-800 transition"
+                        >
+                            {ctaText}
+                            {/* KORREKTUR: Stelle sicher, dass ChevronDown importiert wird */}
+                            <ChevronDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-0.5" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
 export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({ title, treatments }) => {
     return (
         <section id="treatments" className="py-20 md:py-32 bg-white">
@@ -467,29 +540,8 @@ export const TreatmentCareSection: React.FC<TreatmentCareSectionProps> = ({
 
 
 export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
-    const faqSchema = faqs.length
-        ? {
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: faqs.map((faq) => ({
-                '@type': 'Question',
-                name: faq.question,
-                acceptedAnswer: {
-                    '@type': 'Answer',
-                    text: faq.answer,
-                },
-            })),
-        }
-        : null;
-
     return (
         <section id="faq" className="py-20 md:py-32 bg-white">
-            {faqSchema && (
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-                />
-            )}
             <div className="container mx-auto px-6 max-w-4xl">
                 <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
@@ -498,7 +550,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
                     {faqs.map((faq, index) => (
                         <details key={index} className="pt-8 first:pt-0 group border-b border-stone-200 pb-4">
                             <summary className="font-light text-xl text-stone-900 cursor-pointer list-none flex justify-between items-center">
-                                {faq.question}
+                                <h3>{faq.question}</h3>
                                 <span className="text-stone-400 group-open:rotate-45 transition-transform">+</span>
                             </summary>
                             <p className="mt-6 text-stone-600 font-light leading-relaxed">
@@ -520,24 +572,24 @@ export const CTASection: React.FC<CTASectionProps> = ({
     secondaryCTA
 }) => {
     return (
-        <section id="cta" className="py-20 md:py-32 bg-stone-900 text-white">
+        <section id="cta" className="py-20 md:py-32 bg-background-primary text-secondary">
             <div className="container mx-auto px-6 max-w-4xl text-center">
-                <h2 className="text-2xl md:text-4xl break-words md:text-5xl font-light mb-8 tracking-tight">
+                <h2 className="text-2xl md:text-4xl break-words md:text-5xl uppercase font-semibold mb-8 tracking-tight">
                     {title}
                 </h2>
-                <p className="text-xl font-light mb-12 text-stone-300">
+                <p className="text-xl font-light mb-12 text-secondary/80">
                     {subtitle}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
                         href={primaryCTA.href}
-                        className="inline-block bg-white text-stone-900 px-10 py-4 font-light tracking-wide hover:bg-stone-100 transition-colors"
+                        className="inline-block bg-white border-1 border-secondary/80 text-secondary/80 px-10 py-4 tracking-wide hover:bg-stone-100 transition-colors"
                     >
                         {primaryCTA.text}
                     </a>
                     <a
                         href={secondaryCTA.href}
-                        className="inline-block bg-transparent text-white px-10 py-4 font-light tracking-wide border border-stone-700 hover:border-white transition-colors"
+                        className="inline-block bg-secondary text-primary px-10 py-4 tracking-wide border border-stone-700 hover:border-white transition-colors"
                     >
                         {secondaryCTA.text}
                     </a>

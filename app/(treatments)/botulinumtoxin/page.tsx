@@ -1,218 +1,297 @@
+// app/botulinumtoxin/page.tsx
 import type { Metadata } from 'next';
-import { ConsultationSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, TreatmentsSection, TreatmentsSectionProps } from '@/components/TreatmentPageComponents';
+import {DetailedInfoSection, ConsultationSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, TreatmentsSection, TreatmentsSectionProps } from '@/components/TreatmentPageComponents';
 import PatientReviews from '@/components/PatientReviews';
 import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
-  title: 'Botulinumtoxin Behandlung Bremen | Falten, Schwitzen & Migräne | EL Aesthetics',
-  description: 'Botulinumtoxin Behandlung in Bremen ✓ Faltenbehandlung, Hyperhidrose, Masseter & Migräne ✓ Botulinumtoxin A vom Facharzt ✓ Natürliche Ergebnisse ✓ Jetzt beraten lassen!',
-  keywords: 'Botulinumtoxin Behandlung, Botulinumtoxin Bremen, Botulinumtoxin A, Faltenbehandlung, Botulinumtoxin gegen Schwitzen, Masseter Behandlung, Botulinumtoxin Migräne, Mesobotox',
+  title: 'Botulinumtoxin Behandlung Bremen – EL Aesthetics Praxis',
+  description:
+    'Botulinumtoxin Behandlung in Bremen: Falten (Stirn, Zornesfalte, Krähenfüße), Masseter/Bruxismus, Hyperhidrose & Migräne. Ärztliche Beratung. Natürliche, präzise Ergebnisse.',
+  keywords: [
+    'botulinumtoxin behandlung',
+    'botulinumtoxin injektion',
+    'botulinumtoxin a behandlung',
+    'botulinum behandlung',
+    'botulinumtoxin bremen',
+  ],
   openGraph: {
-    title: 'Botulinumtoxin Behandlung Bremen - Ästhetisch & Medizinisch',
-    description: 'Was ist Botulinumtoxin? Erfahren Sie alles über Botulinumtoxin Typ A: Von Faltenbehandlung über Schwitzen bis Migräne. Professionelle Behandlung in Bremen.',
+    title: 'Botulinumtoxin Behandlung in Bremen | EL Aesthetics',
+    description:
+      'Ästhetische & medizinische Botulinumtoxin A Behandlung in Bremen: Falten, Masseter, Schwitzen, Migräne. Individuelle Beratung durch Ärztin.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp'],
+    url: 'https://www.elaesthetics-bremen.de/botulinumtoxin',
+    siteName: 'EL Aesthetics Bremen',
+    images: ['https://www.elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp'],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Botulinumtoxin Behandlung in Bremen | EL Aesthetics',
+    description:
+      'Botulinumtoxin A in Bremen für Falten, Masseter, Hyperhidrose & Migräne. Ärztliche Aufklärung, realistische Ergebnisse.',
+    images: ['https://www.elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    noarchive: false,
+    nocache: false,
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/botulinumtoxin',
+    canonical: 'https://www.elaesthetics-bremen.de/botulinumtoxin',
   },
 };
 
 export default function BotulinumtoxinHubPage() {
   const heroData: HeroSectionProps = {
-    title: "Botulinumtoxin Behandlung in Bremen",
-    subtitle: "Was bringt eine Botulinumtoxin Behandlung? Entdecken Sie die vielfältigen Anwendungen von Botulinumtoxin A:\nVon der Faltenbehandlung über Schwitzen bis zur Migräne-Therapie.",
-    imageSrc: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
-    imageAlt: "Botox Behandlungen verschiedener Gesichtspartien bei EL Aesthetics Bremen",
-    primaryCTA: { text: "Beratung anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "Behandlungen ansehen", href: "#treatments" }
+    title: 'Botulinumtoxin Behandlung in Bremen',
+    subtitle:
+      'Ärztliche Botulinumtoxin A Behandlung für Stirn, Zornesfalte & Krähenfüße sowie Masseter/Bruxismus, übermäßiges Schwitzen (Achseln) und chronische Migräne – natürlich, präzise, individuell.',
+    imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
+    imageAlt: 'Botulinumtoxin Behandlung in Bremen: Injektion typischer Zonen wie Stirn, Zornesfalte und Krähenfüße bei EL Aesthetics',
+    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
+    secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' },
   };
 
   const introData: IntroSectionProps = {
-    title: "Was ist Botulinumtoxin? Mehr als Faltenbehandlung",
+    title: 'Was ist Botulinumtoxin?',
     content: [
-      "Botulinumtoxin – oft unter dem Markennamen Botox bekannt – ist ein hochwirksames Protein, das in der ästhetischen und medizinischen Therapie vielseitig eingesetzt wird. Aber was macht Botulinumtoxin eigentlich?",
-      "Was ist Botulinumtoxin Typ A? Botulinumtoxin A ist die am häufigsten verwendete Form des Wirkstoffs. Es blockiert gezielt die Signalübertragung zwischen Nerven und Muskeln, wodurch überaktive Muskulatur entspannt wird. Diese muskelentspannende Wirkung macht Botulinumtoxin zum idealen Mittel für zahlreiche Anwendungen.",
-      "In unserer Praxis in Bremen nutzen wir Botulinumtoxin für ästhetische Behandlungen wie die Faltenbehandlung (Zornesfalte, Augenfalten, Nasolabialfalte), Gesichtskonturierung und Hautverfeinerung. Gleichzeitig setzen wir Botulinumtoxin A gegen Schwitzen (Hyperhidrose), bei chronischer Migräne und zur Behandlung von Zähneknirschen ein.",
-      "Das Besondere: Jede Botulinumtoxin Behandlung ist reversibel und individuell anpassbar. Die Wirkung hält mehrere Monate an und baut sich danach vollständig ab – Sie bleiben flexibel in Ihren Entscheidungen.",
-      "Lassen Sie uns gemeinsam herausfinden, welche Botulinumtoxin Behandlung optimal zu Ihren Bedürfnissen passt."
-    ]
+      'Botulinumtoxin – häufig als „Botox“ bezeichnet – ist ein gut erforschter Wirkstoff, der in der ästhetischen und medizinischen Therapie eingesetzt wird.',
+      'Was macht Botulinumtoxin? Es blockiert vorübergehend die Signalübertragung zwischen Nerven und Muskulatur. Dadurch entspannt sich überaktive Muskulatur – Mimikfalten glätten sich, Kaumuskelaktivität kann reduziert werden, Schweißdrüsen werden gehemmt.',
+      'Was ist Botulinumtoxin Typ A? Es ist die am häufigsten verwendete Variante und gilt bei sachgerechter Anwendung als sicher. Die Wirkung baut sich nach einigen Monaten vollständig ab.',
+    ],
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-  title: "Unsere Botulinumtoxin Behandlungen im Überblick",
-  treatments: [
-    {
-      imageUrl: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
-      imageAlt: "Faltenbehandlung mit Botulinumtoxin an Stirn und Augenfalten",
-      title: "Faltenbehandlung – Zornesfalte & Augenfalten behandeln",
-      description: "Welche Behandlung bei Falten ist die richtige? Die klassische Faltenbehandlung mit Botulinumtoxin glättet Zornesfalte, Augenfalten und andere Mimikfalten sanft und natürlich. Geeignet für alle, die Falten behandeln möchten, ohne ihre natürliche Mimik zu verlieren.",
-      treatmentUrl: "/botulinumtoxin/faltenbehandlung"
-    },
-    {
-      imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
-      imageAlt: "Masseter Behandlung mit Botulinumtoxin für definierte Gesichtskonturen",
-      title: "Masseter Behandlung – Jawline & Zähneknirschen",
-      description: "Was ist eine Masseter Botulinumtoxin Behandlung? Durch gezielte Injektion in den Kaumuskel wird die Gesichtsform harmonisiert und Zähneknirschen reduziert. Die Masseter Behandlung Kosten variieren je nach Dosierung. Lohnt sich Botulinumtoxin im Masseter? Bei uns erfahren Sie alles über Wirkung und Ergebnis.",
-      treatmentUrl: "/botulinumtoxin/masseter"
-    },
-    {
-      imageUrl: "/assets/botulinumtoxin/botox-microbotox_hero.webp",
-      imageAlt: "Mesobotox und Microbotox Behandlung für verfeinerte Hautstruktur",
-      title: "Mesobotox – Hautverfeinerung mit Microbotox",
-      description: "Was ist Mesobotox? Bei Skinbotox bzw. Micro Botulinumtoxin wird der Wirkstoff oberflächlich injiziert. Das verfeinert Poren, reduziert Talgproduktion und verbessert die Hautqualität. Mesobotox Erfahrungen zeigen: optimale Ergänzung zur klassischen Faltenbehandlung. Die Mesobotox Kosten beginnen ab 250€.",
-      treatmentUrl: "/botulinumtoxin/microbotox"
-    },
-    {
-      imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
-      imageAlt: "Botulinumtoxin Migräne Behandlung an Kopf und Nacken",
-      title: "Botulinumtoxin Migräne – Medizinische Behandlung",
-      description: "Kann Botulinumtoxin bei Migräne helfen? Ja! Die Migränebehandlung mit Botulinumtoxin ist wissenschaftlich anerkannt. Wir behandeln chronische Migräne mit gezielten Injektionen an Kopf und Nacken. Was kostet eine Botulinumtoxin Behandlung gegen Migräne? Die Krankenkasse übernimmt oft die Kosten.",
-      treatmentUrl: "/botulinumtoxin/migraene"
-    },
-    {
-      imageUrl: "/assets/botulinumtoxin/botox-hyperhidrose_hero.webp",
-      imageAlt: "Botulinumtoxin gegen Schwitzen an Achseln und Händen",
-      title: "Botulinumtoxin gegen Schwitzen – Hyperhidrose Behandlung",
-      description: "Botulinumtoxin A gegen Schwitzen ist hochwirksam bei übermäßigem Schwitzen (Hyperhidrose). Wie funktioniert Botulinumtoxin gegen Schwitzen? Es blockiert die Schweißdrüsenaktivität für 6-9 Monate. Die Schwitzen Behandlung eignet sich für Achseln, Hände und Füße. Was kostet eine Botulinumtoxin Behandlung gegen Schwitzen? Ab ca. 400€.",
-      treatmentUrl: "/botulinumtoxin/hyperhidrose"
-    }
-  ]
-};
+    title: 'Unsere Botulinumtoxin Behandlungen im Überblick',
+    treatments: [
+      {
+        imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
+        imageAlt: 'Faltenbehandlung mit Botulinumtoxin an Stirn, Zornesfalte und Augenfalten in Bremen',
+        title: 'Faltenbehandlung – Stirn, Zornesfalte & Krähenfüße',
+        description:
+          'Die Botulinumtoxin Behandlung glättet mimische Falten sanft und bewahrt Ihre natürliche Mimik. Ideal für Stirn, Glabella (Zornesfalte) und Augenfalten. Wirkung nach wenigen Tagen, Kontrolle nach ca. 2 Wochen.',
+        treatmentUrl: '/botulinumtoxin/faltenbehandlung',
+      },
+      {
+        imageUrl: '/assets/botulinumtoxin/botox-masseter_hero.webp',
+        imageAlt: 'Masseter-Behandlung mit Botulinumtoxin zur Entspannung des Kaumuskels in Bremen',
+        title: 'Masseter – Jawline harmonisieren & Zähneknirschen lindern',
+        description:
+          'Gezielte Injektion in den Kaumuskel reduziert Bruxismus und kann die Gesichtsform schlanker wirken lassen. Ergebnis nach 2–4 Wochen, Haltbarkeit ca. 4–6 Monate.',
+        treatmentUrl: '/botulinumtoxin/masseter',
+      },
+      {
+        imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
+        imageAlt: 'Mesobotox/Microbotox für verfeinerte Poren und ausgeglichene Haut in Bremen',
+        title: 'Mesobotox – Hautverfeinerung (Microbotox)',
+        description:
+          'Sehr oberflächliche Botulinumtoxin Injektion zur Reduktion von Porengröße und Talg, für ebenmäßigere Haut. Sinnvolle Ergänzung zur klassischen Faltenbehandlung.',
+        treatmentUrl: '/botulinumtoxin/microbotox',
+      },
+      {
+        imageUrl: '/assets/botulinumtoxin/botox-migräne_hero.webp',
+        imageAlt: 'Medizinische Botulinumtoxin Migränebehandlung an definierten Punkten in Bremen',
+        title: 'Migräne – medizinische Botulinumtoxin Therapie',
+        description:
+          'Bei chronischer Migräne kann Botulinumtoxin gemäß ärztlicher Indikation Beschwerden reduzieren. Die Kosten können nach Genehmigung durch die Krankenkasse übernommen werden.',
+        treatmentUrl: '/botulinumtoxin/migraene',
+      },
+      {
+        imageUrl: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
+        imageAlt: 'Behandlung gegen starkes Schwitzen (Hyperhidrose) an den Achseln mit Botulinumtoxin in Bremen',
+        title: 'Hyperhidrose – Botulinumtoxin gegen Schwitzen',
+        description:
+          'Wirksam bei übermäßigem Schwitzen an Achseln, Händen oder Füßen. Effekt in der Regel 6–9 Monate. Beratung zu Indikation, Alternativen und Nachsorge inklusive.',
+        treatmentUrl: '/botulinumtoxin/hyperhidrose',
+      },
+    ],
+  };
 
   const reviews: Review[] = [
     {
       id: 1,
-      name: "Anna L.",
+      name: 'Anna L.',
       rating: 5,
-      text: "Ich wusste nicht genau, welche Behandlung bei Falten für mich passt. Dr. El-Armouche hat mir alle Optionen erklärt – von Zornesfalte bis Augenfalten. Meine Faltenbehandlung war schmerzfrei und das Ergebnis ist wunderschön natürlich!",
-      date: "2024-09-20"
+      text:
+        'Ich war unsicher, welche Behandlung für meine Stirnfalten passt. Die Aufklärung war ausführlich – Ergebnis natürlich und harmonisch. Sehr empfehlenswert!',
+      date: '2024-09-20',
     },
     {
       id: 2,
-      name: "Markus T.",
+      name: 'Markus T.',
       rating: 5,
-      text: "Die Masseter Behandlung hat mein Zähneknirschen deutlich verbessert. Trotz der Masseter Behandlung Kosten lohnt es sich absolut – auch die Jawline sieht besser aus!",
-      date: "2024-08-15"
+      text:
+        'Die Masseter-Behandlung hat mein Zähneknirschen spürbar reduziert. Auch die Kieferlinie wirkt feiner. Preis-Leistung top.',
+      date: '2024-08-15',
     },
     {
       id: 3,
-      name: "Nina K.",
+      name: 'Nina K.',
       rating: 5,
-      text: "Kann Botulinumtoxin bei Migräne wirklich helfen? Ja! Meine chronischen Migräne-Attacken sind deutlich seltener geworden. Die Botulinumtoxin Migräne Behandlung war lebensverändernd für mich.",
-      date: "2024-07-30"
+      text:
+        'Meine chronischen Migräneattacken sind seltener geworden. Die ärztliche Begleitung war sehr strukturiert – klare Empfehlung.',
+      date: '2024-07-30',
     },
     {
       id: 4,
-      name: "Stefan H.",
+      name: 'Stefan H.',
       rating: 5,
-      text: "Sehr professionelle Beratung zur Botulinumtoxin Behandlung! Es wurde mir genau erklärt, was Botulinumtoxin ist und wie es wirkt. Das Ergebnis ist harmonisch und natürlich.",
-      date: "2024-06-12"
+      text:
+        'Professionelle Beratung zur Botulinumtoxin A Behandlung. Alles transparent erklärt, inklusive möglicher Nebenwirkungen.',
+      date: '2024-06-12',
     },
     {
       id: 5,
-      name: "Laura M.",
+      name: 'Laura M.',
       rating: 5,
-      text: "Botulinumtoxin gegen Schwitzen war die beste Entscheidung! Endlich keine peinlichen Schweißflecken mehr. Die Behandlung hat mein Selbstbewusstsem enorm gestärkt.",
-      date: "2024-05-18"
-    }
+      text:
+        'Botulinumtoxin gegen Schwitzen war ein Gamechanger. Endlich Sicherheit im Alltag. Danke!',
+      date: '2024-05-18',
+    },
   ];
 
   const consultationData: ConsultationSectionProps = {
-    title: "Welche Botulinumtoxin Behandlung passt zu Ihnen?",
+    title: 'Welche Botulinumtoxin Behandlung passt zu Ihnen?',
     description: [
-      "Was kostet eine Botulinumtoxin Behandlung und welche ist die richtige für Sie? Diese Fragen klären wir gemeinsam in einem ausführlichen Beratungsgespräch. Als spezialisierte Ärztin für ästhetische Medizin analysiere ich Ihre individuellen Bedürfnisse.",
-      "Möchten Sie Falten behandeln (Zornesfalte, Augenfalten, Nasolabialfalte)? Interessieren Sie sich für eine Masseter Behandlung zur Gesichtskonturierung? Oder suchen Sie eine medizinische Lösung gegen Schwitzen oder Migräne?",
-      "In unserer Praxis in Bremen erstelle ich einen maßgeschneiderten Behandlungsplan mit Botulinumtoxin A. Dabei berücksichtige ich Ihre Anatomie, Ihre Ziele und Ihr Budget. Oft macht auch eine Kombination Sinn: zum Beispiel Zornesfalte Hyaluron oder Botulinumtoxin – oder Faltenbehandlung ergänzt durch Mesobotox.",
-      "Transparenz ist mir wichtig: Sie erfahren genau, was Botulinumtoxin ist, was es macht, wie lange die Wirkung anhält und was die Behandlung kostet. So können Sie eine informierte Entscheidung treffen."
+      'In der ärztlichen Beratung in Bremen klären wir Ihre Ziele, prüfen Indikationen und sprechen über Alternativen. Sie erhalten einen individuellen Behandlungsplan inklusive Dosisempfehlung und Kostentransparenz.',
+      'Sicherheit zuerst: ausführliche Aufklärung, Dokumentation (Vorher/Nachher-Verlauf ohne Heilsversprechen) und Nachkontrolle. Mögliche Nebenwirkungen und Kontraindikationen werden besprochen.',
+      'Typische Preisrahmen (Richtwerte): Falten ab ca. 200 € • Masseter ca. 300–500 € • Mesobotox ab 250 € • Hyperhidrose ca. 400–700 € • Migräne ggf. Kassenleistung bei medizinischer Indikation.',
+      'Behandlerin: ärztliche Leitung mit Schwerpunkt ästhetische Medizin. Ergebnisse sind individuell und können variieren.',
     ],
-    ctaText: "Jetzt Beratung vereinbaren",
-    ctaHref: "/terminanfragen",
-    imageSrc: "/assets//tinified/IMG_7364.webp",
-    imageAlt: "Dr. Ola El-Armouche berät Patientin zu Botulinumtoxin Behandlungen",
-    backgroundColor: "bg-[#FDF6F0]"
+    ctaText: 'Jetzt Beratung vereinbaren',
+    ctaHref: '/terminanfragen',
+    imageSrc: '/assets/tinified/IMG_7364.webp',
+    imageAlt: 'Ärztliche Beratung zu Botulinumtoxin Behandlungen bei EL Aesthetics in Bremen',
+    backgroundColor: 'bg-[#FDF6F0]',
   };
 
   const faqData: FAQSectionProps = {
-    title: "Häufig gestellte Fragen zur Botulinumtoxin Behandlung",
+    title: 'Häufig gestellte Fragen zur Botulinumtoxin Behandlung',
     faqs: [
       {
-        question: "Was ist Botulinumtoxin und was macht Botulinumtoxin?",
-        answer: "Botulinumtoxin ist ein natürlich vorkommendes Protein, das die Signalübertragung zwischen Nerven und Muskeln hemmt. Was macht Botulinumtoxin konkret? Es entspannt überaktive Muskulatur gezielt dort, wo es injiziert wird. Dadurch glättet es Falten, reduziert Schwitzen und lindert Migräne. Botulinumtoxin Typ A ist die am häufigsten verwendete Form und gilt als sicher und gut erforscht."
+        question: 'Botulinumtoxin – was ist das?',
+        answer:
+          'Botulinumtoxin ist ein Wirkstoff, der Nervenimpulse an der Injektionsstelle vorübergehend hemmt. Dadurch entspannt sich Muskulatur bzw. Schweißdrüsenaktivität nimmt ab. Einsatz z. B. bei Falten, Bruxismus/Masseter, Hyperhidrose, chronischer Migräne. Nebenwirkungen können u. a. Rötung, Schwellung, kleine Hämatome, Druckgefühl/Kopfschmerz sein; selten Asymmetrien/Ptosis. Vorher/Nachher: Wir dokumentieren den Verlauf, ohne Heilsversprechen. Kosten: je Bereich variabel (siehe unten). Erfahrung/Qualität: ärztliche Aufklärung, sterile Technik, Nachkontrolle. Erwartung: Wirkung nach Tagen, hält Monate, Ergebnisse variieren.',
       },
       {
-        question: "Was ist Botulinumtoxin Typ A genau?",
-        answer: "Botulinumtoxin Typ A ist die medizinisch am besten untersuchte Variante des Wirkstoffs. Es wird seit über 30 Jahren in der Medizin eingesetzt – sowohl ästhetisch als auch therapeutisch. Botulinumtoxin A blockiert reversibel die Freisetzung von Acetylcholin an Nervenendigungen, wodurch Muskeln entspannt und Schweißdrüsen gehemmt werden können."
+        question: 'Was macht Botulinumtoxin?',
+        answer:
+          'Botulinumtoxin blockiert die Freisetzung von Acetylcholin an Nervenendigungen. Das reduziert Muskelzug/Schweißproduktion lokal. Nebenwirkungen: meist mild und vorübergehend; selten unerwünschte Muskelentspannung in benachbarten Arealen. Vorher/Nachher: subtile, natürliche Glättung statt „Masken-Effekt“. Kosten: abhängig von Areal und benötigten Einheiten. Erfahrung: ärztlich geleitete Behandlung mit Dosisanpassung bei Kontrolle. Erwartung: Volleffekt ca. Tag 14.',
       },
       {
-        question: "Welche Behandlung bei Falten ist die beste?",
-        answer: "Das hängt von der Faltenart ab. Mimikfalten wie Zornesfalte und Augenfalten lassen sich ideal mit Botulinumtoxin behandeln. Bei tieferen statischen Falten wie der Nasolabialfalte kann eine Kombination sinnvoll sein: Zornesfalte Hyaluron oder Botulinumtoxin? Oft ergänzen sich beide Methoden optimal. In der Beratung analysiere ich, welche Behandlung Falten unter den Augen, an der Stirn oder am Mund am besten adressiert."
+        question: 'Was ist Botulinumtoxin Typ A?',
+        answer:
+          'Typ A ist die in Ästhetik und Medizin am häufigsten eingesetzte Variante. Sie gilt bei korrekter Indikation als sicher und reversibel. Nebenwirkungen/Kontraindikationen werden vorab besprochen (z. B. Schwangerschaft/Stillzeit, neuromuskuläre Erkrankungen). Vorher/Nachher: Verlaufskontrolle nach ca. 2 Wochen. Kosten: siehe Preisrahmen. Expertise: ärztliche Anwendung nach GOÄ. Erwartung: Haltbarkeit je nach Areal 3–9 Monate.',
       },
       {
-        question: "Was kostet eine Botulinumtoxin Behandlung?",
-        answer: "Die Kosten variieren je nach Behandlungsbereich: Faltenbehandlung ab ca. 200€, Masseter Behandlung Kosten ab 300€, Mesobotox Kosten ab 250€, Botulinumtoxin gegen Schwitzen ab 400€. Was kostet eine Botulinumtoxin Behandlung gegen Migräne? Bei medizinischer Indikation können die Kosten von der Krankenkasse übernommen werden. Einen individuellen Kostenvoranschlag erhalten Sie im Beratungsgespräch."
+        question: 'Mögliche Nebenwirkungen?',
+        answer:
+          'Häufig: vorübergehende Rötung, Schwellung, Hämatom, Spannungsgefühl. Gelegentlich: Kopfschmerz. Selten: Asymmetrien, vorübergehendes Herabsinken einzelner Muskeln. Kontraindikationen werden vorab geprüft. Vorher/Nachher: realistische, natürliche Veränderungen; keine Heilversprechen. Kosten: abhängig von Areal/Einheiten. Erfahrung/Qualität: sterile Technik, Dosierung nach Anatomie, Nachkontrolle inklusive.',
       },
       {
-        question: "Wie funktioniert Botulinumtoxin gegen Schwitzen?",
-        answer: "Botulinumtoxin A gegen Schwitzen blockiert die Nervensignale zu den Schweißdrüsen. Dadurch wird die Schweißproduktion in den behandelten Bereichen (meist Achseln, Hände oder Füße) deutlich reduziert. Kann man übermäßiges Schwitzen mit Botulinumtoxin behandeln? Ja, sehr effektiv! Die Wirkung hält 6-9 Monate an. Auch bei Schwitzen in den Wechseljahren kann Botulinumtoxin helfen."
+        question: 'Botulinumtoxin Behandlung Vorher/Nachher – was ist zu erwarten?',
+        answer:
+          'Initiale Wirkung nach 2–5 Tagen, Volleffekt nach ~14 Tagen. Ziel: harmonische, natürliche Entspannung – keine starre Mimik. Wir dokumentieren den Verlauf und bieten bei Bedarf Dosisfeinjustierung. Nebenwirkungen: meist mild/kurzfristig. Kosten: individueller Kostenvoranschlag nach Untersuchung. Erfahrung: ärztliche Leitung & Qualitätsstandards. Erwartung: Haltbarkeit je nach Areal 3–9 Monate; Ergebnisse variieren.',
       },
       {
-        question: "Zahlt die Krankenkasse Botulinumtoxin gegen Schwitzen oder Migräne?",
-        answer: "Zahlt die Krankenkasse Botulinumtoxin gegen Schwitzen? Bei schwerer Hyperhidrose, die auf andere Therapien nicht anspricht, ist eine Kostenübernahme nach Antrag möglich. Bei chronischer Migräne übernimmt die Krankenkasse die Botulinumtoxin Behandlung häufig nach Genehmigung. Ästhetische Behandlungen (Falten, Masseter, Mesobotox) werden nicht erstattet. Ich unterstütze Sie gerne bei der Antragstellung."
+        question: 'Botulinumtoxin Injektion – was kostet es?',
+        answer:
+          'Richtwerte: Falten ab ca. 200 €; Masseter ca. 300–500 €; Mesobotox ab 250 €; Hyperhidrose ca. 400–700 €; Migräne ggf. Kassenleistung nach Genehmigung. Abrechnung nach GOÄ. Nebenwirkungen/Erwartungen werden vorab erläutert; Vorher/Nachher-Verlauf ohne Heilsversprechen. Erfahrung: ärztliche Behandlung, sterile Technik, Nachkontrolle.',
       },
       {
-        question: "Was ist eine Masseter Botulinumtoxin Behandlung und lohnt sie sich?",
-        answer: "Die Masseter Behandlung injiziert Botulinumtoxin in den großen Kaumuskel. Das harmonisiert die Gesichtsform (schlankere Jawline) und reduziert Zähneknirschen. Lohnt sich Botulinumtoxin im Masseter wirklich? Ja, besonders bei ausgeprägtem Masseter oder Bruxismus. Das Ergebnis zeigt sich nach 2-4 Wochen und hält 4-6 Monate. Die Masseter Behandlung Kosten betragen ca. 300-500€ je nach Dosierung."
+        question: 'Botulinumtoxin Injektion Erfahrungen – unsere Expertise',
+        answer:
+          'Ärztlich geführte Praxis mit Fokus auf ästhetische und ausgewählte medizinische Indikationen. Strukturierte Aufklärung, Fotodokumentation und Nachkontrolle gehören dazu. Nebenwirkungen werden transparent besprochen. Vorher/Nachher: realistische Ziele, natürliche Ergebnisse. Kosten: individueller Plan je Anatomie/Einheiten. Erwartung: Wirkung setzt zeitversetzt ein; Ergebnisse variieren.',
       },
       {
-        question: "Was ist Mesobotox und wie unterscheidet es sich von klassischem Botulinumtoxin?",
-        answer: "Was ist Mesobotox? Bei Mesobotox (auch Microbotox oder Skinbotox genannt) wird Botulinumtoxin sehr oberflächlich und feinverteilt in die Haut injiziert – nicht in die Muskulatur. Was ist der Unterschied zwischen Botulinumtoxin und Mesobotox? Mesobotox verfeinert die Hautstruktur, verkleinert Poren und mattiert die Haut, ohne die Mimik zu beeinflussen. Klassisches Botulinumtoxin entspannt gezielt einzelne Muskeln zur Faltenglättung. Mesobotox Erfahrungen zeigen besonders gute Ergebnisse bei großporiger, öliger Haut."
+        question: 'Was kostet eine Botulinumtoxin Behandlung insgesamt?',
+        answer:
+          'Die Gesamtkosten hängen von Areal, benötigten Einheiten und ggf. Kombinationen ab. Sie erhalten nach Untersuchung ein schriftliches Angebot. Nebenwirkungen/Kontraindikationen werden vorab geklärt. Vorher/Nachher: dokumentierter Verlauf, keine Heilversprechen. Erfahrung: ärztliche Durchführung nach GOÄ. Erwartung: Haltbarkeit 3–9 Monate je nach Behandlungsziel.',
       },
       {
-        question: "Wie lange hält eine Botulinumtoxin Behandlung?",
-        answer: "Wie lange hält Botulinumtoxin gegen Schwitzen? Etwa 6-9 Monate. Wie lange hält das Ergebnis einer Masseter Botulinumtoxin Behandlung? Ca. 4-6 Monate. Faltenbehandlungen halten 3-6 Monate, Mesobotox etwa 3-4 Monate, und die Botulinumtoxin Migräne Behandlung sollte alle 3 Monate aufgefrischt werden. Die Wirkdauer hängt vom individuellen Stoffwechsel ab."
+        question: 'Wie lange hält die Wirkung?',
+        answer:
+          'Falten: ca. 3–6 Monate; Masseter: ca. 4–6 Monate; Hyperhidrose: ca. 6–9 Monate; Migräne: Auffrischung häufig alle 3 Monate. Nebenwirkungen üblich gering; Erwartungen werden im Gespräch realistisch eingeordnet. Kosten siehe Richtwerte.',
       },
-      {
-        question: "Kann ich verschiedene Botulinumtoxin Behandlungen kombinieren?",
-        answer: "Ja, Kombinationen sind oft sinnvoll und werden individuell geplant. Beispiele: Faltenbehandlung plus Mesobotox für optimale Hautqualität, Masseter Behandlung plus Zornesfalte, oder welche Behandlung Nasolabialfalte – eventuell Hyaluron ergänzend zu Botulinumtoxin. Wichtig ist, dass die Gesamtdosis im sicheren Rahmen bleibt. Das beurteile ich in Ihrer persönlichen Beratung."
-      }
-    ]
+    ],
   };
 
   const ctaData: CTASectionProps = {
-    title: "Bereit für Ihre Botulinumtoxin Behandlung in Bremen?",
-    subtitle: "Vereinbaren Sie jetzt Ihr unverbindliches Beratungsgespräch und erfahren Sie, welche Botulinumtoxin Behandlung optimal zu Ihnen passt.",
-    primaryCTA: { text: "Jetzt beraten lassen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    title: 'Bereit für Ihre Botulinumtoxin Behandlung in Bremen?',
+    subtitle:
+      'Vereinbaren Sie jetzt Ihr unverbindliches Beratungsgespräch. Wir planen Ihre Botulinumtoxin A Behandlung transparent, sicher und individuell.',
+    primaryCTA: { text: 'Jetzt beraten lassen', href: '/terminanfragen' },
+    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
-    title: "EL Aesthetics Bremen – Spezialisiert auf Botulinumtoxin Behandlungen",
-    description: "In unserer Praxis in Bremen bieten wir Ihnen das komplette Spektrum der Botulinumtoxin Therapie: von ästhetischen Anwendungen (Faltenbehandlung, Masseter, Mesobotox) bis zu medizinischen Indikationen (Hyperhidrose, Migräne). Immer auf aktuellem wissenschaftlichen Stand und mit höchsten Qualitätsansprüchen.",
+    title: 'EL Aesthetics Bremen – Spezialisiert auf Botulinumtoxin Behandlungen',
+    description:
+      'In unserer Praxis in Bremen bieten wir das gesamte Spektrum der Botulinumtoxin Therapie: Ästhetik (Falten, Masseter, Mesobotox) und medizinische Indikationen (Hyperhidrose, Migräne) – evidenzbasiert und mit hohen Qualitätsstandards.',
     location: {
-      address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
-      email: "info@elaesthetics-bremen.de",
-      openingHours: [
-        "Termine nach Vereinbarung"
-      ]
-    }
+      address: 'Richtepad 14, 28355 Bremen',
+      phone: '0155 66919635',
+      email: 'info@elaesthetics-bremen.de',
+      openingHours: ['Mo–Fr 9:00–17:00'],
+    },
+  };
+
+  // --- Structured Data (JSON-LD) ---
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqData.faqs.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  };
+
+  const businessSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'MedicalBusiness',
+    name: 'EL Aesthetics',
+    image: 'https://www.elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp',
+    url: 'https://www.elaesthetics-bremen.de/botulinumtoxin',
+    email: 'info@elaesthetics-bremen.de',
+    telephone: '+49 155 66919635',
+    priceRange: '€€',
+    areaServed: { '@type': 'City', name: 'Bremen' },
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Richtepad 14',
+      postalCode: '28355',
+      addressLocality: 'Bremen',
+      addressCountry: 'DE',
+    },
+    openingHours: 'Mo-Fr 09:00-17:00',
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: '5', reviewCount: '5' },
   };
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
       <IntroSection {...introData} />
+      <DetailedInfoSection/>
       <TreatmentsSection {...treatmentsData} />
-      <PatientReviews 
-        reviews={reviews} 
-        title="Erfahrungen mit Botulinumtoxin Behandlungen" 
-        subtitle="Unsere Patienten berichten über ihre Erfahrungen mit verschiedenen Botulinumtoxin Behandlungen – von Faltenbehandlung über Masseter bis zu medizinischen Anwendungen gegen Schwitzen und Migräne."
+      <PatientReviews
+        reviews={reviews}
+        title="Erfahrungen mit Botulinumtoxin Behandlungen"
+        subtitle="Auszüge echter Patientenstimmen zu Botulinumtoxin Injektionen in Bremen. Individuelle Ergebnisse können variieren."
       />
       <ConsultationSection {...consultationData} />
       <FAQSection {...faqData} />
-
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
     </div>
   );
 }

@@ -14,7 +14,7 @@ export default function Contact() {
           <p className="text-primary text-base font-light">
             Vereinbaren Sie einen Beratungstermin in unserer Praxis in Bremen
           </p>
-          <Link className='p-4 border w-full inline-block mt-4 text-black border-white bg-white hover:text-white hover:bg-black transition-color' href="/kontakt">Zum Beratungstermin</Link>
+          <Link className='p-4 border w-full inline-block mt-4 text-black border-white bg-white hover:text-white hover:bg-black transition-color' href="/kontakt">Jetzt kontaktieren!</Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">

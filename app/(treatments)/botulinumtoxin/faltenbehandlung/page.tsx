@@ -66,12 +66,12 @@ export default function BotoxFaltenbehandlungPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: "Die Botulinumtoxin Faltenbehandlung auf einen Blick",
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.botulinum.faltenbehandlung}€*`, iconUrl: "/assets//icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 15-20 Min", iconUrl: "/assets//icons/TIME.svg" },
-      { title: "Wirkung", description: "nach 3-7 Tagen sichtbar", iconUrl: "/assets//icons/TIME.svg" },
-      { title: "Haltbarkeit", description: "3-6 Monate", iconUrl: "/assets//icons/CAL.svg" },
-      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets//icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets//icons/gesellschaft.svg" }
+      { title: "Preis", description: `ab ${PRICES.botulinum.faltenbehandlung}€*`, iconUrl: "/assets/icons/EUR.svg" },
+      { title: "Dauer", description: "ca. 15-20 Min", iconUrl: "/assets/icons/TIME.svg" },
+      { title: "Wirkung", description: "nach 3-7 Tagen sichtbar", iconUrl: "/assets/icons/TIME.svg" },
+      { title: "Haltbarkeit", description: "3-6 Monate", iconUrl: "/assets/icons/CAL.svg" },
+      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
+      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -191,12 +191,12 @@ export default function BotoxFaltenbehandlungPage() {
     description: [
       "Sie möchten Mimikfalten reduzieren und dabei ein natürliches Aussehen bewahren?",
       "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und Gründerin von EL Aesthetics. Mit langjähriger Erfahrung in der Behandlung mit Botulinumtoxin verhelfe ich Ihnen zu einem frischen, jugendlichen Erscheinungsbild – individuell und präzise dosiert.",
-      "Ich bin zertifiziert für Botulinumtoxin- und Filler-Behandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinum- und Fillertherapie e.V. (DGBT). Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich auf dem neuesten Stand der ästhetischen Medizin.",
+      "Ich bin zertifiziert für Botulinumtoxin- und Filler-Behandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT). Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich auf dem neuesten Stand der ästhetischen Medizin.",
       "In meiner Praxis in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie eine Botulinumtoxin-Behandlung Ihr Gesicht harmonischer und entspannter wirken lassen kann."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets//tinified/IMG_7364.webp",
+    imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für eine Botulinumtoxin Faltenbehandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };

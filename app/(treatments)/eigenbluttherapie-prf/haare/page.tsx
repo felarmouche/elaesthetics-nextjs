@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets//prf/og-prf-haare-haarausfall-bremen.webp',
+      'https://elaesthetics-bremen.de/assets/prf/og-prf-haare-haarausfall-bremen.webp',
     ],
   },
   alternates: {
@@ -54,7 +54,7 @@ export default function PRFHaarePage() {
     title: 'PRF Eigenbluttherapie für Haare in Bremen',
     subtitle:
       'PRF-Therapie als natürliche Eigenblut-Behandlung bei Haarausfall: Haarfollikel revitalisieren, Haardichte erhöhen & Haarwachstum fördern – mit 100% körpereigener Regeneration.',
-    imageSrc: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp',
+    imageSrc: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp',
     imageAlt:
       'PRF Eigenbluttherapie gegen Haarausfall bei EL Aesthetics in Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
@@ -124,27 +124,27 @@ export default function PRFHaarePage() {
       {
         title: 'Preis',
         description: 'ab 300€ pro Sitzung*',
-        iconUrl: '/assets//icons/EUR.svg',
+        iconUrl: '/assets/icons/EUR.svg',
       },
       {
         title: 'Dauer',
         description: 'ca. 2 Stunden',
-        iconUrl: '/assets//icons/TIME.svg',
+        iconUrl: '/assets/icons/TIME.svg',
       },
       {
         title: 'Wirkeintritt',
         description: 'nach 2-3 Behandlungen',
-        iconUrl: '/assets//icons/CAL.svg',
+        iconUrl: '/assets/icons/CAL.svg',
       },
       {
         title: 'Lokalanästhesie',
         description: 'Ja, auf Wunsch',
-        iconUrl: '/assets//icons/Spritze.svg',
+        iconUrl: '/assets/icons/Spritze.svg',
       },
       {
         title: 'Wiederholung',
         description: '4-6 Sitzungen, Abstand 4-6 Wochen, Auffrischung 1-2x/Jahr',
-        iconUrl: '/assets//icons/wiederholung.svg',
+        iconUrl: '/assets/icons/wiederholung.svg',
       },
     ],
     note: '*Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).',
@@ -300,7 +300,7 @@ export default function PRFHaarePage() {
     ],
     ctaText: 'Jetzt Haaranalyse-Termin buchen',
     ctaHref: '/terminanfragen',
-    imageSrc: '/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Expertin für PRF Haartherapie gegen Haarausfall in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -310,7 +310,7 @@ export default function PRFHaarePage() {
     title: 'Weitere Behandlungen gegen Haarausfall in Bremen',
     treatments: [
       {
-        imageUrl: '/assets//mesotherapie/mesotherapie-haare_hero.webp',
+        imageUrl: '/assets/mesotherapie/mesotherapie-haare_hero.webp',
         imageAlt: 'Mesotherapie gegen Haarausfall',
         title: 'Mesotherapie bei Haarausfall',
         description:
@@ -318,7 +318,7 @@ export default function PRFHaarePage() {
         treatmentUrl: '/mesotherapie/haare',
       },
       {
-        imageUrl: '/assets//eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp',
+        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp',
         imageAlt: 'Microneedling mit PRF für die Kopfhaut',
         title: 'Microneedling + PRF (Kopfhaut)',
         description:
@@ -326,7 +326,7 @@ export default function PRFHaarePage() {
         treatmentUrl: '/eigenbluttherapie-prf/microneedling',
       },
       {
-        imageUrl: '/assets//polynukleotide/polynukleotide_hero.webp',
+        imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
         imageAlt: 'Polynukleotide für die Kopfhaut bei Haarausfall',
         title: 'Polynukleotide (PN) bei Haarausfall',
         description:

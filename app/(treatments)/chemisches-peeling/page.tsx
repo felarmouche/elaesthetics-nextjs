@@ -36,7 +36,7 @@ export const metadata: Metadata = {
       'PRX-T33 Biorevitalisierung bei EL Aesthetics Bremen: tiefenwirksame Hauterneuerung für ein ebenmäßigeres Hautbild ohne Schälung.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets//peeling/og-chemisches-peeling-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets/peeling/og-chemisches-peeling-bremen.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/chemisches-peeling',
@@ -47,7 +47,7 @@ export default function ChemischesPeelingPage() {
   const heroData: HeroSectionProps = {
     title: "Chemisches Peeling in Bremen",
     subtitle: "Hauterneuerung ohne Ausfallzeit: PRX-T33 kombiniert TCA mit Wasserstoffperoxid für tiefenwirksame Regeneration – ohne sichtbare Schälung, auch im Sommer geeignet.",
-    imageSrc: "/assets//chemisches-peeling/chemisches-peeling_hero.webp",
+    imageSrc: "/assets/chemisches-peeling/chemisches-peeling_hero.webp",
     imageAlt: "Chemisches Peeling mit Biorevitalisierung bei EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
     secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
@@ -132,32 +132,32 @@ export default function ChemischesPeelingPage() {
       {
         title: "Preis",
         description: "ab 180€ pro Behandlung*",
-        iconUrl: "/assets//icons/EUR.svg"
+        iconUrl: "/assets/icons/EUR.svg"
       },
       {
         title: "Dauer",
         description: "ca. 45 Min",
-        iconUrl: "/assets//icons/TIME.svg"
+        iconUrl: "/assets/icons/TIME.svg"
       },
       {
         title: "Wirkung",
         description: "sofort + Aufbau über Wochen",
-        iconUrl: "/assets//icons/TIME.svg"
+        iconUrl: "/assets/icons/TIME.svg"
       },
       {
         title: "Haltbarkeit",
         description: "9-12 Monate",
-        iconUrl: "/assets//icons/CAL.svg"
+        iconUrl: "/assets/icons/CAL.svg"
       },
       {
         title: "Betäubung",
         description: "keine erforderlich",
-        iconUrl: "/assets//icons/Spritze.svg"
+        iconUrl: "/assets/icons/Spritze.svg"
       },
       {
         title: "Ausfallzeit",
         description: "i.d.R. sofort gesellschaftsfähig",
-        iconUrl: "/assets//icons/gesellschaft.svg"
+        iconUrl: "/assets/icons/gesellschaft.svg"
       }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
@@ -289,7 +289,7 @@ export default function ChemischesPeelingPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/terminanfragen",
-    imageSrc: "/assets//tinified/IMG_7364.webp",
+    imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche – Expertin für chemisches Peeling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
@@ -298,7 +298,7 @@ export default function ChemischesPeelingPage() {
     title: "Weitere Behandlungen zur Hautverbesserung",
     treatments: [
       {
-        imageUrl: "/assets//medizinisches-microneedling/medizinisches-microneedling_hero.webp",
+        imageUrl: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp",
         imageAlt: "Medizinisches Microneedling für Hautstraffung und Kollagenaufbau",
         title: "Medizinisches Microneedling",
         description: "Gezielte Mikroverletzungen stimulieren die Kollagen- und Elastinproduktion. Ideal zur Verbesserung von Hautstruktur, Aknenarben und feinen Linien. Kombinierbar mit Wirkstofftherapie.",
@@ -306,14 +306,14 @@ export default function ChemischesPeelingPage() {
       },
       
       {
-        imageUrl: "/assets//eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp",
+        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp",
         imageAlt: "Eigenbluttherapie PRP für natürliche Hautverjüngung",
         title: "Eigenbluttherapie (PRF)",
         description: "Ihr eigenes Blut wird aufbereitet und die Wachstumsfaktoren in die Haut injiziert. Stimuliert Regeneration und Kollagenbildung auf vollkommen natürliche Weise.",
         treatmentUrl: "/hautverbesserung/eigenbluttherapie"
       },
       {
-        imageUrl: "/assets//hyaluron/hyaluron-skinbooster_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
         imageAlt: "Skinbooster Behandlung für Hautfeuchtigkeit",
         title: "Skinbooster (Klassisch)",
         description: "Flächige Injektion von Hyaluronsäure in die Haut für intensive Befeuchtung, Straffung und Verbesserung der Hautstruktur. Ideal für trockene, müde Haut.",

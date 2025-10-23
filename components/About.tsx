@@ -44,7 +44,7 @@ export default function About() {
             className="h-full w-full object-cover"
             width={400}
             height={500}
-            src="/assets//Profilbild engere auswahl/IMG_7336.webp"
+            src="/assets/Profilbild engere auswahl/IMG_7336.webp"
             alt="Portrait der Ärztin Ola El-Armouche" />
         </div>
       </div>

@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets//profhilo/og-profhilo-bremen.webp',
+      'https://elaesthetics-bremen.de/assets/profhilo/og-profhilo-bremen.webp',
     ],
   },
   alternates: {
@@ -56,7 +56,7 @@ export default function ProfhiloBAPPage() {
     title: 'Hyaluron-Remodellierung (BAP-Technik) in Bremen',
     subtitle:
       'Hautqualität & Elastizität gezielt verbessern – wenige Stiche, schonende Behandlung.',
-    imageSrc: '/assets//hyaluron/hyaluron-profhilo_hero.webp',
+    imageSrc: '/assets/hyaluron/hyaluron-profhilo_hero.webp',
     // Markenname nur im ALT-Text (nicht sichtbar für Nutzer)
     imageAlt: 'Profhilo BAP Technik – Hyaluron Remodulierung Illustration',
     primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
@@ -103,12 +103,12 @@ export default function ProfhiloBAPPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'individuell, gemäß GOÄ', iconUrl: '/assets//icons/EUR.svg' },
-      { title: 'Dauer', description: 'ca. 30–45 Min', iconUrl: '/assets//icons/TIME.svg' },
-      { title: 'Schema', description: '2 Sitzungen + Erhaltung', iconUrl: '/assets//icons/wiederholung.svg' },
-      { title: 'Downtime', description: 'kurz (meist alltagstauglich)', iconUrl: '/assets//icons/gesellschaft.svg' },
-      { title: 'Stiche', description: 'wenige, standardisierte Punkte', iconUrl: '/assets//icons/Spritze.svg' },
-      { title: 'Ziel', description: 'Hautqualität & Elastizität', iconUrl: '/assets//icons/CAL.svg' },
+      { title: 'Preis', description: 'individuell, gemäß GOÄ', iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Dauer', description: 'ca. 30–45 Min', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Schema', description: '2 Sitzungen + Erhaltung', iconUrl: '/assets/icons/wiederholung.svg' },
+      { title: 'Downtime', description: 'kurz (meist alltagstauglich)', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Stiche', description: 'wenige, standardisierte Punkte', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Ziel', description: 'Hautqualität & Elastizität', iconUrl: '/assets/icons/CAL.svg' },
     ],
     note: 'Die individuelle Planung und Abrechnung erfolgen gemäß GOÄ.',
   };
@@ -200,7 +200,7 @@ export default function ProfhiloBAPPage() {
     ],
     ctaText: 'Termin vereinbaren',
     ctaHref: '/terminanfragen',
-    imageSrc: '/assets//tinified/IMG_7364.webp',
+    imageSrc: '/assets/tinified/IMG_7364.webp',
     // Marke im ALT erlaubt
     imageAlt: 'Profhilo BAP Behandlung – Beratung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -210,7 +210,7 @@ export default function ProfhiloBAPPage() {
     title: 'Sinnvolle Ergänzungen',
     treatments: [
       {
-        imageUrl: "/assets//hyaluron/hyaluron-filler_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
         title: "Hyaluronsäure-Filler (Falten & Volumen)",
@@ -218,7 +218,7 @@ export default function ProfhiloBAPPage() {
         treatmentUrl: "/hyaluron/filler"
       },
       {
-        imageUrl: "/assets//hyaluron/hyaluron-skinbooster_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Symbolbild für Feuchtigkeit durch eine Skinbooster-Behandlung",
         title: "Skinbooster (Hydratation & Glow)",
@@ -227,7 +227,7 @@ export default function ProfhiloBAPPage() {
       },
       
       {
-        imageUrl: "/assets//hyaluron/hyaluron-hylase_hero.webp",
+        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hylase-Flasche",
         title: "Hylase (Hyaluronidase)",

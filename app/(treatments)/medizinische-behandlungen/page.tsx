@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description:
         'Ärztliche Botox-Behandlungen in Bremen: präzise Dosierung, individuelle Behandlungskonzepte und transparente Aufklärung – von Masseter (Bruxismus) über Microbotox bis Migräne- und Hyperhidrose-Therapie.',
     keywords:
-        'Botox Bremen, Botox Behandlung Bremen, Botulinum Bremen, Masseter Botox Bremen, Microbotox Bremen, Baby Botox Bremen, Botox Migräne Bremen, Botox Hyperhidrose Bremen, Bruxismus Behandlung Bremen',
+        'Botox Bremen, Botox Behandlung Bremen, Botulinumtoxin Bremen, Masseter Botox Bremen, Microbotox Bremen, Baby Botox Bremen, Botox Migräne Bremen, Botox Hyperhidrose Bremen, Bruxismus Behandlung Bremen',
     openGraph: {
         title: 'Botox Behandlungen in Bremen – Präzise, sicher & individuell',
         description:
@@ -42,18 +42,18 @@ export default function BotoxBehandlungenPage() {
     const heroData: HeroSectionProps = {
         title: "Medizische Botox Behandlungen in Bremen",
         subtitle:
-            "Medizinische Botulinum-Therapien – Masseter/Bruxismus, Migräne- und Hyperhidrose-Behandlung.",
-        imageSrc: "/assets//medizinische-behandlungen/medizinische-behandlunge_hero.webp",
+            "Medizinische Botulinumtoxin-Therapien – Masseter/Bruxismus, Migräne- und Hyperhidrose-Behandlung.",
+        imageSrc: "/assets/medizinische-behandlungen/medizinische-behandlunge_hero.webp",
         imageAlt: "Symbolbild für ärztliche Botox-Behandlungen in der Praxis EL Aesthetics Bremen",
         primaryCTA: { text: "Beratung anfragen", href: "/terminanfragen" },
         secondaryCTA: { text: "Behandlungen ansehen", href: "#treatments" }
     };
 
     const introData: IntroSectionProps = {
-        title: "Sicher, präzise, individuell – Botulinum in ärztlicher Hand",
+        title: "Sicher, präzise, individuell – Botulinumtoxin in ärztlicher Hand",
         content: [
             "Botulinumtoxin ist seit vielen Jahren medizinisch etabliert. In erfahrenen Händen lässt sich die Muskelaktivität präzise modulieren – mit dem Ziel, Beschwerden gezielt zu lindern.",
-            "Richtig angewendet kann Botulinum Symptome bei chronischer Migräne, Hyperhidrose und Bruxismus spürbar reduzieren.",
+            "Richtig angewendet kann Botulinumtoxin Symptome bei chronischer Migräne, Hyperhidrose und Bruxismus spürbar reduzieren.",
             "Bei EL Aesthetics Bremen steht die ärztliche Behandlungsplanung im Mittelpunkt: Wir analysieren Ihre Ausgangssituation, definieren realistische Ziele und stimmen die Dosierung individuell ab – um Ihre persönlichen Behandlungsziele bestmöglich zu erreichen.",
             "Transparenz ist uns wichtig: Sie erhalten eine klare Einschätzung zu Wirkungseintritt und Haltbarkeit, möglichen Nebenwirkungen sowie sinnvollen Behandlungsabständen."
         ]
@@ -75,9 +75,9 @@ export default function BotoxBehandlungenPage() {
             {
                 imageUrl: "/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp",
                 imageAlt: "Botox zur Migräneprophylaxe in Bremen",
-                title: "Migräne: Prophylaxe mit Botulinum",
+                title: "Migräne: Prophylaxe mit Botulinumtoxin",
                 description:
-                    "Für chronische Migräne kann Botulinum die Attackenfrequenz senken. Wir besprechen Indikation, Schema und realistische Erwartungen im Rahmen einer ärztlichen Beratung.",
+                    "Für chronische Migräne kann Botulinumtoxin die Attackenfrequenz senken. Wir besprechen Indikation, Schema und realistische Erwartungen im Rahmen einer ärztlichen Beratung.",
                 treatmentUrl: "/botulinumtoxin/migraene"
             },
             {
@@ -85,7 +85,7 @@ export default function BotoxBehandlungenPage() {
                 imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botox in Bremen",
                 title: "Hyperhidrose: Weniger Schwitzen, mehr Freiheit",
                 description:
-                    "In Achseln, Handflächen oder Fußsohlen drosselt Botulinum die Schweißproduktion über Monate. Für ein spürbar trockeneres und komfortableres Hautgefühl.",
+                    "In Achseln, Handflächen oder Fußsohlen drosselt Botulinumtoxin die Schweißproduktion über Monate. Für ein spürbar trockeneres und komfortableres Hautgefühl.",
                 treatmentUrl: "/botulinumtoxin/hyperhidrose"
             }
         ]
@@ -124,7 +124,7 @@ export default function BotoxBehandlungenPage() {
         ],
         ctaText: "Jetzt Beratung anfragen",
         ctaHref: "/terminanfragen",
-        imageSrc: "/assets//tinified/IMG_7364.webp",
+        imageSrc: "/assets/tinified/IMG_7364.webp",
         imageAlt: "Ärztliche Botox-Beratung in der Praxis EL Aesthetics Bremen",
         backgroundColor: "bg-[#F5FAFF]"
     };
@@ -213,7 +213,7 @@ export default function BotoxBehandlungenPage() {
             <ConsultationSection {...consultationData} />
             <FAQSection {...faqData} />
             <CTASection {...ctaData} />
-            <LocationSection {...locationData} />
+            
 
             {/* JSON-LD */}
             <script

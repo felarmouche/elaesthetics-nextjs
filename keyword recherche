@@ -29,24 +29,49 @@ Keywordrecherche:
 │   │   └───haut
 │   └───polynukleotide
 
+Du bist erfahrener seo experte und kennst den aktuellen stand für seo best practises. du willst eine page.tsx seite maximal seo optimieren.
+Hier die Seite:
+...
+Keywords die häufig gesucht werden sind:
+botulinumtoxin, botulinumtoxin behandlung, botulinumtoxin a
 
-SEO Strathegie:
-- Intro: [Keyword] - Was ist das?
-- Behandlungs Details: überschrift = [Keyword] in Bremen - Kosten & Details
-- Reviews: [Keyword] Erfahrungen unserer Kunden
+Gute Fragen für FAQ-Section sind:
+botulinumtoxin was ist das, was macht botuliumtoxin, was ist botulinumtoxin typ a, was kostet eine botulinumtoxin behandlung
+
+Deine grobe SEO Strathegie (wenn nötig abwandlungen möglich):
+- Intro: [HauptKeyword] - Was ist das?
+- Behandlungs Details: überschrift = [KeywordAlternative] in Bremen - Kosten & Details
+- Reviews: [KeywordAlternative] Erfahrungen unserer Kunden
 - Faq mit den Fragen als h3 IMMER Nebenwirkungen
+- ALLE FAQ sections SOLLEN ENTHALTEN:
+    - Mögliche Nebenwirkungen
+    - {PrimaryKeyword} vorher nachher - was ist zu erwarten?
+    - {KeywordAlternative} kosten
+    - {KeywordAlternative} Erfahrungen - meine Expertise (oder so ähnlich)
 
-anti-aging:
-Keywords: hautverjüngung, hautverjüngung methoden, hautverjüngung gesicht, hautverjüngung behandlung, haut verjüngen behandlung, haut straffen ohne op
 
+URL:hautverjuengung
+Hauptkeyword: hautverjuengung
+Keywords: hautverjuengung methoden, hautverjuengung gesicht, hautverjuengung behandlung, haut verjüngen behandlung, haut straffen ohne op
 Fragen:
+Welche Methode zur Hautverjüngung ist die beste?
+Was hilft wirklich gegen Hautalterung?
+Kann man Hautalterung rückgängig machen?
+Welche Gesichtsbehandlung ist ideal bei dünner Haut?
+Wie bekomme ich mehr Volumen im Gesicht – natürlich?
+Kollagen fördern: Was wirkt nachweislich?
+Was sind realistische Erwartungen bei Faltenbehandlung?
 
-botulinumtoxin: 
-Keywords: botulinumtoxin, botulinumtoxin behandlung, botulinumtoxin a
+
+
+URL: botulinumtoxin
+HauptKeyword: botulinumtoxin behandlung
+Keywords: botulinumtoxin injektion, botulinumtoxin a behandlung, botulinum behandlung
 Fragen: botulinumtoxin was ist das, was macht botuliumtoxin, was ist botulinumtoxin typ a, was kostet eine botulinumtoxin behandlung
 
-botulinumtoxin/falten
-Hauptkeywords: nasolabialfalte(100-1000),falten behandlung, faltenbehandlung ,zornesfalte, augenfalten, augenfalten entfernen, augenfalten behandeln falten behandeln, mundfalten entfernen kosten (10-100)
+URL: botulinumtoxin/faltenbehandlung
+Hauptkeyword: faltenbehandlung
+Keywords: nasolabialfalte(100-1000), falten behandlung, zornesfalte, augenfalten, augenfalten entfernen, augenfalten behandeln falten behandeln, mundfalten entfernen kosten (10-100)
 Fragen: welche behandlung bei Falten, zornesfalte hyaluron oder botulinumtoxin, welche behandlung falten unter den augen, welche behandlung nasolabialfalte
 
 botulinumtoxin/hyperhidrose
@@ -146,4 +171,185 @@ Wie lange dauert es, bis die Haut sich regeneriert hat?
 Wie oft sollte man eine Eigenbluttherapie auffrischen?
 
 eigenbluttherapie/vampir-lifting
-Keywords: 
+Keywords: Vampir Lifting, vampire lifting, vampirlifting, vampirlift, vampir lifting gesicht, eigenbluttherapie gesicht
+Fragen: 
+vampir lifting augenringe
+vampir lifting ab welchem alter
+
+eigenbluttherapie/Haare
+Keywords: eigenbluttherapie haarausfall, eigenblutbehandlung haare, prf haare, prp behandlung haare, eigenblut haarausfall
+Fragen:
+prp haare frauen erfahrungen
+haartransplantation eigenblut
+eigenbluttherapie haarausfall erfahrungen
+eigenbluttherapie haare vorher nachher
+
+
+faltenunterspritzung:
+Keywords: faltenunterspritzung, zornesfalte, nasolabialfalte, augenfalten, stirnfalten, marionettenfalten
+Fragen:
+
+
+
+______________________________________
+
+
+Rolle
+Du bist ein erfahrener deutschsprachiger SEO-Experte und Senior Frontend Engineer (Next.js App Router + TypeScript). Du kennst die aktuellen SEO-Best Practices für medizinisch-ästhetische Leistungen (E-E-A-T, YMYL, Local SEO, strukturierte Daten). Denke die Schritte intern durch, gib aber ausschließlich die geforderten Artefakte aus (kein Chain-of-Thought, keine Zwischenerklärungen).
+
+Aufgabe
+Optimiere die folgende bestehende Next.js page.tsx inhaltlich und technisch für maximale organische Sichtbarkeit zum Thema Botulinumtoxin in Bremen.
+
+Aktuelle Seite (page.tsx – unverändert einfügen):
+
+...
+
+
+Unternehmensdaten (für Local SEO, Schema, Footer, CTAs):
+
+Praxis/Studio: El Aesthetics
+
+Adresse: Richtepad 14, 28355 Bremen
+
+Telefon: 0155/66919635
+
+E-Mail: info@elaesthetics-bremen.de
+
+Öffnungszeiten: Mo-Fr 9:00 - 17:00
+
+City Focus: Bremen
+
+Haupt-URL/Canonical: https://www.elaesthetics-bremen.de/{URL}
+
+Medien: vorhandene übernehmen
+
+Keywords
+
+Primary: {PrimaryKeyword}
+
+Alternativen/Sekundär: {KeywordAlternativen}
+Nutze semantische Varianten (Singular/Plural, groß/klein, gelegentlich mit Stadtzusatz „in Bremen“), aber halte eine klare Primärfokussierung je Abschnitt ein.
+
+In der FAQ Section sollen immer folgende Fragen vorkommen:
+- Mögliche Nebenwirkungen
+- {PrimaryKeyword} vorher nachher - was ist zu erwarten?
+- {KeywordAlternative} kosten
+- {KeywordAlternative} Erfahrungen - meine Expertise (oder so ähnlich)
+
+Zielsetzung (messbar)
+
+Präzise Meta Title (~55–60 Zeichen) & Meta Description (~150–160 Zeichen) mit Stadtbezug.
+
+FAQPage JSON-LD + LocalBusiness/MedicalBusiness JSON-LD; alle Pflichtfelder.
+
+Interne Verlinkung (mind. 2–3 relevante Seiten).
+
+Compliance: Keine Heilversprechen, Nebenwirkungen & Kontraindikationen transparent.
+
+Content-Plan (verwende für genannte komponenten diese Struktur)
+
+HeroSection: [Primary Keyword] in Bremen
+
+Kurz, präzise Value Proposition für Bremen; nenne typische Anwendungszonen (z. B. Stirn, Zornesfalte, Krähenfüße).
+
+Was ist das?  – Erklärung zu Behandlung in verständlicher weise (mehrwert)
+QuickInfoSection: [KeywordAlternative] 
+
+Ablauf Schritt-für-Schritt (Aufklärung, Injektion, Nachsorge), Dauer, Downtime, Eignung/Contra.
+
+Kosten & Details  – Preisspannen, Abrechnung, Pakete, Transparenzhinweis.
+
+Reviews: [KeywordAlternative] - Erfahrungen unserer Kund:innen 
+
+Kurze, glaubwürdige Zitate/Review-Snippets (ohne Übertreibung), Hinweis auf echte Quellen.
+
+FAQ  – jede Frage wie beschrieben wenn nicht reicht auch mit sinnvoller Erweiterun deinerseits; jede FAQ-Antwort MUSS enthalten:
+
+„Mögliche Nebenwirkungen“
+
+„{Primary} vorher nachher – was ist zu erwarten?“
+
+„{KeywordAlternative} Kosten“
+
+„{KeywordAlternative} Erfahrungen“
+
+„Meine Expertise“ (Qualifikation/Erfahrung/Qualitätssicherung)
+Fragen:
+- Mögliche Nebenwirkungen
+- {PrimaryKeyword} vorher nachher - was ist zu erwarten?
+- {KeywordAlternative} kosten
+- {KeywordAlternative} Erfahrungen - meine Expertise (oder so ähnlich)
+- {restlicheFragen}
+
+
+Technische & redaktionelle Regeln
+
+Sprache & Stil: Fachlich, seriös, inklusiv, „Sie“-Anrede, klare Sätze, medizinisch korrekt, keine Superlative ohne Evidenz.
+
+On-Page: Einzigartige Title/H1, Canonical, OpenGraph/Twitter, strukturierte Daten.
+
+Lokale Signale: Stadt im Title/H1/H2 natürlich platzieren; NAP-Daten konsistent im Footer/Schema.
+
+Medizin/YMYL: Nebenwirkungen, Kontraindikationen, realistische Erwartungen, „individuelle Ergebnisse variieren“.
+
+Accessibility: sinnvolle Headings, Listen statt Wände aus Text, Buttons mit aria-label falls nötig.
+
+Output-Vertrag (wichtig – halte dich exakt daran)
+Gib genau ZWEI Codeblöcke aus – sonst nichts:
+
+// app/{DEIN_PATH}/page.tsx
+// Vollständig optimierte Seite (TypeScript, Next.js App Router)
+// Enthält: Content gemäß Plan
+// {script type="application/ld+json"} für LocalBusiness/MedicalBusiness & FAQPage,
+// sowie export const metadata (Title, Description, OpenGraph, Twitter, robots, alternates/canonical).
+
+
+2) ```md
+# CHECKLISTE
+- Title/Description Längen ok? [Ja/Nein]
+- 1× H1, Hierarchie korrekt? [Ja/Nein]
+- Keywords natürlich integriert (Primary + Alternativen)? [Ja/Nein]
+- Interne Links gesetzt (≥3)? [Ja/Nein]
+- FAQPage & LocalBusiness JSON-LD valide? [Ja/Nein]
+- Nebenwirkungen/Erwartungsmanagement enthalten? [Ja/Nein]
+- Bilder mit Alt? [Ja/Nein]
+- NAP konsistent + Bremen erwähnt? [Ja/Nein]
+- Canonical/OG/Twitter gesetzt? [Ja/Nein]
+
+
+Schemata (Mindestfelder)
+
+LocalBusiness oder MedicalBusiness (Name, address, geo falls möglich, telephone, openingHours, areaServed: Bremen, sameAs optional, image).
+
+FAQPage (Question/AcceptedAnswer für jede H3).
+
+Nutze JSON-LD im {script type="application/ld+json"} innerhalb der Seite.
+
+Verbote
+
+Keine Roh-Gedankengänge/Erklärungen, keine externen Quellenlisten, keine unbewiesenen Heilsversprechen, keine Keyword-Stacks.
+
+Selbst-Review (intern denken, nur in der CHECKLISTE abhaken)
+
+Deckt der Text alle geforderten Abschnitte & FAQ-Pflichtinhalte ab?
+
+Sind Nebenwirkungen, „vorher/nachher“ (ohne Heilsversprechen) und Kosten klar?
+
+Stadtbezug Bremen konsistent?
+
+Interne Links sinnvoll?
+
+Schemata vollständig?
+
+Reparatur-/Diff-Modus (falls Validierung fehlschlägt)
+Wenn nach dem Einbau etwas bricht (TS-Fehler, Linter, Schema-Validator):
+
+Gib ausschließlich einen unified Patch (diff) für die betroffenen Dateien zurück, mit kurzer 1-Satz-Ursache + 1-Satz-Fix-Plan vor dem Diff.
+
+Wichtig
+
+Wenn Inhalte fehlen (Bilder, Preise), setze klar erkennbare Platzhalter und kommentiere sie im Code.
+
+Schreibe in Deutsch (Sie-Form).
+
+Optimiere für Bremen.

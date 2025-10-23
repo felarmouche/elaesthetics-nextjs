@@ -58,7 +58,7 @@ export default function Header() {
                   className="h-12 w-auto object-contain"
                   width={150}
                   height={150}
-                  src="/assets//logo-el-gemini.webp"
+                  src="/assets/logo-el-gemini.webp"
                   alt="EL Aesthetics Bremen Logo"
                 />
               </Link>
