@@ -57,8 +57,8 @@ export default function PRFHaarePage() {
     imageSrc: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-haare_hero.webp',
     imageAlt:
       'PRF Eigenbluttherapie gegen Haarausfall bei EL Aesthetics in Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -299,7 +299,7 @@ export default function PRFHaarePage() {
       'Lassen Sie uns gemeinsam den ersten Schritt gehen – für dichteres, volleres Haar und ein gestärktes Selbstbewusstsein.',
     ],
     ctaText: 'Jetzt Haaranalyse-Termin buchen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Expertin für PRF Haartherapie gegen Haarausfall in Bremen',
@@ -396,8 +396,8 @@ export default function PRFHaarePage() {
     title: 'Bereit für dichteres, kräftigeres Haar?',
     subtitle:
       'Vereinbaren Sie jetzt Ihre persönliche Haaranalyse und erfahren Sie, wie PRF Ihnen bei Haarausfall helfen kann.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -406,7 +406,7 @@ export default function PRFHaarePage() {
       'Natürliche, evidenzbasierte Behandlung bei Haarausfall – individuell geplant und professionell durchgeführt in unserer modernen Praxis im Herzen Bremens.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

@@ -57,8 +57,8 @@ export default function HyaluronFillerBremenPage() {
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',
     imageAlt:
       'Hyaluron-Filler-Behandlung in Bremen – Lippen, Falten & Konturen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -215,7 +215,7 @@ export default function HyaluronFillerBremenPage() {
       'Verantwortung & Sicherheit: klare Aufklärung, sterile Arbeitsweise und ein definiertes Vorgehen für seltene Komplikationen (inkl. Hylase).',
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Hyaluron-Filler in Bremen',
@@ -287,8 +287,8 @@ export default function HyaluronFillerBremenPage() {
     title: 'Bereit für ein frisches, natürliches Ergebnis?',
     subtitle:
       'Vereinbaren Sie jetzt Ihre persönliche Beratung für Hyaluron-Filler in Bremen.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -297,7 +297,7 @@ export default function HyaluronFillerBremenPage() {
       'Zentral gelegen, gut erreichbar aus Horn-Lehe, Oberneuland, Schwachhausen & Umgebung.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

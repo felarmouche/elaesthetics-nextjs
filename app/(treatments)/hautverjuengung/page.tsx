@@ -56,7 +56,7 @@ export default function HautverjuengungPage() {
     imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
     imageAlt:
       'Gesichtsbehandlung zur Auffrischung und Straffung der Haut bei EL Aesthetics Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
     secondaryCTA: { text: 'Methoden entdecken', href: '#treatments' }
   };
 
@@ -200,7 +200,7 @@ export default function HautverjuengungPage() {
       'Wichtig: Verjüngung ist ein Prozess. Ergebnisse entstehen über Wochen und Monate – dafür wirken sie authentisch und nachhaltig. Vereinbaren Sie Ihr persönliches Beratungsgespräch in Bremen.'
     ],
     ctaText: 'Jetzt Beratung vereinbaren',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Fachärztin Ola El‑Armouche berät Patientin zu individuellen Regenerations‑ und Straffungsbehandlungen in Bremen',
@@ -268,8 +268,8 @@ export default function HautverjuengungPage() {
     title: 'Bereit für Ihre persönliche Hautauffrischung?',
     subtitle:
       'Vereinbaren Sie ein unverbindliches Beratungsgespräch und entdecken Sie, welche Kombination Ihre Haut optimal unterstützt.',
-    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' }
+    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' }
   };
 
   const locationData: LocationSectionProps = {
@@ -278,7 +278,7 @@ export default function HautverjuengungPage() {
       'In unserer spezialisierten Praxis in Bremen bieten wir moderne, wissenschaftlich fundierte Behandlungen: von Bio-Remodelierung über Polynukleotide bis zur Eigenbluttherapie – stets mit höchsten Qualitätsstandards und individueller Beratung.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Mo–Fr 9:00–17:00', 'Termine nach Vereinbarung']
     }

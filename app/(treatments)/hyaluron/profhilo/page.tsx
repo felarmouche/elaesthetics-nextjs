@@ -59,8 +59,8 @@ export default function ProfhiloBAPPage() {
     imageSrc: '/assets/hyaluron/hyaluron-profhilo_hero.webp',
     // Markenname nur im ALT-Text (nicht sichtbar für Nutzer)
     imageAlt: 'Profhilo BAP Technik – Hyaluron Remodulierung Illustration',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -199,7 +199,7 @@ export default function ProfhiloBAPPage() {
       'Die Kosten werden gemäß GOÄ nach Areal, Aufwand und Materialmenge berechnet.',
     ],
     ctaText: 'Termin vereinbaren',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     // Marke im ALT erlaubt
     imageAlt: 'Profhilo BAP Behandlung – Beratung in Bremen',
@@ -272,8 +272,8 @@ export default function ProfhiloBAPPage() {
     title: 'Remodulierung gewünscht?',
     subtitle:
       'Lassen Sie sich individuell beraten – wir erstellen einen passenden Behandlungsplan.',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -282,7 +282,7 @@ export default function ProfhiloBAPPage() {
       'Zentral gelegen und gut erreichbar aus Horn-Lehe, Oberneuland, Schwachhausen & Umgebung.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

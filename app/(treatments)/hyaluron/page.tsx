@@ -33,8 +33,8 @@ export default function HyaluronBremenPage() {
     imageSrc: "/assets/hyaluron/hyaluron-filler_hero.webp",
     // Image Alt: Beschreibend und Keyword-optimiert.
     imageAlt: "Eine Frau erhält eine professionelle Hyaluron-Behandlung in Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   // SEO-OPTIMIERUNG: Einleitungssektion mit lokalem Bezug
@@ -169,7 +169,7 @@ export default function HyaluronBremenPage() {
     title: "Ihr persönlicher Beratungstermin in Bremen",
     description: ["Sie wünschen sich eine Veränderung und möchten mehr über die Möglichkeiten einer Hyaluron-Behandlung erfahren?", "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und Gründerin von EL Aesthetics. In meiner Praxis kombiniere ich klassische, minimalinvasive Behandlungen wie Botulinumtoxin und Hyaluronsäure-Filler mit innovativen regenerativen Verfahren – individuell abgestimmt auf Ihre Bedürfnisse und Ihre Haut.", "Ich bin zertifiziert für Botulinumtoxin- und Filler-Behandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT). Durch regelmäßige Fortbildungen, Workshops und Fachkongresse halte ich mein Wissen auf dem neuesten Stand – für sichere und moderne Behandlungen auf fachlich höchstem Niveau.", "In unserer Arztpraxis in Bremen nehmen wir uns Zeit für Sie. Vereinbaren Sie noch heute Ihren unverbindlichen Beratungstermin und fühlen Sie sich wieder wohl in Ihrer Haut."],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
+    ctaHref: "/kontaktn",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für eine Hyaluron-Behandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -254,8 +254,8 @@ export default function HyaluronBremenPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für ein frischeres Aussehen?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Hyaluron-Behandlung in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const locationData: LocationSectionProps = {
@@ -263,7 +263,7 @@ export default function HyaluronBremenPage() {
     description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen Hyaluron-Behandlungen auf höchstem Niveau. Wir legen Wert auf eine vertrauensvolle Atmosphäre, individuelle Beratung und natürliche, ästhetische Ergebnisse, die Ihre Persönlichkeit unterstreichen.",
     location: {
       address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
+      phone: "+49 155 66919635",
       email: "info@elaesthetics-bremen.de",
       openingHours: [
         "Termine nach Vereinbarung"

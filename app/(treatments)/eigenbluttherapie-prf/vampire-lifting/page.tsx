@@ -57,8 +57,8 @@ export default function PRFHautPage() {
     imageSrc: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
     imageAlt:
       'PRF Vampire Lifting Hautverjüngung bei EL Aesthetics in Bremen',
-    primaryCTA: { text: 'Hautanalyse anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Hautanalyse anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -305,7 +305,7 @@ export default function PRFHautPage() {
       'Entdecken Sie die Kraft Ihres eigenen Blutes – für natürlich schöne, strahlende Haut ohne künstlichen Look.',
     ],
     ctaText: 'Jetzt Hautanalyse-Termin buchen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Expertin für PRF Vampire Lifting in Bremen',
@@ -402,8 +402,8 @@ export default function PRFHautPage() {
     title: 'Bereit für strahlende, jugendliche Haut?',
     subtitle:
       'Vereinbaren Sie jetzt Ihre persönliche Hautanalyse und erfahren Sie, wie PRF Vampire Lifting Ihre Haut transformieren kann.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -412,7 +412,7 @@ export default function PRFHautPage() {
       'Natürliche Hautverjüngung mit körpereigenen Wachstumsfaktoren – individuell geplant und professionell durchgeführt in unserer modernen Praxis im Herzen Bremens.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

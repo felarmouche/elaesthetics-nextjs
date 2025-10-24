@@ -1,16 +1,14 @@
 import type { Metadata } from 'next';
 import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps} from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import {Review} from '@/types/Review'
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Botox Faltenbehandlung Bremen | Stirnfalten, Zornesfalten & Krähenfüße | EL Aesthetics',
-  description: 'Professionelle Botox Faltenbehandlung in Bremen ✓ Stirnfalten, Zornesfalten & Krähenfüße glätten ✓ Natürliche Ergebnisse von erfahrenen Ärzten ✓ Jetzt Beratungstermin buchen!',
-  keywords: 'Botox Faltenbehandlung Bremen, Botox Bremen, Stirnfalten behandeln Bremen, Zornesfalten Bremen, Krähenfüße behandeln Bremen, Falten glätten Bremen, Botulinumtoxin Bremen, Mimikfalten behandeln Bremen',
+  title: 'Faltenbehandlung mit Botulinumtoxin in Bremen | Stirn-, Zornes- & Augenfalten | EL Aesthetics',
+  description: 'Ärztliche, individuelle Behandlung mimischer Falten in Bremen mit Botulinumtoxin. Keine Produktnamen, keine Heilversprechen. Aufklärung und persönliche Beratung stehen im Vordergrund.',
+  keywords: 'Faltenbehandlung Bremen, Botulinumtoxin, mimische Falten, Stirnfalten, Zornesfalte, Augenfalten, Krähenfüße, Beratung',
   openGraph: {
-    title: 'Botox Faltenbehandlung in Bremen - Natürliche Ergebnisse bei EL Aesthetics',
-    description: 'Entdecken Sie professionelle Botox-Behandlungen gegen Stirnfalten, Zornesfalten und Krähenfüße in Bremen. Für ein frisches, jugendliches Aussehen ohne gefrorene Mimik.',
+    title: 'Faltenbehandlung mit Botulinumtoxin in Bremen – EL Aesthetics',
+    description: 'Sachliche Information zur ärztlichen Behandlung mimischer Falten. Individuelle Beratung, keine Heilversprechen.',
     type: 'website',
     locale: 'de_DE',
     images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-faltenbehandlung-bremen.webp'],
@@ -20,273 +18,246 @@ export const metadata: Metadata = {
   },
 };
 
-export default function BotoxFaltenbehandlungPage() {
+export default function BotulinumtoxinFaltenbehandlungPage() {
   const heroData: HeroSectionProps = {
-    title: "Botox Faltenbehandlung in Bremen",
-    subtitle: "Suchen Sie nach einer effektiven Behandlung gegen Stirnfalten, Zornesfalten oder Krähenfüße?\nBei EL Aesthetics erzielen wir natürliche Ergebnisse mit Botulinumtoxin.",
-    imageSrc: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
-    imageAlt: "Frau nach erfolgreicher Botox Faltenbehandlung in Bremen mit glattem Stirnbereich",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    title: 'Faltenbehandlung mit Botulinumtoxin in Bremen',
+    subtitle:
+      'Informationen zur ärztlichen Behandlung mimischer Falten (z.\u00A0B. Stirn-, Zornes- und Augenbereich). Ziel ist ein ausgewogenes, natürliches Erscheinungsbild – stets nach individueller Aufklärung.',
+    imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
+    imageAlt: 'Ärztliche Faltenbehandlung mit Botulinumtoxin in Bremen',
+    primaryCTA: { text: 'Beratung vereinbaren', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
-    title: "Wie wirkt Botulinumtoxin gegen Mimikfalten?",
+    title: 'Was ist eine Faltenbehandlung mit Botulinumtoxin?',
     content: [
-      "Botulinumtoxin ist eines der bewährtesten und am besten erforschten Mittel in der ästhetischen Medizin zur Behandlung von Mimikfalten. Es entspannt gezielt die Muskulatur, die für die Entstehung dynamischer Falten verantwortlich ist.",
-      "In unserer Praxis in Bremen behandeln wir vor allem Stirnfalten, Zornesfalten (Glabellafalten) und Krähenfüße (Lachfalten). Durch die präzise Injektion an den richtigen Stellen wird die Mimik sanft beruhigt – ohne Ihre natürliche Ausdrucksfähigkeit einzuschränken.",
-      "Das Ergebnis: Ein entspannter, frischer Gesichtsausdruck, der Ihre Persönlichkeit bewahrt. Die Behandlung dauert nur wenige Minuten, ist nahezu schmerzfrei und erfordert keine Ausfallzeit. Erleben Sie, wie eine Botulinumtoxin-Faltenbehandlung Ihr Gesicht harmonischer und jugendlicher wirken lässt."
-    ]
+      'Botulinumtoxin wird in der ästhetischen Medizin seit Jahren angewendet. Es kann die Aktivität bestimmter mimischer Muskeln vorübergehend mindern. Dadurch kann sich die darüberliegende Haut glatter zeigen – zum Beispiel bei Stirnlinien, Glabellafalten (\"Zornesfalte\") oder seitlichen Augenfältchen.',
+      'In unserer Praxis in Bremen erfolgt die Anwendung nach individueller Untersuchung und Aufklärung. Die Dosierung und Injektionspunkte werden ärztlich festgelegt. Ziel ist eine zurückhaltende Behandlung, die Ihre persönliche Mimik berücksichtigt.',
+      'Hinweis: Aussagen zu Wirksamkeit und Verträglichkeit sind allgemeiner Natur und ersetzen nicht die persönliche Beratung. Individuelle Ergebnisse können variieren; es werden keine Heilversprechen gegeben.',
+    ],
   };
 
   const areasData: AreasSectionProps = {
-    title: "Behandlungs-Bereiche für Botulinumtoxin gegen Falten",
+    title: 'Mögliche Anwendungsbereiche (Beispiele)',
     categories: [
       {
-        category: "Oberes Gesichtsdrittel",
+        category: 'Oberes Gesichtsdrittel',
         items: [
-          { title: "Stirnfalten (horizontale Falten)" },
-          { title: "Zornesfalten (Glabellafalten zwischen den Augenbrauen)" },
-          { title: "Krähenfüße (Lachfalten um die Augen)" },
-          { title: "Augenbrauenlift (subtile Anhebung der Brauen)" }
-        ]
+          { title: 'Horizontale Stirnfalten' },
+          { title: 'Glabellafalten (Bereich zwischen den Augenbrauen)' },
+          { title: 'Seitliche Augenfältchen (\"Krähenfüße\")' },
+          { title: 'Dezente Anhebung der Augenbrauen (je nach Eignung)' },
+        ],
       },
       {
-        category: "Mittleres & unteres Gesicht",
+        category: 'Mittleres & unteres Gesicht',
         items: [
-          { title: "Bunny Lines (Rümpffalten an der Nase)" },
-          { title: "Gummy Smile (übermäßige Zahnfleischexposition)" },
-          { title: "Mundwinkelkorrektur (hängende Mundwinkel)" },
-          { title: "Kinngrübchen (Mentalis-Falten)" }
-        ]
-      }
-    ]
+          { title: 'Bunny Lines (Nasenrücken)' },
+          { title: 'Periorale Fältchen (Lippenbereich, nach Indikation)' },
+          { title: 'Mundwinkel-/Kinnbereich (z.\u00A0B. Mentális-Muskel)' },
+          { title: 'Gummy Smile (sichtbares Zahnfleisch) – nur nach individueller Beurteilung' },
+        ],
+      },
+    ],
   };
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: "Die Botulinumtoxin Faltenbehandlung auf einen Blick",
+    title: 'Auf einen Blick',
     benefits: [
-      { title: "Preis", description: `ab ${PRICES.botulinum.faltenbehandlung}€*`, iconUrl: "/assets/icons/EUR.svg" },
-      { title: "Dauer", description: "ca. 15-20 Min", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Wirkung", description: "nach 3-7 Tagen sichtbar", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Haltbarkeit", description: "3-6 Monate", iconUrl: "/assets/icons/CAL.svg" },
-      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }
+      { title: 'Preis', description: `ab ${PRICES.botulinum.faltenbehandlung.zone1}\u20AC*`, iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Dauer', description: 'ca. 15–20 Min.', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Effekte', description: 'zeigen sich h\u00E4ufig nach einigen Tagen', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Wirkdauer', description: 'zeitlich begrenzt (individuell)', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Bet\u00E4ubung', description: 'in der Regel nicht erforderlich', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Auszeit', description: 'meist keine l\u00E4ngere Ausfallzeit', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
-    note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
+    note:
+      '* Preise orientieren sich an der GO\u00C4 und dienen der Orientierung.\n\n**Hinweis gem\u00E4\u00DF HWG:** Diese Seite dient der sachlichen Information. Es werden keine Heil- oder Wirksamkeitsversprechen abgegeben. Risiken und Nebenwirkungen sind m\u00F6glich und werden im pers\u00F6nlichen Aufkl\u00E4rungsgespr\u00E4ch besprochen. Botulinumtoxin ist verschreibungspflichtig; eine Behandlung erfolgt nur nach \u00E4rztlicher Indikationsstellung.',
   };
 
   const processData: ProcessSectionProps = {
-    title: "Ablauf Ihrer Botulinumtoxin Faltenbehandlung in Bremen",
+    title: 'Ablauf (kurz zusammengefasst)',
     steps: [
       {
-        number: "01",
-        title: "Ausführliche Beratung und Analyse",
-        description: "In unserer Praxis in Bremen analysiere ich zunächst Ihre Mimik und Gesichtsstruktur. Wir besprechen Ihre Wünsche und ästhetischen Ziele. Ich erkläre Ihnen genau, welche Bereiche behandelt werden und welches Ergebnis realistisch ist."
+        number: '01',
+        title: 'Beratung & Untersuchung',
+        description:
+          'Anamnese, Analyse der Mimik und Besprechung der individuellen Zielsetzung. Kl\u00E4rung, ob Botulinumtoxin oder ggf. alternative Verfahren (z.\u00B7B. Hyaluron bei Volumenverlust) in Frage kommen.',
       },
       {
-        number: "02",
-        title: "Vorbereitung der Behandlung",
-        description: "Die zu behandelnden Bereiche werden gereinigt und desinfiziert. Make-up wird entfernt. Da die Injektionen mit sehr feinen Nadeln erfolgen, ist eine Betäubung in der Regel nicht notwendig."
+        number: '02',
+        title: 'Vorbereitung',
+        description:
+          'Reinigung/Desinfektion der Haut. Die Anwendung erfolgt mit sehr feinen Nadeln; eine Bet\u00E4ubung ist h\u00E4ufig nicht notwendig.',
       },
       {
-        number: "03",
-        title: "Präzise Injektion",
-        description: "Mit einer hauchdünnen Nadel wird das Botulinumtoxin gezielt in die Muskulatur injektiert. Die Behandlung dauert nur 10 bis 20 Minuten. Ich achte dabei auf die richtige Dosierung und Platzierung, um ein natürliches, harmonisches Ergebnis zu erzielen."
+        number: '03',
+        title: 'Injektion',
+        description:
+          'Gezielte Applikation in definierte Muskelbereiche. Dosierung und Platzierung erfolgen individuell und zur\u00FCckhaltend.',
       },
       {
-        number: "04",
-        title: "Nachsorge und Kontrolle",
-        description: "Nach der Behandlung können Sie sofort Ihren Alltag fortsetzen. Erste Effekte zeigen sich nach 3-7 Tagen, das vollständige Ergebnis nach etwa 14 Tagen. Ein Kontrolltermin nach 2 Wochen in unserer Bremer Praxis ist empfehlenswert, um das Ergebnis zu beurteilen."
-      }
-    ]
+        number: '04',
+        title: 'Nachsorge',
+        description:
+          'Allgemeine Verhaltenshinweise (z.\u00B7B. Kopf f\u00FCr einige Stunden aufrecht halten, Reiben/Hitze/Sport kurzfristig meiden). Ein Kontrolltermin kann sinnvoll sein.',
+      },
+    ],
   };
 
   const treatmentCareData: TreatmentCareSectionProps = {
-    title: "Wichtige Hinweise zur Behandlung",
+    title: 'Wichtige Hinweise',
     beforeTreatment: {
-      title: "Vor der Behandlung",
+      title: 'Vor der Behandlung',
       instructions: [
         {
-          title: "Blutverdünnende Medikamente",
-          description: "Verzichten Sie nach ärztlicher Rücksprache ca. 7 Tage vor der Behandlung auf blutverdünnende Medikamente (z.B. Aspirin, Ibuprofen), um das Risiko von Blutergüssen zu minimieren."
+          title: 'Medikamente',
+          description:
+            'Die Einnahme gerinnungshemmender Mittel nur nach \u00E4rztlicher R\u00FCcksprache anpassen. Eigenm\u00E4chtiges Absetzen ist zu vermeiden.',
         },
         {
-          title: "Alkohol",
-          description: "Vermeiden Sie 24 Stunden vor der Behandlung Alkohol, da dieser die Durchblutung erhöht und zu mehr Schwellungen führen kann."
+          title: 'Alkohol',
+          description: 'Kurzfristig vorher m\u00F6glichst meiden.',
         },
         {
-          title: "Gesundheitszustand",
-          description: "Sie sollten sich gesund fühlen. Bei akuten Infekten, Herpes oder Hautentzündungen sollte die Behandlung verschoben werden."
+          title: 'Gesundheitszustand',
+          description:
+            'Bei akuten Infekten/Hautentz\u00FCndungen Termin verschieben. In Schwangerschaft und Stillzeit keine Anwendung.',
         },
-        {
-          title: "Schwangerschaft & Stillzeit",
-          description: "Während der Schwangerschaft und Stillzeit sind Botulinumtoxin-Behandlungen nicht erlaubt."
-        }
-      ]
+      ],
     },
     afterTreatment: {
-      title: "Nach der Behandlung",
+      title: 'Nach der Behandlung',
       instructions: [
-        {
-          title: "Kopf aufrecht halten",
-          description: "Halten Sie Ihren Kopf für 4 Stunden nach der Behandlung aufrecht. Legen Sie sich nicht hin und beugen Sie sich nicht stark nach vorne."
-        },
-        {
-          title: "Nicht manipulieren",
-          description: "Reiben, massieren oder drücken Sie die behandelten Stellen nicht. Dies könnte das Botulinumtoxin in unerwünschte Bereiche verteilen."
-        },
-        {
-          title: "Sport & Hitze",
-          description: "Verzichten Sie für 24 Stunden auf Sport, Sauna, Solarium und heiße Bäder. Hitze kann die Wirkung beeinträchtigen."
-        },
-        {
-          title: "Kosmetische Behandlungen",
-          description: "Planen Sie für 2 Wochen keine Gesichtsbehandlungen, Peelings oder andere kosmetische Eingriffe im Gesicht."
-        }
-      ]
-    }
+        { title: 'Aufrecht bleiben', description: 'Kopf f\u00FCr einige Stunden aufrecht halten.' },
+        { title: 'Nicht manipulieren', description: 'Behandelte Areale nicht reiben oder massieren.' },
+        { title: 'Sport & Hitze', description: 'Kurzzeitig auf starkes Schwitzen/Hitze verzichten.' },
+        { title: 'Kosmetik', description: 'Intensive Gesichtsbehandlungen f\u00FCr ca. 2 Wochen meiden.' },
+      ],
+    },
   };
 
-  const reviews : Review[] = [
-    {
-      id:1,
-      name: "Sandra G.",
-      rating: 2,
-      text: "Ich war heute das zweite Mal bei der jungen, lieben und vor allem kompetenten Ärztin. Sie weiß definitiv was sie tut und ich fühle mich einfach sehr gut aufgehoben. Ich freue mich schon auf das nächste Mal und ich kann sie ruhigen Gewissens weiter empfehlen.",
-      date: "2024-09-15"
-    },
-    {
-      id:2,
-      name: "Bianca S.",
-      rating: 3,
-      text: "Die Liebe Kübra macht wirklich tolle Arbeit, ich kann ihre Praxis jedem nur von Herzen empfehlen, meine Mutter und ich haben uns jetzt schon wiederholt bei ihr behandeln lassen und sind mehr als zufrieden mit den Ergebnissen. Sie hat einfach ein Auge für die Ästhetik und geht genau auf die Wünsche ihrer Patienten ein. Ihre Beratung ist sehr aufklärend und sie hat mich vorher sehr gut aufgeklärt. Die Ergebnisse sehen sehr natürlich aus. Die Praxis ist sehr schön eingerichtet und hygienisch. Außerdem geht sie sehr einfühlsam mit den Patienten um, sodass einem die Angst vor der Behandlung genommen wird. Man fühlt sich bei ihr sehr wohl. Vielen Dank für die tolle Arbeit! Ich freue mich schon auf meine nächste Behandlung.",
-      date: "2024-08-22"
-    },
-    {
-      id:3,
-      name: "Layla E.",
-      rating: 4,
-      text: "Super nette, ehrliche Beratung. Ich wurde gut aufgeklärt und Schritt für Schritt durch die Behandlung geführt. Ich hatte vorher etwas Angst, die wurde mir aber direkt genommen und habe mich sehr wohlgefühlt. Bin auch richtig happy mit dem Endergebnis und würde sie jedem weiterempfehlen.",
-      date: "2024-07-10"
-    },
-    {
-      id:4,
-      name: "Maria K.",
-      rating: 5,
-      text: "Absolut professionell und sehr herzlich! Die Behandlung war schmerzfrei und das Ergebnis ist fantastisch. Ich komme definitiv wieder.",
-      date: "2024-06-18"
-    },
-    {
-      id:5,
-      name: "Julia M.",
-      rating: 5,
-      text: "Ich bin begeistert! Die Beratung war ausführlich, die Behandlung sanft und das Ergebnis natürlich und wunderschön. Vielen Dank!",
-      date: "2024-05-25"
-    }
-  ];
-
   const consultationData: ConsultationSectionProps = {
-    title: "Ihre Expertin für Botulinumtoxin Faltenbehandlung in Bremen",
+    title: 'Ihre Ärztin',
     description: [
-      "Sie möchten Mimikfalten reduzieren und dabei ein natürliches Aussehen bewahren?",
-      "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und Gründerin von EL Aesthetics. Mit langjähriger Erfahrung in der Behandlung mit Botulinumtoxin verhelfe ich Ihnen zu einem frischen, jugendlichen Erscheinungsbild – individuell und präzise dosiert.",
-      "Ich bin zertifiziert für Botulinumtoxin- und Filler-Behandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT). Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich auf dem neuesten Stand der ästhetischen Medizin.",
-      "In meiner Praxis in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie eine Botulinumtoxin-Behandlung Ihr Gesicht harmonischer und entspannter wirken lassen kann."
+      'Ola El-Armouche, \u00C4rztin f\u00FCr \u00E4sthetische Medizin und Gr\u00FCnderin von EL Aesthetics.',
+      'Regelm\u00E4\u00DFige Fortbildungen und eine individuelle Vorgehensweise sind f\u00FCr uns grundlegend. Entscheidend ist stets die pers\u00F6nliche Beratung und Indikationsstellung – ohne Heilversprechen.',
     ],
-    ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
-    imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für eine Botulinumtoxin Faltenbehandlung in Bremen",
-    backgroundColor: "bg-[#FDF6F0]"
+    ctaText: 'Beratungstermin anfragen',
+    ctaHref: '/kontaktn',
+    imageSrc: '/assets/tinified/IMG_7364.webp',
+    imageAlt: '\u00C4rztin Ola El-Armouche – Beratung zur Faltenbehandlung mit Botulinumtoxin',
+    backgroundColor: 'bg-[#FDF6F0]',
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: "Weitere Botulinumtoxin Behandlungen in Bremen",
+    title: 'Weitere Anwendungen (nach Indikation)',
     treatments: [
       {
-        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp",
-        imageAlt: "Botox Behandlung des Masseter-Muskels zur Gesichtskonturierung",
-        title: "Masseter-Behandlung (Jawline)",
-        description: "Durch gezielte Botulinumtoxin-Injektionen in den Kaumuskel (Masseter) kann die Gesichtsform harmonisiert und eine markante Jawline geschaffen werden. Auch bei Zähneknirschen (Bruxismus) ist diese Behandlung sehr wirksam.",
-        treatmentUrl: "/botulinumtoxin/masseter"
+        imageUrl: '/assets/botulinumtoxin/botox-masseter_hero.webp',
+        imageAlt: 'Anwendung von Botulinumtoxin am Masseter-Muskel',
+        title: 'Masseter (Kiefermuskel)',
+        description:
+          'Kann je nach Eignung f\u00FCr eine schmalere Kontur genutzt werden; stets individuelle Risiko-Nutzen-Abw\u00E4gung.',
+        treatmentUrl: '/botulinumtoxin/masseter',
       },
       {
-        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp",
-        imageAlt: "Microbotox Behandlung für feinere Hautstruktur und Porenverfeinung",
-        title: "Microbotox (Skin Quality)",
-        description: "Microbotox wird flächig in die oberen Hautschichten injiziert und verbessert die Hautqualität, verfeinert Poren und reduziert die Talgproduktion. Ideal für einen ebenmäßigen, glatten Teint.",
-        treatmentUrl: "/botulinumtoxin/microbotox"
+        imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
+        imageAlt: 'Mikrodosierte Anwendung in oberfl\u00E4chliche Hautschichten',
+        title: 'Mikrodosierte Anwendung (Skin Quality)',
+        description:
+          'Fl\u00E4chige, sehr niedrige Dosierungen k\u00F6nnen – je nach Befund – eingesetzt werden. Die Eignung wird \u00E4rztlich beurteilt.',
+        treatmentUrl: '/botulinumtoxin/microbotox',
       },
       {
-        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp",
-        imageAlt: "Botox Behandlung gegen übermäßiges Schwitzen",
-        title: "Hyperhidrose-Behandlung",
-        description: "Bei übermäßigem Schwitzen (Hyperhidrose) kann Botulinumtoxin die Schweißproduktion deutlich reduzieren. Die Behandlung ist besonders effektiv an Achseln, Händen und Füßen.",
-        treatmentUrl: "/botulinumtoxin/hyperhidrose"
+        imageUrl: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
+        imageAlt: 'Beispielhafte Anwendung bei vermehrtem Schwitzen',
+        title: 'Vermehrtes Schwitzen (Hyperhidrose)',
+        description:
+          'Eine Behandlung kann – nach Untersuchung – in Betracht kommen (z.\u00A0B. Achseln, H\u00E4nde, F\u00FC\u00DFe). Keine Werbung f\u00FCr Arzneimittel; Entscheidung nur nach Indikationsstellung.',
+        treatmentUrl: '/botulinumtoxin/hyperhidrose',
       },
       {
-        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp",
-        imageAlt: "Botox zur Behandlung chronischer Migräne",
-        title: "Migräne-Behandlung",
-        description: "Chronische Migränepatienten können durch gezielte Botulinumtoxin-Injektionen an bestimmten Kopf- und Nackenpunkten eine deutliche Reduktion der Anfallshäufigkeit und Schmerzintensität erfahren.",
-        treatmentUrl: "/botulinumtoxin/migraene"
-      }
-    ]
+        imageUrl: '/assets/botulinumtoxin/botox-migr\u00E4ne_hero.webp',
+        imageAlt: 'Hinweis auf m\u00F6gliche medizinische Anwendung bei chronischer Migr\u00E4ne',
+        title: 'Chronische Migr\u00E4ne',
+        description:
+          'Je nach Befund und Leitlinienlage kann eine Anwendung in spezialisierten Settings gepr\u00FCft werden. Keine Heilversprechen; Entscheidung nur \u00E4rztlich.',
+        treatmentUrl: '/botulinumtoxin/migraene',
+      },
+    ],
   };
 
   const faqData: FAQSectionProps = {
-    title: "Häufige Fragen zur Botulinumtoxin Faltenbehandlung",
+    title: 'H\u00E4ufige Fragen (FAQ)',
     faqs: [
       {
-        question: "Wie funktioniert Botox gegen Falten?",
-        answer: "Botulinumtoxin blockiert die Übertragung von Nervensignalen auf die Gesichtsmuskulatur. Die behandelten Muskeln entspannen sich, wodurch die darüber liegende Haut glatter wird. Dynamische Falten, die durch wiederholte Mimikbewegungen entstehen, werden deutlich reduziert oder verschwinden ganz."
+        question: 'Welche Behandlung ist f\u00FCr meine Falten geeignet?',
+        answer:
+          'Das h\u00E4ngt von Faltentyp, Hautbild und Muskulatur ab. Botulinumtoxin eignet sich h\u00E4ufig f\u00FCr dynamische Mimikfalten (z.\u00B7B. Stirn/Glabella/seitliche Augenpartie). Bei volumenbedingten Falten (z.\u00A0B. Nasolabialbereich) kommen eher Filler in Betracht. Die Entscheidung erfolgt im Beratungsgespr\u00E4ch – ohne Heilversprechen.',
       },
       {
-        question: "Ist eine Botulinumtoxin-Behandlung schmerzhaft?",
-        answer: "Die Behandlung verursacht nur minimale Beschwerden. Die Injektionen erfolgen mit sehr feinen Nadeln und dauern nur wenige Sekunden pro Einstichstelle. Die meisten Patienten beschreiben das Gefühl als leichtes Pieken. Eine Betäubung ist in der Regel nicht erforderlich."
+        question: 'Zornesfalte: Filler oder Botulinumtoxin?',
+        answer:
+          'Bei ausgepr\u00E4gter Muskelaktivit\u00E4t ist Botulinumtoxin h\u00E4ufig die naheliegende Option. Ist die Falte sehr tief, kann zus\u00E4tzlich ein Filler in Erw\u00E4gung gezogen werden. Es handelt sich stets um eine individuelle Entscheidung nach Aufkl\u00E4rung.',
       },
       {
-        question: "Wann sehe ich das Ergebnis und wie lange hält es?",
-        answer: "Die ersten Effekte zeigen sich nach 3-7 Tagen. Das vollständige Ergebnis entwickelt sich nach etwa 14 Tagen. Die Wirkung hält durchschnittlich 3-6 Monate. Mit regelmäßigen Auffrischungen kann die Haltbarkeit optimiert werden, da sich die Muskulatur an den entspannten Zustand gewöhnt."
+        question: 'Augenbereich: Welche Optionen gibt es?',
+        answer:
+          'Seitliche Lachf\u00E4ltchen k\u00F6nnen h\u00E4ufig mit Botulinumtoxin adressiert werden. Feine Linien direkt unter dem Auge ben\u00F6tigen ggf. andere Verfahren (z.\u00B7B. sehr oberfl\u00E4chliche Mikrodosierungen oder geeignete Filler). Die Auswahl erfolgt nach Eignung und Risiko-Nutzen-Abw\u00E4gung.',
       },
       {
-        question: "Sieht man nach der Behandlung, dass ich Botulinumtoxin hatte?",
-        answer: "Bei korrekter Anwendung und natürlicher Dosierung ist Botulinumtoxin nicht erkennbar. Das Ziel ist eine sanfte Entspannung der Mimik, nicht eine gefrorene Stirn. Sie können weiterhin alle Gesichtsausdrücke zeigen, nur die tiefen Falten werden geglättet. In meiner Praxis lege ich großen Wert auf natürliche, harmonische Ergebnisse."
+        question: 'Nasolabialbereich: Welche Optionen gibt es?',
+        answer:
+          'Hier stehen meist volumenaufbauende Verfahren im Vordergrund (z.\u00B7B. Filler). Botulinumtoxin kann – je nach Mimik – erg\u00E4nzend gepr\u00FCft werden. Eine Kombination ist m\u00F6glich, jedoch nicht grunds\u00E4tzlich erforderlich.',
       },
       {
-        question: "Welche Nebenwirkungen und Risiken gibt es?",
-        answer: "Botulinumtoxin-Behandlungen sind sehr sicher, wenn sie von qualifizierten Ärzten durchgeführt werden. Leichte Rötungen, kleine Blutergüsse oder minimale Schwellungen an den Einstichstellen können auftreten und klingen innerhalb weniger Tage ab. Sehr selten kann es zu einem leichten Hängen des Augenlids kommen, was sich aber vollständig zurückbildet. Im Beratungsgespräch kläre ich Sie umfassend über alle Risiken auf."
+        question: 'Welche Kosten sind zu erwarten?',
+        answer:
+          'Die Kosten richten sich nach Befund, Arealen und Aufwand. Orientierungswerte: Botulinumtoxin im Mundbereich h\u00E4ufig ca. 150–250\u20AC; volumenaufbauende Behandlungen ca. 300–500\u20AC pro Sitzung. Ein individueller Kostenplan wird nach Untersuchung erstellt.',
       },
       {
-        question: "Kann ich nach der Behandlung sofort wieder arbeiten gehen?",
-        answer: "Ja, Sie sind sofort gesellschaftsfähig. Die Behandlung hinterlässt keine sichtbaren Spuren außer möglicherweise winzigen Einstichstellen, die schnell verblassen. Sie sollten nur für einige Stunden auf Sport und starkes Bücken verzichten."
+        question: 'Wie wirkt Botulinumtoxin?',
+        answer:
+          'Es hemmt vor\u00FCbergehend die Reiz\u00FCbertragung an der behandelten Muskulatur. Dadurch kann sich die Haut glatter zeigen. Der Effekt setzt typischerweise nach einigen Tagen ein und h\u00E4lt zeitlich begrenzt an. Individuelle Ergebnisse variieren.',
       },
       {
-        question: "Was kostet eine Botulinumtoxin Faltenbehandlung in Bremen?",
-        answer: "Die Kosten richten sich nach der Anzahl der behandelten Bereiche und der benötigten Menge an Botulinumtoxin. Eine Behandlung beginnt bei etwa 200€ für einen einzelnen Bereich. Im persönlichen Beratungsgespräch in unserer Bremer Praxis erstelle ich Ihnen einen transparenten und individuellen Kostenplan."
-      }
-    ]
+        question: 'Ist die Anwendung schmerzhaft?',
+        answer:
+          'Die Injektionen erfolgen mit feinen Nadeln und sind kurz. Das Empfinden ist individuell. Bei Bedarf k\u00F6nnen schmerzlindernde Ma\u00DFnahmen besprochen werden.',
+      },
+      {
+        question: 'Sieht man die Behandlung?',
+        answer:
+          'Wir legen Wert auf eine zur\u00FCckhaltende, m\u00F6glichst nat\u00FCrliche Vorgehensweise. Sichtbarkeit und Verlauf sind individuell verschieden.',
+      },
+      {
+        question: 'Welche Risiken gibt es?',
+        answer:
+          'M\u00F6gliche, meist vor\u00FCbergehende Reaktionen sind R\u00F6tungen, kleine Bluterg\u00FCsse oder Schwellungen. Selten k\u00F6nnen unerw\u00FCnschte Effekte (z.\u00B7B. vor\u00FCbergehendes Lidptosis) auftreten. Eine ausf\u00FChrliche Aufkl\u00E4rung erfolgt vor Ort.',
+      },
+    ],
   };
 
   const ctaData: CTASectionProps = {
-    title: "Bereit für ein entspanntes, jugendliches Aussehen?",
-    subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Botulinumtoxin Faltenbehandlung in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    title: 'Beratung gew\u00FCnscht?',
+    subtitle:
+      'Vereinbaren Sie einen unverbindlichen Termin zur individuellen Aufkl\u00E4rung. Es werden keine Heil- oder Wirksamkeitsversprechen abgegeben.',
+    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
-    title: "Ihre Praxis für Botulinumtoxin in Bremen: EL Aesthetics",
-    description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen Botulinumtoxin-Behandlungen auf höchstem medizinischen Niveau. Wir legen Wert auf natürliche Ergebnisse, präzise Technik und eine vertrauensvolle Atmosphäre.",
+    title: 'Praxis in Bremen',
+    description:
+      'In unserer Praxis erhalten Sie sachliche Beratung und – sofern geeignet – eine zur\u00FCckhaltende Behandlung mit Botulinumtoxin. Keine Produktnamen, keine Heilversprechen.',
     location: {
-      address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
-      email: "info@elaesthetics-bremen.de",
-      openingHours: [
-        "Termine nach Vereinbarung"
-      ]
-    }
+      address: 'Richtepad 14, 28355 Bremen',
+      phone: '+49 155 66919635',
+      email: 'info@elaesthetics-bremen.de',
+      openingHours: ['Termine nach Vereinbarung'],
+    },
   };
 
   return (
@@ -297,11 +268,11 @@ export default function BotoxFaltenbehandlungPage() {
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews reviews={reviews} title="Erfahrungen unserer Patienten" subtitle='Unsere Patienten schätzen vor allem die natürlichen Ergebnisse unserer Behandlungen und den einfühlsamen Umgang in unserer Praxis für ästhetische Medizin in Hanau. Viele berichten, wie zufrieden sie mit den Ergebnissen und der individuellen Beratung sind, die auf ihre persönlichen Wünsche abgestimmt ist.' />
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-
+      <LocationSection {...locationData} />
+      <CTASection {...ctaData} />
     </div>
   );
 }

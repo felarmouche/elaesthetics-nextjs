@@ -26,8 +26,8 @@ export default function MesotherapieHautPage() {
     subtitle: "Möchten Sie Ihre Hautqualität verbessern, Augenringe reduzieren und einen strahlenden Teint?\nMit der Mesotherapie kombinieren wir Hyaluronsäure mit wertvollen Mikronährstoffen für natürliche Hautverjüngung.",
     imageSrc: "/assets/nctf/NFTC_Skinbooster.webp",
     imageAlt: "Mesotherapie Behandlung für strahlende Gesichtshaut in Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const introData: IntroSectionProps = {
@@ -204,7 +204,7 @@ export default function MesotherapieHautPage() {
       "In meiner Praxis in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihre Haut zum Strahlen bringen kann."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
+    ctaHref: "/kontaktn",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Mesotherapie in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -289,8 +289,8 @@ export default function MesotherapieHautPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für strahlende, jugendliche Haut?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Mesotherapie in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const locationData: LocationSectionProps = {
@@ -298,7 +298,7 @@ export default function MesotherapieHautPage() {
     description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen Mesotherapie-Behandlungen auf höchstem medizinischen Niveau. Wir legen Wert auf natürliche Ergebnisse, präzise Technik und eine vertrauensvolle Atmosphäre.",
     location: {
       address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
+      phone: "+49 155 66919635",
       email: "info@elaesthetics-bremen.de",
       openingHours: [
         "Termine nach Vereinbarung"

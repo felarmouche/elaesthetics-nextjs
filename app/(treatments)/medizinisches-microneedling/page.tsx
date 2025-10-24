@@ -53,8 +53,8 @@ export default function MedizinischesMicroneedlingPage() {
       "Schonende Kollagen-Induktion für ein glatteres, feinporiges Hautbild – individuell, präzise und in ärztlicher Hand.",
     imageSrc: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp",
     imageAlt: "Medizinisches Microneedling in der Praxis EL Aesthetics Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const introData: IntroSectionProps = {
@@ -191,7 +191,7 @@ export default function MedizinischesMicroneedlingPage() {
       "Sie erhalten klare Empfehlungen zu Behandlungsintervallen, erwartbarer Wirkung und Nachsorge."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
+    ctaHref: "/kontaktn",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Beratung zum medizinischen Microneedling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -274,8 +274,8 @@ export default function MedizinischesMicroneedlingPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für ein ebenmäßigeres Hautbild?",
     subtitle: "Vereinbaren Sie Ihren Termin für medizinisches Microneedling in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const locationData: LocationSectionProps = {
@@ -284,7 +284,7 @@ export default function MedizinischesMicroneedlingPage() {
       "In unserer Praxis kombinieren wir ärztliche Sorgfalt mit moderner Needling-Technologie für sichere, natürliche Ergebnisse.",
     location: {
       address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
+      phone: "+49 155 66919635",
       email: "info@elaesthetics-bremen.de",
       openingHours: ["Termine nach Vereinbarung"]
     }

@@ -40,7 +40,7 @@ export const metadata: Metadata = {
       'Botulinumtoxin blockiert vorübergehend die Schweißproduktion. Geeignet bei übermäßigem Schwitzen (Hyperhidrose) – Achseln. Kurze Ausfallzeit, schnelle Wirkung.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp'],
+    images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/botox-hyperhidrose_hero.webp'],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/hyperhidrose',
@@ -52,10 +52,10 @@ export default function BotoxHyperhidrosePage() {
     title: 'Botulinumtoxin gegen Hyperhidrose (Achseln)',
     subtitle:
       'Beenden Sie lästiges Achselschwitzen: Botullinumtoxin blockiert vorübergehend die Schweißproduktion – mit kurzer Downtime und natürlichem Ergebnis.',
-    imageSrc: '/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp',
+    imageSrc: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
     imageAlt: 'Botox-Behandlung gegen Achselschwitzen (Hyperhidrose) in Bremen',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Termin vereinbaren', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -192,7 +192,7 @@ export default function BotoxHyperhidrosePage() {
       'Als DGBT-zertifizierte Ärztin arbeite ich nach aktuellen Standards; im Termin klären wir Kontraindikationen und beantworten alle Fragen ausführlich.',
     ],
     ctaText: 'Jetzt Beratungstermin anfragen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Hyperhidrose-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -210,7 +210,7 @@ export default function BotoxHyperhidrosePage() {
         treatmentUrl: '/botulinumtoxin/faltenbehandlung',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-masseter_hero.webp',
         imageAlt: 'Botox Masseter zur Jawline-Definition & gegen Bruxismus',
         title: 'Masseter / Bruxismus',
         description:
@@ -218,7 +218,7 @@ export default function BotoxHyperhidrosePage() {
         treatmentUrl: '/botulinumtoxin/masseter',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
         imageAlt: 'Microbotox Behandlung zur Verbesserung der Hautqualität',
         title: 'Microbotox',
         description:
@@ -226,7 +226,7 @@ export default function BotoxHyperhidrosePage() {
         treatmentUrl: '/botulinumtoxin/microbotox',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-migräne_hero.webp',
         imageAlt: 'Botox bei chronischer Migräne',
         title: 'Migräne',
         description: 'Anerkannte Therapieoption bei chronischer Migräne.',
@@ -285,8 +285,8 @@ export default function BotoxHyperhidrosePage() {
     title: 'Weniger Schwitzen – mehr Freiheit',
     subtitle:
       'Buchen Sie jetzt Ihren Termin für eine Hyperhidrose-Behandlung in Bremen.',
-    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -295,7 +295,7 @@ export default function BotoxHyperhidrosePage() {
       'Diskrete, wirksame Behandlung gegen übermäßiges Schwitzen an den Achseln – individuell geplant und schonend umgesetzt.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

@@ -57,8 +57,8 @@ export default function SkinboosterBremenPage() {
     imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
     imageAlt:
       'Skinbooster-Behandlung – sanfte Hautauffrischung mit Hyaluron',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -211,7 +211,7 @@ export default function SkinboosterBremenPage() {
       'Abrechnung nach GOÄ, hochwertige Präparate und sterile, minimal-invasive Technik.',
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Skinbooster-Beratung',
@@ -284,8 +284,8 @@ export default function SkinboosterBremenPage() {
     title: 'Mehr Glow & bessere Hautqualität?',
     subtitle:
       'Buchen Sie Ihre persönliche Beratung für Skinbooster in Bremen.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -294,7 +294,7 @@ export default function SkinboosterBremenPage() {
       'Zentral gelegen, gut erreichbar aus Horn-Lehe, Oberneuland, Schwachhausen & Umgebung.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

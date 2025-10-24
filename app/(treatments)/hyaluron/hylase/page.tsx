@@ -50,8 +50,8 @@ export default function HyaluronidaseHylasePage() {
     subtitle: 'Sichere Korrektur & Auflösung von Hyaluron-Fillern: Knötchen, Asymmetrien, Überkorrekturen und Granulome gezielt behandeln – schnelle Wirkung, minimal-invasiv.',
     imageSrc: '/assets/hyaluron/hyaluron-hylase_hero.webp',
     imageAlt: 'Hyaluronidase Hylase Behandlung zur Hyaluron-Korrektur bei EL Aesthetics in Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -298,7 +298,7 @@ export default function HyaluronidaseHylasePage() {
       'Hyaluronidase ist auch ein unverzichtbares Notfall-Medikament bei schwerwiegenden Komplikationen wie Gefäßverschlüssen. In meiner Praxis ist Hylase jederzeit verfügbar – für Ihre Sicherheit bei jeder Hyaluron-Behandlung.',
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche – Expertin für Hyaluronidase-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -390,8 +390,8 @@ export default function HyaluronidaseHylasePage() {
   const ctaData: CTASectionProps = {
     title: 'Unzufrieden mit Ihrem Hyaluron-Ergebnis?',
     subtitle: 'Vereinbaren Sie jetzt Ihre persönliche Beratung und erfahren Sie, wie Hyaluronidase unerwünschte Filler sicher und schnell auflösen kann.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -399,7 +399,7 @@ export default function HyaluronidaseHylasePage() {
     description: 'Sichere Korrektur von Hyaluron-Fillern – individuell geplant und professionell durchgeführt in unserer modernen Praxis im Herzen Bremens.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

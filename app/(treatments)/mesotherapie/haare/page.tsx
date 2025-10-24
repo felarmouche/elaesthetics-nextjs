@@ -26,8 +26,8 @@ export default function MesotherapieHaarePage() {
     subtitle: "Leiden Sie unter Haarausfall oder dünner werdendem Haar?\nMit der Mesotherapie aktivieren wir Ihre Haarwurzeln und fördern das Haarwachstum – natürlich und nachhaltig.",
     imageSrc: "/assets/mesotherapie/mesotherapie-haare_hero.webp",
     imageAlt: "Mesotherapie Behandlung gegen Haarausfall in Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const introData: IntroSectionProps = {
@@ -201,7 +201,7 @@ export default function MesotherapieHaarePage() {
       "In meiner Praxis in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihr Haar wieder stärken kann."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
+    ctaHref: "/kontaktn",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Haarmesotherapie in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -286,8 +286,8 @@ export default function MesotherapieHaarePage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für volleres, kräftigeres Haar?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Haarmesotherapie in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const locationData: LocationSectionProps = {
@@ -295,7 +295,7 @@ export default function MesotherapieHaarePage() {
     description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen Haarmesotherapie-Behandlungen auf höchstem medizinischen Niveau. Wir legen Wert auf individuelle Diagnostik, effektive Behandlung und eine vertrauensvolle Atmosphäre.",
     location: {
       address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
+      phone: "+49 155 66919635",
       email: "info@elaesthetics-bremen.de",
       openingHours: [
         "Termine nach Vereinbarung"

@@ -50,7 +50,7 @@ export default function BotulinumtoxinHubPage() {
       'Ärztliche Botulinumtoxin A Behandlung für Stirn, Zornesfalte & Krähenfüße sowie Masseter/Bruxismus, übermäßiges Schwitzen (Achseln) und chronische Migräne – natürlich, präzise, individuell.',
     imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
     imageAlt: 'Botulinumtoxin Behandlung in Bremen: Injektion typischer Zonen wie Stirn, Zornesfalte und Krähenfüße bei EL Aesthetics',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
     secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' },
   };
 
@@ -161,7 +161,7 @@ export default function BotulinumtoxinHubPage() {
       'Behandlerin: ärztliche Leitung mit Schwerpunkt ästhetische Medizin. Ergebnisse sind individuell und können variieren.',
     ],
     ctaText: 'Jetzt Beratung vereinbaren',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztliche Beratung zu Botulinumtoxin Behandlungen bei EL Aesthetics in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -222,8 +222,8 @@ export default function BotulinumtoxinHubPage() {
     title: 'Bereit für Ihre Botulinumtoxin Behandlung in Bremen?',
     subtitle:
       'Vereinbaren Sie jetzt Ihr unverbindliches Beratungsgespräch. Wir planen Ihre Botulinumtoxin A Behandlung transparent, sicher und individuell.',
-    primaryCTA: { text: 'Jetzt beraten lassen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt beraten lassen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -232,7 +232,7 @@ export default function BotulinumtoxinHubPage() {
       'In unserer Praxis in Bremen bieten wir das gesamte Spektrum der Botulinumtoxin Therapie: Ästhetik (Falten, Masseter, Mesobotox) und medizinische Indikationen (Hyperhidrose, Migräne) – evidenzbasiert und mit hohen Qualitätsstandards.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Mo–Fr 9:00–17:00'],
     },

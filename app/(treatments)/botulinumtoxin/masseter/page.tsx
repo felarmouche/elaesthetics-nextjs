@@ -25,10 +25,10 @@ export default function BotoxMasseterPage() {
     title: 'Masseter Behandlung mit Botox in Bremen',
     subtitle:
       'Leiden Sie unter Zähneknirschen oder wünschen sich eine definierte Jawline?\nMit einer gezielten Masseter-Behandlung können wir beides erreichen.',
-    imageSrc: '/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp',
+    imageSrc: '/assets/botulinumtoxin/botox-masseter_hero.webp',
     imageAlt: 'Gesichtskonturierung durch Botulinumtoxin Masseter-Behandlung in Bremen',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Termin vereinbaren', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -225,7 +225,7 @@ export default function BotoxMasseterPage() {
       'Als zertifizierte Ärztin für Botulinumtoxin-Behandlungen und Mitglied der DGBT (Deutsche Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie) arbeite ich nach neuesten wissenschaftlichen Standards. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin in Bremen.',
     ],
     ctaText: 'Jetzt Beratungstermin anfragen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Masseter-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -243,7 +243,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botulinumtoxin/faltenbehandlung',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
         imageAlt: 'Microbotox Behandlung für feinere Hautstruktur',
         title: 'Microbotox',
         description:
@@ -251,7 +251,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botulinumtoxin/microbotox',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
         imageAlt: 'Botox Behandlung gegen übermäßiges Schwitzen',
         title: 'Hyperhidrose-Behandlung',
         description:
@@ -259,7 +259,7 @@ export default function BotoxMasseterPage() {
         treatmentUrl: '/botulinumtoxin/hyperhidrose',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-migräne_hero.webp',
         imageAlt: 'Botox zur Behandlung chronischer Migräne',
         title: 'Migräne-Behandlung',
         description:
@@ -329,8 +329,8 @@ export default function BotoxMasseterPage() {
     title: 'Bereit für eine definierte Jawline und weniger Kieferschmerzen?',
     subtitle:
       'Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Masseter-Behandlung in Bremen.',
-    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -339,7 +339,7 @@ export default function BotoxMasseterPage() {
       'In unserer modernen Praxis in Bremen bieten wir Ihnen professionelle Masseter-Behandlungen mit Botulinumtoxin. Ob ästhetische Gesichtskonturierung oder therapeutische Behandlung bei Bruxismus – wir beraten Sie individuell und umfassend.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

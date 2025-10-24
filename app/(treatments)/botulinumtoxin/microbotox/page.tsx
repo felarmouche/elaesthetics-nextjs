@@ -51,10 +51,10 @@ export default function BotoxMicrobotoxPage() {
     title: 'Microbotox in Bremen (Mesobotox)',
     subtitle:
       'Feineres, glatteres und strahlenderes Hautbild – mit reduzierter Talg- und Schweißproduktion.\nNatürliche Ergebnisse ohne „starre“ Optik.',
-    imageSrc: '/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp',
+    imageSrc: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
     imageAlt: 'Microbotox / Mesobotox Behandlung für feinere Poren und weniger Glanz in Bremen',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Termin vereinbaren', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -228,7 +228,7 @@ export default function BotoxMicrobotoxPage() {
       'Als zertifizierte Ärztin für Botulinumtoxin-Behandlungen (DGBT) arbeite ich nach aktuellen Standards – sicher, schonend und mit Fokus auf natürliche Ergebnisse.',
     ],
     ctaText: 'Jetzt Beratungstermin anfragen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Microbotox-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -246,7 +246,7 @@ export default function BotoxMicrobotoxPage() {
         treatmentUrl: '/botulinumtoxin/faltenbehandlung',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-masseter_hero.webp',
         imageAlt: 'Botox Masseter zur Jawline-Definition & gegen Bruxismus',
         title: 'Masseter / Bruxismus',
         description:
@@ -254,14 +254,14 @@ export default function BotoxMicrobotoxPage() {
         treatmentUrl: '/botulinumtoxin/masseter',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
         imageAlt: 'Botox gegen übermäßiges Schwitzen',
         title: 'Hyperhidrose',
         description: 'Effektiv gegen starkes Schwitzen (Achseln, Hände, Füße).',
         treatmentUrl: '/botulinumtoxin/hyperhidrose',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-migräne_hero.webp',
         imageAlt: 'Botox bei chronischer Migräne',
         title: 'Migräne',
         description: 'Anerkannte Therapieoption bei chronischer Migräne.',
@@ -325,8 +325,8 @@ export default function BotoxMicrobotoxPage() {
     title: 'Bereit für ein verfeinertes Hautbild?',
     subtitle:
       'Buchen Sie jetzt Ihre Microbotox-Behandlung – natürlich, dezent und mit kurzer Downtime.',
-    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -335,7 +335,7 @@ export default function BotoxMicrobotoxPage() {
       'Wir bieten Microbotox (Mesobotox) für Gesicht, Hals und Dekolleté – mit Fokus auf sichere Anwendung und natürliche Ergebnisse.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

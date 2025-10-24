@@ -49,8 +49,8 @@ export default function ChemischesPeelingPage() {
     subtitle: "Hauterneuerung ohne Ausfallzeit: PRX-T33 kombiniert TCA mit Wasserstoffperoxid für tiefenwirksame Regeneration – ohne sichtbare Schälung, auch im Sommer geeignet.",
     imageSrc: "/assets/chemisches-peeling/chemisches-peeling_hero.webp",
     imageAlt: "Chemisches Peeling mit Biorevitalisierung bei EL Aesthetics Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const introData: IntroSectionProps = {
@@ -288,7 +288,7 @@ export default function ChemischesPeelingPage() {
       "Besonders wichtig ist mir die Nachsorge: Sie erhalten von mir einen detaillierten Pflegeplan und die passenden Produkte für zuhause. Nur mit der richtigen Nachbehandlung können Sie das volle Potenzial des chemischen Peelings ausschöpfen und langanhaltende Ergebnisse erzielen."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
+    ctaHref: "/kontaktn",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche – Expertin für chemisches Peeling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -375,8 +375,8 @@ export default function ChemischesPeelingPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für strahlende, erneuerte Haut?",
     subtitle: "Vereinbaren Sie jetzt Ihren Beratungstermin für ein chemisches Peeling mit Biorevitalisierung in Bremen – ohne Ausfallzeit, auch im Sommer.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const locationData: LocationSectionProps = {
@@ -384,7 +384,7 @@ export default function ChemischesPeelingPage() {
     description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen medizinische Peeling-Behandlungen auf höchstem Niveau. Mit PRX-T33 setzen wir auf innovative Biorevitalisierung für natürliche, langanhaltende Ergebnisse – ohne Ausfallzeit.",
     location: {
       address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
+      phone: "+49 155 66919635",
       email: "info@elaesthetics-bremen.de",
       openingHours: [
         "Termine nach Vereinbarung"

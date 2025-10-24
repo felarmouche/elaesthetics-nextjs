@@ -14,7 +14,7 @@ Aktuelle Seite (page.tsx – unverändert einfügen):
 Unternehmensdaten (für Local SEO, Schema, Footer, CTAs):
 Praxis/Studio: El Aesthetics
 Adresse: Richtepad 14, 28355 Bremen
-Telefon: 0155/66919635
+Telefon: +49 155/66919635
 E-Mail: info@elaesthetics-bremen.de
 Öffnungszeiten: Mo–Fr 9:00–17:00
 City Focus: Bremen

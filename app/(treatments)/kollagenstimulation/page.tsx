@@ -33,8 +33,8 @@ export default function KollagenstimulationPage() {
       'Unterstützung von Hautfestigkeit & -qualität durch eine Kombination aus Hyaluronsäure und Calciumhydroxylapatit – präzise, ärztlich & natürlich wirkend.',
     imageSrc: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
     imageAlt: 'Kollagenstimulation in Bremen – ärztliche Injektion mit feiner Kanüle',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Termin vereinbaren', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
@@ -157,7 +157,7 @@ export default function KollagenstimulationPage() {
       'Gern prüfe ich mit Ihnen, ob die Kollagenstimulation mit Hyaluronsäure & Calciumhydroxylapatit für Ihre Wünsche geeignet ist.',
     ],
     ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztliches Beratungsgespräch in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -249,8 +249,8 @@ export default function KollagenstimulationPage() {
   const ctaData: CTASectionProps = {
     title: 'Bereit für eine natürlich wirkende Unterstützung der Haut?',
     subtitle: 'Lassen Sie sich individuell beraten – ärztlich & transparent.',
-    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -259,7 +259,7 @@ export default function KollagenstimulationPage() {
       'Zentral gelegen und gut erreichbar – u. a. aus Schwachhausen, Horn-Lehe, Oberneuland, Findorff, Mitte, Peterswerder, Vahr und Borgfeld sowie Lilienthal, Stuhr, Weyhe, Delmenhorst und Achim.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

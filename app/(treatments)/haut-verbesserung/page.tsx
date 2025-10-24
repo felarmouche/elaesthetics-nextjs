@@ -30,7 +30,7 @@ export default function HautverbesserungHubPage() {
       'Skinbooster & Profhilo für intensive Hydration, PRF & Polynukleotide für Regeneration, Microneedling & Peelings für Ebenmäßigkeit – Microbotox & Kollagenstimulation für verfeinerte Struktur.',
     imageSrc: '/assets/haut-verbesserung/haut-verbesserung_hero.webp',
     imageAlt: 'Übersicht moderner Behandlungen zur Hautverbesserung bei EL Aesthetics Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#treatments' },
   };
 
@@ -88,7 +88,7 @@ export default function HautverbesserungHubPage() {
         treatmentUrl: '/medizinisches-microneedling',
       },
       {
-        imageUrl: '/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
         imageAlt: 'Microbotox für verfeinerte Poren und weniger Glanz',
         title: 'Microbotox',
         description:
@@ -165,7 +165,7 @@ export default function HautverbesserungHubPage() {
       'Sicherheit steht an erster Stelle: sterile Arbeitsweise, hochwertige Produkte, schonende Techniken.',
     ],
     ctaText: 'Jetzt Beratungsgespräch vereinbaren',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche berät Patientin zu Skinbooster, PRF, Microneedling, Peeling und Microbotox in Bremen',
@@ -213,8 +213,8 @@ export default function HautverbesserungHubPage() {
     title: 'Natürlich bessere Haut – ohne künstlichen Look',
     subtitle:
       'Vereinbaren Sie jetzt Ihren Termin zur Hautverbesserung in Bremen: Skinbooster, PROFHILO®, PRF, Microneedling, Peelings, Microbotox, Polynukleotide & Kollagenstimulation.',
-    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -223,7 +223,7 @@ export default function HautverbesserungHubPage() {
       'In Schwachhausen nahe Oberneuland/Horn‑Lehe: präzise, sanfte Verfahren für mehr Hautqualität – individuell geplant & sicher durchgeführt.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

@@ -59,8 +59,8 @@ export default function FettWegSpritzePage() {
         imageSrc: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp',
         imageAlt:
             'Fett-weg-Spritze Behandlung für Doppelkinn bei EL Aesthetics in Bremen',
-        primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
-        secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+        primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+        secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
     };
 
     const introData: IntroSectionProps = {
@@ -343,7 +343,7 @@ export default function FettWegSpritzePage() {
             'Wichtig: Die Fett-weg-Spritze ersetzt keine gesunde Lebensweise. Mit der richtigen Ernährung und ausreichend Bewegung bleiben die Ergebnisse langfristig erhalten.',
         ],
         ctaText: 'Jetzt Beratungstermin buchen',
-        ctaHref: '/terminanfragen',
+        ctaHref: '/kontaktn',
         imageSrc: '/assets/tinified/IMG_7364.webp',
         imageAlt:
             'Ärztin Ola El-Armouche – Expertin für Fett-weg-Spritze in Bremen',
@@ -441,8 +441,8 @@ export default function FettWegSpritzePage() {
         title: 'Bereit für eine definierte Kontur ohne OP?',
         subtitle:
             'Vereinbaren Sie jetzt Ihre persönliche Beratung und erfahren Sie, wie die Fett-weg-Spritze Ihre Problemzonen dauerhaft reduzieren kann.',
-        primaryCTA: { text: 'Jetzt Termin buchen', href: '/terminanfragen' },
-        secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+        primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+        secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
     };
 
     const locationData: LocationSectionProps = {
@@ -451,7 +451,7 @@ export default function FettWegSpritzePage() {
             'Effektive Fettreduktion ohne Operation – individuell geplant und professionell durchgeführt in unserer modernen Praxis im Herzen Bremens.',
         location: {
             address: 'Richtepad 14, 28355 Bremen',
-            phone: '0155 66919635',
+            phone: '+49 155 66919635',
             email: 'info@elaesthetics-bremen.de',
             openingHours: ['Termine nach Vereinbarung'],
         },

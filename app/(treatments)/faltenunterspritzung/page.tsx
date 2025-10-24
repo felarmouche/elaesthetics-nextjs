@@ -47,7 +47,7 @@ export default function FaltenunterspritzungHubPage() {
     imageSrc: '/assets/faltenunterspritzung/faltenunterspritzung_hero.webp',
     imageAlt:
       'Faltenunterspritzung mit Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation bei EL Aesthetics in Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#treatments' },
   };
 
@@ -147,7 +147,7 @@ export default function FaltenunterspritzungHubPage() {
       'Ich erkläre transparent Wirkprinzip, Haltbarkeit und mögliche Nebenwirkungen und erstelle einen maßgeschneiderten Behandlungsplan.',
     ],
     ctaText: 'Jetzt Beratungsgespräch vereinbaren',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche berät Patientin zu Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation in Bremen',
@@ -205,8 +205,8 @@ export default function FaltenunterspritzungHubPage() {
     title: 'Natürlich frischer wirken – ohne künstlichen Look',
     subtitle:
       'Vereinbaren Sie jetzt Ihren Termin für Hyaluronfiller, PRF, Polynukleotide oder Kollagenstimulation in Bremen.',
-    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -215,7 +215,7 @@ export default function FaltenunterspritzungHubPage() {
       'Präzise Unterspritzung mit Hyaluronfillern, natürliche PRF- und Polynukleotid-Regeneration sowie Kollagenstimulation – individuell geplant, sicher durchgeführt.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

@@ -25,7 +25,7 @@ export default function HaarausfallHubPage() {
         subtitle: "Unsere Ansätze gegen Haarverlust: Nicht nur die Symptome sollen gestoppt werden. Wir schaffen eine Grundlage für gesundes und kräftiges Haarwachstum.",
         imageSrc: "/assets/haarausfall-behandlung/haarausfall-behandlung_hero.webp", // Pfad anpassen
         imageAlt: "Symbolbild für eine Haarausfall Behandlung in der Praxis von EL Aesthetics Bremen",
-        primaryCTA: { text: "Termin anfragen", href: "/terminanfragen" },
+        primaryCTA: { text: "Termin anfragen", href: "/kontaktn" },
         secondaryCTA: { text: "Behandlungen ansehen", href: "#treatments" }
     };
 
@@ -106,7 +106,7 @@ export default function HaarausfallHubPage() {
             "Unser Ziel ist es nicht, möglichst viele Behandlungen durchzuführen, sondern die eine, die für Sie am effektivsten ist. Vereinbaren Sie jetzt Ihren persönlichen Beratungstermin in unserer Praxis in Bremen und gehen Sie den ersten Schritt gegen Ihren Haarausfall."
         ],
         ctaText: "Jetzt Analyse anfordern",
-        ctaHref: "/terminanfragen",
+        ctaHref: "/kontaktn",
         imageSrc: "/assets/beratung/beratung-haarausfall-bremen.webp", // Pfad anpassen
         imageAlt: "Dr. Ola El-Armouche bei der Haaranalyse und Beratung zu Haarausfall in Bremen",
         backgroundColor: "bg-[#FDF6F0]"
@@ -141,8 +141,8 @@ export default function HaarausfallHubPage() {
     const ctaData: CTASectionProps = {
         title: "Bereit, die Ursache Ihres Haarausfalls anzugehen?",
         subtitle: "Vereinbaren Sie jetzt ein unverbindliches Beratungsgespräch in unserer Praxis in Bremen und erfahren Sie, wie wir Ihnen helfen können.",
-        primaryCTA: { text: "Jetzt Beratung anfragen", href: "/terminanfragen" },
-        secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+        primaryCTA: { text: "Jetzt Beratung anfragen", href: "/kontaktn" },
+        secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
     };
 
     const locationData: LocationSectionProps = {
@@ -150,7 +150,7 @@ export default function HaarausfallHubPage() {
         description: "In unserer Praxis in Bremen kombinieren wir fundierte medizinische Diagnostik mit den modernsten regenerativen Behandlungsmethoden, um die bestmöglichen Ergebnisse für Ihr Haar zu erzielen.",
         location: {
             address: "Richtepad 14, 28355 Bremen",
-            phone: "0155 66919635",
+            phone: "+49 155 66919635",
             email: "info@elaesthetics-bremen.de",
             openingHours: [
                 "Termine nach Vereinbarung"

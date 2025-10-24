@@ -45,7 +45,7 @@ export default function BotoxBehandlungenPage() {
             "Medizinische Botulinumtoxin-Therapien – Masseter/Bruxismus, Migräne- und Hyperhidrose-Behandlung.",
         imageSrc: "/assets/medizinische-behandlungen/medizinische-behandlunge_hero.webp",
         imageAlt: "Symbolbild für ärztliche Botox-Behandlungen in der Praxis EL Aesthetics Bremen",
-        primaryCTA: { text: "Beratung anfragen", href: "/terminanfragen" },
+        primaryCTA: { text: "Beratung anfragen", href: "/kontaktn" },
         secondaryCTA: { text: "Behandlungen ansehen", href: "#treatments" }
     };
 
@@ -64,7 +64,7 @@ export default function BotoxBehandlungenPage() {
         title: "Unsere Botox-Behandlungen in Bremen",
         treatments: [
             {
-                imageUrl: "/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp",
+                imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
                 imageAlt: "Masseter-Botox gegen Zähneknirschen (Bruxismus) in Bremen",
                 title: "Masseter: Entspannung bei Bruxismus & Kieferschmerzen",
                 description:
@@ -73,7 +73,7 @@ export default function BotoxBehandlungenPage() {
             },
 
             {
-                imageUrl: "/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp",
+                imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
                 imageAlt: "Botox zur Migräneprophylaxe in Bremen",
                 title: "Migräne: Prophylaxe mit Botulinumtoxin",
                 description:
@@ -81,7 +81,7 @@ export default function BotoxBehandlungenPage() {
                 treatmentUrl: "/botulinumtoxin/migraene"
             },
             {
-                imageUrl: "/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp",
+                imageUrl: "/assets/botulinumtoxin/botox-hyperhidrose_hero.webp",
                 imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botox in Bremen",
                 title: "Hyperhidrose: Weniger Schwitzen, mehr Freiheit",
                 description:
@@ -123,7 +123,7 @@ export default function BotoxBehandlungenPage() {
             "Sicherheit steht an erster Stelle: Wir besprechen mögliche Nebenwirkungen und zeigen Alternativen auf, falls eine Botox-Therapie nicht die optimale Option ist."
         ],
         ctaText: "Jetzt Beratung anfragen",
-        ctaHref: "/terminanfragen",
+        ctaHref: "/kontaktn",
         imageSrc: "/assets/tinified/IMG_7364.webp",
         imageAlt: "Ärztliche Botox-Beratung in der Praxis EL Aesthetics Bremen",
         backgroundColor: "bg-[#F5FAFF]"
@@ -163,8 +163,8 @@ export default function BotoxBehandlungenPage() {
     const ctaData: CTASectionProps = {
         title: "Bereit für eine fundierte, natürliche Botox-Behandlung?",
         subtitle: "Vereinbaren Sie jetzt Ihr Beratungsgespräch bei EL Aesthetics Bremen.",
-        primaryCTA: { text: "Jetzt Beratung anfragen", href: "/terminanfragen" },
-        secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+        primaryCTA: { text: "Jetzt Beratung anfragen", href: "/kontaktn" },
+        secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
     };
 
     const locationData: LocationSectionProps = {
@@ -173,7 +173,7 @@ export default function BotoxBehandlungenPage() {
             "Wir kombinieren ärztliche Sorgfalt mit moderner Injektionstechnik für sichere und natürliche Resultate – funktionell wie ästhetisch.",
         location: {
             address: "Richtepad 14, 28355 Bremen",
-            phone: "0155 66919635",
+            phone: "+49 155 66919635",
             email: "info@elaesthetics-bremen.de",
             openingHours: ["Termine nach Vereinbarung"]
         }

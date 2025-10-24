@@ -24,10 +24,10 @@ export default function BotoxMigraenePage() {
   const heroData: HeroSectionProps = {
     title: "Botolinumtoxin bei chronischer Migräne in Bremen",
     subtitle: "Leiden Sie unter häufigen Migräneattacken?\nBei EL Aesthetics bieten wir Ihnen die zugelassene Botulinumtoxin-Therapie zur Behandlung chronischer Migräne an.",
-    imageSrc: "/assets/botulinumtoxin/botulinumtoxin-migräne_hero.webp",
+    imageSrc: "/assets/botulinumtoxin/botox-migräne_hero.webp",
     imageAlt: "Frau mit chronischer Migräne vor eine Botox Behandlung in Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const introData: IntroSectionProps = {
@@ -176,7 +176,7 @@ export default function BotoxMigraenePage() {
       "In meiner Praxis in Bremen steht Ihre Gesundheit und Ihr Wohlbefinden im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und finden Sie heraus, ob eine Botulinumtoxin-Behandlung Ihre Migränebeschwerden lindern kann."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
+    ctaHref: "/kontaktn",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für eine Botox Migränebehandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -193,21 +193,21 @@ export default function BotoxMigraenePage() {
         treatmentUrl: "/botulinumtoxin/faltenbehandlung"
       },
       {
-        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-masseter_hero.webp",
+        imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
         imageAlt: "Botox Behandlung des Masseter-Muskels zur Gesichtskonturierung",
         title: "Masseter-Behandlung (Jawline)",
         description: "Durch gezielte Botulinumtoxin-Injektionen in den Kaumuskel (Masseter) kann die Gesichtsform harmonisiert und eine markante Jawline geschaffen werden. Auch bei Zähneknirschen (Bruxismus) ist diese Behandlung sehr wirksam.",
         treatmentUrl: "/botulinumtoxin/masseter"
       },
       {
-        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-hyperhidrose_hero.webp",
+        imageUrl: "/assets/botulinumtoxin/botox-hyperhidrose_hero.webp",
         imageAlt: "Botox Behandlung gegen übermäßiges Schwitzen",
         title: "Hyperhidrose-Behandlung",
         description: "Bei übermäßigem Schwitzen (Hyperhidrose) kann Botox die Schweißproduktion deutlich reduzieren. Die Behandlung ist besonders effektiv an Achseln, Händen und Füßen.",
         treatmentUrl: "/botulinumtoxin/hyperhidrose"
       },
       {
-        imageUrl: "/assets/botulinumtoxin/botulinumtoxin-microbotox_hero.webp",
+        imageUrl: "/assets/botulinumtoxin/botox-microbotox_hero.webp",
         imageAlt: "Microbotox Behandlung für feinere Hautstruktur und Porenverfeinung",
         title: "Microbotox (Skin Quality)",
         description: "Microbotox wird flächig in die oberen Hautschichten injiziert und verbessert die Hautqualität, verfeinert Poren und reduziert die Talgproduktion. Ideal für einen ebenmäßigen, glatten Teint.",
@@ -257,8 +257,8 @@ export default function BotoxMigraenePage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für eine Linderung Ihrer Migränebeschwerden?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Botulinumtoxin Migränebehandlung in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const locationData: LocationSectionProps = {
@@ -266,7 +266,7 @@ export default function BotoxMigraenePage() {
     description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen Botulinumtoxin-Behandlungen gegen chronische Migräne auf höchstem medizinischen Niveau. Wir legen Wert auf individuelle Beratung, präzise Therapie und eine vertrauensvolle Atmosphäre.",
     location: {
       address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
+      phone: "+49 155 66919635",
       email: "info@elaesthetics-bremen.de",
       openingHours: [
         "Termine nach Vereinbarung"

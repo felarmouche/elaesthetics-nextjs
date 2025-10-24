@@ -49,8 +49,8 @@ export default function PolynukleotideBehandlungPage() {
     subtitle: "Biostimulation der neuesten Generation für natürliche Hautregeneration, Faltenreduktion und Haarwachstum.\nEntdecken Sie die regenerative Kraft biologischer DNA-Therapie.",
     imageSrc: "/assets/polynukleotide/polynukleotide_hero.webp",
     imageAlt: "Polynukleotide-Behandlung für Hautregeneration in Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const introData: IntroSectionProps = {
@@ -230,7 +230,7 @@ export default function PolynukleotideBehandlungPage() {
       "In meiner Praxis in Bremen steht Ihre individuelle Betreuung im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie Polynukleotide Ihre Haut regenerieren und verjüngen können."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
+    ctaHref: "/kontaktn",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Polynukleotide-Behandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -311,8 +311,8 @@ export default function PolynukleotideBehandlungPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für natürliche Hautregeneration?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Polynukleotide-Behandlung in Bremen und entdecken Sie die regenerative Kraft biologischer DNA-Therapie.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const locationData: LocationSectionProps = {
@@ -320,7 +320,7 @@ export default function PolynukleotideBehandlungPage() {
     description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen innovative Polynukleotide-Behandlungen auf höchstem medizinischen Niveau. Wir legen Wert auf biologisch verträgliche Therapien, natürliche Ergebnisse und eine vertrauensvolle Atmosphäre.",
     location: {
       address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
+      phone: "+49 155 66919635",
       email: "info@elaesthetics-bremen.de",
       openingHours: [
         "Termine nach Vereinbarung"

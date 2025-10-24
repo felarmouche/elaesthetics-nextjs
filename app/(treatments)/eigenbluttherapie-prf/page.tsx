@@ -47,7 +47,7 @@ export default function EigenbluttherapiePRFPage() {
     imageSrc: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
     imageAlt:
       'Eigenbluttherapie PRF für Haut und Haare bei EL Aesthetics in Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/terminanfragen' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#treatments' },
   };
 
@@ -129,7 +129,7 @@ export default function EigenbluttherapiePRFPage() {
       'Ziel sind frische, natürliche Ergebnisse – man sieht die Verbesserung, nicht die Behandlung.',
     ],
     ctaText: 'Jetzt Beratungsgespräch vereinbaren',
-    ctaHref: '/terminanfragen',
+    ctaHref: '/kontaktn',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztliche Beratung zur Eigenbluttherapie PRF in Bremen bei EL Aesthetics',
@@ -196,8 +196,8 @@ export default function EigenbluttherapiePRFPage() {
     title: 'Natürlich besser aussehen – ohne künstlichen Look',
     subtitle:
       'Vereinbaren Sie jetzt Ihren Termin für die PRF‑Eigenbluttherapie in Bremen.',
-    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/terminanfragen' },
-    secondaryCTA: { text: '0155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontaktn' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const locationData: LocationSectionProps = {
@@ -206,7 +206,7 @@ export default function EigenbluttherapiePRFPage() {
       'Schonende PRF‑Regeneration für Haut & Haare – individuell geplant und sicher durchgeführt.',
     location: {
       address: 'Richtepad 14, 28355 Bremen',
-      phone: '0155 66919635',
+      phone: '+49 155 66919635',
       email: 'info@elaesthetics-bremen.de',
       openingHours: ['Termine nach Vereinbarung'],
     },

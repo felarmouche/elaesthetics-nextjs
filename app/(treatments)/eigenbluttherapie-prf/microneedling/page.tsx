@@ -53,8 +53,8 @@ export default function PRFMicroneedlingPage() {
       "Microneedling + PRF-Matrix: Die Kombination für gezielte Regeneration, feinere Poren und ein ebenmäßigeres Hautbild – in ärztlicher Hand.",
     imageSrc: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp",
     imageAlt: "PRF Microneedling (Plasma-Needling) in der Praxis EL Aesthetics Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const introData: IntroSectionProps = {
@@ -173,7 +173,7 @@ export default function PRFMicroneedlingPage() {
       "Transparenz zu Erwartungsmanagement, Regenerationszeit und Pflege inklusive."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/terminanfragen",
+    ctaHref: "/kontaktn",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Beratung zu PRF Microneedling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -243,8 +243,8 @@ export default function PRFMicroneedlingPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für Plasma-Needling?",
     subtitle: "Vereinbaren Sie Ihren Termin für PRF Microneedling in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/terminanfragen" },
-    secondaryCTA: { text: "0155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
   const locationData: LocationSectionProps = {
@@ -253,7 +253,7 @@ export default function PRFMicroneedlingPage() {
       "Wir kombinieren präzises Needling mit moderner PRF-Matrix für natürliche, verträgliche Ergebnisse.",
     location: {
       address: "Richtepad 14, 28355 Bremen",
-      phone: "0155 66919635",
+      phone: "+49 155 66919635",
       email: "info@elaesthetics-bremen.de",
       openingHours: ["Termine nach Vereinbarung"]
     }
