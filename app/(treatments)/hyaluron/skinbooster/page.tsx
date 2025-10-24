@@ -4,7 +4,7 @@ import {
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
-  CTASection,
+  
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -12,8 +12,8 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
+  
+  
   ProcessSection,
   ProcessSectionProps,
   QuickInfoSection,
@@ -57,7 +57,7 @@ export default function SkinboosterBremenPage() {
     imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
     imageAlt:
       'Skinbooster-Behandlung – sanfte Hautauffrischung mit Hyaluron',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
@@ -211,7 +211,7 @@ export default function SkinboosterBremenPage() {
       'Abrechnung nach GOÄ, hochwertige Präparate und sterile, minimal-invasive Technik.',
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
-    ctaHref: '/kontaktn',
+    ctaHref: '/kontakt',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Skinbooster-Beratung',
@@ -284,7 +284,7 @@ export default function SkinboosterBremenPage() {
     title: 'Mehr Glow & bessere Hautqualität?',
     subtitle:
       'Buchen Sie Ihre persönliche Beratung für Skinbooster in Bremen.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 

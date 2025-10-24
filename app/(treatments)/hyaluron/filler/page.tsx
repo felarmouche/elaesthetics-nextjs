@@ -4,7 +4,7 @@ import {
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
-  CTASection,
+  
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -12,8 +12,8 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
+  
+  
   ProcessSection,
   ProcessSectionProps,
   QuickInfoSection,
@@ -57,7 +57,7 @@ export default function HyaluronFillerBremenPage() {
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',
     imageAlt:
       'Hyaluron-Filler-Behandlung in Bremen – Lippen, Falten & Konturen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
@@ -215,7 +215,7 @@ export default function HyaluronFillerBremenPage() {
       'Verantwortung & Sicherheit: klare Aufklärung, sterile Arbeitsweise und ein definiertes Vorgehen für seltene Komplikationen (inkl. Hylase).',
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
-    ctaHref: '/kontaktn',
+    ctaHref: '/kontakt',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt:
       'Ärztin Ola El-Armouche – Hyaluron-Filler in Bremen',
@@ -287,7 +287,7 @@ export default function HyaluronFillerBremenPage() {
     title: 'Bereit für ein frisches, natürliches Ergebnis?',
     subtitle:
       'Vereinbaren Sie jetzt Ihre persönliche Beratung für Hyaluron-Filler in Bremen.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 

@@ -31,7 +31,7 @@ const pathNameMap: Record<string, string> = {
   // Botox Unterbereiche
   faltenbehandlung: 'Faltenbehandlung',
   masseter: 'Masseter',
-  microbotox: 'Microbotox',
+  mesobotox: 'Mesobotox / Microbotox',
   migraene: 'Migräne',
   hyperhidrose: 'Hyperhidrose',
 

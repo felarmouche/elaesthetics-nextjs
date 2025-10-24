@@ -20,7 +20,7 @@ const treatments: TreatmentSlide[] = [
   { src: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp', alt: 'Behandlungsbild für Botox mit einer älteren Frau und einem älteren Mann', text: 'Botulinumtoxin', linkUrl: '/botulinumtoxin', width: 1920, height: 1080 },
   { src: '/assets/hyaluron/hyaluron-filler_hero.webp', alt: 'Behandlungsbild einer Frau für eine Hyaluron-Behandlung', text: 'Hyaluron', linkUrl: '/hyaluron', width: 1920, height: 1080 },
   { src: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp', alt: 'Abbildung zum Thema Fett-weg-Spritze', text: 'Fett-weg-Spritze', linkUrl: '/fett-weg-spritze', width: 1920, height: 1080 },
-  { src: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-vampire-lifting_hero.webp', alt: 'PRF Eigenbluttherapie', text: 'PRF (Eigenbluttherapie)', linkUrl: '/eigenbluttherapie-prf', width: 1920, height: 1080 },
+  { src: '/assets/eigenbluttherapie/eigenbluttherapie-vampire-lifting_hero.webp', alt: 'PRF Eigenbluttherapie', text: 'PRF (Eigenbluttherapie)', linkUrl: '/eigenbluttherapie', width: 1920, height: 1080 },
   { src: '/assets/mesotherapie/mesotherapie-haut_hero.webp', alt: 'Mesotherapie Behandlung', text: 'Mesotherapie', linkUrl: '/mesotherapie', width: 1920, height: 1080 },
   { src: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp', alt: 'Medizinisches Microneedling', text: 'Medizinisches Microneedling', linkUrl: '/medizinisches-microneedling', width: 1920, height: 1080 },
   { src: '/assets/polynukleotide/polynukleotide_hero.webp', alt: 'Polynukleotide (PDRN/PN)', text: 'Polynukleotide', linkUrl: '/polynukleotide', width: 1920, height: 1080 },

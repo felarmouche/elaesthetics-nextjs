@@ -1,5 +1,7 @@
-import type { Metadata } from 'next';
+import { Metadata } from 'next';
 import {
+  TOCItem,
+  TableOfContents,
   AreasSection,
   ConsultationSectionProps,
   AreasSectionProps,
@@ -7,7 +9,7 @@ import {
   QuickInfoSection,
   QuickInfoSectionProps,
   ConsultationSection,
-  CTASection,
+  
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -15,29 +17,29 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
+  
+  
   ProcessSection,
   ProcessSectionProps,
   TreatmentCareSection,
   TreatmentsSection,
   TreatmentsSectionProps,
+  CTASection,
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+// PatientReviews entfernt (HWG)
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title:
-    'Botox gegen starkes Schwitzen (Hyperhidrose) Bremen | Achseln | EL Aesthetics',
+    'Botulinumtoxin gegen Schwitzen (Hyperhidrose) Bremen | Achseln | EL Aesthetics',
   description:
-    'Effektive Botox-Behandlung gegen Hyperhidrose in Bremen: weniger Schweiß unter den Achseln, kurze Downtime, natürliches Gefühl. Beratung & Behandlung bei EL Aesthetics.',
+    'Information zur Schwitzen Behandlung (axilläre Hyperhidrose) mit Botulinumtoxin in Bremen: indikationsbezogene Beratung, ärztliche Aufklärung, individuelle Entscheidung.',
   keywords:
-    'Hyperhidrose Bremen, Botox gegen Schwitzen Bremen, Achselschwitzen behandeln, übermäßiges Schwitzen Achseln, Schweißdrüsen Botox Bremen, Hyperhidrose Behandlung Bremen',
+    'botulinumtoxin gegen schwitzen, botulinumtoxin a gegen schwitzen, botulinumtoxin schwitzen, schwitzen behandlung, Hyperhidrose Bremen, Achselschwitzen behandeln, übermäßiges Schwitzen Achseln, Schweißdrüsen Behandlung Bremen',
   openGraph: {
-    title: 'Botox gegen Hyperhidrose in Bremen – weniger Achselschwitzen',
+    title: 'Botulinumtoxin gegen axilläre Hyperhidrose in Bremen',
     description:
-      'Botulinumtoxin blockiert vorübergehend die Schweißproduktion. Geeignet bei übermäßigem Schwitzen (Hyperhidrose) – Achseln. Kurze Ausfallzeit, schnelle Wirkung.',
+      'Sachliche Information zur Anwendung von Botulinumtoxin bei übermäßigem Schwitzen (axilläre Hyperhidrose). Ärztliche Beratung erforderlich.',
     type: 'website',
     locale: 'de_DE',
     images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/botox-hyperhidrose_hero.webp'],
@@ -49,25 +51,26 @@ export const metadata: Metadata = {
 
 export default function BotoxHyperhidrosePage() {
   const heroData: HeroSectionProps = {
-    title: 'Botulinumtoxin gegen Hyperhidrose (Achseln)',
+    title: 'Botulinumtoxin gegen starkes Schwitzen (Hyperhidrose)',
     subtitle:
-      'Beenden Sie lästiges Achselschwitzen: Botullinumtoxin blockiert vorübergehend die Schweißproduktion – mit kurzer Downtime und natürlichem Ergebnis.',
+      'Die Anwendung von Botulinumtoxin bei axillärer Hyperhidrose zielt auf eine Verringerung der Schweißproduktion ab.',
     imageSrc: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
-    imageAlt: 'Botox-Behandlung gegen Achselschwitzen (Hyperhidrose) in Bremen',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/kontaktn' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    imageAlt: 'Behandlung mit Botulinumtoxin gegen Schwitzen (axilläre Hyperhidrose) in Bremen',
+    primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Was ist Hyperhidrose – und wie hilft Botulinumtoxin?',
+    title: 'Botulinumtoxin a gegen schwitzen – Allgemeine Infos',
     content: [
-      'Unter Hyperhidrose versteht man übermäßiges Schwitzen, das nicht nur durch Hitze oder Sport entsteht, sondern z.\u00B7B. auch genetisch bedingt sein kann oder im Zusammenhang mit Medikamenten bzw. Schilddrüsenerkrankungen auftritt. Häufig betroffen sind die Achseln.',
-      'Die Behandlung mit Botulinumtoxin ist eine minimal-invasive, sehr effektive Methode: Der Wirkstoff blockiert die Signalübertragung an den Nervenendigungen der Schweißdrüsen. Dadurch produzieren die Drüsen vorübergehend deutlich weniger bis keinen Schweiß – mit spürbarer Erleichterung im Alltag.',
+      'Unter Hyperhidrose versteht man übermäßiges Schwitzen, das nicht allein durch Hitze oder Sport erklärbar ist. Häufig betroffen sind die Achseln (axilläre Hyperhidrose).',
+      'Botulinumtoxin kann die Signalübertragung an den Nervenendigungen der Schweißdrüsen vorübergehend hemmen. Infolgedessen kann die Schweißproduktion in den behandelten Arealen reduziert sein. Ob und in welchem Ausmaß dies für Sie sinnvoll ist, wird im ärztlichen Gespräch geklärt.',
+      'Wichtiger rechtlicher Hinweis: Es werden keine Heilversprechen gegeben. Die Informationen dienen der Aufklärung zu \"botulinumtoxin gegen schwitzen\" und \"schwitzen behandlung\" und ersetzen nicht die individuelle ärztliche Beratung.',
     ],
   };
 
   const areasData: AreasSectionProps = {
-    title: 'Anwendungsbereich',
+    title: 'Anwendungsbereiche - Hyperhidrose Behandlung',
     categories: [
       {
         category: 'Primär',
@@ -78,7 +81,7 @@ export default function BotoxHyperhidrosePage() {
         items: [
           {
             title:
-              'Weitere Areale auf Anfrage nach individueller Prüfung (z.\u00B7B. nur wenn medizinisch geeignet)'
+              'Weitere Areale nur nach individueller ärztlicher Prüfung und wenn medizinisch vertretbar.',
           },
         ],
       },
@@ -86,238 +89,206 @@ export default function BotoxHyperhidrosePage() {
   };
 
   const benefitsData: QuickInfoSectionProps = {
-    title: 'Hyperhidrose-Behandlung auf einen Blick',
+    title: 'Überblick zur Behandlung gegen übermäßiges Schwitzen',
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.botulinum.hyperhidrose}\u20AC*`, iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Dauer', description: '30–45 Minuten', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: '10–14 Tage', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Wirkdauer', description: '3–6 Monate', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Betäubung', description: 'keine (Betäubungscreme möglich)', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Behandlungszeit', description: 'ca. 30–45 Minuten', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Möglicher Wirkeintritt', description: 'nach ca. 10–14 Tagen', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Mögliche Wirkdauer', description: 'etwa 3–6 Monate', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Betäubung', description: 'keine; Betäubungscreme möglich', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Alltag', description: 'in der Regel rasch wieder möglich', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note:
-      '*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt.',
+      '*Richtwert nach GOÄ. Der endgültige Betrag richtet sich nach Areal, Menge und individuellem Aufwand und wird nach Aufklärung im Einzelfall festgelegt. Keine Erfolgsgarantie.',
   };
 
   const processData: ProcessSectionProps = {
-    title: 'Ablauf Ihrer Hyperhidrose-Behandlung',
+    title: 'Ablauf der Behandlung gegen Hyperhidrose',
     steps: [
       {
         number: '01',
-        title: 'Beratung & Areal-Markierung',
+        title: 'Ärztliche Beratung & Indikationsprüfung',
         description:
-          'Wir klären Ihre Vorgeschichte und prüfen, ob eine Botulinumtoxin-Therapie sinnvoll ist. Die Achselbereiche werden markiert (Schweißverteilung) und für die Behandlung vorbereitet.',
+          'Anamnese, Ausschlussgründe, ggf. Testung der Schweißverteilung. Es wird gemeinsam entschieden, ob \"botulinumtoxin a gegen schwitzen\" in Ihrem Fall sinnvoll ist.',
       },
       {
         number: '02',
         title: 'Vorbereitung',
         description:
-          'Reinigung & Desinfektion. Auf Wunsch tragen wir eine Lidocain-haltige Betäubungscreme auf (Einwirkzeit ca. 30 Minuten).',
+          'Reinigung/Desinfektion. Auf Wunsch lokale Betäubungscreme (Einwirkzeit ca. 30 Minuten).',
       },
       {
         number: '03',
-        title: 'Micro-Injektionen im Raster',
+        title: 'Mikro-Injektionen im Raster',
         description:
-          'Das verdünnte Botulinumtoxin wird sehr oberflächlich in einem Raster von ca. 1\u00D71 cm in die Haut injiziert. Die Vielzahl der Injektionen ist kurz, kann aber als unangenehm empfunden werden – die Betäubungscreme erhöht den Komfort.',
+          'Sehr oberflächliche Injektionen in einem ca. 1×1 cm Raster in das Behandlungsareal. Empfindungen sind individuell; die Betäubungscreme kann den Komfort erhöhen.',
       },
       {
         number: '04',
-        title: 'Kontrolle & Auffrischung',
+        title: 'Kontrolle & ggf. Auffrischung',
         description:
-          'Die volle Wirkung ist in der Regel nach 10–14 Tagen erreicht. Auffrischungen erfolgen typischerweise nach 3–6 Monaten, abhängig von Schweißaktivität und individuellem Ansprechen.',
+          'Beurteilung des Effekts nach etwa 10–14 Tagen. Auffrischungen können – je nach Verlauf – nach 3–6 Monaten erwogen werden.',
       },
     ],
   };
 
   const treatmentCareData: TreatmentCareSectionProps = {
-    title: 'Wichtige Hinweise zur Behandlung',
+    title: 'Wichtige Hinweise',
     beforeTreatment: {
       title: 'Vor der Behandlung',
       instructions: [
-        { title: 'Schwangerschaft/Stillzeit', description: 'Keine Behandlung in Schwangerschaft oder Stillzeit.' },
-        { title: 'Entzündungen', description: 'Keine Behandlung bei Entzündungen im Behandlungsareal.' },
-        { title: 'Operationen', description: '2 Wochen vor oder nach einer OP nicht behandeln.' },
+        { title: 'Schwangerschaft/Stillzeit', description: 'Keine Anwendung in Schwangerschaft oder Stillzeit.' },
+        { title: 'Infektionen/Entzündungen', description: 'Keine Behandlung bei lokalen Entzündungen.' },
+        { title: 'Operationen', description: 'Nicht innerhalb von 2 Wochen vor/nach einer Operation.' },
         {
           title: 'Blutverdünner',
           description:
-            'Nach ärztlicher Rücksprache 7 Tage vorher möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac).',
+            'Medikamente wie ASS/Ibuprofen/Diclofenac nur nach ärztlicher Rücksprache pausieren – keine eigenständige Absetzung.',
         },
-        { title: 'Alkohol', description: '48 Stunden vor der Behandlung kein Alkohol empfohlen.' },
+        { title: 'Alkohol', description: 'In den 48 Stunden vor der Behandlung besser vermeiden.' },
       ],
     },
     afterTreatment: {
       title: 'Nach der Behandlung',
       instructions: [
-        { title: 'Aufrecht bleiben', description: '3–4 Stunden nach der Behandlung aufrechte Haltung beibehalten.' },
-        { title: 'Sport/Hitze', description: '24 Stunden kein Sport; 2 Tage Sauna, Dampfbad und starke Hitze meiden.' },
-        { title: 'UV/Sonne', description: '1–2 Wochen keine intensive Sonneneinstrahlung; 4–6 Wochen Sonnenschutz beachten.' },
-        { title: 'Alkohol', description: 'Mindestens 48 Stunden auf Alkohol verzichten (kann die Wirksamkeit mindern).' },
-        { title: 'Pflege', description: 'Am Behandlungstag keine aggressiven Deos/Peelings im Behandlungsareal verwenden.' },
+        { title: 'Aufrechte Haltung', description: 'Für 3–4 Stunden beibehalten.' },
+        { title: 'Sport/Hitze', description: 'Für 24 Stunden keinen Sport; Sauna/Dampfbad/Hitze 2 Tage meiden.' },
+        { title: 'Sonne/UV', description: '1–2 Wochen starke UV-Exposition vermeiden; Sonnenschutz beachten.' },
+        { title: 'Pflege', description: 'Am Behandlungstag keine reizenden Deos/Peelings im Areal.' },
       ],
     },
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'Daniela F.',
-      rating: 5,
-      text:
-        'Ich habe seit Jahren mit starkem Achselschwitzen gekämpft. Zwei Wochen nach der Behandlung war ich fast komplett trocken – riesige Erleichterung im Alltag!',
-      date: '2024-07-03',
-    },
-    {
-      id: 2,
-      name: 'Timo L.',
-      rating: 5,
-      text:
-        'Schnelle, professionelle Behandlung. Die vielen kleinen Piekser waren dank Betäubungscreme gut auszuhalten. Wirkung hält bei mir ca. 5 Monate.',
-      date: '2024-06-12',
-    },
-    {
-      id: 3,
-      name: 'Lea P.',
-      rating: 4,
-      text:
-        'Deutlich weniger Schweiß und endlich keine Flecken mehr auf Shirts. Nach 6 Monaten habe ich auffrischen lassen.',
-      date: '2024-04-21',
-    },
-  ];
-
   const consultationData: ConsultationSectionProps = {
-    title: 'Ihre Expertin für Hyperhidrose-Behandlungen in Bremen',
+    title: 'Ärztliche Beratung in Bremen',
     description: [
-      'Ich bin Ola El-Armouche, Ärztin für ästhetische Medizin. Wir setzen Botulinumtoxin gezielt gegen axilläre Hyperhidrose ein – sicher, effektiv und mit kurzer Downtime.',
-      'Nach einer kurzen Anamnese und Areal-Diagnostik bekommen Sie einen individuellen Behandlungsplan – inkl. realistischer Erwartungen zu Wirkeintritt und Wirkdauer.',
-      'Als DGBT-zertifizierte Ärztin arbeite ich nach aktuellen Standards; im Termin klären wir Kontraindikationen und beantworten alle Fragen ausführlich.',
+      'Behandlungen mit Botulinumtoxin bei Hyperhidrose erfolgen in unserer Praxis nach individueller Aufklärung und Indikationsstellung.',
+      'Es werden Nutzen, mögliche Risiken und Alternativen erläutert. Die Entscheidung für oder gegen eine Behandlung wird gemeinsam getroffen.',
+      'Zertifizierte Durchführung nach aktuellen Standards. Kontraindikationen werden besprochen.',
     ],
-    ctaText: 'Jetzt Beratungstermin anfragen',
-    ctaHref: '/kontaktn',
+    ctaText: 'Beratungstermin anfragen',
+    ctaHref: '/kontakt',
     imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt: 'Ärztin Ola El-Armouche berät Patientin zur Hyperhidrose-Behandlung in Bremen',
+    imageAlt: 'Ärztliche Beratung zur Hyperhidrose (Botulinumtoxin) in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: 'Weitere Botulinumtoxin Behandlungen in Bremen',
+    title: 'Weitere Anwendungen mit Botulinumtoxin in Bremen',
     treatments: [
       {
         imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
-        imageAlt: 'Botox Faltenbehandlung für Stirn, Zornesfalte und Krähenfüße',
+        imageAlt: 'Faltenbehandlung mit Botulinumtoxin (Stirn, Zornesfalte, Krähenfüße)',
         title: 'Faltenbehandlung',
         description:
-          'Klassische Behandlung von Mimikfalten (Stirn, Zornesfalte, Krähenfüße) für einen entspannten Look.',
+          'Mimikfalten wie Stirn, Zornesfalte, Krähenfüße – Aufklärung und individuelle Dosierungsplanung.',
         treatmentUrl: '/botulinumtoxin/faltenbehandlung',
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-masseter_hero.webp',
-        imageAlt: 'Botox Masseter zur Jawline-Definition & gegen Bruxismus',
+        imageAlt: 'Masseter/Bruxismus – Anwendung von Botulinumtoxin',
         title: 'Masseter / Bruxismus',
         description:
-          'Entspannung des Kaumuskels für schmalere Kieferkontur und Linderung von Zähneknirschen & Kieferschmerzen.',
+          'Individuelle Bewertung bei Kieferbeschwerden/Zähneknirschen. Aufklärung zu Nutzen und Risiken.',
         treatmentUrl: '/botulinumtoxin/masseter',
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
-        imageAlt: 'Microbotox Behandlung zur Verbesserung der Hautqualität',
-        title: 'Microbotox',
+        imageAlt: 'Oberflächliche Botulinumtoxin-Anwendung (sog. Mesobotox / Microbotox)',
+        title: 'Mesobotox / Microbotox',
         description:
-          'Oberflächliche Botulinumtoxin-Anwendung zur Porenverfeinerung und Reduktion von Glanz.',
-        treatmentUrl: '/botulinumtoxin/microbotox',
+          'Hautbild-orientierte Anwendung; Eignung wird individuell geprüft.',
+        treatmentUrl: '/botulinumtoxin/mesobotox',
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-migräne_hero.webp',
-        imageAlt: 'Botox bei chronischer Migräne',
+        imageAlt: 'Botulinumtoxin bei chronischer Migräne (ärztliche Anwendung)',
         title: 'Migräne',
-        description: 'Anerkannte Therapieoption bei chronischer Migräne.',
+        description: 'Therapieoption bei chronischer Migräne gemäß ärztlicher Indikation.',
         treatmentUrl: '/botulinumtoxin/migraene',
       },
     ],
   };
 
   const faqData: FAQSectionProps = {
-    title: 'Häufige Fragen zur Hyperhidrose-Behandlung',
+    title: 'Häufige Fragen zu Botulinumtoxin gegen Schwitzen',
     faqs: [
       {
-        question: 'Wie funktioniert die Botulinumtoxin Behandlung gegen Schwitzen?',
+        question: 'Wie funktioniert Botulinumtoxin gegen Schwitzen?',
         answer:
-          'Botulinumtoxin blockiert die Signalübertragung an den Nervenendigungen der Schweißdrüsen. Dadurch produzieren die Drüsen vorübergehend weniger bis keinen Schweiß – das reduziert Achselschwitzen spürbar.',
+          'Der Wirkstoff kann die Freisetzung von Acetylcholin an den Nervenendigungen hemmen. Dadurch kann die Aktivität der Schweißdrüsen im behandelten Areal vorübergehend reduziert sein.',
       },
       {
-        question: 'Wie läuft die Behandlung ab?',
+        question: 'Kann man übermäßiges Schwitzen mit Botulinumtoxin behandeln?',
         answer:
-          'Nach Reinigung, ggf. Betäubungscreme (Einwirkzeit ca. 30 Min) und Markierung erfolgen sehr oberflächliche Micro-Injektionen im Raster von etwa 1×1 cm in die betroffenen Areale.',
+          'Bei axillärer Hyperhidrose kann eine ärztlich indizierte Anwendung erwogen werden, insbesondere wenn andere Maßnahmen nicht ausreichend geholfen haben. Ob die Behandlung für Sie geeignet ist, klären wir individuell.',
       },
       {
-        question: 'Wann sehe ich das Ergebnis und wie lange hält es?',
+        question: 'Kann Botulinumtoxin bei Schwitzen in den Wechseljahren helfen?',
         answer:
-          'Der Effekt baut sich innerhalb von 10–14 Tagen auf. Die Wirkdauer liegt im Durchschnitt bei 3–6 Monaten und hängt u. a. von individueller Ansprechbarkeit und Stoffwechsel ab.',
+          'Hitzewallungen und Schwitzen in den Wechseljahren haben vielfältige Ursachen. Botulinumtoxin zielt lokal auf Schweißdrüsen in einem definierten Areal (z. B. Achseln). Ob dies bei menopausalen Beschwerden sinnvoll ist, wird ärztlich geprüft; eine allgemeine Aussage ist nicht möglich.',
       },
       {
-        question: 'Ist die Behandlung schmerzhaft?',
+        question: 'Zahlt die Krankenkasse Botulinumtoxin gegen Schwitzen?',
         answer:
-          'Die vielen kleinen Piekser können als unangenehm empfunden werden; mit Betäubungscreme ist die Behandlung gut tolerierbar. Gesellschaftsfähigkeit in der Regel sofort.',
+          'Bei gesetzlich Versicherten handelt es sich in der Regel um eine Selbstzahlerleistung. In Einzelfällen kann eine Kostenübernahme erwogen werden, z. B. bei nachgewiesener, therapieresistenter axillärer Hyperhidrose und entsprechender Antragstellung. Bitte wenden Sie sich an Ihre Kasse.',
+      },
+      {
+        question: 'Was kostet eine Botulinumtoxin‑Behandlung gegen Schwitzen?',
+        answer:
+          `Die Kosten starten meist ab etwa ${PRICES.botulinum.hyperhidrose}\u00A0€ (Richtwert) und richten sich nach Areal, Dosierung und individuellem Aufwand. Abrechnung GOÄ-orientiert.`,
+      },
+      {
+        question: 'Wie lange hält Botulinumtoxin gegen Schwitzen?',
+        answer:
+          'Die beobachtete Wirkzeit liegt häufig im Bereich von etwa 3–6 Monaten. Abweichungen sind möglich; es gibt keine Garantie für Dauer oder Ausmaß.',
       },
       {
         question: 'Welche Nebenwirkungen sind möglich?',
         answer:
-          'Vorübergehende Rötungen, Schwellungen oder kleine Hämatome an den Einstichstellen sind möglich und klingen meist nach wenigen Tagen ab. Allergien sind selten.',
+          'Vorübergehende Rötungen, Schwellungen oder kleine Hämatome an den Einstichstellen sind möglich. Selten Unverträglichkeiten. Kontraindikationen (z. B. neuromuskuläre Erkrankungen, Schwangerschaft/Stillzeit) werden im Gespräch besprochen.',
       },
       {
-        question: 'Kann die Botulinumtoxin-Wirkung ausbleiben?',
+        question: 'Gibt es Alternativen zur Botulinumtoxin Schwitzen Behandlung?',
         answer:
-          'Selten sprechen Personen aufgrund neutralisierender Antikörper (klinisch ca. 1,5%) oder schnellen Wirkstoffabbaus weniger an. Echte Resistenzen sind selten.',
-      },
-      {
-        question: 'Gibt es Gegenanzeigen?',
-        answer:
-          'Ja. U. a. neuromuskuläre Erkrankungen (z. B. Myasthenia gravis, Lambert-Eaton), relevante Schluckstörungen/Atemnot, Allergien gegen Inhaltsstoffe sowie Schwangerschaft/Stillzeit.',
-      },
-      {
-        question: 'Was kostet die Behandlung?',
-        answer:
-          `Die Kosten beginnen in der Regel bei etwa ${PRICES.botulinum.hyperhidrose}\u00A0€ und richten sich nach Areal, Menge und individuellem Bedarf. Die Abrechnung erfolgt GOÄ-orientiert.`,
+          'Je nach Ausprägung: Antitranspirantien, Leitungswasser-Iontophorese, medikamentöse Optionen (ärztliche Verordnung erforderlich), operative Verfahren. Welche Maßnahme passt, hängt vom Einzelfall ab.',
       },
     ],
   };
 
   const ctaData: CTASectionProps = {
-    title: 'Weniger Schwitzen – mehr Freiheit',
+    title: 'Beratung zur Hyperhidrose in Bremen',
     subtitle:
-      'Buchen Sie jetzt Ihren Termin für eine Hyperhidrose-Behandlung in Bremen.',
-    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontaktn' },
+      'Sie wünschen eine ärztliche Einschätzung zur \"botulinumtoxin schwitzen\" Behandlung? Vereinbaren Sie einen Termin zur individuellen Aufklärung.',
+    primaryCTA: { text: 'Termin anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
-  const locationData: LocationSectionProps = {
-    title: 'Ihre Praxis für Hyperhidrose-Behandlungen in Bremen: EL Aesthetics',
-    description:
-      'Diskrete, wirksame Behandlung gegen übermäßiges Schwitzen an den Achseln – individuell geplant und schonend umgesetzt.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
-  };
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Behandlungsbereiche' },
+    { id: 'quickInfos', label: 'Überblick' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'Weitere Anwendungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+    { id: 'cta', label: 'Termin' },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...benefitsData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen unserer Patienten"
-        subtitle="Deutlich weniger Schweiß unter den Achseln – spürbare Erleichterung im Alltag."
-      />
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-
+      <CTASection {...ctaData} />
     </div>
   );
 }

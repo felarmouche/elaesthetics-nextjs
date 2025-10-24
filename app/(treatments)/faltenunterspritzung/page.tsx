@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import {
   ConsultationSectionProps,
   ConsultationSection,
-  CTASection,
+  TableOfContents,
+  TOCItem,
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -10,13 +11,9 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
   TreatmentsSection,
   TreatmentsSectionProps,
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
   title:
@@ -47,12 +44,12 @@ export default function FaltenunterspritzungHubPage() {
     imageSrc: '/assets/faltenunterspritzung/faltenunterspritzung_hero.webp',
     imageAlt:
       'Faltenunterspritzung mit Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation bei EL Aesthetics in Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#treatments' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Vier Wege zu sichtbar frischer, natürlich wirkender Haut',
+    title: 'Filler & Co - Methoden zur Faltenunterspritzung',
     content: [
       'Unter „Faltenunterspritzung“ bündeln wir aufeinander abgestimmte Verfahren: Hyaluronfiller, PRF (Eigenblut), Polynukleotide sowie die Kollagenstimulation (z. B. CaHA/PLLA).',
       'Hyaluronfiller gleichen Volumenverluste aus, polstern Falten sanft und modellieren Konturen – etwa an Lippen, Wangen, Kinn, Jawline oder Nasolabialfalten. Die quervernetzte Hyaluronsäure bindet Wasser und sorgt sofort für glattere Übergänge.',
@@ -63,7 +60,7 @@ export default function FaltenunterspritzungHubPage() {
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: 'Behandlungen zur Faltenunterspritzung',
+    title: 'Behandlungen zum Falten unterspritzen',
     treatments: [
       {
         imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
@@ -75,13 +72,13 @@ export default function FaltenunterspritzungHubPage() {
         treatmentUrl: '/hyaluron/filler',
       },
       {
-        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
+        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
         imageAlt:
           'PRF-Eigenbluttherapie für Hautqualität, feine Fältchen und sensible Regionen wie die Tränenrinne',
         title: 'Eigenbluttherapie (PRF)',
         description:
           'Autologe Regeneration mit platelet-rich fibrin: Verbesserung von Hautstruktur & -elastizität, Milderung feiner Fältchen, ideal auch für Unterlider.',
-        treatmentUrl: '/eigenbluttherapie-prf',
+        treatmentUrl: '/eigenbluttherapie',
       },
       {
         imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
@@ -104,41 +101,6 @@ export default function FaltenunterspritzungHubPage() {
     ],
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'Verena P.',
-      rating: 5,
-      text:
-        'Sehr natürliche Lippen – genau die Form, die ich mir gewünscht habe. Keine "Duck Lips", sondern dezent und harmonisch.',
-      date: '2024-09-05',
-    },
-    {
-      id: 2,
-      name: 'Clara G.',
-      rating: 5,
-      text:
-        'PRF unter den Augen hat meine müde wirkenden Schatten deutlich verbessert. Die Haut wirkt dichter und frischer.',
-      date: '2024-08-12',
-    },
-    {
-      id: 3,
-      name: 'Elena S.',
-      rating: 5,
-      text:
-        'Nasolabialfalten sanft aufgepolstert – niemand hat es gemerkt, ich werde nur öfter auf mein frisches Aussehen angesprochen.',
-      date: '2024-07-21',
-    },
-    {
-      id: 4,
-      name: 'Mona R.',
-      rating: 4,
-      text:
-        'Kaum Downtime, die Hyaluron-Kontur an der Jawline wirkt sehr natürlich. Tolle Aufklärung und Nachsorge!',
-      date: '2024-06-10',
-    },
-  ];
-
   const consultationData: ConsultationSectionProps = {
     title: 'Welche Methode passt zu Ihren Zielen?',
     description: [
@@ -147,10 +109,7 @@ export default function FaltenunterspritzungHubPage() {
       'Ich erkläre transparent Wirkprinzip, Haltbarkeit und mögliche Nebenwirkungen und erstelle einen maßgeschneiderten Behandlungsplan.',
     ],
     ctaText: 'Jetzt Beratungsgespräch vereinbaren',
-    ctaHref: '/kontaktn',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt:
-      'Ärztin Ola El-Armouche berät Patientin zu Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation in Bremen',
+    ctaHref: '/kontakt',
     backgroundColor: 'bg-[#FDF6F0]',
   };
 
@@ -174,9 +133,9 @@ export default function FaltenunterspritzungHubPage() {
           'Hyaluronfiller: je nach Produkt/Region meist 6–12 Monate (Lippen eher 6–9 Monate, Kinn/Jawline/Wangen oft länger). Kollagenstimulation (z. B. CaHA/PLLA): häufig 12–18 Monate. PRF & Polynukleotide werden häufig in Serien (z. B. 2–3 Sitzungen) angewendet; der Effekt baut sich über Wochen auf und hält mehrere Monate.',
       },
       {
-        question: 'Wie läuft die Behandlung ab und gibt es Downtime?',
+        question: 'Was eignet sich am besten zum Falten wegspritzen?',
         answer:
-          'Nach Beratung und Aufklärung erfolgen – je nach Technik – feine Injektionen oder Kanülenbehandlung. Mögliche Nebenwirkungen: vorübergehende Schwellungen, Rötungen, kleine Hämatome. Meist sind Sie schnell wieder gesellschaftsfähig.',
+          'Es ist individuell unterschiedlich. Je nach Zielen und Anatomie. Bei der persönlichen Beratung, werden wir gemeinsam entscheiden, welche Methode am besten zu Ihren Zielen passt.',
       },
       {
         question: 'Ist die Behandlung schmerzhaft?',
@@ -189,7 +148,7 @@ export default function FaltenunterspritzungHubPage() {
           'Ja – sehr häufig sinnvoll: z. B. Botulinumtoxin für mimische Falten, Hyaluronfiller für Volumen/Kontur, PRF/Polynukleotide für Hautqualität und Kollagenstimulation für mehr Straffheit. Reihenfolge und Intervalle stimme ich individuell ab.',
       },
       {
-        question: 'Welche Risiken und Gegenanzeigen gibt es?',
+        question: 'Welche Risiken, Nebenwirkungen und Gegenanzeigen gibt es?',
         answer:
           'Zu den üblichen, harmlosen Reaktionen zählen Schwellung, Rötung, Hämatome; selten Über- oder Unterkorrektur. Gegenanzeigen u. a. Schwangerschaft/Stillzeit, akute Entzündungen, relevante Allergien. PRF ist autolog (aus Eigenblut) und daher in der Regel sehr gut verträglich.',
       },
@@ -205,35 +164,25 @@ export default function FaltenunterspritzungHubPage() {
     title: 'Natürlich frischer wirken – ohne künstlichen Look',
     subtitle:
       'Vereinbaren Sie jetzt Ihren Termin für Hyaluronfiller, PRF, Polynukleotide oder Kollagenstimulation in Bremen.',
-    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
-  const locationData: LocationSectionProps = {
-    title: 'Ihre Praxis für Faltenunterspritzung in Bremen: EL Aesthetics',
-    description:
-      'Präzise Unterspritzung mit Hyaluronfillern, natürliche PRF- und Polynukleotid-Regeneration sowie Kollagenstimulation – individuell geplant, sicher durchgeführt.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
-  };
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'treatments', label: 'Unsere Behandlungen zur Faltenunterspritzung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen unserer Patienten"
-        subtitle="Echte Ergebnisse: definiertere Konturen, weichere Falten und frischerer Blick – ohne künstlichen Effekt."
-      />
       <ConsultationSection {...consultationData} />
       <FAQSection {...faqData} />
-
     </div>
   );
 }

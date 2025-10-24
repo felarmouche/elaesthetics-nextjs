@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps} from '@/components/TreatmentPageComponents';
+import { CTASection, TOCItem, TableOfContents, AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps } from '@/components/TreatmentPageComponents';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -22,12 +22,23 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
   const heroData: HeroSectionProps = {
     title: 'Faltenbehandlung mit Botulinumtoxin in Bremen',
     subtitle:
-      'Informationen zur ärztlichen Behandlung mimischer Falten (z.\u00A0B. Stirn-, Zornes- und Augenbereich). Ziel ist ein ausgewogenes, natürliches Erscheinungsbild – stets nach individueller Aufklärung.',
+      'Informationen zur ärztlichen Behandlung mimischer Falten (z.\u00A0B. Nasolabialfalte, Zornesfalte, Mundfalten, Augenfalten). Ziel ist ein ausgewogenes, natürliches Erscheinungsbild – stets nach individueller Aufklärung.',
     imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
     imageAlt: 'Ärztliche Faltenbehandlung mit Botulinumtoxin in Bremen',
-    primaryCTA: { text: 'Beratung vereinbaren', href: '/kontaktn' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratung vereinbaren', href: '/kontakt' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Behandlungsbereiche' },
+    { id: 'quickInfos', label: 'Auf einen Blick' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'weitere Behandlungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+    { id: 'cta', label: 'Termin vereinbaren' },
+  ];
 
   const introData: IntroSectionProps = {
     title: 'Was ist eine Faltenbehandlung mit Botulinumtoxin?',
@@ -145,9 +156,7 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
       'Regelm\u00E4\u00DFige Fortbildungen und eine individuelle Vorgehensweise sind f\u00FCr uns grundlegend. Entscheidend ist stets die pers\u00F6nliche Beratung und Indikationsstellung – ohne Heilversprechen.',
     ],
     ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontaktn',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt: '\u00C4rztin Ola El-Armouche – Beratung zur Faltenbehandlung mit Botulinumtoxin',
+    ctaHref: '/kontakt',
     backgroundColor: 'bg-[#FDF6F0]',
   };
 
@@ -168,7 +177,7 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
         title: 'Mikrodosierte Anwendung (Skin Quality)',
         description:
           'Fl\u00E4chige, sehr niedrige Dosierungen k\u00F6nnen – je nach Befund – eingesetzt werden. Die Eignung wird \u00E4rztlich beurteilt.',
-        treatmentUrl: '/botulinumtoxin/microbotox',
+        treatmentUrl: '/botulinumtoxin/mesobotox',
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
@@ -244,25 +253,14 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
     title: 'Beratung gew\u00FCnscht?',
     subtitle:
       'Vereinbaren Sie einen unverbindlichen Termin zur individuellen Aufkl\u00E4rung. Es werden keine Heil- oder Wirksamkeitsversprechen abgegeben.',
-    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
-  };
-
-  const locationData: LocationSectionProps = {
-    title: 'Praxis in Bremen',
-    description:
-      'In unserer Praxis erhalten Sie sachliche Beratung und – sofern geeignet – eine zur\u00FCckhaltende Behandlung mit Botulinumtoxin. Keine Produktnamen, keine Heilversprechen.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
   };
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...quickInfoData} />
@@ -271,7 +269,6 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
       <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-      <LocationSection {...locationData} />
       <CTASection {...ctaData} />
     </div>
   );

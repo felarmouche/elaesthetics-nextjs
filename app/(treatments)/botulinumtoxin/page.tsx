@@ -1,15 +1,14 @@
-// app/botulinumtoxin/page.tsx
+// app/botulinumtoxin/page.tsx (HWG-konform, natürliche Sprache, Keywords eingebettet)
 import type { Metadata } from 'next';
-import {DetailedInfoSection, ConsultationSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, TreatmentsSection, TreatmentsSectionProps } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+import { TableOfContents, TOCItem, DetailedInfoSection, ConsultationSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, TreatmentsSection, TreatmentsSectionProps, CTASection } from '@/components/TreatmentPageComponents';
+// PatientReviews entfernt (HWG)
 
 export const metadata: Metadata = {
   title: 'Botulinumtoxin Behandlung Bremen – EL Aesthetics Praxis',
   description:
-    'Botulinumtoxin Behandlung in Bremen: Falten (Stirn, Zornesfalte, Krähenfüße), Masseter/Bruxismus, Hyperhidrose & Migräne. Ärztliche Beratung. Natürliche, präzise Ergebnisse.',
+    'Sachliche Information zur Botulinumtoxin Behandlung in Bremen: botulinumtoxin injektion, botulinumtoxin A behandlung, Anwendungsbereiche und Kosten (Richtwerte). Ärztliche Aufklärung erforderlich.',
   keywords: [
-    'botulinumtoxin behandlung',
+    'Botulinumtoxin Behandlung',
     'botulinumtoxin injektion',
     'botulinumtoxin a behandlung',
     'botulinum behandlung',
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Botulinumtoxin Behandlung in Bremen | EL Aesthetics',
     description:
-      'Ästhetische & medizinische Botulinumtoxin A Behandlung in Bremen: Falten, Masseter, Schwitzen, Migräne. Individuelle Beratung durch Ärztin.',
+      'Ästhetische & medizinische Informationen zu Botulinumtoxin A: Falten, Masseter/Bruxismus, Schwitzen, Migräne. Keine Heilversprechen – individuelle Beratung.',
     type: 'website',
     locale: 'de_DE',
     url: 'https://www.elaesthetics-bremen.de/botulinumtoxin',
@@ -29,37 +28,31 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Botulinumtoxin Behandlung in Bremen | EL Aesthetics',
     description:
-      'Botulinumtoxin A in Bremen für Falten, Masseter, Hyperhidrose & Migräne. Ärztliche Aufklärung, realistische Ergebnisse.',
+      'Botulinumtoxin a behandlung für definierte Indikationen. Aufklärung zu Ablauf, Sicherheit und Kosten (Richtwerte).',
     images: ['https://www.elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp'],
   },
-  robots: {
-    index: true,
-    follow: true,
-    noarchive: false,
-    nocache: false,
-  },
-  alternates: {
-    canonical: 'https://www.elaesthetics-bremen.de/botulinumtoxin',
-  },
+  robots: { index: true, follow: true, noarchive: false, nocache: false },
+  alternates: { canonical: 'https://www.elaesthetics-bremen.de/botulinumtoxin' },
 };
 
 export default function BotulinumtoxinHubPage() {
   const heroData: HeroSectionProps = {
     title: 'Botulinumtoxin Behandlung in Bremen',
     subtitle:
-      'Ärztliche Botulinumtoxin A Behandlung für Stirn, Zornesfalte & Krähenfüße sowie Masseter/Bruxismus, übermäßiges Schwitzen (Achseln) und chronische Migräne – natürlich, präzise, individuell.',
+      'Durch die Botulinumtoxin Behandlung können bereits vorhandene Falten korrigiert, oder auch vorgebeugt werden. Es gibt jedoch auch viele andere Indikationen. Darunter weitere ästhetische, sowie medizinische Indikationen, wie Bruxismus, Hyperhidrose, Migräne, Rosazea.',
     imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
-    imageAlt: 'Botulinumtoxin Behandlung in Bremen: Injektion typischer Zonen wie Stirn, Zornesfalte und Krähenfüße bei EL Aesthetics',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    imageAlt: 'Botulinumtoxin Behandlung in Bremen: Injektion typischer Zonen wie Stirn, Zornesfalte und Krähenfüße',
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Was ist Botulinumtoxin?',
+    title: 'Botulinumtoxin / Botulinumtoxin a – Was ist das?',
     content: [
-      'Botulinumtoxin – häufig als „Botox“ bezeichnet – ist ein gut erforschter Wirkstoff, der in der ästhetischen und medizinischen Therapie eingesetzt wird.',
-      'Was macht Botulinumtoxin? Es blockiert vorübergehend die Signalübertragung zwischen Nerven und Muskulatur. Dadurch entspannt sich überaktive Muskulatur – Mimikfalten glätten sich, Kaumuskelaktivität kann reduziert werden, Schweißdrüsen werden gehemmt.',
-      'Was ist Botulinumtoxin Typ A? Es ist die am häufigsten verwendete Variante und gilt bei sachgerechter Anwendung als sicher. Die Wirkung baut sich nach einigen Monaten vollständig ab.',
+      'Botulinumtoxin (umgangssprachlich „Botox“) ist ein seit vielen Jahren untersuchter Wirkstoff, der in der ästhetischen und medizinischen Therapie verwendet wird.',
+      'Was macht Botulinumtoxin? Der Wirkstoff kann die Freisetzung des Botenstoffs Acetylcholin an Nervenendigungen vorübergehend hemmen. Dadurch lässt sich der Muskelzug lokal reduzieren; bei Drüsen kann die Aktivität gedämpft werden.',
+      'Was ist Botulinumtoxin Typ A? Typ A ist die in der Praxis am häufigsten eingesetzte Variante. Die Wirkung klingt nach einigen Monaten ab. Ob und in welchem Umfang eine Botulinumtoxin a behandlung sinnvoll ist, wird individuell ärztlich geprüft.',
+      'Hinweis gem. HWG: Die Informationen ersetzen nicht das persönliche Arztgespräch. Keine Heil- oder Wirkversprechen.',
     ],
   };
 
@@ -69,229 +62,118 @@ export default function BotulinumtoxinHubPage() {
       {
         imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
         imageAlt: 'Faltenbehandlung mit Botulinumtoxin an Stirn, Zornesfalte und Augenfalten in Bremen',
-        title: 'Faltenbehandlung – Stirn, Zornesfalte & Krähenfüße',
+        title: 'Ästhetische Behandlungen / Faltenbehandlung',
         description:
-          'Die Botulinumtoxin Behandlung glättet mimische Falten sanft und bewahrt Ihre natürliche Mimik. Ideal für Stirn, Glabella (Zornesfalte) und Augenfalten. Wirkung nach wenigen Tagen, Kontrolle nach ca. 2 Wochen.',
+          'Nefertiti Lift, Erdbeerkinn, Bunny-Lines & mehr... Ziel ist eine subtile Entspannung mimischer Falten bei erhaltener, natürlicher Mimik. Beurteilung des Effekts üblicherweise nach ca. 14 Tagen.',
         treatmentUrl: '/botulinumtoxin/faltenbehandlung',
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-masseter_hero.webp',
         imageAlt: 'Masseter-Behandlung mit Botulinumtoxin zur Entspannung des Kaumuskels in Bremen',
-        title: 'Masseter – Jawline harmonisieren & Zähneknirschen lindern',
+        title: 'Masseter / Bruxismus',
         description:
-          'Gezielte Injektion in den Kaumuskel reduziert Bruxismus und kann die Gesichtsform schlanker wirken lassen. Ergebnis nach 2–4 Wochen, Haltbarkeit ca. 4–6 Monate.',
+          'Lokal begrenzte Anwendung am Kaumuskel mit dem Ziel einer Entlastung bei Pressen/Knirschen und ggf. einer schlankeren Kontur – je nach Ausgangsbefund.',
         treatmentUrl: '/botulinumtoxin/masseter',
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
-        imageAlt: 'Mesobotox/Microbotox für verfeinerte Poren und ausgeglichene Haut in Bremen',
-        title: 'Mesobotox – Hautverfeinerung (Microbotox)',
+        imageAlt: 'Mesobotox / Microbotox für verfeinertes Hautbild in Bremen',
+        title: 'Mesobotox / Microbotox (Skin Quality)',
         description:
-          'Sehr oberflächliche Botulinumtoxin Injektion zur Reduktion von Porengröße und Talg, für ebenmäßigere Haut. Sinnvolle Ergänzung zur klassischen Faltenbehandlung.',
-        treatmentUrl: '/botulinumtoxin/microbotox',
+          'Sehr oberflächliche Injektionen (oder begleitendes Needling) zur Unterstützung eines verfeinerten Hautbilds (Poren/Glanz/feine Fältchen).',
+        treatmentUrl: '/botulinumtoxin/mesobotox',
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-migräne_hero.webp',
-        imageAlt: 'Medizinische Botulinumtoxin Migränebehandlung an definierten Punkten in Bremen',
-        title: 'Migräne – medizinische Botulinumtoxin Therapie',
+        imageAlt: 'Medizinische Botulinumtoxin-Anwendung bei chronischer Migräne',
+        title: 'Chronische Migräne (medizinische Indikation)',
         description:
-          'Bei chronischer Migräne kann Botulinumtoxin gemäß ärztlicher Indikation Beschwerden reduzieren. Die Kosten können nach Genehmigung durch die Krankenkasse übernommen werden.',
+          'Schema-orientierte Injektionen an definierten Kopf-/Nackenpunkten. Geeignetheit und ggf. Kostenübernahme werden individuell geprüft.',
         treatmentUrl: '/botulinumtoxin/migraene',
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
-        imageAlt: 'Behandlung gegen starkes Schwitzen (Hyperhidrose) an den Achseln mit Botulinumtoxin in Bremen',
-        title: 'Hyperhidrose – Botulinumtoxin gegen Schwitzen',
+        imageAlt: 'Anwendung gegen übermäßiges Schwitzen (axilläre Hyperhidrose)',
+        title: 'Hyperhidrose (Achseln)',
         description:
-          'Wirksam bei übermäßigem Schwitzen an Achseln, Händen oder Füßen. Effekt in der Regel 6–9 Monate. Beratung zu Indikation, Alternativen und Nachsorge inklusive.',
+          'Lokale Anwendung zur Reduktion axillärer Schweißproduktion. Eignung und Alternativen werden ärztlich besprochen.',
         treatmentUrl: '/botulinumtoxin/hyperhidrose',
       },
     ],
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'Anna L.',
-      rating: 5,
-      text:
-        'Ich war unsicher, welche Behandlung für meine Stirnfalten passt. Die Aufklärung war ausführlich – Ergebnis natürlich und harmonisch. Sehr empfehlenswert!',
-      date: '2024-09-20',
-    },
-    {
-      id: 2,
-      name: 'Markus T.',
-      rating: 5,
-      text:
-        'Die Masseter-Behandlung hat mein Zähneknirschen spürbar reduziert. Auch die Kieferlinie wirkt feiner. Preis-Leistung top.',
-      date: '2024-08-15',
-    },
-    {
-      id: 3,
-      name: 'Nina K.',
-      rating: 5,
-      text:
-        'Meine chronischen Migräneattacken sind seltener geworden. Die ärztliche Begleitung war sehr strukturiert – klare Empfehlung.',
-      date: '2024-07-30',
-    },
-    {
-      id: 4,
-      name: 'Stefan H.',
-      rating: 5,
-      text:
-        'Professionelle Beratung zur Botulinumtoxin A Behandlung. Alles transparent erklärt, inklusive möglicher Nebenwirkungen.',
-      date: '2024-06-12',
-    },
-    {
-      id: 5,
-      name: 'Laura M.',
-      rating: 5,
-      text:
-        'Botulinumtoxin gegen Schwitzen war ein Gamechanger. Endlich Sicherheit im Alltag. Danke!',
-      date: '2024-05-18',
-    },
-  ];
-
   const consultationData: ConsultationSectionProps = {
-    title: 'Welche Botulinumtoxin Behandlung passt zu Ihnen?',
+    title: 'Welche Behandlung passt zu mir?',
     description: [
-      'In der ärztlichen Beratung in Bremen klären wir Ihre Ziele, prüfen Indikationen und sprechen über Alternativen. Sie erhalten einen individuellen Behandlungsplan inklusive Dosisempfehlung und Kostentransparenz.',
-      'Sicherheit zuerst: ausführliche Aufklärung, Dokumentation (Vorher/Nachher-Verlauf ohne Heilsversprechen) und Nachkontrolle. Mögliche Nebenwirkungen und Kontraindikationen werden besprochen.',
-      'Typische Preisrahmen (Richtwerte): Falten ab ca. 200 € • Masseter ca. 300–500 € • Mesobotox ab 250 € • Hyperhidrose ca. 400–700 € • Migräne ggf. Kassenleistung bei medizinischer Indikation.',
-      'Behandlerin: ärztliche Leitung mit Schwerpunkt ästhetische Medizin. Ergebnisse sind individuell und können variieren.',
+      'Im Termin klären wir Ihre Ziele, prüfen Indikationen und besprechen Alternativen. Sie erhalten einen individuellen Plan inkl. Dosierungsempfehlung und Kostentransparenz.',
+      'Sicherheit: Aufklärung zu möglichen Nebenwirkungen/Kontraindikationen und strukturierte Nachkontrolle. Verlauf wird dokumentiert – ohne Heilversprechen.',
     ],
     ctaText: 'Jetzt Beratung vereinbaren',
-    ctaHref: '/kontaktn',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt: 'Ärztliche Beratung zu Botulinumtoxin Behandlungen bei EL Aesthetics in Bremen',
+    ctaHref: '/kontakt',
     backgroundColor: 'bg-[#FDF6F0]',
   };
 
   const faqData: FAQSectionProps = {
-    title: 'Häufig gestellte Fragen zur Botulinumtoxin Behandlung',
+    title: 'Häufige Fragen zur Botulinumtoxin Behandlung',
     faqs: [
       {
         question: 'Botulinumtoxin – was ist das?',
         answer:
-          'Botulinumtoxin ist ein Wirkstoff, der Nervenimpulse an der Injektionsstelle vorübergehend hemmt. Dadurch entspannt sich Muskulatur bzw. Schweißdrüsenaktivität nimmt ab. Einsatz z. B. bei Falten, Bruxismus/Masseter, Hyperhidrose, chronischer Migräne. Nebenwirkungen können u. a. Rötung, Schwellung, kleine Hämatome, Druckgefühl/Kopfschmerz sein; selten Asymmetrien/Ptosis. Vorher/Nachher: Wir dokumentieren den Verlauf, ohne Heilsversprechen. Kosten: je Bereich variabel (siehe unten). Erfahrung/Qualität: ärztliche Aufklärung, sterile Technik, Nachkontrolle. Erwartung: Wirkung nach Tagen, hält Monate, Ergebnisse variieren.',
+          'Ein Wirkstoff, der die Signalübertragung an Nervenendigungen vorübergehend hemmen kann. Ziel ist lokal eine Reduktion von Muskelzug bzw. Drüsenaktivität. Einsatz z. B. bei Mimikfalten, Masseter/Bruxismus, Hyperhidrose, chronischer Migräne.',
       },
       {
-        question: 'Was macht Botulinumtoxin?',
+        question: 'Was macht Botulinumtoxin (wie wirkt es)?',
         answer:
-          'Botulinumtoxin blockiert die Freisetzung von Acetylcholin an Nervenendigungen. Das reduziert Muskelzug/Schweißproduktion lokal. Nebenwirkungen: meist mild und vorübergehend; selten unerwünschte Muskelentspannung in benachbarten Arealen. Vorher/Nachher: subtile, natürliche Glättung statt „Masken-Effekt“. Kosten: abhängig von Areal und benötigten Einheiten. Erfahrung: ärztlich geleitete Behandlung mit Dosisanpassung bei Kontrolle. Erwartung: Volleffekt ca. Tag 14.',
+          'Botulinumtoxin hemmt die Freisetzung von Acetylcholin an der motorischen Endplatte. Dadurch entspannt sich Muskulatur im behandelten Areal. Bei Drüsen kann die Aktivität gedämpft werden. Wirkung und Dauer variieren.',
       },
       {
         question: 'Was ist Botulinumtoxin Typ A?',
         answer:
-          'Typ A ist die in Ästhetik und Medizin am häufigsten eingesetzte Variante. Sie gilt bei korrekter Indikation als sicher und reversibel. Nebenwirkungen/Kontraindikationen werden vorab besprochen (z. B. Schwangerschaft/Stillzeit, neuromuskuläre Erkrankungen). Vorher/Nachher: Verlaufskontrolle nach ca. 2 Wochen. Kosten: siehe Preisrahmen. Expertise: ärztliche Anwendung nach GOÄ. Erwartung: Haltbarkeit je nach Areal 3–9 Monate.',
+          'Die am häufigsten verwendete Variante in Ästhetik und Medizin. Die Wirkung ist vorübergehend (mehrere Monate) und klingt vollständig ab. Eignung, Dosierung und Kontraindikationen werden ärztlich geprüft.',
       },
       {
-        question: 'Mögliche Nebenwirkungen?',
+        question: 'Was kostet eine Botulinumtoxin Behandlung?',
         answer:
-          'Häufig: vorübergehende Rötung, Schwellung, Hämatom, Spannungsgefühl. Gelegentlich: Kopfschmerz. Selten: Asymmetrien, vorübergehendes Herabsinken einzelner Muskeln. Kontraindikationen werden vorab geprüft. Vorher/Nachher: realistische, natürliche Veränderungen; keine Heilversprechen. Kosten: abhängig von Areal/Einheiten. Erfahrung/Qualität: sterile Technik, Dosierung nach Anatomie, Nachkontrolle inklusive.',
+          'Richtwerte (GOÄ-orientiert): Falten ab ca. 200 €; Masseter ca. 300–500 €; Mesobotox ab 250 €; Hyperhidrose ca. 400–700 €; Migräne ggf. Kassenleistung bei zugelassener Indikation. Der konkrete Betrag richtet sich nach Areal, Dosierung und Aufwand.',
       },
       {
-        question: 'Botulinumtoxin Behandlung Vorher/Nachher – was ist zu erwarten?',
+        question: 'Welche Nebenwirkungen sind möglich?',
         answer:
-          'Initiale Wirkung nach 2–5 Tagen, Volleffekt nach ~14 Tagen. Ziel: harmonische, natürliche Entspannung – keine starre Mimik. Wir dokumentieren den Verlauf und bieten bei Bedarf Dosisfeinjustierung. Nebenwirkungen: meist mild/kurzfristig. Kosten: individueller Kostenvoranschlag nach Untersuchung. Erfahrung: ärztliche Leitung & Qualitätsstandards. Erwartung: Haltbarkeit je nach Areal 3–9 Monate; Ergebnisse variieren.',
-      },
-      {
-        question: 'Botulinumtoxin Injektion – was kostet es?',
-        answer:
-          'Richtwerte: Falten ab ca. 200 €; Masseter ca. 300–500 €; Mesobotox ab 250 €; Hyperhidrose ca. 400–700 €; Migräne ggf. Kassenleistung nach Genehmigung. Abrechnung nach GOÄ. Nebenwirkungen/Erwartungen werden vorab erläutert; Vorher/Nachher-Verlauf ohne Heilsversprechen. Erfahrung: ärztliche Behandlung, sterile Technik, Nachkontrolle.',
-      },
-      {
-        question: 'Botulinumtoxin Injektion Erfahrungen – unsere Expertise',
-        answer:
-          'Ärztlich geführte Praxis mit Fokus auf ästhetische und ausgewählte medizinische Indikationen. Strukturierte Aufklärung, Fotodokumentation und Nachkontrolle gehören dazu. Nebenwirkungen werden transparent besprochen. Vorher/Nachher: realistische Ziele, natürliche Ergebnisse. Kosten: individueller Plan je Anatomie/Einheiten. Erwartung: Wirkung setzt zeitversetzt ein; Ergebnisse variieren.',
-      },
-      {
-        question: 'Was kostet eine Botulinumtoxin Behandlung insgesamt?',
-        answer:
-          'Die Gesamtkosten hängen von Areal, benötigten Einheiten und ggf. Kombinationen ab. Sie erhalten nach Untersuchung ein schriftliches Angebot. Nebenwirkungen/Kontraindikationen werden vorab geklärt. Vorher/Nachher: dokumentierter Verlauf, keine Heilversprechen. Erfahrung: ärztliche Durchführung nach GOÄ. Erwartung: Haltbarkeit 3–9 Monate je nach Behandlungsziel.',
+          'Häufig vorübergehend: Rötung, Schwellung, kleine Hämatome, Druckgefühl/Kopfschmerz. Selten: Asymmetrien, vorübergehendes Herabsinken einzelner Muskeln. Kontraindikationen (z. B. Schwangerschaft/Stillzeit, neuromuskuläre Erkrankungen) werden vorab besprochen.',
       },
       {
         question: 'Wie lange hält die Wirkung?',
         answer:
-          'Falten: ca. 3–6 Monate; Masseter: ca. 4–6 Monate; Hyperhidrose: ca. 6–9 Monate; Migräne: Auffrischung häufig alle 3 Monate. Nebenwirkungen üblich gering; Erwartungen werden im Gespräch realistisch eingeordnet. Kosten siehe Richtwerte.',
+          'Je nach Areal häufig etwa 3–6 Monate (Falten), 4–6 Monate (Masseter), 6–9 Monate (Hyperhidrose); bei Migräne werden Folgebehandlungen oft im 12‑Wochen‑Intervall erwogen. Abweichungen sind möglich.',
       },
     ],
   };
 
   const ctaData: CTASectionProps = {
-    title: 'Bereit für Ihre Botulinumtoxin Behandlung in Bremen?',
+    title: 'Beratung zur Botulinumtoxin Behandlung',
     subtitle:
-      'Vereinbaren Sie jetzt Ihr unverbindliches Beratungsgespräch. Wir planen Ihre Botulinumtoxin A Behandlung transparent, sicher und individuell.',
-    primaryCTA: { text: 'Jetzt beraten lassen', href: '/kontaktn' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+      'Sie möchten eine Botulinumtoxin a Behandlung in Bremen planen oder sich informieren? Wir klären Eignung, Ablauf, Sicherheit und Kosten (Richtwerte).',
+    primaryCTA: { text: 'Jetzt beraten lassen', href: '/kontakt' },
+    secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' },
   };
 
-  const locationData: LocationSectionProps = {
-    title: 'EL Aesthetics Bremen – Spezialisiert auf Botulinumtoxin Behandlungen',
-    description:
-      'In unserer Praxis in Bremen bieten wir das gesamte Spektrum der Botulinumtoxin Therapie: Ästhetik (Falten, Masseter, Mesobotox) und medizinische Indikationen (Hyperhidrose, Migräne) – evidenzbasiert und mit hohen Qualitätsstandards.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Mo–Fr 9:00–17:00'],
-    },
-  };
-
-  // --- Structured Data (JSON-LD) ---
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faqData.faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer },
-    })),
-  };
-
-  const businessSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'MedicalBusiness',
-    name: 'EL Aesthetics',
-    image: 'https://www.elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp',
-    url: 'https://www.elaesthetics-bremen.de/botulinumtoxin',
-    email: 'info@elaesthetics-bremen.de',
-    telephone: '+49 155 66919635',
-    priceRange: '€€',
-    areaServed: { '@type': 'City', name: 'Bremen' },
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Richtepad 14',
-      postalCode: '28355',
-      addressLocality: 'Bremen',
-      addressCountry: 'DE',
-    },
-    openingHours: 'Mo-Fr 09:00-17:00',
-    aggregateRating: { '@type': 'AggregateRating', ratingValue: '5', reviewCount: '5' },
-  };
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'treatments', label: 'Behandlungen' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
-      <DetailedInfoSection/>
+      <DetailedInfoSection />
       <TreatmentsSection {...treatmentsData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen mit Botulinumtoxin Behandlungen"
-        subtitle="Auszüge echter Patientenstimmen zu Botulinumtoxin Injektionen in Bremen. Individuelle Ergebnisse können variieren."
-      />
       <ConsultationSection {...consultationData} />
       <FAQSection {...faqData} />
-      {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
+      <CTASection {...ctaData} />
     </div>
   );
 }

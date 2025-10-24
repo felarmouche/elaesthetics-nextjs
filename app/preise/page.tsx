@@ -91,7 +91,7 @@ export default function PreisePage() {
 
           </Treatment>
 
-          <Treatment title="Microbotox" price={ab(PRICES.botulinum.microBotox)}>
+          <Treatment title="Mesobotox / Microbotox" price={ab(PRICES.botulinum.microBotox)}>
             <Description>
               Glass Skin-Effekt, sanfte Faltenreduktion. Auch bei Akne, fettiger oder großporiger Haut
             </Description>

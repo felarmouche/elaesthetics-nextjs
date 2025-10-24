@@ -4,7 +4,7 @@ import {
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
-  CTASection,
+  
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -12,8 +12,8 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
+  
+  
   ProcessSection,
   ProcessSectionProps,
   QuickInfoSection,
@@ -59,7 +59,7 @@ export default function ProfhiloBAPPage() {
     imageSrc: '/assets/hyaluron/hyaluron-profhilo_hero.webp',
     // Markenname nur im ALT-Text (nicht sichtbar für Nutzer)
     imageAlt: 'Profhilo BAP Technik – Hyaluron Remodulierung Illustration',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
@@ -199,7 +199,7 @@ export default function ProfhiloBAPPage() {
       'Die Kosten werden gemäß GOÄ nach Areal, Aufwand und Materialmenge berechnet.',
     ],
     ctaText: 'Termin vereinbaren',
-    ctaHref: '/kontaktn',
+    ctaHref: '/kontakt',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     // Marke im ALT erlaubt
     imageAlt: 'Profhilo BAP Behandlung – Beratung in Bremen',
@@ -272,7 +272,7 @@ export default function ProfhiloBAPPage() {
     title: 'Remodulierung gewünscht?',
     subtitle:
       'Lassen Sie sich individuell beraten – wir erstellen einen passenden Behandlungsplan.',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 

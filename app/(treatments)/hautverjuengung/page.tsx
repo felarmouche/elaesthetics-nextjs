@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
 import {
+  TOCItem,
+  TableOfContents,
   ConsultationSectionProps,
   ConsultationSection,
   CTASection,
@@ -10,14 +12,10 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
   TreatmentsSection,
   TreatmentsSectionProps,
   DetailedInfoSection
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
   title: 'Hautverjüngung in Bremen – Natürliche Anti‑Aging‑Behandlungen | EL Aesthetics',
@@ -56,7 +54,7 @@ export default function HautverjuengungPage() {
     imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
     imageAlt:
       'Gesichtsbehandlung zur Auffrischung und Straffung der Haut bei EL Aesthetics Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Methoden entdecken', href: '#treatments' }
   };
 
@@ -93,12 +91,12 @@ export default function HautverjuengungPage() {
         treatmentUrl: '/polynukleotide'
       },
       {
-        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
+        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
         imageAlt: 'Eigenbluttherapie PRF für natürliche Hautregeneration in Bremen',
         title: 'Eigenbluttherapie (PRP/PRF)',
         description:
           'Natürliche Auffrischung mit körpereigenen Wachstumsfaktoren: Das gewonnene Konzentrat stimuliert Kollagenbildung, Zellreparatur und Durchblutung. Ideal bei fahlem Teint, feinen Linien und zur allgemeinen Verbesserung der Hautqualität. Sehr gut kombinierbar mit Microneedling. In der Regel 2–3 Sitzungen.',
-        treatmentUrl: '/eigenbluttherapie-prf/vampire-lifting'
+        treatmentUrl: '/eigenbluttherapie/vampir-lifting'
       },
       {
         imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
@@ -147,50 +145,6 @@ export default function HautverjuengungPage() {
       }
     ]
   };
-
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'Petra S.',
-      rating: 5,
-      text:
-        'Die Bio-Remodelierung‑Behandlung war genau das Richtige! Meine Haut ist strahlend, prall und wirkt insgesamt frischer – viele sprechen mich auf die Veränderung an.',
-      date: '2024-09-18'
-    },
-    {
-      id: 2,
-      name: 'Karin M.',
-      rating: 5,
-      text:
-        'Nach der Polynukleotid‑Therapie hat sich meine Hautqualität deutlich verbessert. Das Ergebnis wirkt sehr natürlich – ich sehe ausgeruhter und vitaler aus. Danke für die kompetente Beratung!',
-      date: '2024-08-22'
-    },
-    {
-      id: 3,
-      name: 'Sabrina L.',
-      rating: 5,
-      text:
-        'Eigenblut plus Microneedling – diese Kombination hat meine Haut sichtbar erneuert. Der Teint ist ebenmäßiger, feine Linien sind reduziert.',
-      date: '2024-07-30'
-    },
-    {
-      id: 4,
-      name: 'Marion K.',
-      rating: 5,
-      text:
-        'Frau El‑Armouche hat mir einen individuellen Regenerations‑Plan erstellt. Nach mehreren Sitzungen wirke ich deutlich frischer – ganz ohne „Maskeneffekt”.',
-      date: '2024-06-15'
-    },
-    {
-      id: 5,
-      name: 'Claudia R.',
-      rating: 5,
-      text:
-        'Die Kollagenstimulation war ideal für Wangen und Kieferlinie. Die Haut ist fester und definierter – sehr zufrieden!',
-      date: '2024-05-28'
-    }
-  ];
-
   const consultationData: ConsultationSectionProps = {
     title: 'Welche Methode passt zu Ihnen?',
     description: [
@@ -200,10 +154,7 @@ export default function HautverjuengungPage() {
       'Wichtig: Verjüngung ist ein Prozess. Ergebnisse entstehen über Wochen und Monate – dafür wirken sie authentisch und nachhaltig. Vereinbaren Sie Ihr persönliches Beratungsgespräch in Bremen.'
     ],
     ctaText: 'Jetzt Beratung vereinbaren',
-    ctaHref: '/kontaktn',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt:
-      'Fachärztin Ola El‑Armouche berät Patientin zu individuellen Regenerations‑ und Straffungsbehandlungen in Bremen',
+    ctaHref: '/kontakt',
     backgroundColor: 'bg-[#FDF6F0]'
   };
 
@@ -268,138 +219,24 @@ export default function HautverjuengungPage() {
     title: 'Bereit für Ihre persönliche Hautauffrischung?',
     subtitle:
       'Vereinbaren Sie ein unverbindliches Beratungsgespräch und entdecken Sie, welche Kombination Ihre Haut optimal unterstützt.',
-    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' }
   };
 
-  const locationData: LocationSectionProps = {
-    title: 'EL Aesthetics Bremen – Ihre Adresse für Hauterneuerung & Regeneration',
-    description:
-      'In unserer spezialisierten Praxis in Bremen bieten wir moderne, wissenschaftlich fundierte Behandlungen: von Bio-Remodelierung über Polynukleotide bis zur Eigenbluttherapie – stets mit höchsten Qualitätsstandards und individueller Beratung.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Mo–Fr 9:00–17:00', 'Termine nach Vereinbarung']
-    }
-  };
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'treatments', label: 'Unsere Behandlungen zur Hautverjüngung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'faq', label: 'Häufige Fragen' },
+];
 
   return (
     <div className="min-h-screen bg-white">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'MedicalBusiness',
-            name: 'EL Aesthetics Bremen',
-            description:
-              'Praxis für moderne Hauterneuerung und regenerative Anti‑Aging‑Behandlungen in Bremen. Bio-Remodelierung, Polynukleotide, Eigenbluttherapie, Kollagenstimulation u.v.m.',
-            image:
-              'https://elaesthetics-bremen.de/assets/hautverjuengung/og-hautverjuengung-bremen.webp',
-            url: 'https://elaesthetics-bremen.de/hautverjuengung',
-            telephone: '+4915566919635',
-            email: 'info@elaesthetics-bremen.de',
-            address: {
-              '@type': 'PostalAddress',
-              streetAddress: 'Richtepad 14',
-              addressLocality: 'Bremen',
-              postalCode: '28355',
-              addressCountry: 'DE'
-            },
-            geo: {
-              '@type': 'GeoCoordinates',
-              latitude: '53.0793',
-              longitude: '8.8017'
-            },
-            openingHoursSpecification: [
-              {
-                '@type': 'OpeningHoursSpecification',
-                dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-                opens: '09:00',
-                closes: '17:00'
-              }
-            ],
-            priceRange: '€€',
-            areaServed: { '@type': 'City', name: 'Bremen' },
-            medicalSpecialty: 'Dermatology'
-          })
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'Welche Methode ist die beste für mein Hautziel?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text:
-                    'Je nach Hautbild: Bio-Remodelierung für Qualität & Feuchtigkeit, Polynukleotide für Regeneration, PRF für natürliche Auffrischung, Microneedling/Peelings für Struktur. Oft überzeugt die Kombination.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'Was hilft nachweislich gegen Hautalterung?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text:
-                    'Kollagenstimulatoren, Bio-Remodelierung, Polynukleotide, PRF/PRP, medizinisches Microneedling und chemische Peelings unterstützen körpereigene Prozesse und verbessern die Hautqualität messbar.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'Kann man Hautalterung rückgängig machen?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text:
-                    'Nicht vollständig. Ziel sind natürlich wirkende Verbesserungen: mehr Straffung, bessere Textur, frischere Ausstrahlung – Schritt für Schritt.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'Welche Behandlung ist ideal bei dünner Haut?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text:
-                    'Schonende Optionen wie Bio-Remodelierung, Polynukleotide und PRF; Kollagenstimulatoren für langfristige Festigkeit. Zu intensive Maßnahmen vermeiden wir.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'Wie bekomme ich natürliches Volumen zurück?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text:
-                    'Kollagenstimulatoren und PRF fördern körpereigenen Aufbau; Bio-Remodelierung verbessert die Qualität. Bei stärkerem Verlust ergänzen dezente Hyaluron‑Filler.'
-                }
-              },
-              {
-                '@type': 'Question',
-                name: 'Kollagen fördern – was wirkt?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text:
-                    'Kollagenstimulatoren, Microneedling, PRF/PRP und Polynukleotide. Ergebnisse entwickeln sich in 8–12 Wochen.'
-                }
-              }
-            ]
-          })
-        }}
-      />
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <DetailedInfoSection />
       <TreatmentsSection {...treatmentsData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen unserer Patientinnen & Patienten"
-        subtitle="Beliebt sind die natürlichen, stufenweisen Verbesserungen – ob mit Bio-Remodelierung, Polynukleotiden oder Eigenblut. Hier lesen Sie echte Rückmeldungen zur Hautauffrischung in Bremen."
-      />
       <ConsultationSection {...consultationData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

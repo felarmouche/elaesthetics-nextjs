@@ -12,8 +12,8 @@ import {
     HeroSectionProps,
     IntroSection,
     IntroSectionProps,
-    LocationSection,
-    LocationSectionProps,
+    TableOfContents,
+    TOCItem,
     ProcessSection,
     ProcessSectionProps,
     QuickInfoSection,
@@ -22,8 +22,8 @@ import {
     TreatmentCareSectionProps,
     TreatmentsSectionProps,
     TreatmentsSection
-    
-    
+
+
 } from '@/components/TreatmentPageComponents';
 import PatientReviews from '@/components/PatientReviews';
 import { Review } from '@/types/Review';
@@ -59,8 +59,8 @@ export default function FettWegSpritzePage() {
         imageSrc: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp',
         imageAlt:
             'Fett-weg-Spritze Behandlung für Doppelkinn bei EL Aesthetics in Bremen',
-        primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
-        secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+        primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
+        secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
     };
 
     const introData: IntroSectionProps = {
@@ -166,7 +166,7 @@ export default function FettWegSpritzePage() {
                 iconUrl: '/assets/icons/CAL.svg',
             },
             {
-                title: 'Lokalanästhesie',
+                title: 'Betäubung',
                 description: 'i.d.R. nicht notwendig',
                 iconUrl: '/assets/icons/Spritze.svg',
             },
@@ -343,43 +343,40 @@ export default function FettWegSpritzePage() {
             'Wichtig: Die Fett-weg-Spritze ersetzt keine gesunde Lebensweise. Mit der richtigen Ernährung und ausreichend Bewegung bleiben die Ergebnisse langfristig erhalten.',
         ],
         ctaText: 'Jetzt Beratungstermin buchen',
-        ctaHref: '/kontaktn',
-        imageSrc: '/assets/tinified/IMG_7364.webp',
-        imageAlt:
-            'Ärztin Ola El-Armouche – Expertin für Fett-weg-Spritze in Bremen',
+        ctaHref: '/kontakt',
         backgroundColor: 'bg-[#FDF6F0]',
     };
 
-    
-  const treatmentsData: TreatmentsSectionProps = {
-    title: 'Weitere Behandlungen',
-    treatments: [
-      {
-        imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
-        imageAlt: 'Ein Männer- und ein Frauen-Gesicht nach einer Botox Behandlung',
-        title: 'Botulinumtoxin',
-        description:
-          'Botullinumtoxin für Faltenbehandlung oder medizinische Indikationen',
-        treatmentUrl: '/botulinumtoxin/',
-      },
-      {
-        imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
-        imageAlt: 'Kollagenstimulation mit Radiesse für Hautstraffung',
-        title: 'Kollagenstimulation',
-        description:
-          'Langanhaltende Hautstraffung und Volumenaufbau durch Calciumhydroxylapatit – ideal für Wangen, Kinn und Hände.',
-        treatmentUrl: '/kollagenstimulation',
-      },
-      {
-        imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
-        imageAlt: 'Hyaluron Filler für Gesichtskonturierung',
-        title: 'Hyaluron Filler',
-        description:
-          'Präzise Gesichtsformung und Volumenaufbau.',
-        treatmentUrl: '/hyaluron/filler',
-      },
-    ],
-  };
+
+    const treatmentsData: TreatmentsSectionProps = {
+        title: 'Weitere Behandlungen',
+        treatments: [
+            {
+                imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
+                imageAlt: 'Ein Männer- und ein Frauen-Gesicht nach einer Botox Behandlung',
+                title: 'Botulinumtoxin',
+                description:
+                    'Botullinumtoxin für Faltenbehandlung oder medizinische Indikationen',
+                treatmentUrl: '/botulinumtoxin/',
+            },
+            {
+                imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
+                imageAlt: 'Kollagenstimulation mit Radiesse für Hautstraffung',
+                title: 'Kollagenstimulation',
+                description:
+                    'Langanhaltende Hautstraffung und Volumenaufbau durch Calciumhydroxylapatit – ideal für Wangen, Kinn und Hände.',
+                treatmentUrl: '/kollagenstimulation',
+            },
+            {
+                imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
+                imageAlt: 'Hyaluron Filler für Gesichtskonturierung',
+                title: 'Hyaluron Filler',
+                description:
+                    'Präzise Gesichtsformung und Volumenaufbau.',
+                treatmentUrl: '/hyaluron/filler',
+            },
+        ],
+    };
 
     const faqData: FAQSectionProps = {
         title: 'Häufige Fragen zur Fett-weg-Spritze',
@@ -441,25 +438,26 @@ export default function FettWegSpritzePage() {
         title: 'Bereit für eine definierte Kontur ohne OP?',
         subtitle:
             'Vereinbaren Sie jetzt Ihre persönliche Beratung und erfahren Sie, wie die Fett-weg-Spritze Ihre Problemzonen dauerhaft reduzieren kann.',
-        primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+        primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
         secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
     };
 
-    const locationData: LocationSectionProps = {
-        title: 'Fett-weg-Spritze in Bremen: EL Aesthetics',
-        description:
-            'Effektive Fettreduktion ohne Operation – individuell geplant und professionell durchgeführt in unserer modernen Praxis im Herzen Bremens.',
-        location: {
-            address: 'Richtepad 14, 28355 Bremen',
-            phone: '+49 155 66919635',
-            email: 'info@elaesthetics-bremen.de',
-            openingHours: ['Termine nach Vereinbarung'],
-        },
-    };
+    const tocItems: TOCItem[] = [
+        { id: 'intro', label: 'Über die Behandlung' },
+        { id: 'areas', label: 'Behandlungsbereiche' },
+        { id: 'quickInfos', label: 'Auf einen Blick' },
+        { id: 'process', label: 'Ablauf' },
+        { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+        { id: 'consultation', label: 'Beratung' },
+        { id: 'treatments', label: 'weitere Behandlungen' },
+        { id: 'faq', label: 'Häufige Fragen' },
+        { id: 'cta', label: 'Termin vereinbaren' },
+    ];
 
     return (
         <div className="min-h-screen bg-white">
             <HeroSection {...heroData} />
+            <TableOfContents items={tocItems} />
             <IntroSection {...introData} />
             <AreasSection {...areasData} />
             <QuickInfoSection {...quickInfoData} />
@@ -474,7 +472,7 @@ export default function FettWegSpritzePage() {
             <TreatmentsSection {...treatmentsData} />
             <FAQSection {...faqData} />
             <CTASection {...ctaData} />
-            
+
         </div>
     );
 }

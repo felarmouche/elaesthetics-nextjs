@@ -4,7 +4,7 @@ import {
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
-  CTASection,
+  
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -12,8 +12,8 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
+  
+  
   ProcessSection,
   ProcessSectionProps,
   QuickInfoSection,
@@ -50,7 +50,7 @@ export default function HyaluronidaseHylasePage() {
     subtitle: 'Sichere Korrektur & Auflösung von Hyaluron-Fillern: Knötchen, Asymmetrien, Überkorrekturen und Granulome gezielt behandeln – schnelle Wirkung, minimal-invasiv.',
     imageSrc: '/assets/hyaluron/hyaluron-hylase_hero.webp',
     imageAlt: 'Hyaluronidase Hylase Behandlung zur Hyaluron-Korrektur bei EL Aesthetics in Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
@@ -147,7 +147,7 @@ export default function HyaluronidaseHylasePage() {
         iconUrl: '/assets/icons/CAL.svg',
       },
       {
-        title: 'Lokalanästhesie',
+        title: 'Betäubung',
         description: 'auf Wunsch möglich',
         iconUrl: '/assets/icons/Spritze.svg',
       },
@@ -298,7 +298,7 @@ export default function HyaluronidaseHylasePage() {
       'Hyaluronidase ist auch ein unverzichtbares Notfall-Medikament bei schwerwiegenden Komplikationen wie Gefäßverschlüssen. In meiner Praxis ist Hylase jederzeit verfügbar – für Ihre Sicherheit bei jeder Hyaluron-Behandlung.',
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
-    ctaHref: '/kontaktn',
+    ctaHref: '/kontakt',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztin Ola El-Armouche – Expertin für Hyaluronidase-Behandlung in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -390,7 +390,7 @@ export default function HyaluronidaseHylasePage() {
   const ctaData: CTASectionProps = {
     title: 'Unzufrieden mit Ihrem Hyaluron-Ergebnis?',
     subtitle: 'Vereinbaren Sie jetzt Ihre persönliche Beratung und erfahren Sie, wie Hyaluronidase unerwünschte Filler sicher und schnell auflösen kann.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontaktn' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 

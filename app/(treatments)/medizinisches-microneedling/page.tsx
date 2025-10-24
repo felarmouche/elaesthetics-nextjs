@@ -7,7 +7,7 @@ import {
   QuickInfoSection,
   QuickInfoSectionProps,
   ConsultationSection,
-  CTASection,
+  
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -15,8 +15,8 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
+  
+  
   ProcessSection,
   ProcessSectionProps,
   TreatmentCareSection,
@@ -53,7 +53,7 @@ export default function MedizinischesMicroneedlingPage() {
       "Schonende Kollagen-Induktion für ein glatteres, feinporiges Hautbild – individuell, präzise und in ärztlicher Hand.",
     imageSrc: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp",
     imageAlt: "Medizinisches Microneedling in der Praxis EL Aesthetics Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
@@ -191,7 +191,7 @@ export default function MedizinischesMicroneedlingPage() {
       "Sie erhalten klare Empfehlungen zu Behandlungsintervallen, erwartbarer Wirkung und Nachsorge."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/kontaktn",
+    ctaHref: "/kontakt",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Beratung zum medizinischen Microneedling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -201,12 +201,12 @@ export default function MedizinischesMicroneedlingPage() {
     title: "Verwandte Behandlungen",
     treatments: [
       {
-        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf-microneedling_hero.webp",
+        imageUrl: "/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp",
         imageAlt: "PRF Plasma-Needling zur Intensivierung",
         title: "PRF-Microneedling (Plasma-Needling)",
         description:
           "Kombination aus Needling und körpereigenem Plasma (PRF/PRP) zur zusätzlichen Regenerations-Stimulation.",
-        treatmentUrl: "/eigenbluttherapie-prf/microneedling"
+        treatmentUrl: "/eigenbluttherapie/microneedling"
       },
       {
         imageUrl: "/assets/mesotherapie/mesotherapie-haut_hero.webp",
@@ -274,7 +274,7 @@ export default function MedizinischesMicroneedlingPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für ein ebenmäßigeres Hautbild?",
     subtitle: "Vereinbaren Sie Ihren Termin für medizinisches Microneedling in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 

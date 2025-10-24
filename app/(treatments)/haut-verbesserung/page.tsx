@@ -1,19 +1,18 @@
 import type { Metadata } from 'next';
-import { ConsultationSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, TreatmentsSection, TreatmentsSectionProps } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+import { TableOfContents, TOCItem, ConsultationSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, TreatmentsSection, TreatmentsSectionProps, CTASection } from '@/components/TreatmentPageComponents';
 
 export const metadata: Metadata = {
   title: 'Hautverbesserung Bremen | Skinbooster, Profhilo, PRF, Microneedling & Peeling | EL Aesthetics',
   description:
-    'Hautverbesserung in Bremen: Skinbooster & Profhilo für Feuchtigkeit, PRF & Polynukleotide für Regeneration, Microneedling & chemische Peelings für Ebenmäßigkeit – medizinisch fundiert, natürlich, individuell.',
+    'Hautverbesserung in Bremen: Skinbooster & Profhilo für Feuchtigkeit, PRF & Polynukleotide für Regeneration, Microneedling & chemische Peelings für Ebenmäßigkeit – unterstützend bei Pigmentflecken (z. B. Melasma/Hyperpigmentierung), Rosazea/Couperose-Rötungen und Aknenarben. Medizinisch fundiert, natürlich, individuell (keine Heilversprechen).',
   keywords:
-    'Hautverbesserung Bremen, Hautverjüngung Bremen, Skinbooster Bremen, Profhilo Bremen, PRF Bremen, Eigenbluttherapie Bremen, Polynukleotide Bremen, PDRN Bremen, Microneedling Bremen, Radiofrequenz Microneedling Bremen, Microbotox Bremen, Chemisches Peeling Bremen, Fruchtsäurepeeling Bremen, Kollagenstimulation Bremen, Sculptra Bremen, Radiesse Bremen, CaHA Bremen, Aknenarben Bremen, Pigmentflecken Bremen, Poren verfeinern Bremen',
+    // erweitert um Indikations-/Long-Tail-Keywords + lokale Varianten (ohne Heilversprechen)
+    'Hautverbesserung Bremen, Hautbild verbessern Bremen, Hautstruktur verbessern Bremen, Hautqualität verbessern Bremen, Poren verfeinern Bremen, große Poren Bremen, feine Fältchen mildern Bremen, strahlender Teint Bremen, Glow Behandlung Bremen, Anti-Aging Behandlung Bremen, Hautverjüngung Bremen, Skinbooster Bremen, Profhilo Bremen, HA Skinbooster Bremen, PRF Bremen, Eigenbluttherapie Bremen, Polynukleotide Bremen, PDRN Bremen, Microneedling Bremen, Radiofrequenz Microneedling Bremen, Mesobotox Bremen, Microbotox Bremen, Chemisches Peeling Bremen, Fruchtsäurepeeling Bremen, TCA Peeling Bremen, Kollagenstimulation Bremen, Sculptra Bremen, Radiesse Bremen, CaHA Bremen, PLLA Bremen, Akne Bremen, Aknebehandlung Bremen, Aknenarben Bremen, Aknenarben Behandlung Bremen, Pigmentflecken Bremen, Pigmentstörungen Bremen, Hyperpigmentierung Bremen, postinflammatorische Hyperpigmentierung Bremen, PIH Bremen, Melasma Bremen, ungleichmäßiger Teint Bremen, Rosazea Bremen, Rosazea Unterstützung Bremen, Couperose Bremen, Gesichtsrötungen Bremen, Rötungen im Gesicht Bremen, Teleangiektasien Bremen, ölige Haut Bremen, Talgglanz reduzieren Bremen, Sonnenschäden Bremen, Photoaging Bremen, müde Haut Bremen, trockene Haut Bremen, Dehydrierte Haut Bremen, Unterlider feine Fältchen Bremen',
   openGraph: {
     title:
       'Hautverbesserung in Bremen – Skinbooster, Profhilo, PRF, Microneedling & Peeling | EL Aesthetics',
     description:
-      'Mehr Glow, bessere Hautstruktur & natürliches Strahlen: Entdecken Sie unsere Methoden für Hautqualität – von Skinboostern & Profhilo über PRF/Polynukleotide bis Microneedling & chemische Peelings.',
+      'Mehr Glow, feinere Poren & gleichmäßigerer Teint: Methoden zur Hautqualität – Skinbooster & Profhilo, PRF/Polynukleotide, Microneedling & chemische Peelings; unterstützend bei Pigmentflecken (Melasma/Hyperpigmentierung), Rosazea/Couperose und Aknenarben.',
     type: 'website',
     locale: 'de_DE',
     images: ['https://elaesthetics-bremen.de/assets/hautverbesserung/og-image-hautverbesserung-bremen.webp'],
@@ -27,20 +26,20 @@ export default function HautverbesserungHubPage() {
   const heroData: HeroSectionProps = {
     title: 'Hautverbesserung in Bremen',
     subtitle:
-      'Skinbooster & Profhilo für intensive Hydration, PRF & Polynukleotide für Regeneration, Microneedling & Peelings für Ebenmäßigkeit – Microbotox & Kollagenstimulation für verfeinerte Struktur.',
+      'Hautbild & Hautstruktur verbessern: Skinbooster/Profhilo für Hydration & Glow, PRF & Polynukleotide für Regeneration, medizinisches Microneedling & chemische Peelings für Ebenmäßigkeit – unterstützend bei Pigmentflecken (z. B. Melasma/Hyperpigmentierung), Rosazea/Couperose-Rötungen, großen Poren & Aknenarben.',
     imageSrc: '/assets/haut-verbesserung/haut-verbesserung_hero.webp',
-    imageAlt: 'Übersicht moderner Behandlungen zur Hautverbesserung bei EL Aesthetics Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontaktn' },
+    imageAlt: 'Hautbild verbessern in Bremen: Poren verfeinern, Pigmentflecken & Rosazea-unterstützende Maßnahmen – moderne Behandlungen bei EL Aesthetics Bremen',
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#treatments' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Hautqualität ganzheitlich verbessern – sanft & medizinisch fundiert',
+    title: 'Hautqualität verbessern – was gibts für Optionen?',
     content: [
-      'Hautverbesserung heißt mehr als „Anti-Aging“: Wir kombinieren hydratisierende Skinbooster (inkl. PROFHILO®), regenerative Verfahren wie PRF (Eigenblut) & Polynukleotide, strukturverbessernde Techniken wie (Radiofrequenz‑)Microneedling sowie Microbotox und chemische Peelings.',
-      'Ziel: mehr Feuchtigkeit, Elastizität und Dichte, feinere Poren, gleichmäßiger Teint – und ein natürlich frischer Look ohne „gemacht“-Effekt.',
-      'Welche Methode passt? Das hängt von Hautbild, Areal und Ziel ab. Häufig sind Kombinationen sinnvoll – z. B. Skinbooster für Glow, PRF/Polynukleotide für Regeneration und Microneedling/Peeling für Ebenmäßigkeit.',
-      'In der Beratung besprechen wir Erwartungen, Behandlungsplan, Intervalle und Downtime – transparent & individuell.',
+      'Wir kombinieren hydratisierende Skinbooster (inkl. Skinbooster/Profhilo mit BAP-Technik), regenerative Verfahren wie PRF (Eigenblut) & Polynukleotide und strukturverbessernde Techniken wie Microneedling sowie Mesobotox/Microbotox und chemische Peelings – für ein ebenmäßigeres Hautbild.',
+      'Ziele: mehr Feuchtigkeit & Elastizität, feinere Poren, weniger Talgglanz, gleichmäßiger Teint und ein natürlich frischer Glow – ohne „gemacht“-Effekt.',
+      'Typische Anliegen (Indikationen): Pigmentflecken & Pigmentstörungen (z. B. Melasma, Hyperpigmentierung/Post-Inflammation/PIH), Rosazea/Couperose mit Gesichtsrötungen & Teleangiektasien, Akne/Aknenarben, große Poren & ölige Haut, müde/trockene/dehydrierte Haut, feine Fältchen sowie Zeichen von Sonnenschäden/Photoaging.',
+      'Welche Methode passt, hängt von Hautbild, Areal und Ziel ab. Häufig sind Kombinationen sinnvoll – z. B. Skinbooster für Glow, PRF/Polynukleotide für Regeneration und Microneedling/Peeling für Struktur & Poren (keine Heilversprechen).',
     ],
   };
 
@@ -49,15 +48,15 @@ export default function HautverbesserungHubPage() {
     treatments: [
       {
         imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
-        imageAlt: 'Skinbooster Behandlung für intensive Feuchtigkeit und Glow',
+        imageAlt: 'Skinbooster Behandlung in Bremen für Feuchtigkeit, Glow, große Poren und ein feineres Hautbild',
         title: 'Skinbooster (HA)',
         description:
-          'Feuchtigkeits-Boost & feineres Hautbild im Gesicht, Hals & Dekolleté. Verbessert Elastizität und verleiht natürliches Strahlen.',
+          'Feuchtigkeits-Boost & feineres Hautbild im Gesicht, Hals & Dekolleté. Unterstützend bei trockener/dehydrierter Haut und feinen Fältchen.',
         treatmentUrl: '/hyaluron/skinbooster',
       },
       {
         imageUrl: '/assets/hyaluron/hyaluron-profhilo_hero.webp',
-        imageAlt: 'Behandlung zur Bioremodellierung der Haut',
+        imageAlt: 'Profhilo (BAP-Technik) in Bremen zur Hydration, Elastizität & Glow – Unterstützung bei feinen Fältchen',
         title: 'Hyaluron-Remodellierung (BAP-Technik)',
         description:
           'Innovativer Skinbooster zur Bioremodellierung: fördert Kollagen & Elastin, spendet intensiv Feuchtigkeit – ohne Volumenwirkung.',
@@ -65,23 +64,23 @@ export default function HautverbesserungHubPage() {
       },
       {
         imageUrl: '/assets/mesotherapie/mesotherapie-haut_hero.webp',
-        imageAlt: 'Mesotherapie zur Unterstützung der Hautqualität',
+        imageAlt: 'Mesotherapie in Bremen zur Unterstützung eines gleichmäßigeren Hautbilds bei Pigmentstörungen & fahlem Teint',
         title: 'Mesotherapie',
         description:
           'Feine Mikroinjektionen von Wirkstoff-Cocktails für mehr Frische und Ebenmäßigkeit – individuell abgestimmt.',
         treatmentUrl: '/mesotherapie',
       },
       {
-        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
-        imageAlt: 'Eigenbluttherapie PRF zur Hautregeneration und Unterlid-Behandlung',
+        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
+        imageAlt: 'PRF Eigenbluttherapie in Bremen zur Unterstützung der Hautregeneration (z. B. feine Fältchen, Unterlider)',
         title: 'Eigenbluttherapie (PRF)',
         description:
-          'Autologe Regeneration: PRF setzt über Wochen Wachstumsfaktoren frei – ideal für feine Fältchen & sensible Zonen (z. B. Unterlider).',
-        treatmentUrl: '/eigenbluttherapie-prf',
+          'Autologe Regeneration: PRF setzt über Wochen Wachstumsfaktoren frei – geeignet für feine Fältchen & sensible Zonen (z. B. Unterlider).',
+        treatmentUrl: '/eigenbluttherapie',
       },
       {
         imageUrl: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp',
-        imageAlt: '(Radiofrequenz-)Microneedling zur Verbesserung von Struktur & Poren',
+        imageAlt: 'Microneedling in Bremen zur Verbesserung von Struktur, Poren & Aknenarben – auch bei PIH/Post-Akne',
         title: 'Medizinisches Microneedling',
         description:
           'Verbessert Struktur, Poren & Aknenarben; optional mit Radiofrequenz für zusätzlichen Straffungseffekt.',
@@ -89,86 +88,49 @@ export default function HautverbesserungHubPage() {
       },
       {
         imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
-        imageAlt: 'Microbotox für verfeinerte Poren und weniger Glanz',
-        title: 'Microbotox',
+        imageAlt: 'Mesobotox / Microbotox in Bremen zum Poren verfeinern & Talgglanz reduzieren bei öliger Haut',
+        title: 'Mesobotox / Microbotox',
         description:
-          'Oberflächliche Botulinumtoxin‑Mikrodepots: verfeinern Poren, reduzieren Talg & Glanz – ohne die Mimik zu beeinflussen.',
-        treatmentUrl: 'botox/microbotox',
+          'Oberflächliche Botulinumtoxin-Mikrodepots: verfeinern Poren, reduzieren Talg & Glanz – ohne die Mimik zu beeinflussen.',
+        treatmentUrl: '/botox/microbotox',
       },
       {
         imageUrl: '/assets/chemisches-peeling/chemisches-peeling_hero.webp',
-        imageAlt: 'Chemisches Peeling zur Ebenmäßigkeit und gegen Pigmentflecken',
+        imageAlt: 'Chemisches Peeling in Bremen für Ebenmäßigkeit & gegen Pigmentflecken (z. B. Melasma, Hyperpigmentierung/PIH)',
         title: 'Chemisches Peeling',
         description:
-          'Von sanftem Fruchtsäure‑Peeling bis TCA: für ebenmäßigen Teint, Glow und feinere Linien – mit planbarer Downtime.',
+          'Von sanftem Fruchtsäure-Peeling bis TCA: für einen gleichmäßigeren Teint, Glow und feinere Linien – mit planbarer Downtime.',
         treatmentUrl: '/chemisches-peeling',
       },
       {
         imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
-        imageAlt: 'Polynukleotide (PN/PDRN) für Regeneration & Hautqualität',
+        imageAlt: 'Polynukleotide (PN/PDRN) in Bremen zur Unterstützung von Hydration, Elastizität & Hautdichte',
         title: 'Polynukleotide (PN/PDRN)',
         description:
-          'Bioregeneration ohne Volumen: unterstützt Zellaktivität, Hydration & Elastizität – ideal für müde Haut & feine Fältchen.',
+          'Bioregeneration ohne Volumen: unterstützt Zellaktivität, Hydration & Elastizität – geeignet bei müder Haut & feinen Fältchen.',
         treatmentUrl: '/polynukleotide',
       },
       {
         imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
-        imageAlt: 'Kollagenstimulation z. B. mit CaHA/PLLA für straffere Konturen',
+        imageAlt: 'Kollagenstimulation in Bremen (z. B. CaHA/PLLA) für straffere Konturen & strukturierte Haut',
         title: 'Kollagenstimulation',
         description:
-          'Strukturbildend durch Kollagenneubildung (z. B. CaHA/PLLA): unterstützt Straffheit & Kontur – Face & Hände.',
+          'Strukturbildend durch Kollagenneubildung (z. B. CaHA/PLLA): unterstützt Straffheit & Kontur – Face & Hände.',
         treatmentUrl: '/kollagenstimulation',
       },
     ],
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'Sophie W.',
-      rating: 5,
-      text:
-        'Skinbooster + Microneedling: Meine Haut wirkt deutlich praller und ebenmäßiger – ohne Downtime im Alltag.',
-      date: '2024-09-28',
-    },
-    {
-      id: 2,
-      name: 'Clara G.',
-      rating: 5,
-      text:
-        'PRF unter den Augen hat die feinen Knitterfalten sichtbar gemildert. Sehr natürliche Veränderung.',
-      date: '2024-08-12',
-    },
-    {
-      id: 3,
-      name: 'Miriam L.',
-      rating: 5,
-      text:
-        'Nach dem Peeling ist mein Hautton viel gleichmäßiger, Pigmentflecken sind aufgehellt. Top Aufklärung!',
-      date: '2024-07-22',
-    },
-    {
-      id: 4,
-      name: 'Daniela R.',
-      rating: 4,
-      text:
-        'Microbotox hat meinen Glanz reduziert und die Poren verfeinert. Ergebnis wirkt sehr natürlich.',
-      date: '2024-06-18',
-    },
-  ];
-
   const consultationData: ConsultationSectionProps = {
     title: 'Welche Methode passt zu Ihrer Haut?',
     description: [
-      'Als Ärztin für ästhetische Medizin analysiere ich Hauttyp, Hautzustand und Zielsetzung – und bespreche mit Ihnen, welche Verfahren (oder Kombination) sinnvoll sind.',
-      'Wir definieren realistische Ziele, Intervalle (Serien/Booster), Downtime & Pflege – für planbare, natürliche Ergebnisse.',
-      'Sicherheit steht an erster Stelle: sterile Arbeitsweise, hochwertige Produkte, schonende Techniken.',
+      'Als Ärztin für ästhetische Medizin analysiere ich Hauttyp, Hautzustand und Zielsetzung – und bespreche mit Ihnen, welche Verfahren (oder Kombination) sinnvoll sind, um Hautbild & Hautstruktur zu verbessern.',
+      'Typische Anliegen in meiner Praxis in Bremen: Pigmentflecken (Melasma, Hyperpigmentierung/PIH), Rosazea/Couperose mit Gesichtsrötungen & sichtbaren Äderchen, Akne/Aknenarben, große Poren & ölige Haut, feine Fältchen sowie Sonnenschäden/Photoaging.',
+      'Wir definieren realistische Ziele, Intervalle (Serien/Booster), Downtime & Pflege – für planbare, natürliche Ergebnisse wie verfeinerte Poren, weniger Talgglanz und ein ebenmäßigeres Erscheinungsbild.',
+      'Sicherheit steht an erster Stelle: sterile Arbeitsweise, hochwertige Produkte, schonende Techniken. Keine Heilversprechen.',
     ],
     ctaText: 'Jetzt Beratungsgespräch vereinbaren',
-    ctaHref: '/kontaktn',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt:
-      'Ärztin Ola El-Armouche berät Patientin zu Skinbooster, PRF, Microneedling, Peeling und Microbotox in Bremen',
+    ctaHref: '/kontakt',
     backgroundColor: 'bg-[#FDF6F0]',
   };
 
@@ -177,34 +139,55 @@ export default function HautverbesserungHubPage() {
     faqs: [
       {
         question:
-          'Skinbooster, PROFHILO®, PRF, Polynukleotide, Microneedling, Peeling, Microbotox – was ist der Unterschied?',
+          'Skinbooster, Profhilo, PRF, Polynukleotide, Microneedling, Peeling, Mesobotox / Microbotox – was ist der Unterschied?',
         answer:
-          'Skinbooster & PROFHILO® spenden intensiv Feuchtigkeit und unterstützen Elastizität; PRF und Polynukleotide wirken regenerativ (Hautdichte, Feuchtigkeit, Feinfältchen). Microneedling (ggf. mit RF) verbessert Struktur, Poren & Narben. Chemische Peelings gleichen Tone & Textur aus. Microbotox verfeinert Poren und reduziert Glanz, ohne die Mimik zu beeinflussen. Die Kollagenstimulation (z. B. CaHA/PLLA) unterstützt Straffheit & Kontur.',
+          'Skinbooster & Profhilo spenden intensiv Feuchtigkeit und unterstützen Elastizität; PRF und Polynukleotide haben einen regenerativen Ansatz (Hautdichte, Feuchtigkeit, Feinfältchen). Microneedling (ggf. mit RF) adressiert Struktur, Poren & Narben. Chemische Peelings gleichen Tone & Textur aus. Mesobotox/Microbotox kann Poren verfeinern und Glanz reduzieren – ohne die Mimik zu beeinflussen. Die Kollagenstimulation (z. B. CaHA/PLLA) unterstützt Straffheit & Kontur.',
       },
       {
         question: 'Wie viele Sitzungen sind nötig und wie lange hält der Effekt?',
         answer:
-          'Skinbooster/PROFHILO®: meist 2–3 Sitzungen, Auffrischung nach 6–9 Monaten. PRF/Polynukleotide: Serien à 2–3 Sitzungen, Effekt baut sich über Wochen auf. Microneedling: 3–4 Sitzungen im Abstand von 4–6 Wochen. Peelings: je nach Tiefe einmalig bis kurativ. Microbotox: ca. alle 3–4 Monate. Kollagenstimulation: Wirkung über Monate, Intervalle individuell.',
+          'Skinbooster/Profhilo: meist 2–3 Sitzungen, Auffrischung nach 6–9 Monaten. PRF/Polynukleotide: Serien à 2–3 Sitzungen, der Effekt baut sich über Wochen auf. Microneedling: 3–4 Sitzungen im Abstand von 4–6 Wochen. Peelings: je nach Tiefe einmalig bis kurativ. Mesobotox/Microbotox: ca. alle 3–4 Monate. Kollagenstimulation: Wirkung über Monate, Intervalle individuell (keine Heilversprechen).',
       },
       {
         question: 'Gibt es Downtime?',
         answer:
-          'Leichte Rötungen/Schwellungen oder kleine Hämatome sind möglich und klingen meist nach 1–3 Tagen ab. Bei mittleren/tiefen Peelings ist mit planbarer Downtime (Schälung) zu rechnen. Wir wählen gemeinsam das passende Protokoll für Ihren Alltag.',
+          'Leichte Rötungen/Schwellungen oder kleine Hämatome sind möglich und klingen meist nach 1–3 Tagen ab. Bei mittleren/tiefen Peelings ist mit planbarer Downtime (Schälung) zu rechnen. Das Protokoll wird an Ihren Alltag angepasst.',
       },
       {
         question: 'Kann man Behandlungen kombinieren?',
         answer:
-          'Ja – Kombinationen sind häufig besonders effektiv, z. B. Skinbooster + Microneedling für Glow & Struktur oder PRF/Polynukleotide mit Peelings. Reihenfolge & Intervalle stimme ich individuell ab.',
+          'Ja – Kombinationen sind oft effektiv, z. B. Skinbooster + Microneedling für Glow & Struktur oder PRF/Polynukleotide mit Peelings. Reihenfolge & Intervalle werden individuell festgelegt.',
       },
       {
         question: 'Für welche Areale eignen sich die Verfahren?',
         answer:
-          'Gesicht, Hals, Dekolleté und Hände. PRF/Polynukleotide eignen sich auch für sensible Bereiche wie die Unterlider. Microneedling ist zudem bei Aknenarben hilfreich.',
+          'Gesicht, Hals, Dekolleté und Hände. PRF/Polynukleotide eignen sich auch für sensible Bereiche wie die Unterlider. Microneedling ist zudem bei Aknenarben eine Option.',
       },
       {
         question: 'Was kosten die Behandlungen?',
         answer:
           'Die Kosten richten sich nach Methode, Material und Umfang. Im Beratungstermin erhalten Sie einen transparenten, individuellen Kostenplan.',
+      },
+      // Keyword-nahe Zusatzfragen (lokal & Long-Tail, ohne Heilversprechen)
+      {
+        question: 'Pigmentflecken/Melasma in Bremen – welche sanften Optionen gibt es?',
+        answer:
+          'Je nach Befund können abgestimmte chemische Peelings, Microneedling (mit angepassten Parametern) sowie hydratisierende/bioregulierende Verfahren wie Skinbooster, PRF oder Polynukleotide in Frage kommen. Sonnenschutz (SPF 50+) bleibt Basis. Individuelle Beratung ist entscheidend.',
+      },
+      {
+        question: 'Rosazea/Couperose in Bremen – gibt es unterstützende Maßnahmen?',
+        answer:
+          'In stabilen Phasen sind schonende Protokolle möglich (z. B. ausgewählte Peelings, Microneedling mit Vorsicht, hydratisierende Booster). Wir achten auf Trigger-Management, Hautbarriere & SPF. Keine Heilversprechen.',
+      },
+      {
+        question: 'Aknenarben behandeln in Bremen – welche Verfahren passen?',
+        answer:
+          'Medizinisches Microneedling (ggf. RF) ist ein bewährter Ansatz zur Verbesserung atropher Narben; ergänzend kommen PRF/Polynukleotide oder Peelings in Frage. Die Auswahl richtet sich nach Narbentyp, Hauttyp & Alltag.',
+      },
+      {
+        question: 'Große Poren & ölige Haut – was hilft in Bremen?',
+        answer:
+          'Optionen sind u. a. Mesobotox/Microbotox, Microneedling und geeignete chemische Peelings. Welche Methode passt, hängt von Hauttyp, Hautzustand und Zielsetzung ab.',
       },
     ],
   };
@@ -212,36 +195,27 @@ export default function HautverbesserungHubPage() {
   const ctaData: CTASectionProps = {
     title: 'Natürlich bessere Haut – ohne künstlichen Look',
     subtitle:
-      'Vereinbaren Sie jetzt Ihren Termin zur Hautverbesserung in Bremen: Skinbooster, PROFHILO®, PRF, Microneedling, Peelings, Microbotox, Polynukleotide & Kollagenstimulation.',
-    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontaktn' },
+      'Termin zur Hautverbesserung in Bremen vereinbaren: Hautbild & Hautstruktur verbessern mit Skinboostern (inkl. Profhilo/BAP-Technik), PRF/Polynukleotiden, (RF-)Microneedling, Peelings, Mesobotox/Microbotox & Kollagenstimulation – unterstützend bei Pigmentflecken, Rosazea/Couperose, großen Poren & Aknenarben.',
+    primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
-  const locationData: LocationSectionProps = {
-    title: 'Ihre Praxis für Hautverbesserung in Bremen: EL Aesthetics',
-    description:
-      'In Schwachhausen nahe Oberneuland/Horn‑Lehe: präzise, sanfte Verfahren für mehr Hautqualität – individuell geplant & sicher durchgeführt.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
-  };
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'treatments', label: 'Behandlungen' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'faq', label: 'Häufige Fragen' }
+  ];
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen unserer Patienten"
-        subtitle="Echte Ergebnisse: mehr Glow, feinere Poren, ebenmäßiger Teint und straffere Konturen – natürlich & subtil."
-      />
       <ConsultationSection {...consultationData} />
       <FAQSection {...faqData} />
-
+      <CTASection {...ctaData}/>
     </div>
   );
 }

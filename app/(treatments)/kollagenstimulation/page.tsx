@@ -1,7 +1,7 @@
 // app/kollagenstimulation/page.tsx
 import type { Metadata } from 'next';
 import {
-  AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps
+  AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps
 } from '@/components/TreatmentPageComponents';
 import PatientReviews from '@/components/PatientReviews';
 import { Review } from '@/types/Review'
@@ -33,7 +33,7 @@ export default function KollagenstimulationPage() {
       'Unterstützung von Hautfestigkeit & -qualität durch eine Kombination aus Hyaluronsäure und Calciumhydroxylapatit – präzise, ärztlich & natürlich wirkend.',
     imageSrc: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
     imageAlt: 'Kollagenstimulation in Bremen – ärztliche Injektion mit feiner Kanüle',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/kontaktn' },
+    primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
@@ -157,7 +157,7 @@ export default function KollagenstimulationPage() {
       'Gern prüfe ich mit Ihnen, ob die Kollagenstimulation mit Hyaluronsäure & Calciumhydroxylapatit für Ihre Wünsche geeignet ist.',
     ],
     ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontaktn',
+    ctaHref: '/kontakt',
     imageSrc: '/assets/tinified/IMG_7364.webp',
     imageAlt: 'Ärztliches Beratungsgespräch in Bremen',
     backgroundColor: 'bg-[#FDF6F0]',
@@ -174,11 +174,11 @@ export default function KollagenstimulationPage() {
         treatmentUrl: '/hyaluron',
       },
       {
-        imageUrl: '/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp',
+        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
         imageAlt: 'PRF Eigenbluttherapie',
         title: 'PRF/PRP',
         description: 'Autologe Regeneration zur Unterstützung der Hautqualität.',
-        treatmentUrl: '/eigenbluttherapie-prf',
+        treatmentUrl: '/eigenbluttherapie',
       },
       {
         imageUrl: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp',
@@ -249,7 +249,7 @@ export default function KollagenstimulationPage() {
   const ctaData: CTASectionProps = {
     title: 'Bereit für eine natürlich wirkende Unterstützung der Haut?',
     subtitle: 'Lassen Sie sich individuell beraten – ärztlich & transparent.',
-    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontaktn' },
+    primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 

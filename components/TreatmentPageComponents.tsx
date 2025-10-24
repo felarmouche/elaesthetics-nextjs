@@ -1,8 +1,7 @@
 import React from 'react';
-import { ChevronRight, ChevronDown } from 'lucide-react';
+import { ChevronRight, Phone, CheckCircle, ChevronDown } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { DOMAIN } from '@/lib/constants';
 // ============================================================================
 // TYPE DEFINITIONS
 // ============================================================================
@@ -67,8 +66,6 @@ export interface ConsultationSectionProps {
     description: string[];
     ctaText: string;
     ctaHref: string;
-    imageSrc: string;
-    imageAlt: string;
     backgroundColor?: string;
 }
 export interface FAQ {
@@ -101,13 +98,6 @@ export interface LocationInfo {
     openingHours: string[];
 }
 
-export interface LocationSectionProps {
-    title: string;
-    description: string;
-    location: LocationInfo;
-
-}
-
 export interface AreasSectionProps {
     title: string;
     categories: AreaCategory[];
@@ -135,9 +125,67 @@ export interface TreatmentCareSectionProps {
     };
 }
 
+export interface TOCItem {
+    id: string;
+    label: string;
+}
+
+export interface TableOfContentsProps {
+    title?: string;
+    items: TOCItem[];
+}
+
 // ============================================================================
-// COMPONENTS
+// COMPONENT
 // ============================================================================
+
+export const TableOfContents: React.FC<TableOfContentsProps> = ({ 
+    title = "Inhalt",
+    items 
+}) => {
+    return (
+        <section id="table-of-contents" className="py-12 md:py-16 border-b border-stone-200">
+            <div className="container mx-auto px-6 max-w-4xl  bg-background-primary px-8 py-12">
+                <h2 className="text-lg md:text-xl font-light text-stone-400 uppercase tracking-[2px] mb-6">
+                    {title}
+                </h2>
+                <nav aria-label="Inhaltsverzeichnis">
+                    <ul className="grid md:grid-cols-2 gap-3">
+                        {items.map((item, index) => (
+                            <li key={index}>
+                                <Link
+                                    href={`#${item.id}`}
+                                    className="group flex items-center justify-between px-5 py-3 bg-white border border-stone-200 hover:border-stone-400 hover:bg-stone-50 transition-all duration-200 scroll-smooth"
+                                >
+                                    <span className="text-stone-700 font-light tracking-wide">
+                                        {item.label}
+                                    </span>
+                                    <ChevronRight className="h-4 w-4 text-stone-400 group-hover:text-stone-700 group-hover:translate-x-1 transition-all duration-200" />
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    );
+};
+
+
+/**
+ const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Behandlungsbereiche' },
+    { id: 'detailedInfo', label: 'Detaillierte Informationen' },
+    { id: 'treatments', label: 'Behandlungen' },
+    { id: 'quickInfos', label: 'Auf einen Blick' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'faq', label: 'Häufige Fragen' },
+    { id: 'cta', label: 'Termin vereinbaren' },
+]; 
+*/
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
     title,
@@ -427,16 +475,14 @@ export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
     description,
     ctaText,
     ctaHref,
-    imageSrc,
-    imageAlt,
     backgroundColor = 'bg-stone-50'
 }) => {
     return (
         <section id="consultation" className="py-20 md:py-32">
             <div className="container mx-auto px-6 max-w-7xl">
-                <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center ">
+                <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     {/* Text Content */}
-                    <div className="p-2 md:p-10 pt-10 text-left bg-background-secondary flex flex-col justify-center h-full gap-6">
+                    <div className="p-2 md:p-10 pt-10 text-left bg-background-primary flex flex-col justify-center h-full gap-6">
                         <h2 className="text-2xl md:text-2xl sm:text-2xl md:text-4xl break-words md:text-5xl font-normal text-stone-900 uppercase tracking-[2px] leading-tight">
                             {title}
                         </h2>
@@ -450,7 +496,7 @@ export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
                             </p>
                         ))}
 
-                        <div className="pt-4">
+                        <div className="mt-12">
                             <a
                                 href={ctaHref}
                                 className="group relative inline-block w-full text-center font-medium px-8 py-4 text-white tracking-wide bg-black overflow-hidden transition-all duration-300 hover:shadow-lg"
@@ -465,15 +511,65 @@ export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
                     </div>
 
                     {/* Image */}
-                    <div className={`relative w-full bg-background-primary p-10 ${backgroundColor} transform transition-transform duration-300 hover:scale-[1.02]`}>
+                    <div className={`relative w-full p-10 ${backgroundColor} transform transition-transform duration-300 hover:scale-[1.02]`}>
                         <div className="relative w-full max-h-[60vh] aspect-[3/4] overflow-hidden rounded-sm flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <Image
-                                src={imageSrc}
-                                alt={imageAlt}
-                                fill
-                                sizes="(min-width: 500px) 50vh, 100vh"
-                                className="object-cover object-center transform transition-transform duration-700 hover:scale-105"
+                            <img
+                                src="/assets/tinified/IMG_7364.webp"
+                                alt="Ärztin Ola El-Armouche im Beratungsgespräch mit einer Patientin"
+                                className="w-full h-full object-cover object-center transform transition-transform duration-700 hover:scale-105"
                             />
+                        </div>
+                        {/* HARDCODED EEAT QUALIFICATIONS SECTION */}
+                        <div className="mt-6 pt-6 border-t border-stone-300">
+                            <h3 className="text-sm font-medium text-stone-900 uppercase tracking-[2px] mb-4">
+                                Qualifikationen & Zertifizierungen
+                            </h3>
+                            
+                            <div className="space-y-3">
+                                
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-5 h-5 text-stone-900 flex-shrink-0 mt-0.5" />
+                                    <p className="text-sm text-stone-600 font-light leading-relaxed">
+                                        Mitglied der Deutschen Gesellschaft für ästhetische Botulinum- und Fillertherapie e.V. (DGBT)
+                                    </p>
+                                </div>
+                                
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-5 h-5 text-stone-900 flex-shrink-0 mt-0.5" />
+                                    <p className="text-sm text-stone-600 font-light leading-relaxed">
+                                        Regelmäßige Fortbildungen, Workshops und Fachkongresse
+                                    </p>
+                                </div>
+                                
+                                <div className="flex items-start gap-3">
+                                    <CheckCircle className="w-5 h-5 text-stone-900 flex-shrink-0 mt-0.5" />
+                                    <p className="text-sm text-stone-600 font-light leading-relaxed">
+                                        Sichere und moderne Behandlungen auf fachlich höchstem Niveau
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* DGBT Badge */}
+                            <div className="mt-6 flex items-center gap-4 bg-white p-4 rounded-sm border border-stone-200">
+                                <div className="overflow-hidden w-16 h-16 border border-stone-200 rounded-full flex items-center justify-center flex-shrink-0">
+                                    <Image 
+                                        alt="DGBT-Logo" 
+                                        src="/assets/dgbt.webp" 
+                                        className="object-cover w-full" 
+                                        width={80}
+                                        height={50}
+                                        loading='lazy'
+                                    />
+                                </div>
+                                <div>
+                                    <p className="text-xs font-medium text-stone-900 uppercase tracking-wide">
+                                        DGBT Mitglied
+                                    </p>
+                                    <p className="text-xs text-stone-600 mt-1 leading-relaxed">
+                                        Deutsche Gesellschaft für ästhetische Botulinum- und Fillertherapie e.V.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -481,7 +577,6 @@ export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
         </section>
     );
 };
-
 export const TreatmentCareSection: React.FC<TreatmentCareSectionProps> = ({
     title,
     beforeTreatment,
@@ -583,14 +678,15 @@ export const CTASection: React.FC<CTASectionProps> = ({
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                     <a
                         href={primaryCTA.href}
-                        className="inline-block bg-white border-1 border-secondary/80 text-secondary/80 px-10 py-4 tracking-wide hover:bg-stone-100 transition-colors"
+                        className="inline-block uppercase border-1 border-secondary/80 text-secondary/80 px-10 py-4 tracking-wide hover:bg-stone-100 transition-colors"
                     >
                         {primaryCTA.text}
                     </a>
                     <a
                         href={secondaryCTA.href}
-                        className="inline-block bg-secondary text-primary px-10 py-4 tracking-wide border border-stone-700 hover:border-white transition-colors"
+                        className="inline-flex gap-2 bg-secondary text-primary px-10 py-4 tracking-wide border border-stone-700 hover:border-white transition-colors"
                     >
+                        <Phone className='text-sm'/>
                         {secondaryCTA.text}
                     </a>
                 </div>
@@ -599,98 +695,3 @@ export const CTASection: React.FC<CTASectionProps> = ({
     );
 };
 
-export const LocationSection: React.FC<LocationSectionProps> = ({
-    title,
-    description,
-    location
-}) => {
-    const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(location.address)}&output=embed`;
-    const addressParts = location.address.split(',');
-    const streetAddress = addressParts[0]?.trim() ?? location.address;
-    const cityPart = addressParts.slice(1).join(',').trim();
-    const postalMatch = cityPart.match(/\b\d{5}\b/);
-    const postalCode = postalMatch?.[0];
-    const addressLocality = (postalCode ? cityPart.replace(postalCode, '').trim() : cityPart) || 'Bremen';
-
-    const postalAddress: {
-        '@type': 'PostalAddress';
-        streetAddress: string;
-        addressCountry: string;
-        postalCode?: string;
-        addressLocality?: string;
-    } = {
-        '@type': 'PostalAddress',
-        streetAddress,
-        addressCountry: 'DE',
-    };
-
-    if (postalCode) {
-        postalAddress.postalCode = postalCode;
-    }
-
-    if (addressLocality) {
-        postalAddress.addressLocality = addressLocality;
-    }
-
-    const locationSchema = {
-        '@context': 'https://schema.org',
-        '@type': 'MedicalClinic',
-        name: title,
-        description,
-        url: `${DOMAIN}/#location`,
-        telephone: location.phone.replace(/\s+/g, ''),
-        email: location.email,
-        address: postalAddress,
-        openingHours: location.openingHours,
-    };
-
-    return (
-        <section id="location" className="py-20 bg-stone-50">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(locationSchema) }}
-            />
-            <div className="container mx-auto px-6 max-w-7xl">
-                <div className="grid md:grid-cols-2 gap-16">
-                    <div className="space-y-6">
-                        <h2 className="text-2xl md:text-4xl break-words font-light text-stone-900 tracking-tight">
-                            {title}
-                        </h2>
-                        <p className="text-stone-600 font-light leading-relaxed">
-                            {description}
-                        </p>
-                        <div className="space-y-6 pt-6">
-                            <div className="space-y-1">
-                                <p className="text-sm font-light text-stone-400 uppercase tracking-wider">Adresse</p>
-                                <p className="text-stone-900 font-light">{location.address}</p>
-                            </div>
-                            <div className="space-y-1">
-                                <p className="text-sm font-light text-stone-400 uppercase tracking-wider">Telefon</p>
-                                <p className="text-stone-900 font-light">{location.phone}</p>
-                            </div>
-                            <div className="space-y-1">
-                                <p className="text-sm font-light text-stone-400 uppercase tracking-wider">E-Mail</p>
-                                <p className="text-stone-900 font-light">{location.email}</p>
-                            </div>
-                            <div className="space-y-1">
-                                <p className="text-sm font-light text-stone-400 uppercase tracking-wider">Öffnungszeiten</p>
-                                {location.openingHours.map((hours, index) => (
-                                    <p key={index} className="text-stone-900 font-light">{hours}</p>
-                                ))}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="h-96 rounded-md overflow-hidden shadow-lg border border-stone-200">
-                        <iframe
-                            title={`Karte zu ${title}`}
-                            src={mapSrc}
-                            className="w-full h-full border-0"
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
-};

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps} from '@/components/TreatmentPageComponents';
+import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps} from '@/components/TreatmentPageComponents';
 import PatientReviews from '@/components/PatientReviews';
 import {Review} from '@/types/Review'
 import { PRICES } from '@/lib/constants';
@@ -26,7 +26,7 @@ export default function MesotherapieHautPage() {
     subtitle: "Möchten Sie Ihre Hautqualität verbessern, Augenringe reduzieren und einen strahlenden Teint?\nMit der Mesotherapie kombinieren wir Hyaluronsäure mit wertvollen Mikronährstoffen für natürliche Hautverjüngung.",
     imageSrc: "/assets/nctf/NFTC_Skinbooster.webp",
     imageAlt: "Mesotherapie Behandlung für strahlende Gesichtshaut in Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
@@ -204,7 +204,7 @@ export default function MesotherapieHautPage() {
       "In meiner Praxis in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihre Haut zum Strahlen bringen kann."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/kontaktn",
+    ctaHref: "/kontakt",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Mesotherapie in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -289,7 +289,7 @@ export default function MesotherapieHautPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für strahlende, jugendliche Haut?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Mesotherapie in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 

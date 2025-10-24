@@ -7,7 +7,7 @@ import {
   QuickInfoSection,
   QuickInfoSectionProps,
   ConsultationSection,
-  CTASection,
+  
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -15,8 +15,8 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  LocationSection,
-  LocationSectionProps,
+  
+  
   ProcessSection,
   ProcessSectionProps,
   TreatmentCareSection,
@@ -49,7 +49,7 @@ export default function PolynukleotideBehandlungPage() {
     subtitle: "Biostimulation der neuesten Generation für natürliche Hautregeneration, Faltenreduktion und Haarwachstum.\nEntdecken Sie die regenerative Kraft biologischer DNA-Therapie.",
     imageSrc: "/assets/polynukleotide/polynukleotide_hero.webp",
     imageAlt: "Polynukleotide-Behandlung für Hautregeneration in Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
@@ -230,7 +230,7 @@ export default function PolynukleotideBehandlungPage() {
       "In meiner Praxis in Bremen steht Ihre individuelle Betreuung im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie Polynukleotide Ihre Haut regenerieren und verjüngen können."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/kontaktn",
+    ctaHref: "/kontakt",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Polynukleotide-Behandlung in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -254,7 +254,7 @@ export default function PolynukleotideBehandlungPage() {
         treatmentUrl: "/kollagenstimulation"
       },
       {
-        imageUrl: "/assets/eigenbluttherapie-prf/eigenbluttherapie-prf_hero.webp",
+        imageUrl: "/assets/eigenbluttherapie/eigenbluttherapie_hero.webp",
         imageAlt: "Bild von einer Frau, welche PRF im Gesicht hat",
         title: "PRF Eigenbluttherapie",
         description: "Mit Eigenblut (Platelet-Rich Fibrin) fördern wir natürliche Regenerationsprozesse für Haut und Haare. Eine biologische Behandlung für nachhaltige Anti-Aging-Effekte.",
@@ -311,7 +311,7 @@ export default function PolynukleotideBehandlungPage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für natürliche Hautregeneration?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Polynukleotide-Behandlung in Bremen und entdecken Sie die regenerative Kraft biologischer DNA-Therapie.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 

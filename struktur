@@ -34,7 +34,7 @@ Ordnerstruktur:
 ├─ /botulinumtoxin/                         (Behandlungsinfos + HUB)         
 │  ├─ /botulinumtoxin/faltenbehandlung
 │  ├─ /botulinumtoxin/masseter
-│  ├─ /botulinumtoxin/microbotox
+│  ├─ /botulinumtoxin/mesobotox
 │  ├─ /botulinumtoxin/migraene
 │  └─ /botulinumtoxin/hyperhidrose
 │
@@ -52,9 +52,9 @@ Ordnerstruktur:
 |  ├─ /hyaluron/hylase
 │  └─ /hyaluron/skinbooster
 │
-├─ /eigenbluttherapie-prf/
-│  ├─ /eigenbluttherapie-prf/microneedling
-│  └─ /eigenbluttherapie-prf/haare
+├─ /eigenbluttherapie/
+│  ├─ /eigenbluttherapie/microneedling
+│  └─ /eigenbluttherapie/haare
 │
 ├─ /mesotherapie
 │  └─ /mesotherapie/haare
@@ -86,7 +86,7 @@ Verlinkungen der Behandlungs-Seiten auf andere Seiten in der TreatmentsSection m
 	
 	faltenunterspritzung/ (Typ 2) Title: Unsere Behandlungen zur Faltenuntersprizung in Bremen
 	 /hyaluron/filler
-	 /eigenbluttherapie-prf
+	 /eigenbluttherapie
 	
 	gesichtsbehandlung/ (Typ 2) Title: Unsere Gesichtsbehandlungen in Bremen
 	 /mesotherapie
@@ -96,14 +96,14 @@ Verlinkungen der Behandlungs-Seiten auf andere Seiten in der TreatmentsSection m
 	 /kollagenstimulation
 	 /profhilo
 	 /polynukleotide
-	 /eigenbluttherapie-prf/microneedling
+	 /eigenbluttherapie/microneedling
 	
 	haarausfall-behandlung/ (Typ 2) Title: Unsere Behandlungen gegen Haarausfall in Bremen
-	 /eigenbluttherapie-prf/haare
+	 /eigenbluttherapie/haare
 	 /mesotherapie/haare
 	
 	fett-weg-spritze/ (Typ 1) Title: Weitere Behandlungen in Bremen
-	/eigenbluttherapie-prf
+	/eigenbluttherapie
 	/hyaluron/
 	/botulinumtoxin
 	

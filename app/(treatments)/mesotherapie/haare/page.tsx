@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, LocationSection, LocationSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps} from '@/components/TreatmentPageComponents';
+import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps} from '@/components/TreatmentPageComponents';
 import PatientReviews from '@/components/PatientReviews';
 import {Review} from '@/types/Review'
 import { PRICES } from '@/lib/constants';
@@ -26,7 +26,7 @@ export default function MesotherapieHaarePage() {
     subtitle: "Leiden Sie unter Haarausfall oder dünner werdendem Haar?\nMit der Mesotherapie aktivieren wir Ihre Haarwurzeln und fördern das Haarwachstum – natürlich und nachhaltig.",
     imageSrc: "/assets/mesotherapie/mesotherapie-haare_hero.webp",
     imageAlt: "Mesotherapie Behandlung gegen Haarausfall in Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/kontaktn" },
+    primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
@@ -201,7 +201,7 @@ export default function MesotherapieHaarePage() {
       "In meiner Praxis in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihr Haar wieder stärken kann."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/kontaktn",
+    ctaHref: "/kontakt",
     imageSrc: "/assets/tinified/IMG_7364.webp",
     imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Haarmesotherapie in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
@@ -286,7 +286,7 @@ export default function MesotherapieHaarePage() {
   const ctaData: CTASectionProps = {
     title: "Bereit für volleres, kräftigeres Haar?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Haarmesotherapie in Bremen.",
-    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontaktn" },
+    primaryCTA: { text: "Jetzt Termin anfragen", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
