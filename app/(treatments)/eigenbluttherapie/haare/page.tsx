@@ -6,6 +6,7 @@ import {
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
+  HubTeaserSection,
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -27,9 +28,9 @@ import {
 
 export const metadata: Metadata = {
   title:
-    'Eigenbluttherapie Haarausfall Behandlung Bremen | Haardichte & Kopfhaut | EL Aesthetics',
+    'PRF Eigenbluttherapie Haare Bremen | Dichte & Kopfhaut Info',
   description:
-    'Sachliche Information zur Eigenbluttherapie Haarausfall Behandlung (PRF/PRP): Ablauf, Indikationen, Häufigkeit, Sicherheit und Kosten (Richtwerte). Ärztliche Beratung erforderlich.',
+    'Eigenbluttherapie für Haare in Bremen: PRF/PRP unterstützt Haardichte und Kopfhaut mit Aufklärung zu Sitzungen, Intervallen, Kombinationen und Risiken.',
   keywords:
     'eigenbluttherapie haarausfall, eigenblutbehandlung haare, prf haare, prp behandlung haare, eigenblut haarausfall',
   openGraph: {
@@ -138,16 +139,7 @@ export default function PRFHaarePage() {
     },
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ärztliche Beratung in Bremen',
-    description: [
-      'Wir klären, ob PRF/PRP zur eigenblutbehandlung haare für Ihren Befund sinnvoll ist und besprechen Alternativen (z.\u00A0B. topische/medikamentöse Optionen, Mesotherapie, LLLT).',
-      'Kontraindikationen (z.\u00A0B. Schwangerschaft/Stillzeit, relevante Gerinnungsstörungen, aktive Entzündungen) werden vorab geprüft. Keine Heilversprechen – Ergebnisse variieren.',
-    ],
-    ctaText: 'Haaranalyse buchen',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Optionen bei Haarausfall',
@@ -234,7 +226,12 @@ export default function PRFHaarePage() {
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Zur Übersicht: Eigenbluttherapie (PRF/PRP)"
+        subtitle="Anwendungen, Abläufe, Sitzungspläne & Hinweise."
+        href="/eigenbluttherapie"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

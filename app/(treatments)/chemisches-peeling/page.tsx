@@ -24,13 +24,12 @@ import {
   CTASection,
 } from '@/components/TreatmentPageComponents';
 // PatientReviews import bleibt ungenutzt; bei Bedarf HWG-konform entfernen/ersetzen
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+ 
 
 export const metadata: Metadata = {
-  title: 'Chemisches Peeling Bremen | PRX-T33 ohne Downtime',
+  title: 'Chemisches Peeling Bremen | PRX-T33 & Glow ohne Auszeit',
   description:
-    'PRX-T33 chemisches Peeling in Bremen: ärztliche Biorevitalisierung für Glow, Pigmentflecken und Aknenarben – in der Regel ohne Ausfallzeit.',
+    'PRX-T33 chemisches Peeling in Bremen: ärztliche Anwendung für Glow, Poren und Pigmentflecken mit kurzer Downtime, klarer Aufklärung und angeleiteter Nachpflege.',
   openGraph: {
     title: 'Chemisches Peeling Bremen | PRX-T33 ohne Downtime',
     description:
@@ -136,16 +135,7 @@ export default function ChemischesPeelingPage() {
     },
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ärztliche Beratung in Bremen',
-    description: [
-      'Wir besprechen Nutzen, mögliche Risiken und Alternativen (z.\u00A0B. Microneedling, Skinbooster, topische Therapien).',
-      'Kontraindikationen und Heimpflege werden individuell geklärt. Keine Heilversprechen – Ergebnis und Dauer sind individuell unterschiedlich.',
-    ],
-    ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen zur Hautverbesserung',
@@ -203,7 +193,7 @@ export default function ChemischesPeelingPage() {
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
       {/* PatientReviews optional: HWG-konform eher durch neutrales Aggregat/Verlinkung ersetzen */}
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

@@ -91,13 +91,6 @@ export interface CTASectionProps {
     };
 }
 
-export interface LocationInfo {
-    address: string;
-    phone: string;
-    email: string;
-    openingHours: string[];
-}
-
 export interface AreasSectionProps {
     title: string;
     categories: AreaCategory[];
@@ -146,9 +139,9 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
     return (
         <section id="table-of-contents" className="py-12 md:py-16 border-b border-stone-200">
             <div className="container mx-auto px-6 max-w-4xl  bg-background-primary px-8 py-12">
-                <h2 className="text-lg md:text-xl font-light text-stone-400 uppercase tracking-[2px] mb-6">
+                <p className="text-lg md:text-xl font-light text-stone-400 uppercase tracking-[2px] mb-6">
                     {title}
-                </h2>
+                </p>
                 <nav aria-label="Inhaltsverzeichnis">
                     <ul className="grid md:grid-cols-2 gap-3">
                         {items.map((item, index) => (
@@ -166,6 +159,33 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
                         ))}
                     </ul>
                 </nav>
+            </div>
+        </section>
+    );
+};
+
+// Subtle hub teaser linking back to a cluster hub page
+export interface HubTeaserSectionProps {
+    href: string;
+    title: string;
+    subtitle?: string;
+}
+
+export const HubTeaserSection: React.FC<HubTeaserSectionProps> = ({ href, title, subtitle }) => {
+    return (
+        <section className="bg-white">
+            <div className="container mx-auto px-6 max-w-5xl">
+                <div className="flex items-center justify-between border border-stone-200 bg-white p-5 md:p-6 rounded-sm">
+                    <div className="pr-4">
+                        <p className="text-stone-900 text-lg md:text-xl">{title}</p>
+                        {subtitle && (
+                            <p className="text-stone-600 text-sm md:text-base font-light mt-1">{subtitle}</p>
+                        )}
+                    </div>
+                    <Link href={href} className="ml-2 inline-flex items-center text-stone-900 border-1 p-4 rounded-full justify-center border-stone-200 hover:border-black">
+                        <ChevronRight className="h-4 w-4 " />
+                    </Link>
+                </div>
             </div>
         </section>
     );
@@ -221,20 +241,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
-                            <a
+                            <Link
                                 href={primaryCTA.href}
                                 className="group inline-flex items-center justify-center bg-stone-900 px-7 sm:px-9 py-3.5 sm:py-4 text-white font-medium tracking-wide shadow-lg shadow-stone-900/10 hover:shadow-stone-900/20 hover:bg-stone-800 transition"
                             >
                                 {primaryCTA.text}
                                 <ChevronRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-0.5" />
-                            </a>
+                            </Link>
 
-                            <a
+                            <Link
                                 href={secondaryCTA.href}
                                 className="inline-flex items-center justify-center border-2 border-stone-300 px-7 sm:px-9 py-3.5 sm:py-4 text-stone-900 font-medium tracking-wide hover:border-stone-900 hover:bg-stone-50 transition"
                             >
                                 {secondaryCTA.text}
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -352,14 +372,14 @@ export function DetailedInfoSection() {
                     </div>
 
                     <div className="pt-4 text-center flex justify-center items-center">
-                        <a
+                        <Link
                             href={ctaHref}
                             className="group inline-flex items-center justify-center bg-stone-900 px-8 py-4 text-white font-medium tracking-wide shadow-lg shadow-stone-900/10 hover:shadow-stone-900/20 hover:bg-stone-800 transition"
                         >
                             {ctaText}
                             {/* KORREKTUR: Stelle sicher, dass ChevronDown importiert wird */}
                             <ChevronDown className="ml-2 h-5 w-5 transition-transform group-hover:translate-y-0.5" />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -413,9 +433,9 @@ export const QuickInfoSection: React.FC<QuickInfoSectionProps> = ({ title, benef
     return (
         <section id="quickInfos" className="py-20 md:py-32 bg-white max-w-4xl mx-auto ">
             <div className="container mx-auto px-6 max-w-7xl">
-                <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
+                <p className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
-                </h2>
+                </p>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 ">
                     {benefits.map(({ iconUrl, title, description }, index) => (
                         <div key={index} className="space-y-4 flex flex-col items-center text-center">
@@ -470,24 +490,33 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ title, steps }) 
     );
 };
 
-export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
-    title,
-    description,
-    ctaText,
-    ctaHref,
-    backgroundColor = 'bg-stone-50'
-}) => {
+ const consultationData: ConsultationSectionProps = {
+    title: "Ihre persönliche Beratung in Bremen",
+    description: [
+      "Sie wissen noch nicht welche Behandlung für Sie die richtige ist, oder haben Fragen zu bestimmten Methoden? Ich berate Sie gerne individuell und umfassend. Häufig gibt es verschiedene Ansätze und Möglichkeiten.",
+      "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische und regenerative Medizin und Gründerin von EL Aesthetics.",
+      "Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich stets auf dem neuesten Stand der regenerativen Medizin. ",
+      "Ich bin Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT) und arbeite ausschließlich mit hochwertigen, und CE-zertifizierten Präparaten.",
+      "In meiner Praxis nehme ich mir Zeit für Sie – für eine individuelle Betreuung in einer Atmosphäre, in der Sie sich rundum wohlfühlen können.",
+      "Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin."
+    ],
+    ctaText: "Jetzt Termin anfragen",
+    ctaHref: "/kontakt",
+    backgroundColor: "bg-[#FDF6F0]"
+  };
+
+export function ConsultationSection() {
     return (
         <section id="consultation" className="py-20 md:py-32">
             <div className="container mx-auto px-6 max-w-7xl">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     {/* Text Content */}
                     <div className="p-2 md:p-10 pt-10 text-left bg-background-primary flex flex-col justify-center h-full gap-6">
-                        <h2 className="text-2xl md:text-2xl sm:text-2xl md:text-4xl break-words md:text-5xl font-normal text-stone-900 uppercase tracking-[2px] leading-tight">
-                            {title}
-                        </h2>
+                        <p className="text-2xl md:text-2xl sm:text-2xl md:text-4xl break-words md:text-5xl font-normal text-stone-900 uppercase tracking-[2px] leading-tight">
+                            {consultationData.title}
+                        </p>
 
-                        {description.map((para, idx) => (
+                        {consultationData.description.map((para, idx) => (
                             <p
                                 key={idx}
                                 className="text-base sm:text-lg text-stone-600 font-light leading-relaxed max-w-prose mx-auto md:mx-0 hover:text-stone-900 transition-colors duration-300"
@@ -497,33 +526,35 @@ export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
                         ))}
 
                         <div className="mt-12">
-                            <a
-                                href={ctaHref}
+                            <Link
+                                href={consultationData.ctaHref}
                                 className="group relative inline-block w-full text-center font-medium px-8 py-4 text-white tracking-wide bg-black overflow-hidden transition-all duration-300 hover:shadow-lg"
                             >
                                 <span className="relative z-10 group-hover:translate-x-1 transition-transform duration-300 inline-flex items-center">
-                                    {ctaText}
+                                    {consultationData.ctaText}
                                     <ChevronRight className="ml-7 h-5 w-5 opacity-100 group-hover:opacity-100 transform translate-x-[-20px] group-hover:translate-x-0 transition-all duration-300" />
                                 </span>
                                 <div className="absolute inset-0 bg-stone-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 
                     {/* Image */}
-                    <div className={`relative w-full p-10 ${backgroundColor} transform transition-transform duration-300 hover:scale-[1.02]`}>
+                    <div className={`relative w-full p-10 ${consultationData.backgroundColor} transform transition-transform duration-300 hover:scale-[1.02]`}>
                         <div className="relative w-full max-h-[60vh] aspect-[3/4] overflow-hidden rounded-sm flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                            <img
+                            <Image
                                 src="/assets/tinified/IMG_7364.webp"
+                                width={200}
+                                height={400}
                                 alt="Ärztin Ola El-Armouche im Beratungsgespräch mit einer Patientin"
                                 className="w-full h-full object-cover object-center transform transition-transform duration-700 hover:scale-105"
                             />
                         </div>
                         {/* HARDCODED EEAT QUALIFICATIONS SECTION */}
                         <div className="mt-6 pt-6 border-t border-stone-300">
-                            <h3 className="text-sm font-medium text-stone-900 uppercase tracking-[2px] mb-4">
+                            <p className="text-sm font-medium text-stone-900 uppercase tracking-[2px] mb-4">
                                 Qualifikationen & Zertifizierungen
-                            </h3>
+                            </p>
                             
                             <div className="space-y-3">
                                 
@@ -577,6 +608,7 @@ export const ConsultationSection: React.FC<ConsultationSectionProps> = ({
         </section>
     );
 };
+
 export const TreatmentCareSection: React.FC<TreatmentCareSectionProps> = ({
     title,
     beforeTreatment,
@@ -645,7 +677,7 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
                     {faqs.map((faq, index) => (
                         <details key={index} className="pt-8 first:pt-0 group border-b border-stone-200 pb-4">
                             <summary className="font-light text-xl text-stone-900 cursor-pointer list-none flex justify-between items-center">
-                                <h3>{faq.question}</h3>
+                                {faq.question}
                                 <span className="text-stone-400 group-open:rotate-45 transition-transform">+</span>
                             </summary>
                             <p className="mt-6 text-stone-600 font-light leading-relaxed">
@@ -676,19 +708,19 @@ export const CTASection: React.FC<CTASectionProps> = ({
                     {subtitle}
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a
+                    <Link
                         href={primaryCTA.href}
                         className="inline-block uppercase border-1 border-secondary/80 text-secondary/80 px-10 py-4 tracking-wide hover:bg-stone-100 transition-colors"
                     >
                         {primaryCTA.text}
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         href={secondaryCTA.href}
                         className="inline-flex gap-2 bg-secondary text-primary px-10 py-4 tracking-wide border border-stone-700 hover:border-white transition-colors"
                     >
                         <Phone className='text-sm'/>
                         {secondaryCTA.text}
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>

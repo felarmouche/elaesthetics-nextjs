@@ -9,6 +9,7 @@ import {
   QuickInfoSection,
   QuickInfoSectionProps,
   ConsultationSection,
+  HubTeaserSection,
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -21,15 +22,14 @@ import {
   TreatmentCareSection,
   TreatmentsSection,
   TreatmentsSectionProps,
+  CTASection,
 } from '@/components/TreatmentPageComponents';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: 'Mesobotox / Microbotox (SkinBotox) in Bremen | EL Aesthetics',
   description:
-    'Sachliche Information zu Mesobotox (Microbotox / SkinBotox): Ablauf, mögliche Effekte, Sicherheit, Kombinationen und SkinBotox kosten (Richtwerte). Ärztliche Beratung erforderlich.',
-  keywords:
-    'mesobotox, microbotox, skinbotox, micro botox, mesobotox kosten, Mesobotox Erfahrungen, Microbotox Bremen, Hautbild verfeinern, Poren, Glanz, Talgregulation',
+    'Mesobotox in Bremen: Ablauf, Eignung und sehr feine Botulinumtoxin-Dosierungen für Hautqualität mit Hinweisen zu Wirkungseintritt, Wiederholungen und Risiken.',
   openGraph: {
     title: 'Mesobotox / Microbotox (SkinBotox) – Informationen & Kosten',
     description:
@@ -160,18 +160,7 @@ export default function MicrobotoxPage() {
     },
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ärztliche Beratung in Bremen',
-    description: [
-      'Wir klären Nutzen, mögliche Risiken und Alternativen (z.\u00A0B. topische Präparate, Laser/Peel, Microneedling). Die Entscheidung für oder gegen Mesobotox wird individuell getroffen.',
-      'Durchführung nach aktuellen Standards; Kontraindikationen (z.\u00A0B. neuromuskuläre Erkrankungen, relevante Allergien) werden besprochen.',
-    ],
-    ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontakt',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt: 'Ärztliche Beratung zu Mesobotox / Microbotox',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Anwendungen mit Botulinumtoxin',
@@ -295,9 +284,15 @@ export default function MicrobotoxPage() {
       <QuickInfoSection {...benefitsData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Alle Botulinumtoxin‑Behandlungen im Überblick"
+        subtitle="Übersicht, Abläufe, Indikationen & Hinweise."
+        href="/botulinumtoxin"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
+      <CTASection {...ctaData}  />
     </div>
   );
 }

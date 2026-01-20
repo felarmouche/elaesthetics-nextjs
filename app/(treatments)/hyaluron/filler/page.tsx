@@ -4,7 +4,9 @@ import {
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
-  
+  HubTeaserSection,
+  TableOfContents,
+  TOCItem,
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -12,8 +14,6 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  
-  
   ProcessSection,
   ProcessSectionProps,
   QuickInfoSection,
@@ -21,23 +21,20 @@ import {
   TreatmentCareSection,
   TreatmentCareSectionProps,
   TreatmentsSectionProps,
-  TreatmentsSection
+  TreatmentsSection,
+  CTASection
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
-  title:
-    'Hyaluron Filler Bremen | Lippen aufspritzen & Faltenunterspritzung | EL Aesthetics',
+  title: 'Hyaluron Filler Bremen – Lippen & Falten | Termin buchen',
   description:
-    'Hyaluron Filler in Bremen: Lippen natürlich aufspritzen, Faltenunterspritzung & Konturierung. Ärztliche Expertise, transparente Kosten nach GOÄ. Jetzt Termin sichern!',
+    'Hyaluron-Filler in Bremen: Lippen, Konturen & Falten natürlich korrigieren – Buchen sie jetzt ihren individuellen Beratungstermin!',
   keywords:
     'Hyaluron Filler Bremen, Lippen aufspritzen Bremen, Lippenunterspritzung Bremen, Faltenunterspritzung Bremen, Tränenrinne Bremen, Jawline Bremen, Kinnaufbau Bremen, Nasolabialfalte Bremen, Marionettenfalten Bremen, Hylase Bremen',
   openGraph: {
-    title:
-      'Hyaluron Filler & Lippen in Bremen | EL Aesthetics',
+    title: 'Hyaluron Filler & Lippen in Bremen | EL Aesthetics',
     description:
-      'Ärztliche Hyaluron-Filler-Behandlungen in Bremen: Lippen, Falten & Konturen – natürlich und präzise.',
+      'Ärztliche Hyaluron-Filler-Behandlungen in Bremen: Lippen, Falten & Konturen – natürlich und präzise. Jetzt Termin buchen.',
     type: 'website',
     locale: 'de_DE',
     images: [
@@ -53,16 +50,16 @@ export default function HyaluronFillerBremenPage() {
   const heroData: HeroSectionProps = {
     title: 'Hyaluron Filler in Bremen',
     subtitle:
-      'Lippen aufspritzen, Falten sanft glätten & Konturen präzisieren – individuell, natürlich, ärztlich.',
+      'Suchen Sie nach einer professionellen Praxis für Hyaluronsäure Filler?\nDann sind Sie bei El Aesthetics genau richtig. Lippen aufspritzen, Falten glätten & Konturen präzisieren ',
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',
     imageAlt:
       'Hyaluron-Filler-Behandlung in Bremen – Lippen, Falten & Konturen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
+    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Hyaluron-Filler: Wirkprinzip & Vorteile',
+    title: 'Was sind Hyaluron Filler? Wirkweise & Funktion',
     content: [
       'Hyaluronsäure bindet Wasser, stellt Volumen wieder her und verbessert Konturen. Damit lassen sich Falten weichzeichnen, Lippen formen und das Gesichtsprofil harmonisieren – mit sofort sichtbaren, natürlich wirkenden Ergebnissen.',
       'Für Volumen und Kontur verwenden wir je nach Region unterschiedliche Filler-Kohäsionen und -Viskositäten. Ziel ist stets ein dezentes, typgerechtes Finish, das in Ruhe und Mimik harmonisch wirkt.',
@@ -172,55 +169,7 @@ export default function HyaluronFillerBremenPage() {
     },
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'Lea S.',
-      rating: 5,
-      text:
-        'Sehr natürliches Lippenvolumen – exakt so dezent, wie ich es wollte. Ablauf top erklärt, null „Duckface“.',
-      date: '2025-05-22',
-    },
-    {
-      id: 2,
-      name: 'Johannes K.',
-      rating: 5,
-      text:
-        'Nasolabialfalten deutlich weicher, Gesicht wirkt frischer. Beratung ehrlich und unaufgeregt.',
-      date: '2025-03-14',
-    },
-    {
-      id: 3,
-      name: 'Merve T.',
-      rating: 5,
-      text:
-        'Kinn/Jawline dezent definiert, viel harmonischer im Profil. Ergebnis wirkt wie „ich – ausgeschlafen“.',
-      date: '2025-01-30',
-    },
-    {
-      id: 4,
-      name: 'Anna D.',
-      rating: 5,
-      text:
-        'Sehr präzise Technik, keine blauen Flecken. Nachkontrolle inklusive – fühle mich super betreut.',
-      date: '2024-11-17',
-    },
-  ];
-
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ihre Expertin für Hyaluron-Filler in Bremen',
-    description: [
-      'Als Ärztin für ästhetische Medizin setze ich Filler gezielt für harmonische, natürliche Ergebnisse ein – ohne künstlichen Look.',
-      'Wir besprechen Eignung, Materialmenge, realistische Ziele, Haltbarkeit sowie einen transparenten Kostenplan gemäß GOÄ.',
-      'Verantwortung & Sicherheit: klare Aufklärung, sterile Arbeitsweise und ein definiertes Vorgehen für seltene Komplikationen (inkl. Hylase).',
-    ],
-    ctaText: 'Jetzt Beratungstermin buchen',
-    ctaHref: '/kontakt',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt:
-      'Ärztin Ola El-Armouche – Hyaluron-Filler in Bremen',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen',
@@ -291,35 +240,36 @@ export default function HyaluronFillerBremenPage() {
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
-  const locationData: LocationSectionProps = {
-    title: 'Hyaluron-Filler in Bremen: EL Aesthetics',
-    description:
-      'Zentral gelegen, gut erreichbar aus Horn-Lehe, Oberneuland, Schwachhausen & Umgebung.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
-  };
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Behandlungsareale' },
+    { id: 'quickInfos', label: 'Auf einen Blick' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'Weitere Behandlungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+    { id: 'cta', label: 'Termin' },
+  ];
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen unserer Patienten mit Hyaluron-Fillern"
-        subtitle="Echte, natürliche Ergebnisse – individuell geplant, präzise umgesetzt."
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Mehr zu Hyaluron‑Behandlungen"
+        subtitle="Übersicht der Anwendungen, Abläufe & Hinweise."
+        href="/hyaluron"
       />
-      <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-
+      <CTASection {...ctaData} />
     </div>
   );
 }

@@ -1,10 +1,13 @@
 import type { Metadata } from 'next';
+import {PRICES} from '@/lib/constants'
 import {
   AreasSection,
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
-  
+  HubTeaserSection,
+  TableOfContents,
+  TOCItem,
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -12,8 +15,6 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  
-  
   ProcessSection,
   ProcessSectionProps,
   QuickInfoSection,
@@ -23,16 +24,14 @@ import {
   TreatmentsSectionProps,
   TreatmentsSection
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
-  title: 'Hyaluronidase Bremen | Hylase Behandlung | Hyaluron auflösen & korrigieren | EL Aesthetics',
-  description: 'Hyaluronidase (Hylase) in Bremen ✓ Hyaluron-Filler sicher auflösen ✓ Korrektur von Lippen, Knötchen & Granulomen ✓ Sofortige Wirkung ✓ Notfall-Medikament bei Komplikationen ✓ Jetzt Beratung!',
-  keywords: 'Hyaluronidase Bremen, Hylase Bremen, Hyaluron auflösen Bremen, Hyaluron Korrektur Bremen, Lippen korrigieren Bremen, Filler auflösen Bremen, Hyaluronsäure entfernen Bremen, Knötchen Lippen auflösen, Granulome behandeln Bremen, Hyaluron Komplikation Bremen, Tyndall-Effekt behandeln, Filler Korrektur Bremen, Lippenkorrektur Bremen, Hyaluron entfernen Bremen, Hyaluronidase Notfall Bremen',
+  title: 'Hylase Behandlung Bremen | Hyaluron auflösen',
+  description: 'Hylase Behandlung in Bremen: Hyaluron sicher auflösen bei Lippen, Tränenrinne, Knötchen & mehr ➤ Jetzt Termin buchen',
+  keywords: 'Hylase Behandlung Bremen, Hylase Kosten Bremen, Hylase Lippen auflösen Bremen, Hyaluron auflösen Bremen, Hylase Erfahrung, Hyaluronidase Bremen, Hylase Nebenwirkungen, Lippen auflösen Hylase, Hylase Wirkung, Hyaluron entfernen Kosten Bremen, Hylase Tränenrinne, Hylase Nase, Hylase Augenringe',
   openGraph: {
-    title: 'Hyaluronidase Bremen – Hylase zum Auflösen von Hyaluron | EL Aesthetics',
-    description: 'Sichere Korrektur von Hyaluron-Fillern: Knötchen, Asymmetrien & Überkorrekturen gezielt auflösen – schnelle Wirkung mit Hyaluronidase (Hylase).',
+    title: 'Hylase Behandlung Bremen – Hyaluron auflösen | EL Aesthetics',
+    description: 'Sichere Hylase-Behandlung in Bremen: Hyaluron-Filler auflösen bei Lippen, Knötchen & Asymmetrien – schnelle Wirkung, erfahrene Ärztin.',
     type: 'website',
     locale: 'de_DE',
     images: [
@@ -40,88 +39,88 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hyaluronidase',
+    canonical: 'https://elaesthetics-bremen.de/hyaluron/hylase',
   },
 };
 
 export default function HyaluronidaseHylasePage() {
   const heroData: HeroSectionProps = {
-    title: 'Hyaluronidase (Hylase) in Bremen',
-    subtitle: 'Sichere Korrektur & Auflösung von Hyaluron-Fillern: Knötchen, Asymmetrien, Überkorrekturen und Granulome gezielt behandeln – schnelle Wirkung, minimal-invasiv.',
+    title: 'Hylase Behandlung in Bremen',
+    subtitle: 'Hyaluron mit Hylase (Hyaluronidase) auflösen: Lippen, Knötchen & Asymmetrien korrigieren. Minimal-invasiv. Jetzt Termin zur Hylase-Behandlung buchen.',
     imageSrc: '/assets/hyaluron/hyaluron-hylase_hero.webp',
-    imageAlt: 'Hyaluronidase Hylase Behandlung zur Hyaluron-Korrektur bei EL Aesthetics in Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
+    imageAlt: 'Hylase Behandlung Bremen - Hyaluron auflösen bei EL Aesthetics',
+    primaryCTA: { text: 'Hylase-Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Was ist Hyaluronidase (Hylase)?',
+    title: 'Was ist Hylase?',
     content: [
-      'Hyaluronidase, häufig als Hylase bezeichnet, ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen. In der ästhetischen Medizin wird Hyaluronidase zur Korrektur unerwünschter Ergebnisse nach Hyaluron-Unterspritzungen eingesetzt.',
-      'Die Behandlung mit Hylase ermöglicht die schnelle und effektive Auflösung von Hyaluronsäure-Fillern bei Überkorrekturen, Asymmetrien, Knötchen, Granulomen oder wenn das Ergebnis nicht den Erwartungen entspricht. Das Enzym spaltet die Hyaluronsäure-Moleküle, wodurch der Körper diese natürlich verstoffwechseln und ausscheiden kann.',
-      'Besonders wichtig: Hyaluronidase dient auch als unverzichtbares Notfall-Medikament bei schwerwiegenden Komplikationen wie Gefäßverschlüssen, die bei unsachgemäßen Hyaluron-Injektionen auftreten können. Jede seriöse Praxis, die Hyaluron-Unterspritzungen durchführt, sollte Hyaluronidase stets griffbereit haben.',
-      'Die Wirkung von Hylase setzt unmittelbar nach der Injektion ein. Abhängig von der Menge des aufzulösenden Hyalurons und der Dosierung der Hyaluronidase können erste Veränderungen sofort bis innerhalb weniger Stunden sichtbar werden. Das vollständige Auflösen erfolgt in der Regel innerhalb von 24-48 Stunden.',
+      'Hylase (Hyaluronidase) ist ein Enzym zur gezielten Auflösung von Hyaluronsäure-Fillern. Die Hylase-Behandlung ermöglicht die schnelle Korrektur unerwünschter Ergebnisse nach Hyaluron-Unterspritzungen – bei Überkorrekturen, Asymmetrien oder Knötchen.',
+      'Die Hylase-Wirkung setzt unmittelbar nach der Injektion ein. Abhängig von der Menge des aufzulösenden Hyalurons sind erste Veränderungen sofort bis innerhalb weniger Stunden sichtbar. Das vollständige Auflösen erfolgt in der Regel innerhalb von 24-48 Stunden.',
+      'Besonders wichtig: Hylase dient auch als unverzichtbares Notfall-Medikament bei Gefäßverschlüssen. Jede seriöse Praxis, die Hyaluron-Unterspritzungen durchführt, sollte Hylase stets griffbereit haben.',
+      'In meiner Praxis EL Aesthetics in Bremen biete ich die Hylase-Behandlung zur Korrektur von Hyaluron-Fillern an.',
     ],
   };
 
   const areasData: AreasSectionProps = {
-    title: 'Behandlungsbereiche & Anwendungsfälle für Hyaluronidase',
+    title: 'Hyaluron auflösen: Anwendungsbereiche in Bremen',
     categories: [
       {
-        category: 'Häufigste Korrektur-Bereiche',
+        category: 'Häufigste Bereiche für Hyaluronidase',
         items: [
           {
-            title: 'Lippen (Lippenkorrektur)',
-            description: 'Auflösung von Überkorrekturen, Asymmetrien, Knötchen und Granulomen in den Lippen',
+            title: 'Hylase Lippen auflösen',
+            description: 'Hylase-Behandlung bei Lippen: Auflösung von Überkorrekturen, Asymmetrien, Knötchen und zu viel Hyaluron in den Lippen. Häufigster Anwendungsbereich für Hylase mit schneller Wirkung.',
           },
           {
-            title: 'Unterlider & Tränenfurchen',
-            description: 'Korrektur von Tyndall-Effekt, Schwellungen und verrutschen Fillern',
+            title: 'Hylase Tränenrinne / Augenringe',
+            description: 'Hylase bei Augenringen: Korrektur von Tyndall-Effekt, Schwellungen und verrutschten Fillern im Unterlidbereich mit gezielter Hylase-Behandlung.',
           },
           {
-            title: 'Nasolabialfalten',
-            description: 'Auflösung von Wülsten, Unebenheiten oder Überkorrekturen',
+            title: 'Hylase Nase',
+            description: 'Hylase-Behandlung an der Nase: Auflösung unerwünschter Wülste oder Überkorrekturen nach Nasenkorrektur mit Hyaluron.',
           },
           {
-            title: 'Wangen',
-            description: 'Korrektur von übermäßigem Volumen oder Asymmetrien',
+            title: 'Nasolabialfalten mit Hylase korrigieren',
+            description: 'Hylase-Behandlung bei Nasolabialfalten: Auflösung von Wülsten, Unebenheiten oder übermäßigem Volumen',
           },
           {
-            title: 'Kinn & Kiefer',
-            description: 'Auflösung unnatürlicher Konturen oder Überkorrekturen',
+            title: 'Wangen & Kinn',
+            description: 'Hylase-Behandlung für Wangen und Kinn: Korrektur von übermäßigem Volumen oder Asymmetrien nach Hyaluron-Unterspritzung',
           },
           {
             title: 'Stirn',
-            description: 'Entfernung unerwünschter Filler-Ansammlungen',
+            description: 'Hylase-Behandlung an der Stirn: Entfernung unerwünschter Filler-Ansammlungen',
           },
         ],
       },
       {
-        category: 'Spezielle Indikationen',
+        category: 'Spezielle Indikationen für Hylase',
         items: [
           {
-            title: 'Knötchen & Granulome',
-            description: 'Auflösung tastbarer oder sichtbarer Verhärtungen nach Filler-Behandlungen',
+            title: 'Knötchen mit Hylase auflösen',
+            description: 'Hylase-Behandlung bei Knötchen: Auflösung tastbarer oder sichtbarer Verhärtungen nach Hyaluron-Fillern – schnelle Wirkung innerhalb von 24 Stunden.',
           },
           {
-            title: 'Tyndall-Effekt',
-            description: 'Beseitigung bläulicher Verfärbungen durch zu oberflächlich injiziertes Hyaluron',
+            title: 'Hylase bei Nebenwirkungen',
+            description: 'Hylase-Behandlung bei Komplikationen: Korrektur von Tyndall-Effekt, bläulichen Verfärbungen oder allergischen Reaktionen auf Hyaluron-Filler.',
           },
           {
-            title: 'Gefäßverschluss (Notfall)',
-            description: 'Sofortiges Auflösen bei arterieller Okklusion zur Vermeidung von Nekrosen',
+            title: 'Hylase bei Gefäßverschluss (Notfall)',
+            description: 'Sofortige Hylase-Behandlung bei arterieller Okklusion zur Vermeidung von Nekrosen – lebensrettende Notfallbehandlung',
           },
           {
-            title: 'Asymmetrien',
-            description: 'Angleichung ungleichmäßiger Filler-Verteilungen',
+            title: 'Asymmetrien korrigieren',
+            description: 'Hylase-Behandlung zur Angleichung ungleichmäßiger Filler-Verteilungen und Korrektur von Asymmetrien',
           },
           {
             title: 'Migration von Fillern',
-            description: 'Auflösung von Hyaluron, das sich verschoben hat',
+            description: 'Hylase-Behandlung bei verschobenem Hyaluron: Auflösung von Fillern, die sich verlagert haben',
           },
           {
             title: 'Unzufriedenheit mit Ergebnis',
-            description: 'Rückgängig machen unerwünschter ästhetischer Veränderungen',
+            description: 'Hylase-Behandlung für Neustart: Rückgängig machen unerwünschter ästhetischer Veränderungen nach Hyaluron-Unterspritzung',
           },
         ],
       },
@@ -129,11 +128,11 @@ export default function HyaluronidaseHylasePage() {
   };
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: 'Hyaluronidase (Hylase) auf einen Blick',
+    title: 'Hylase-Behandlung auf einen Blick',
     benefits: [
       {
-        title: 'Preis',
-        description: 'ab 180€ pro Behandlung*',
+        title: 'Kosten',
+        description: `ab ${PRICES.botulinum.masseter}\u20AC* pro Behandlung*`,
         iconUrl: '/assets/icons/EUR.svg',
       },
       {
@@ -142,7 +141,7 @@ export default function HyaluronidaseHylasePage() {
         iconUrl: '/assets/icons/TIME.svg',
       },
       {
-        title: 'Wirkeintritt',
+        title: 'Wirkung',
         description: 'sofort bis wenige Stunden',
         iconUrl: '/assets/icons/CAL.svg',
       },
@@ -162,60 +161,71 @@ export default function HyaluronidaseHylasePage() {
         iconUrl: '/assets/icons/wiederholung.svg',
       },
     ],
-    note: '*Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).',
+    note: '*Die Kosten für die Hylase-Behandlung richten sich nach dem Behandlungsumfang und der Dosierung. Individuelle Abrechnung nach GOÄ.',
   };
 
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Behandlungsbereiche' },
+    { id: 'quickInfos', label: 'Kosten & Infos' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'Weitere Behandlungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
+
   const processData: ProcessSectionProps = {
-    title: 'Ablauf der Hyaluronidase-Behandlung in Bremen',
+    title: 'Ablauf der Hyaluronidase-Behandlung in Bremen: Was Sie erwartet',
     steps: [
       {
         number: '01',
-        title: 'Beratung & Analyse',
-        description: 'Im ausführlichen Beratungsgespräch analysiere ich die vorliegende Situation: Welcher Bereich soll korrigiert werden? Wie viel Hyaluron wurde injiziert? Wie lange liegt die ursprüngliche Behandlung zurück? Gibt es Komplikationen oder akute Notfälle? Basierend auf dieser Analyse bestimme ich die optimale Dosierung der Hyaluronidase. Wichtig ist auch zu klären, ob möglicherweise permanente Filler verwendet wurden, da diese nicht mit Hyaluronidase aufgelöst werden können.',
+        title: 'Beratung ',
+        description: 'Im Beratungsgespräch analysiere ich: Welcher Bereich soll mit Hylase behandelt werden? Wie viel Hyaluron wurde injiziert? Wie sind Ihre Erfahrungen mit dem bisherigen Ergebnis? Basierend darauf bestimme ich die optimale Dosierung der Hylase. Wichtig: Permanente Filler können nicht mit Hylase aufgelöst werden.',
       },
       {
         number: '02',
-        title: 'Vorbereitung & Markierung',
-        description: 'Die zu behandelnden Areale werden sorgfältig desinfiziert und markiert. Die Hylase-Behandlung ist in der Regel gut verträglich und wenig schmerzhaft. Auf Wunsch kann eine Betäubungscreme aufgetragen werden, was den Komfort erhöht. Die Behandlung selbst ist deutlich schmerzärmer als die ursprüngliche Filler-Injektion.',
+        title: 'Vorbereitung der Hylase-Injektion',
+        description: 'Die zu behandelnden Areale werden sorgfältig desinfiziert und markiert. Die Behandlung ist in der Regel gut verträglich und wenig schmerzhaft. Auf Wunsch kann eine Betäubungscreme die Hylase-Injektion noch angenehmer machen.',
       },
       {
         number: '03',
-        title: 'Präzise Injektion der Hyaluronidase',
-        description: 'Die Hyaluronidase wird mit einer feinen Nadel gezielt in die Bereiche injiziert, in denen das Hyaluron aufgelöst werden soll. Je nach Befund erfolgen mehrere Injektionen im Behandlungsareal. Die Dosierung wird individuell angepasst: Bei kompletter Auflösung wird mehr Hyaluronidase eingesetzt, bei teilweiser Korrektur wird die Dosis reduziert. Die Behandlung dauert etwa 15-30 Minuten.',
+        title: 'Präzise Injektion',
+        description: 'Die Hylase wird mit feiner Nadel gezielt in die Bereiche injiziert, in denen das Hyaluron aufgelöst werden soll. Die Dosierung der Hylase wird individuell angepasst: Bei kompletter Auflösung mehr Hylase, bei teilweiser Korrektur reduzierte Dosis. Die Hylase-Behandlung dauert etwa 15-30 Minuten.',
       },
       {
         number: '04',
-        title: 'Massage & Nachbereitung',
-        description: 'Nach den Injektionen erfolgt eine sanfte Massage, um die Hyaluronidase optimal zu verteilen. Sie erhalten detaillierte Nachsorgeanweisungen und Informationen darüber, wann eine erneute Hyaluron-Behandlung möglich ist (in der Regel nach 2-6 Wochen Wartezeit). Bei Bedarf vereinbaren wir einen Kontrolltermin.',
+        title: 'Nach der Behandlung',
+        description: 'Nach der Hylase-Injektion erfolgt eine sanfte Massage zur optimalen Verteilung. Sie erhalten detaillierte Nachsorgeanweisungen und Informationen, wann nach Hylase wieder Hyaluron gespritzt werden kann (in der Regel 2-6 Wochen Wartezeit nach Hylase-Behandlung). Bei Bedarf vereinbaren wir einen Kontrolltermin.',
       },
       {
         number: '05',
         title: 'Wirkung & Ergebnis',
-        description: 'Die Wirkung der Hyaluronidase beginnt unmittelbar. Innerhalb der ersten Stunden werden Sie bereits Veränderungen bemerken. Die vollständige Auflösung des Hyalurons erfolgt innerhalb von 24-48 Stunden. In den meisten Fällen reicht eine einzige Behandlung aus. Bei sehr großen Mengen Hyaluron kann eine zweite Sitzung nach 1-2 Wochen notwendig sein.',
+        description: 'Die Wirkung beginnt unmittelbar. Innerhalb der ersten Stunden nach der Hylase-Behandlung werden Sie bereits Veränderungen bemerken. Die vollständige Auflösung durch Hylase erfolgt innerhalb von 24-48 Stunden. In den meisten Fällen reicht eine Hylase-Behandlung aus. Bei sehr großen Mengen Hyaluron kann eine zweite Hylase-Sitzung nach 1-2 Wochen notwendig sein.',
       },
     ],
   };
 
   const treatmentCareData: TreatmentCareSectionProps = {
-    title: 'Nachsorge nach der Hyaluronidase-Behandlung',
+    title: 'Vor- und Nachsorge',
     beforeTreatment: {
       title: 'Vor der Behandlung',
       instructions: [
         {
           title: 'Medikamente',
-          description: 'Keine blutverdünnenden Medikamente einnehmen (nach Rücksprache mit Ihrem Arzt).',
+          description: 'Keine blutverdünnenden Medikamente vor der Hylase-Behandlung einnehmen (nach Rücksprache mit Ihrem Arzt).',
         },
         {
           title: 'Allergien abklären',
-          description: 'Informieren Sie mich über bekannte Allergien, insbesondere Wespen- oder Bienenstich-Allergien.',
+          description: 'Informieren Sie mich über bekannte Allergien vor der Hylase-Behandlung, insbesondere Wespen- oder Bienenstich-Allergien.',
         },
         {
           title: 'Gesundheitszustand',
-          description: 'Gesund und ohne akute Infektionen zur Behandlung erscheinen.',
+          description: 'Gesund und ohne akute Infektionen zur Hylase-Behandlung erscheinen.',
         },
         {
           title: 'Informationen bereithalten',
-          description: 'Wenn möglich, Informationen über die ursprüngliche Filler-Behandlung mitbringen (Produkt, Menge, Zeitpunkt).',
+          description: 'Wenn möglich, Informationen über die ursprüngliche Filler-Behandlung mitbringen (Produkt, Menge, Zeitpunkt) – wichtig für die Dosierung der Hylase.',
         },
       ],
     },
@@ -224,204 +234,156 @@ export default function HyaluronidaseHylasePage() {
       instructions: [
         {
           title: 'Kühlung',
-          description: 'Kühlen Sie die behandelten Bereiche in den ersten 24 Stunden regelmäßig mit Kühlpacks.',
+          description: 'Kühlen Sie die behandelten Bereiche nach der Hylase-Behandlung in den ersten 24 Stunden regelmäßig mit Kühlpacks.',
         },
         {
-          title: 'Schwellung beobachten',
-          description: 'Eine vorübergehende verstärkte Schwellung in den ersten Stunden ist normal und klingt schnell ab.',
+          title: 'Wirkung beobachten',
+          description: 'Eine vorübergehende verstärkte Schwellung in den ersten Stunden nach Hylase ist normal und klingt schnell ab, wenn die Hylase-Wirkung einsetzt.',
         },
         {
           title: 'Massieren vermeiden',
-          description: 'Vermeiden Sie in den ersten 24 Stunden übermäßiges Berühren oder Massieren der Behandlungsareale.',
+          description: 'Vermeiden Sie in den ersten 24 Stunden nach der Hylase-Behandlung übermäßiges Berühren oder Massieren der Behandlungsareale.',
         },
         {
-          title: 'Sport & Sauna',
-          description: 'Verzichten Sie 24-48 Stunden auf intensive körperliche Aktivität, Sauna und Solarium.',
+          title: 'Sport & Sauna nach Hylase',
+          description: 'Verzichten Sie 24-48 Stunden nach der Behandlung auf intensive körperliche Aktivität, Sauna und Solarium.',
         },
         {
-          title: 'Make-up',
-          description: 'Verzichten Sie 6-12 Stunden auf Make-up im Behandlungsbereich.',
+          title: 'Make-up nach der Auflösung von Hyaluron',
+          description: 'Verzichten Sie 6-12 Stunden nach der Behandlung auf Make-up im Behandlungsbereich.',
         },
         {
-          title: 'Wartezeit für neue Filler',
-          description: 'Warten Sie mindestens 2 Wochen (besser 4-6 Wochen) vor einer neuen Hyaluron-Behandlung im selben Bereich.',
+          title: 'Nach Hylase wieder Hyaluron',
+          description: 'Wartezeit nach Hylase: Warten Sie mindestens 2 Wochen (besser 4-6 Wochen) vor einer neuen Hyaluron-Behandlung im selben Bereich. Diese Karenzzeit nach Hylase ist wichtig für optimale Ergebnisse.',
         },
         {
           title: 'Kontrolle',
-          description: 'Bei Unsicherheiten oder Komplikationen kontaktieren Sie die Praxis umgehend.',
+          description: 'Bei Unsicherheiten über die Hylase-Wirkung oder Komplikationen kontaktieren Sie die Praxis umgehend.',
         },
         {
-          title: 'Gewebeauflockerung',
-          description: 'Das umliegende Gewebe kann durch die Hylase aufgelockert werden – dies normalisiert sich innerhalb weniger Wochen.',
+          title: 'Gewebeauflockerung nach Hylase',
+          description: 'Das umliegende Gewebe kann durch die Hylase aufgelockert werden – dies normalisiert sich innerhalb weniger Wochen nach der Hylase-Behandlung.',
         },
       ],
     },
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'Jennifer S.',
-      rating: 5,
-      text: 'Meine Lippen waren nach einer Behandlung bei einem anderen Arzt völlig asymmetrisch. Frau El-Armouche hat mit Hylase die Überkorrekturen perfekt aufgelöst. Jetzt kann ich sie neu und natürlich aufspritzen lassen!',
-      date: '2024-09-18',
-    },
-    {
-      id: 2,
-      name: 'Markus L.',
-      rating: 5,
-      text: 'Ich hatte Knötchen in den Nasolabialfalten, die mich sehr gestört haben. Die Hyaluronidase-Behandlung war schnell und schmerzfrei – am nächsten Tag waren die Knötchen komplett verschwunden!',
-      date: '2024-08-30',
-    },
-    {
-      id: 3,
-      name: 'Sandra K.',
-      rating: 5,
-      text: 'Hatte einen Tyndall-Effekt unter den Augen (bläuliche Verfärbung). Mit Hylase wurde das Hyaluron aufgelöst und die Verfärbung ist weg. Super Ergebnis!',
-      date: '2024-07-25',
-    },
-    {
-      id: 4,
-      name: 'Lisa M.',
-      rating: 5,
-      text: 'Meine Lippen waren nach Jahren mehrfach überspritzt und sahen unnatürlich aus. Die Auflösung mit Hyaluronidase war die beste Entscheidung – jetzt kann ich neu starten mit natürlichem Ergebnis!',
-      date: '2024-06-14',
-    },
-  ];
-
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ihre Expertin für Hyaluronidase-Behandlung in Bremen',
-    description: [
-      'Nicht jede Hyaluron-Behandlung verläuft wie gewünscht. Überkorrekturen, Asymmetrien, Knötchen oder verrutschte Filler können zu erheblichem Leidensdruck führen. Als spezialisierte Ärztin für ästhetische Medizin biete ich Ihnen mit Hyaluronidase (Hylase) eine sichere und schnelle Lösung zur Korrektur unerwünschter Hyaluron-Ergebnisse.',
-      'In meiner Praxis EL Aesthetics in Bremen analysiere ich Ihre individuelle Situation gründlich: Welcher Bereich muss korrigiert werden? Wie viel Hyaluron sollte aufgelöst werden – vollständig oder nur teilweise? Welche Dosierung ist optimal? Die präzise Anwendung von Hyaluronidase erfordert Erfahrung und Fingerspitzengefühl, um ein optimales Ergebnis zu erzielen.',
-      'Wichtig ist die vorsichtige Dosierung der Hyaluronidase: Das Enzym macht keinen Unterschied zwischen injiziertem und körpereigenem Hyaluron. Eine zu hohe Dosierung könnte auch natürliche Hyaluronsäure abbauen und unschöne Dellen verursachen. Durch meine langjährige Erfahrung stelle ich sicher, dass nur die gewünschte Menge Hyaluron aufgelöst wird.',
-      'Hyaluronidase ist auch ein unverzichtbares Notfall-Medikament bei schwerwiegenden Komplikationen wie Gefäßverschlüssen. In meiner Praxis ist Hylase jederzeit verfügbar – für Ihre Sicherheit bei jeder Hyaluron-Behandlung.',
-    ],
-    ctaText: 'Jetzt Beratungstermin buchen',
-    ctaHref: '/kontakt',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt: 'Ärztin Ola El-Armouche – Expertin für Hyaluronidase-Behandlung in Bremen',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: 'Weitere Behandlungen mit Hyaluronsäure',
+    title: 'Weitere Behandlungen mit Hyaluronsäure in Bremen',
     treatments: [
       {
         imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
-        imageAlt: 'Hyaluron Filler Behandlung für natürliche Ergebnisse',
+        imageAlt: 'Hyaluron Filler Behandlung Bremen',
         title: 'Hyaluron Filler (Unterspritzung)',
-        description: 'Natürliche Faltenglättung und Volumenaufbau mit Hyaluronsäure – für harmonische Gesichtskonturen und frisches Aussehen.',
+        description: 'Natürliche Faltenglättung und Volumenaufbau mit Hyaluronsäure in Bremen – für harmonische Gesichtskonturen. Bei Bedarf mit Hylase korrigierbar.',
         treatmentUrl: '/hyaluron/filler',
       },
       {
         imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
-        imageAlt: 'Skinbooster zur Hydratation',
-        title: 'Skinbooster (eigene Unterseite)',
+        imageAlt: 'Skinbooster Behandlung Bremen',
+        title: 'Skinbooster',
         description:
-          'Für Hydratation & Hautqualität. Details auf der Skinbooster-Seite.',
+          'Intensive Hauthydratation mit Hyaluronsäure in Bremen. Für strahlende Haut und verbesserte Hautqualität.',
         treatmentUrl: '/hyaluron/skinbooster',
       },
       {
         imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
+        imageAlt: "Profhilo Behandlung Bremen",
         title: "Hyaluron-Remodellierung (BAP-Technik)",
-        description: "Remodellierung – auch Bioremodulierung genannt – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint. Im Gegensatz zu Volumenbehandlungen steht nicht die Formung im Vordergrund, sondern die Qualität des Gewebes.",
+        description: "Bioremodulierung mit Hyaluronsäure in Bremen: Gewebestimulierende Behandlung für mehr Elastizität und feinere Linien – ohne Volumenaufbau.",
         treatmentUrl: "/hyaluron/profhilo"
       },
     ],
   };
 
   const faqData: FAQSectionProps = {
-    title: 'Häufige Fragen zur Hyaluronidase-Behandlung',
+    title: 'Häufige Fragen zur Hylase-Behandlung',
     faqs: [
       {
-        question: 'Wie funktioniert Hyaluronidase genau?',
-        answer: 'Hyaluronidase ist ein natürlich vorkommendes Enzym, das Hyaluronsäure-Moleküle spaltet und abbaut. Nach der Injektion in das Gewebe beginnt die Hyaluronidase sofort, die Hyaluronsäure aufzulösen – sowohl injizierte Filler als auch körpereigenes Hyaluron. Die aufgelösten Hyaluronsäure-Fragmente werden dann vom Körper natürlich über das Lymphsystem abtransportiert und ausgeschieden. Die Wirkung ist sehr schnell: Erste Veränderungen sind oft bereits nach wenigen Minuten bis Stunden sichtbar, die vollständige Auflösung erfolgt innerhalb von 24-48 Stunden.',
+        question: 'Wie funktioniert die Hylase-Behandlung genau?',
+        answer: 'Hylase (Hyaluronidase) ist ein Enzym, das Hyaluronsäure-Moleküle spaltet und abbaut. Nach der Hylase-Injektion beginnt das Enzym sofort, die Hyaluronsäure aufzulösen. Die Hylase-Wirkung ist sehr schnell: Erste Veränderungen sind oft bereits nach wenigen Minuten bis Stunden sichtbar. Die vollständige Auflösung durch Hylase erfolgt innerhalb von 24-48 Stunden. Die aufgelösten Hyaluronsäure-Fragmente werden vom Körper natürlich über das Lymphsystem abtransportiert.',
       },
       {
-        question: 'Warum muss Hyaluronidase vorsichtig dosiert werden?',
-        answer: 'Hyaluronidase macht keinen Unterschied zwischen künstlich injiziertem Hyaluron (Filler) und körpereigenem Hyaluron, das natürlich im Gewebe vorkommt. Eine zu hohe Dosierung könnte daher auch die natürliche Hyaluronsäure in der Haut abbauen. Dies kann vorübergehend zu unschönen Dellen oder Vertiefungen führen. Der Körper gleicht dies normalerweise innerhalb weniger Wochen durch Neubildung von Hyaluronsäure wieder aus, dennoch sollte die Dosierung präzise erfolgen. Aus diesem Grund ist Erfahrung und Fingerspitzengefühl bei der Hylase-Behandlung besonders wichtig.',
+        question: 'Warum muss Hylase vorsichtig dosiert werden?',
+        answer: 'Hylase macht keinen Unterschied zwischen künstlich injiziertem Hyaluron (Filler) und körpereigenem Hyaluron. Eine zu hohe Hylase-Dosierung könnte auch die natürliche Hyaluronsäure in der Haut abbauen. Dies kann vorübergehend zu Dellen führen. Der Körper gleicht dies normalerweise innerhalb weniger Wochen aus, dennoch sollte die Hylase-Dosierung präzise erfolgen. Aus diesem Grund ist Erfahrung mit Hylase besonders wichtig.',
       },
       {
-        question: 'In welchen Fällen wird Hyaluronidase eingesetzt?',
-        answer: 'Hyaluronidase kommt in verschiedenen Situationen zum Einsatz: 1) Ästhetische Korrekturen: Bei Überkorrekturen, Asymmetrien, unnatürlich wirkenden Ergebnissen, sichtbaren Wülsten oder Schwellungen. 2) Komplikationen: Bei Knötchen, Granulomen, Tyndall-Effekt (bläuliche Verfärbungen), Migration von Fillern. 3) Notfälle: Bei arteriellen Gefäßverschlüssen, die zu Nekrosen (Gewebezerstörung) führen können – hier ist sofortiges Handeln lebensnotwendig. 4) Patientenwunsch: Wenn der Patient mit dem Ergebnis unzufrieden ist und einen Neustart möchte.',
+        question: 'In welchen Fällen wird Hylase eingesetzt?',
+        answer: 'Hylase wird eingesetzt bei: 1) Ästhetischen Korrekturen: Überkorrekturen, Asymmetrien, unnatürliche Ergebnisse, sichtbare Wülste. 2) Komplikationen: Knötchen, Granulome, Tyndall-Effekt (bläuliche Verfärbungen), Migration von Fillern. 3) Notfälle: Arterielle Gefäßverschlüsse – hier ist sofortige Hylase-Behandlung lebensrettend. 4) Patientenwunsch: Bei Unzufriedenheit mit dem Ergebnis für einen Neustart. Die Hylase-Behandlung ist in all diesen Fällen eine sichere Lösung.',
       },
       {
         question: 'Wie schnell wirkt Hylase?',
-        answer: 'Die Wirkung von Hyaluronidase setzt sehr schnell ein. Die in der ästhetischen Medizin verwendete Hyaluronidase ist deutlich höher dosiert als das körpereigene Enzym. Erste Veränderungen können unmittelbar bis innerhalb weniger Stunden beobachtet werden. Das vollständige Auflösen der Schwellungen, Wülste oder Knötchen erfolgt in der Regel innerhalb von 24-48 Stunden. Die Geschwindigkeit hängt von der Menge des aufzulösenden Hyalurons und der Dosierung der Hyaluronidase ab.',
+        answer: 'Die Hylase-Wirkung setzt sehr schnell ein. Erste Veränderungen können unmittelbar bis innerhalb weniger Stunden nach der Hylase-Behandlung beobachtet werden. Das vollständige Auflösen durch Hylase erfolgt in der Regel innerhalb von 24-48 Stunden. Die Geschwindigkeit der Hylase-Wirkung hängt von der Menge des aufzulösenden Hyalurons und der Hylase-Dosierung ab.',
       },
       {
-        question: 'Ist die Behandlung schmerzhaft?',
-        answer: 'Die Hyaluronidase-Behandlung wird von den meisten Patienten als deutlich weniger schmerzhaft empfunden als die ursprüngliche Filler-Injektion. Die Injektionen selbst verursachen nur ein kurzes Stechen. Viele Patienten berichten, dass die Behandlung angenehmer ist als erwartet. Auf Wunsch kann dennoch eine Betäubungscreme aufgetragen werden. Nach der Behandlung können die Einstichstellen vorübergehend leicht gerötet sein, dies legt sich aber schnell.',
+        question: 'Ist die Hylase-Behandlung schmerzhaft?',
+        answer: 'Die Hylase-Behandlung wird von den meisten Patienten als deutlich weniger schmerzhaft empfunden als die ursprüngliche Filler-Injektion. Die Hylase-Injektionen selbst verursachen nur ein kurzes Stechen. Viele Patienten mit Hylase-Erfahrung berichten, dass die Behandlung angenehmer ist als erwartet. Auf Wunsch kann vor der Hylase-Behandlung eine Betäubungscreme aufgetragen werden.',
       },
       {
-        question: 'Wie viele Behandlungen sind notwendig?',
-        answer: 'In den meisten Fällen reicht bereits eine einzige Hyaluronidase-Behandlung aus, um das Hyaluron vollständig aufzulösen. Die Anzahl hängt jedoch von mehreren Faktoren ab: der Menge des ursprünglich injizierten Hyalurons, wie lange die Filler-Behandlung zurückliegt (älteres Hyaluron ist schwerer aufzulöschen), ob eine vollständige oder nur teilweise Auflösung gewünscht ist. Bei sehr großen Mengen Hyaluron oder wenn nur eine teilweise Korrektur erfolgen soll, kann eine zweite Behandlung nach 1-2 Wochen notwendig sein.',
+        question: 'Wie viele Hylase-Behandlungen sind notwendig?',
+        answer: 'In den meisten Fällen reicht bereits eine einzige Hylase-Behandlung aus, um das Hyaluron vollständig aufzulösen. Die Anzahl hängt ab von: der Menge des ursprünglich injizierten Hyalurons, wie lange die Filler-Behandlung zurückliegt (älteres Hyaluron ist schwerer mit Hylase aufzulösen), ob eine vollständige oder nur teilweise Auflösung gewünscht ist. Bei sehr großen Mengen Hyaluron kann eine zweite Hylase-Behandlung nach 1-2 Wochen notwendig sein.',
       },
       {
-        question: 'Welche Nebenwirkungen können auftreten?',
-        answer: 'Die Nebenwirkungen einer Hyaluronidase-Behandlung sind in der Regel mild: Rötungen an den Einstichstellen (legen sich schnell), vorübergehend verstärkte Schwellung für einige Stunden (klingt dann ab), mögliche Hämatome (Blutergüsse), Auflockerung des umliegenden Gewebes (normalisiert sich in 2-6 Wochen). Bei zu hoher Dosierung können vorübergehend Dellen entstehen, die der Körper normalerweise durch Neubildung von Hyaluronsäure ausgleicht. Allergische Reaktionen sind sehr selten, können aber bei bekannter Wespen- oder Bienenstich-Allergie auftreten.',
+        question: 'Welche Hylase Nebenwirkungen können auftreten?',
+        answer: 'Die Nebenwirkungen der Hylase-Behandlung sind in der Regel mild: Rötungen an den Einstichstellen nach der Hylase-Injektion (legen sich schnell), vorübergehend verstärkte Schwellung für einige Stunden (klingt ab wenn Hylase-Wirkung einsetzt), mögliche Hämatome, Auflockerung des umliegenden Gewebes durch Hylase (normalisiert sich in 2-6 Wochen). Bei zu hoher Hylase-Dosierung können vorübergehend Dellen entstehen. Allergische Reaktionen auf Hylase sind sehr selten.',
       },
       {
-        question: 'Wann kann ich wieder neue Filler spritzen lassen?',
-        answer: 'Nach einer Hyaluronidase-Behandlung sollte eine Wartezeit von mindestens 2 Wochen, idealerweise 4-6 Wochen eingehalten werden, bevor eine neue Hyaluron-Unterspritzung im selben Bereich erfolgt. Diese Karenzzeit ist wichtig, damit sich das Gewebe vollständig erholen kann und die Hyaluronidase-Wirkung komplett abgeklungen ist. Das umliegende Gewebe wird durch die Hylase aufgelockert und benötigt Zeit zur Regeneration. Eine zu frühe Neubehandlung könnte zu suboptimalen Ergebnissen führen.',
+        question: 'Nach Hylase wann wieder Hyaluron spritzen?',
+        answer: 'Nach einer Hylase-Behandlung sollte eine Wartezeit von mindestens 2 Wochen, idealerweise 4-6 Wochen eingehalten werden, bevor nach Hylase wieder neue Hyaluron-Unterspritzung im selben Bereich erfolgt. Diese Karenzzeit nach Hylase ist wichtig, damit sich das Gewebe vollständig erholen kann und die Hylase-Wirkung komplett abgeklungen ist. Eine zu frühe Neubehandlung nach Hylase könnte zu suboptimalen Ergebnissen führen.',
       },
       {
-        question: 'Kann jeder Filler mit Hyaluronidase aufgelöst werden?',
-        answer: 'Nein, Hyaluronidase löst ausschließlich Hyaluronsäure-basierte Filler auf. Permanente Filler (z.B. Silikon, Polymethylmethacrylat) oder andere Filler-Typen wie Calciumhydroxylapatit (Radiesse) oder Poly-L-Milchsäure (Sculptra) können NICHT mit Hyaluronidase aufgelöst werden. Dies ist ein weiterer Grund, warum ausschließlich Hyaluronsäure-Filler verwendet werden sollten – sie bieten die Sicherheit, bei Bedarf wieder aufgelöst werden zu können. Vor der Behandlung sollte daher geklärt werden, welches Produkt ursprünglich verwendet wurde.',
+        question: 'Kann jeder Filler mit Hylase aufgelöst werden?',
+        answer: 'Nein, Hylase löst ausschließlich Hyaluronsäure-basierte Filler auf. Permanente Filler (z.B. Silikon, PMMA) oder andere Filler-Typen wie Calciumhydroxylapatit (Radiesse) oder Poly-L-Milchsäure (Sculptra) können NICHT mit Hylase aufgelöst werden. Dies ist ein weiterer Grund, warum ausschließlich Hyaluronsäure-Filler verwendet werden sollten – sie bieten die Sicherheit, bei Bedarf mit Hylase wieder aufgelöst werden zu können.',
       },
       {
-        question: 'Was kostet die Hyaluronidase-Behandlung in Bremen?',
-        answer: 'Eine Hyaluronidase-Behandlung kostet ab 180€ (abhängig vom Behandlungsareal und der benötigten Dosierung). Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ). Die Kosten variieren je nachdem, wie viel Hyaluron aufgelöst werden muss. Im Beratungsgespräch erhalten Sie einen transparenten Kostenvoranschlag. Bei Notfall-Behandlungen können abweichende Regelungen gelten.',
+        question: 'Bin ich nach der Hylase-Behandlung sofort gesellschaftsfähig?',
+        answer: 'In der Regel sind Sie unmittelbar nach der Hylase-Behandlung gesellschaftsfähig. Die Hylase-Behandlung hinterlässt meist nur leichte Rötungen an den Einstichstellen, die schnell abklingen. In den ersten Stunden kann es zu einer vorübergehend verstärkten Schwellung kommen, bevor die Hylase-Wirkung das Hyaluron abbaut. Es können kleine Hämatome nach der Hylase-Injektion auftreten, die sich mit Make-up abdecken lassen. Die meisten Patienten können direkt nach der Hylase-Behandlung ihren normalen Aktivitäten nachgehen.',
       },
       {
-        question: 'Bin ich nach der Behandlung sofort gesellschaftsfähig?',
-        answer: 'In der Regel sind Sie unmittelbar nach der Hyaluronidase-Behandlung gesellschaftsfähig. Die Behandlung hinterlässt meist nur leichte Rötungen an den Einstichstellen, die schnell abklingen. In den ersten Stunden kann es zu einer vorübergehend verstärkten Schwellung kommen, bevor das Hyaluron abgebaut wird. Es können kleine Hämatome auftreten, die sich mit Make-up abdecken lassen. Die meisten Patienten können direkt nach der Behandlung ihren normalen Aktivitäten nachgehen.',
+        question: 'Hylase als Notfall-Medikament – was bedeutet das?',
+        answer: 'Bei unsachgemäßen Hyaluron-Injektionen kann es in sehr seltenen Fällen zu einem Verschluss arterieller Gefäße kommen. Dies ist ein medizinischer Notfall. Anzeichen sind: plötzliche starke Schmerzen, Blässe oder Verfärbung der Haut, Gefühlsstörungen. In solchen Fällen muss sofort Hylase injiziert werden, um das Hyaluron aufzulösen und die Durchblutung wiederherzustellen. Die Hylase-Behandlung kann hier Gewebenekrosen verhindern. Jede seriöse Praxis, die Hyaluron-Behandlungen durchführt, sollte Hylase vorrätig haben. In meiner Praxis in Bremen ist Hylase jederzeit verfügbar – für Ihre Sicherheit.',
       },
       {
-        question: 'Hyaluronidase als Notfall-Medikament – was bedeutet das?',
-        answer: 'Bei unsachgemäßen Hyaluron-Injektionen kann es in sehr seltenen Fällen zu einem Verschluss arterieller Gefäße kommen. Dies ist ein medizinischer Notfall, der unbehandelt zu Gewebenekrosen (Absterben von Gewebe) führen kann. Anzeichen sind: plötzliche starke Schmerzen, Blässe oder Verfärbung der Haut, Gefühlsstörungen. In solchen Fällen muss sofort Hyaluronidase injiziert werden, um das Hyaluron aufzulösen und die Durchblutung wiederherzustellen. Jede seriöse Praxis, die Hyaluron-Behandlungen durchführt, sollte Hyaluronidase vorrätig haben, um im Notfall schnellstmöglich handeln zu können. In meiner Praxis ist Hylase jederzeit verfügbar.',
+        question: 'Hylase Lippen auflösen – wie läuft das ab?',
+        answer: 'Die Hylase-Behandlung für Lippen ist einer der häufigsten Anwendungsbereiche. Beim Lippen auflösen mit Hylase wird das Enzym gezielt in die überfüllten oder asymmetrischen Lippenbereiche injiziert. Die Hylase-Wirkung bei Lippen setzt innerhalb weniger Stunden ein. Das Lippen auflösen mit Hylase ermöglicht einen kompletten Neustart oder eine teilweise Korrektur. Die Hylase Lippen Kosten beginnen ab 180€. Nach der Hylase-Behandlung an den Lippen sollten Sie 4-6 Wochen warten, bevor wieder Hyaluron in die Lippen gespritzt wird.',
+      },
+      {
+        question: 'Kann Hylase selbst gespritzt werden?',
+        answer: 'Nein, Hylase selber spritzen ist gefährlich und wird dringend abgeraten! Die Hylase-Behandlung erfordert medizinische Fachkenntnis: falsche Dosierung, unsaubere Technik und fehlende Notfallversorgung können zu schweren Komplikationen führen. Eine zu hohe Hylase-Dosierung kann körpereigenes Hyaluron abbauen und zu Dellen führen. Die Hylase-Behandlung sollte ausschließlich von erfahrenen Ärzten durchgeführt werden. In meiner Praxis in Bremen erfolgt die Hylase-Behandlung professionell und sicher.',
+      },
+      {
+        question: 'Was muss ich nach Hylase beachten?',
+        answer: 'Nach der Hylase-Behandlung sollten Sie beachten: Kühlen Sie die behandelten Bereiche nach Hylase regelmäßig in den ersten 24 Stunden. Vermeiden Sie Sport, Sauna und Solarium für 24-48 Stunden nach Hylase. Verzichten Sie auf Make-up für 6-12 Stunden nach der Hylase-Behandlung. Massieren Sie die Bereiche nicht übermäßig nach Hylase. Beobachten Sie die Hylase-Wirkung – eine vorübergehende Schwellung ist normal. Wichtig: Nach Hylase wann wieder Hyaluron? Warten Sie mindestens 2-6 Wochen nach der Hylase-Behandlung, bevor Sie wieder Hyaluron spritzen lassen.',
       },
     ],
   };
 
   const ctaData: CTASectionProps = {
     title: 'Unzufrieden mit Ihrem Hyaluron-Ergebnis?',
-    subtitle: 'Vereinbaren Sie jetzt Ihre persönliche Beratung und erfahren Sie, wie Hyaluronidase unerwünschte Filler sicher und schnell auflösen kann.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
+    subtitle: 'Vereinbaren Sie jetzt Ihre persönliche Hylase-Beratung in Bremen und erfahren Sie, wie die Hylase-Behandlung unerwünschte Filler sicher und schnell auflösen kann.',
+    primaryCTA: { text: 'Jetzt Hylase-Termin buchen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
-  };
-
-  const locationData: LocationSectionProps = {
-    title: 'Hyaluronidase-Behandlung in Bremen: EL Aesthetics',
-    description: 'Sichere Korrektur von Hyaluron-Fillern – individuell geplant und professionell durchgeführt in unserer modernen Praxis im Herzen Bremens.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
   };
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen unserer Patienten mit Hyaluronidase"
-        subtitle="Echte Ergebnisse von echten Menschen: Knötchen weg, Asymmetrien korrigiert, natürlicher Neustart."
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Mehr zu Hyaluron‑Behandlungen in Bremen"
+        subtitle="Zur Übersicht mit allen Hyaluron-Behandlungen, Abläufen & wichtigen Hinweisen."
+        href="/hyaluron"
       />
-      <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-
     </div>
   );
 }

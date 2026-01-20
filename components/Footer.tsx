@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'next/link'; // falls du Next.js nutzt — andernfalls <a> verwenden
+import Link from 'next/link'; // falls du Next.js nutzt — andernfalls <Link> verwenden
 
 export default function Footer() {
   const year = new Date().getFullYear();

@@ -18,40 +18,33 @@ import {
 } from '@/components/TreatmentPageComponents';
 
 export const metadata: Metadata = {
-  title: 'Hautverjüngung Bremen | Regenerative Anti-Aging Konzepte',
+  title: 'Longevity & Hautqualität in Bremen',
   description:
-    'Hautverjüngung in Bremen mit Polynukleotiden, PRF, Microneedling und Skinboostern. Ärztliche Beratung erklärt Wirkprinzip, Ablauf, Pflege, Kosten und Risiken.',
-  keywords:
-    'hautverjuengung, hauterneuerung, hautauffrischung, hautregeneration, anti-aging bremen, hautstraffung ohne op, gesicht verjüngen, bio-remodelling, skin rejuvenation bremen, Bio-Remodelierung bremen, polynukleotide bremen, prp prf bremen',
+    'Longevity & Hautqualität in Bremen. Hautqualität, Kollagenstimulation und Biostimulation. Jetzt Beratung vereinbaren!',
   openGraph: {
-    title: 'Bremen: Hautverjüngung, Hauterneuerung & Regeneration – natürlich und ohne OP',
+    title: 'Bremen: Longevity & Hautqualität – natürlich und ohne OP',
     description:
       'Moderne Anti‑Aging‑Konzepte: Von Bio-Remodelierung über Polynukleotide bis PRF. Sichtbar frischere Haut, gesteigerte Elastizität und bessere Hautstruktur – ohne Operation in Bremen.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/hautverjuengung/og-hautverjuengung-bremen.webp']
+    images: ['https://elaesthetics-bremen.de/assets/longevity/og-longevity-bremen.webp']
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hautverjuengung'
+    canonical: 'https://elaesthetics-bremen.de/longevity'
   },
   robots: {
     index: true,
     follow: true
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Bremen: Hautverjüngung & Hauterneuerung | EL Aesthetics',
-    description:
-      'Regenerative Anti‑Aging‑Behandlungen: Bio-Remodelierung, Polynukleotide, PRF, Microneedling & mehr – natürliche Ergebnisse ohne Operation.'
-  }
+  
 };
 
-export default function HautverjuengungPage() {
+export default function LongevityPage() {
   const heroData: HeroSectionProps = {
-    title: 'Hautverjüngung in Bremen',
+    title: 'Longevity & Verbesserung der Hautqualität in Bremen',
     subtitle:
-      'Longevity - Hautverjüngung durch Bio-Stimulation, Bio-Remodelierung, Polynukleotide, Eigenbluttherapie, Microneedling u.v.m.',
-    imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
+      'Verbesserung der Hautstruktur durch Kollagenstimulation und Regeneration durch Biostimulatoren, Polynukleotide, Eigenbluttherapie (PRP/PRF), med. Microneedling u.v.m.',
+    imageSrc: '/assets/longevity/longevity_hero.webp',
     imageAlt:
       'Gesichtsbehandlung zur Auffrischung und Straffung der Haut bei EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -59,27 +52,27 @@ export default function HautverjuengungPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: 'Ohne OP zu frischer, straffer Haut – was ist möglich?',
+    title: 'Longevity - länger vital & gesund',
     content: [
-      'Unter Hautverjüngung oder auch Longevity verstehen wir medizinisch‑ästhetische Verfahren zur Hauterneuerung: Sie verbessern die Hautqualität, fördern die Zellregeneration und verleihen dem Teint mehr Frische und Spannkraft – ganz ohne chirurgischen Eingriff.',
-      'Mit den Jahren verlangsamt sich die Erneuerung der Haut: Kollagen‑ und Elastinfasern nehmen ab, Feuchtigkeit geht verloren, die Haut wirkt müde. Moderne Anti‑Aging‑Methoden setzen hier an – sie aktivieren körpereigene Prozesse und stärken die Haut von innen.',
-      'In unserer Praxis in Bremen fokussieren wir uns auf regenerative Behandlungen: Bio‑Remodelling, Polynukleotide (PDRN), Eigenbluttherapie (PRP/PRF), medizinisches Microneedling und Kollagenstimulatoren. Diese Ansätze arbeiten mit körpereigenen bzw. biokompatiblen Substanzen und regen die natürliche Regeneration an.',
-      'Das Besondere: Ergebnisse entwickeln sich schrittweise über Wochen, wirken authentisch und verbessern die Struktur nachhaltig. Sie sehen nicht „gemacht” aus, sondern erholt, vital und ebenmäßiger – wie nach einer Auszeit.',
-      'Gemeinsam finden wir heraus, welche Strategie – ob Auffrischung, Straffung oder Texturverbesserung – für Gesicht, Hals oder Hände am besten passt.'
-    ]
+        'Statt nur kurzfristige ästhetische Korrekturen vorzunehmen, setzt Longevity auf einen ganzheitlichen Ansatz: Es geht darum, die Haut von innen heraus zu stärken und ihre natürliche Funktion langfristig zu erhalten. Ziel ist es, den Alterungsprozess zu verlangsamen – nicht nur das äußere Erscheinungsbild zu verbessern, sondern die Haut länger gesund, widerstandsfähig und vital zu halten.',
+        'Mit den Jahren verlangsamt sich die Erneuerung der Haut: Kollagen  und Elastinfasern nehmen ab, Feuchtigkeit geht verloren, die Haut wirkt müde. Moderne Anti Aging Methoden setzen hier an – sie aktivieren körpereigene Prozesse und stärken die Haut von innen.',
+        'Verschiedene Biostimulatoren, Polynukleotide (PDRN), Eigenbluttherapie (PRP/PRF), medizinisches Microneedling und andere Verfahren: Diese Ansätze arbeiten mit körpereigenen bzw. biokompatiblen Substanzen und regen die natürliche Regeneration an.',
+        'Das Besondere: Ergebnisse entwickeln sich schrittweise über Wochen, wirken natürlich und nachhaltig.', 
+        'Gemeinsam finden wir heraus, welche Strategie – ob Auffrischung, Straffung oder Texturverbesserung  für Sie am besten passt.'
+      ]
   };
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Unsere Verfahren zur Hautverjüngung und Straffung der Haut',
     treatments: [
       {
-        imageUrl: '/assets/hyaluron/hyaluron-profhilo_hero.webp',
+        imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
         imageAlt:
           'Bio-Remodelierung Behandlung für verbesserte Hautqualität und Feuchtigkeitsboost in Bremen',
-        title: 'Hyaluron Filler (BAP-Technik)',
+        title: 'Hyaluron Skinbooster (Klassisch & BAP-Technik)',
         description:
-          'Hochvernetzte Hyaluronsäure wird an definierten Punkten platziert und verteilt sich fächerförmig im Gewebe. Ergebnis: intensiver Feuchtigkeitsaufbau, verbesserte Elastizität und sichtbar glattere, prallere Haut – ganz ohne Volumenlook. Ideal für Gesicht, Hals und Dekolleté. Wirkung ab ca. 4 Wochen, Haltbarkeit etwa 6 Monate.',
-        treatmentUrl: '/hyaluron/profhilo'
+          'Reine Hyaluronsäure verteilt sich fächerförmig im Gewebe. Ergebnis: intensiver Hydratation, verbesserte Elastizität und sichtbar glattere, prallere Haut. Geeignet für Gesicht, Hals, Dekolleté u.v.m.',
+        treatmentUrl: '/hyaluron/skinbooster'
       },
       {
         imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
@@ -87,7 +80,7 @@ export default function HautverjuengungPage() {
           'Polynukleotide zur Zellregeneration und zum Kollagenaufbau in Bremen',
         title: 'Polynukleotide (PDRN‑Therapie)',
         description:
-          'Molekulare Hautregeneration: Spezifische DNA‑Fragmente fördern die Zellerneuerung, mindern feine Linien und verbessern die Hautdicke. Besonders geeignet für sensible Zonen wie Unterlider, Wangen, Hals und Hände. Ergebnisse bauen sich über 2–3 Monate auf; meist als Behandlungsserie geplant.',
+          'Molekulare Hautregeneration: Spezifische aus der Lachsforelle gewonnene DNA‑Fragmente fördern die Zellerneuerung, verbessern die Hautstruktur und Hautdicke & wirken entzündungshemmend. Besonders geeignet für sensible Zonen wie Augenregion, Hals und Hände, Behandlung von Narben, Rosazea u.v.m.',
         treatmentUrl: '/polynukleotide'
       },
       {
@@ -95,16 +88,16 @@ export default function HautverjuengungPage() {
         imageAlt: 'Eigenbluttherapie PRF für natürliche Hautregeneration in Bremen',
         title: 'Eigenbluttherapie (PRP/PRF)',
         description:
-          'Natürliche Auffrischung mit körpereigenen Wachstumsfaktoren: Das gewonnene Konzentrat stimuliert Kollagenbildung, Zellreparatur und Durchblutung. Ideal bei fahlem Teint, feinen Linien und zur allgemeinen Verbesserung der Hautqualität. Sehr gut kombinierbar mit Microneedling. In der Regel 2–3 Sitzungen.',
+          'Natürlich Regeneration durch körpereigene Zellen und Wachstumsfaktoren: Das aus Blut gewonnene Konzentrat stimuliert Kollagenbildung, Zellreparatur und Durchblutung. Besonders geeignet bei der Behandlung von Akne, Akne-Narben, Rosazea, Augenringen, Haarausfall und zur allgemeinen Haut- und Haargesundheit.',
         treatmentUrl: '/eigenbluttherapie/vampir-lifting'
       },
       {
         imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
         imageAlt:
-          'Kollagenstimulation mit Radiesse für langanhaltende Straffung in Bremen',
-        title: 'Kollagenstimulation mit Radiesse',
+          'Bild zur Kollagenstimulation und Biostimution',
+        title: 'Kollagenstimulation / Biostimution',
         description:
-          'Langzeit‑Straffung über körpereigenen Kollagenaufbau: Calciumhydroxylapatit triggert über Monate die Bildung eines stabilen Stützgerüsts. Für mehr Festigkeit und definiertere Konturen – z. B. an Wangen, Kinnlinie, Hals oder Handrücken. Ergebnisse bis zu 18 Monate.',
+          'Biostimulatoren auf Basis von Calciumhydroxylapatit und Hyaluronsäure: Sie regen schrittweise und nachhaltig die körpereigene Kollagenproduktion an, verbessern Hautdicke, Elastizität und Festigkeit. Ideal zur Behandlung von Volumenverlust, Hauterschlaffung und zur allgemeinen Hautverjüngung. Nicht nur für das Gesicht geeignet.',
         treatmentUrl: '/kollagenstimulation'
       },
       {
@@ -113,7 +106,7 @@ export default function HautverjuengungPage() {
           'Medizinisches Microneedling für Kollagenaufbau und ebenmäßige Haut in Bremen',
         title: 'Medizinisches Microneedling',
         description:
-          'Kontrollierte Mikroimpulse setzen gezielte Reize: Die Haut erneuert sich, Poren wirken feiner, die Oberfläche glatter und straffer. Ideal zur Strukturverbesserung, bei feinen Linien und vergrößerten Poren. Verstärkbar durch Wirkstoffe, PRF oder Polynukleotide. Empfehlung: 3–6 Sitzungen.',
+          'Kontrollierte Mikroverletzungen setzen gezielte Reize zur Hauterneuerung. Durch Mikrokanäle können gezielt Wirkstoffe in die Haut eingeschleust werden. Besonders geeignet für die Hauterneuerung, Verkleinerung der Poren, Verminderung von Fältchen, Akne-Narben, Pigmentstörungen und zur Verbesserung der Hautstruktur. ',
         treatmentUrl: '/medizinisches-microneedling'
       },
       {
@@ -122,30 +115,23 @@ export default function HautverjuengungPage() {
           'Chemisches Peeling zur Hauterneuerung und für ebenmäßigen Teint in Bremen',
         title: 'Chemisches Peeling',
         description:
-          'Sanfte bis mittelstarke Hauterneuerung: Spezielle Säuren lösen verhorntes Material, fördern Zellerneuerung und gleichen Pigmentunregelmäßigkeiten aus. Ergebnis: glattere Oberfläche, verfeinerte Poren, frischer Teint. Downtime je nach Tiefe 3–7 Tage.',
+          'Kombination verschiedener chem. Substanzen zur Hauterneuerung (z.B. TCA, Wasserstoffperoxit & Kojisäure). Auch für Sommermonate geeignet. Sie regeneriert die Haut, ohne eine Schälung der oberen Hautschicht zu verursachen. Zur Hautstraffung, Verbesserung der Hautstruktur und Reduzierung von Falten, Narben und Hyperpigmentierung.',
         treatmentUrl: '/chemisches-peeling'
       },
-      {
-        imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
-        imageAlt:
-          'Botulinumtoxin als ergänzende Maßnahme für entspannte Gesichtszüge in Bremen',
-        title: 'Botulinumtoxin (ergänzend)',
-        description:
-          'Prävention und Glättung durch Muskelentspannung: Mimikfalten wie Stirn‑, Zornesfalten und Krähenfüße werden sanft reduziert. Sinnvoll als Begleiter regenerativer Verfahren, um Vertiefungen vorzubeugen. Wirkung nach 3–14 Tagen, Haltbarkeit 3–6 Monate.',
-        treatmentUrl: '/botulinumtoxin/faltenbehandlung'
-      },
-      {
-        imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
-        imageAlt:
-          'Hyaluron‑Filler für dezenten Volumenaufbau und definierte Konturen in Bremen',
-        title: 'Hyaluron‑Filler (ergänzend)',
-        description:
-          'Wenn Konturen nachlassen: Filler stellen gezielt Volumen wieder her – etwa an Wangen, Nasolabialfalten oder Kinnlinie. Für ein frischeres, harmonisches Gesamtbild. Soforteffekt, Haltbarkeit ca. 9–18 Monate; ideal in Kombination mit regenerativen Ansätzen.',
-        treatmentUrl: '/hyaluron/filler'
-      }
     ]
   };
-  
+  const consultationData: ConsultationSectionProps = {
+    title: 'Welche Methode passt zu Ihnen?',
+    description: [
+      'Die Auswahl der passenden Behandlung hängt von Hauttyp, Alter, Ausgangszustand und Ziel ab. Was bei einer Person hervorragend funktioniert, muss nicht automatisch Ihr Best‑Match sein.',
+      'Als Fachärztin für ästhetische Medizin analysiere ich Ihre Haut: Qualität und Dicke, Feuchtigkeitsstatus, Elastizität, vorhandene Pigmentierungen oder Strukturthemen. Darauf basierend entwickeln wir einen maßgeschneiderten Plan für Straffung, Glättung und Glow.',
+      'Häufig sind Kombinationen besonders effektiv: Bio-Remodelierung für Hautqualität, Polynukleotide für sensible Zonen, Eigenblut + Microneedling für maximale Regeneration. So erreichen wir natürliche, stufenweise Verbesserungen.',
+      'Wichtig: Verjüngung ist ein Prozess. Ergebnisse entstehen über Wochen und Monate – dafür wirken sie authentisch und nachhaltig. Vereinbaren Sie Ihr persönliches Beratungsgespräch in Bremen.'
+    ],
+    ctaText: 'Jetzt Beratung vereinbaren',
+    ctaHref: '/kontakt',
+    backgroundColor: 'bg-[#FDF6F0]'
+  };
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zu Hauterneuerung & Anti‑Aging',
@@ -214,7 +200,7 @@ export default function HautverjuengungPage() {
 
   const tocItems: TOCItem[] = [
     { id: 'intro', label: 'Über die Behandlung' },
-    { id: 'treatments', label: 'Unsere Behandlungen zur Hautverjüngung' },
+    { id: 'treatments', label: 'Regenerative Behandlungen' },
     { id: 'consultation', label: 'Beratung' },
     { id: 'faq', label: 'Häufige Fragen' },
 ];

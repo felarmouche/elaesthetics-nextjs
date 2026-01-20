@@ -6,7 +6,7 @@ import { TableOfContents, TOCItem, DetailedInfoSection, ConsultationSectionProps
 export const metadata: Metadata = {
   title: 'Botulinumtoxin Behandlung Bremen – EL Aesthetics Praxis',
   description:
-    'Sachliche Information zur Botulinumtoxin Behandlung in Bremen: botulinumtoxin injektion, botulinumtoxin A behandlung, Anwendungsbereiche und Kosten (Richtwerte). Ärztliche Aufklärung erforderlich.',
+    'Botulinumtoxin in Bremen: ärztliche Beratung zu Arealen, Dosierung und GOÄ-Kosten. Hinweise zu Wirkungseintritt, Kontrolle und Risiken ohne Heilversprechen.',
   keywords: [
     'Botulinumtoxin Behandlung',
     'botulinumtoxin injektion',
@@ -102,16 +102,7 @@ export default function BotulinumtoxinHubPage() {
     ],
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Welche Behandlung passt zu mir?',
-    description: [
-      'Im Termin klären wir Ihre Ziele, prüfen Indikationen und besprechen Alternativen. Sie erhalten einen individuellen Plan inkl. Dosierungsempfehlung und Kostentransparenz.',
-      'Sicherheit: Aufklärung zu möglichen Nebenwirkungen/Kontraindikationen und strukturierte Nachkontrolle. Verlauf wird dokumentiert – ohne Heilversprechen.',
-    ],
-    ctaText: 'Jetzt Beratung vereinbaren',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur Botulinumtoxin Behandlung',
@@ -171,7 +162,7 @@ export default function BotulinumtoxinHubPage() {
       <IntroSection {...introData} />
       <DetailedInfoSection />
       <TreatmentsSection {...treatmentsData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />
     </div>

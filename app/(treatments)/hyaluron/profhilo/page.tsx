@@ -1,341 +1,275 @@
 import type { Metadata } from 'next';
+import {PRICES} from '@/lib/constants'
 import {
-  AreasSection,
-  AreasSectionProps,
-  ConsultationSectionProps,
-  ConsultationSection,
-  
-  CTASectionProps,
-  FAQSection,
-  FAQSectionProps,
-  HeroSection,
-  HeroSectionProps,
-  IntroSection,
-  IntroSectionProps,
-  
-  
-  ProcessSection,
-  ProcessSectionProps,
-  QuickInfoSection,
-  QuickInfoSectionProps,
-  TreatmentCareSection,
-  TreatmentCareSectionProps,
-  TreatmentsSectionProps,
-  TreatmentsSection
+  AreasSection,
+  AreasSectionProps,
+  ConsultationSectionProps,
+  ConsultationSection,
+  HubTeaserSection,
+  TableOfContents,
+  TOCItem,
+  
+  CTASectionProps,
+  FAQSection,
+  FAQSectionProps,
+  HeroSection,
+  HeroSectionProps,
+  IntroSection,
+  IntroSectionProps,
+  
+  
+  ProcessSection,
+  ProcessSectionProps,
+  QuickInfoSection,
+  QuickInfoSectionProps,
+  TreatmentCareSection,
+  TreatmentCareSectionProps,
+  TreatmentsSectionProps,
+  TreatmentsSection
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+ 
+ 
 
-// Sichtbar markenfrei, Marke nur in Meta/ALT/Schema
+// NEUE KEYWORDS FÜR RECHTLICHE SICHERHEIT UND SEO
+// Marke (Profhilo) nur in Meta/ALT/Schema (nicht sichtbar im Content)
 export const metadata: Metadata = {
-  title:
-    'Profhilo Bremen | BAP-Technik für Hyaluron-Remodulierung | EL Aesthetics',
-  description:
-    'Profhilo (BAP-Technik): Hyaluron-Remodulierung zur Verbesserung von Hautqualität & Elastizität – wenige Stiche, kurze Downtime, Serie aus 2 Sitzungen + Erhaltung.',
-  keywords:
-    'Profhilo, BAP, Bio Aesthetic Points, NAHYCO, Profhilo Bremen, Profhilo Kosten Bremen, Hyaluron Remodulierung',
-  openGraph: {
-    title:
-      'Profhilo (BAP) – Hyaluron-Remodulierung | EL Aesthetics Bremen',
-    description:
-      'Hyaluron-Remodulierung mit BAP-Technik: Hautqualität & Elastizität verbessern – wenige Stiche, kurze Downtime.',
-    type: 'website',
-    locale: 'de_DE',
-    images: [
-      'https://elaesthetics-bremen.de/assets/profhilo/og-profhilo-bremen.webp',
-    ],
-  },
-  alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hyaluron/profhilo',
-  },
+  title:
+    'Biorevitalisierung (BAP-Technik) Bremen',
+  description:
+    'Biorevitalisierung der Haut in Bremen: BAP-Technik mit Hyaluronsäure. Strukturverbesserung und Straffung der Haut. Jetzt beraten lassen!',
+  keywords:
+    'Biorevitalisierung, Hautqualität verbessern, BAP-Technik, Hautstraffung Injektion, Hyaluronsäure Biorevitalisierung, Bremen',
+  openGraph: {
+    title:
+      'Biorevitalisierung der Haut (BAP) – Elastizität & Glow | EL Aesthetics Bremen',
+    description:
+      'Biorevitalisierung mit BAP-Technik: Hautqualität & Elastizität verbessern – wenige Stiche, kurze Downtime.',
+    type: 'website',
+    locale: 'de_DE',
+    // Bild-URL beibehalten, ALT-Text anpassen
+    images: [
+      'https://elaesthetics-bremen.de/assets/profhilo/og-profhilo-bremen.webp',
+    ],
+  },
+  alternates: {
+    canonical: 'https://elaesthetics-bremen.de/hyaluron/profhilo',
+  },
 };
 
 export default function ProfhiloBAPPage() {
-  // Sichtbarer Content ohne Markennennung
-  const heroData: HeroSectionProps = {
-    title: 'Hyaluron-Remodellierung (BAP-Technik) in Bremen',
-    subtitle:
-      'Hautqualität & Elastizität gezielt verbessern – wenige Stiche, schonende Behandlung.',
-    imageSrc: '/assets/hyaluron/hyaluron-profhilo_hero.webp',
-    // Markenname nur im ALT-Text (nicht sichtbar für Nutzer)
-    imageAlt: 'Profhilo BAP Technik – Hyaluron Remodulierung Illustration',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
-  };
+  // Sichtbarer Content ohne Markennennung
+  const heroData: HeroSectionProps = {
+    title: 'Biorevitalisierung (BAP-Technik) in Bremen',
+    subtitle:
+      'Hautqualität & Elastizität gezielt verbessern – wenige Injektionspunkte, schonende Behandlung.',
+    imageSrc: '/assets/hyaluron/hyaluron-profhilo_hero.webp',
+    imageAlt: 'Profhilo BAP Technik – Biorevitalisierung Illustration',
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+  };
 
-  const introData: IntroSectionProps = {
-  title: 'Was bedeutet Hyaluron-Remodellierung (BAP-Technik)?',
-  content: [
-    'Remodellierung – auch Bioremodulierung genannt – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint. Im Gegensatz zu Volumenbehandlungen steht nicht die Formung im Vordergrund, sondern die Qualität des Gewebes.',
-    'Die BAP-Technik (Bio Aesthetic Points) arbeitet mit wenigen, exakt definierten Punkten pro Gesichtshälfte. Eine besonders fließfähige, hybride Hyaluron-Formulierung verteilt sich großflächig im Gewebe – bekannt aus einem international etablierten Remodelling-System – und sorgt für ein natürliches, nicht überkorrigiertes Ergebnis.',
-    'Ideal ist dieser Ansatz bei leichter Laxität, Knitterfältchen und müdem Hautbild. Behandelt werden je nach Bedarf Gesicht, Hals, Dekolleté oder Hände – für eine frischer wirkende Haut mit subtiler, aber spürbarer Verbesserung.',
-    'Das Konzept ist als kurze Behandlungsserie angelegt: meist zwei Sitzungen im Abstand weniger Wochen, anschließend Erhaltung in sinnvollen Intervallen. Die Ausfallzeit ist in der Regel kurz, sodass Sie im Alltag schnell wieder einsatzfähig sind.',
-    'Alle Behandlungen erfolgen ärztlich, mit hochwertigen CE-gekennzeichneten Präparaten, klaren Hygiene-Standards und transparenter Aufklärung. In Bremen beraten wir Sie persönlich, ob Remodellierung für Ihr Hautziel die beste Wahl ist – und wie sich der Plan sinnvoll mit ergänzenden Verfahren kombinieren lässt.'
-  ],
+  const introData: IntroSectionProps = {
+  // Fokus auf Biorevitalisierung (statt Remodellierung)
+  title: 'Was bedeutet Biorevitalisierung der Haut mit BAP-Technik?',
+  content: [
+    'Biorevitalisierung mit BAP-Technik wird umgangsprachlich oft auch Profhilo Behandlung genannt. Profhilo ist allerdings lediglich der Name eines bestimmten Präparats zur Biorevitalisierung per Skinbooster, welches auch in unsere Praxis zum Einsatz kommt.',
+    'Es ist eine tiefenwirksame Behandlung mit hochreiner Hyaluronsäure, die darauf abzielt, die Qualität und Elastizität der Haut sichtbar zu verbessern. Im Gegensatz zu klassischen Fillern steht hier nicht der Volumenaufbau im Vordergrund, sondern die nachhaltige Geweberegeneration und Hydratation.',
+    'Die BAP-Technik (Bio Aesthetic Points) nutzt eine standardisierte Methode, bei der eine besonders fließfähige, hybride Hyaluron-Formulierung an wenigen, exakt definierten Punkten pro Gesichtshälfte eingebracht wird. Von dort aus verteilt sich das Präparat großflächig im Gewebe und stimuliert die körpereigene Produktion von Kollagen und Elastin.',
+    'Dieser Ansatz ist ideal bei leichter Hautlaxität, feinen Knitterfältchen und einem allgemein müden Hautbild. Behandelt werden können Gesicht, Hals, Dekolleté oder Hände, um ein natürlich frisches Aussehen mit spürbarer Strukturverbesserung zu erzielen.',
+    'Das Behandlungskonzept sieht in der Regel eine kurze Serie von zwei Sitzungen im Abstand weniger Wochen vor, gefolgt von Erhaltungsbehandlungen in individuellen Intervallen. Die Ausfallzeit ist minimal, sodass Sie Ihren Alltag schnell wieder aufnehmen können.',
+    'Wir verwenden ausschließlich CE-gekennzeichnete Präparate (wie z.B. das oben erwähnte Profhilo-Präparat) und klären Sie transparent über alle Schritte und eventuellen Risiken auf. In Bremen beraten wir Sie persönlich, ob die Biorevitalisierung die beste Lösung für Ihre Hautziele darstellt.'
+  ],
 };
 
+  const areasData: AreasSectionProps = {
+    title: 'Anwendungsbereiche & Anliegen',
+    categories: [
+      {
+        category: 'Gesicht',
+        items: [
+          { title: 'Feine Linien & Knitterfältchen' },
+          { title: 'Müdes Hautbild / frische Ausstrahlung' },
+          { title: 'Hautelastizität & Ebenmäßigkeit' },
+        ],
+      },
+      {
+        category: 'Hals & Dekolleté',
+        items: [
+          { title: 'Leichte Erschlaffung am Hals (Laxität)' },
+          { title: 'Struktur & Elastizität im Dekolleté verbessern' },
+        ],
+      },
+      {
+        category: 'Hände',
+        items: [{ title: 'Hautqualität verfeinern und verjüngen' }],
+      },
+    ],
+  };
 
-  const areasData: AreasSectionProps = {
-    title: 'Anwendungsbereiche & Anliegen',
-    categories: [
-      {
-        category: 'Gesicht',
-        items: [
-          { title: 'Feine Linien & Knitterfältchen' },
-          { title: 'Müdes Hautbild / frischere Ausstrahlung' },
-          { title: 'Hautelastizität & Ebenmäßigkeit' },
-        ],
-      },
-      {
-        category: 'Hals & Dekolleté',
-        items: [
-          { title: 'Leichte Laxität am Hals' },
-          { title: 'Struktur & Elastizität im Dekolleté' },
-        ],
-      },
-      {
-        category: 'Hände',
-        items: [{ title: 'Hautqualität verfeinern' }],
-      },
-    ],
-  };
+  const quickInfoData: QuickInfoSectionProps = {
+    title: 'Auf einen Blick: Biorevitalisierung',
+    benefits: [
+      { title: 'Preis',description: `ab ${PRICES.botulinum.masseter}\u20AC*`, iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Dauer', description: 'ca. 30–45 Min', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Schema', description: '2 Sitzungen + Erhaltung', iconUrl: '/assets/icons/wiederholung.svg' },
+      { title: 'Downtime', description: 'kurz (meist alltagstauglich)', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Injektion', description: 'wenige, standardisierte Punkte (BAP)', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Ziel', description: 'Hautqualität & Elastizität', iconUrl: '/assets/icons/CAL.svg' },
+    ],
+    note: 'Die individuelle Planung und Abrechnung erfolgen gemäß Gebührenordnung für Ärzte (GOÄ).',
+  };
 
-  const quickInfoData: QuickInfoSectionProps = {
-    title: 'Auf einen Blick',
-    benefits: [
-      { title: 'Preis', description: 'individuell, gemäß GOÄ', iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Dauer', description: 'ca. 30–45 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Schema', description: '2 Sitzungen + Erhaltung', iconUrl: '/assets/icons/wiederholung.svg' },
-      { title: 'Downtime', description: 'kurz (meist alltagstauglich)', iconUrl: '/assets/icons/gesellschaft.svg' },
-      { title: 'Stiche', description: 'wenige, standardisierte Punkte', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Ziel', description: 'Hautqualität & Elastizität', iconUrl: '/assets/icons/CAL.svg' },
-    ],
-    note: 'Die individuelle Planung und Abrechnung erfolgen gemäß GOÄ.',
-  };
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Biorevitalisierung' },
+    { id: 'areas', label: 'Behandlungsbereiche' },
+    { id: 'quickInfos', label: 'Auf einen Blick' },
+    { id: 'process', label: 'Ablauf (BAP-Technik)' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'Weitere Behandlungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
 
-  const processData: ProcessSectionProps = {
-    title: 'Behandlungsablauf (BAP-Technik)',
-    steps: [
-      {
-        number: '01',
-        title: 'Analyse & Plan',
-        description:
-          'Indikationscheck, Arealwahl und Festlegung des Sitzungsplans (2 Sitzungen, anschließend Erhaltung).',
-      },
-      {
-        number: '02',
-        title: 'Vorbereitung',
-        description:
-          'Reinigung/Desinfektion, Anzeichnen der BAP-Punkte; auf Wunsch Betäubungscreme.',
-      },
-      {
-        number: '03',
-        title: 'Injektion & Diffusion',
-        description:
-          'Gezielte Applikation an wenigen, definierten Punkten; die Formulierung verteilt sich großflächig im Gewebe.',
-      },
-      {
-        number: '04',
-        title: 'Kontrolle & Erhaltung',
-        description:
-          'Kurze Kühlung, Nachsorgehinweise; zweite Sitzung nach Plan, Erhaltung in sinnvollen Intervallen.',
-      },
-    ],
-  };
+  const processData: ProcessSectionProps = {
+    title: 'Behandlungsablauf (BAP-Technik)',
+    steps: [
+      {
+        number: '01',
+        title: 'Analyse & Plan',
+        description:
+          'Umfassender Check der Hautindikation und Festlegung des Sitzungsplans (meist 2 Erstsitzungen, anschließend Erhaltung).',
+      },
+      {
+        number: '02',
+        title: 'Vorbereitung',
+        description:
+          'Gründliche Reinigung/Desinfektion und Anzeichnen der standardisierten BAP-Punkte; Betäubungscreme auf Wunsch.',
+      },
+      {
+        number: '03',
+        title: 'Injektion & Diffusion',
+        description:
+          'Gezielte, schonende Applikation der hochreinen Hyaluronsäure an den definierten BAP-Punkten. Das fließfähige Präparat verteilt sich großflächig.',
+      },
+      {
+        number: '04',
+        title: 'Kontrolle & Erhaltung',
+        description:
+          'Kurze Kühlung, individuelle Nachsorgehinweise; Durchführung der zweiten Sitzung nach Plan; langfristige Erhaltung.',
+      },
+    ],
+  };
 
-  const treatmentCareData: TreatmentCareSectionProps = {
-    title: 'Vor- & Nachsorge',
-    beforeTreatment: {
-      title: 'Vor der Behandlung',
-      instructions: [
-        { title: 'Medikamente', description: 'Blutverdünner nur nach ärztlicher Rücksprache anpassen.' },
-        { title: 'Hautvorbereitung', description: 'Vorab keine aggressiven Peelings/Laser; Sonne/Solarium meiden.' },
-        { title: 'Alkohol', description: '24 h vorher verzichten.' },
-        { title: 'Gesundheit', description: 'Kein akuter Infekt/Herpes.' },
-      ],
-    },
-    afterTreatment: {
-      title: 'Nach der Behandlung',
-      instructions: [
-        { title: 'Kühlung & UV-Schutz', description: 'Areale kühlen; direkte Sonne vermeiden, hohen UV-Schutz nutzen.' },
-        { title: 'Sport/Hitze', description: '48–72 h kein intensiver Sport, Sauna oder Solarium.' },
-        { title: 'Hygiene', description: 'Für einige Stunden kein Make-up direkt auf Einstichstellen.' },
-      ],
-    },
-  };
+  const treatmentCareData: TreatmentCareSectionProps = {
+    title: 'Vor- & Nachsorge',
+    beforeTreatment: {
+      title: 'Vor der Biorevitalisierung',
+      instructions: [
+        { title: 'Medikamente', description: 'Blutverdünner nur nach ärztlicher Rücksprache anpassen.' },
+        { title: 'Hautvorbereitung', description: 'Vorab keine aggressiven Peelings/Laser; direkte Sonne/Solarium meiden.' },
+        { title: 'Alkohol', description: '24 h vorher verzichten, um das Risiko für Blutergüsse zu minimieren.' },
+        { title: 'Gesundheit', description: 'Keine Behandlung bei akutem Infekt oder aktivem Herpes.' },
+      ],
+    },
+    afterTreatment: {
+      title: 'Nach der Biorevitalisierung',
+      instructions: [
+        { title: 'Kühlung & UV-Schutz', description: 'Areale kühlen; direkte Sonne vermeiden, hohen UV-Schutz (LSF 50) nutzen.' },
+        { title: 'Sport/Hitze', description: '48–72 h keinen intensiven Sport, keine Sauna oder Solarium (Infektionsgefahr).' },
+        { title: 'Hygiene', description: 'Für einige Stunden kein Make-up direkt auf die Einstichstellen auftragen.' },
+      ],
+    },
+  };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'S. Krämer',
-      rating: 5,
-      text:
-        'Haut wirkt straffer und frischer, ganz ohne „gemacht“-Effekt. Ablauf transparent, schnelle Kontrolle.',
-      date: '2025-06-03',
-    },
-    {
-      id: 2,
-      name: 'L. Weber',
-      rating: 5,
-      text:
-        'Sehr wenige Stiche, kaum Ausfallzeit. Nach der zweiten Sitzung deutlich elastischere Haut.',
-      date: '2025-04-17',
-    },
-    {
-      id: 3,
-      name: 'A. Nguyen',
-      rating: 5,
-      text:
-        'Ideal für mein Dekolleté – feine Knitterfältchen sind sichtbar weicher geworden.',
-      date: '2025-02-11',
-    },
-  ];
+  
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Beratung zum Remodulierung',
-    description: [
-      'Wir klären, ob die BAP-Technik für Ihr Anliegen geeignet ist und erstellen einen individuellen Plan – von der Erstsitzung bis zur Erhaltung.',
-      'Transparente Aufklärung, hochwertige CE-Produkte und sterile Arbeitsweise sind selbstverständlich.',
-      'Die Kosten werden gemäß GOÄ nach Areal, Aufwand und Materialmenge berechnet.',
-    ],
-    ctaText: 'Termin vereinbaren',
-    ctaHref: '/kontakt',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    // Marke im ALT erlaubt
-    imageAlt: 'Profhilo BAP Behandlung – Beratung in Bremen',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  const treatmentsData: TreatmentsSectionProps = {
+    title: 'Sinnvolle Ergänzungen',
+    treatments: [
+      {
+        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.webp",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
+        title: "Hyaluronsäure-Filler (Falten & Volumen)",
+        description: "Die Behandlung mit Hyaluron-Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
+        treatmentUrl: "/hyaluron/filler"
+      },
+      {
+        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Symbolbild für Feuchtigkeit durch eine Skinbooster-Behandlung",
+        title: "Skinbooster (Hydratation & Glow)",
+        description: "Skinbooster revitalisieren Ihre Haut von innen heraus. Durch die tiefe Hydratation mit unvernetzter Hyaluronsäure werden feine Linien geglättet und die Haut erhält eine frische, strahlende Ausstrahlung. Diese Behandlung eignet sich in unserer Praxis in Bremen hervorragend für Gesicht, Hals, Dekolleté und Hände.",
+        treatmentUrl: "/hyaluron/skinbooster"
+      },
+      
+      {
+        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.webp",
+        // Image Alt: Beschreibend und Keyword-optimiert.
+        imageAlt: "Nahaufnahme einer Hylase-Flasche",
+        title: "Hylase (Hyaluronidase)",
+        description: "Hyaluronidase, häufig als Hylase bezeichnet, ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen.",
+        treatmentUrl: "/hyaluron/hylase"
+      }
+    ],
+  };
 
-  const treatmentsData: TreatmentsSectionProps = {
-    title: 'Sinnvolle Ergänzungen',
-    treatments: [
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
-        title: "Hyaluronsäure-Filler (Falten & Volumen)",
-        description: "Die Behandlung mit Hyaluron-Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
-        treatmentUrl: "/hyaluron/filler"
-      },
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt: "Symbolbild für Feuchtigkeit durch eine Skinbooster-Behandlung",
-        title: "Skinbooster (Hydratation & Glow)",
-        description: "Skinbooster revitalisieren Ihre Haut von innen heraus. Durch die tiefe Hydratation mit unvernetzter Hyaluronsäure werden feine Linien geglättet und die Haut erhält eine frische, strahlende Ausstrahlung. Diese Behandlung eignet sich in unserer Praxis in Bremen hervorragend für Gesicht, Hals, Dekolleté und Hände.",
-        treatmentUrl: "/hyaluron/skinbooster"
-      },
-      
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt: "Nahaufnahme einer Hylase-Flasche",
-        title: "Hylase (Hyaluronidase)",
-        description: "Hyaluronidase, häufig als Hylase bezeichnet, ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen.",
-        treatmentUrl: "/hyaluron/hylase"
-      }
-    ],
-  };
+  const faqData: FAQSectionProps = {
+    title: 'Fragen & Antworten zur Biorevitalisierung',
+    faqs: [
+      {
+        question: 'Worin unterscheidet sich Biorevitalisierung von Volumenbehandlungen?',
+        answer:
+          'Biorevitalisierung zielt auf Hautqualität, Elastizität und langanhaltende Hydratation ab – ohne künstlichen Volumenaufbau oder Formung. Volumenbehandlungen dienen hingegen der Korrektur von Falten und dem Aufbau einzelner Bereiche.',
+      },
+      {
+        question: 'Wie funktioniert die BAP-Technik?',
+        answer:
+          'Es wird eine flüssige Hyaluronformulierung an wenigen, definierten BAP-Punkten pro Seite injiziert. Die Substanz verteilt sich anschließend von selbst flächenhaft im umliegenden Gewebe, um einen umfassenden Effekt zu erzielen.',
+      },
+      {
+        question: 'Wie viele Sitzungen sind sinnvoll?',
+        answer:
+          'Für ein optimales Ergebnis werden in der Regel zwei Sitzungen im Abstand von ca. 4 Wochen durchgeführt. Anschließend sind individuelle Erhaltungssitzungen in regelmäßigen Intervallen ratsam.',
+      },
+      {
+        question: 'Bin ich nach der Behandlung sofort gesellschaftsfähig?',
+        answer:
+          'Meist ja. Kurzfristig können kleine Rötungen, Quaddeln oder leichte Schwellungen an den Einstichstellen entstehen, die jedoch in der Regel binnen weniger Stunden rasch abklingen.',
+      },
+      {
+        question: 'Für welche Körperregionen eignet sich die Methode?',
+        answer:
+          'Die Behandlung eignet sich hervorragend für Gesicht, Hals, Dekolleté und Hände – insbesondere bei feinen Linien, leichter Erschlaffung (Laxität) und einem fahlen, müden Hautbild.',
+      },
+    ],
+  };
 
-  const faqData: FAQSectionProps = {
-    title: 'Fragen & Antworten',
-    faqs: [
-      {
-        question: 'Worin unterscheidet sich Remodulierung von Volumenbehandlungen?',
-        answer:
-          'Remodulierung zielt auf Hautqualität und Elastizität ab – ohne Formung oder Volumenaufbau. Volumenbehandlungen dienen der Kontur und dem Aufbau einzelner Bereiche.',
-      },
-      {
-        question: 'Wie läuft die BAP-Technik ab?',
-        answer:
-          'Es werden wenige, definierte Punkte pro Seite gesetzt. Die Formulierung verteilt sich anschließend großflächig im Gewebe.',
-      },
-      {
-        question: 'Wie viele Sitzungen sind sinnvoll?',
-        answer:
-          'In der Regel zwei Sitzungen in kurzem Abstand, anschließend Erhaltung in individuellen Intervallen.',
-      },
-      {
-        question: 'Bin ich danach gesellschaftsfähig?',
-        answer:
-          'Meist ja. Kurzfristig sind kleine Rötungen oder Schwellungen möglich, die in der Regel rasch abklingen.',
-      },
-      {
-        question: 'Für welche Areale eignet sich die Methode?',
-        answer:
-          'Gesicht, Hals, Dekolleté und Hände – insbesondere bei feinen Linien, leichter Laxität und müdem Hautbild.',
-      },
-    ],
-  };
+  const ctaData: CTASectionProps = {
+    title: 'Biorevitalisierung in Bremen gewünscht?',
+    subtitle:
+      'Lassen Sie sich individuell beraten – wir erstellen einen passenden Behandlungsplan zur Verbesserung Ihrer Hautqualität.',
+    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
+    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+  };
 
-  const ctaData: CTASectionProps = {
-    title: 'Remodulierung gewünscht?',
-    subtitle:
-      'Lassen Sie sich individuell beraten – wir erstellen einen passenden Behandlungsplan.',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
-  };
-
-  const locationData: LocationSectionProps = {
-    title: 'EL Aesthetics Bremen',
-    description:
-      'Zentral gelegen und gut erreichbar aus Horn-Lehe, Oberneuland, Schwachhausen & Umgebung.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
-  };
-
-  // JSON-LD mit Markennennung (nicht sichtbar im Content)
-  const jsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'MedicalProcedure',
-    name: 'Hyaluron-Remodulierung (BAP-Technik)',
-    alternateName: 'Bio Aesthetic Points',
-    brand: { '@type': 'Brand', name: 'Profhilo' },
-    areaServed: 'Bremen, DE',
-    procedureType: 'Dermatologic',
-    description:
-      'Remodulierung der Hautqualität und Elastizität mit standardisiertem BAP-Protokoll; kurze Downtime, Serie aus 2 Sitzungen plus Erhaltung.',
-    provider: {
-      '@type': 'MedicalClinic',
-      name: 'EL Aesthetics',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: 'Richtepad 14',
-        postalCode: '28355',
-        addressLocality: 'Bremen',
-        addressCountry: 'DE',
-      },
-      telephone: '+49-155-66919635',
-    },
-  };
-
-  return (
-    <div className="min-h-screen bg-white">
-      <HeroSection {...heroData} />
-      <IntroSection {...introData} />
-      <AreasSection {...areasData} />
-      <QuickInfoSection {...quickInfoData} />
-      <ProcessSection {...processData} />
+  return (
+    <div className="min-h-screen bg-white">
+      <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
+      <IntroSection {...introData} />
+      <AreasSection {...areasData} />
+      <QuickInfoSection {...quickInfoData} />
+      <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen zum Remodulierung"
-        subtitle="Natürlich, dezent und planbar – echte Rückmeldungen unserer Patientinnen und Patienten."
-      />
-      <ConsultationSection {...consultationData} />
-      <TreatmentsSection {...treatmentsData} />
-      <FAQSection {...faqData} />
-
-
-      {/* Strukturierte Daten – Marke nur hier */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-    </div>
-  );
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Mehr zu Hyaluron‑Behandlungen"
+        subtitle="Zur Übersicht mit Behandlungen, Abläufen & Hinweisen."
+        href="/hyaluron"
+      />
+      <TreatmentsSection {...treatmentsData} />
+      <FAQSection {...faqData} />
+    </div>
+  );
 }

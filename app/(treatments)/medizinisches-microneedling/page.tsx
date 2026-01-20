@@ -7,6 +7,8 @@ import {
   QuickInfoSection,
   QuickInfoSectionProps,
   ConsultationSection,
+  TableOfContents,
+  TOCItem,
   
   CTASectionProps,
   FAQSection,
@@ -21,16 +23,16 @@ import {
   ProcessSectionProps,
   TreatmentCareSection,
   TreatmentsSection,
-  TreatmentsSectionProps
+  TreatmentsSectionProps,
+  CTASection
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+ 
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Medizinisches Microneedling Bremen | Narben, Poren & Hautbild | EL Aesthetics',
+  title: 'Medizinisches Microneedling in Bremen',
   description:
-    'Ärztlich geführtes Microneedling in Bremen: individuell angepasste Nadeltiefe zur Verbesserung von Aknenarben, Poren, Pigmentunregelmäßigkeiten & Hautstruktur. Schonend und effektiv.',
+    'Ärztlich geführtes Microneedling in Bremen: angepasste Nadeltiefe verbessert Aknenarben, Poren, Pigmentunregelmäßigkeiten und Hautstruktur. Jetzt informieren!',
   keywords:
     'Medizinisches Microneedling Bremen, Microneedling Bremen, Dermapen Bremen, Aknenarben behandeln Bremen, Poren verfeinern Bremen, Dehnungsstreifen Bremen, Hautbild verbessern Bremen, Rosazea Microneedling Bremen',
   openGraph: {
@@ -95,7 +97,7 @@ export default function MedizinischesMicroneedlingPage() {
   };
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: "Microneedling auf einen Blick",
+    title: "med. Microneedling auf einen Blick",
     benefits: [
       { title: "Preis", description: `ab ${PRICES.medizinischesMicroneedling}€*`, iconUrl: "/assets/icons/EUR.svg" },
       { title: "Dauer", description: "ca. 60 Min", iconUrl: "/assets/icons/TIME.svg" },
@@ -106,6 +108,17 @@ export default function MedizinischesMicroneedlingPage() {
     ],
     note: "*Preise sind Richtwerte nach GOÄ und werden im Beratungsgespräch individuell festgelegt."
   };
+
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Behandlungsareale' },
+    { id: 'quickInfos', label: 'Auf einen Blick' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'Weitere Behandlungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
 
   const processData: ProcessSectionProps = {
     title: "Ablauf Ihrer Behandlung",
@@ -159,29 +172,7 @@ export default function MedizinischesMicroneedlingPage() {
     }
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: "Lea W.",
-      rating: 5,
-      text: "Sehr verträglich und professionell durchgeführt. Meine Aknenarben wirken feiner, das Hautbild gleichmäßiger.",
-      date: "2024-09-15"
-    },
-    {
-      id: 2,
-      name: "Anna W.",
-      rating: 5,
-      text: "Top Aufklärung, natürliche Ergebnisse. Nach drei Sitzungen deutlich kleinere Poren und frischer Teint.",
-      date: "2024-08-20"
-    },
-    {
-      id: 3,
-      name: "Yasmin E.",
-      rating: 5,
-      text: "Sanfte Behandlung, gute Nachsorgehinweise. Nach zwei Tagen wieder voll gesellschaftsfähig.",
-      date: "2024-07-10"
-    }
-  ];
+  
 
   const consultationData: ConsultationSectionProps = {
     title: "Ihre individuelle Microneedling-Beratung in Bremen",
@@ -192,8 +183,6 @@ export default function MedizinischesMicroneedlingPage() {
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/kontakt",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
-    imageAlt: "Beratung zum medizinischen Microneedling in Bremen",
     backgroundColor: "bg-[#FDF6F0]"
   };
 
@@ -236,7 +225,7 @@ export default function MedizinischesMicroneedlingPage() {
   };
 
   const faqData: FAQSectionProps = {
-    title: "Häufige Fragen zum Microneedling",
+    title: "Häufig gestellte Fragen (FAQ)",
     faqs: [
       {
         question: "Was ist der Unterschied zwischen medizinischem und kosmetischem Microneedling?",
@@ -278,35 +267,20 @@ export default function MedizinischesMicroneedlingPage() {
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
-  const locationData: LocationSectionProps = {
-    title: "EL Aesthetics – Medizinisches Microneedling in Bremen",
-    description:
-      "In unserer Praxis kombinieren wir ärztliche Sorgfalt mit moderner Needling-Technologie für sichere, natürliche Ergebnisse.",
-    location: {
-      address: "Richtepad 14, 28355 Bremen",
-      phone: "+49 155 66919635",
-      email: "info@elaesthetics-bremen.de",
-      openingHours: ["Termine nach Vereinbarung"]
-    }
-  };
 
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen unserer Patient:innen"
-        subtitle="Echte Eindrücke zu Verträglichkeit, Ergebnisentwicklung und Betreuung in unserer Praxis in Bremen."
-      />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-
+      <CTASection {...ctaData} />
     </div>
   );
 }

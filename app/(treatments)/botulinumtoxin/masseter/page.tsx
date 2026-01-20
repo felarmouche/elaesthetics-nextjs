@@ -1,10 +1,10 @@
 import { Metadata } from 'next';
-import { TableOfContents, TOCItem, AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, CTASection } from '@/components/TreatmentPageComponents';
+import { TableOfContents, TOCItem, AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, CTASection, HubTeaserSection } from '@/components/TreatmentPageComponents';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Masseter Behandlung mit Botulinumtoxin Bremen | Jawline & Bruxismus | EL Aesthetics',
-  description: 'Sachliche Information zur Masseter Behandlung mit Botulinumtoxin in Bremen: Indikation, Ablauf, Risiken, masseter behandlung kosten (Richtwerte). Ärztliche Beratung erforderlich.',
+  title: 'Botox Masseter Behandlung Bremen | Kiefer & Bruxismus Info',
+  description: 'Masseter-Botox in Bremen: Analyse von Kieferlinie, Knirschen und Beschwerden, dezente Dosierung plus Hinweise zu Wirkungseintritt, Kontrolle und Risiken.',
   keywords: 'masseter behandlung, masseter behandlung kosten, Masseter Botox Bremen, Bruxismus Bremen, Zähneknirschen Bremen, Kiefermuskel Behandlung, Jawline Bremen',
   openGraph: {
     title: 'Masseter Behandlung (Botulinumtoxin) in Bremen',
@@ -94,18 +94,7 @@ export default function BotoxMasseterPage() {
     },
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ärztliche Beratung in Bremen',
-    description: [
-      'Wir besprechen Nutzen, mögliche Risiken und Alternativen (z.\u00A0B. Schienen, Physiotherapie). Die Entscheidung für oder gegen eine Masseter Behandlung wird individuell getroffen.',
-      'Durchführung nach aktuellen Standards; Kontraindikationen (z.\u00A0B. neuromuskuläre Erkrankungen, Allergien) werden besprochen.',
-    ],
-    ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontakt',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt: 'Ärztliche Beratung zur Masseter-Behandlung',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Botulinumtoxin-Anwendungen',
@@ -160,7 +149,12 @@ export default function BotoxMasseterPage() {
       <QuickInfoSection {...benefitsData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Alle Botulinumtoxin‑Behandlungen im Überblick"
+        subtitle="Übersicht, Abläufe, Indikationen & Hinweise."
+        href="/botulinumtoxin"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

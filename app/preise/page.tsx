@@ -5,7 +5,7 @@ import { NavButton } from '@/components/preise/NavButton';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Preise aller ästhetischen Behandlungen | EL Aesthetics",
+  title: "Preise ästhetischer Behandlungen | EL Aesthetics Bremen",
   description:
     "Erfahren Sie mehr über die Preise für ästhetische Behandlungen bei EL Aesthetics. Unsere Preisliste umfasst Botulinumtoxin, Hyaluronsäure, PRF/PRP und mehr.",
   keywords:

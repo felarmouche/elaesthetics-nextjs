@@ -1,16 +1,14 @@
 // app/kollagenstimulation/page.tsx
 import type { Metadata } from 'next';
+import {PRICES} from '@/lib/constants'
 import {
-  AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps
+  AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review'
-// import { PRICES } from '@/lib/constants'; // Optional: falls du Preise zentral pflegst
-
+ 
 export const metadata: Metadata = {
-  title: 'Kollagenstimulation Bremen | Hyaluronsäure & Calciumhydroxylapatit | EL Aesthetics',
+  title: 'Kollagenstimulation in Bremen',
   description:
-    'Ärztliche Kollagenstimulation in Bremen mit Hyaluronsäure & Calciumhydroxylapatit: Unterstützung von Hautfestigkeit & -qualität im Gesicht, Hals, Dekolleté & an den Händen. Individuelle Beratung, natürliche Ergebnisse.',
+    'Kollagenstimulation in Bremen mit CaHA- und Hyaluron-Biostimulatoren | Ärztlich & professionell | Jetzt Beratungsgespräch buchen!.',
   keywords:
     'Kollagenstimulation Bremen, Calciumhydroxylapatit Bremen, Hautstraffung ohne OP Bremen, Biostimulator Bremen, Kollagenaufbau Bremen, Hyaluronsäure Bremen, Hals straffen Bremen, Dekolleté straffen Bremen, Handverjüngung Bremen, Jawline straffen Bremen',
   openGraph: {
@@ -30,19 +28,19 @@ export default function KollagenstimulationPage() {
   const heroData: HeroSectionProps = {
     title: 'Kollagenstimulation in Bremen',
     subtitle:
-      'Unterstützung von Hautfestigkeit & -qualität durch eine Kombination aus Hyaluronsäure und Calciumhydroxylapatit – präzise, ärztlich & natürlich wirkend.',
+      'Interesse an einer professionellen Kollagenstimulation in Bremen?\nDann sind Sie bei El Aesthetics genau richtig. Jetzt Beratung vereinbaren!',
     imageSrc: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
     imageAlt: 'Kollagenstimulation in Bremen – ärztliche Injektion mit feiner Kanüle',
     primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Wie funktioniert die Kollagenstimulation?',
+    title: 'Was ist Kollagenstimulation?',
     content: [
       'Bei dieser Methode wird Hyaluronsäure für einen unmittelbaren Auffrischungseffekt mit mikronisierten Calciumhydroxylapatit-Partikeln kombiniert. Während Hyaluronsäure lokal Volumen und Feuchtigkeit spendet, kann Calciumhydroxylapatit die körpereigene Kollagenbildung anregen – für eine schrittweise Unterstützung von Hautfestigkeit und -elastizität.',
       'Die Technik eignet sich insbesondere zur sanften Verbesserung der Hautqualität und Konturen – für natürlich wirkende Ergebnisse ohne Überkorrektur. Die Behandlung erfolgt minimalinvasiv und ist in der Regel schnell und gut integrierbar in den Alltag.',
-      'Wichtig: Ergebnisse und Haltbarkeit sind individuell und hängen u. a. von Ausgangsbefund, Areal und Lebensstil ab. Eine ärztliche Voruntersuchung entscheidet über Eignung und Vorgehen.'
+      'Eine ärztliche Voruntersuchung entscheidet über Eignung und Vorgehen.'
     ],
   };
 
@@ -80,17 +78,28 @@ export default function KollagenstimulationPage() {
   // const priceFrom = PRICES?.kollagenstimulation?.basis ?? 900;
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: 'Kollagenstimulation – auf einen Blick',
+    title: 'Auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 900€*', iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Preis', description: `ab ${PRICES.biostimulation.caHydroxylapatitPlusHyaluron}*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: 'ca. 60–90 Min', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Wirkung', description: 'Volumen teils sofort; Kollagenaufbau über Wochen', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Haltbarkeit', description: 'ca. 18–24 Monate', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Betäubung', description: 'i. d. R. nicht erforderlich', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Ausfallzeit', description: 'meist sofort gesellschaftsfähig', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note: '*Individuelle Richtwerte. Die Abrechnung erfolgt nach GOÄ.',
   };
+
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Behandlungsareale' },
+    { id: 'quickInfos', label: 'Auf einen Blick' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'Weitere Behandlungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
 
   const processData: ProcessSectionProps = {
     title: 'Ablauf der Behandlung',
@@ -123,7 +132,7 @@ export default function KollagenstimulationPage() {
   };
 
   const treatmentCareData: TreatmentCareSectionProps = {
-    title: 'Wichtige Hinweise',
+    title: 'Vor- und Nachsorge',
     beforeTreatment: {
       title: 'Vor der Behandlung',
       instructions: [
@@ -143,11 +152,7 @@ export default function KollagenstimulationPage() {
     },
   };
 
-  const reviews: Review[] = [
-    { id: 1, name: 'Sandra G.', rating: 5, text: 'Sehr gründliche Aufklärung und natürliches Ergebnis. Habe mich jederzeit gut aufgehoben gefühlt.', date: '2024-09-15' },
-    { id: 2, name: 'Bianca S.', rating: 5, text: 'Einfühlsam und professionell. Ergebnis wirkt frisch und nicht „gemacht“.', date: '2024-08-22' },
-    { id: 3, name: 'Layla E.', rating: 5, text: 'Angenehmer Ablauf, kaum Ausfallzeit. Komme wieder!', date: '2024-07-10' },
-  ];
+  
 
   const consultationData: ConsultationSectionProps = {
     title: 'Ihre Ärztin für Kollagenstimulation in Bremen',
@@ -158,8 +163,7 @@ export default function KollagenstimulationPage() {
     ],
     ctaText: 'Beratungstermin anfragen',
     ctaHref: '/kontakt',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt: 'Ärztliches Beratungsgespräch in Bremen',
+    
     backgroundColor: 'bg-[#FDF6F0]',
   };
 
@@ -206,7 +210,7 @@ export default function KollagenstimulationPage() {
   };
 
   const faqData: FAQSectionProps = {
-    title: 'FAQ zur Kollagenstimulation',
+    title: 'Häufig gestellte Fragen | FAQ',
     faqs: [
       {
         question: 'Wie funktioniert die Behandlung?',
@@ -253,32 +257,19 @@ export default function KollagenstimulationPage() {
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
-  const locationData: LocationSectionProps = {
-    title: 'Ihre Praxis in Bremen',
-    description:
-      'Zentral gelegen und gut erreichbar – u. a. aus Schwachhausen, Horn-Lehe, Oberneuland, Findorff, Mitte, Peterswerder, Vahr und Borgfeld sowie Lilienthal, Stuhr, Weyhe, Delmenhorst und Achim.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews reviews={reviews} title="Erfahrungen unserer Patient:innen" subtitle="Natürlich wirkende Ergebnisse und transparente Aufklärung – das schätzen unsere Patient:innen in Bremen." />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
-
-      {/* Rechtshinweis gem. HWG: kein Heilsversprechen, individuelle Ergebnisse variieren */}
+      <CTASection {...ctaData} />
     </div>
   );
 }

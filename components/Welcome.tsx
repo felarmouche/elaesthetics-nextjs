@@ -24,11 +24,6 @@ export default function Welcome() {
         <p className="font-light mb-4 md:mb-6 leading-[1.9] text-text-primary text-base">
           Die auf Sie zugeschnittene Kombination aus bewährten Behandlungsmethoden und neuen Therapiemöglichkeiten in der Ästhetischen Medizin ist der Schlüssel, Ihrem persönlichen Ideal näher zu kommen. Der stärkste Verbündete auf dem Weg dahin ist Ihr eigener Körper.
         </p>
-
-        <p className="font-light mb-4 md:mb-6 leading-[1.9] text-text-primary text-base">
-          Wir freuen uns auf Ihren Besuch in unserer modernen Praxis für
-          ästhetische Medizin in Bremen.
-        </p>
       </div>
 
       <div className="w-full">

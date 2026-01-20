@@ -1,10 +1,8 @@
 "use client";
 import { useState } from 'react';
 import { Send, Mail, Phone, MessageCircle, Instagram } from 'lucide-react';
-
-// Ersetze diese mit deinen echten Werten
-const API_KEY = 'DEIN_API_KEY';
-const DOMAIN = 'https://deine-domain.de';
+import Link from 'next/link';
+import { API_KEY, DOMAIN } from '@/lib/constants';
 
 export default function ContactInline() {
     const [formData, setFormData] = useState({
@@ -56,17 +54,17 @@ export default function ContactInline() {
     ];
 
     return (
-        <div className="min-h-screen bg-white text-black p-6 md:p-12">
+        <div className="min-h-screen bg-white text-accent-dark p-6 md:p-12">
             <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="mb-16">
-                    <h1 className="text-5xl uppercase font-normal mb-8 leading-[1.3] text-gray-900">
+                    <h1 className="text-5xl uppercase font-normal mb-8 leading-[1.3]">
                         Kontakt
                     </h1>
-                    <p className="text-xl text-gray-600 font-medium max-w-2xl">
+                    <p className="text-xl text-accent-dark font-medium max-w-2xl">
                         Sie haben Fragen oder möchten einen Termin vereinbaren?
                     </p>
-                    <p className="text-xl text-gray-600 max-w-2xl">
+                    <p className="text-xl text-accent-dark max-w-2xl">
                         Kontaktieren Sie mich gerne direkt über eine der folgenden Methoden!
                     </p>
                 </div>
@@ -192,14 +190,14 @@ export default function ContactInline() {
                                     />
                                     <label htmlFor="privacy" className="text-sm text-gray-700 cursor-pointer">
                                         Ich habe die{' '}
-                                        <a 
+                                        <Link 
                                             href="/datenschutz" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
                                             className="underline hover:text-black font-medium"
                                         >
                                             Datenschutzerklärung
-                                        </a>
+                                        </Link>
                                         {' '}zur Kenntnis genommen. Ich stimme zu, dass meine Angaben zur Kontaktaufnahme und für Rückfragen dauerhaft gespeichert werden. *
                                     </label>
                                 </div>
@@ -228,7 +226,7 @@ export default function ContactInline() {
 
                         {/* Additional Info */}
                         <div className="mt-8 pt-8 border-t border-gray-200">
-                            <p className="text-sm text-gray-600">
+                            <p className="text-sm text-accent-dark">
                                 Wir antworten in der Regel innerhalb von 24 Stunden. Für dringende Anfragen nutzen Sie bitte WhatsApp oder Telefon.
                             </p>
                         </div>
@@ -242,7 +240,7 @@ export default function ContactInline() {
                             {contactMethods.map((method, idx) => {
                                 const Icon = method.icon;
                                 return (
-                                    <a
+                                    <Link
                                         key={idx}
                                         href={method.href}
                                         target="_blank"
@@ -276,7 +274,7 @@ export default function ContactInline() {
                                                 <p className="text-sm font-mono">{method.value}</p>
                                             </div>
                                         </div>
-                                    </a>
+                                    </Link>
                                 );
                             })}
                         </div>

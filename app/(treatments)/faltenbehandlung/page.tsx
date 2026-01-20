@@ -17,59 +17,76 @@ import {
 
 export const metadata: Metadata = {
   title:
-    'Faltenunterspritzung Bremen | Hyaluronfiller, PRF, Polynukleotide & Kollagenstimulation | EL Aesthetics',
+    'Faltenbehandlung in Bremen',
   description:
-    'Sanfte Faltenunterspritzung in Bremen: Hyaluronfiller für Volumen & Kontur, PRF (Eigenblut) und Polynukleotide für bessere Hautqualität sowie Kollagenstimulation (CaHA/PLLA) für straffere Konturen – natürlich, präzise, individuell.',
-  keywords:
-    'Faltenunterspritzung Bremen, Hyaluron Bremen, Hyaluronfiller Bremen, PRF Bremen, Eigenbluttherapie Bremen, Polynukleotide Bremen, PDRN Bremen, Kollagenstimulation Bremen, Radiesse Bremen, CaHA Bremen, Sculptra Bremen, Filler Bremen, Nasolabialfalte, Marionettenfalten, Lippen aufspritzen Bremen, Tränenrinne',
+    'Faltenbehandlung in Bremen mit Hyaluronsäure, Botulinumtoxin & mehr. Für ein frischeres Aussehen und weniger Falten. Jetzt beraten lassen!',
   openGraph: {
     title:
-      'Faltenunterspritzung in Bremen – Hyaluronfiller, PRF, Polynukleotide & Kollagenstimulation | EL Aesthetics',
+      'Faltenbehandlung in Bremen – Hyaluronfiller, Botulinumtoxin, Polynukleotide & Kollagenstimulation | EL Aesthetics',
     description:
       'Natürlich frischer wirken: Hyaluronfiller für gezielten Volumenaufbau, PRF & Polynukleotide für Hautqualität und Kollagenstimulation (CaHA/PLLA) für definiertere Konturen.',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/filler/og-image-faltenunterspritzung-bremen.webp'],
+    images: ['https://elaesthetics-bremen.de/assets/filler/og-image-faltenbehandlung-bremen.webp'],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/faltenunterspritzung',
+    canonical: 'https://elaesthetics-bremen.de/faltenbehandlung',
   },
 };
 
-export default function FaltenunterspritzungHubPage() {
+export default function FaltenbehandlungHubPage() {
   const heroData: HeroSectionProps = {
-    title: 'Faltenunterspritzung & Filler in Bremen',
+    title: 'Faltenbehandlung in Bremen',
     subtitle:
-      'Hyaluronfiller für Volumen, PRF & Polynukleotide für Hautqualität, Kollagenstimulation (CaHA/PLLA) für präzisere Konturen – natürlich & professionell.',
-    imageSrc: '/assets/faltenunterspritzung/faltenunterspritzung_hero.webp',
+      'Sie sind auf der Suche nach einer Faltenbehandlung in Bremen. Mit Botulinumtoxin und Hyaluronsäure und anderen Verfahren lassen sich Fältchen glätten, Gesichtszüge entspannen und Ihr Aussehen wieder frisch und erholt wirken. Lassen Sie sich individuell beraten!',
+    imageSrc: '/assets/faltenbehandlung/faltenbehandlung_hero.webp',
     imageAlt:
-      'Faltenunterspritzung mit Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation bei EL Aesthetics in Bremen',
+      'Faltenbehandlung mit Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation bei EL Aesthetics in Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#treatments' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Filler & Co - Methoden zur Faltenunterspritzung',
+    title: 'Behandlungsansätze - Methoden zur Faltenbehandlung',
     content: [
-      'Unter „Faltenunterspritzung“ bündeln wir aufeinander abgestimmte Verfahren: Hyaluronfiller, PRF (Eigenblut), Polynukleotide sowie die Kollagenstimulation (z. B. CaHA/PLLA).',
-      'Hyaluronfiller gleichen Volumenverluste aus, polstern Falten sanft und modellieren Konturen – etwa an Lippen, Wangen, Kinn, Jawline oder Nasolabialfalten. Die quervernetzte Hyaluronsäure bindet Wasser und sorgt sofort für glattere Übergänge.',
+      'Unter „Faltenbehandlung“ bündeln wir aufeinander abgestimmte Verfahren: Hyaluronsäure, Botulinumtoxin, Polynukleotide, Eigenbluttherapie sowie Kollagenstimulatoren (z. B. CaHA/PLLA) & vieles mehr.',
+      'Botulinumtoxin entspannt die Muskulatur und kann gezielt mimische Falten glätten und die Gesichtszüge entspannen.',
+      'Hyaluronsäure kann Volumenverluste ausgleichen, Falten sanft polstern und Konturen modellieren – etwa an Lippen, Wangen, Kinn, Jawline oder Nasolabialfalten.',
+      'Die Kollagenstimulation (z. B. mit Calciumhydroxylapatit/PLLA) wirkt strukturbildend: Sie unterstützt die körpereigene Kollagenneubildung und Straffung der Haut.',
       'PRF und Polynukleotide sind regenerative Ansätze zur Verbesserung der Hautqualität: Sie können Feuchtigkeit, Elastizität und Dichte fördern und eignen sich besonders für feine Fältchen sowie empfindliche Zonen (z. B. Unterlider/Tränenrinne).',
-      'Die Kollagenstimulation (z. B. mit Calciumhydroxylapatit/PLLA) wirkt strukturbildend: Sie unterstützt die körpereigene Kollagenneubildung für definiertere Konturen – ideal für Wangen, Jawline oder Kinn.',
-      'Je nach Zielsetzung lassen sich die Methoden kombinieren – z. B. Hyaluron für Volumen plus PRF/Polynukleotide für Hautqualität und Kollagenstimulation für mehr Straffheit.',
+      'Je nach Zielsetzung lassen sich die Methoden kombinieren. Lassen Sie sich individuell beraten!',
     ],
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: 'Behandlungen zum Falten unterspritzen',
+    title: 'Verfahren zur Behandlung von Falten',
     treatments: [
       {
-        imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
+        imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
         imageAlt:
-          'Hyaluronfiller zur Faltenbehandlung und Konturierung (Lippen, Wangen, Kinn, Jawline)',
-        title: 'Hyaluronfiller',
+          'Botulinumtoxin zur Faltenbehandlung und Entspannung der Gesichtszüge',
+        title: 'Botulinumtoxin',
         description:
-          'Gezielter Volumenaufbau & Glättung: Nasolabial- und Marionettenfalten, Lippen, Wangen, Jawline, Kinn – mit sofort sichtbarem Effekt und natürlicher Haptik.',
-        treatmentUrl: '/hyaluron/filler',
+          'Mimik entspannen & Falten glätten: Effektive Behandlung für Stirn-, Zornes- & Krähenfüßchen-Falten sowie zur sanften Anhebung der Augenbrauen und Entspannung der Kiefermuskulatur.',
+        treatmentUrl: '/botulinumtoxin/faltenbehandlung',
+      },
+      {
+        imageUrl: '/assets/hyaluron/hyaluron-hero.webp',
+        imageAlt:
+          'Hyaluronsäure zur Faltenbehandlung und Konturierung (Skinbooster & Filler)',
+        title: 'Hyaluronsäure',
+        description:
+          'Gezielter Volumenaufbau & Glättung: Nasolabial- und Marionettenfalten, Lippen, Wangen, Jawline, Kinn. Auch als Skinbooster für verbesserte Hautqualität.',
+        treatmentUrl: '/hyaluron',
+      },
+      {
+        imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
+        imageAlt:
+          'Kollagenstimulation mit Calciumhydroxylapatit/PLLA zur Konturdefinition von Wangen, Kinn und Jawline',
+        title: 'Kollagenstimulation (z. B. CaHA/PLLA)',
+        description:
+          'Strukturbildender Ansatz für definiertere Konturen: regt die Kollagenneubildung an – ideal für Wangen, Jawline, Kinn oder Hände.',
+        treatmentUrl: '/kollagenstimulation',
       },
       {
         imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
@@ -90,31 +107,31 @@ export default function FaltenunterspritzungHubPage() {
         treatmentUrl: '/polynukleotide',
       },
       {
-        imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
+        imageUrl: '/assets/mesotherapie/mesotherapie-haut_hero.webp',
         imageAlt:
-          'Kollagenstimulation mit Calciumhydroxylapatit/PLLA zur Konturdefinition von Wangen, Kinn und Jawline',
-        title: 'Kollagenstimulation (z. B. CaHA/PLLA)',
+          'Mesotherapie zur Hautverjüngung und Faltenbehandlung',
+        title: 'Mesotherapie',
         description:
-          'Strukturbildender Ansatz für definiertere Konturen: regt die Kollagenneubildung an – ideal für Wangen, Jawline, Kinn oder Hände.',
-        treatmentUrl: '/kollagenstimulation',
+          'Verbessert die Hautqualität, spendet Feuchtigkeit und regt die Kollagenproduktion an.',
+        treatmentUrl: '/mesotherapie/haut',
       },
+      {
+        imageUrl: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp',
+        imageAlt:
+          'Medizinisches Microneedling zur Hautverjüngung und Faltenbehandlung',
+        title: 'Medizinisches Microneedling',
+        description:
+          'Feine Mikroverletzungen regen die Hautregeneration an: verbessert Hautstruktur, Elastizität und kann feine Fältchen mindern.',
+        treatmentUrl: '/medizinisches-microneedling',
+      },
+
     ],
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Welche Methode passt zu Ihren Zielen?',
-    description: [
-      'Als Ärztin für ästhetische Medizin analysiere ich Ihre Gesichtsanatomie und bespreche mit Ihnen, ob Hyaluronfiller, PRF, Polynukleotide, Kollagenstimulation – oder eine Kombination – die beste Option ist.',
-      'Wichtig sind natürliche Proportionen, sichere Techniken und hochwertige Materialien – für Ergebnisse, die man sieht, ohne dass man die Behandlung sieht.',
-      'Ich erkläre transparent Wirkprinzip, Haltbarkeit und mögliche Nebenwirkungen und erstelle einen maßgeschneiderten Behandlungsplan.',
-    ],
-    ctaText: 'Jetzt Beratungsgespräch vereinbaren',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const faqData: FAQSectionProps = {
-    title: 'Häufige Fragen zur Faltenunterspritzung',
+    title: 'Häufige Fragen zur Faltenbehandlung',
     faqs: [
       {
         question:
@@ -155,7 +172,7 @@ export default function FaltenunterspritzungHubPage() {
       {
         question: 'Übernehmen Krankenkassen die Kosten?',
         answer:
-          'Ästhetische Faltenunterspritzungen sind Selbstzahlerleistungen. Übernahmen erfolgen in der Regel nicht. Einen transparenten Kostenplan erhalten Sie im Beratungsgespräch.',
+          'Ästhetische Faltenbehandlungen sind Selbstzahlerleistungen. Übernahmen erfolgen in der Regel nicht. Einen transparenten Kostenplan erhalten Sie im Beratungsgespräch.',
       },
     ],
   };
@@ -170,7 +187,7 @@ export default function FaltenunterspritzungHubPage() {
 
   const tocItems: TOCItem[] = [
     { id: 'intro', label: 'Über die Behandlung' },
-    { id: 'treatments', label: 'Unsere Behandlungen zur Faltenunterspritzung' },
+    { id: 'treatments', label: 'Unsere Behandlungen zur Faltenbehandlung' },
     { id: 'consultation', label: 'Beratung' },
     { id: 'faq', label: 'Häufige Fragen' },
   ];
@@ -181,7 +198,7 @@ export default function FaltenunterspritzungHubPage() {
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
       <FAQSection {...faqData} />
     </div>
   );

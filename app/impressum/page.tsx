@@ -4,11 +4,12 @@
 
 import type { Metadata } from "next";
 import Script from "next/script";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Impressum | EL Aesthetics Bremen",
+  title: "Impressum | EL Aesthetics Bremen – Praxis für Ästhetik Infos",
   description:
-    "Impressum der Privatpraxis für regenerative und ästhetische Medizin – EL Aesthetics, Ärztin Ola Alona El-Armouche, 28355 Bremen.",
+    "Impressum der Privatpraxis EL Aesthetics Bremen: ästhetische und regenerative Medizin, Ärztin Ola Alona El‑Armouche, Kontaktdaten und rechtliche Angaben.",
   alternates: { canonical: "/impressum" },
   robots: { index: true, follow: true },
   openGraph: {
@@ -82,15 +83,15 @@ export default function ImpressumPage() {
           <ul className="space-y-1">
             <li>
               Telefon: {" "}
-              <a className="underline" href="tel:+4915566919635">
+              <Link className="underline" href="tel:+4915566919635">
                 +49 (0) 155 66919635
-              </a>
+              </Link>
             </li>
             <li>
               E-Mail: {" "}
-              <a className="underline" href="mailto:info@elaesthetics-bremen.de">
+              <Link className="underline" href="mailto:info@elaesthetics-bremen.de">
                 info@elaesthetics-bremen.de
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -106,14 +107,14 @@ export default function ImpressumPage() {
             <br />
             28209 Bremen
           </address>
-          <a
+          <Link
             className="mt-2 inline-block underline"
             href="https://aekhb.de/"
             target="_blank"
             rel="noopener noreferrer"
           >
             https://aekhb.de/
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -139,26 +140,26 @@ export default function ImpressumPage() {
             <p className="font-medium">Es gelten folgende berufsrechtliche Regelungen:</p>
             <p>
               Berufsordnung der Ärztekammer Bremen – einsehbar unter:{" "}
-              <a
+              <Link
                 className="underline"
                 href="https://aekhb.de/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 https://aekhb.de/
-              </a>
+              </Link>
             </p>
             <p className="mt-2">
               Approbation als Ärztin erteilt durch Niedersächsisches Landesamt für Soziales, Jugend und Familie,
               Landesprüfungsamt für Heilberufe – einsehbar unter:{" "}
-              <a
+              <Link
                 className="underline"
                 href="https://soziales.niedersachsen.de/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 https://soziales.niedersachsen.de/
-              </a>
+              </Link>
             </p>
           </div>
         </div>
@@ -205,14 +206,14 @@ export default function ImpressumPage() {
       <section className="mt-8">
         <h2 className="text-xl font-semibold">Quelle</h2>
         <div className="mt-3 rounded-2xl border p-5">
-          <a
+          <Link
             className="underline"
             href="https://www.e-recht24.de/impressum-generator.html"
             target="_blank"
             rel="noopener noreferrer"
           >
             https://www.e-recht24.de/impressum-generator.html
-          </a>
+          </Link>
         </div>
       </section>
     </main>

@@ -9,6 +9,7 @@ import {
   QuickInfoSection,
   QuickInfoSectionProps,
   ConsultationSection,
+  HubTeaserSection,
   
   CTASectionProps,
   FAQSection,
@@ -31,9 +32,9 @@ import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title:
-    'Botulinumtoxin gegen Schwitzen (Hyperhidrose) Bremen | Achseln | EL Aesthetics',
+    'Botox gegen Schwitzen Bremen | Hyperhidrose Behandlung Info',
   description:
-    'Information zur Schwitzen Behandlung (axilläre Hyperhidrose) mit Botulinumtoxin in Bremen: indikationsbezogene Beratung, ärztliche Aufklärung, individuelle Entscheidung.',
+    'Aufklärung zur Hyperhidrose mit Botulinumtoxin in Bremen: Indikationsprüfung, dosierte Anwendung, Hinweise zu Wirkungseintritt, Dauer und möglichen Risiken.',
   keywords:
     'botulinumtoxin gegen schwitzen, botulinumtoxin a gegen schwitzen, botulinumtoxin schwitzen, schwitzen behandlung, Hyperhidrose Bremen, Achselschwitzen behandeln, übermäßiges Schwitzen Achseln, Schweißdrüsen Behandlung Bremen',
   openGraph: {
@@ -159,19 +160,7 @@ export default function BotoxHyperhidrosePage() {
     },
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ärztliche Beratung in Bremen',
-    description: [
-      'Behandlungen mit Botulinumtoxin bei Hyperhidrose erfolgen in unserer Praxis nach individueller Aufklärung und Indikationsstellung.',
-      'Es werden Nutzen, mögliche Risiken und Alternativen erläutert. Die Entscheidung für oder gegen eine Behandlung wird gemeinsam getroffen.',
-      'Zertifizierte Durchführung nach aktuellen Standards. Kontraindikationen werden besprochen.',
-    ],
-    ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontakt',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt: 'Ärztliche Beratung zur Hyperhidrose (Botulinumtoxin) in Bremen',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Anwendungen mit Botulinumtoxin in Bremen',
@@ -285,7 +274,12 @@ export default function BotoxHyperhidrosePage() {
       <QuickInfoSection {...benefitsData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Alle Botulinumtoxin‑Behandlungen im Überblick"
+        subtitle="Übersicht, Abläufe, Indikationen & Hinweise."
+        href="/botulinumtoxin"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

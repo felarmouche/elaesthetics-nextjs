@@ -1,9 +1,13 @@
 import type { Metadata } from 'next';
+import {PRICES} from '@/lib/constants'
 import {
   AreasSection,
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
+  HubTeaserSection,
+  TableOfContents,
+  TOCItem,
   
   CTASectionProps,
   FAQSection,
@@ -23,14 +27,13 @@ import {
   TreatmentsSectionProps,
   TreatmentsSection
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+ 
 
 export const metadata: Metadata = {
   title:
-    'Skinbooster in Bremen | Hydratation & Glow mit Hyaluron | EL Aesthetics',
+    'Skinbooster Behandlung Bremen',
   description:
-    'Sanfte Hautauffrischung mit Skinboostern: mehr Feuchtigkeit, feinere Struktur und frische Ausstrahlung – minimal-invasiv, ärztlich und transparent nach GOÄ. Jetzt Beratung vereinbaren.',
+    'Skinbooster in Bremen: fließfähige Hyaluronsäure für Hydratation und Glow. Buchen sie jetzt ihren persönlichen Beratungstermin!',
   keywords:
     'Skinbooster, Hyaluronbehandlung, Hautauffrischung, Feuchtigkeitskur, Glow, feine Linien, Knitterfältchen, Hals, Dekolleté, Hände, Bremen',
   openGraph: {
@@ -53,16 +56,16 @@ export default function SkinboosterBremenPage() {
   const heroData: HeroSectionProps = {
     title: 'Skinbooster in Bremen',
     subtitle:
-      'Tiefenfeuchtigkeit & frischer Glow: glattere, prallere Haut an Gesicht, Hals, Dekolleté & Händen – minimal-invasiv.',
-    imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
+      'Suchen Sie nach einer professionellen Skinbooster-Behandlung für Gesicht, Hals, Dekolleté & Hände? \nDann sind Sie bei El Aesthetics genau richtig.',
+    imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp', 
     imageAlt:
       'Skinbooster-Behandlung – sanfte Hautauffrischung mit Hyaluron',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Was ist ein Hyaluron-Skinbooster?',
+    title: 'Was ist eine Hyaluron-Skinbooster-Behandlung?',
     content: [
       'Skinbooster sind sehr oberflächliche Mikroinjektionen mit unvernetzter Hyaluronsäure. Sie füllen die Feuchtigkeitsdepots der Haut auf, verbessern Elastizität und verfeinern das Hautbild – ohne Volumenaufbau.',
       'So werden feine Linien geglättet, der Teint wirkt ebenmäßiger und die Ausstrahlung frischer. Geeignet für Gesicht, Hals, Dekolleté und Hände.',
@@ -107,7 +110,7 @@ export default function SkinboosterBremenPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Die Behandlung auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 180€*', iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.skinbooster1ml}`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: '45–60 Min', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Wirkeintritt', description: '3–4 Wochen', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Sitzungen', description: '1–4 in der Aufbauphase (produktabhängig)', iconUrl: '/assets/icons/wiederholung.svg' },
@@ -116,6 +119,17 @@ export default function SkinboosterBremenPage() {
     ],
     note: '*Richtwert; individuelle Abrechnung nach GOÄ.',
   };
+
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Behandlungsareale' },
+    { id: 'quickInfos', label: 'Auf einen Blick' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'Weitere Behandlungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
 
   const processData: ProcessSectionProps = {
     title: 'Ablauf der klassischen Skinbooster-Behandlung',
@@ -168,40 +182,7 @@ export default function SkinboosterBremenPage() {
     },
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: 'Caro F.',
-      rating: 5,
-      text:
-        'Nach 3 Wochen ein richtiger Glow und feinere Poren. Natürliches Ergebnis ohne Ausfallzeit.',
-      date: '2025-06-10',
-    },
-    {
-      id: 2,
-      name: 'Nermin A.',
-      rating: 5,
-      text:
-        'Dekolleté wirkt glatter und frischer. Die Mikroinjektionen waren gut auszuhalten.',
-      date: '2025-04-02',
-    },
-    {
-      id: 3,
-      name: 'Silke W.',
-      rating: 5,
-      text:
-        'Für meine Hände ideal – sehen direkt gepflegter aus. Zwei Sitzungen haben gereicht.',
-      date: '2025-02-18',
-    },
-    {
-      id: 4,
-      name: 'Jana L.',
-      rating: 5,
-      text:
-        'Klare Aufklärung, realistische Erwartung – der Effekt kam nach einigen Wochen. Sehr zufrieden.',
-      date: '2024-11-05',
-    },
-  ];
+  
 
   const consultationData: ConsultationSectionProps = {
     title: 'Ihre Expertin für Skinbooster in Bremen',
@@ -212,9 +193,7 @@ export default function SkinboosterBremenPage() {
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
     ctaHref: '/kontakt',
-    imageSrc: '/assets/tinified/IMG_7364.webp',
-    imageAlt:
-      'Ärztin Ola El-Armouche – Skinbooster-Beratung',
+    
     backgroundColor: 'bg-[#FDF6F0]',
   };
 
@@ -234,8 +213,8 @@ export default function SkinboosterBremenPage() {
         imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
-        title: "Hyaluron-Remodellierung (BAP-Technik)",
-        description: "Remodellierung – auch Bioremodulierung genannt – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint. Im Gegensatz zu Volumenbehandlungen steht nicht die Formung im Vordergrund, sondern die Qualität des Gewebes.",
+        title: "Hyaluron-Skinbooster nach BAP-Technik",
+        description: "Biorevitalisierung und Bioremodulierung mit BAP-Technik – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint.",
         treatmentUrl: "/hyaluron/profhilo"
       },
       {
@@ -250,7 +229,7 @@ export default function SkinboosterBremenPage() {
   };
 
   const faqData: FAQSectionProps = {
-    title: 'Häufige Fragen',
+    title: 'Häufige Fragen zur Behandlung',
     faqs: [
       {
         question: 'Wann zeigt sich der Effekt?',
@@ -267,11 +246,7 @@ export default function SkinboosterBremenPage() {
         answer:
           'Kurzfristig möglich: Rötungen, Schwellungen, kleine Quaddeln oder Hämatome – sie klingen meist binnen weniger Tage ab.',
       },
-      {
-        question: 'Welche Kosten entstehen?',
-        answer:
-          'Ab 180€. Der genaue Betrag hängt von Areal, Produkt und Sitzungsanzahl ab; Abrechnung gemäß GOÄ.',
-      },
+
       {
         question: 'Skinbooster, Profhilo oder Filler – was passt zu mir?',
         answer:
@@ -288,32 +263,22 @@ export default function SkinboosterBremenPage() {
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
-  const locationData: LocationSectionProps = {
-    title: 'Skinbooster in Bremen: EL Aesthetics',
-    description:
-      'Zentral gelegen, gut erreichbar aus Horn-Lehe, Oberneuland, Schwachhausen & Umgebung.',
-    location: {
-      address: 'Richtepad 14, 28355 Bremen',
-      phone: '+49 155 66919635',
-      email: 'info@elaesthetics-bremen.de',
-      openingHours: ['Termine nach Vereinbarung'],
-    },
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen mit Skinboostern"
-        subtitle="Natürlich, subtil, effektiv – echte Stimmen zu Hydratation & Glow."
+      
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Mehr zu Hyaluron‑Behandlungen"
+        subtitle="Zur Übersicht mit Behandlungen, Abläufen & Hinweisen."
+        href="/hyaluron"
       />
-      <ConsultationSection {...consultationData} />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
 

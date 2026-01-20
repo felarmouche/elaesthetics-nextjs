@@ -38,9 +38,9 @@ Ordnerstruktur:
 │  ├─ /botulinumtoxin/migraene
 │  └─ /botulinumtoxin/hyperhidrose
 │
-├─ /faltenunterspritzung/          (HUB, keine eigene Behandlung)
+├─ /faltenbehandlung/          (HUB, keine eigene Behandlung)
 │
-├─ /gesichtsbehandlung/            (HUB, keine eigene Behandlung)
+├─ /longevity/  (Hautqualität & Longevity)          (HUB, keine eigene Behandlung)
 │
 ├─ /haarausfall-behandlung/        (HUB, keine eigene Behandlung)
 │

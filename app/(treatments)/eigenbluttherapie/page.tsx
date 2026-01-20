@@ -18,7 +18,7 @@ import {
 import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
-  title: 'Eigenbluttherapie (PRF/PRP) Bremen | Autologe Plasma‑Behandlung | EL Aesthetics',
+  title: 'Eigenbluttherapie PRF & PRP Bremen | Haut- & Haaraufbau',
   description:
     'Eigenbluttherapie mit PRF/PRP in Bremen: autologe Plasma‑Behandlung zur Unterstützung der Hautqualität und bei Haarausfall. Infos zu Ablauf, Sitzungen & Kosten.',
   keywords: [
@@ -93,7 +93,7 @@ export default function EigenbluttherapiePRFPage() {
         title: 'Eigenbluttherapie für die Haut',
         description:
           'Unterstützung der Hautqualität: Textur, feine Linien, Poren & Aknenarben. Für ästhetische Synonyme (Vampir Lifting/Vampire Facial) siehe eigene Seite.',
-        treatmentUrl: '/eigenbluttherapie/vampire-lifting',
+        treatmentUrl: '/eigenbluttherapie/vampir-lifting',
       },
       {
         imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
@@ -106,16 +106,7 @@ export default function EigenbluttherapiePRFPage() {
     ],
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Beratung zur PRF / PRP‑Behandlung in Bremen',
-    description: [
-      'Wir klären, ob PRF oder PRP – oder eine Kombination – für Ihr Ziel (Haut oder Haare) sinnvoll ist. Alternativen und Kombinationsoptionen (z.\u00A0B. Microneedling, Skinbooster, Polynukleotide) werden transparent besprochen.',
-      'Sie erhalten einen individuellen Plan mit Anzahl der Sitzungen, Intervallen und realistischen Erwartungen sowie Informationen zu möglichen Reaktionen und Nachsorge.',
-    ],
-    ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur Behandlung',
@@ -173,7 +164,7 @@ export default function EigenbluttherapiePRFPage() {
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />
     </div>

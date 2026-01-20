@@ -1,14 +1,14 @@
 import type { Metadata } from 'next';
-import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps } from '@/components/TreatmentPageComponents';
+import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem } from '@/components/TreatmentPageComponents';
 import { PRICES } from '@/lib/constants';
 // SEO-OPTIMIERUNG: Metadaten überarbeitet
 export const metadata: Metadata = {
-  // Title: Hauptkeyword an den Anfang, ansprechender und prägnant.
-  title: 'Hyaluron Bremen | Faltenbehandlung, Filler & Skinbooster | EL Aesthetics',
-  // Description: Keyword-Prominenz, klare USPs und starke Handlungsaufforderung.
-  description: 'Professionelle Behandlung mit Hyaluron in Bremen ✓ Faltenunterspritzung, Lippenaufbau & Skinbooster ✓ Natürliche Ergebnisse von erfahrenen Ärzten ✓ Buchen Sie jetzt Ihren Beratungstermin!',
+  // Title: Hauptkeyword an den Anfang, ansprechend und prägnant.
+  title: 'Hyaluron Behandlungen Bremen | Skinbooster & Filler Info',
+  // Description: 150–160 Zeichen, klare Aussage & lokal.
+  description: 'Hyaluron-Behandlungen in Bremen: Filler für Kontur, Skinbooster für Glow. Beratung zu Indikationen, Materialwahl, GOÄ-Kosten, Ablauf, Pflege und Risiken.',
   // Keywords: Um Long-Tail-Keywords und spezifische Behandlungen erweitert.
-  keywords: 'Hyaluron Bremen, Hyaluronsäure Bremen, Faltenbehandlung Bremen, Lippen aufspritzen Bremen, Lippenunterspritzung Bremen, Faltenunterspritzung Bremen, Skinbooster Bremen, Jawline aufbauen Bremen, Wangenaufbau Bremen, Liquid Lifting Bremen',
+  keywords: 'Hyaluron Behandlung Bremen, Hyaluron Bremen, Hyaluronsäure Bremen, Faltenbehandlung Bremen, Lippen aufspritzen Bremen, Lippenunterspritzung Bremen, Faltenunterspritzung Bremen, Skinbooster Bremen, Jawline aufbauen Bremen, Wangenaufbau Bremen, Liquid Lifting Bremen',
   // OpenGraph: Angepasst für eine ansprechende Darstellung in sozialen Medien.
   openGraph: {
     title: 'Hyaluron in Bremen - Natürliche Ästhetik bei EL Aesthetics',
@@ -20,48 +20,46 @@ export const metadata: Metadata = {
   },
   // Canonical URL: Platzhalter beibehalten, muss durch die echte URL ersetzt werden.
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hyaluron-bremen',
+    canonical: 'https://elaesthetics-bremen.de/hyaluron',
   },
 };
 
 export default function HyaluronBremenPage() {
   // SEO-OPTIMIERUNG: Hero-Sektion mit Hauptkeyword in der H1
   const heroData: HeroSectionProps = {
-    // Title (H1): Hauptkeyword "Hyaluron Bremen" prominent platziert.
-    title: "Behandlung mit Hyaluron in Bremen",
-    subtitle: "Suchen Sie nach einer professionellen Faltenbehandlung mit Hyaluron in Bremen?\nDann sind Sie bei El Aesthetics genau richtig.",
+    title: "Hyaluron Behandlung in Bremen",
+    subtitle: "Suchen Sie nach einer professionellen Hyaluron Behandlung in Bremen?\nDann sind Sie bei El Aesthetics genau richtig. Filler, Skinbooster & vieles mehr",
     imageSrc: "/assets/hyaluron/hyaluron-filler_hero.webp",
     // Image Alt: Beschreibend und Keyword-optimiert.
-    imageAlt: "Eine Frau erhält eine professionelle Hyaluron-Behandlung in Bremen",
+    imageAlt: "Eine Frau erhält eine professionelle Hyaluronsäure-Behandlung in Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
-    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
+    secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" }
   };
 
   // SEO-OPTIMIERUNG: Einleitungssektion mit lokalem Bezug
   const introData: IntroSectionProps = {
     title: "Was ist Hyaluronsäure und wie wirkt sie?",
     content: [
-      "Hyaluronsäure ist ein natürlicher Hauptbestandteil unserer Haut und ein entscheidender Feuchtigkeitsspeicher, der für Elastizität und Spannkraft sorgt. Mit den Jahren nimmt der körpereigene Hyaluronsäuregehalt ab, was zu Volumenverlust und Faltenbildung führt.",
-      "In unserer Praxis in Bremen nutzen wir hochwertige Hyaluronsäure-Filler, um diesen Volumenverlust gezielt auszugleichen. Falten werden geglättet, Gesichtskonturen wie die Jawline oder Wangen präzisiert und Lippen dezent aufgebaut.",
-      "Zusätzlich bieten wir Skinbooster-Behandlungen an. Diese versorgen die Haut tiefenwirksam mit Feuchtigkeit, verbessern die Hautstruktur und sorgen für einen strahlenden Glow. Erleben Sie bei uns in Bremen, wie Hyaluron Ihr Hautbild sichtbar verjüngen kann."
+      "Hyaluron oder Hyaluronsäure ist ein natürlicher Bestandteil unserer Haut und ein entscheidender Feuchtigkeitsspeicher, der für Elastizität und Spannkraft sorgt. Mit den Jahren nimmt der körpereigene Hyaluronsäuregehalt ab, was zu Volumenverlust und Faltenbildung führt.",
+      "Mit einer Hyluron Behandlung können unter anderem Falten geglättet, Gesichtskonturen wie die Jawline oder Wangen präzisiert und Lippen dezent aufgebaut werden.",
+      "Zusätzlich bieten wir Skinbooster-Behandlungen an. Diese versorgen die Haut tiefenwirksam mit Feuchtigkeit, verbessern die Hautstruktur und sorgen für einen strahlenden Glow. Skinbooster nach BAP-Technik, umgangsprachlich auch Profhilo genannt (Markenname), sollen zu besserer Hautqualität verhelfen."
     ]
   };
 
   // SEO-OPTIMIERUNG: Behandlungssektion mit klareren Titeln und optimierten Alt-Tags
   const treatmentsData: TreatmentsSectionProps = {
-    title: "Unsere Behandlungen mit Hyaluron in Bremen",
+    title: "Unsere Behandlungen mit Hyaluronsäure in Bremen",
     treatments: [
       {
         imageUrl: "/assets/hyaluron/hyaluron-filler_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
-        title: "Hyaluronsäure-Filler (Falten & Volumen)",
-        description: "Die Behandlung mit Hyaluron-Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
+        title: "Hyaluron-Filler (Falten & Volumen)",
+        description: "Die Hyaluron Behandlung mit Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
         treatmentUrl: "/hyaluron/filler"
       },
       {
         imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Symbolbild für Feuchtigkeit durch eine Skinbooster-Behandlung",
         title: "Skinbooster (Hydratation & Glow)",
         description: "Skinbooster revitalisieren Ihre Haut von innen heraus. Durch die tiefe Hydratation mit unvernetzter Hyaluronsäure werden feine Linien geglättet und die Haut erhält eine frische, strahlende Ausstrahlung. Diese Behandlung eignet sich in unserer Praxis in Bremen hervorragend für Gesicht, Hals, Dekolleté und Hände.",
@@ -71,7 +69,7 @@ export default function HyaluronBremenPage() {
         imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
-        title: "Hyaluron-Remodellierung (BAP-Technik)",
+        title: "Hyaluron-Remodellierung mit Skinbooster (BAP-Technik)",
         description: "Remodellierung – auch Bioremodulierung genannt – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint. Im Gegensatz zu Volumenbehandlungen steht nicht die Formung im Vordergrund, sondern die Qualität des Gewebes.",
         treatmentUrl: "/hyaluron/profhilo"
       },
@@ -86,8 +84,15 @@ export default function HyaluronBremenPage() {
     ]
   };
 
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'treatments', label: 'Behandlungen' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
+
   const areasData: AreasSectionProps = {
-    title: "Bereiche für eine Hyaluron-Behandlung",
+    title: "Bereiche für eine Behandlung mit Hyaluronsäure",
     categories: [
       {
         category: "Faltenbehandlung",
@@ -134,7 +139,7 @@ export default function HyaluronBremenPage() {
       { title: "Ergebnis", description: "sofort sichtbar", iconUrl: "/assets/icons/TIME.svg" },
       { title: "Haltbarkeit", description: "6-18 Monate", iconUrl: "/assets/icons/CAL.svg" },
       { title: "Betäubung", description: "Creme möglich, oft nicht nötig", iconUrl: "/assets/icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }
+      { title: "Gesellschaftsfähig", description: "keine", iconUrl: "/assets/icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -165,15 +170,7 @@ export default function HyaluronBremenPage() {
     ]
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: "Ihr persönlicher Beratungstermin in Bremen",
-    description: ["Sie wünschen sich eine Veränderung und möchten mehr über die Möglichkeiten einer Hyaluron-Behandlung erfahren?", "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und Gründerin von EL Aesthetics. In meiner Praxis kombiniere ich klassische, minimalinvasive Behandlungen wie Botulinumtoxin und Hyaluronsäure-Filler mit innovativen regenerativen Verfahren – individuell abgestimmt auf Ihre Bedürfnisse und Ihre Haut.", "Ich bin zertifiziert für Botulinumtoxin- und Filler-Behandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT). Durch regelmäßige Fortbildungen, Workshops und Fachkongresse halte ich mein Wissen auf dem neuesten Stand – für sichere und moderne Behandlungen auf fachlich höchstem Niveau.", "In unserer Arztpraxis in Bremen nehmen wir uns Zeit für Sie. Vereinbaren Sie noch heute Ihren unverbindlichen Beratungstermin und fühlen Sie sich wieder wohl in Ihrer Haut."],
-    ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/kontakt",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
-    imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für eine Hyaluron-Behandlung in Bremen",
-    backgroundColor: "bg-[#FDF6F0]"
-};
+  
 
   const treatmentCareData: TreatmentCareSectionProps = {
     title: "Wichtige Hinweise zur Behandlung",
@@ -225,11 +222,11 @@ export default function HyaluronBremenPage() {
     title: "Häufige Fragen zur Hyaluron-Behandlung in Bremen",
     faqs: [
       {
-        question: "Was genau ist ein Hyaluronsäure-Filler?",
+        question: "Was genau ist ein Filler?",
         answer: "Hyaluronsäure-Filler ist ein speziell für ästhetische Behandlungen entwickeltes Gel, das dem körpereigenen Hyaluron nachempfunden ist. Es ist biologisch abbaubar und wird verwendet, um Falten aufzufüllen, Volumen (z.B. an Wangen oder Lippen) wiederherzustellen oder Konturen zu definieren. Je nach Anwendungsbereich gibt es Filler mit unterschiedlicher Vernetzung und Viskosität."
       },
       {
-        question: "Ist eine Behandlung mit Hyaluronsäure schmerzhaft?",
+        question: "Ist eine Behandlung schmerzhaft?",
         answer: "Das Schmerzempfinden ist individuell, die meisten Patienten empfinden die Behandlung jedoch als gut erträglich. Die meisten hochwertigen Hyaluron-Präparate enthalten bereits ein lokales Betäubungsmittel (Lidocain). Zusätzlich kann vorab eine Betäubungscreme aufgetragen werden, um den Komfort zu maximieren."
       },
       {
@@ -241,12 +238,8 @@ export default function HyaluronBremenPage() {
         answer: "Behandlungen mit Hyaluronsäure gelten als sehr sicher, wenn sie von qualifizierten Ärzten durchgeführt werden. Leichte Rötungen, Schwellungen oder kleine Blutergüsse an der Einstichstelle sind normal und klingen meist innerhalb weniger Tage ab. Über ernstere, aber sehr seltene Risiken wie Gefäßverschlüsse klären wir Sie im persönlichen Gespräch umfassend auf."
       },
       {
-        question: "Was ist der Unterschied zwischen Hyaluron-Fillern und Skinboostern?",
+        question: "Was ist der Unterschied zwischen Fillern und Skinboostern?",
         answer: "Während Hyaluron-Filler primär dazu dienen, Volumen zu geben und tiefe Falten aufzufüllen, sind Skinbooster dünnflüssiger und werden zur tiefen Hydratation und Verbesserung der allgemeinen Hautqualität eingesetzt. Skinbooster polstern die Haut nicht auf, sondern spenden Feuchtigkeit von innen und sorgen für einen frischen Glow."
-      },
-      {
-        question: "Was kostet eine Hyaluron-Behandlung in Ihrer Praxis in Bremen?",
-        answer: "Die Kosten für eine Hyaluron-Behandlung sind individuell und richten sich nach der benötigten Materialmenge und dem Behandlungsaufwand. Die Preise beginnen bei ca. 250€. Im Rahmen Ihres persönlichen Beratungsgesprächs in unserer Bremer Praxis erstellen wir Ihnen einen detaillierten und transparenten Kostenplan."
       }
     ]
   };
@@ -258,31 +251,18 @@ export default function HyaluronBremenPage() {
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
-  const locationData: LocationSectionProps = {
-    title: "Ihre Praxis für Ästhetik: EL Aesthetics Bremen",
-    description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen Hyaluron-Behandlungen auf höchstem Niveau. Wir legen Wert auf eine vertrauensvolle Atmosphäre, individuelle Beratung und natürliche, ästhetische Ergebnisse, die Ihre Persönlichkeit unterstreichen.",
-    location: {
-      address: "Richtepad 14, 28355 Bremen",
-      phone: "+49 155 66919635",
-      email: "info@elaesthetics-bremen.de",
-      openingHours: [
-        "Termine nach Vereinbarung"
-      ]
-    }
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
       <TreatmentCareSection {...treatmentCareData} />
       <FAQSection {...faqData} />
-
     </div>
   );
 }

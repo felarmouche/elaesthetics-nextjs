@@ -2,9 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const services = [
-  { id: 1, title: 'Hautverjüngung & Anti-Aging', image: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp', path: '/hautverjuengung' },
-  { id: 2, title: 'Unterspritzungen & Filler', image: '/assets/faltenunterspritzung/faltenunterspritzung_hero.webp', path: '/faltenunterspritzung' },
-  { id: 3, title: 'Hautverbesserung', image: '/assets/pexels/hyaluron-rainbow.webp', path: '/haut-verbesserung' },
+  { id: 1, title: 'Hautqualität & Longevity', image: '/assets/longevity/longevity_hero.webp', path: '/longevity' },
+  { id: 2, title: 'Faltenbehandlung', image: '/assets/faltenbehandlung/faltenbehandlung_hero.webp', path: '/faltenbehandlung' },
+  { id: 3, title: 'Filler & Volumenaufbau', image: '/assets/filler/filler_hero.webp', path: '/filler' },
   { id: 4, title: 'Haarbehandlungen', image: '/assets/pexels/hair.webp', path: '/haarausfall-behandlung' },
   { id: 5, title: 'Bodyshaping & Fettreduktion', image: '/assets/pexels/sculpture.webp', path: '/fett-weg-spritze' },
   { id: 6, title: 'Hylase - Auflösen von Hyaluronsäure', image: '/assets/hyaluron/hyaluron-hylase_hero.webp', path: '/hyaluron/hylase' },
@@ -16,18 +16,11 @@ export default function Services() {
     <section id="services" className="bg-background-secondary py-16 md:py-32 px-[5%]">
       <div className="text-left md:text-center mb-0 md:mb-20">
         <h2 className="text-4xl font-normal mb-6 text-accent-dark uppercase tracking-[2px]">
-          Unsere Leistungen
+          Leistungen
         </h2>
         <p className="max-w-[900px] mx-auto mb-4 text-text-primary leading-relaxed text-lg">
-          Unsere Praxis für ästhetische Medizin in Bremen bietet Ihnen eine 
-          breite Palette an ästhetischen Behandlungen – von minimal-invasiven 
-          Verfahren wie Hyaluron-Filler und Botox bis hin zu speziellen 
-          Hautpflege Konzepten.
-        </p>
-        <p className="max-w-[900px] mx-auto mb-4 text-text-primary leading-relaxed text-lg">
-          Unser Ziel ist es, Ihre natürliche Schönheit hervorzuheben und Ihnen 
-          eine frische, verjüngte Ausstrahlung zu schenken. Lassen Sie sich von 
-          uns überzeugen, wie kleine Eingriffe große Veränderungen bewirken können.
+          El Aesthetics bietet Ihnen eine
+          breite Palette an minimalinvasiven ästhetischen Behandlungen - von Unterspritzungen mit Hyalurosäure Fillern und Botulinumtoxin bis hin zu modernen regenerativen Verfahren.
         </p>
       </div>
       

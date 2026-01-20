@@ -4,6 +4,7 @@ import {
   AreasSectionProps,
   ConsultationSectionProps,
   ConsultationSection,
+  HubTeaserSection,
   TableOfContents,
   TOCItem,
   CTASectionProps,
@@ -25,9 +26,9 @@ import {
 } from '@/components/TreatmentPageComponents';
 
 export const metadata: Metadata = {
-  title: 'Vampir Lifting Bremen | Natürliches Lifting ohne Filler | EL Aesthetics',
+  title: 'Vampir Lifting Bremen | Plasma-Facial für Glow & Kontur',
   description:
-    'Vampir Lifting (auch Vampire Facial/Plasma-Lifting): körpereigene Regeneration für ebenmäßiger wirkende Haut, feinere Poren und Unterstützung bei Augenringen – ärztlich geplant in Bremen.',
+    'Vampir Lifting in Bremen: Eigenblut-Plasma fördert Glow, Porenverfeinerung und Augenpartie. Infos zu Aufbereitung, klarer Sitzungsplanung, Heilung und Risiken.',
   keywords: [
     // Primary / lokal
     'Vampir Lifting Bremen',
@@ -149,17 +150,7 @@ export default function VampirLiftingPage() {
     },
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ihre Beratung zum Vampir Lifting',
-    description: [
-      'Wir prüfen gemeinsam, ob Vampire Facial/Plasma‑Lifting für Ihr Anliegen sinnvoll ist und welche Alternativen bestehen (z.\u00A0B. Skinbooster, Polynukleotide, Microneedling).',
-      'Die Planung (Areal, Applikationstiefe, Serie) erfolgt individuell und transparent. Ergebnisse variieren; wir geben keine Heilsversprechen.',
-      'Medizinische Details zu PRP/PRF (Eigenblut) finden Sie gebündelt auf unserer Fachseite – zur klaren Abgrenzung und besseren Orientierung.',
-    ],
-    ctaText: 'Jetzt Beratung buchen',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Sinnvolle Alternativen & Kombinationen',
@@ -248,7 +239,12 @@ export default function VampirLiftingPage() {
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Zur Übersicht: Eigenbluttherapie (PRF/PRP)"
+        subtitle="Anwendungen, Abläufe, Sitzungspläne & Hinweise."
+        href="/eigenbluttherapie"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

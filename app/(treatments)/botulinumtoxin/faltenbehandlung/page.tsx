@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
-import { CTASection, TOCItem, TableOfContents, AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps } from '@/components/TreatmentPageComponents';
+import { CTASection, TOCItem, TableOfContents, AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, HubTeaserSection } from '@/components/TreatmentPageComponents';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Faltenbehandlung mit Botulinumtoxin in Bremen | Stirn-, Zornes- & Augenfalten | EL Aesthetics',
-  description: 'Ärztliche, individuelle Behandlung mimischer Falten in Bremen mit Botulinumtoxin. Keine Produktnamen, keine Heilversprechen. Aufklärung und persönliche Beratung stehen im Vordergrund.',
+  title: 'Botox Faltenbehandlung Bremen | Stirn, Zornes- & Augenfalten',
+  description: 'Individuelle Botox-Behandlung gegen Stirn-, Zornes- und Augenfalten in Bremen. Ärztliche Analyse, dezente Dosierung, transparente Risiken und Nachkontrolle.',
   keywords: 'Faltenbehandlung Bremen, Botulinumtoxin, mimische Falten, Stirnfalten, Zornesfalte, Augenfalten, Krähenfüße, Beratung',
   openGraph: {
     title: 'Faltenbehandlung mit Botulinumtoxin in Bremen – EL Aesthetics',
@@ -149,16 +149,7 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
     },
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ihre Ärztin',
-    description: [
-      'Ola El-Armouche, \u00C4rztin f\u00FCr \u00E4sthetische Medizin und Gr\u00FCnderin von EL Aesthetics.',
-      'Regelm\u00E4\u00DFige Fortbildungen und eine individuelle Vorgehensweise sind f\u00FCr uns grundlegend. Entscheidend ist stets die pers\u00F6nliche Beratung und Indikationsstellung – ohne Heilversprechen.',
-    ],
-    ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Anwendungen (nach Indikation)',
@@ -266,7 +257,12 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Alle Botulinumtoxin‑Behandlungen im Überblick"
+        subtitle="Übersicht, Abläufe, Indikationen & Hinweise."
+        href="/botulinumtoxin"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

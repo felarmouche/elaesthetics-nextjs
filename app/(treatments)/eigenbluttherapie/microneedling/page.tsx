@@ -9,6 +9,7 @@ import {
   QuickInfoSection,
   QuickInfoSectionProps,
   ConsultationSection,
+  HubTeaserSection,
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -23,13 +24,13 @@ import {
   TreatmentsSectionProps,
   CTASection
 } from '@/components/TreatmentPageComponents';
-import { Review } from '@/types/Review';
+ 
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'PRF Microneedling Bremen – Plasma-Needling gegen Narben & große Poren | EL Aesthetics',
+  title: 'PRF Microneedling Bremen | Plasma-Needling gegen Narben',
   description:
-    'PRF Microneedling (Plasma-Needling) in Bremen: Microneedling + PRF-Matrix zur Unterstützung der Regeneration – für feinere Poren, glattere Textur und Aknenarben. Ärztlich durchgeführt.',
+    'PRF Microneedling in Bremen: Kombination aus Needling und PRF-Matrix für feinere Poren und Narben mit Hinweisen zu Sitzungen, Ablauf, Nachpflege und Risiken.',
   keywords:
     'PRF Microneedling Bremen, Plasma Needling Bremen, Microneedling mit PRF, PRP Microneedling Bremen, iPRF Needling, Aknenarben behandeln Bremen, Poren verfeinern Bremen, Hautbild verbessern Bremen, medizinisches Microneedling Bremen',
   openGraph: {
@@ -161,23 +162,7 @@ export default function PRFMicroneedlingPage() {
     }
   };
 
-  const reviews: Review[] = [
-    { id: 1, name: 'Mareike B.', rating: 5, text: 'Poren sichtbar feiner, Haut praller. Sehr transparente Aufklärung!', date: '2024-09-12' },
-    { id: 2, name: 'Tina S.', rating: 5, text: 'Nach der 3. Sitzung deutliche Verbesserung der Aknenarben. Downtime war kurz.', date: '2024-08-23' },
-    { id: 3, name: 'Jana F.', rating: 5, text: 'Professionell, verträglich und natürlich wirkend – klare Empfehlung.', date: '2024-07-19' }
-  ];
-
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ihre persönliche Beratung in Bremen',
-    description: [
-      'Wir prüfen, ob Plasma-Needling die passende Option für Ihre Indikation ist und definieren realistische Ziele.',
-      'Nadeltiefe und PRF-Applikation werden individuell festgelegt; Sie erhalten klare Empfehlungen zu Anzahl und Intervallen.',
-      'Transparenz zu Erwartungsmanagement, Regenerationszeit und Pflege inklusive.'
-    ],
-    ctaText: 'Jetzt Beratungstermin anfragen',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]'
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen mit Eigenblut',
@@ -273,7 +258,12 @@ export default function PRFMicroneedlingPage() {
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
+      <HubTeaserSection
+        title="Zur Übersicht: Eigenbluttherapie (PRF/PRP)"
+        subtitle="Anwendungen, Abläufe, Sitzungspläne & Hinweise."
+        href="/eigenbluttherapie"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

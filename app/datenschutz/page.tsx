@@ -1,5 +1,7 @@
 "use client";
+
 import { Shield, ArrowLeft } from 'lucide-react';
+import Link from 'next/link';
 
 export default function DatenschutzPage() {
     return (
@@ -7,13 +9,13 @@ export default function DatenschutzPage() {
             {/* Header */}
             <div className="bg-gray-50 border-b border-gray-200">
                 <div className="max-w-4xl mx-auto px-6 py-12 md:py-16">
-                    <a 
+                    <Link 
                         href="/"
                         className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-black mb-8 transition-colors"
                     >
                         <ArrowLeft className="w-4 h-4" />
                         Zurück zur Startseite
-                    </a>
+                    </Link>
                     
                     <div className="flex items-center gap-4 mb-6">
                         <div className="p-3 bg-black text-white">
@@ -48,7 +50,7 @@ export default function DatenschutzPage() {
                         
                         <h4 className="text-lg font-semibold mb-3 mt-6">Wer ist verantwortlich für die Datenerfassung auf dieser Website?</h4>
                         <p className="mb-4 leading-relaxed text-gray-700">
-                            Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle" in dieser Datenschutzerklärung entnehmen.
+                            Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Abschnitt „Hinweis zur Verantwortlichen Stelle&quot; in dieser Datenschutzerklärung entnehmen.
                         </p>
 
                         <h4 className="text-lg font-semibold mb-3 mt-6">Wie erfassen wir Ihre Daten?</h4>
@@ -213,7 +215,7 @@ export default function DatenschutzPage() {
 
                         <h3 className="text-xl font-bold mb-4 mt-8">SSL- bzw. TLS-Verschlüsselung</h3>
                         <p className="mb-4 leading-relaxed text-gray-700">
-                            Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
+                            Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte, wie zum Beispiel Bestellungen oder Anfragen, die Sie an uns als Seitenbetreiber senden, eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://&quot; auf „https://&quot; wechselt und an dem Schloss-Symbol in Ihrer Browserzeile.
                         </p>
                         <p className="mb-4 leading-relaxed text-gray-700">
                             Wenn die SSL- bzw. TLS-Verschlüsselung aktiviert ist, können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.
@@ -272,7 +274,7 @@ export default function DatenschutzPage() {
                             Weitere Informationen hierzu finden Sie in der Datenschutzerklärung von Instagram: https://privacycenter.instagram.com/policy/.
                         </p>
                         <p className="mb-4 leading-relaxed text-gray-700">
-                            Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework" (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/4452.
+                            Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework&quot; (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/4452.
                         </p>
                     </section>
 
@@ -284,7 +286,7 @@ export default function DatenschutzPage() {
 
                         <h3 className="text-xl font-bold mb-4 mt-8">Google Maps</h3>
                         <p className="mb-4 leading-relaxed text-gray-700">
-                            Diese Seite nutzt den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google"), Gordon House, Barrow Street, Dublin 4, Irland. Mit Hilfe dieses Dienstes können wir Kartenmaterial auf unserer Website einbinden.
+                            Diese Seite nutzt den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google&quot;), Gordon House, Barrow Street, Dublin 4, Irland. Mit Hilfe dieses Dienstes können wir Kartenmaterial auf unserer Website einbinden.
                         </p>
                         <p className="mb-4 leading-relaxed text-gray-700">
                             Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung. Wenn Google Maps aktiviert ist, kann Google zum Zwecke der einheitlichen Darstellung der Schriftarten Google Fonts verwenden. Beim Aufruf von Google Maps lädt Ihr Browser die benötigten Web Fonts in ihren Browsercache, um Texte und Schriftarten korrekt anzuzeigen.
@@ -299,12 +301,12 @@ export default function DatenschutzPage() {
                             Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: https://policies.google.com/privacy?hl=de.
                         </p>
                         <p className="mb-4 leading-relaxed text-gray-700">
-                            Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework" (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/5780.
+                            Das Unternehmen verfügt über eine Zertifizierung nach dem „EU-US Data Privacy Framework&quot; (DPF). Der DPF ist ein Übereinkommen zwischen der Europäischen Union und den USA, der die Einhaltung europäischer Datenschutzstandards bei Datenverarbeitungen in den USA gewährleisten soll. Jedes nach dem DPF zertifizierte Unternehmen verpflichtet sich, diese Datenschutzstandards einzuhalten. Weitere Informationen hierzu erhalten Sie vom Anbieter unter folgendem Link: https://www.dataprivacyframework.gov/participant/5780.
                         </p>
                         
                         <div className="mt-12 pt-8 border-t border-gray-300">
                             <p className="text-sm text-gray-500">
-                                Quelle: <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">https://www.e-recht24.de</a>
+                                Quelle: <Link href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">https://www.e-recht24.de</Link>
                             </p>
                         </div>
                     </section>
@@ -318,13 +320,13 @@ export default function DatenschutzPage() {
                     <p className="text-gray-600 mb-6">
                         Kontaktieren Sie uns gerne jederzeit bei Fragen zu Ihren personenbezogenen Daten.
                     </p>
-                    <a 
+                    <Link 
                         href="/"
                         className="inline-flex items-center gap-2 bg-black text-white px-8 py-4 font-bold hover:bg-gray-900 transition-colors"
                     >
                         <ArrowLeft className="w-4 h-4" />
                         Zurück zur Startseite
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

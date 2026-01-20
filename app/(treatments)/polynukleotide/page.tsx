@@ -7,6 +7,8 @@ import {
   QuickInfoSection,
   QuickInfoSectionProps,
   ConsultationSection,
+  TableOfContents,
+  TOCItem,
   
   CTASectionProps,
   FAQSection,
@@ -23,13 +25,12 @@ import {
   TreatmentsSection,
   TreatmentsSectionProps
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+ 
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Polynukleotide Behandlung Bremen | Hautregeneration & Anti-Aging | EL Aesthetics',
-  description: 'Polynukleotide-Behandlung in Bremen ✓ Hautregeneration, Faltenreduktion & Haarwachstum ✓ Jetzt Beraten lassen!',
+  title: 'Polynukleotide Behandlung Bremen | Hautregeneration & Anti-Aging',
+  description: 'Polynukleotide in Bremen: fördern Hautregeneration, mindern Falten, fördern Haarwachstum. Ärztliche Beratung zu Ablauf, Sitzungen, Kombinationen und Risiken.',
   keywords: 'Polynukleotide Bremen, Polynukleotide Behandlung Bremen, Polynukleotide Augen Bremen, Polynukleotide Haarausfall Bremen, DNA Hauttherapie Bremen',
   openGraph: {
     title: 'Polynukleotide Behandlung Bremen - Biostimulation der neuesten Generation',
@@ -111,6 +112,17 @@ export default function PolynukleotideBehandlungPage() {
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
 
+  const tocItems: TOCItem[] = [
+    { id: 'intro', label: 'Über die Behandlung' },
+    { id: 'areas', label: 'Anwendungsbereiche' },
+    { id: 'quickInfos', label: 'Auf einen Blick' },
+    { id: 'process', label: 'Ablauf' },
+    { id: 'treatmentsCare', label: 'Vor & Nach der Behandlung' },
+    { id: 'consultation', label: 'Beratung' },
+    { id: 'treatments', label: 'Weitere Behandlungen' },
+    { id: 'faq', label: 'Häufige Fragen' },
+  ];
+
   const processData: ProcessSectionProps = {
     title: "Ablauf Ihrer Polynukleotide-Behandlung in Bremen",
     steps: [
@@ -183,58 +195,7 @@ export default function PolynukleotideBehandlungPage() {
     }
   };
 
-  const reviews: Review[] = [
-    {
-      id: 1,
-      name: "Sandra G.",
-      rating: 5,
-      text: "Ich war heute das zweite Mal bei der jungen, lieben und vor allem kompetenten Ärztin. Sie weiß definitiv was sie tut und ich fühle mich einfach sehr gut aufgehoben. Ich freue mich schon auf das nächste Mal und ich kann sie ruhigen Gewissens weiter empfehlen.",
-      date: "2024-09-15"
-    },
-    {
-      id: 2,
-      name: "Bianca S.",
-      rating: 5,
-      text: "Die Liebe Kübra macht wirklich tolle Arbeit, ich kann ihre Praxis jedem nur von Herzen empfehlen, meine Mutter und ich haben uns jetzt schon wiederholt bei ihr behandeln lassen und sind mehr als zufrieden mit den Ergebnissen. Sie hat einfach ein Auge für die Ästhetik und geht genau auf die Wünsche ihrer Patienten ein. Ihre Beratung ist sehr aufklärend und sie hat mich vorher sehr gut aufgeklärt. Die Ergebnisse sehen sehr natürlich aus. Die Praxis ist sehr schön eingerichtet und hygienisch. Außerdem geht sie sehr einfühlsam mit den Patienten um, sodass einem die Angst vor der Behandlung genommen wird. Man fühlt sich bei ihr sehr wohl. Vielen Dank für die tolle Arbeit! Ich freue mich schon auf meine nächste Behandlung.",
-      date: "2024-08-22"
-    },
-    {
-      id: 3,
-      name: "Layla E.",
-      rating: 5,
-      text: "Super nette, ehrliche Beratung. Ich wurde gut aufgeklärt und Schritt für Schritt durch die Behandlung geführt. Ich hatte vorher etwas Angst, die wurde mir aber direkt genommen und habe mich sehr wohlgefühlt. Bin auch richtig happy mit dem Endergebnis und würde sie jedem weiterempfehlen.",
-      date: "2024-07-10"
-    },
-    {
-      id: 4,
-      name: "Maria K.",
-      rating: 5,
-      text: "Absolut professionell und sehr herzlich! Die Behandlung war schmerzfrei und das Ergebnis ist fantastisch. Ich komme definitiv wieder.",
-      date: "2024-06-18"
-    },
-    {
-      id: 5,
-      name: "Julia M.",
-      rating: 5,
-      text: "Ich bin begeistert! Die Beratung war ausführlich, die Behandlung sanft und das Ergebnis natürlich und wunderschön. Vielen Dank!",
-      date: "2024-05-25"
-    }
-  ];
-
-  const consultationData: ConsultationSectionProps = {
-    title: "Ihre Expertin für Polynukleotide-Behandlungen in Bremen",
-    description: [
-      "Sie möchten die regenerative Kraft von Polynukleotiden für Ihre Haut oder Ihr Haar nutzen?",
-      "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische und regenerative Medizin und Gründerin von EL Aesthetics. Mit fundierter Erfahrung in biologischen Hauttherapien biete ich Ihnen innovative Behandlungen mit Polynukleotiden für natürliche, nachhaltige Ergebnisse.",
-      "Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich stets auf dem neuesten Stand der regenerativen Medizin. Ich bin Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT) und arbeite ausschließlich mit hochwertigen, biologisch verträglichen Präparaten.",
-      "In meiner Praxis in Bremen steht Ihre individuelle Betreuung im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie Polynukleotide Ihre Haut regenerieren und verjüngen können."
-    ],
-    ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/kontakt",
-    imageSrc: "/assets/tinified/IMG_7364.webp",
-    imageAlt: "Ärztin Ola El-Armouche im Beratungsgespräch für Polynukleotide-Behandlung in Bremen",
-    backgroundColor: "bg-[#FDF6F0]"
-  };
+  
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere regenerative Behandlungen in Bremen",
@@ -315,33 +276,17 @@ export default function PolynukleotideBehandlungPage() {
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
 
-  const locationData: LocationSectionProps = {
-    title: "Ihre Praxis für Polynukleotide-Behandlungen in Bremen: EL Aesthetics",
-    description: "In unserer modernen Praxis im Herzen von Bremen bieten wir Ihnen innovative Polynukleotide-Behandlungen auf höchstem medizinischen Niveau. Wir legen Wert auf biologisch verträgliche Therapien, natürliche Ergebnisse und eine vertrauensvolle Atmosphäre.",
-    location: {
-      address: "Richtepad 14, 28355 Bremen",
-      phone: "+49 155 66919635",
-      email: "info@elaesthetics-bremen.de",
-      openingHours: [
-        "Termine nach Vereinbarung"
-      ]
-    }
-  };
-
   return (
     <div className="min-h-screen bg-white">
       <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <AreasSection {...areasData} />
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      <PatientReviews
-        reviews={reviews}
-        title="Erfahrungen unserer Patienten"
-        subtitle="Unsere Patienten schätzen vor allem die natürlichen Ergebnisse unserer regenerativen Behandlungen und den einfühlsamen Umgang in unserer Praxis für ästhetische Medizin in Bremen. Viele berichten, wie zufrieden sie mit den Ergebnissen und der individuellen Beratung sind, die auf ihre persönlichen Wünsche abgestimmt ist."
-      />
-      <ConsultationSection {...consultationData} />
+      
+      <ConsultationSection />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
 

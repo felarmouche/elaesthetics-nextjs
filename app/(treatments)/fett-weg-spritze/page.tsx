@@ -25,14 +25,13 @@ import {
 
 
 } from '@/components/TreatmentPageComponents';
-import PatientReviews from '@/components/PatientReviews';
-import { Review } from '@/types/Review';
+ 
 
 export const metadata: Metadata = {
     title:
-        'Fett-weg-Spritze Bremen | Injektionslipolyse ohne OP | Doppelkinn entfernen | EL Aesthetics',
+        'Fett-weg-Spritze Bremen | Injektionslipolyse Doppelkinn Info',
     description:
-        'Fett-weg-Spritze (Injektionslipolyse) in Bremen ✓ Fettreduktion ohne OP ✓ Doppelkinn, Hängebäckchen & Fettdepots gezielt behandeln ✓ Dauerhafte Ergebnisse ✓ Jetzt Beratung!',
+        'Fett-weg-Spritze in Bremen: ärztliche Injektionslipolyse für Doppelkinn oder Hängebäckchen mit Beratung zu Sitzungen, Wirkverlauf, Nachsorge und Risiken.',
     keywords:
         'Fett-weg-Spritze Bremen, Injektionslipolyse Bremen, Doppelkinn entfernen Bremen, Fettreduktion ohne OP Bremen, Hängebäckchen behandeln Bremen, Lipolyse Bremen, Fett weg ohne Operation, lokale Fettdepots reduzieren, Körperkonturierung Bremen, Phosphatidylcholin Bremen, Desoxycholsäure Bremen, Fettpolster auflösen Bremen',
     openGraph: {
@@ -299,53 +298,9 @@ export default function FettWegSpritzePage() {
         },
     };
 
-    const reviews: Review[] = [
-        {
-            id: 1,
-            name: 'Michael T.',
-            rating: 5,
-            text:
-                'Nach 4 Behandlungen ist mein Doppelkinn endlich weg! Ich habe jahrelang versucht, es mit Sport loszuwerden, aber erst die Fett-weg-Spritze hat geholfen. Super Ergebnis!',
-            date: '2024-09-05',
-        },
-        {
-            id: 2,
-            name: 'Sabine K.',
-            rating: 5,
-            text:
-                'Die Behandlung war viel angenehmer als erwartet. Meine Hängebäckchen sind deutlich weniger geworden und mein Gesicht wirkt viel straffer. Ich bin begeistert!',
-            date: '2024-08-18',
-        },
-        {
-            id: 3,
-            name: 'Andreas M.',
-            rating: 5,
-            text:
-                'Hatte immer ein Problem mit den Fettpolstern an den Hüften. Nach 3 Sitzungen sind sie fast komplett verschwunden. Die Ärztin hat mich super beraten!',
-            date: '2024-07-12',
-        },
-        {
-            id: 4,
-            name: 'Julia W.',
-            rating: 5,
-            text:
-                'Mein Doppelkinn hat mich schon lange gestört. Nach der Behandlungsserie sehe ich deutlich jünger und frischer aus. Keine OP nötig – perfekt!',
-            date: '2024-06-28',
-        },
-    ];
+    
 
-    const consultationData: ConsultationSectionProps = {
-        title: 'Ihre Expertin für Fett-weg-Spritze in Bremen',
-        description: [
-            'Lokale Fettdepots, die trotz Sport und gesunder Ernährung nicht verschwinden wollen, sind ein häufiges Problem. Als spezialisierte Ärztin für ästhetische Medizin biete ich Ihnen mit der Injektionslipolyse eine effektive, nicht-operative Lösung für gezielte Fettreduktion.',
-            'In meiner Praxis EL Aesthetics in Bremen analysiere ich Ihre individuelle Situation gründlich: Welche Bereiche sollen behandelt werden? Wie viele Sitzungen sind realistisch? Welches Präparat ist für Sie am besten geeignet? Gemeinsam entwickeln wir einen Behandlungsplan, der zu Ihnen passt.',
-            'Ziel ist es, eine möglichst effektive und gut verträgliche Lösung zu finden, die individuell auf Sie abgestimmt ist. Der Behandlungsverlauf sowie mögliche Nachsorgemaßnahmen werden dabei umfassend besprochen.',
-            'Wichtig: Die Fett-weg-Spritze ersetzt keine gesunde Lebensweise. Mit der richtigen Ernährung und ausreichend Bewegung bleiben die Ergebnisse langfristig erhalten.',
-        ],
-        ctaText: 'Jetzt Beratungstermin buchen',
-        ctaHref: '/kontakt',
-        backgroundColor: 'bg-[#FDF6F0]',
-    };
+    
 
 
     const treatmentsData: TreatmentsSectionProps = {
@@ -463,12 +418,8 @@ export default function FettWegSpritzePage() {
             <QuickInfoSection {...quickInfoData} />
             <ProcessSection {...processData} />
             <TreatmentCareSection {...treatmentCareData} />
-            <PatientReviews
-                reviews={reviews}
-                title="Erfahrungen unserer Patienten mit der Fett-weg-Spritze"
-                subtitle="Echte Ergebnisse von echten Menschen: Doppelkinn weg, definierte Konturen, dauerhaft schlank – ohne Operation."
-            />
-            <ConsultationSection {...consultationData} />
+            
+            <ConsultationSection />
             <TreatmentsSection {...treatmentsData} />
             <FAQSection {...faqData} />
             <CTASection {...ctaData} />

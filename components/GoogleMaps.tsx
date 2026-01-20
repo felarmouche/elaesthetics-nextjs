@@ -9,8 +9,8 @@ export default function GoogleMaps() {
             {showMap ? <Map /> : (
                 <div className="w-full flex flex-col justify-center items-center gap-4 p-6 mt-10">
                     <p className="font-thin text-sm text-center">
-                        Um die Karte anzuzeigen, klicken sie bitte auf den Button "Karte
-                        anzeigen". Dadurch aktivieren Sie Google Maps. Durch die
+                        Um die Karte anzuzeigen, klicken sie bitte auf den Button &quot;Karte
+                        anzeigen&quot;. Dadurch aktivieren Sie Google Maps. Durch die
                         Aktivierung stimmen Sie zu, dass Daten an Google übertragen
                         werden.
                     </p>

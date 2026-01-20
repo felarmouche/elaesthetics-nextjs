@@ -78,14 +78,14 @@ export default function Header() {
 
             {/* Rechte Seite: Kontakt-Links und CTA (Desktop) */}
             <div className="hidden lg:flex items-center gap-4">
-              <a
+              <Link
                 href="tel:+4915566919635"
                 className="whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-gray-500 shadow-sm text-sm text-black bg-white hover:text-white hover:bg-black transition-colors flex gap-2"
                 aria-label="EL Aesthetics Bremen telefonisch kontaktieren"
               >
                 <Phone className="h-5 w-5" />
                 +49 155&nbsp;66919635
-              </a>
+              </Link>
               <Link
                 href="/kontakt"
                 className=" whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent shadow-sm text-sm text-white bg-secondary hover:border-secondary hover:text-secondary hover:bg-primary transition-colors"
@@ -158,14 +158,14 @@ export default function Header() {
 
             </nav>
             <div className=' w-full flex gap-4 flex-col items-center mt-[10vh] '>
-              <a
+              <Link
                 href="tel:+4915566919635"
                 className="w-[180px] mx-6 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-gray-500 shadow-sm text-black bg-white hover:text-white hover:bg-black transition-colors flex gap-2"
                 aria-label="EL Aesthetics Bremen telefonisch kontaktieren"
               >
                 <Phone className="h-4 w-4" />
                 +49 155&nbsp;66919635
-              </a>
+              </Link>
               <Link
                 href="/kontakt"
                 className="w-[180px] mx-6 whitespace-nowrap text-sm uppercase inline-flex items-center justify-center px-4 py-2 border border-accent-dark shadow-sm text-accent-dark "

@@ -18,6 +18,7 @@ export const PRICES = {
   hyaluronFiller: {
     fillerUnterspritzung: 250, // "ab"
     hyaluronidase: 180, // "ab"
+    profhilo:280,
     skinbooster1ml: 180, // "ab"
     skinbooster2ml: 330, // "ab"
     biorevitalisierungHyaluron: 280, // "ab"

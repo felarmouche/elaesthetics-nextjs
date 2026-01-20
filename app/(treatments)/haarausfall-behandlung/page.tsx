@@ -17,9 +17,9 @@ import {
 } from '@/components/TreatmentPageComponents';
 
 export const metadata: Metadata = {
-  title: 'Haarausfall Behandlung Bremen | Mittel gegen Haarausfall | EL Aesthetics',
+  title: 'Haarausfall Behandlung Bremen | PRF, PRP & Mesotherapie',
   description:
-    'Ärztliche Behandlungen bei Haarausfall in Bremen: PRP, PRF, Eigenbluttherapie, Mesotherapie & moderne Biostimulation. Jetzt beraten lassen!.',
+    'Haarausfall-Behandlung in Bremen: Analyse von Kopfhaut und Auslösern, Einsatz von PRP/PRF oder Mesotherapie mit Aufklärung zu Intervallen, Kosten und Risiken.',
   keywords:
     [
       // Primary (Hub) – vermeidet PRF-spezifische Kannibalisierung
@@ -113,17 +113,7 @@ export default function HaarausfallHubPage() {
     ]
   };
 
-  const consultationData: ConsultationSectionProps = {
-    title: 'Welche Behandlung gegen Haarausfall?',
-    description: [
-      'Wir besprechen Vorgeschichte, Muster & Auslöser (z. B. genetische Faktoren, Stress, Nährstoffstatus).',
-      'Kopfhautbefund, Fotodokumentation und – falls sinnvoll – weitere Abklärung helfen, den Verlauf objektiv zu beurteilen.',
-      'Auf dieser Grundlage erstellen wir einen seriellen Therapieplan inkl. Intervallen, Kontrollen und realistischem Erwartungsmanagement.'
-    ],
-    ctaText: 'Jetzt Beratung vereinbaren',
-    ctaHref: '/kontakt',
-    backgroundColor: 'bg-[#FDF6F0]'
-  };
+  
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur Haarausfall-Behandlung',
@@ -177,7 +167,7 @@ export default function HaarausfallHubPage() {
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
-      <ConsultationSection {...consultationData} />
+      <ConsultationSection />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />
     </div>
