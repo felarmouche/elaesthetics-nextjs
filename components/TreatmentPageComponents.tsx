@@ -667,8 +667,29 @@ export const TreatmentCareSection: React.FC<TreatmentCareSectionProps> = ({
 
 
 export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
+
+    // 1. Wir generieren automatisch das JSON-LD Schema aus deinen Props
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map((faq) => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <section id="faq" className="py-20 md:py-32 bg-white">
+            {/* 2. Hier fügen wir das unsichtbare Skript für Google ein */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
+
             <div className="container mx-auto px-6 max-w-4xl">
                 <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
@@ -685,7 +706,6 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
                             </p>
                         </details>
                     ))}
-
                 </div>
             </div>
         </section>

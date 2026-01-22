@@ -26,7 +26,7 @@ export default function Footer() {
           <Link href="/kontakt" className="hover:text-primary transition-colors duration-200">
             Kontakt
           </Link>
-          <Link href="#about" className="hover:text-primary transition-colors duration-200">
+          <Link href="/#about" className="hover:text-primary transition-colors duration-200">
             Über uns
           </Link>
         </div>
