@@ -3,7 +3,6 @@ import {
   CTASection,
   TOCItem,
   TableOfContents,
-  ConsultationSectionProps,
   ConsultationSection,
   CTASectionProps,
   FAQSection,
@@ -15,33 +14,12 @@ import {
   TreatmentsSection,
   TreatmentsSectionProps
 } from '@/components/TreatmentPageComponents';
+import {haarausfall} from "@/data/treatments";
 
 export const metadata: Metadata = {
   title: 'Haarausfall Behandlung Bremen | PRF, PRP & Mesotherapie',
   description:
     'Haarausfall-Behandlung in Bremen: Analyse von Kopfhaut und Auslösern, Einsatz von PRP/PRF oder Mesotherapie mit Aufklärung zu Intervallen, Kosten und Risiken.',
-  keywords:
-    [
-      // Primary (Hub) – vermeidet PRF-spezifische Kannibalisierung
-      'Haarausfall Behandlung Bremen',
-      'Haarausfall Analyse Bremen',
-      'Kopfhautdiagnostik Bremen',
-      'Haarsprechstunde Bremen',
-      'Hilfe bei Haarausfall Bremen',
-      'Haarverlust Therapie Bremen',
-      // Problem-/Intent-Keywords (neutral, nicht PRF-geprägt)
-      'androgenetische Alopezie Bremen',
-      'diffuser Haarausfall Bremen',
-      'telogenes Effluvium Bremen',
-      'Haarausfall Frauen Bremen',
-      'Haarausfall Männer Bremen',
-      'Kopfhaut Probleme Bremen',
-      // Leistungen ohne PRF-Fokus
-      'Mesotherapie Haare Bremen',
-      'Polynukleotide Haare Bremen',
-      'Haaranalyse Bremen',
-      'Trichoskopie Bremen'
-    ].join(', '),
   openGraph: {
     title: 'Haarausfall Behandlung in Bremen – Mittel gegen Haarausfall',
     description:
@@ -77,40 +55,7 @@ export default function HaarausfallHubPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Unsere Behandlungsansätze bei Haarausfall',
-    treatments: [
-      {
-        imageUrl: '/assets/mesotherapie/mesotherapie-haare_hero.webp',
-        imageAlt: 'Mesotherapie für die Kopfhaut',
-        title: 'Mesotherapie (Kopfhaut)',
-        description:
-          'Feine Mikroinjektionen versorgen die Kopfhaut gezielt. Die Kur wird an Befund und Ziele angepasst; Intervalle werden ärztlich geplant.',
-        treatmentUrl: '/mesotherapie/haare'
-      },
-      {
-        imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
-        imageAlt: 'Polynukleotide zur Biostimulation',
-        title: 'Polynukleotide für die Haare',
-        description:
-          'Moderne Biostimulation zur Unterstützung des Kopfhautmilieus und der Regenerationsprozesse – als Baustein im individuellen Plan.',
-        treatmentUrl: '/polynukleotide'
-      },
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
-        imageAlt: 'Mann mit Haarausfall',
-        title: 'Eigenbluttherapie (PRP/PRF)',
-        description:
-          'Körpereigene Ansätze können – je nach Diagnose – in die Serie integriert werden. Details & Indikationsprüfung auf der Behandlungsseite.',
-        treatmentUrl: '/eigenbluttherapie/haare' // bewusst interne Verlinkung, aber keine PRF-Keywords im Hub-SEO
-      },
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
-        imageAlt: 'Microneedling der Kopfhaut',
-        title: 'Kopfhaut-Microneedling + Eigenblut',
-        description:
-          'Gezielte Mikroreize zur Unterstützung des Kopfhautmilieus; kann seriell geplant und mit weiteren PRF kombiniert werden.',
-        treatmentUrl: '/eigenbluttherapie/microneedling'
-      }
-    ]
+    treatments: haarausfall
   };
 
   

@@ -1,4 +1,4 @@
-import { Treatment } from "@/components/TreatmentPageComponents";
+import {Treatment, TreatmentsSectionProps} from "@/components/TreatmentPageComponents";
 
 /* ============================================================
    1. EINZELNE BEHANDLUNGS-OBJEKTE (Wiederverwendbar)
@@ -158,19 +158,58 @@ export const fettWeg: Treatment = {
     treatmentUrl: '/fett-weg-spritze'
 };
 
-export const haarausfall: Treatment = {
-    imageUrl: '/assets/eigenbluttherapie/haare_hero.webp', // oder mesotherapie/haare
-    imageAlt: 'Behandlung gegen Haarausfall',
-    title: 'Haarausfall-Therapie',
-    description:
-        'Kombination aus Eigenblut (PRP) oder Mesotherapie zur Stärkung der Haarwurzeln. Stoppt Haarausfall und regt neues Wachstum an.',
-    treatmentUrl: '/haarausfall-behandlung'
-};
+// Haarbehandlungen
 
+export const mesoHaar: Treatment =
+        {
+            imageUrl: '/assets/mesotherapie/mesotherapie-haare_hero.webp',
+            imageAlt: 'Mesotherapie für die Kopfhaut',
+            title: 'Mesotherapie (Kopfhaut)',
+            description:
+                'Feine Mikroinjektionen versorgen die Kopfhaut gezielt. Die Kur wird an Befund und Ziele angepasst; Intervalle werden ärztlich geplant.',
+            treatmentUrl: '/mesotherapie/haare'
+        };
+export const polyHaar: Treatment =
+        {
+            imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
+            imageAlt: 'Polynukleotide zur Biostimulation',
+            title: 'Polynukleotide für die Haare',
+            description:
+                'Moderne Biostimulation zur Unterstützung des Kopfhautmilieus und der Regenerationsprozesse – als Baustein im individuellen Plan.',
+            treatmentUrl: '/polynukleotide'
+        };
+export const prfHaar: Treatment =
+        {
+            imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
+            imageAlt: 'Mann mit Haarausfall',
+            title: 'Eigenbluttherapie (PRP/PRF)',
+            description:
+                'Körpereigene Ansätze können – je nach Diagnose – in die Serie integriert werden. Details & Indikationsprüfung auf der Behandlungsseite.',
+            treatmentUrl: '/eigenbluttherapie/haare' // bewusst interne Verlinkung, aber keine PRF-Keywords im Hub-SEO
+        };
+export const prfMicro: Treatment =
+        {
+            imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
+            imageAlt: 'Microneedling der Kopfhaut',
+            title: 'Kopfhaut-Microneedling + Eigenblut',
+            description:
+                'Gezielte Mikroreize zur Unterstützung des Kopfhautmilieus; kann seriell geplant und mit weiteren PRF kombiniert werden.',
+            treatmentUrl: '/eigenbluttherapie/microneedling'
+        };
 
 /* ============================================================
    2. HILFREICHE GRUPPEN (Arrays) FÜR DEINE SEITEN
    ============================================================ */
+// Haarausfallbehandlungen
+export const haarausfall: Treatment[]=
+    [
+        mesoHaar,
+        polyHaar,
+        prfHaar,
+        prfMicro
+
+    ]
+
 
 // Für die "Longevity & Hautqualität" Seite
 export const longevityRegeneration: Treatment[] = [
@@ -203,8 +242,7 @@ export const wrinkleTreatments: Treatment[] = [
 export const medicalTreatments: Treatment[] = [
     masseter,
     hyperhidrose,
-    migraene,
-    haarausfall
+    migraene
 ];
 /**
  * Faltenbehandlung
@@ -237,3 +275,4 @@ export const fillerPageTreatments: Treatment[] = [
     kollagenstimulation, // Radiesse / Sculptra
     hylase               // WICHTIG: Die "Sicherheit" / Korrektur
 ];
+
