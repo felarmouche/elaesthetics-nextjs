@@ -67,13 +67,13 @@ export default function FaltenbehandlungHubPage() {
 
   // --- KATEGORIE 1: MIMIK (Zornesfalte, Stirn, Krähenfüße) ---
   const relaxationData: TreatmentsSectionProps = {
-    title: 'Mimikfalten & Dynamische Falten',
+    title: 'Mimische Falten',
     treatments: faltenRelaxation
   };
 
   // --- KATEGORIE 2: VOLUMEN (Nasolabial, Marionettenfalten) ---
   const volumeData: TreatmentsSectionProps = {
-    title: 'Tiefe Falten & Volumenverlust',
+    title: 'Statische Falten & Volumenverlust',
     treatments: faltenVolume
   };
 

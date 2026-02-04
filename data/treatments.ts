@@ -5,6 +5,33 @@ import {Treatment, TreatmentsSectionProps} from "@/components/TreatmentPageCompo
    ============================================================ */
 
 // --- HYALURON & BIO-REMODELING & HYDRATION ---
+export const botoxMasseter: Treatment =
+{
+    imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
+        imageAlt: "Masseter-Botulinumtoxin gegen Zähneknirschen (Bruxismus) in Bremen",
+    title: "Masseter-Botox: Entspannung bei Bruxismus & Kieferschmerzen",
+    description:
+    "Zielgerichtete Injektionen in den Kaumuskel können Knirschen und Pressen reduzieren, Kieferschmerzen lindern und die Kontur optisch verschlanken – mit funktionellem und ästhetischem Benefit.",
+        treatmentUrl: "/botulinumtoxin/masseter"
+};
+export const botoxMigräne: Treatment =
+        {
+    imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
+        imageAlt: "Botulinumtoxin zur Migräneprophylaxe in Bremen",
+    title: "Botulinumtoxin bei Migräne",
+    description:
+    "Für chronische Migräne kann Botulinumtoxin die Attackenfrequenz senken. Wir besprechen Indikation, Schema und realistische Erwartungen im Rahmen einer ärztlichen Beratung.",
+        treatmentUrl: "/botulinumtoxin/migraene"
+};
+export const botoxHyperhydrose: Treatment =
+    {
+    imageUrl: "/assets/botulinumtoxin/botox-hyperhidrose_hero.webp",
+        imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botulinumtoxin in Bremen",
+    title: "Botulinumtoxin bei Hyperhidrose (starkem Schwitzen)",
+    description:
+    "In Achseln, Handflächen oder Fußsohlen drosselt Botulinumtoxin die Schweißproduktion über Monate. Für ein spürbar trockeneres und komfortableres Hautgefühl.",
+        treatmentUrl: "/botulinumtoxin/hyperhidrose"
+}
 
 export const skinbooster: Treatment = {
     imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
@@ -26,8 +53,8 @@ export const profhilo: Treatment = {
 
 export const filler: Treatment = {
     imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
-    imageAlt: 'Hyaluron Filler Behandlung für Volumen und Kontur',
-    title: 'Hyaluron Filler',
+    imageAlt: 'Hyaluronsäure-Filler Behandlung für Volumen und Kontur',
+    title: 'Hyaluronsäure-Filler',
     description:
         'Gezielter Volumenaufbau und Konturierung (z.B. Lippen, Wangen, Jawline) mit vernetzter Hyaluronsäure. Ausgleich von tiefen Falten und Wiederherstellung jugendlicher Proportionen.',
     treatmentUrl: '/hyaluron/filler'
@@ -35,8 +62,8 @@ export const filler: Treatment = {
 
 export const hylase: Treatment = {
     imageUrl: '/assets/hyaluron/hyaluron-hylase_hero.webp',
-    imageAlt: 'Hylase Behandlung zur Korrektur von Hyaluron',
-    title: 'Hylase (Hyaluron-Auflösung)',
+    imageAlt: 'Hylase-Behandlung zur Korrektur von Hyaluron',
+    title: 'Hyaluronidase (Auflösung von Hyaluronsäure)',
     description:
         'Korrektur von unerwünschten oder misslungenen Hyaluron-Behandlungen durch das Enzym Hyaluronidase. Sichere und schnelle Auflösung von Fillern.',
     treatmentUrl: '/hyaluron/hylase'
@@ -205,9 +232,7 @@ export const haarausfall: Treatment[]=
     [
         mesoHaar,
         polyHaar,
-        prfHaar,
-        prfMicro
-
+        prfHaar
     ]
 
 
@@ -276,3 +301,8 @@ export const fillerPageTreatments: Treatment[] = [
     hylase               // WICHTIG: Die "Sicherheit" / Korrektur
 ];
 
+export const medicalTreatment: Treatment[] = [
+    botoxMigräne,
+    botoxHyperhydrose,
+    botoxMasseter
+]

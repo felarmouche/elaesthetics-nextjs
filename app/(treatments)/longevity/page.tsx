@@ -61,7 +61,7 @@ export default function LongevityPage() {
   };
 
   const regenerationData: TreatmentsSectionProps = {
-    title: 'Zellregeneration & Kollagenaufbau',
+    title: 'Biostimulation & Kollagenaufbau',
     treatments: longevityRegeneration
   };
 

@@ -3,12 +3,14 @@ import Image from 'next/image'
 
 const services = [
   { id: 1, title: 'Hautqualität & Longevity', image: '/assets/longevity/longevity_hero.webp', path: '/longevity' },
-  { id: 2, title: 'Faltenbehandlung', image: '/assets/faltenbehandlung/faltenbehandlung_hero.webp', path: '/faltenbehandlung' },
+  { id: 2, title: 'Botulinumtoxin & Faltenbehandlung', image: '/assets/faltenbehandlung/faltenbehandlung_hero.webp', path: '/faltenbehandlung' },
   { id: 3, title: 'Filler & Volumenaufbau', image: '/assets/filler/filler_hero.webp', path: '/filler' },
+  { id: 8, title: 'Augenbehandlungen', image: '/assets/augenbehandlung/augenbehandlung.png', path: '/augenbehandlungen' },
+  { id: 6, title: 'Bodyshaping & Fettreduktion', image: '/assets/pexels/sculpture.webp', path: '/fett-weg-spritze' },
   { id: 4, title: 'Haarbehandlungen', image: '/assets/pexels/hair.webp', path: '/haarausfall-behandlung' },
-  { id: 5, title: 'Bodyshaping & Fettreduktion', image: '/assets/pexels/sculpture.webp', path: '/fett-weg-spritze' },
-  { id: 6, title: 'Hylase - Auflösen von Hyaluronsäure', image: '/assets/hyaluron/hyaluron-hylase_hero.webp', path: '/hyaluron/hylase' },
-  { id: 7, title: 'Medizinische Behandlungen', image: '/assets/pexels/pexels-thirdman-5922099.webp', path: '/medizinische-behandlungen' },
+  { id: 9, title: 'Medizinisches Microneedling', image: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp', path: '/medizinisches-microneedling' },
+  { id: 5, title: 'Medizinische Behandlungen', image: '/assets/pexels/pexels-thirdman-5922099.webp', path: '/medizinische-behandlungen' },
+  { id: 7, title: 'Hyaluronidase - Auflösen von Hyaluronsäure', image: '/assets/hyaluron/hyaluron-hylase_hero.webp', path: '/hyaluron/hylase' },
 ];
 
 export default function Services() {

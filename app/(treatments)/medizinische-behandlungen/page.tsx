@@ -16,6 +16,7 @@ import {
     TreatmentsSection,
     TreatmentsSectionProps
 } from '@/components/TreatmentPageComponents';
+import {medicalTreatment} from "@/data/treatments";
 
 export const metadata: Metadata = {
     title: 'Medizische Botulinum-Behandlungen in Bremen',
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     keywords:
         'Botulinumtoxin Bremen, Botulinumtoxin Behandlung Bremen, Botulinumtoxin Bremen, Masseter Botulinumtoxin Bremen, Mesobotox / Microbotox Bremen, Baby Botulinumtoxin Bremen, Botulinumtoxin Migräne Bremen, Botulinumtoxin Hyperhidrose Bremen, Bruxismus Behandlung Bremen',
     openGraph: {
-        title: 'Botulinumtoxin Behandlungen in Bremen – Präzise, sicher & individuell',
+        title: 'Botulinumtoxin-Behandlungen in Bremen – Präzise, sicher & individuell',
         description:
             'EL Aesthetics Bremen: Ärztliche Botulinumtoxin-Therapien für Masseter/Bruxismus, Mesobotox / Microbotox zur Hautverfeinerung, Migräneprophylaxe und Hyperhidrose-Behandlung.',
         type: 'website',
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
 
 export default function BotulinumtoxinBehandlungenPage() {
     const heroData: HeroSectionProps = {
-        title: "Medizische Botulinumtoxin Behandlungen in Bremen",
+        title: "Medizische Botulinumtoxin-Behandlungen in Bremen",
         subtitle:
             "Suchen sie professionelle und medizinisch fundierte Masseter/Bruxismus, Migräne- oder Hyperhidrose-Behandlungen in Bremen? Dann sind sie bei El Aesthetics sind sie genau richtig!",
         imageSrc: "/assets/medizinische-behandlungen/medizinische-behandlunge_hero.webp",
@@ -59,34 +60,8 @@ export default function BotulinumtoxinBehandlungenPage() {
     };
 
     const treatmentsData: TreatmentsSectionProps = {
-        title: "Unsere medizinischen Behandlungen in Bremen",
-        treatments: [
-            {
-                imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
-                imageAlt: "Masseter-Botulinumtoxin gegen Zähneknirschen (Bruxismus) in Bremen",
-                title: "Masseter: Entspannung bei Bruxismus & Kieferschmerzen",
-                description:
-                    "Zielgerichtete Injektionen in den Kaumuskel können Knirschen und Pressen reduzieren, Kieferschmerzen lindern und die Kontur optisch verschlanken – mit funktionellem und ästhetischem Benefit.",
-                treatmentUrl: "/botulinumtoxin/masseter"
-            },
-
-            {
-                imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
-                imageAlt: "Botulinumtoxin zur Migräneprophylaxe in Bremen",
-                title: "Migräne: Prophylaxe mit Botulinumtoxin",
-                description:
-                    "Für chronische Migräne kann Botulinumtoxin die Attackenfrequenz senken. Wir besprechen Indikation, Schema und realistische Erwartungen im Rahmen einer ärztlichen Beratung.",
-                treatmentUrl: "/botulinumtoxin/migraene"
-            },
-            {
-                imageUrl: "/assets/botulinumtoxin/botox-hyperhidrose_hero.webp",
-                imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botulinumtoxin in Bremen",
-                title: "Hyperhidrose: Weniger Schwitzen, mehr Freiheit",
-                description:
-                    "In Achseln, Handflächen oder Fußsohlen drosselt Botulinumtoxin die Schweißproduktion über Monate. Für ein spürbar trockeneres und komfortableres Hautgefühl.",
-                treatmentUrl: "/botulinumtoxin/hyperhidrose"
-            }
-        ]
+        title: "Medizinische Botulinumtoxin-Behandlungen in Bremen",
+        treatments: medicalTreatment
     };
 
     const tocItems: TOCItem[] = [

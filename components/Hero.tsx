@@ -32,7 +32,7 @@ export default function Hero() {
       */}
             <div className="absolute inset-0 hidden md:block">
                 <Image
-                    src="/assets/chatGPT-picture-small.webp" // Das ursprüngliche breite Bild
+                    src="/assets/chatGPT-picture-small.jpg" // Das ursprüngliche breite Bild
                     alt="El Aesthetics Bremen"
                     fill
                     priority
@@ -42,7 +42,7 @@ export default function Hero() {
             </div>
 
             {/* Dunkles Overlay (bleibt für beide gleich) */}
-            <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
+            <div className="absolute inset-0 bg-black/40" aria-hidden="true" />
 
             <div className="relative z-[2] text-center p-8 text-white animate-fade-in-up">
                 <h1 className="text-4xl md:text-[4.5rem] font-light tracking-[6px] mb-6 uppercase text-accent">

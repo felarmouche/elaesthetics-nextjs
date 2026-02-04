@@ -49,12 +49,12 @@ export default function About() {
           </div>
 
           {/* Bild */}
-          <div className="w-full aspect-[9/11] my-auto bg-[#f5e6d8] rounded-lg flex items-center justify-center text-[#999] text-xl shadow-[0_20px_60px_rgba(0,0,0,0.1)] md:sticky md:top-32">
+          <div className="w-full aspect-square my-auto bg-[#f5e6d8] rounded-lg flex items-center justify-center text-[#999] text-xl shadow-[0_20px_60px_rgba(0,0,0,0.1)] md:sticky md:top-32">
             <Image
                 className="h-full w-full object-cover rounded-lg"
                 width={400}
                 height={500}
-                src="/assets/Profilbild engere auswahl/IMG_7336.webp"
+                src="/assets/Profilbild engere auswahl/IMG_7336.jpg"
                 alt="Portrait der Ärztin Ola El-Armouche"
                 priority
             />

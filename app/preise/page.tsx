@@ -21,7 +21,7 @@ export default function PreisePage() {
       <header className="border-b border-gray-400 py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-light uppercase tracking-wide mb-2">
-            Preisliste
+            Preise
           </h1>
           <p className="text-sm tracking-widest uppercase text-gray-600">
             EL Aesthetics
@@ -48,7 +48,10 @@ export default function PreisePage() {
       </nav>
 
       <div className="max-w-4xl mx-auto px-6 py-12 space-y-16">
-
+          <p className=" fond-bold text-gray-500 leading-relaxed">
+            *Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).
+            Die Kosten für ästhetische Behandlungen werden nicht von gesetzlichen oder privaten Krankenkassen übernommen.
+          </p>
         {/* Botulinumtoxin */}
         <Section id="botulinum" title="Botulinumtoxin">
           <Treatment title="Faltenbehandlung">
@@ -226,13 +229,6 @@ export default function PreisePage() {
           </Treatment>
         </Section>
 
-        {/* Footer */}
-        <footer className="pt-8 border-t border-gray-200">
-          <p className="text-xs text-gray-500 leading-relaxed">
-            Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).
-            Die Kosten für ästhetische Behandlungen werden nicht von gesetzlichen oder privaten Krankenkassen übernommen.
-          </p>
-        </footer>
       </div>
     </main>
   );
