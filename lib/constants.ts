@@ -40,9 +40,7 @@ export const PRICES = {
     polynukleotide2ml: 280, // "Einzelbehandlung ab"
   },
 
-  fettWegSpritze: {
-    injektionslipolyse: 180, // "ab" (präparatabhängig)
-  },
+  fettWegSpritze: 180, // "ab" (präparatabhängig),
 
   biostimulation: {
     caHydroxylapatitPlusHyaluron: 900, // "ab"

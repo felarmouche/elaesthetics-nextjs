@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import {
     AreasSection,
     AreasSectionProps,
-    ConsultationSectionProps,
     ConsultationSection,
     CTASection,
     CTASectionProps,
@@ -25,7 +24,8 @@ import {
 
 
 } from '@/components/TreatmentPageComponents';
- 
+import {botoxFalten, filler, fillerPageTreatments, microneedling} from "@/data/treatments";
+import {PRICES} from "@/lib/constants";
 
 export const metadata: Metadata = {
     title:
@@ -151,7 +151,7 @@ export default function FettWegSpritzePage() {
         benefits: [
             {
                 title: 'Preis',
-                description: 'ab 180€ pro Behandlung*',
+                description: `ab ${PRICES.fettWegSpritze}€ pro Behandlung`,
                 iconUrl: '/assets/icons/EUR.svg',
             },
             {
@@ -161,7 +161,7 @@ export default function FettWegSpritzePage() {
             },
             {
                 title: 'Wirkeintritt',
-                description: 'individuell, nach 2-3 Behandlungen sichtbar',
+                description: 'individuell',
                 iconUrl: '/assets/icons/CAL.svg',
             },
             {
@@ -176,7 +176,7 @@ export default function FettWegSpritzePage() {
             },
             {
                 title: 'Wiederholungen',
-                description: '3-5 Behandlungen, Abstand 2-8 Wochen',
+                description: '3-5 Behandlungen, Abstand 2-3 Wochen',
                 iconUrl: '/assets/icons/wiederholung.svg',
             },
         ],
@@ -214,7 +214,7 @@ export default function FettWegSpritzePage() {
                 number: '05',
                 title: 'Folgetermine & Ergebnis',
                 description:
-                    'Die Behandlungen erfolgen alle 2-8 Wochen (abhängig vom gewählten Präparat), bis das gewünschte Ergebnis erreicht ist. Erste Veränderungen können nach 2 Behandlungen sichtbar werden. Die zerstörten Fettzellen werden dauerhaft vom Körper abgebaut und ausgeschieden.',
+                    'Die Behandlungen erfolgen alle 2-3 Wochen (abhängig vom gewählten Präparat), bis das gewünschte Ergebnis erreicht ist.',
             },
         ],
     };
@@ -306,31 +306,10 @@ export default function FettWegSpritzePage() {
     const treatmentsData: TreatmentsSectionProps = {
         title: 'Weitere Behandlungen',
         treatments: [
-            {
-                imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
-                imageAlt: 'Ein Männer- und ein Frauen-Gesicht nach einer Botox Behandlung',
-                title: 'Botulinumtoxin',
-                description:
-                    'Botullinumtoxin für Faltenbehandlung oder medizinische Indikationen',
-                treatmentUrl: '/botulinumtoxin/',
-            },
-            {
-                imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
-                imageAlt: 'Kollagenstimulation mit Radiesse für Hautstraffung',
-                title: 'Kollagenstimulation',
-                description:
-                    'Langanhaltende Hautstraffung und Volumenaufbau durch Calciumhydroxylapatit – ideal für Wangen, Kinn und Hände.',
-                treatmentUrl: '/kollagenstimulation',
-            },
-            {
-                imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
-                imageAlt: 'Hyaluron Filler für Gesichtskonturierung',
-                title: 'Hyaluron Filler',
-                description:
-                    'Präzise Gesichtsformung und Volumenaufbau.',
-                treatmentUrl: '/hyaluron/filler',
-            },
-        ],
+            microneedling,
+            botoxFalten,
+            filler
+            ]
     };
 
     const faqData: FAQSectionProps = {
@@ -418,7 +397,6 @@ export default function FettWegSpritzePage() {
             <QuickInfoSection {...quickInfoData} />
             <ProcessSection {...processData} />
             <TreatmentCareSection {...treatmentCareData} />
-            
             <ConsultationSection />
             <TreatmentsSection {...treatmentsData} />
             <FAQSection {...faqData} />

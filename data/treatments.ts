@@ -56,7 +56,7 @@ export const filler: Treatment = {
     imageAlt: 'Hyaluronsäure-Filler Behandlung für Volumen und Kontur',
     title: 'Hyaluronsäure-Filler',
     description:
-        'Gezielter Volumenaufbau und Konturierung (z.B. Lippen, Wangen, Jawline) mit vernetzter Hyaluronsäure. Ausgleich von tiefen Falten und Wiederherstellung jugendlicher Proportionen.',
+        'Gezielter Volumenaufbau und Konturierung (z.B. Lippen, Wangen, Jawline) mit vernetzter Hyaluronsäure. Ausgleich von tiefen Falten und Wiederherstellung von Konturen & Proportionen.',
     treatmentUrl: '/hyaluron/filler'
 };
 
@@ -132,7 +132,7 @@ export const mesotherapieHaut: Treatment = {
 export const botoxFalten: Treatment = {
     imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
     imageAlt: 'Faltenbehandlung mit Botulinumtoxin',
-    title: 'Faltenbehandlung (Botox)',
+    title: 'Faltenbehandlung mit Botulinumtoxin',
     description:
         'Entspannung der mimischen Muskulatur zur Glättung von Zornesfalten, Stirnfalten und Krähenfüßen. Für einen entspannten, frischen Ausdruck.',
     treatmentUrl: '/botulinumtoxin/faltenbehandlung'
@@ -306,3 +306,23 @@ export const medicalTreatment: Treatment[] = [
     botoxHyperhydrose,
     botoxMasseter
 ]
+
+export const augenbehandlungen: Treatment[] = [
+    // 1. Der "Goldstandard" für Augenringe & Regeneration
+    polynukleotide, // Beschreibung enthält bereits "Ideal für Augenringe"
+
+    // 2. Gegen mimische Falten (Krähenfüße)
+    botoxFalten,    // Beschreibung enthält "Krähenfüße"
+
+    // 4. Natürliche Regeneration ("Vampir-Lifting" für die Augen)
+    eigenblut,      // Sehr beliebt zur Verdickung der dünnen Augenhaut
+
+    // 5. Frischekick & Feuchtigkeitsfältchen (Knitterfältchen)
+    mesotherapieHaut, // "Meso-Eyes": Vitamine für müde Augenpartien
+
+    // 6. Strukturverbesserung
+    microneedling,  // Straffung der Lider / Hautstruktur
+
+    // 7. Sicherheit (Wichtig für das Vertrauen bei Augenbehandlungen)
+    hylase          // Signalisiert: Wir können korrigieren (Sicherheit!)
+];

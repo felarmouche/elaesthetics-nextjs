@@ -5,7 +5,7 @@ const services = [
   { id: 1, title: 'Hautqualität & Longevity', image: '/assets/longevity/longevity_hero.webp', path: '/longevity' },
   { id: 2, title: 'Botulinumtoxin & Faltenbehandlung', image: '/assets/faltenbehandlung/faltenbehandlung_hero.webp', path: '/faltenbehandlung' },
   { id: 3, title: 'Filler & Volumenaufbau', image: '/assets/filler/filler_hero.webp', path: '/filler' },
-  { id: 8, title: 'Augenbehandlungen', image: '/assets/augenbehandlung/augenbehandlung.png', path: '/augenbehandlungen' },
+  { id: 8, title: 'Augenbehandlungen', image: '/assets/augen-behandlung/augen-behandlung_hero.png', path: '/augen-behandlung' },
   { id: 6, title: 'Bodyshaping & Fettreduktion', image: '/assets/pexels/sculpture.webp', path: '/fett-weg-spritze' },
   { id: 4, title: 'Haarbehandlungen', image: '/assets/pexels/hair.webp', path: '/haarausfall-behandlung' },
   { id: 9, title: 'Medizinisches Microneedling', image: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp', path: '/medizinisches-microneedling' },

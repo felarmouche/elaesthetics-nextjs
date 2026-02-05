@@ -208,7 +208,7 @@ export default function PreisePage() {
 
         {/* Fett-weg-Spritze */}
         <Section id="fett" title="Fett-weg-Spritze">
-          <Treatment title="Injektionslipolyse" price={`${ab(PRICES.fettWegSpritze.injektionslipolyse)} (präparatabhängig)`}>
+          <Treatment title="Injektionslipolyse" price={`${ab(PRICES.fettWegSpritze)} (präparatabhängig)`}>
             <Description>
               Dauerhafte Entfernung von Fettzellen für Gesicht und Körper
             </Description>

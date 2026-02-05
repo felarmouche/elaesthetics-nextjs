@@ -511,8 +511,8 @@ export function ConsultationSection() {
             <div className="container mx-auto px-6 max-w-7xl">
                 <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
                     {/* Text Content */}
-                    <div className="p-2 md:p-10 pt-10 text-left bg-background-primary flex flex-col justify-center h-full gap-6">
-                        <p className="text-2xl md:text-2xl sm:text-2xl md:text-4xl break-words md:text-5xl font-normal text-stone-900 uppercase tracking-[2px] leading-tight">
+                    <div className="p-6 md:p-10 pt-10 text-left bg-background-primary flex flex-col justify-center h-full gap-6">
+                        <p className="text-3xl md:text-4xl break-words md:text-5xl font-normal text-stone-900 uppercase tracking-[2px] leading-tight">
                             {consultationData.title}
                         </p>
 

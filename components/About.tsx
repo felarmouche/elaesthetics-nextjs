@@ -4,10 +4,8 @@ import Image from 'next/image';
 export default function About() {
   return (
       <section id="about" className="py-16 md:py-32 px-[5%] bg-background-primary" aria-labelledby="about-title">
-        <div className="grid grid-cols-1 md:grid-cols-[1.2fr_1fr] gap-6 md:gap-24 items-start max-w-[1300px] mx-auto">
-
-          <div className='bg-background-secondary p-6 md:p-12 rounded-sm'>
-            <h2 className="text-4xl font-normal mb-8 text-accent-dark uppercase tracking-[2px]">
+        <div className="flex flex-col max-w-[1300px] mx-auto">
+           <h2 className="text-4xl font-normal mb-8 text-accent-dark uppercase tracking-[2px]">
               Über <br />
               El Aesthetics
             </h2>
@@ -37,30 +35,17 @@ export default function About() {
               Mir liegt es am Herzen, Ihnen eine persönliche Betreuung in entspannter Atmosphäre zu bieten – unter Verwendung ausschließlich hochwertiger Produkte marktführender Hersteller. Menschen jeden Alters und Geschlechts sind in meiner Praxis herzlich willkommen.
             </p>
 
-            <div className="flex justify-center md:justify-start my-8 md:mt-10">
+            <div className="flex justify-center my-8 md:mt-10">
               <Link
                   href="/kontakt"
                   aria-label="Termin bei El Aesthetics Bremen buchen"
-                  className="w-full md:w-auto px-8 inline-block flex items-center justify-center py-3 uppercase text-primary text-sm tracking-[2px] border-2 rounded-xs border-secondary transition-all duration-300 bg-secondary text-primary hover:text-secondary hover:bg-primary"
+                  className="w-[300px] flex items-center justify-center py-3 uppercase text-primary text-sm tracking-[2px] border-2 rounded-xs border-secondary transition-all duration-300 bg-secondary text-primary hover:text-secondary hover:bg-primary"
               >
-                Beratungstermin vereinbaren
+                Termin vereinbaren
               </Link>
             </div>
           </div>
 
-          {/* Bild */}
-          <div className="w-full aspect-square my-auto bg-[#f5e6d8] rounded-lg flex items-center justify-center text-[#999] text-xl shadow-[0_20px_60px_rgba(0,0,0,0.1)] md:sticky md:top-32">
-            <Image
-                className="h-full w-full object-cover rounded-lg"
-                width={400}
-                height={500}
-                src="/assets/Profilbild engere auswahl/IMG_7336.jpg"
-                alt="Portrait der Ärztin Ola El-Armouche"
-                priority
-            />
-          </div>
-
-        </div>
       </section>
   )
 }
