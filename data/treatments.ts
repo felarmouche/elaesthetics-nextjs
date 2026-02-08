@@ -14,7 +14,7 @@ export const botoxMasseter: Treatment =
     "Zielgerichtete Injektionen in den Kaumuskel können Knirschen und Pressen reduzieren, Kieferschmerzen lindern und die Kontur optisch verschlanken – mit funktionellem und ästhetischem Benefit.",
         treatmentUrl: "/botulinumtoxin/masseter"
 };
-export const botoxMigräne: Treatment =
+export const botoxMigraene: Treatment =
         {
     imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
         imageAlt: "Botulinumtoxin zur Migräneprophylaxe in Bremen",
@@ -136,6 +136,15 @@ export const botoxFalten: Treatment = {
     description:
         'Entspannung der mimischen Muskulatur zur Glättung von Zornesfalten, Stirnfalten und Krähenfüßen. Für einen entspannten, frischen Ausdruck.',
     treatmentUrl: '/botulinumtoxin/faltenbehandlung'
+};
+
+export const botoxAesthetic: Treatment = {
+    imageUrl: '/assets/botulinumtoxin/aesthetische-behandlungen_hero.png',
+    imageAlt: 'Ästhetische Behandlungen mit Botox',
+    title: 'Ästhetische Behandlungen mit Botulinumtoxin',
+    description:
+        'Spezielle ästhetische Botulinumtoxin-Behandlungen wie Lip Flip, Brow Lift, Gummy Smile und mehr.',
+    treatmentUrl: '/botulinumtoxin/aesthetische-behandlungen',
 };
 
 export const mesobotox: Treatment = {
@@ -302,7 +311,7 @@ export const fillerPageTreatments: Treatment[] = [
 ];
 
 export const medicalTreatment: Treatment[] = [
-    botoxMigräne,
+    botoxMigraene,
     botoxHyperhydrose,
     botoxMasseter
 ]
@@ -325,4 +334,13 @@ export const augenbehandlungen: Treatment[] = [
 
     // 7. Sicherheit (Wichtig für das Vertrauen bei Augenbehandlungen)
     hylase          // Signalisiert: Wir können korrigieren (Sicherheit!)
+];
+
+export const botoxTreatments: Treatment[] = [
+    mesobotox,
+    botoxFalten,
+    botoxMigraene,
+    botoxHyperhydrose,
+    botoxMasseter,
+    botoxAesthetic
 ];

@@ -33,8 +33,8 @@ export default function ContactInline() {
         {
             icon: Mail,
             label: 'E-Mail',
-            value: 'info@elaestehtics-bremen.de',
-            href: 'mailto:info@elaestehtics-bremen.de',
+            value: 'info@elaesthetics-bremen.de',
+            href: 'mailto:info@elaesthetics-bremen.de',
             description: 'Schreiben Sie uns'
         },
         {
@@ -203,7 +203,7 @@ export default function ContactInline() {
                                 </div>
 
                                 <p className="text-xs text-gray-500 pl-8">
-                                    Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an info@elaestehtics-bremen.de widerrufen.
+                                    Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an info@elaesthetics-bremen.de widerrufen.
                                 </p>
                             </div>
 

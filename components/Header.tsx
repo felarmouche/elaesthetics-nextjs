@@ -21,6 +21,7 @@ const TREATMENT_MENU: { [key: string]: MenuItem[] } = {
       href: '/botulinumtoxin',
       children: [
         { label: 'Falten-Behandlung', href: '/botulinumtoxin/faltenbehandlung' },
+        { label: 'Ästhetische Behandlungen', href: '/botulinumtoxin/aesthetische-behandlungen' },
         { label: 'Masseter (Zähneknirschen)', href: '/botulinumtoxin/masseter' },
         { label: 'Hyperhidrose (Schwitzen)', href: '/botulinumtoxin/hyperhidrose' },
         { label: 'Migräne', href: '/botulinumtoxin/migraene' },
@@ -68,7 +69,6 @@ const TREATMENT_MENU: { [key: string]: MenuItem[] } = {
   solutions: [
     { label: 'Falten-Behandlung (Übersicht)', href: '/faltenbehandlung' },
     { label: 'Haarausfall-Behandlung', href: '/haarausfall-behandlung' },
-    { label: 'Hautverjüngung', href: '/hautverjuengung' },
     { label: 'Longevity', href: '/longevity' },
     { label: 'Fett-Weg-Spritze', href: '/fett-weg-spritze' },
     { label: 'Filler (Allgemein)', href: '/filler' },
