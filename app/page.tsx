@@ -1,18 +1,28 @@
 // app/page.tsx
+import type { Metadata } from 'next';
+import dynamic from 'next/dynamic';
 import Hero from '@/components/Hero'
 import Welcome from '@/components/Welcome'
 import Services from '@/components/Services'
 import About from '@/components/About'
-import ImageSlider from '@/components/ImageSlider'
-import PatientReviews from '@/components/PatientReviews'
-import { Review } from '@/types/Review'
 import TreatmentSlider from '@/components/TreatmentsSlider'
 
+const ImageSlider = dynamic(() => import('@/components/ImageSlider'));
+const PatientReviews = dynamic(() => import('@/components/PatientReviews'));
+
+export const metadata: Metadata = {
+  title: 'Ästhetische Medizin Bremen | Privatpraxis EL Aesthetics',
+  description: 'Privatpraxis für ästhetische Medizin in Bremen Oberneuland. Ärztliche Behandlungen mit Botulinumtoxin, Hyaluron & Eigenbluttherapie. Jetzt Termin vereinbaren.',
+  keywords: ['ästhetische Medizin Bremen', 'Privatpraxis ästhetische Medizin Bremen', 'Schönheitsarzt Bremen', 'ästhetische Behandlungen Bremen Oberneuland'],
+  alternates: {
+    canonical: 'https://elaesthetics-bremen.de',
+  },
+};
+
+
 export default function Home() {
-
-
   return (
-    <main>
+    <>
       <Hero />
       <div className='max-w-7xl mx-auto'>
           <Welcome />
@@ -22,6 +32,6 @@ export default function Home() {
           <About />
           <ImageSlider />
       </div>
-    </main>
+    </>
   )
 }

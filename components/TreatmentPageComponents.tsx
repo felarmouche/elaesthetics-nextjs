@@ -267,7 +267,7 @@ export const IntroSection: React.FC<IntroSectionProps> = ({ title, content }) =>
     return (
         <section id="intro" className="py-20 md:py-32 bg-white ">
             <div className="container mx-auto px-6 max-w-4xl">
-                <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-12 tracking-tight">
+                <h2 className="text-2xl md:text-4xl break-words font-normal text-accent-dark uppercase tracking-tight mb-12">
                     {title}
                 </h2>
                 <div className="space-y-6 text-lg text-stone-600 font-light leading-relaxed">
@@ -349,7 +349,7 @@ export function DetailedInfoSection() {
         <section id="detailedInfo" className="py-20 md:py-32 bg-background-primary/30">
             <div className="container mx-auto px-6 max-w-5xl">
                 <div className="bg-white p-8 md:p-12 shadow-sm border border-stone-200">
-                    <h2 className="text-2xl md:text-4xl font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-8">
+                    <h2 className="text-2xl md:text-4xl font-normal text-accent-dark uppercase tracking-[2px] mb-8">
                         {title}
                     </h2>
                     
@@ -391,7 +391,7 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({ title, tre
     return (
         <section id="treatments" className="py-20 md:py-32 bg-white">
             <div className="container mx-auto px-6 max-w-7xl">
-                <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
+                <h2 className="text-2xl md:text-4xl break-words font-normal text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
                 </h2>
                 <div className="grid md:grid-cols-3 gap-12">
@@ -433,7 +433,7 @@ export const QuickInfoSection: React.FC<QuickInfoSectionProps> = ({ title, benef
     return (
         <section id="quickInfos" className="py-20 md:py-32 bg-white max-w-4xl mx-auto ">
             <div className="container mx-auto px-6 max-w-7xl">
-                <p className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
+                <p className="text-2xl md:text-4xl break-words font-normal text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
                 </p>
                 <div className="grid grid-cols-2 lg:grid-cols-3 gap-12 ">
@@ -467,14 +467,14 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ title, steps }) 
     return (
         <section id="process" className="py-20 md:py-32 bg-stone-50 clip-diagonal-top clip-diagonal">
             <div className="container mx-auto px-6 max-w-5xl">
-                <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
+                <h2 className="text-2xl md:text-4xl break-words font-normal text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
                 </h2>
                 <div className="space-y-16">
                     {steps.map((step, index) => (
                         <div key={index} className="grid md:grid-cols-12 gap-8 items-start">
                             <div className="md:col-span-2">
-                                <span className="text-6xl font-light text-stone-300">{step.number}</span>
+                                <span className="text-6xl font-light text-stone-500">{step.number}</span>
                             </div>
                             <div className="md:col-span-10 space-y-3">
                                 <h3 className="text-2xl font-light text-stone-900">{step.title}</h3>
@@ -525,7 +525,7 @@ export function ConsultationSection() {
                             </p>
                         ))}
 
-                        <div className="mt-12">
+                        <div className="mt-12 flex flex-col items-start gap-3">
                             <Link
                                 href={consultationData.ctaHref}
                                 className="group relative inline-block w-full text-center font-medium px-8 py-4 text-white tracking-wide bg-black overflow-hidden transition-all duration-300 hover:shadow-lg"
@@ -535,6 +535,12 @@ export function ConsultationSection() {
                                     <ChevronRight className="ml-7 h-5 w-5 opacity-100 group-hover:opacity-100 transform translate-x-[-20px] group-hover:translate-x-0 transition-all duration-300" />
                                 </span>
                                 <div className="absolute inset-0 bg-stone-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+                            </Link>
+                            <Link
+                                href="/preise"
+                                className="text-sm text-stone-800 hover:text-accent-dark underline underline-offset-4 transition-colors duration-200"
+                            >
+                                Preise & Leistungen ansehen
                             </Link>
                         </div>
                     </div>
@@ -617,7 +623,7 @@ export const TreatmentCareSection: React.FC<TreatmentCareSectionProps> = ({
     return (
         <section id="treatmentsCare" className="py-20 md:py-32 bg-background-primary/50">
             <div className="container mx-auto px-6 max-w-7xl">
-                <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
+                <h2 className="text-2xl md:text-4xl break-words font-normal text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
                 </h2>
 
@@ -667,31 +673,10 @@ export const TreatmentCareSection: React.FC<TreatmentCareSectionProps> = ({
 
 
 export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
-
-    // 1. Wir generieren automatisch das JSON-LD Schema aus deinen Props
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": faqs.map((faq) => ({
-            "@type": "Question",
-            "name": faq.question,
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": faq.answer
-            }
-        }))
-    };
-
     return (
         <section id="faq" className="py-20 md:py-32 bg-white">
-            {/* 2. Hier fügen wir das unsichtbare Skript für Google ein */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
-
             <div className="container mx-auto px-6 max-w-4xl">
-                <h2 className="text-2xl md:text-4xl break-words font-normal mb-6 text-accent-dark uppercase tracking-[2px] mb-16">
+                <h2 className="text-2xl md:text-4xl break-words font-normal text-accent-dark uppercase tracking-[2px] mb-16">
                     {title}
                 </h2>
                 <div className="space-y-8 divide-y divide-stone-200">
@@ -705,6 +690,48 @@ export const FAQSection: React.FC<FAQSectionProps> = ({ title, faqs }) => {
                                 {faq.answer}
                             </p>
                         </details>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export interface RelatedLink {
+    href: string;
+    label: string;
+    description: string;
+}
+
+export interface RelatedLinksSectionProps {
+    title: string;
+    links: RelatedLink[];
+}
+
+export const RelatedLinksSection: React.FC<RelatedLinksSectionProps> = ({ title, links }) => {
+    return (
+        <section className="py-16 md:py-24 bg-stone-50">
+            <div className="container mx-auto px-6 max-w-4xl">
+                <h2 className="text-xl md:text-2xl font-normal text-accent-dark uppercase tracking-[2px] mb-10">
+                    {title}
+                </h2>
+                <div className="space-y-4">
+                    {links.map((link, index) => (
+                        <Link
+                            key={index}
+                            href={link.href}
+                            className="group flex items-start gap-4 p-5 bg-white border border-stone-200 hover:border-stone-400 hover:shadow-sm transition-all duration-200"
+                        >
+                            <ChevronRight className="h-5 w-5 text-stone-400 group-hover:text-stone-700 mt-0.5 flex-shrink-0 transition-colors" />
+                            <div>
+                                <p className="text-stone-900 font-medium group-hover:text-accent-dark transition-colors">
+                                    {link.label}
+                                </p>
+                                <p className="text-sm text-stone-500 font-light mt-1 leading-relaxed">
+                                    {link.description}
+                                </p>
+                            </div>
+                        </Link>
                     ))}
                 </div>
             </div>

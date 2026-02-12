@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   TableOfContents,
   TOCItem,
@@ -24,20 +25,24 @@ import {
   TreatmentsSectionProps,
   CTASection,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
+import { PRICES } from '@/lib/constants';
 // PatientReviews bewusst nicht verwendet (HWG)
 
 export const metadata: Metadata = {
   title:
-    'PRF Eigenbluttherapie Haare Bremen | Dichte & Kopfhaut Info',
+    'Eigenbluttherapie Haare Bremen | PRF & Haarausfall | EL Aesthetics',
   description:
-    'Eigenbluttherapie für Haare in Bremen: PRF/PRP unterstützt Haardichte und Kopfhaut mit Aufklärung zu Sitzungen, Intervallen, Kombinationen und Risiken.',
+    'Eigenbluttherapie (PRF/PRP) bei Haarausfall in Bremen: Unterstützung der Haardichte. Infos zu Ablauf, Sitzungen & Kosten. Jetzt beraten lassen.',
   keywords:
-    'eigenbluttherapie haarausfall, eigenblutbehandlung haare, prf haare, prp behandlung haare, eigenblut haarausfall',
+    ['Eigenbluttherapie Haarausfall Bremen', 'PRF Haare Bremen', 'PRP Haarausfall Bremen', 'Haardichte Behandlung Bremen', 'Haarausfall Therapie Bremen'],
   openGraph: {
     title:
-      'PRF (Eigenblut) bei Haarausfall in Bremen – Informationen & Ablauf',
+      'Eigenbluttherapie Haare Bremen | PRF & Haarausfall | EL Aesthetics',
     description:
-      'PRF/PRP für Haare: Hinweise zu Indikationen (erblich, diffus, areata), Behandlungsserie, Nachsorge und Kosten. Keine Heilversprechen – individuelle Prüfung.',
+      'Eigenbluttherapie (PRF/PRP) bei Haarausfall in Bremen: Unterstützung der Haardichte. Infos zu Ablauf, Sitzungen & Kosten.',
+    url: 'https://elaesthetics-bremen.de/eigenbluttherapie/haare',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
     images: [
@@ -50,13 +55,30 @@ export const metadata: Metadata = {
 };
 
 export default function PRFHaarePage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Eigenbluttherapie bei Haarausfall in Bremen',
+        description: 'Ärztliche PRF/PRP-Therapie zur Unterstützung bei Haarausfall und zur Förderung der Haardichte.',
+        url: '/eigenbluttherapie/haare',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Eigenbluttherapie bei Haarausfall (PRF/PRP)',
+        type: 'MedicalProcedure',
+        bodyLocation: 'Scalp',
+        description: 'Eigenbluttherapie (PRF/PRP) zur Unterstützung der Kopfhaut und Förderung der Vitalität von Haarfollikeln bei verschiedenen Formen von Haarausfall.',
+        howPerformed: 'Injektion in die Kopfhaut',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: 'Eigenbluttherapie Haarausfall Behandlung in Bremen',
     subtitle:
       'Eigenbluttherapie Haarausfall Behandlung (PRF/PRP) zur Unterstützung der Haardichte und Kopfhautgesundheit. Bei erblich bedingtem oder kreisrundem Haarausfall, oder nach einer Haartransplantation',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
-    imageAlt:
-      'Mann mit Haarausfall vor Eigenbluttherapie bei Haarausfall',
+    imageAlt: 'Eigenbluttherapie PRF/PRP bei Haarausfall – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
@@ -64,7 +86,7 @@ export default function PRFHaarePage() {
   const introData: IntroSectionProps = {
     title: 'Wie PRF / PRP bei Haarausfall eingesetzt wird',
     content: [
-      'PRF (Platelet‑Rich Fibrin) und PRP (Platelet‑Rich Plasma) sind Verfahren der Eigenbluttherapie. Aus eigenem Blut werden Konzentrate mit Blutplättchen und Wachstumsfaktoren gewonnen und in die Kopfhaut injiziert.',
+      'Die Eigenbluttherapie bei Haarausfall (PRF/PRP) ist ein nicht-chirurgisches Verfahren der regenerativen Medizin zur Unterstützung der Haardichte und Kopfhautgesundheit.',
       'PRF wird ohne Antikoagulanzien hergestellt und bildet eine Fibrin‑Matrix. Diese kann Wachstumsfaktoren über einen längeren Zeitraum freisetzen. Ziel ist die Unterstützung der Follikelaktivität und des Haarzyklus.',
       'Einsatz je nach Befund u. a. bei androgenetischer Alopezie (erblich), diffusem Haarausfall, ausgewählten Fällen von Alopecia areata sowie zur Begleitung nach Haartransplantation. Eignung und Alternativen werden ärztlich geprüft.',
     ],
@@ -96,7 +118,7 @@ export default function PRFHaarePage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Eigenbluttherapie für die Haare auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 350€ pro Sitzung*', iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Preis', description: `ab ${PRICES.haare.prpPrf}€ pro Sitzung*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: 'ca. 60–120 Minuten inkl. Aufbereitung', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Behandlungsserie', description: '4–6 Sitzungen im Abstand von 4–6 Wochen', iconUrl: '/assets/icons/wiederholung.svg' },
       { title: 'Beurteilung', description: 'Verlaufskontrolle nach 2–3 Terminen', iconUrl: '/assets/icons/CAL.svg' },
@@ -219,6 +241,11 @@ export default function PRFHaarePage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="prf-haare-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

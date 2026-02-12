@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
     CTASection,
     TOCItem,
@@ -12,22 +13,33 @@ import {
     IntroSection,
     IntroSectionProps,
     TreatmentsSection,
-    TreatmentsSectionProps
+    TreatmentsSectionProps,
+    RelatedLinksSection,
+    RelatedLink,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema } from '@/lib/schema';
 // Annahme: Du hast diese Datenstruktur analog zu 'haarausfall' erstellt
 import { augenbehandlungen } from "@/data/treatments";
 
 export const metadata: Metadata = {
-    title: 'Augenringe & Tränenrinne behandeln Bremen | Ärztlich & professionell',
-    description:
-        'Müder Blick? Behandlung von Augenringen, Krähenfüßen und Tränenrinnen in Bremen. Sichere Unterspritzung Polynukleotiden oder Muskelrelaxantien.',
+    title: 'Augenringe & Tränenrinne behandeln Bremen | EL Aesthetics',
+    description: 'Augenbehandlungen in Bremen: Augenringe, Krähenfüße & Tränenrinnen ärztlich behandeln mit Polynukleotiden, PRP oder Botulinumtoxin. Jetzt beraten lassen.',
+    keywords: ['Augenringe behandeln Bremen', 'Tränenrinne unterspritzen Bremen', 'Krähenfüße Bremen', 'Augenbehandlung Bremen'],
     openGraph: {
-        title: 'Augenbehandlung in Bremen – Frischer Blick ohne OP',
-        description:
-            'Spezialisierte Behandlung der Augenpartie: Von der Tränenrinnen-Unterspritzung bis zur Hautqualitätsverbesserung mit Skinboostern. Natürlich & Sicher.',
+        title: 'Augenbehandlungen in Bremen – EL Aesthetics',
+        description: 'Augenringe, Krähenfüße & Tränenrinnen ärztlich behandeln in Bremen. Polynukleotide, PRP oder Botulinumtoxin.',
+        url: 'https://elaesthetics-bremen.de/augen-behandlung',
+        siteName: 'EL Aesthetics Bremen',
         type: 'website',
         locale: 'de_DE',
-        images: ['https://elaesthetics-bremen.de/assets/augen-behandlung/og-image-augen-bremen.webp'],
+        images: [
+            {
+                url: 'https://elaesthetics-bremen.de/assets/augen-behandlung/og-image-augen-bremen.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Augenbehandlungen in Bremen – EL Aesthetics',
+            },
+        ],
     },
     alternates: {
         canonical: 'https://elaesthetics-bremen.de/augen-behandlung',
@@ -35,12 +47,23 @@ export const metadata: Metadata = {
 };
 
 export default function AugenHubPage() {
+    const schema = getWebPageSchema({
+        name: 'Augenbehandlungen in Bremen',
+        description: 'Übersicht zu Augenbehandlungen: Augenringe, Tränenrinnen und Krähenfüße mit Polynukleotiden, PRP oder Botulinumtoxin.',
+        url: '/augen-behandlung',
+        about: {
+            type: 'MedicalTherapy',
+            name: 'Augenbehandlung',
+            procedureType: 'NonSurgicalProcedure',
+        },
+    });
+
     const heroData: HeroSectionProps = {
         title: 'Augenbehandlungen in Bremen',
         subtitle:
             'Ein wacher, frischer Blick lässt das gesamte Gesicht strahlen. Wir behandeln Augenringe, Tränenrinnen und Fältchen mit sanften, nicht-chirurgischen Methoden – individuell abgestimmt auf Ihre Anatomie.',
         imageSrc: '/assets/augen-behandlung/augen-behandlung_hero.png',
-        imageAlt: 'Portrait einer Frau mit frischer Augenpartie nach Behandlung bei EL Aesthetics Bremen',
+        imageAlt: 'Augenbehandlung gegen Augenringe und Tränenrinne – EL Aesthetics Bremen',
         primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
         secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' }
     };
@@ -48,7 +71,7 @@ export default function AugenHubPage() {
     const introData: IntroSectionProps = {
         title: 'Müde Augen? Wir finden die passende Lösung.',
         content: [
-            'Die Haut um die Augen ist die dünnste des ganzen Körpers. Stress, genetische Veranlagung oder der natürliche Volumenverlust lassen hier schnell Schatten, Augenringe oder kleine Fältchen entstehen.',
+            'Augenbehandlungen sind nicht-chirurgische Verfahren der ästhetischen Medizin zur Behandlung von Augenringen, Tränenrinnen und Krähenfüßen mit Polynukleotiden, PRP oder Botulinumtoxin.',
             'Nicht jede "Augenring-Behandlung" ist für jeden geeignet. Ein dunkler Schatten durch Pigmentierung benötigt eine andere Therapie als eine tiefe Tränenrinne durch Volumenmangel. Auch Wassereinlagerungen (Malar Bags) müssen ausgeschlossen werden.',
             'Wir analysieren Ihre Anatomie präzise: Ob PRP/PRF für Zellerneuerung, Muskelrelaxantien gegen Krähenfüße oder Polynukleotide zur Regeneration der Hautqualität – wir planen Ihre Behandlung für ein natürliches, erholtes Ergebnis.'
         ]
@@ -58,6 +81,24 @@ export default function AugenHubPage() {
         title: 'Unsere ästhetischen Konzepte für die Augenpartie',
         treatments: augenbehandlungen
     };
+
+    const relatedLinks: RelatedLink[] = [
+        {
+            href: '/botulinumtoxin/faltenbehandlung',
+            label: 'Botulinumtoxin gegen Krähenfüße',
+            description: 'Feine Fältchen um die Augen gezielt mit Muskelrelaxans glätten – für einen wachen, entspannten Blick.',
+        },
+        {
+            href: '/polynukleotide',
+            label: 'Polynukleotide (PDRN)',
+            description: 'Regeneration der dünnen Haut unter den Augen – für mehr Dichte, Elastizität und weniger Schatten.',
+        },
+        {
+            href: '/eigenbluttherapie/vampir-lifting',
+            label: 'Vampir-Lifting (PRF)',
+            description: 'Eigenbluttherapie zur natürlichen Hauterneuerung und Verbesserung der Augenpartie.',
+        },
+    ];
 
     const faqData: FAQSectionProps = {
         title: 'Häufige Fragen zur Augenbehandlung',
@@ -107,10 +148,16 @@ export default function AugenHubPage() {
 
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="augen-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             <HeroSection {...heroData} />
             <TableOfContents items={tocItems} />
             <IntroSection {...introData} />
             <TreatmentsSection {...treatmentsData} />
+            <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
             <ConsultationSection />
             <FAQSection {...faqData} />
             <CTASection {...ctaData} />

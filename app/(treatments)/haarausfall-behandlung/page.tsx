@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   CTASection,
   TOCItem,
@@ -12,21 +13,32 @@ import {
   IntroSection,
   IntroSectionProps,
   TreatmentsSection,
-  TreatmentsSectionProps
+  TreatmentsSectionProps,
+  RelatedLinksSection,
+  RelatedLink,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema } from '@/lib/schema';
 import {haarausfall} from "@/data/treatments";
 
 export const metadata: Metadata = {
-  title: 'Haarausfall Behandlung Bremen | PRF, PRP & Mesotherapie',
-  description:
-    'Haarausfall-Behandlung in Bremen: Analyse von Kopfhaut und Auslösern, Einsatz von PRP/PRF oder Mesotherapie mit Aufklärung zu Intervallen, Kosten und Risiken.',
+  title: 'Haarausfall Behandlung Bremen | PRP, Mesotherapie & mehr | EL Aesthetics',
+  description: 'Haarausfall-Behandlung in Bremen: Ärztliche Analyse & Therapie mit PRP/PRF, Mesotherapie oder Polynukleotiden. Individuelle Beratung. Jetzt Termin vereinbaren.',
+  keywords: ['Haarausfall Behandlung Bremen', 'Haarausfall Arzt Bremen', 'Haarausfall Therapie Bremen', 'Haare stärken Bremen'],
   openGraph: {
-    title: 'Haarausfall Behandlung in Bremen – Mittel gegen Haarausfall',
-    description:
-      'Von der Anamnese und Kopfhautdiagnostik bis zu Mesotherapie und moderner Biostimulation: Wir planen Ihre Haarausfall-Behandlung individuell.',
+    title: 'Haarausfall Behandlung in Bremen – EL Aesthetics',
+    description: 'Ärztliche Haarausfall-Therapie mit PRP/PRF, Mesotherapie oder Polynukleotiden in Bremen. Individuelle Beratung.',
+    url: 'https://elaesthetics-bremen.de/haarausfall-behandlung',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/haarausfall/og-image-haarausfall-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/haarausfall/og-image-haarausfall-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Haarausfall Behandlung in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/haarausfall-behandlung',
@@ -34,12 +46,23 @@ export const metadata: Metadata = {
 };
 
 export default function HaarausfallHubPage() {
+  const schema = getWebPageSchema({
+    name: 'Haarausfall Behandlung in Bremen',
+    description: 'Übersicht zu Haarausfall-Therapien: PRP/PRF, Mesotherapie und Polynukleotide bei EL Aesthetics.',
+    url: '/haarausfall-behandlung',
+    about: {
+      type: 'MedicalTherapy',
+      name: 'Haarausfall Behandlung',
+      procedureType: 'NonSurgicalProcedure',
+    },
+  });
+
   const heroData: HeroSectionProps = {
     title: 'Haarausfall Behandlung in Bremen',
     subtitle:
       'Der Weg zu voller wirkendem Haar beginnt mit einer fundierten Analyse der Kopfhaut. Es gibt mehrere Mittel gegen Haarausfall. Wir adressieren Ursachen – und planen Ihre Therapie realistisch & individuell.',
     imageSrc: '/assets/haarausfall-behandlung/haarausfall-behandlung_hero.webp',
-    imageAlt: 'Symbolbild für eine Haarausfall-Behandlung bei EL Aesthetics Bremen',
+    imageAlt: 'Haarausfall-Behandlung mit PRP und Mesotherapie – EL Aesthetics Bremen',
     primaryCTA: { text: 'Termin anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' }
   };
@@ -47,7 +70,7 @@ export default function HaarausfallHubPage() {
   const introData: IntroSectionProps = {
     title: 'Behandlungen gegen Haarausfall - Welche passt zu mir?',
     content: [
-      'Viele Maßnahmen gegen Haarausfall scheitern, weil die eigentliche Ursache unklar bleibt. Deshalb starten wir mit Anamnese, Kopfhaut-Check.',
+      'Die Haarausfall-Behandlung umfasst nicht-chirurgische Verfahren wie PRP/PRF, Mesotherapie und Polynukleotide zur Unterstützung der Haardichte in Bremen.',
       'Ein ungünstiges Kopfhautmilieu (z. B. verhärtetes Gewebe/Fibroseareale, Reste älterer Füllstoffe, eingeschränkte Mikrozirkulation) kann die Versorgung der Haarwurzeln beeinträchtigen.',
       'Auf dieser Basis planen wir die Therapie: von unterstützenden Kopfhautbehandlungen über Mesotherapie bis hin zur Eigenbluttherapie mit PRP/PRF. Ziel ist ein nachvollziehbarer, individueller Behandlungsplan – ohne unrealistische Versprechen.'
     ]
@@ -59,6 +82,24 @@ export default function HaarausfallHubPage() {
   };
 
   
+
+  const relatedLinks: RelatedLink[] = [
+    {
+      href: '/eigenbluttherapie/haare',
+      label: 'Eigenbluttherapie (PRP/PRF) für die Haare',
+      description: 'Haarwurzeln mit körpereigenen Wachstumsfaktoren aus Eigenblut stärken und Haarausfall entgegenwirken.',
+    },
+    {
+      href: '/mesotherapie/haare',
+      label: 'Mesotherapie für die Haare',
+      description: 'Nährstoffcocktails direkt in die Kopfhaut injizieren – für bessere Durchblutung und kräftigeres Haar.',
+    },
+    {
+      href: '/polynukleotide',
+      label: 'Polynukleotide (PDRN)',
+      description: 'Zellregeneration und Gewebereparatur der Kopfhaut mit biokompatiblen Polynukleotiden.',
+    },
+  ];
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur Haarausfall-Behandlung',
@@ -108,10 +149,16 @@ export default function HaarausfallHubPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="haarausfall-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
+      <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
       <ConsultationSection />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

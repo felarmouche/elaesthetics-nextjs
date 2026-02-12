@@ -13,42 +13,52 @@ interface BreadcrumbItem {
 
 // Mapping für lesbare Namen
 const pathNameMap: Record<string, string> = {
-  // Hauptbereiche
-  botox: 'Botox',
+  // Hub-Seiten
+  botulinumtoxin: 'Botulinumtoxin',
   hyaluron: 'Hyaluron',
-  'eigenbluttherapie-prf': 'Eigenbluttherapie PRF',
+  eigenbluttherapie: 'Eigenbluttherapie',
   mesotherapie: 'Mesotherapie',
-  faltenunterspritzung: 'Faltenunterspritzung',
-  gesichtsbehandlung: 'Gesichtsbehandlung',
-  'haarausfall-behandlung': 'Haarausfall Behandlung',
-  'fett-weg-spritze': 'Fett-weg-Spritze',
-  'medizinisches-microneedling': 'Medizinisches Microneedling',
-  'chemisches-peeling': 'Chemisches Peeling',
-  kollagenstimulation: 'Kollagenstimulation',
-  profhilo: 'Profhilo',
-  polynukleotide: 'Polynukleotide',
 
-  // Botox Unterbereiche
+  // Lösungsseiten
   faltenbehandlung: 'Faltenbehandlung',
+  'haarausfall-behandlung': 'Haarausfall Behandlung',
+  'augen-behandlung': 'Augenbehandlung',
+  filler: 'Filler',
+  longevity: 'Longevity',
+  'medizinische-behandlungen': 'Medizinische Behandlungen',
+
+  // Standalone-Behandlungen
+  kollagenstimulation: 'Kollagenstimulation',
+  polynukleotide: 'Polynukleotide',
+  'medizinisches-microneedling': 'Medizinisches Microneedling',
+  'fett-weg-spritze': 'Fett-weg-Spritze',
+  'chemisches-peeling': 'Chemisches Peeling',
+
+  // Botulinumtoxin Spokes
+  'aesthetische-behandlungen': 'Ästhetische Behandlungen',
   masseter: 'Masseter',
   mesobotox: 'Mesobotox / Microbotox',
   migraene: 'Migräne',
   hyperhidrose: 'Hyperhidrose',
 
-  // Hyaluron Unterbereiche
-  filler: 'Filler',
+  // Hyaluron Spokes
   skinbooster: 'Skinbooster',
+  profhilo: 'Profhilo',
   hylase: 'Hylase',
 
-  // PRF Unterbereiche
+  // Eigenbluttherapie Spokes
+  'vampir-lifting': 'Vampir-Lifting',
   microneedling: 'Microneedling',
   haare: 'Haare',
 
-  // Andere
-  terminanfragen: 'Terminanfrage',
+  // Mesotherapie Spokes
+  haut: 'Haut',
+
+  // Utility-Seiten
   kontakt: 'Kontakt',
-  'ueber-uns': 'Über uns',
   preise: 'Preise',
+  impressum: 'Impressum',
+  datenschutz: 'Datenschutz',
 }
 
 export default function Breadcrumbs() {

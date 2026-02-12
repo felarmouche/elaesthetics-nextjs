@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   AreasSection,
   AreasSectionProps,
@@ -24,17 +25,20 @@ import {
   TreatmentsSection,
   CTASection
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
+import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Hyaluron Filler Bremen – Lippen & Falten | Termin buchen',
+  title: 'Hyaluron Filler Bremen | Lippen, Jawline & Falten | EL Aesthetics',
   description:
-    'Hyaluron-Filler in Bremen: Lippen, Konturen & Falten natürlich korrigieren – Buchen sie jetzt ihren individuellen Beratungstermin!',
-  keywords:
-    'Hyaluron Filler Bremen, Lippen aufspritzen Bremen, Lippenunterspritzung Bremen, Faltenunterspritzung Bremen, Tränenrinne Bremen, Jawline Bremen, Kinnaufbau Bremen, Nasolabialfalte Bremen, Marionettenfalten Bremen, Hylase Bremen',
+    'Hyaluron-Filler für natürliche Lippen, Jawline & Falten in Bremen. Ärztliche Behandlung mit hochwertigen Präparaten. Jetzt Beratung vereinbaren.',
+  keywords: ['Hyaluron Filler Bremen', 'Lippen aufspritzen Bremen', 'Lippenunterspritzung Bremen', 'Faltenunterspritzung Bremen', 'Jawline Bremen', 'Tränenrinne Bremen', 'Kinnaufbau Bremen'],
   openGraph: {
-    title: 'Hyaluron Filler & Lippen in Bremen | EL Aesthetics',
+    title: 'Hyaluron Filler Bremen | Lippen, Jawline & Falten | EL Aesthetics',
     description:
-      'Ärztliche Hyaluron-Filler-Behandlungen in Bremen: Lippen, Falten & Konturen – natürlich und präzise. Jetzt Termin buchen.',
+      'Hyaluron-Filler für natürliche Lippen, Jawline & Falten in Bremen. Ärztliche Behandlung mit hochwertigen Präparaten.',
+    url: 'https://elaesthetics-bremen.de/hyaluron/filler',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
     images: [
@@ -47,13 +51,30 @@ export const metadata: Metadata = {
 };
 
 export default function HyaluronFillerBremenPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Hyaluron Filler in Bremen',
+        description: 'Ärztliche Hyaluronsäure-Filler-Behandlung für Lippen, Falten und Konturierung.',
+        url: '/hyaluron/filler',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Hyaluron-Filler Unterspritzung',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Hyaluronsäure-Filler-Injektion zur Volumenaufbau, Faltenunterspritzung und Konturierung von Lippen, Wangen, Kinn und Jawline.',
+        howPerformed: 'Injektion',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: 'Hyaluron Filler in Bremen',
     subtitle:
       'Suchen Sie nach einer professionellen Praxis für Hyaluronsäure Filler?\nDann sind Sie bei El Aesthetics genau richtig. Lippen aufspritzen, Falten glätten & Konturen präzisieren ',
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',
-    imageAlt:
-      'Hyaluron-Filler-Behandlung in Bremen – Lippen, Falten & Konturen',
+    imageAlt: 'Hyaluron-Filler-Behandlung für Lippen, Falten und Konturen – EL Aesthetics Bremen',
     primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
@@ -61,8 +82,8 @@ export default function HyaluronFillerBremenPage() {
   const introData: IntroSectionProps = {
     title: 'Was sind Hyaluron Filler? Wirkweise & Funktion',
     content: [
-      'Hyaluronsäure bindet Wasser, stellt Volumen wieder her und verbessert Konturen. Damit lassen sich Falten weichzeichnen, Lippen formen und das Gesichtsprofil harmonisieren – mit sofort sichtbaren, natürlich wirkenden Ergebnissen.',
-      'Für Volumen und Kontur verwenden wir je nach Region unterschiedliche Filler-Kohäsionen und -Viskositäten. Ziel ist stets ein dezentes, typgerechtes Finish, das in Ruhe und Mimik harmonisch wirkt.',
+      'Hyaluron-Filler sind ein minimal-invasives Verfahren der ästhetischen Medizin zum Volumenaufbau, zur Faltenunterspritzung und Konturierung von Lippen, Wangen und Jawline in Bremen.',
+      'Für Volumen und Kontur verwenden wir je nach Region unterschiedliche Filler-Kohäsionen und -Viskositäten. Unser Anspruch: ein dezentes, typgerechtes Finish, das in Ruhe und Mimik harmonisch wirkt.',
       'Alle Behandlungen erfolgen ärztlich, mit hochwertigen CE-zertifizierten Präparaten und klaren Hygiene- und Sicherheitsstandards.',
     ],
   };
@@ -107,7 +128,7 @@ export default function HyaluronFillerBremenPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Hyaluron-Filler auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 250€*', iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.fillerUnterspritzung}*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: 'ca. 30–45 Min', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Ergebnis', description: 'sofort sichtbar', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Haltbarkeit', description: 'ca. 6–18 Monate', iconUrl: '/assets/icons/CAL.svg' },
@@ -217,7 +238,7 @@ export default function HyaluronFillerBremenPage() {
       {
         question: 'Welche Risiken gibt es?',
         answer:
-          'Kurzfristig sind Rötungen, Schwellungen oder Hämatome möglich. Sehr selten treten Gefäßkomplikationen auf – hierfür besteht ein klarer Notfall-Algorithmus (u. a. Hylase).',
+          'Kurzfristig sind Rötungen, Schwellungen oder Hämatome möglich. Sehr selten treten Gefäßkomplikationen auf – hierfür besteht ein klarer Notfall-Algorithmus (u. a. Hyaluronidase).',
       },
       {
         question: 'Was kostet die Filler-Behandlung?',
@@ -227,7 +248,7 @@ export default function HyaluronFillerBremenPage() {
       {
         question: 'Kann man Filler bei Bedarf wieder auflösen?',
         answer:
-          'Ja. Mit Hylase (Hyaluronidase) lassen sich Hyaluron-Filler in geeigneten Fällen gezielt abbauen.',
+          'Ja. Mit Hyaluronidase lassen sich Hyaluron-Filler in geeigneten Fällen gezielt abbauen.',
       },
     ],
   };
@@ -254,6 +275,11 @@ export default function HyaluronFillerBremenPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="hyaluron-filler-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

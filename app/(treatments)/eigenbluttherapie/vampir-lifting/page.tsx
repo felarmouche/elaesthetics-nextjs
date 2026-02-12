@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   AreasSection,
   AreasSectionProps,
-  ConsultationSectionProps,
   ConsultationSection,
   HubTeaserSection,
   TableOfContents,
@@ -24,33 +24,21 @@ import {
   TreatmentsSectionProps,
   CTASection,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
+import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Vampir Lifting Bremen | Plasma-Facial für Glow & Kontur',
+  title: 'Vampir Lifting Bremen | PRF-Plasma für Glow | EL Aesthetics',
   description:
-    'Vampir Lifting in Bremen: Eigenblut-Plasma fördert Glow, Porenverfeinerung und Augenpartie. Infos zu Aufbereitung, klarer Sitzungsplanung, Heilung und Risiken.',
-  keywords: [
-    // Primary / lokal
-    'Vampir Lifting Bremen',
-    'Vampire Lifting Bremen',
-    // Synonyme / LSI ohne PRP/PRF-Kannibalisierung
-    'Vampire Facial',
-    'Plasma Lifting',
-    'Glow Lifting',
-    'Regeneratives Lifting',
-    'Biostimulations-Lifting',
-    'Natürliches Lifting ohne Filler',
-    // Intent / Nutzen
-    'Hautverjüngung Bremen',
-    'Poren verfeinern Bremen',
-    'Augenringe Behandlung Bremen',
-    'Hautqualität verbessern Bremen',
-  ].join(', '),
+    'Vampir Lifting / Plasma-Lifting in Bremen: Eigenblut-Behandlung für Hautqualität & Glow. Infos zu Ablauf, Wirkung & Kosten. Jetzt beraten lassen.',
+  keywords: ['Vampir Lifting Bremen', 'Plasma Lifting Bremen', 'Vampire Facial Bremen', 'PRF Hautbehandlung Bremen', 'Eigenblut Glow Bremen'],
   openGraph: {
     title:
-      'Vampir Lifting in Bremen – Natürliches Lifting ohne Filler | EL Aesthetics',
+      'Vampir Lifting Bremen | PRF-Plasma für Glow | EL Aesthetics',
     description:
-      'Vampire Facial/Plasma-Lifting: sanfte, körpereigene Regeneration für ein ebenmäßiger wirkendes Hautbild. Sachliche Aufklärung – keine Heilsversprechen.',
+      'Vampir Lifting / Plasma-Lifting in Bremen: Eigenblut-Behandlung für Hautqualität & Glow. Infos zu Ablauf, Wirkung & Kosten.',
+    url: 'https://elaesthetics-bremen.de/eigenbluttherapie/vampir-lifting',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
     images: [
@@ -63,12 +51,30 @@ export const metadata: Metadata = {
 };
 
 export default function VampirLiftingPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Vampir Lifting (PRF) in Bremen',
+        description: 'Ärztliche Eigenbluttherapie (PRF/PRP) für Hautregeneration und natürliches Lifting.',
+        url: '/eigenbluttherapie/vampir-lifting',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Vampir Lifting mit PRF/PRP',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Eigenbluttherapie (PRF/PRP) zur Hautregeneration und Verbesserung der Hautqualität durch autologes Plasma.',
+        howPerformed: 'Injektion',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: 'Vampir Lifting in Bremen',
     subtitle:
       'Natürliches Lifting ohne Filler: Vampire Facial / Plasma‑Lifting unterstützt die Hautregeneration – dezent, präzise und ärztlich begleitet.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
-    imageAlt: 'Vampir Lifting (Vampire Facial) zur Hautqualität bei EL Aesthetics Bremen',
+    imageAlt: 'Vampir Lifting mit Eigenblut-Plasma für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Hautanalyse anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
@@ -76,7 +82,7 @@ export default function VampirLiftingPage() {
   const introData: IntroSectionProps = {
     title: 'Vampir Lifting – was ist das?',
     content: [
-      'Unter Vampir Lifting – auch als Vampire Facial, Plasma‑Lifting oder Glow‑Lifting bekannt – versteht man eine ästhetische Behandlung, die Stoffe des eigenen Blutes nutzt, um die Hautregeneration zu unterstützen. Ziel sind eine gleichmäßig wirkende Oberfläche, feinere Poren und eine verbesserte Hautqualität.',
+      'Das Vampir Lifting (Vampire Facial) ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin, bei dem körpereigenes Plasma zur Unterstützung der Hautregeneration und Verbesserung der Hautqualität eingesetzt wird.',
       'Sensible Zonen wie Unterlid/Tränenrinne werden besonders behutsam behandelt. Die Planung erfolgt individuell; Ergebnisse und Dauer sind erfahrungsabhängig und können variieren.',
       'Für tiefergehende medizinische Infos zur Eigenbluttherapie (PRF/PRP) und zur Abgrenzung verlinken wir auf unsere Fachseite – diese Seite fokussiert bewusst die ästhetische Perspektive.',
     ],
@@ -109,7 +115,7 @@ export default function VampirLiftingPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Vampir Lifting auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 300 € pro Sitzung*', iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Preis', description: `ab ${PRICES.prpPrf.prpPrf}€ pro Sitzung*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: 'ca. 60–90 Min', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Serie', description: '3–6 Sitzungen, Abstand ~4–6 Wochen', iconUrl: '/assets/icons/wiederholung.svg' },
       { title: 'Wirkeintritt', description: 'schrittweise im Serienverlauf', iconUrl: '/assets/icons/CAL.svg' },
@@ -232,6 +238,11 @@ export default function VampirLiftingPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="vampir-lifting-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

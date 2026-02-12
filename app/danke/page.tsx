@@ -1,4 +1,11 @@
+import type { Metadata } from 'next';
 import Link from "next/link"
+
+export const metadata: Metadata = {
+    title: 'Danke für Ihre Nachricht',
+    robots: { index: false, follow: false },
+};
+
 export default function DankePage() {   
     return (
         <section className="min-h-[60vh] flex flex-col justify-center items-center bg-background-primary px-6 py-16">

@@ -155,7 +155,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
   }
 
@@ -163,6 +163,12 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
   }
+}
+
+/* Accessibility: Focus-visible indicator */
+*:focus-visible {
+  outline: 2px solid var(--color-accent-dark);
+  outline-offset: 2px;
 }
 
 /* Utility Classes */

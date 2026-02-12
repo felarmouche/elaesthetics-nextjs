@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   TableOfContents,
   TOCItem,
@@ -14,22 +15,30 @@ import {
   TreatmentsSectionProps,
   CTASection
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema } from '@/lib/schema';
 
 // Import der zentralen Daten
 import { fillerPageTreatments } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Filler in Bremen – Volumenaufbau & Konturierung',
-  description:
-      'Spezialisten für Hyaluron-Filler & Kollagenstimulation in Bremen. Natürliche Konturierung von Lippen, Jawline & Wangen. Ohne „künstlichen“ Look.',
+  title: 'Filler Bremen | Volumenaufbau & Konturierung | EL Aesthetics',
+  description: 'Filler in Bremen: Hyaluron-Filler & Kollagenstimulation für Lippen, Jawline & Wangen. Natürliche Konturierung ohne „künstlichen" Look. Ärztliche Beratung buchen.',
+  keywords: ['Filler Bremen', 'Volumenaufbau Gesicht Bremen', 'Wangen Filler Bremen', 'Kinn Filler Bremen'],
   openGraph: {
-    title:
-        'Filler in Bremen – Volumenaufbau & Konturierung | EL Aesthetics',
-    description:
-        'Entdecken Sie die Möglichkeiten der Filler-Behandlungen in Bremen für eine natürliche Konturierung von Lippen, Wangen, Kinn & Jawline. Hyaluronsäure Filler und Biostimulatoren für harmonische Ergebnisse.',
+    title: 'Filler & Volumenaufbau in Bremen – EL Aesthetics',
+    description: 'Hyaluron-Filler & Kollagenstimulation für natürliche Konturierung in Bremen. Lippen, Jawline, Wangen & mehr.',
+    url: 'https://elaesthetics-bremen.de/filler',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/filler/og-image-filler-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/filler/og-image-filler-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Filler & Volumenaufbau in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/filler',
@@ -37,12 +46,23 @@ export const metadata: Metadata = {
 };
 
 export default function FillerHubPage() {
+  const schema = getWebPageSchema({
+    name: 'Filler & Volumenaufbau in Bremen',
+    description: 'Übersicht zu Filler-Behandlungen: Hyaluronsäure und Calciumhydroxylapatit für Konturierung und Volumenaufbau bei EL Aesthetics.',
+    url: '/filler',
+    about: {
+      type: 'MedicalTherapy',
+      name: 'Filler & Volumenaufbau',
+      procedureType: 'NonSurgicalProcedure',
+    },
+  });
+
   const heroData: HeroSectionProps = {
     title: 'Filler & Volumenaufbau in Bremen',
     subtitle:
         'Hyaluronsäure-Filler & Calciumhydroxylapatit (CaHA). Sanftes Lifting, Konturierung & Volumenaufbau für Wangen, Kinn, Jawline & Lippen.',
     imageSrc: '/assets/filler/filler_hero.webp',
-    imageAlt: 'Filler in Bremen: Konturierung von Lippen, Wangen, Kinn & Jawline – natürliche Ergebnisse ohne „künstlichen“ Look',
+    imageAlt: 'Filler-Behandlung für Lippen, Wangen und Jawline – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#treatments' },
   };
@@ -50,7 +70,7 @@ export default function FillerHubPage() {
   const introData: IntroSectionProps = {
     title: 'Volumenaufbau & Konturierung mit Fillern',
     content: [
-      'Ich biete Filler-Behandlungen mit Hyaluronsäure und Calciumhydroxylapatit (CaHA) an. Diese minimalinvasiven Verfahren ermöglichen es, gezielt Volumen aufzubauen, Konturen zu definieren und ein sanftes Lifting zu erzielen – ganz ohne operativen Eingriff.',
+      'Filler-Behandlungen sind minimal-invasive Verfahren der ästhetischen Medizin zum gezielten Volumenaufbau und zur Konturierung mit Hyaluronsäure oder Calciumhydroxylapatit in Bremen.',
       'Filler eignen sich besonders für die Konturierung von Wangen, Kinn und Jawline sowie für die Formung und Volumensteigerung der Lippen. Durch die Verwendung hochwertiger, biokompatibler Materialien können natürliche Ergebnisse erzielt werden, die Ihre individuellen Gesichtszüge harmonisch unterstreichen – ohne den „künstlichen“ Look.',
       'Jede Behandlung wird individuell auf Ihre Wünsche und anatomischen Gegebenheiten abgestimmt. In einem ausführlichen Beratungsgespräch analysiere ich gemeinsam mit Ihnen Ihre Ziele und entwickle ein maßgeschneidertes Behandlungskonzept. Dabei lege ich großen Wert auf Sicherheit, Präzision und ein ästhetisches Ergebnis, das zu Ihnen passt.',
     ],
@@ -141,6 +161,11 @@ export default function FillerHubPage() {
 
   return (
       <div className="min-h-screen bg-white">
+        <Script
+          id="filler-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
         <HeroSection {...heroData} />
         <TableOfContents items={tocItems} />
         <IntroSection {...introData} />

@@ -1,5 +1,6 @@
 // app/(routes)/botulinumtoxin/page.tsx
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
     ConsultationSectionProps,
     ConsultationSection,
@@ -14,36 +15,56 @@ import {
     IntroSection,
     IntroSectionProps,
     TreatmentsSection,
-    TreatmentsSectionProps
+    TreatmentsSectionProps,
+    RelatedLinksSection,
+    RelatedLink,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema } from '@/lib/schema';
 import {medicalTreatment} from "@/data/treatments";
 
 export const metadata: Metadata = {
-    title: 'Medizische Botulinum-Behandlungen in Bremen',
-    description:
-        'Medizinische Botulinumtoxin-Behandlungen in Bremen: Masseter, Mesobotox, Migräne, Hyperhidrose. Ärzlich & professionell. Jetzt Informieren!',
-    keywords:
-        'Botulinumtoxin Bremen, Botulinumtoxin Behandlung Bremen, Botulinumtoxin Bremen, Masseter Botulinumtoxin Bremen, Mesobotox / Microbotox Bremen, Baby Botulinumtoxin Bremen, Botulinumtoxin Migräne Bremen, Botulinumtoxin Hyperhidrose Bremen, Bruxismus Behandlung Bremen',
+    title: 'Medizinische Indikationen Bremen | Bruxismus, Migräne & Schwitzen | EL Aesthetics',
+    description: 'Medizinische Behandlungen mit Botulinumtoxin in Bremen: Bruxismus, chronische Migräne & Hyperhidrose. Ärztliche Diagnostik & Therapie. Jetzt beraten lassen.',
+    keywords: ['medizinische Botox Behandlung Bremen', 'Bruxismus Behandlung Bremen', 'Migräne Botox Bremen', 'Hyperhidrose Bremen'],
     openGraph: {
-        title: 'Botulinumtoxin-Behandlungen in Bremen – Präzise, sicher & individuell',
-        description:
-            'EL Aesthetics Bremen: Ärztliche Botulinumtoxin-Therapien für Masseter/Bruxismus, Mesobotox / Microbotox zur Hautverfeinerung, Migräneprophylaxe und Hyperhidrose-Behandlung.',
+        title: 'Medizinische Behandlungen in Bremen – EL Aesthetics',
+        description: 'Ärztliche Botulinumtoxin-Therapie bei Bruxismus, chronischer Migräne & Hyperhidrose in Bremen.',
+        url: 'https://elaesthetics-bremen.de/medizinische-behandlungen',
+        siteName: 'EL Aesthetics Bremen',
         type: 'website',
         locale: 'de_DE',
-        images: ['https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp'],
+        images: [
+            {
+                url: 'https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Medizinische Behandlungen in Bremen – EL Aesthetics',
+            },
+        ],
     },
     alternates: {
-        canonical: 'https://elaesthetics-bremen.de/botulinumtoxin',
+        canonical: 'https://elaesthetics-bremen.de/medizinische-behandlungen',
     },
 };
 
 export default function BotulinumtoxinBehandlungenPage() {
+    const schema = getWebPageSchema({
+        name: 'Medizinische Botulinumtoxin-Behandlungen in Bremen',
+        description: 'Übersicht zu medizinischen Botulinumtoxin-Therapien: Bruxismus, chronische Migräne und Hyperhidrose bei EL Aesthetics.',
+        url: '/medizinische-behandlungen',
+        about: {
+            type: 'MedicalTherapy',
+            name: 'Medizinische Botulinumtoxin-Behandlung',
+            procedureType: 'NonSurgicalProcedure',
+        },
+    });
+
     const heroData: HeroSectionProps = {
         title: "Medizische Botulinumtoxin-Behandlungen in Bremen",
         subtitle:
             "Suchen sie professionelle und medizinisch fundierte Masseter/Bruxismus, Migräne- oder Hyperhidrose-Behandlungen in Bremen? Dann sind sie bei El Aesthetics sind sie genau richtig!",
         imageSrc: "/assets/medizinische-behandlungen/medizinische-behandlunge_hero.webp",
-        imageAlt: "Symbolbild für ärztliche Botulinumtoxin-Behandlungen in der Praxis EL Aesthetics Bremen",
+        imageAlt: "Medizinische Botulinumtoxin-Behandlung bei Bruxismus und Migräne – EL Aesthetics Bremen",
         primaryCTA: { text: "Beratung anfragen", href: "/kontakt" },
         secondaryCTA: { text: "Behandlungen ansehen", href: "#treatments" }
     };
@@ -51,7 +72,7 @@ export default function BotulinumtoxinBehandlungenPage() {
     const introData: IntroSectionProps = {
         title: "Botulinumtoxin - mehr als nur Faltenbehandlung",
         content: [
-            "Botulinumtoxin ist seit vielen Jahren medizinisch etabliert. In erfahrenen Händen lässt sich die Muskelaktivität präzise modulieren – mit dem Ziel, Beschwerden gezielt zu lindern.",
+            "Medizinische Botulinumtoxin-Behandlungen sind ärztliche Verfahren zur gezielten Therapie von Bruxismus, chronischer Migräne und Hyperhidrose.",
             "Richtig angewendet kann Botulinumtoxin Symptome bei chronischer Migräne, Hyperhidrose und Bruxismus spürbar reduzieren.",
             "Bei EL Aesthetics Bremen steht die ärztliche Behandlungsplanung im Mittelpunkt: Wir analysieren Ihre Ausgangssituation, definieren realistische Ziele und stimmen die Dosierung individuell ab – um Ihre persönlichen Behandlungsziele bestmöglich zu erreichen.",
             "Transparenz ist uns wichtig: Sie erhalten eine klare Einschätzung zu Wirkungseintritt und Haltbarkeit, möglichen Nebenwirkungen sowie sinnvollen Behandlungsabständen."
@@ -82,6 +103,24 @@ export default function BotulinumtoxinBehandlungenPage() {
         ctaHref: "/kontakt",
         backgroundColor: "bg-[#F5FAFF]"
     };
+
+    const relatedLinks: RelatedLink[] = [
+        {
+            href: '/botulinumtoxin/masseter',
+            label: 'Masseter-Behandlung (Bruxismus)',
+            description: 'Überaktive Kaumuskulatur entspannen – gegen Kieferschmerzen, Zähneknirschen und Masseter-Hypertrophie.',
+        },
+        {
+            href: '/botulinumtoxin/migraene',
+            label: 'Migräne-Prophylaxe mit Botulinumtoxin',
+            description: 'Chronische Migräne behandeln nach dem PREEMPT-Schema – weniger Kopfschmerztage, mehr Lebensqualität.',
+        },
+        {
+            href: '/botulinumtoxin/hyperhidrose',
+            label: 'Hyperhidrose-Behandlung',
+            description: 'Übermäßiges Schwitzen an Achseln, Händen oder Stirn gezielt mit Botulinumtoxin reduzieren.',
+        },
+    ];
 
 const faqData: FAQSectionProps = {
   title: "Häufig gestellte Fragen (FAQ)",
@@ -213,10 +252,16 @@ const faqData: FAQSectionProps = {
 
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="medizinisch-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+            />
             <HeroSection {...heroData} />
             <TableOfContents items={tocItems} />
             <IntroSection {...introData} />
             <TreatmentsSection {...treatmentsData} />
+            <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
             <ConsultationSection />
             <FAQSection {...faqData} />
             <CTASection {...ctaData} />

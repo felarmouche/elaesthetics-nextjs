@@ -9,7 +9,7 @@ export const botoxMasseter: Treatment =
 {
     imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
         imageAlt: "Masseter-Botulinumtoxin gegen Zähneknirschen (Bruxismus) in Bremen",
-    title: "Masseter-Botox: Entspannung bei Bruxismus & Kieferschmerzen",
+    title: "Masseter-Botulinumtoxin: Entspannung bei Bruxismus & Kieferschmerzen",
     description:
     "Zielgerichtete Injektionen in den Kaumuskel können Knirschen und Pressen reduzieren, Kieferschmerzen lindern und die Kontur optisch verschlanken – mit funktionellem und ästhetischem Benefit.",
         treatmentUrl: "/botulinumtoxin/masseter"
@@ -29,7 +29,7 @@ export const botoxHyperhydrose: Treatment =
         imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botulinumtoxin in Bremen",
     title: "Botulinumtoxin bei Hyperhidrose (starkem Schwitzen)",
     description:
-    "In Achseln, Handflächen oder Fußsohlen drosselt Botulinumtoxin die Schweißproduktion über Monate. Für ein spürbar trockeneres und komfortableres Hautgefühl.",
+    "In Achseln, Handflächen oder Fußsohlen kann Botulinumtoxin die Schweißproduktion vorübergehend reduzieren. Ziel ist ein spürbar trockeneres und komfortableres Hautgefühl – abhängig vom individuellen Verlauf.",
         treatmentUrl: "/botulinumtoxin/hyperhidrose"
 }
 
@@ -150,18 +150,18 @@ export const botoxAesthetic: Treatment = {
 export const mesobotox: Treatment = {
     imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
     imageAlt: 'Mesobotox Behandlung für feine Poren',
-    title: 'Mesobotox (Micro-Botox)',
+    title: 'Micro-Botulinumtoxin (Meso-Technik)',
     description:
-        'Verdünntes Botox wird oberflächlich injiziert. Glättet die Hautstruktur, verkleinert Poren und reduziert Talgproduktion, ohne die Mimik zu erstarren.',
+        'Verdünntes Botulinumtoxin wird oberflächlich injiziert. Es kann die Hautstruktur verfeinern, Poren optisch verkleinern und die Talgproduktion reduzieren, ohne die Mimik deutlich zu beeinträchtigen.',
     treatmentUrl: '/botulinumtoxin/mesobotox'
 };
 
 export const masseter: Treatment = {
     imageUrl: '/assets/botulinumtoxin/masseter_hero.webp',
     imageAlt: 'Masseter Botox Behandlung gegen Zähneknirschen',
-    title: 'Masseter Botox (Facial Slimming)',
+    title: 'Masseter Botulinumtoxin (Facial Slimming)',
     description:
-        'Behandlung des großen Kaumuskels. Hilft effektiv gegen Zähneknirschen (Bruxismus) und verschmälert optisch das untere Gesichtsdrittel (V-Shape).',
+        'Behandlung des großen Kaumuskels. Kann Zähneknirschen (Bruxismus) lindern und das untere Gesichtsdrittel optisch verschmälern – abhängig vom Befund.',
     treatmentUrl: '/botulinumtoxin/masseter'
 };
 
@@ -170,7 +170,7 @@ export const hyperhidrose: Treatment = {
     imageAlt: 'Hyperhidrose Behandlung gegen starkes Schwitzen',
     title: 'Hyperhidrose (Starkes Schwitzen)',
     description:
-        'Effektive Behandlung gegen übermäßiges Schwitzen (z.B. Achseln). Das Neurotoxin hemmt die Schweißdrüsenaktivität langanhaltend.',
+        'Ärztlich eingesetztes Botulinumtoxin kann übermäßiges Schwitzen (z. B. Achseln) vorübergehend reduzieren. Wirkung und Dauer sind individuell.',
     treatmentUrl: '/botulinumtoxin/hyperhidrose'
 };
 
@@ -179,7 +179,7 @@ export const migraene: Treatment = {
     imageAlt: 'Botox Behandlung bei Migräne',
     title: 'Migräne-Therapie',
     description:
-        'Entspannung bestimmter Muskelgruppen im Kopf- und Nackenbereich kann die Häufigkeit und Intensität von Migräneattacken deutlich reduzieren.',
+        'Entspannung bestimmter Muskelgruppen im Kopf- und Nackenbereich kann die Häufigkeit und Intensität von Migräneattacken reduzieren.',
     treatmentUrl: '/botulinumtoxin/migraene'
 };
 
@@ -264,20 +264,8 @@ export const longevityTexture: Treatment[] = [
     mesobotox
 ];
 
-// Für eine eventuelle "Falten & Kontur" Seite
-export const wrinkleTreatments: Treatment[] = [
-    botoxFalten,
-    filler,
-    kollagenstimulation,
-    fettWeg
-];
-
-// Für eine "Medizinische Ästhetik" Seite
-export const medicalTreatments: Treatment[] = [
-    masseter,
-    hyperhidrose,
-    migraene
-];
+// Für eine "Medizinische Ästhetik" Seite (verwendet in medizinische-behandlungen)
+// Hinweis: medicalTreatment (Singular) wird auf der Seite importiert
 /**
  * Faltenbehandlung
  */

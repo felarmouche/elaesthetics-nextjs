@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   AreasSection,
   ConsultationSectionProps,
@@ -9,7 +10,7 @@ import {
   ConsultationSection,
   TableOfContents,
   TOCItem,
-  
+
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -17,27 +18,36 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  
-  
+
+
   ProcessSection,
   ProcessSectionProps,
   TreatmentCareSection,
   TreatmentsSection,
   TreatmentsSectionProps
 } from '@/components/TreatmentPageComponents';
- 
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Polynukleotide Behandlung Bremen | Hautregeneration & Anti-Aging',
-  description: 'Polynukleotide in Bremen: fördern Hautregeneration, mindern Falten, fördern Haarwachstum. Ärztliche Beratung zu Ablauf, Sitzungen, Kombinationen und Risiken.',
-  keywords: 'Polynukleotide Bremen, Polynukleotide Behandlung Bremen, Polynukleotide Augen Bremen, Polynukleotide Haarausfall Bremen, DNA Hauttherapie Bremen',
+  title: 'Polynukleotide Bremen | Hautregeneration & Anti-Aging | EL Aesthetics',
+  description: 'Polynukleotide in Bremen: DNA-basierte Hautregeneration für Falten, Augenbereich & Haarausfall. Ärztliche Beratung zu Ablauf & Kosten. Jetzt Termin vereinbaren.',
+  keywords: ['Polynukleotide Bremen', 'Polynukleotide Augen Bremen', 'Polynukleotide Haarausfall Bremen', 'DNA Hauttherapie Bremen'],
   openGraph: {
-    title: 'Polynukleotide Behandlung Bremen - Biostimulation der neuesten Generation',
-    description: 'Erleben Sie die regenerative Kraft von Polynukleotiden: Hautregeneration, Faltenreduktion und Haarwachstumsförderung durch biologische DNA-Therapie in Bremen.',
+    title: 'Polynukleotide-Behandlung in Bremen – EL Aesthetics',
+    description: 'DNA-basierte Hautregeneration für Falten, Augenbereich & Haarausfall. Ärztliche Behandlung in Bremen.',
+    url: 'https://elaesthetics-bremen.de/polynukleotide',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/polynukleotide/og-image-polynukleotide-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/polynukleotide/og-image-polynukleotide-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Polynukleotide-Behandlung in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/polynukleotide',
@@ -45,11 +55,29 @@ export const metadata: Metadata = {
 };
 
 export default function PolynukleotideBehandlungPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Polynukleotide-Behandlung in Bremen',
+        description: 'Ärztliche Biostimulation mit Polynukleotiden für Hautregeneration und Haarwachstumsförderung.',
+        url: '/polynukleotide',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Polynukleotide-Behandlung',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Biostimulation mit DNA-Fragmenten (Polynukleotiden) zur Förderung der Hautregeneration, Faltenreduktion und Haarwachstum.',
+        howPerformed: 'Injektion',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: "Polynukleotide-Behandlung in Bremen",
     subtitle: "Biostimulation der neuesten Generation für natürliche Hautregeneration, Faltenreduktion und Haarwachstum.\nEntdecken Sie die regenerative Kraft biologischer DNA-Therapie.",
     imageSrc: "/assets/polynukleotide/polynukleotide_hero.webp",
-    imageAlt: "Polynukleotide-Behandlung für Hautregeneration in Bremen",
+    imageAlt: "Polynukleotide-Behandlung für Hautregeneration und Anti-Aging – EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
@@ -57,7 +85,7 @@ export default function PolynukleotideBehandlungPage() {
   const introData: IntroSectionProps = {
     title: "Was sind Polynukleotide und wie wirken sie?",
     content: [
-      "Polynukleotide sind Ketten von DNA/RNA-Bausteinen, die für ihre außergewöhnlichen regenerativen Eigenschaften bekannt sind. Diese biologischen Moleküle sind essenziell für die Zellfunktion, da sie die genetischen Informationen enthalten, die für das Wachstum, die Entwicklung und die Reparatur von Zellen und Geweben notwendig sind.",
+      "Polynukleotide sind ein innovatives, nicht-chirurgisches Verfahren der regenerativen Medizin, bei dem DNA-Fragmente zur Biostimulation der Hautregeneration und Kollagenproduktion eingesetzt werden.",
       "Als Biostimulatoren oder Bioaktivatoren unterstützen Polynukleotide die natürliche Regenerationsfähigkeit Ihrer Haut auf zellulärer Ebene. Sie fördern die Zellregeneration, stimulieren die Kollagenproduktion und verbessern die Durchblutung durch Angiogenese – die Bildung neuer Blutgefäße.",
       "In unserer Praxis in Bremen nutzen wir Polynukleotide zur Behandlung verschiedener ästhetischer und medizinischer Anliegen: von der Hautregeneration und Faltenreduktion über die Behandlung von Aknenarben bis hin zur Förderung des Haarwachstums. Die Behandlung ist biologisch verträglich und bietet natürliche, langanhaltende Ergebnisse durch die Aktivierung körpereigener Heilungs- und Regenerationsprozesse."
     ]
@@ -278,6 +306,11 @@ export default function PolynukleotideBehandlungPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="polynukleotide-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

@@ -1,18 +1,28 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem} from '@/components/TreatmentPageComponents';
- 
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Mesotherapie Gesicht Bremen | Hautqualität & Augenringe Info',
-  description: 'Mesotherapie für Gesicht in Bremen: Hyaluronsäure-Mikronährstoff-Komplex für Augenringe, Falten und Hautqualität; natürliche Ergebnisse ohne Ausfallzeit.',
-  keywords: 'Mesotherapie Gesicht Bremen, Mesotherapie Haut Bremen, Hautmesotherapie Bremen, Biorevitalisierung Gesicht Bremen, Mesotherapie Augenringe Bremen, Mesotherapie Dekolleté Bremen, Hautverjüngung Mesotherapie Bremen, Skinbooster Mesotherapie Bremen',
+  title: 'Mesotherapie Gesicht Bremen | Hautqualität & Glow | EL Aesthetics',
+  description: 'Mesotherapie für Gesicht in Bremen: Hyaluronsäure & Mikronährstoffe für strahlende Haut, Augenringe & Falten. Jetzt beraten lassen.',
+  keywords: ['Mesotherapie Gesicht Bremen', 'Mesotherapie Hautqualität Bremen', 'Augenringe Behandlung Bremen', 'Hautverjüngung Bremen', 'Skinbooster Bremen'],
   openGraph: {
-    title: 'Mesotherapie für Gesicht & Hautqualität in Bremen - EL Aesthetics',
-    description: 'Professionelle Mesotherapie für strahlende Haut. Hyaluronsäure-Mikronährstoff-Komplex gegen Augenringe, Falten und für verbesserte Hautqualität.',
+    title: 'Mesotherapie Gesicht Bremen | Hautqualität & Glow | EL Aesthetics',
+    description: 'Mesotherapie für Gesicht in Bremen: Hyaluronsäure & Mikronährstoffe für strahlende Haut, Augenringe & Falten.',
+    url: 'https://elaesthetics-bremen.de/mesotherapie/haut',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haut-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haut-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Mesotherapie Gesicht Bremen | Hautqualität & Glow | EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/mesotherapie/haut',
@@ -20,11 +30,29 @@ export const metadata: Metadata = {
 };
 
 export default function MesotherapieHautPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Mesotherapie für die Haut in Bremen',
+        description: 'Ärztliche Mesotherapie-Behandlung zur Verbesserung der Hautqualität mit Mikronährstoffen und Hyaluronsäure.',
+        url: '/mesotherapie/haut',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Mesotherapie für Gesicht und Hautqualität',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Mikro-Injektionen mit Hyaluronsäure und Mikronährstoffen zur Verbesserung der Hautqualität, Reduzierung von Augenringen und für strahlenden Teint.',
+        howPerformed: 'Mikro-Injektion',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: "Mesotherapie für Gesicht & Hautqualität in Bremen",
     subtitle: "Möchten Sie Ihre Hautqualität verbessern, Augenringe reduzieren und einen strahlenden Teint?\nMit der Mesotherapie kombinieren wir Hyaluronsäure mit wertvollen Mikronährstoffen für natürliche Hautverjüngung.",
-    imageSrc: "/assets/nctf/NFTC_Skinbooster.webp",
-    imageAlt: "Mesotherapie Behandlung für strahlende Gesichtshaut in Bremen",
+    imageSrc: "/assets/mesotherapie/mesotherapie-haut_hero.webp",
+    imageAlt: "Mesotherapie für Gesicht und Hautqualität – EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
@@ -32,7 +60,7 @@ export default function MesotherapieHautPage() {
   const introData: IntroSectionProps = {
     title: "Was ist Mesotherapie für die Haut?",
     content: [
-      "Die Mesotherapie ist eine sanfte biorevitalisierende Injektionsbehandlung zur Verbesserung der Hautqualität. Dabei wird ein speziell abgestimmter Wirkstoffkomplex aus unvernetzter Hyaluronsäure und 55 essentiellen Mikronährstoffen direkt in die oberen Hautschichten eingebracht.",
+      "Die Mesotherapie für das Gesicht ist ein minimal-invasives Verfahren der ästhetischen Medizin, bei dem Hyaluronsäure und Mikronährstoffe direkt in die Haut injiziert werden.",
       "Der Wirkstoffkomplex enthält 12 Vitamine, 23 Aminosäuren, 6 Coenzyme, 6 Mineralien und 8 Antioxidantien – eine einzigartige Kombination, die Ihre Haut intensiv mit Feuchtigkeit versorgt und die Zellregeneration unterstützt.",
       "In unserer Praxis in Bremen behandeln wir vor allem das Gesicht, insbesondere empfindliche Bereiche wie Augenpartie, Wangen und Stirn. Auch Hals, Dekolleté und Handrücken lassen sich mit dieser Methode wirkungsvoll behandeln. Das Ziel: Ein ebenmäßiger, strahlender Teint mit sichtbar verbesserter Hautstruktur – natürlich und ohne Ausfallzeit."
     ]
@@ -175,7 +203,7 @@ export default function MesotherapieHautPage() {
       "Sie möchten Ihre Hautqualität verbessern und Ihrem Gesicht mehr Strahlkraft verleihen?",
       "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und Gründerin von EL Aesthetics. Mit langjähriger Erfahrung in der Mesotherapie verhelfe ich Ihnen zu einem ebenmäßigen, frischen Teint – individuell auf Ihre Hautbedürfnisse abgestimmt.",
       "Ich bin zertifiziert für Injektionsbehandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT). Durch kontinuierliche Fortbildungen bleibe ich auf dem neuesten Stand der ästhetischen Medizin und Hautverjüngung.",
-      "In meiner Praxis in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihre Haut zum Strahlen bringen kann."
+      "Bei EL Aesthetics in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihre Haut zum Strahlen bringen kann."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/kontakt",
@@ -267,6 +295,11 @@ export default function MesotherapieHautPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="mesotherapie-haut-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

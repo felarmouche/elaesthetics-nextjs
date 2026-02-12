@@ -1,23 +1,31 @@
 // app/kollagenstimulation/page.tsx
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {PRICES} from '@/lib/constants'
 import {
   AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
  
 export const metadata: Metadata = {
-  title: 'Kollagenstimulation in Bremen',
-  description:
-    'Kollagenstimulation in Bremen mit CaHA- und Hyaluron-Biostimulatoren | Ärztlich & professionell | Jetzt Beratungsgespräch buchen!.',
-  keywords:
-    'Kollagenstimulation Bremen, Calciumhydroxylapatit Bremen, Hautstraffung ohne OP Bremen, Biostimulator Bremen, Kollagenaufbau Bremen, Hyaluronsäure Bremen, Hals straffen Bremen, Dekolleté straffen Bremen, Handverjüngung Bremen, Jawline straffen Bremen',
+  title: 'Kollagenstimulation Bremen | CaHA & Biostimulatoren | EL Aesthetics',
+  description: 'Kollagenstimulation in Bremen: CaHA- und Hyaluron-Biostimulatoren für natürliche Hautstraffung an Gesicht, Hals & Händen. Ärztliche Beratung. Termin buchen.',
+  keywords: ['Kollagenstimulation Bremen', 'Calciumhydroxylapatit Bremen', 'Hautstraffung ohne OP Bremen', 'Biostimulator Bremen', 'Kollagenaufbau Bremen'],
   openGraph: {
-    title: 'Kollagenstimulation in Bremen – Hyaluronsäure & Calciumhydroxylapatit | EL Aesthetics',
-    description:
-      'Schonend und präzise: Kollagenstimulation mit Hyaluronsäure & Calciumhydroxylapatit zur Unterstützung von Hautfestigkeit und -qualität. Ärztliche Behandlung in Bremen.',
+    title: 'Kollagenstimulation in Bremen – EL Aesthetics',
+    description: 'CaHA- und Hyaluron-Biostimulatoren für natürliche Hautstraffung an Gesicht, Hals & Händen in Bremen.',
+    url: 'https://elaesthetics-bremen.de/kollagenstimulation',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/kollagen/og-kollagenstimulation-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/kollagen/og-kollagenstimulation-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Kollagenstimulation in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/kollagenstimulation',
@@ -25,12 +33,30 @@ export const metadata: Metadata = {
 };
 
 export default function KollagenstimulationPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Kollagenstimulation in Bremen',
+        description: 'Ärztliche Kollagenstimulation mit Biostimulatoren für natürliche Hautstraffung und Kollagenaufbau.',
+        url: '/kollagenstimulation',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Kollagenstimulation mit Biostimulatoren',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Behandlung mit CaHA- und Hyaluron-Biostimulatoren zur Anregung der körpereigenen Kollagenproduktion für natürliche Hautstraffung.',
+        howPerformed: 'Injektion',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: 'Kollagenstimulation in Bremen',
     subtitle:
       'Interesse an einer professionellen Kollagenstimulation in Bremen?\nDann sind Sie bei El Aesthetics genau richtig. Jetzt Beratung vereinbaren!',
     imageSrc: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
-    imageAlt: 'Kollagenstimulation in Bremen – ärztliche Injektion mit feiner Kanüle',
+    imageAlt: 'Kollagenstimulation mit Biostimulatoren zur Hautstraffung – EL Aesthetics Bremen',
     primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
@@ -38,7 +64,7 @@ export default function KollagenstimulationPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist Kollagenstimulation?',
     content: [
-      'Bei dieser Methode wird Hyaluronsäure für einen unmittelbaren Auffrischungseffekt mit mikronisierten Calciumhydroxylapatit-Partikeln kombiniert. Während Hyaluronsäure lokal Volumen und Feuchtigkeit spendet, kann Calciumhydroxylapatit die körpereigene Kollagenbildung anregen – für eine schrittweise Unterstützung von Hautfestigkeit und -elastizität.',
+      'Die Kollagenstimulation ist ein minimal-invasives Verfahren der ästhetischen Medizin, das mit Biostimulatoren wie Calciumhydroxylapatit die körpereigene Kollagenproduktion anregt und die Haut natürlich strafft.',
       'Die Technik eignet sich insbesondere zur sanften Verbesserung der Hautqualität und Konturen – für natürlich wirkende Ergebnisse ohne Überkorrektur. Die Behandlung erfolgt minimalinvasiv und ist in der Regel schnell und gut integrierbar in den Alltag.',
       'Eine ärztliche Voruntersuchung entscheidet über Eignung und Vorgehen.'
     ],
@@ -157,7 +183,7 @@ export default function KollagenstimulationPage() {
   const consultationData: ConsultationSectionProps = {
     title: 'Ihre Ärztin für Kollagenstimulation in Bremen',
     description: [
-      'Ich bin Ola El-Armouche, Ärztin für ästhetische & regenerative Medizin. In meiner Praxis verbinde ich präzise Techniken mit einem natürlichen Behandlungsansatz.',
+      'Ich bin Ola El-Armouche, Ärztin für ästhetische & regenerative Medizin. Bei EL Aesthetics verbinde ich präzise Techniken mit einem natürlichen Behandlungsansatz.',
       'Ziel ist eine maßvolle Unterstützung von Hautfestigkeit und -qualität – ohne unnatürliche Überkorrekturen. Grundlage jeder Behandlung ist eine ausführliche Anamnese und ehrliche Beratung.',
       'Gern prüfe ich mit Ihnen, ob die Kollagenstimulation mit Hyaluronsäure & Calciumhydroxylapatit für Ihre Wünsche geeignet ist.',
     ],
@@ -259,6 +285,11 @@ export default function KollagenstimulationPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="kollagenstimulation-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

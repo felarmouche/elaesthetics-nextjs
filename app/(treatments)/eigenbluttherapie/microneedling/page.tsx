@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   TableOfContents,
   TOCItem,
@@ -24,22 +25,31 @@ import {
   TreatmentsSectionProps,
   CTASection
 } from '@/components/TreatmentPageComponents';
- 
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'PRF Microneedling Bremen | Plasma-Needling gegen Narben',
+  title: 'PRF Microneedling Bremen | Plasma-Needling & Narben | EL Aesthetics',
   description:
-    'PRF Microneedling in Bremen: Kombination aus Needling und PRF-Matrix für feinere Poren und Narben mit Hinweisen zu Sitzungen, Ablauf, Nachpflege und Risiken.',
+    'PRF Microneedling in Bremen: Kombination aus Needling und Eigenblut-Plasma für verfeinerte Poren & Narben. Jetzt beraten lassen.',
   keywords:
-    'PRF Microneedling Bremen, Plasma Needling Bremen, Microneedling mit PRF, PRP Microneedling Bremen, iPRF Needling, Aknenarben behandeln Bremen, Poren verfeinern Bremen, Hautbild verbessern Bremen, medizinisches Microneedling Bremen',
+    ['PRF Microneedling Bremen', 'Plasma Needling Bremen', 'Aknenarben Bremen', 'Poren verfeinern Bremen', 'medizinisches Microneedling Bremen'],
   openGraph: {
-    title: 'PRF Microneedling (Plasma-Needling) in Bremen – EL Aesthetics',
+    title: 'PRF Microneedling Bremen | Plasma-Needling & Narben | EL Aesthetics',
     description:
-      'Synergie aus Microneedling und PRF-Matrix: langanhaltende Freisetzung körpereigener Faktoren – für sichtbar verfeinerte Poren und ein ebenmäßigeres Hautbild.',
+      'PRF Microneedling in Bremen: Kombination aus Needling und Eigenblut-Plasma für verfeinerte Poren & Narben.',
+    url: 'https://elaesthetics-bremen.de/eigenbluttherapie/microneedling',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/prf/prf-microneedling-og.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/prf/prf-microneedling-og.webp',
+        width: 1200,
+        height: 630,
+        alt: 'PRF Microneedling Bremen | Plasma-Needling & Narben | EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie/microneedling',
@@ -47,12 +57,30 @@ export const metadata: Metadata = {
 };
 
 export default function PRFMicroneedlingPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'PRF Microneedling in Bremen',
+        description: 'Ärztliche Kombination aus medizinischem Microneedling und Eigenbluttherapie (PRF) für Hautregeneration.',
+        url: '/eigenbluttherapie/microneedling',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'PRF Microneedling',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Kombination aus medizinischem Microneedling und PRF-Eigenbluttherapie zur Verfeinerung von Poren, Narben und Hautstruktur.',
+        howPerformed: 'Microneedling mit PRF-Applikation',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: 'PRF Microneedling (Plasma-Needling) in Bremen',
     subtitle:
       'Microneedling + PRF-Matrix: Die Kombination zur Unterstützung der Regeneration – für verfeinerte Poren, glattere Textur und ein ebenmäßigeres Hautbild, ärztlich durchgeführt.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
-    imageAlt: 'PRF Microneedling (Plasma-Needling) in der Praxis EL Aesthetics Bremen',
+    imageAlt: 'PRF Microneedling mit Plasma-Needling – EL Aesthetics Bremen',
     primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' }
   };
@@ -60,7 +88,7 @@ export default function PRFMicroneedlingPage() {
   const introData: IntroSectionProps = {
     title: 'Warum Microneedling mit PRF in Bremen?',
     content: [
-      'Das Plasma-Needling kombiniert die Vorteile von PRF mit den regenerativen Effekten des Needlings. Durch das Needling wird die Haut angeregt, mehr Kollagen zu produzieren, während PRF den Heilungsprozess beschleunigt und die Hauterneuerung fördert.',
+      'PRF Microneedling ist ein minimal-invasives Kombinationsverfahren der ästhetischen Medizin, bei dem medizinisches Microneedling mit körpereigenem Plasma (PRF) zur intensiven Hautregeneration verbunden wird.',
       'Die Synergie aus PRF-Injektionen und Microneedling kann zu einer deutlichen Verbesserung des Hautbildes führen und eignet sich bei vielen Hautproblemen und Indikationen. Zum Beispiel zur Textur-Verbesserung, Porenverfeinerung und zur begleitenden Behandlung von Aknenarben.',
       'Nadeltiefe und PRF-Applikation werden individuell an Hautzustand und Areal angepasst.'
     ]
@@ -251,6 +279,11 @@ export default function PRFMicroneedlingPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="prf-microneedling-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

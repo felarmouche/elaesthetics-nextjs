@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {PRICES} from '@/lib/constants'
 import {
   AreasSection,
@@ -8,7 +9,7 @@ import {
   HubTeaserSection,
   TableOfContents,
   TOCItem,
-  
+
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -16,8 +17,8 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  
-  
+
+
   ProcessSection,
   ProcessSectionProps,
   QuickInfoSection,
@@ -27,20 +28,23 @@ import {
   TreatmentsSectionProps,
   TreatmentsSection
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
  
 
 export const metadata: Metadata = {
   title:
-    'Skinbooster Behandlung Bremen',
+    'Skinbooster Bremen | Hautfeuchtigkeit & Glow | EL Aesthetics',
   description:
-    'Skinbooster in Bremen: fließfähige Hyaluronsäure für Hydratation und Glow. Buchen sie jetzt ihren persönlichen Beratungstermin!',
+    'Skinbooster-Behandlung in Bremen: Hyaluron für glattere, strahlendere Haut. Für Gesicht, Hals & Dekolleté. Jetzt Beratung vereinbaren.',
   keywords:
-    'Skinbooster, Hyaluronbehandlung, Hautauffrischung, Feuchtigkeitskur, Glow, feine Linien, Knitterfältchen, Hals, Dekolleté, Hände, Bremen',
+    ['Skinbooster Bremen', 'Hyaluron Hautauffrischung Bremen', 'Hautfeuchtigkeit Bremen', 'Glow Behandlung Bremen', 'feine Linien Hyaluron Bremen'],
   openGraph: {
     title:
-      'Skinbooster – Hydratation & Glow | EL Aesthetics Bremen',
+      'Skinbooster Bremen | Hautfeuchtigkeit & Glow | EL Aesthetics',
     description:
-      'Hyaluron-Skinbooster für langanhaltende Feuchtigkeit und glattere Haut. Für Gesicht, Hals, Dekolleté & Hände – ärztlich und minimal-invasiv.',
+      'Skinbooster-Behandlung in Bremen: Hyaluron für glattere, strahlendere Haut. Für Gesicht, Hals & Dekolleté.',
+    url: 'https://elaesthetics-bremen.de/hyaluron/skinbooster',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
     images: [
@@ -53,13 +57,30 @@ export const metadata: Metadata = {
 };
 
 export default function SkinboosterBremenPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Skinbooster-Behandlung in Bremen',
+        description: 'Ärztliche Skinbooster-Behandlung mit Hyaluronsäure für Hautfeuchtigkeit und Glow.',
+        url: '/hyaluron/skinbooster',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Skinbooster-Behandlung',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Tiefenwirksame Hydratation der Haut durch Hyaluronsäure-Injektionen für verbesserte Hautstruktur und strahlenden Glow.',
+        howPerformed: 'Injektion',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: 'Skinbooster in Bremen',
     subtitle:
       'Suchen Sie nach einer professionellen Skinbooster-Behandlung für Gesicht, Hals, Dekolleté & Hände? \nDann sind Sie bei El Aesthetics genau richtig.',
     imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp', 
-    imageAlt:
-      'Skinbooster-Behandlung – sanfte Hautauffrischung mit Hyaluron',
+    imageAlt: 'Skinbooster-Behandlung mit Hyaluronsäure für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
@@ -67,7 +88,7 @@ export default function SkinboosterBremenPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist eine Hyaluron-Skinbooster-Behandlung?',
     content: [
-      'Skinbooster sind sehr oberflächliche Mikroinjektionen mit unvernetzter Hyaluronsäure. Sie füllen die Feuchtigkeitsdepots der Haut auf, verbessern Elastizität und verfeinern das Hautbild – ohne Volumenaufbau.',
+      'Skinbooster-Behandlungen sind ein minimal-invasives Verfahren der ästhetischen Medizin zur tiefenwirksamen Hauthydratation mit unvernetzter Hyaluronsäure.',
       'So werden feine Linien geglättet, der Teint wirkt ebenmäßiger und die Ausstrahlung frischer. Geeignet für Gesicht, Hals, Dekolleté und Hände.',
       'Die Methode ist gut verträglich und dezent in der Wirkung – ideal für einen natürlichen Glow.',
     ],
@@ -250,7 +271,7 @@ export default function SkinboosterBremenPage() {
       {
         question: 'Skinbooster, Profhilo oder Filler – was passt zu mir?',
         answer:
-          'Skinbooster: Hydratation & Hautqualität (sehr oberflächlich, ohne Volumen). Profhilo: spezielles Remodelling-Konzept (eigene Seite). Filler: Volumen/Kontur & tiefere Falten. Wir beraten individuell.',
+          'Skinbooster: Hydratation & Hautqualität (sehr oberflächlich, ohne Volumen). BAP-Technik (Biorevitalisierung): spezielles Remodelling-Konzept (eigene Seite). Filler: Volumen/Kontur & tiefere Falten. Wir beraten individuell.',
       },
     ],
   };
@@ -265,6 +286,11 @@ export default function SkinboosterBremenPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="skinbooster-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

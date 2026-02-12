@@ -45,4 +45,5 @@ export const PRICES = {
   biostimulation: {
     caHydroxylapatitPlusHyaluron: 900, // "ab"
   },
+  chemPeeling: 180
 } as const;

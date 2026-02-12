@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   ConsultationSectionProps,
   ConsultationSection,
@@ -15,41 +16,28 @@ import {
   TreatmentsSectionProps,
   CTASection,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema } from '@/lib/schema';
 import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
-  title: 'Eigenbluttherapie PRF & PRP Bremen | Haut- & Haaraufbau',
-  description:
-    'Eigenbluttherapie mit PRF/PRP in Bremen: autologe Plasma‑Behandlung zur Unterstützung der Hautqualität und bei Haarausfall. Infos zu Ablauf, Sitzungen & Kosten.',
-  keywords: [
-    // Primary / lokal
-    'Eigenbluttherapie Bremen',
-    'Eigenblut Behandlung',
-    'Eigenblutbehandlung Bremen',
-    'PRF Behandlung Bremen',
-    'PRP Behandlung Bremen',
-    // Synonyme / LSI (medizinisch)
-    'Autologe Plasma Behandlung',
-    'Autologes Plasma',
-    'Plasma Therapie Gesicht',
-    'Plasma Behandlung Haare',
-    'Thrombozytenreiches Plasma',
-    'Thrombozytenreiches Fibrin',
-    'Eigenplasma Therapie',
-    // Intent Haut/Haare
-    'Eigenbluttherapie Haut',
-    'Eigenbluttherapie Haare',
-    'Eigenblut Haarausfall',
-    'PRP Haare',
-    'PRF Haare',
-  ].join(', '),
+  title: 'Eigenbluttherapie PRF & PRP Bremen | Haut & Haare | EL Aesthetics',
+  description: 'Eigenbluttherapie mit PRF/PRP in Bremen: Autologe Plasma-Behandlung für Hautregeneration und bei Haarausfall. Ablauf, Kosten & Beratung. Termin vereinbaren.',
+  keywords: ['Eigenbluttherapie Bremen', 'PRP Bremen', 'PRF Behandlung Bremen', 'Platelet Rich Plasma Bremen', 'Eigenblut Behandlung Bremen'],
   openGraph: {
-    title: 'Eigenbluttherapie (PRF/PRP) Bremen | Autologe Plasma‑Behandlung',
-    description:
-      'Körpereigene Plasma‑Behandlung (PRF/PRP) für Haut & Haare in Bremen: sachliche Aufklärung zu Nutzen, Ablauf und Kosten.',
+    title: 'Eigenbluttherapie (PRF/PRP) in Bremen – EL Aesthetics',
+    description: 'Autologe Plasma-Behandlung (PRF/PRP) für Haut & Haare in Bremen. Ärztliche Beratung zu Ablauf und Kosten.',
+    url: 'https://elaesthetics-bremen.de/eigenbluttherapie',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/eigenbluttherapie/og-eigenbluttherapie-prf.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/eigenbluttherapie/og-eigenbluttherapie-prf.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Eigenbluttherapie (PRF/PRP) in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie',
@@ -57,12 +45,23 @@ export const metadata: Metadata = {
 };
 
 export default function EigenbluttherapiePRFPage() {
+  const schema = getWebPageSchema({
+    name: 'Eigenbluttherapie (PRF/PRP) Bremen',
+    description: 'Übersicht zu Eigenbluttherapie-Anwendungen (PRF/PRP) für Haut und Haare bei EL Aesthetics.',
+    url: '/eigenbluttherapie',
+    about: {
+      type: 'MedicalTherapy',
+      name: 'Eigenbluttherapie (PRF/PRP)',
+      procedureType: 'NonSurgicalProcedure',
+    },
+  });
+
   const heroData: HeroSectionProps = {
     title: 'Eigenbluttherapie in Bremen',
     subtitle:
       'PRF/PRP – autologe Plasma‑Behandlung für Hautqualität & Haare. Natürlich, ärztlich geplant, mit realistischen Erwartungen.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
-    imageAlt: 'Eigenbluttherapie (PRF/PRP) bei EL Aesthetics in Bremen',
+    imageAlt: 'Eigenbluttherapie PRF/PRP für Haut und Haare – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungsgespräch vereinbaren', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' },
   };
@@ -70,7 +69,7 @@ export default function EigenbluttherapiePRFPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist eine PRF Behandlung (Eigenbluttherapie)?',
     content: [
-      'Unter Eigenbluttherapie versteht man die Aufbereitung körpereigener Blutbestandteile und deren gezielte Anwendung in Haut oder Kopfhaut. Medizinisch werden u. a. die Begriffe PRF (thrombozytenreiches Fibrin) und PRP (thrombozytenreiches Plasma) verwendet – beides Formen der autologen Plasma‑Behandlung.',
+      'Die Eigenbluttherapie (PRF/PRP) ist ein nicht-chirurgisches Verfahren der regenerativen Medizin, bei dem körpereigene Blutbestandteile zur Unterstützung der Haut- und Haarregeneration eingesetzt werden.',
       'Bei PRF entsteht eine feine Fibrin‑Matrix, die gebundene Faktoren zeitlich verzögert freisetzen kann. PRP ist eine flüssige Aufbereitung mit hoher Thrombozytenkonzentration. Welche Variante sinnvoll ist, hängt vom Areal und Ziel ab; dies wird ärztlich besprochen.',
       'Typische Anliegen: Unterstützung der Hautqualität (Textur, feine Linien, Poren, Aknenarben), behutsame Anwendung im Unterlidbereich sowie ergänzend bei verschiedenen Formen von Haarausfall (z. B. androgenetisch, diffus) oder nach Haartransplantation.',
     ],
@@ -160,6 +159,11 @@ export default function EigenbluttherapiePRFPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="eigenbluttherapie-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

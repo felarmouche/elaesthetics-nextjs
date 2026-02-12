@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   TableOfContents,
   TOCItem,
@@ -23,31 +24,59 @@ import {
   TreatmentsSectionProps,
   CTASection,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
+import { PRICES } from '@/lib/constants';
 // PatientReviews import bleibt ungenutzt; bei Bedarf HWG-konform entfernen/ersetzen
  
 
 export const metadata: Metadata = {
-  title: 'Chemisches Peeling Bremen | PRX-T33 & Glow ohne Auszeit',
-  description:
-    'PRX-T33 chemisches Peeling in Bremen: ärztliche Anwendung für Glow, Poren und Pigmentflecken mit kurzer Downtime, klarer Aufklärung und angeleiteter Nachpflege.',
+  title: 'Chemisches Peeling Bremen | Hauterneuerung & Pigmente | EL Aesthetics',
+  description: 'Chemisches Peeling in Bremen: Kontrollierte Hauterneuerung bei Pigmentflecken, Aknenarben & fahlem Teint. Ärztlich durchgeführt. Beratungstermin vereinbaren.',
+  keywords: ['Chemisches Peeling Bremen', 'Fruchtsäurepeeling Bremen', 'Pigmentflecken behandeln Bremen', 'Hauterneuerung Bremen'],
   openGraph: {
-    title: 'Chemisches Peeling Bremen | PRX-T33 ohne Downtime',
-    description:
-      'PRX-T33 Biorevitalisierung bei EL Aesthetics Bremen: Hinweise zu Ablauf, möglichen Effekten und Pflege – ohne sichtbare Schälung.',
+    title: 'Chemisches Peeling in Bremen – EL Aesthetics',
+    description: 'Kontrollierte Hauterneuerung bei Pigmentflecken, Aknenarben & fahlem Teint. Ärztlich durchgeführt in Bremen.',
+    url: 'https://elaesthetics-bremen.de/chemisches-peeling',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/peeling/og-chemisches-peeling-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/peeling/og-chemisches-peeling-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Chemisches Peeling in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: { canonical: 'https://elaesthetics-bremen.de/chemisches-peeling' },
 };
 
 export default function ChemischesPeelingPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Chemisches Peeling in Bremen',
+        description: 'Ärztliches chemisches Peeling zur Hauterneuerung, Pigmentreduzierung und Verbesserung der Hautstruktur.',
+        url: '/chemisches-peeling',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Chemisches Peeling',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Kontrollierte Hauterneuerung durch chemische Substanzen zur Verbesserung von Pigmentierung, Aknenarben und Hautstruktur.',
+        howPerformed: 'Chemische Peelingbehandlung',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: 'Chemisches Peeling in Bremen',
     subtitle:
       'Biorevitalisierung mit chemischem Peeling - Es können verschiedene biologische Prozesse angeregt werden, z.B. Bildung von kollagenen Fasern & Freisetzung von Wachstumsfaktoren, welche die Regeneration der Haut unterstützen, die Hautstruktur verbessern & Pigmentstörungen entgegengewirken können.',
     imageSrc: '/assets/chemisches-peeling/chemisches-peeling_hero.webp',
-    imageAlt: 'Chemisches Peeling mit Biorevitalisierung bei EL Aesthetics Bremen',
+    imageAlt: 'Chemisches Peeling zur Hauterneuerung und Pigmentbehandlung – EL Aesthetics Bremen',
     primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
@@ -55,7 +84,7 @@ export default function ChemischesPeelingPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist ein chemisches Peeling?',
     content: [
-      'Ein chemisches Peeling ist eine medizinische Anwendung zur Hauterneuerung. Im Unterschied zu mechanischen Peelings werden biologische Regenerationsprozesse in tieferen Hautschichten angestoßen.',
+      'Das chemische Peeling ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin zur kontrollierten Hauterneuerung bei Pigmentflecken, Aknenarben und fahlem Teint.',
       'Die eingesetzte Wirkstoffkombination besteht unter anderem aus Trichloressigsäure (TCA), Wasserstoffperoxid und Kojisäure. Durch die spezielle Formulierung dringen die Substanzen bis in mittlere Hautschichten vor, ohne eine sichtbare Abschälung zu verursachen.',
       'In unserer Praxis kommt das PRX‑T33 zum Einsatz (TCA in patentierter Kombination mit H2O2/Kojisäure). Ziel ist eine Tiefenstimulation –  in der Regel ohne sichtbare Abschälung und ohne Ausfallzeit ',
       'Eignung u. a. bei Elastizitätsverlust, feinen Falten, Pigmentflecken sowie bei Akne/aknebedingten Veränderungen. Areale: Gesicht, Hals, Dekolleté, Oberarme. Hinweise und Alternativen besprechen wir im Arztgespräch.',
@@ -90,7 +119,7 @@ export default function ChemischesPeelingPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Die Behandlung auf einen Blick',
     benefits: [
-      { title: 'Preis', description: 'ab 180€ pro Behandlung*', iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Preis', description: `ab ${PRICES.chemPeeling}€ pro Behandlung*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: 'ca. 45 Minuten', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Wirkeintritt', description: 'sofort + Aufbau über Wochen', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Wirkdauer', description: 'häufig ca. 9–12 Monate', iconUrl: '/assets/icons/CAL.svg' },
@@ -185,6 +214,11 @@ export default function ChemischesPeelingPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="chemisches-peeling-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

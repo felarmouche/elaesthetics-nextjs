@@ -1,22 +1,33 @@
 import type { Metadata } from "next";
+import Script from 'next/script';
 import { PRICES } from "@/lib/constants";
 import { ab, fmt } from "@/lib/utils";
 import { NavButton } from '@/components/preise/NavButton';
+import { getPriceListSchema } from '@/lib/schema';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Preise ästhetischer Behandlungen | EL Aesthetics Bremen",
+  title: "Preise ästhetische Behandlungen Bremen | EL Aesthetics",
   description:
-    "Erfahren Sie mehr über die Preise für ästhetische Behandlungen bei EL Aesthetics. Unsere Preisliste umfasst Botulinumtoxin, Hyaluronsäure, PRF/PRP und mehr.",
+    "Preisliste EL Aesthetics Bremen: Botulinumtoxin, Hyaluron, PRF & mehr. Transparente Kostenaufklärung für ästhetische Behandlungen.",
   keywords:
-    "Preise, ästhetische Behandlungen, Botulinumtoxin, Hyaluronsäure, PRF, PRP, EL Aesthetics",
+    ['Preise Bremen', 'Behandlungskosten Bremen', 'Botulinumtoxin Kosten Bremen', 'Hyaluron Filler Preise Bremen', 'ästhetische Behandlungen Preisliste Bremen'],
+  alternates: {
+    canonical: 'https://elaesthetics-bremen.de/preise',
+  },
 };
 
 
 export default function PreisePage() {
+  const priceSchema = getPriceListSchema();
 
   return (
     <main className="min-h-screen bg-white">
+      <Script
+        id="price-list-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(priceSchema) }}
+      />
       {/* Header */}
       <header className="border-b border-gray-400 py-12 px-6">
         <div className="max-w-4xl mx-auto text-center">

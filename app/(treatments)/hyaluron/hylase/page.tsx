@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {PRICES} from '@/lib/constants'
 import {
   AreasSection,
@@ -24,6 +25,7 @@ import {
   TreatmentsSectionProps,
   TreatmentsSection
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
   title: 'Hylase Behandlung Bremen | Hyaluron auflösen',
@@ -44,11 +46,29 @@ export const metadata: Metadata = {
 };
 
 export default function HyaluronidaseHylasePage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Hylase-Behandlung (Hyaluronidase) in Bremen',
+        description: 'Ärztliche Behandlung zum Auflösen von Hyaluronsäure mit Hylase (Hyaluronidase).',
+        url: '/hyaluron/hylase',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Hylase-Behandlung (Hyaluronidase)',
+        type: 'MedicalProcedure',
+        bodyLocation: 'Face',
+        description: 'Enzym-Injektion mit Hyaluronidase (Hylase) zum gezielten Abbau von Hyaluronsäure-Fillern bei Korrekturbedarf oder Komplikationen.',
+        howPerformed: 'Injektion',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: 'Hylase Behandlung in Bremen',
     subtitle: 'Hyaluron mit Hylase (Hyaluronidase) auflösen: Lippen, Knötchen & Asymmetrien korrigieren. Minimal-invasiv. Jetzt Termin zur Hylase-Behandlung buchen.',
     imageSrc: '/assets/hyaluron/hyaluron-hylase_hero.webp',
-    imageAlt: 'Hylase Behandlung Bremen - Hyaluron auflösen bei EL Aesthetics',
+    imageAlt: 'Hylase-Behandlung zum Auflösen von Hyaluron – EL Aesthetics Bremen',
     primaryCTA: { text: 'Hylase-Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
@@ -56,10 +76,10 @@ export default function HyaluronidaseHylasePage() {
   const introData: IntroSectionProps = {
     title: 'Was ist Hylase?',
     content: [
-      'Hylase (Hyaluronidase) ist ein Enzym zur gezielten Auflösung von Hyaluronsäure-Fillern. Die Hylase-Behandlung ermöglicht die schnelle Korrektur unerwünschter Ergebnisse nach Hyaluron-Unterspritzungen – bei Überkorrekturen, Asymmetrien oder Knötchen.',
-      'Die Hylase-Wirkung setzt unmittelbar nach der Injektion ein. Abhängig von der Menge des aufzulösenden Hyalurons sind erste Veränderungen sofort bis innerhalb weniger Stunden sichtbar. Das vollständige Auflösen erfolgt in der Regel innerhalb von 24-48 Stunden.',
+      'Die Hylase-Behandlung (Hyaluronidase) ist ein minimal-invasives Verfahren zur gezielten Auflösung von Hyaluronsäure-Fillern bei Überkorrekturen, Asymmetrien oder Komplikationen. ',
+      'Die Wirkung setzt in der Regel zeitnah ein. Je nach Menge des aufzulösenden Hyalurons sind erste Veränderungen meist innerhalb von Stunden sichtbar, der vollständige Abbau erfolgt üblicherweise innerhalb von 24-48 Stunden.',
       'Besonders wichtig: Hylase dient auch als unverzichtbares Notfall-Medikament bei Gefäßverschlüssen. Jede seriöse Praxis, die Hyaluron-Unterspritzungen durchführt, sollte Hylase stets griffbereit haben.',
-      'In meiner Praxis EL Aesthetics in Bremen biete ich die Hylase-Behandlung zur Korrektur von Hyaluron-Fillern an.',
+      'Bei EL Aesthetics in Bremen bieten wir die Hylase-Behandlung zur Korrektur von Hyaluron-Fillern sowie als Notfallvorsorge an.',
     ],
   };
 
@@ -142,7 +162,7 @@ export default function HyaluronidaseHylasePage() {
       },
       {
         title: 'Wirkung',
-        description: 'sofort bis wenige Stunden',
+        description: 'meist innerhalb weniger Stunden',
         iconUrl: '/assets/icons/CAL.svg',
       },
       {
@@ -201,7 +221,7 @@ export default function HyaluronidaseHylasePage() {
       {
         number: '05',
         title: 'Wirkung & Ergebnis',
-        description: 'Die Wirkung beginnt unmittelbar. Innerhalb der ersten Stunden nach der Hylase-Behandlung werden Sie bereits Veränderungen bemerken. Die vollständige Auflösung durch Hylase erfolgt innerhalb von 24-48 Stunden. In den meisten Fällen reicht eine Hylase-Behandlung aus. Bei sehr großen Mengen Hyaluron kann eine zweite Hylase-Sitzung nach 1-2 Wochen notwendig sein.',
+        description: 'Die Wirkung beginnt in der Regel rasch. Innerhalb der ersten Stunden nach der Hylase-Behandlung können Sie bereits Veränderungen bemerken. Die vollständige Auflösung durch Hylase erfolgt üblicherweise innerhalb von 24-48 Stunden. In den meisten Fällen reicht eine Hylase-Behandlung aus. Bei sehr großen Mengen Hyaluron kann eine zweite Hylase-Sitzung nach 1-2 Wochen notwendig sein.',
       },
     ],
   };
@@ -303,7 +323,7 @@ export default function HyaluronidaseHylasePage() {
     faqs: [
       {
         question: 'Wie funktioniert die Hylase-Behandlung genau?',
-        answer: 'Hylase (Hyaluronidase) ist ein Enzym, das Hyaluronsäure-Moleküle spaltet und abbaut. Nach der Hylase-Injektion beginnt das Enzym sofort, die Hyaluronsäure aufzulösen. Die Hylase-Wirkung ist sehr schnell: Erste Veränderungen sind oft bereits nach wenigen Minuten bis Stunden sichtbar. Die vollständige Auflösung durch Hylase erfolgt innerhalb von 24-48 Stunden. Die aufgelösten Hyaluronsäure-Fragmente werden vom Körper natürlich über das Lymphsystem abtransportiert.',
+        answer: 'Hylase (Hyaluronidase) ist ein Enzym, das Hyaluronsäure-Moleküle spaltet und abbaut. Nach der Hylase-Injektion beginnt das Enzym, die Hyaluronsäure aufzulösen. Die Hylase-Wirkung ist in der Regel schnell: Erste Veränderungen sind oft bereits nach wenigen Stunden sichtbar. Die vollständige Auflösung durch Hylase erfolgt üblicherweise innerhalb von 24-48 Stunden. Die aufgelösten Hyaluronsäure-Fragmente werden vom Körper natürlich über das Lymphsystem abtransportiert.',
       },
       {
         question: 'Warum muss Hylase vorsichtig dosiert werden?',
@@ -315,7 +335,7 @@ export default function HyaluronidaseHylasePage() {
       },
       {
         question: 'Wie schnell wirkt Hylase?',
-        answer: 'Die Hylase-Wirkung setzt sehr schnell ein. Erste Veränderungen können unmittelbar bis innerhalb weniger Stunden nach der Hylase-Behandlung beobachtet werden. Das vollständige Auflösen durch Hylase erfolgt in der Regel innerhalb von 24-48 Stunden. Die Geschwindigkeit der Hylase-Wirkung hängt von der Menge des aufzulösenden Hyalurons und der Hylase-Dosierung ab.',
+        answer: 'Die Hylase-Wirkung setzt in der Regel rasch ein. Erste Veränderungen können häufig innerhalb weniger Stunden nach der Hylase-Behandlung beobachtet werden. Das vollständige Auflösen durch Hylase erfolgt üblicherweise innerhalb von 24-48 Stunden. Die Geschwindigkeit der Hylase-Wirkung hängt von der Menge des aufzulösenden Hyalurons und der Hylase-Dosierung ab.',
       },
       {
         question: 'Ist die Hylase-Behandlung schmerzhaft?',
@@ -335,15 +355,15 @@ export default function HyaluronidaseHylasePage() {
       },
       {
         question: 'Kann jeder Filler mit Hylase aufgelöst werden?',
-        answer: 'Nein, Hylase löst ausschließlich Hyaluronsäure-basierte Filler auf. Permanente Filler (z.B. Silikon, PMMA) oder andere Filler-Typen wie Calciumhydroxylapatit (Radiesse) oder Poly-L-Milchsäure (Sculptra) können NICHT mit Hylase aufgelöst werden. Dies ist ein weiterer Grund, warum ausschließlich Hyaluronsäure-Filler verwendet werden sollten – sie bieten die Sicherheit, bei Bedarf mit Hylase wieder aufgelöst werden zu können.',
+        answer: 'Nein, Hylase löst ausschließlich Hyaluronsäure-basierte Filler auf. Permanente Filler (z.B. Silikon, PMMA) oder andere Filler-Typen wie Calciumhydroxylapatit-Filler (zur Kollagenstimulation) oder Poly-L-Milchsäure-Filler (zur langfristigen Kollagenbildung) können NICHT mit Hylase aufgelöst werden. Dies ist ein weiterer Grund, warum ausschließlich Hyaluronsäure-Filler verwendet werden sollten – sie bieten die Sicherheit, bei Bedarf mit Hylase wieder aufgelöst werden zu können.',
       },
       {
         question: 'Bin ich nach der Hylase-Behandlung sofort gesellschaftsfähig?',
-        answer: 'In der Regel sind Sie unmittelbar nach der Hylase-Behandlung gesellschaftsfähig. Die Hylase-Behandlung hinterlässt meist nur leichte Rötungen an den Einstichstellen, die schnell abklingen. In den ersten Stunden kann es zu einer vorübergehend verstärkten Schwellung kommen, bevor die Hylase-Wirkung das Hyaluron abbaut. Es können kleine Hämatome nach der Hylase-Injektion auftreten, die sich mit Make-up abdecken lassen. Die meisten Patienten können direkt nach der Hylase-Behandlung ihren normalen Aktivitäten nachgehen.',
+        answer: 'In der Regel sind Sie kurz nach der Hylase-Behandlung gesellschaftsfähig. Die Hylase-Behandlung hinterlässt meist nur leichte Rötungen an den Einstichstellen, die rasch abklingen. In den ersten Stunden kann es zu einer vorübergehend verstärkten Schwellung kommen, bevor die Hylase-Wirkung das Hyaluron abbaut. Es können kleine Hämatome nach der Hylase-Injektion auftreten, die sich mit Make-up abdecken lassen. Die meisten Patienten können nach der Hylase-Behandlung ihren normalen Aktivitäten nachgehen.',
       },
       {
         question: 'Hylase als Notfall-Medikament – was bedeutet das?',
-        answer: 'Bei unsachgemäßen Hyaluron-Injektionen kann es in sehr seltenen Fällen zu einem Verschluss arterieller Gefäße kommen. Dies ist ein medizinischer Notfall. Anzeichen sind: plötzliche starke Schmerzen, Blässe oder Verfärbung der Haut, Gefühlsstörungen. In solchen Fällen muss sofort Hylase injiziert werden, um das Hyaluron aufzulösen und die Durchblutung wiederherzustellen. Die Hylase-Behandlung kann hier Gewebenekrosen verhindern. Jede seriöse Praxis, die Hyaluron-Behandlungen durchführt, sollte Hylase vorrätig haben. In meiner Praxis in Bremen ist Hylase jederzeit verfügbar – für Ihre Sicherheit.',
+        answer: 'Bei unsachgemäßen Hyaluron-Injektionen kann es in sehr seltenen Fällen zu einem Verschluss arterieller Gefäße kommen. Dies ist ein medizinischer Notfall. Anzeichen sind: plötzliche starke Schmerzen, Blässe oder Verfärbung der Haut, Gefühlsstörungen. In solchen Fällen muss rasch Hylase injiziert werden, um das Hyaluron aufzulösen und die Durchblutung wiederherzustellen. Die Hylase-Behandlung kann hier Gewebenekrosen verhindern. Jede seriöse Praxis, die Hyaluron-Behandlungen durchführt, sollte Hylase vorrätig haben. Bei EL Aesthetics in Bremen ist Hylase jederzeit verfügbar – für Ihre Sicherheit.',
       },
       {
         question: 'Hylase Lippen auflösen – wie läuft das ab?',
@@ -369,6 +389,11 @@ export default function HyaluronidaseHylasePage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="hylase-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

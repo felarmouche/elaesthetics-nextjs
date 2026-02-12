@@ -1,7 +1,15 @@
 {
   "permissions": {
     "allow": [
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(npm run build:*)",
+      "Bash(done)",
+      "Bash(grep:*)",
+      "Bash(npm ls:*)",
+      "Bash(if exist .next rmdir /s /q .next)",
+      "Bash(powershell -Command:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)"
     ]
   }
 }

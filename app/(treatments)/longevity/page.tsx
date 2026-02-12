@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   TOCItem,
   TableOfContents,
@@ -12,39 +13,56 @@ import {
   IntroSection,
   IntroSectionProps,
   TreatmentsSection,
-  DetailedInfoSection, TreatmentsSectionProps
+  DetailedInfoSection, TreatmentsSectionProps,
+  RelatedLinksSection,
+  RelatedLink,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema } from '@/lib/schema';
 import {longevityRegeneration, longevityTexture, longevityHydration} from '@/data/treatments'
 
 export const metadata: Metadata = {
-  title: 'Longevity & Hautqualität in Bremen',
-  description:
-      'Longevity & Hautqualität in Bremen. Effektive Kollagenstimulation, Skinbooster & Polynukleotide. Jetzt beraten lassen!!',
+  title: 'Longevity & Hautqualität Bremen | Prävention & Regeneration | EL Aesthetics',
+  description: 'Longevity in Bremen: Präventive Hautmedizin mit Biostimulatoren, Skinboostern & Microneedling. Hautalterung verlangsamen statt korrigieren. Beratung vereinbaren.',
+  keywords: ['Longevity Hautpflege Bremen', 'Hautalterung verlangsamen Bremen', 'präventive Ästhetik Bremen', 'Hautqualität verbessern Bremen'],
   openGraph: {
-    title: 'Bremen: Longevity & Hautqualität – natürlich und ohne OP',
-    description:
-        'Moderne Anti‑Aging‑Konzepte: Von Bio-Remodelierung über Polynukleotide bis PRF. Sichtbar frischere Haut, gesteigerte Elastizität und bessere Hautstruktur – ohne Operation in Bremen.',
+    title: 'Longevity & Hautqualität in Bremen – EL Aesthetics',
+    description: 'Präventive Hautmedizin in Bremen: Biostimulatoren, Skinbooster & Microneedling. Hautalterung verlangsamen statt korrigieren.',
+    url: 'https://elaesthetics-bremen.de/longevity',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/longevity/og-longevity-bremen.webp']
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/longevity/og-longevity-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Longevity & Hautqualität in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/longevity'
-  },
-  robots: {
-    index: true,
-    follow: true
+    canonical: 'https://elaesthetics-bremen.de/longevity',
   },
 };
 
 export default function LongevityPage() {
+  const schema = getWebPageSchema({
+    name: 'Longevity & Hautqualität in Bremen',
+    description: 'Übersicht zu präventiven Hautmedizin-Therapien: Biostimulatoren, Skinbooster und Microneedling bei EL Aesthetics.',
+    url: '/longevity',
+    about: {
+      type: 'MedicalTherapy',
+      name: 'Longevity & Hautqualität',
+      procedureType: 'NonSurgicalProcedure',
+    },
+  });
+
   const heroData: HeroSectionProps = {
     title: 'Longevity & Verbesserung der Hautqualität in Bremen',
     subtitle:
         'Verbesserung der Hautstruktur durch Kollagenstimulation und Regeneration durch Biostimulatoren, Polynukleotide, Eigenbluttherapie (PRP/PRF), med. Microneedling u.v.m.',
     imageSrc: '/assets/longevity/longevity_hero.webp',
-    imageAlt:
-        'Gesichtsbehandlung zur Auffrischung und Straffung der Haut bei EL Aesthetics Bremen',
+    imageAlt: 'Longevity-Behandlung für Hautqualität und Prävention – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Methoden entdecken', href: '#regeneration' }
   };
@@ -52,7 +70,7 @@ export default function LongevityPage() {
   const introData: IntroSectionProps = {
     title: 'Longevity - länger vital & gesund',
     content: [
-      'Statt nur kurzfristige ästhetische Korrekturen vorzunehmen, setzt Longevity auf einen ganzheitlichen Ansatz: Es geht darum, die Haut von innen heraus zu stärken und ihre natürliche Funktion langfristig zu erhalten. Ziel ist es, den Alterungsprozess zu verlangsamen – nicht nur das äußere Erscheinungsbild zu verbessern, sondern die Haut länger gesund, widerstandsfähig und vital zu halten.',
+      'Longevity-Behandlungen sind präventive, nicht-chirurgische Verfahren der ästhetischen Medizin, die darauf abzielen, die Hautalterung zu verlangsamen und die Hautqualität nachhaltig zu verbessern.',
       'Mit den Jahren verlangsamt sich die Erneuerung der Haut: Kollagen  und Elastinfasern nehmen ab, Feuchtigkeit geht verloren, die Haut wirkt müde. Moderne Anti Aging Methoden setzen hier an – sie aktivieren körpereigene Prozesse und stärken die Haut von innen.',
       'Verschiedene Biostimulatoren, Polynukleotide (PDRN), Eigenbluttherapie (PRP/PRF), medizinisches Microneedling und andere Verfahren: Diese Ansätze arbeiten mit körpereigenen bzw. biokompatiblen Substanzen und regen die natürliche Regeneration an.',
       'Das Besondere: Ergebnisse entwickeln sich schrittweise über Wochen, wirken natürlich und nachhaltig.',
@@ -74,6 +92,29 @@ export default function LongevityPage() {
     title: 'Hautbild & Oberflächenerneuerung',
     treatments: longevityTexture
   };
+
+  const relatedLinks: RelatedLink[] = [
+    {
+      href: '/hyaluron/skinbooster',
+      label: 'Skinbooster',
+      description: 'Tiefenhydration mit Hyaluronsäure – für mehr Feuchtigkeit, Glow und feinere Poren.',
+    },
+    {
+      href: '/polynukleotide',
+      label: 'Polynukleotide (PDRN)',
+      description: 'Zellregeneration und Gewebereparatur für eine nachhaltig verbesserte Hautqualität.',
+    },
+    {
+      href: '/eigenbluttherapie',
+      label: 'Eigenbluttherapie (PRP/PRF)',
+      description: 'Körpereigene Wachstumsfaktoren für natürliche Hauterneuerung und Kollagenaufbau.',
+    },
+    {
+      href: '/medizinisches-microneedling',
+      label: 'Medizinisches Microneedling',
+      description: 'Kontrollierte Mikrokanäle zur Stimulation der Kollagen- und Elastinproduktion.',
+    },
+  ];
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zu Hauterneuerung & Anti‑Aging',
@@ -106,7 +147,7 @@ export default function LongevityPage() {
       {
         question: 'Kollagen fördern – was wirkt?',
         answer:
-            'Effektiv sind Kollagenstimulatoren (z. B. Radiesse), medizinisches Microneedling, PRF/PRP und Polynukleotide. Mittelstarke Peelings können zusätzlich die Neubildung anstoßen. Ergebnisse brauchen Zeit und entwickeln sich über 8–12 Wochen.'
+            'Effektiv sind Kollagenstimulatoren (z. B. Calcium-Basis), medizinisches Microneedling, PRF/PRP und Polynukleotide. Mittelstarke Peelings können zusätzlich die Neubildung anstoßen. Ergebnisse brauchen Zeit und entwickeln sich über 8–12 Wochen.'
       },
       {
         question: 'Welche Ergebnisse sind realistisch?',
@@ -151,6 +192,11 @@ export default function LongevityPage() {
 
   return (
       <div className="min-h-screen bg-white">
+        <Script
+          id="longevity-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
         <HeroSection {...heroData} />
         <TableOfContents items={tocItems} />
         <IntroSection {...introData} />
@@ -171,6 +217,7 @@ export default function LongevityPage() {
           <TreatmentsSection {...textureData} />
         </div>
 
+        <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
         <ConsultationSection />
         <FAQSection {...faqData} />
         <CTASection {...ctaData} />

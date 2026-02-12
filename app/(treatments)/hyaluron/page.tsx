@@ -1,24 +1,29 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem } from '@/components/TreatmentPageComponents';
 import { PRICES } from '@/lib/constants';
+import { getWebPageSchema, getFAQSchema } from '@/lib/schema';
 // SEO-OPTIMIERUNG: Metadaten überarbeitet
 export const metadata: Metadata = {
-  // Title: Hauptkeyword an den Anfang, ansprechend und prägnant.
-  title: 'Hyaluron Behandlungen Bremen | Skinbooster & Filler Info',
-  // Description: 150–160 Zeichen, klare Aussage & lokal.
-  description: 'Hyaluron-Behandlungen in Bremen: Filler für Kontur, Skinbooster für Glow. Beratung zu Indikationen, Materialwahl, GOÄ-Kosten, Ablauf, Pflege und Risiken.',
-  // Keywords: Um Long-Tail-Keywords und spezifische Behandlungen erweitert.
-  keywords: 'Hyaluron Behandlung Bremen, Hyaluron Bremen, Hyaluronsäure Bremen, Faltenbehandlung Bremen, Lippen aufspritzen Bremen, Lippenunterspritzung Bremen, Faltenunterspritzung Bremen, Skinbooster Bremen, Jawline aufbauen Bremen, Wangenaufbau Bremen, Liquid Lifting Bremen',
-  // OpenGraph: Angepasst für eine ansprechende Darstellung in sozialen Medien.
+  title: 'Hyaluron Behandlung Bremen | Filler, Skinbooster & mehr | EL Aesthetics',
+  description: 'Hyaluronsäure-Behandlungen in Bremen: Filler für Kontur & Volumen, Skinbooster für Glow, Profhilo für Hautqualität. Ärztliche Beratung. Jetzt Termin vereinbaren.',
+  keywords: ['Hyaluron Bremen', 'Hyaluronsäure Bremen', 'Hyaluron Behandlung Bremen', 'Lippen aufspritzen Bremen', 'Faltenunterspritzung Bremen'],
   openGraph: {
-    title: 'Hyaluron in Bremen - Natürliche Ästhetik bei EL Aesthetics',
-    description: 'Entdecken Sie professionelle Behandlungen mit Hyaluronsäure in Bremen für eine frische, jugendliche Ausstrahlung. Falten glätten, Lippen formen und Volumen aufbauen.',
+    title: 'Hyaluron Behandlung in Bremen – EL Aesthetics',
+    description: 'Hyaluronsäure-Behandlungen in Bremen: Filler, Skinbooster, Profhilo & mehr. Ärztliche Beratung für natürliche Ergebnisse.',
+    url: 'https://elaesthetics-bremen.de/hyaluron',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    // WICHTIG: Fügen Sie hier eine absolute URL zu einem repräsentativen Bild hinzu.
-    images: ['https://elaesthetics-bremen.de/assets/hyaluron/og-image-hyaluron-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/hyaluron/og-image-hyaluron-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Hyaluron Behandlung in Bremen – EL Aesthetics',
+      },
+    ],
   },
-  // Canonical URL: Platzhalter beibehalten, muss durch die echte URL ersetzt werden.
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/hyaluron',
   },
@@ -31,7 +36,7 @@ export default function HyaluronBremenPage() {
     subtitle: "Suchen Sie nach einer professionellen Hyaluron Behandlung in Bremen?\nDann sind Sie bei El Aesthetics genau richtig. Filler, Skinbooster & vieles mehr",
     imageSrc: "/assets/hyaluron/hyaluron-filler_hero.webp",
     // Image Alt: Beschreibend und Keyword-optimiert.
-    imageAlt: "Eine Frau erhält eine professionelle Hyaluronsäure-Behandlung in Bremen",
+    imageAlt: "Hyaluronsäure-Behandlung mit Filler und Skinbooster – EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" }
   };
@@ -40,9 +45,9 @@ export default function HyaluronBremenPage() {
   const introData: IntroSectionProps = {
     title: "Was ist Hyaluronsäure und wie wirkt sie?",
     content: [
-      "Hyaluron oder Hyaluronsäure ist ein natürlicher Bestandteil unserer Haut und ein entscheidender Feuchtigkeitsspeicher, der für Elastizität und Spannkraft sorgt. Mit den Jahren nimmt der körpereigene Hyaluronsäuregehalt ab, was zu Volumenverlust und Faltenbildung führt.",
+      "Hyaluronsäure-Behandlungen sind minimal-invasive Verfahren der ästhetischen Medizin zur Faltenunterspritzung, Volumenaufbau und Hautverbesserung in Bremen.",
       "Mit einer Hyluron Behandlung können unter anderem Falten geglättet, Gesichtskonturen wie die Jawline oder Wangen präzisiert und Lippen dezent aufgebaut werden.",
-      "Zusätzlich bieten wir Skinbooster-Behandlungen an. Diese versorgen die Haut tiefenwirksam mit Feuchtigkeit, verbessern die Hautstruktur und sorgen für einen strahlenden Glow. Skinbooster nach BAP-Technik, umgangsprachlich auch Profhilo genannt (Markenname), sollen zu besserer Hautqualität verhelfen."
+      "Zusätzlich bieten wir Skinbooster-Behandlungen an. Diese versorgen die Haut tiefenwirksam mit Feuchtigkeit, verbessern die Hautstruktur und sorgen für einen strahlenden Glow. Skinbooster nach BAP-Technik sollen zu besserer Hautqualität verhelfen."
     ]
   };
 
@@ -55,7 +60,7 @@ export default function HyaluronBremenPage() {
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
         title: "Hyaluron-Filler (Falten & Volumen)",
-        description: "Die Hyaluron Behandlung mit Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
+        description: "Die Hyaluron Behandlung mit Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen vielversprechende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
         treatmentUrl: "/hyaluron/filler"
       },
       {
@@ -77,8 +82,8 @@ export default function HyaluronBremenPage() {
         imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
         imageAlt: "Nahaufnahme einer Hylase-Flasche",
-        title: "Hylase (Hyaluronidase)",
-        description: "Hyaluronidase, häufig als Hylase bezeichnet, ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen.",
+        title: "Hyaluronidase-Behandlung",
+        description: "Hyaluronidase ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen.",
         treatmentUrl: "/hyaluron/hylase"
       }
     ]
@@ -244,6 +249,23 @@ export default function HyaluronBremenPage() {
     ]
   };
 
+  const schema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+          name: 'Hyaluron Behandlungen Bremen',
+          description: 'Übersicht zu Hyaluronsäure-Therapien (Filler, Skinbooster, Profhilo) bei EL Aesthetics.',
+          url: '/hyaluron',
+          about: {
+            type: 'MedicalTherapy',
+            name: 'Hyaluronsäure Behandlung',
+            procedureType: 'NonSurgicalProcedure',
+          },
+      }), '@context': undefined },
+      getFAQSchema(faqData.faqs),
+    ],
+  };
+
   const ctaData: CTASectionProps = {
     title: "Bereit für ein frischeres Aussehen?",
     subtitle: "Vereinbaren Sie jetzt Ihren unverbindlichen Beratungstermin für eine Hyaluron-Behandlung in Bremen.",
@@ -253,6 +275,11 @@ export default function HyaluronBremenPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="hyaluron-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   ConsultationSectionProps,
   ConsultationSection,
@@ -14,7 +15,10 @@ import {
   IntroSectionProps,
   TreatmentsSection,
   TreatmentsSectionProps,
+  RelatedLinksSection,
+  RelatedLink,
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema } from '@/lib/schema';
 
 // Import der zentralen Daten aus deiner treatments.ts
 import {
@@ -24,17 +28,24 @@ import {
 } from '@/data/treatments'; // Pfad ggf. anpassen, falls du den Ordner nur "data" genannt hast
 
 export const metadata: Metadata = {
-  title: 'Faltenbehandlung in Bremen | Botox, Hyaluron & mehr',
-  description:
-      'Faltenbehandlung in Bremen: Mimikfalten glätten mit Botox, Volumenaufbau mit Hyaluron & Hautverjüngung mit Polynukleotiden. Jetzt beraten lassen!',
+  title: 'Faltenbehandlung Bremen | Botox, Hyaluron & mehr | EL Aesthetics',
+  description: 'Faltenbehandlung in Bremen: Mimikfalten glätten mit Botox, Volumenaufbau mit Hyaluron, Hautqualität verbessern mit Polynukleotiden. Jetzt ärztlich beraten lassen.',
+  keywords: ['Faltenbehandlung Bremen', 'Falten entfernen Bremen', 'Faltenunterspritzung Bremen', 'Anti-Aging Arzt Bremen'],
   openGraph: {
-    title:
-        'Faltenbehandlung in Bremen – Hyaluronfiller, Botulinumtoxin, Polynukleotide & Kollagenstimulation',
-    description:
-        'Natürlich frischer wirken: Hyaluronfiller für gezielten Volumenaufbau, PRF & Polynukleotide für Hautqualität und Kollagenstimulation für definiertere Konturen.',
+    title: 'Faltenbehandlung in Bremen – EL Aesthetics',
+    description: 'Mimikfalten glätten, Volumen aufbauen, Hautqualität verbessern. Ärztliche Faltenbehandlung in Bremen.',
+    url: 'https://elaesthetics-bremen.de/faltenbehandlung',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/filler/og-image-faltenbehandlung-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/filler/og-image-faltenbehandlung-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Faltenbehandlung in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/faltenbehandlung',
@@ -42,13 +53,23 @@ export const metadata: Metadata = {
 };
 
 export default function FaltenbehandlungHubPage() {
+  const schema = getWebPageSchema({
+    name: 'Faltenbehandlung in Bremen',
+    description: 'Übersicht zu Faltenbehandlungs-Therapien: Botulinumtoxin, Hyaluronsäure und regenerative Verfahren bei EL Aesthetics.',
+    url: '/faltenbehandlung',
+    about: {
+      type: 'MedicalTherapy',
+      name: 'Faltenbehandlung',
+      procedureType: 'NonSurgicalProcedure',
+    },
+  });
+
   const heroData: HeroSectionProps = {
     title: 'Faltenbehandlung in Bremen',
     subtitle:
         'Sie sind auf der Suche nach einer Faltenbehandlung in Bremen? Mit Botulinumtoxin, Hyaluronsäure und regenerativen Verfahren lassen sich Fältchen glätten, Gesichtszüge entspannen und Ihr Aussehen wieder frisch und erholt wirken. Lassen Sie sich individuell beraten!',
     imageSrc: '/assets/faltenbehandlung/faltenbehandlung_hero.webp',
-    imageAlt:
-        'Faltenbehandlung mit Hyaluronfiller, PRF, Polynukleotiden und Kollagenstimulation bei EL Aesthetics in Bremen',
+    imageAlt: 'Faltenbehandlung mit Hyaluron und Botulinumtoxin – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen anzeigen', href: '#mimik' },
   };
@@ -56,7 +77,7 @@ export default function FaltenbehandlungHubPage() {
   const introData: IntroSectionProps = {
     title: 'Behandlungsansätze - Methoden zur Faltenbehandlung',
     content: [
-      'Unter „Faltenbehandlung“ bündeln wir aufeinander abgestimmte Verfahren: Hyaluronsäure, Botulinumtoxin, Polynukleotide, Eigenbluttherapie sowie Kollagenstimulatoren (z. B. CaHA/PLLA) & vieles mehr.',
+      'Die Faltenbehandlung umfasst nicht-chirurgische Verfahren der ästhetischen Medizin wie Botulinumtoxin, Hyaluronsäure und regenerative Methoden zur Glättung von Falten und Verbesserung der Hautqualität in Bremen.',
       'Botulinumtoxin entspannt die Muskulatur und kann gezielt mimische Falten glätten und die Gesichtszüge entspannen.',
       'Hyaluronsäure kann Volumenverluste ausgleichen, Falten sanft polstern und Konturen modellieren – etwa an Lippen, Wangen, Kinn, Jawline oder Nasolabialfalten.',
       'Die Kollagenstimulation wirkt strukturbildend: Sie unterstützt die körpereigene Kollagenneubildung und Straffung der Haut.',
@@ -82,6 +103,24 @@ export default function FaltenbehandlungHubPage() {
     title: 'Knitterfältchen & Feine Linien',
     treatments: faltenSkinQuality
   };
+
+  const relatedLinks: RelatedLink[] = [
+    {
+      href: '/botulinumtoxin/faltenbehandlung',
+      label: 'Botulinumtoxin gegen Mimikfalten',
+      description: 'Zornesfalte, Stirnfalten und Krähenfüße gezielt mit Muskelrelaxans glätten.',
+    },
+    {
+      href: '/hyaluron/filler',
+      label: 'Hyaluron-Filler für Volumen & Kontur',
+      description: 'Nasolabialfalten, Marionettenfalten und Wangen mit Hyaluronsäure auffüllen und modellieren.',
+    },
+    {
+      href: '/kollagenstimulation',
+      label: 'Kollagenstimulation',
+      description: 'Körpereigene Kollagenneubildung anregen für langfristige Straffung und Hautfestigkeit.',
+    },
+  ];
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur Faltenbehandlung',
@@ -140,7 +179,7 @@ export default function FaltenbehandlungHubPage() {
 
   const tocItems: TOCItem[] = [
     { id: 'intro', label: 'Über die Behandlung' },
-    { id: 'mimik', label: 'Mimik & Botox' },
+    { id: 'mimik', label: 'Mimik & Botulinumtoxin' },
     { id: 'volumen', label: 'Volumen & Lifting' },
     { id: 'quality', label: 'Knitterfältchen & Feine Linien' },
     { id: 'consultation', label: 'Beratung' },
@@ -149,6 +188,11 @@ export default function FaltenbehandlungHubPage() {
 
   return (
       <div className="min-h-screen bg-white">
+        <Script
+          id="faltenbehandlung-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
         <HeroSection {...heroData} />
         <TableOfContents items={tocItems} />
         <IntroSection {...introData} />
@@ -167,6 +211,8 @@ export default function FaltenbehandlungHubPage() {
         <div id="quality" className="scroll-mt-24 -mt-16 md:-mt-24">
           <TreatmentsSection {...qualityData} />
         </div>
+
+        <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
 
         <ConsultationSection />
 

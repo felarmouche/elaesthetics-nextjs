@@ -17,17 +17,18 @@ import {
   CTASection
 } from '@/components/TreatmentPageComponents';
 import { botoxTreatments } from "@/data/treatments";
+import { getWebPageSchema, getFAQSchema } from '@/lib/schema';
 
 // SEO Metadata: Fokus auf generische Haupt-Keywords
 export const metadata: Metadata = {
-  title: 'Botulinumtoxin Bremen » Fachärztliche Behandlung | EL Aesthetics',
-  description: 'Ihr Experte für Botulinumtoxin in Bremen. Übersicht aller Behandlungen: Faltenbehandlung, Bruxismus, Migräne & Hyperhidrose. Jetzt Termin vereinbaren.',
-  // Canonical ist wichtig gegen Duplicate Content
-  alternates: { canonical: 'https://www.elaesthetics-bremen.de/botulinumtoxin' },
+  title: 'Botulinumtoxin Bremen » Ärztliche Behandlung | EL Aesthetics',
+  description: 'Botulinumtoxin-Behandlungen in Bremen: Faltenglättung, Masseter, Hyperhidrose & Migräne. Ärztliche Expertise & individuelle Beratung. Jetzt Termin vereinbaren.',
+  keywords: ['Botulinumtoxin Bremen', 'Botox Bremen', 'Botox Arzt Bremen', 'Botulinumtoxin Behandlung Bremen'],
+  alternates: { canonical: 'https://elaesthetics-bremen.de/botulinumtoxin' },
   openGraph: {
-    title: 'Botulinumtoxin Behandlung in Bremen | EL Aesthetics',
-    description: 'Fachärztliche Behandlungen mit Botulinumtoxin: Von der Faltenkorrektur über Migräne bis zur Hyperhidrose-Therapie.',
-    url: 'https://www.elaesthetics-bremen.de/botulinumtoxin',
+    title: 'Botulinumtoxin Behandlung in Bremen – EL Aesthetics',
+    description: 'Ärztliche Botulinumtoxin-Behandlungen in Bremen: Faltenglättung, Masseter, Hyperhidrose & Migräne. Individuelle Beratung.',
+    url: 'https://elaesthetics-bremen.de/botulinumtoxin',
     siteName: 'EL Aesthetics Bremen',
     locale: 'de_DE',
     type: 'website',
@@ -37,34 +38,6 @@ export const metadata: Metadata = {
 
 export default function BotulinumtoxinHubPage() {
 
-  // 1. JSON-LD: Nur "MedicalWebPage". FAQ macht die Komponente.
-  // Das definiert die Seite als medizinische Übersichtsseite.
-  const medicalSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'MedicalWebPage',
-    name: 'Botulinumtoxin Behandlungen Bremen',
-    description: 'Übersicht zu Botulinumtoxin-Therapien bei EL Aesthetics.',
-    provider: {
-      '@type': 'MedicalOrganization',
-      name: 'EL Aesthetics',
-      location: {
-        '@type': 'Place',
-        address: {
-          '@type': 'PostalAddress',
-          addressLocality: 'Bremen',
-          addressRegion: 'HB',
-          addressCountry: 'DE'
-        }
-      }
-    },
-    // Wir sagen Google: Diese Seite handelt von der Prozedur allgemein
-    about: {
-      '@type': 'MedicalProcedure',
-      name: 'Botulinumtoxin Behandlung',
-      procedureType: 'NonSurgicalProcedure'
-    }
-  };
-
   // 2. Content-Strategie: Breite Keywords, keine tiefen Details (verhindert Kannibalisierung)
 
   const heroData: HeroSectionProps = {
@@ -72,7 +45,7 @@ export default function BotulinumtoxinHubPage() {
     subtitle:
         'Gezielte Muskelentspannung für Ästhetik und medizinische Indikationen. Erfahren Sie, wie wir mit Botulinumtoxin nicht nur Falten behandeln und Poren verkleinern, sondern auch Zähneknirschen, Migräne und starkes Schwitzen therapieren können.',
     imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
-    imageAlt: 'Botulinumtoxin Behandlung Übersicht',
+    imageAlt: 'Botulinumtoxin Behandlung Übersicht – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Alle Behandlungen', href: '#treatments' },
   };
@@ -82,9 +55,9 @@ export default function BotulinumtoxinHubPage() {
     content: [
       // Fokus: Wirkstoff allgemein, Sicherheit, Praxis-Standard.
       // NICHT: "Wie genau wirkt es an der Stirn" (das gehört auf die Faltenseite).
-      'Botulinumtoxin (oft als "Botox" bekannt) ist ein bewährter Wirkstoff, der die Reizübertragung vom Nerv zum Muskel vorübergehend hemmt. Dies ermöglicht eine gezielte Entspannung überaktiver Muskulatur.',
-      'In unserer Bremer Praxis setzen wir Botulinumtoxin Typ A sowohl für ästhetische Ziele (Faltenglättung) als auch für medizinische Indikationen ein. Die Dosierung wird dabei stets individuell an Ihre Anatomie angepasst, um natürliche Ergebnisse zu erzielen.',
-      'Es werden ausschließlich zertifizierte Markenpräparate verwendet. Es wird vorab umfassend über Möglichkeiten und Grenzen der Behandlung aufgeklärt.',
+      'Die Botulinumtoxin Behandlung ist ein minimal-invasives Verfahren der ästhetischen und medizinischen Therapie, das die Muskelaktivität gezielt und vorübergehend reduziert.',
+      'Ob zur Faltenglättung, bei Zähneknirschen (Masseter), Migräne oder übermäßigem Schwitzen (Hyperhidrose) – wir passen Dosierung und Injektionstechnik individuell an Ihre Anatomie und Zielsetzung an. Das Ziel sind natürliche Ergebnisse, die Ihre Mimik erhalten.',
+      'Es werden ausschließlich zertifizierte Präparate verwendet, und wir klären vorab umfassend über Möglichkeiten und Grenzen der Behandlung auf.',
     ],
   };
 
@@ -101,9 +74,9 @@ export default function BotulinumtoxinHubPage() {
     title: 'Allgemeine Fragen zu Botulinumtoxin',
     faqs: [
       {
-        question: 'Ist Botulinumtoxin ein Gift?',
+        question: 'Wann ist mit dem Wirkeintritt zu rechnen?',
         answer:
-            'Botulinumtoxin ist in extrem hohen Dosen toxisch, wird in der Medizin jedoch in milliardenfacher Verdünnung therapeutisch eingesetzt. In diesen mikroskopischen Dosierungen ist es sicher und gut verträglich.',
+            'Die Wirkung kann abhängig vom Zielmuskel, schon ab dem 5. Tag und spätestens nach 14 Tagen sichtbar sein.',
       },
       {
         question: 'Wie lange hält eine Behandlung allgemein an?',
@@ -118,13 +91,30 @@ export default function BotulinumtoxinHubPage() {
       {
         question: 'Wie setzen sich die Kosten zusammen?',
         answer:
-            'Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Schwierigkeitsgrad der Behandlung ab.',
+            'Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Schwierigkeitsgrad der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter "Preise".',
       },
       {
-        question: 'Ist die Behandlung schmerzhaft?',
+        question: 'Kann die Botulinumtoxin-Wirkung ausbleiben?',
         answer:
-            'Da wir extrem feine Nadeln verwenden, ist die Behandlung sehr schmerzarm. Viele Patienten vergleichen das Gefühl mit einem kurzen Insektenstich. Eine Betäubung ist meist nicht notwendig.',
+            'Manche Menschen reagieren weniger stark auf den Wirkstoff, etwa durch schnelleren Abbau oder eine Antikörperbildung. Dadurch kann die Wirkung geringer oder kürzer ausfallen. Laut Studiendaten können neutralisierende Antikörper in seltenen Fällen auftreten; häufig wird ein Anteil im niedrigen Prozentbereich genannt (z. B. bis etwa 1,5 %).',
       },
+    ],
+  };
+
+  const medicalSchema = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+          name: 'Botulinumtoxin Behandlungen Bremen',
+          description: 'Übersicht zu Botulinumtoxin-Therapien bei EL Aesthetics.',
+          url: '/botulinumtoxin',
+          about: {
+            type: 'MedicalTherapy',
+            name: 'Botulinumtoxin Behandlung',
+            procedureType: 'NonSurgicalProcedure',
+          },
+      }), '@context': undefined },
+      getFAQSchema(faqData.faqs),
     ],
   };
 

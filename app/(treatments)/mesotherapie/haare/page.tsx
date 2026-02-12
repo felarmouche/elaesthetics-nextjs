@@ -1,18 +1,28 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection} from '@/components/TreatmentPageComponents';
- 
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Mesotherapie Haare in Bremen',
-  description: 'Mesotherapie gegen Haarausfall in Bremen: stärkt Haarwurzeln und fördert Verdichtung. Jetzt informieren und ein persönliches Beratungsgespräch vereinbaren!',
-  keywords: 'Mesotherapie Haare Bremen, Mesotherapie Haarausfall Bremen, Haarmesotherapie Bremen, Haarausfall Behandlung Mesotherapie Bremen, Mesotherapie gegen Haarausfall Bremen, Haarwachstum fördern Bremen, Kopfhautmesotherapie Bremen, Haarverdichtung Mesotherapie Bremen',
+  title: 'Mesotherapie Haare Bremen | Haarausfall & Verdichtung | EL Aesthetics',
+  description: 'Mesotherapie gegen Haarausfall in Bremen: Aktiviert Haarwurzeln, fördert Verdichtung. Für Männer & Frauen. Jetzt beraten lassen.',
+  keywords: ['Mesotherapie Haare Bremen', 'Haarausfall Behandlung Bremen', 'Haarverdichtung Bremen', 'Haarwachstum fördern Bremen', 'Kopfhaut Mesotherapie Bremen'],
   openGraph: {
-    title: 'Mesotherapie gegen Haarausfall & für volleres Haar in Bremen - EL Aesthetics',
-    description: 'Effektive Mesotherapie bei Haarausfall. Stärken Sie Ihre Haarwurzeln, fördern Sie das Haarwachstum und verdichten Sie Ihr Haar – für Männer und Frauen.',
+    title: 'Mesotherapie Haare Bremen | Haarausfall & Verdichtung | EL Aesthetics',
+    description: 'Mesotherapie gegen Haarausfall in Bremen: Aktiviert Haarwurzeln, fördert Verdichtung. Für Männer & Frauen.',
+    url: 'https://elaesthetics-bremen.de/mesotherapie/haare',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haare-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haare-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Mesotherapie Haare Bremen | Haarausfall & Verdichtung | EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/mesotherapie/haare',
@@ -20,11 +30,29 @@ export const metadata: Metadata = {
 };
 
 export default function MesotherapieHaarePage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Mesotherapie bei Haarausfall in Bremen',
+        description: 'Ärztliche Mesotherapie-Behandlung zur Aktivierung der Haarwurzeln und Förderung des Haarwachstums.',
+        url: '/mesotherapie/haare',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Mesotherapie gegen Haarausfall',
+        type: 'MedicalProcedure',
+        bodyLocation: 'Scalp',
+        description: 'Mikro-Injektionen in die Kopfhaut mit Mikronährstoffen zur Aktivierung der Haarwurzeln und Förderung des Haarwachstums.',
+        howPerformed: 'Mikro-Injektion in die Kopfhaut',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: "Mesotherapie Haare in Bremen",
     subtitle: "Leiden Sie unter Haarausfall oder dünner werdendem Haar?\nMit der Mesotherapie Haar-Behandlung aktivieren wir Ihre Haarwurzeln und fördern das Haarwachstum – natürlich und nachhaltig.",
     imageSrc: "/assets/mesotherapie/mesotherapie-haare_hero.webp",
-    imageAlt: "Mesotherapie Behandlung gegen Haarausfall in Bremen",
+    imageAlt: "Mesotherapie für Haare bei Haarausfall – EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
@@ -32,7 +60,7 @@ export default function MesotherapieHaarePage() {
   const introData: IntroSectionProps = {
     title: "Was ist Mesotherapie für die Haare?",
     content: [
-      "Die Mesotherapie ist eine innovative, minimal-invasive Behandlungsmethode gegen Haarausfall und zur Förderung des Haarwachstums. Dabei wird ein speziell formulierter Wirkstoffcocktail aus Vitaminen, Spurenelementen, Aminosäuren und durchblutungsfördernden Substanzen direkt in die Kopfhaut injiziert – genau dort, wo Ihre Haarwurzeln die Nährstoffe brauchen.",
+      "Die Mesotherapie für die Haare ist ein minimal-invasives Verfahren zur Behandlung von Haarausfall, bei dem ein Wirkstoffcocktail aus Vitaminen und Nährstoffen direkt in die Kopfhaut injiziert wird.",
       "Der Wirkstoffkomplex versorgt die Haarfollikel intensiv mit essentiellen Nährstoffen, verbessert die Durchblutung der Kopfhaut und aktiviert ruhende Haarwurzeln. Dies führt zu einer deutlichen Reduktion des Haarausfalls und zur Verdichtung des bestehenden Haares.",
       "In unserer Praxis in Bremen behandeln wir mit der Haarmesotherapie sowohl Frauen als auch Männer mit verschiedenen Formen von Haarausfall: erblich bedingter Haarausfall (androgenetische Alopezie), diffuser Haarausfall oder kreisrunder Haarausfall. Die Behandlung ist sanft, nahezu schmerzfrei und erfordert keine Ausfallzeit. Klinische Studien zeigen: 80% der Patienten berichten ab der 3. Behandlung von deutlich weniger Haarausfall."
     ]
@@ -171,8 +199,8 @@ export default function MesotherapieHaarePage() {
     description: [
       "Sie leiden unter Haarausfall und möchten Ihre Haarwurzeln stärken?",
       "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und regenerative Therapien. Mit langjähriger Erfahrung in der Mesotherapie helfe ich Ihnen, Haarausfall zu reduzieren und volleres, kräftigeres Haar zu fördern – individuell auf Ihre Situation abgestimmt.",
-      "Ich bin zertifiziert für Injektionsbehandlungen und bilde mich kontinuierlich in modernen Haarausfall-Therapien fort. In meiner Praxis kombiniere ich fundiertes medizinisches Wissen mit einem empathischen Verständnis für die emotionale Belastung, die Haarausfall bedeuten kann.",
-      "In meiner Praxis in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihr Haar wieder stärken kann."
+      "Ich bin zertifiziert für Injektionsbehandlungen und bilde mich kontinuierlich in modernen Haarausfall-Therapien fort. Bei EL Aesthetics kombiniere ich fundiertes medizinisches Wissen mit einem empathischen Verständnis für die emotionale Belastung, die Haarausfall bedeuten kann.",
+      "Bei EL Aesthetics in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihr Haar wieder stärken kann."
     ],
     ctaText: "Jetzt Beratungstermin anfragen",
     ctaHref: "/kontakt",
@@ -261,6 +289,11 @@ export default function MesotherapieHaarePage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="mesotherapie-haare-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-German-language website for an aesthetic medicine clinic (ELA Aesthetics Bremen). Built as a statically exported Next.js site deployed to GitHub Pages.
+German-language website for an aesthetic medicine clinic (EL Aesthetics Bremen). Built as a statically exported Next.js site deployed to GitHub Pages.
 
 ## Commands
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
     AreasSection,
     AreasSectionProps,
@@ -24,25 +25,28 @@ import {
 
 
 } from '@/components/TreatmentPageComponents';
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import {botoxFalten, filler, fillerPageTreatments, microneedling} from "@/data/treatments";
 import {PRICES} from "@/lib/constants";
 
 export const metadata: Metadata = {
-    title:
-        'Fett-weg-Spritze Bremen | Injektionslipolyse Doppelkinn Info',
-    description:
-        'Fett-weg-Spritze in Bremen: ärztliche Injektionslipolyse für Doppelkinn oder Hängebäckchen mit Beratung zu Sitzungen, Wirkverlauf, Nachsorge und Risiken.',
-    keywords:
-        'Fett-weg-Spritze Bremen, Injektionslipolyse Bremen, Doppelkinn entfernen Bremen, Fettreduktion ohne OP Bremen, Hängebäckchen behandeln Bremen, Lipolyse Bremen, Fett weg ohne Operation, lokale Fettdepots reduzieren, Körperkonturierung Bremen, Phosphatidylcholin Bremen, Desoxycholsäure Bremen, Fettpolster auflösen Bremen',
+    title: 'Fett-weg-Spritze Bremen | Injektionslipolyse Doppelkinn | EL Aesthetics',
+    description: 'Fett-weg-Spritze in Bremen: Ärztliche Injektionslipolyse für Doppelkinn und lokale Fettdepots. Beratung zu Ablauf, Sitzungen & Kosten. Jetzt Termin vereinbaren.',
+    keywords: ['Fett-weg-Spritze Bremen', 'Injektionslipolyse Bremen', 'Doppelkinn entfernen Bremen', 'Fettreduktion ohne OP Bremen'],
     openGraph: {
-        title:
-            'Fett-weg-Spritze Bremen – Injektionslipolyse ohne OP | EL Aesthetics',
-        description:
-            'Effektive Fettreduktion ohne Operation: Doppelkinn, Hängebäckchen & lokale Fettdepots dauerhaft auflösen – minimal-invasiv und gesellschaftsfähig.',
+        title: 'Fett-weg-Spritze in Bremen – EL Aesthetics',
+        description: 'Ärztliche Injektionslipolyse für Doppelkinn und lokale Fettdepots in Bremen. Minimal-invasiv.',
+        url: 'https://elaesthetics-bremen.de/fett-weg-spritze',
+        siteName: 'EL Aesthetics Bremen',
         type: 'website',
         locale: 'de_DE',
         images: [
-            'https://elaesthetics-bremen.de/assets/fett-weg-spritze/og-fett-weg-spritze-bremen.webp',
+            {
+                url: 'https://elaesthetics-bremen.de/assets/fett-weg-spritze/og-fett-weg-spritze-bremen.webp',
+                width: 1200,
+                height: 630,
+                alt: 'Fett-weg-Spritze in Bremen – EL Aesthetics',
+            },
         ],
     },
     alternates: {
@@ -51,13 +55,30 @@ export const metadata: Metadata = {
 };
 
 export default function FettWegSpritzePage() {
+    const jsonLd = {
+      '@context': 'https://schema.org',
+      '@graph': [
+        { ...getWebPageSchema({
+          name: 'Fett-weg-Spritze (Injektionslipolyse) in Bremen',
+          description: 'Ärztliche Injektionslipolyse zur gezielten Fettreduktion an Doppelkinn, Bauch und anderen Problemzonen.',
+          url: '/fett-weg-spritze',
+        }), '@context': undefined },
+        getMedicalProcedureSchema({
+          name: 'Fett-weg-Spritze (Injektionslipolyse)',
+          type: 'MedicalProcedure',
+          bodyLocation: 'Body',
+          description: 'Injektionslipolyse zur nicht-chirurgischen Fettreduktion durch Injektionen, die Fettzellen abbauen.',
+          howPerformed: 'Injektion',
+        }),
+      ],
+    };
+
     const heroData: HeroSectionProps = {
         title: 'Fett-weg-Spritze (Injektionslipolyse) in Bremen',
         subtitle:
             'Gezielte Fettreduktion ohne Operation: Doppelkinn, Hängebäckchen & lokale Fettdepots dauerhaft auflösen – minimal-invasiv mit langanhaltenden Ergebnissen.',
         imageSrc: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp',
-        imageAlt:
-            'Fett-weg-Spritze Behandlung für Doppelkinn bei EL Aesthetics in Bremen',
+        imageAlt: 'Fett-weg-Spritze Injektionslipolyse für Doppelkinn – EL Aesthetics Bremen',
         primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
         secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
     };
@@ -65,7 +86,7 @@ export default function FettWegSpritzePage() {
     const introData: IntroSectionProps = {
         title: 'Was ist die Injektionslipolyse (Fett-weg-Spritze)?',
         content: [
-            'Bei der sogenannten Fett-weg-Spritze werden die Fettzellen durch gezielte Injektionen zerstört, vom Körper auf natürliche Weise verstoffwechselt und ausgeschieden. Folglich verkleinern sich die Fettdepots oder lösen sich dauerhaft auf. Das macht die Injektionslipolyse zu einer Alternative für alle, die sich keiner Operation unterziehen wollen.',
+            'Die Fett-weg-Spritze (Injektionslipolyse) ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin zur gezielten Reduktion lokaler Fettdepots wie Doppelkinn oder Hängebäckchen.',
             'Die Wirkung der Fett-weg-Spritze beruht auf der Injektion der Wirkstoffe Phosphatidylcholin und Desoxycholsäure, die in das Fettgewebe injiziert werden. Diese Wirkstoffe lösen eine Reaktion aus, bei der die Fettzellen aufgelöst und abgebaut werden. Eine Hautstraffung und Körperkonturierung ist dabei eine positive Begleiterscheinung.',
             'Damit lassen sich Doppelkinn, Hängebäckchen und viele weitere kleinere bis mittelgroße Fettdepots am Körper reduzieren. Die Fett-weg-Spritze stellt keine Methode zur umfassenden Gewichtsreduktion dar, sondern wird gezielt zur Reduktion kleiner bis mittelgroßer, lokalisierter Fettdepots eingesetzt.',
             'Sie ist am besten für diejenigen geeignet, welche überschüssige kleine bis mittelgroße Fettpolster loswerden möchten, die nicht gut auf Sport und Diäten ansprechen. In der Regel sind 3-5 Behandlungen notwendig, um ein optimales Ergebnis zu erzielen.',
@@ -390,6 +411,11 @@ export default function FettWegSpritzePage() {
 
     return (
         <div className="min-h-screen bg-white">
+            <Script
+                id="fett-weg-spritze-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
             <HeroSection {...heroData} />
             <TableOfContents items={tocItems} />
             <IntroSection {...introData} />

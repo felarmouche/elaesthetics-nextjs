@@ -15,13 +15,12 @@ export default async function PatientReviews() {
     const jsonLd = {
         "@context": "https://schema.org",
         "@type": "MedicalBusiness",
-        "name": "Praxis Name",
-        // ... aggregateRating ...
+        "@id": "#practice",
         "review": reviews.map((r) => ({
             "@type": "Review",
             "author": {
                 "@type": "Person",
-                "name": r.name // Hier wird "Sandra G." genutzt -> Konsistenz!
+                "name": r.name
             },
             "reviewRating": {"@type": "Rating", "ratingValue": r.rating},
             "reviewBody": r.text
@@ -80,7 +79,7 @@ export default async function PatientReviews() {
                                 className="w-4 h-4 text-gray-400 group-hover:text-gray-600 transition-colors"/>
                         </a>
 
-                        <div className="text-xs text-gray-400">
+                        <div className="text-xs text-gray-700">
                             Powered by <strong>Google</strong>
                         </div>
 

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import {
   AreasSection,
   ConsultationSectionProps,
@@ -9,7 +10,7 @@ import {
   ConsultationSection,
   TableOfContents,
   TOCItem,
-  
+
   CTASectionProps,
   FAQSection,
   FAQSectionProps,
@@ -17,8 +18,8 @@ import {
   HeroSectionProps,
   IntroSection,
   IntroSectionProps,
-  
-  
+
+
   ProcessSection,
   ProcessSectionProps,
   TreatmentCareSection,
@@ -26,22 +27,28 @@ import {
   TreatmentsSectionProps,
   CTASection
 } from '@/components/TreatmentPageComponents';
- 
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Medizinisches Microneedling in Bremen',
-  description:
-    'Ärztlich geführtes Microneedling in Bremen: angepasste Nadeltiefe verbessert Aknenarben, Poren, Pigmentunregelmäßigkeiten und Hautstruktur. Jetzt informieren!',
-  keywords:
-    'Medizinisches Microneedling Bremen, Microneedling Bremen, Dermapen Bremen, Aknenarben behandeln Bremen, Poren verfeinern Bremen, Dehnungsstreifen Bremen, Hautbild verbessern Bremen, Rosazea Microneedling Bremen',
+  title: 'Medizinisches Microneedling Bremen | Aknenarben & Poren | EL Aesthetics',
+  description: 'Ärztliches Microneedling in Bremen: Angepasste Nadeltiefe für Aknenarben, Poren & Hautstruktur. Kollagen-Induktionstherapie. Jetzt Beratungstermin vereinbaren.',
+  keywords: ['Medizinisches Microneedling Bremen', 'Microneedling Bremen', 'Aknenarben behandeln Bremen', 'Dermapen Bremen', 'Poren verfeinern Bremen'],
   openGraph: {
     title: 'Medizinisches Microneedling in Bremen – EL Aesthetics',
-    description:
-      'Schonende Kollagen-Induktion mit individuell angepasster Nadeltiefe. Für Aknenarben, Porenverfeinerung und ebenmäßiges Hautbild – in ärztlicher Hand.',
+    description: 'Kollagen-Induktionstherapie mit angepasster Nadeltiefe für Aknenarben, Poren & Hautstruktur in Bremen.',
+    url: 'https://elaesthetics-bremen.de/medizinisches-microneedling',
+    siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
-    images: ['https://elaesthetics-bremen.de/assets/microneedling/og-microneedling-bremen.webp'],
+    images: [
+      {
+        url: 'https://elaesthetics-bremen.de/assets/microneedling/og-microneedling-bremen.webp',
+        width: 1200,
+        height: 630,
+        alt: 'Medizinisches Microneedling in Bremen – EL Aesthetics',
+      },
+    ],
   },
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/medizinisches-microneedling',
@@ -49,12 +56,30 @@ export const metadata: Metadata = {
 };
 
 export default function MedizinischesMicroneedlingPage() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@graph': [
+      { ...getWebPageSchema({
+        name: 'Medizinisches Microneedling in Bremen',
+        description: 'Ärztliches Microneedling zur Hautregeneration, Narbenbehandlung und Verbesserung der Hautstruktur.',
+        url: '/medizinisches-microneedling',
+      }), '@context': undefined },
+      getMedicalProcedureSchema({
+        name: 'Medizinisches Microneedling',
+        type: 'CosmeticProcedure',
+        bodyLocation: 'Face',
+        description: 'Kontrollierte Mikroverletzungen der Haut zur Anregung der Kollagenproduktion und Hautregeneration bei Narben, Falten und vergrößerten Poren.',
+        howPerformed: 'Microneedling-Behandlung',
+      }),
+    ],
+  };
+
   const heroData: HeroSectionProps = {
     title: "Medizinisches Microneedling in Bremen",
     subtitle:
       "Schonende Kollagen-Induktion für ein glatteres, feinporiges Hautbild – individuell, präzise und in ärztlicher Hand.",
     imageSrc: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp",
-    imageAlt: "Medizinisches Microneedling in der Praxis EL Aesthetics Bremen",
+    imageAlt: "Medizinisches Microneedling gegen Aknenarben und Poren – EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
   };
@@ -62,7 +87,7 @@ export default function MedizinischesMicroneedlingPage() {
   const introData: IntroSectionProps = {
     title: "Medizinisches Microneedling (Kollagen-Induktionstherapie) – kurz erklärt",
     content: [
-      "Medizinisches Microneedling (auch als Kollagen-Induktionstherapie bekannt) ist ein fortschrittliches, minimal-invasives Verfahren, das die natürliche Regenerationsfähigkeit Ihrer Haut gezielt nutzt. Mithilfe eines speziellen Dermapens oder Dermarollers werden feinste, sterile Nadeln kontrolliert in tiefere Hautschichten eingebracht. Diese mikroskopisch kleinen „Verletzungen“ setzen eine intensive Wundheilungskaskade in Gang, ohne die Oberhaut zu zerstören.",
+      "Medizinisches Microneedling ist ein minimal-invasives Verfahren der ästhetischen Medizin zur gezielten Kollagen-Induktion bei Aknenarben, vergrößerten Poren und Hautstrukturverbesserung.",
       "Kollagen und Elastin werden gebildet, die Haut soll glatter erscheinen - Poren und feine Aknenarben minimiert werden.",
       "Kosmetisches Needling bleibt dagegen oberflächlicher und sorgt vor allem für einen kurzfristigen „Glow“. Kurz gesagt: Gezielte Therapie statt reiner Schönheitsroutine."
     ]
@@ -270,6 +295,11 @@ export default function MedizinischesMicroneedlingPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Script
+        id="medizinisches-microneedling-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <HeroSection {...heroData} />
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />

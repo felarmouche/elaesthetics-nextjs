@@ -23,49 +23,42 @@ import {
     HubTeaserSection
 } from '@/components/TreatmentPageComponents';
 import {PRICES} from "@/lib/constants";
+import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 
 // 1. METADATA: Abdeckung vieler Long-Tail Keywords in Title & Description
 export const metadata: Metadata = {
-    title: 'Lip Flip, Brow Lift & Gummy Smile Bremen | Ästhetische Botulinumtoxin-Behandlungen',
-    description: 'Spezielle Botulinumtoxin-Behandlungen: Lip Flip, Erdbeerkinn, Nefertiti-Lift (Hals) & Brow Lift in Bremen. Ärztliche Präzision für harmonische Details.',
-    keywords: ['Lip Flip Bremen', 'Gummy Smile Botox', 'Erdbeerkinn entfernen', 'Nefertiti Lift Bremen', 'Brow Lift Botox', 'Bunny Lines'],
+    title: 'Lip Flip, Brow Lift & Gummy Smile Bremen | EL Aesthetics',
+    description: 'Ästhetische Botulinumtoxin-Behandlungen in Bremen: Lip Flip, Nefertiti-Lift, Brow Lift & Gummy Smile. Ärztliche Präzision für harmonische Details. Termin vereinbaren.',
+    keywords: ['Lip Flip Bremen', 'Gummy Smile Botox Bremen', 'Nefertiti Lift Bremen', 'Brow Lift Botox Bremen', 'Erdbeerkinn entfernen Bremen', 'Bunny Lines Botox'],
     openGraph: {
-        title: 'Ästhetische Behandlungen mit Botulinumtoxin | EL Aesthetics',
-        description: 'Lip Flip, Brow Lift, Gummy Smile und mehr. Feinste Korrekturen für ein harmonisches Gesicht.',
+        title: 'Ästhetische Botulinumtoxin-Behandlungen in Bremen – EL Aesthetics',
+        description: 'Lip Flip, Nefertiti-Lift, Brow Lift & Gummy Smile. Ärztliche Präzision in Bremen.',
+        url: 'https://elaesthetics-bremen.de/botulinumtoxin/aesthetische-behandlungen',
+        siteName: 'EL Aesthetics Bremen',
         type: 'website',
         locale: 'de_DE',
-        url: 'https://elaesthetics-bremen.de/botulinumtoxin/aesthetische-behandlungen',
-        images: [{
-            url: '/assets/botulinumtoxin/og-image-botox-spezial.webp',
-            width: 1200,
-            height: 630,
-            alt: 'Detailaufnahme Ästhetische Behandlung Lippen/Kinn'
-        }],
+        images: [{ url: '/assets/botulinumtoxin/og-image-botox-spezial.webp', width: 1200, height: 630, alt: 'Ästhetische Botulinumtoxin-Behandlungen bei EL Aesthetics Bremen' }],
     },
     alternates: {
-        canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/spezialanwendungen',
+        canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/aesthetische-behandlungen',
     },
 };
 
 export default function BotulinumtoxinSpezialPage() {
 
-    // 2. SCHEMA.ORG: Multi-Entity Markup
-    // Wir sagen Google: Auf dieser Seite geht es um mehrere spezifische Prozeduren.
     const jsonLd = {
         '@context': 'https://schema.org',
-        '@type': 'MedicalWebPage',
-        name: 'Ästhetische Spezialanwendungen Botulinumtoxin',
-        description: 'Detailbehandlungen wie Lip Flip, Gummy Smile und Nefertiti Lift.',
-        provider: {
-            '@type': 'MedicalOrganization',
-            name: 'EL Aesthetics Bremen',
-        },
-        about: [
-            { '@type': 'CosmeticProcedure', name: 'Lip Flip', bodyLocation: 'Lips' },
-            { '@type': 'CosmeticProcedure', name: 'Brow Lift', bodyLocation: 'Eyebrow' },
-            { '@type': 'CosmeticProcedure', name: 'Gummy Smile Correction', bodyLocation: 'Gingiva' },
-            { '@type': 'CosmeticProcedure', name: 'Nefertiti Lift', bodyLocation: 'Neck' }
-        ]
+        '@graph': [
+            { ...getWebPageSchema({
+                name: 'Ästhetische Spezialanwendungen Botulinumtoxin',
+                description: 'Detailbehandlungen wie Lip Flip, Gummy Smile und Nefertiti Lift.',
+                url: '/botulinumtoxin/aesthetische-behandlungen',
+            }), '@context': undefined },
+            getMedicalProcedureSchema({ name: 'Lip Flip', type: 'CosmeticProcedure', bodyLocation: 'Lips', description: 'Konturierung der Oberlippe durch gezielte Muskelentspannung.' }),
+            getMedicalProcedureSchema({ name: 'Brow Lift', type: 'CosmeticProcedure', bodyLocation: 'Eyebrow', description: 'Leichtes Anheben der Augenbrauen für einen offeneren Blick.' }),
+            getMedicalProcedureSchema({ name: 'Gummy Smile Correction', type: 'CosmeticProcedure', bodyLocation: 'Gingiva', description: 'Reduzierung übermäßiger Zahnfleischsichtbarkeit beim Lächeln.' }),
+            getMedicalProcedureSchema({ name: 'Nefertiti Lift', type: 'CosmeticProcedure', bodyLocation: 'Neck', description: 'Straffung der Hals- und Kinnlinie durch Muskelrelaxation.' }),
+        ],
     };
 
     const heroData: HeroSectionProps = {
@@ -73,7 +66,7 @@ export default function BotulinumtoxinSpezialPage() {
         subtitle:
             'Lip Flip, Erdbeerkinn, Nefertiti-Lift (Hals), Brow Lift & mehr. Neben der klassischen Faltenbehandlung bieten wir spezialisierte Techniken an, um Lippenkontur, Kinn, Hals oder die Augenpartie harmonisch zu optimieren – ganz ohne Operation.',
         imageSrc: '/assets/botulinumtoxin/aesthetische-behandlungen_hero.png', // Passendes Bild (z.B. Lippen- oder Kinnfokus)
-        imageAlt: 'Detailbehandlung im Gesichtsbereich (Lip Flip / Kinn)',
+        imageAlt: 'Ästhetische Botulinumtoxin-Behandlung Lip Flip und Kinn – EL Aesthetics Bremen',
         primaryCTA: { text: 'Beratung vereinbaren', href: '/kontakt' },
         secondaryCTA: { text: 'Zu den Details', href: '#areas' },
     };
@@ -88,11 +81,11 @@ export default function BotulinumtoxinSpezialPage() {
     ];
 
     const introData: IntroSectionProps = {
-        title: 'Harmonisierung statt Veränderung',
+        title: 'Lip Flip, Brow Lift, Nefertiti Lift & Co. – was steckt dahinter?',
         content: [
-            'Oft sind es kleine Muskelaktivitäten, die unser Gesicht unruhig wirken lassen oder Proportionen stören. Ein "Pflasterstein-Kinn" oder ein zu starkes Hochziehen der Oberlippe beim Lachen (Gummy Smile) lassen sich mit mikroskopisch genauen Dosierungen von Botulinumtoxin behandeln.',
-            'Diese "Advanced Treatments" erfordern höchste anatomische Kenntnis, da hier nicht primär Falten geglättet, sondern Muskelzüge (Vektoren) im Gesicht ausbalanciert werden (Myomodulation).',
-            'In Bremen beraten wir Sie ehrlich: Was ist mit Botulinumtoxin möglich ("Lip Flip"), und wo ist ein Filler (Volumen) die bessere Wahl? Ziel ist stets ein natürliches Ergebnis.',
+            'Ästhetische Botulinumtoxin-Behandlungen sind nicht-chirurgische Verfahren zur gezielten Harmonisierung von Gesichtsdetails in Bremen.',
+            'Diese erfordern höchste anatomische Kenntnis, da hier nicht primär Falten geglättet, sondern Muskelzüge (Vektoren) im Gesicht ausbalanciert werden (Myomodulation).',
+            'In Bremen beraten wir Sie ehrlich: Was ist mit Botulinumtoxin möglich ("Lip Flip"), und wo ist ein Filler (Volumen) die bessere Wahl? Wir legen Wert auf natürliche Ergebnisse, die Ihre Persönlichkeit unterstreichen.',
         ],
     };
 
@@ -137,7 +130,7 @@ export default function BotulinumtoxinSpezialPage() {
                 category: 'Augen & Nase',
                 items: [
                     {
-                        title: 'Chemical Brow Lift',
+                        title: 'Brow Lift',
                         description: 'Gezielte Anhebung der Augenbrauen (vor allem seitlich) für einen wacheren, offeneren Blick.'
                     },
                     {
@@ -153,10 +146,9 @@ export default function BotulinumtoxinSpezialPage() {
         title: 'Quick Facts',
         benefits: [
             { title: 'Preis', description: `ab ${PRICES.botulinum.aesthetikWeitere},- €*`, iconUrl: '/assets/icons/EUR.svg' },
-            { title: 'Dauer', description: 'ca. 15–30 Min.', iconUrl: '/assets/icons/TIME.svg' },
-            { title: 'Wirkungseintritt', description: '1–2 Wochen (vollständiger Effekt)', iconUrl: '/assets/icons/TIME.svg' },
+            { title: 'Wirkungseintritt', description: '1–2 Wochen', iconUrl: '/assets/icons/TIME.svg' },
             { title: 'Wirkdauer', description: 'ca. 3–6 Monate', iconUrl: '/assets/icons/CAL.svg' },
-            { title: 'Betäubung', description: 'Keine / auf Wunsch Salbe', iconUrl: '/assets/icons/Spritze.svg' },
+            { title: 'Betäubung', description: 'Keine', iconUrl: '/assets/icons/Spritze.svg' },
             { title: 'Ausfallzeit', description: 'Sofort gesellschaftsfähig', iconUrl: '/assets/icons/gesellschaft.svg' },
         ],
         note:
@@ -164,50 +156,95 @@ export default function BotulinumtoxinSpezialPage() {
     };
 
     const processData: ProcessSectionProps = {
-        title: 'Behandlungsablauf',
-        steps: [
-            {
-                number: '01',
-                title: 'Analyse & Konzept',
-                description:
-                    'Persönliches Beratungsgespräch und Erstellung eines individuellen Behandlungskonzepts. Wir prüfen genau, ob die gewünschte Methode (z.B. Lip Flip) für Ihre Anatomie geeignet ist.',
-            },
-            {
-                number: '02',
-                title: 'Die Injektion',
-                description:
-                    'Nach Desinfektion injizieren wir das Botulinumtoxin mit ultra-feinen Nadeln präzise in die Zielmuskeln (z.B. Mentalis am Kinn). Die Behandlung ist kaum spürbar und dauert meist unter 30 Minuten.',
-            },
-            {
-                number: '03',
-                title: 'Aftercare',
-                description:
-                    'Sie erhalten Ihren persönlichen Nachsorge-Pass. Eine Kühlung vor Ort minimiert Schwellungen. Sie können direkt im Anschluss Ihren Alltag fortsetzen.',
-            },
-        ],
-    };
+    title: "So läuft Ihre Behandlung in Bremen ab",
+    steps: [
+      {
+        number: "01",
+        title: "Persönliche Beratung",
+        description:
+          "Wir erstellen ein individuelles Behandlungskonzept, um Ihre persönlichen Bedürfnisse zu erfüllen.",
+      },
+      {
+        number: "02",
+        title: "Die Behandlung",
+        description:
+          "Das Botulinumtoxin wird mit einer sehr dünnen Nadel in den Zielmuskel injiziert. Die gesamte Behandlung dauert maximal 30 Minuten.",
+      },
+      {
+        number: "03",
+        title: "Nachsorge & Effekt",
+        description:
+          "In der Regel sind Sie sofort wieder alltagstauglich. Die Wirkung entfaltet sich meist über die nächsten 14 Tage.",
+      },
+    ],
+  };
 
-    const treatmentCareData: TreatmentCareSectionProps = {
-        title: 'Wichtige Verhaltenstipps',
-        beforeTreatment: {
-            title: 'Vor der Behandlung',
-            instructions: [
-                { title: 'Kontraindikationen', description: 'Keine Behandlung in Schwangerschaft/Stillzeit oder bei akuten Entzündungen im Areal.' },
-                { title: 'Medikamente', description: '7 Tage vorher (nach Absprache!) keine blutverdünnenden Mittel (Aspirin, Ibuprofen) einnehmen.' },
-                { title: 'Lifestyle', description: '2 Tage vor der Behandlung möglichst auf Alkohol verzichten.' },
-                { title: 'Operationen', description: 'Abstand von min. 2 Wochen zu OPs oder Impfungen einhalten.' },
-            ],
+  const treatmentCareData: TreatmentCareSectionProps = {
+    title: "Vorher & Nachher: Wichtige Hinweise",
+    beforeTreatment: {
+      title: "Davor",
+      instructions: [
+        {
+          title: "Blutverdünner",
+          description:
+            "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen.",
         },
-        afterTreatment: {
-            title: 'Nach der Behandlung',
-            instructions: [
-                { title: 'Haltung', description: '3–4 Stunden aufrechte Körperhaltung bewahren, nicht flach hinlegen.' },
-                { title: 'Vermeidung', description: '2 Wochen keine Gesichtsmassagen, Sauna, Solarium oder intensive Sonne.' },
-                { title: 'Sport', description: 'Für 2 Tage auf Sport und Schwimmbad verzichten.' },
-                { title: 'Alkoholkarenz', description: 'Mindestens 2 Tage keinen Alkohol trinken (kann Wirksamkeit mindern & Schwellung fördern).' },
-            ],
+        {
+          title: "Alkoholkonsum",
+          description:
+            "2 Tage vor der Behandlung kein Alkoholgenuss empfohlen.",
         },
-    };
+        {
+          title: "Schwangerschaft & Stillzeit",
+          description:
+            "Keine Behandlung während Schwangerschaft oder Stillzeit.",
+        },
+        {
+          title: "Entzündungen",
+          description:
+            "Bei Hautentzündungen oder Infektionen im Behandlungsbereich Termin verschieben.",
+        },
+        {
+          title: "Operationen",
+          description: "Keine Behandlung 2 Wochen vor oder nach einer OP",
+        },
+      ],
+    },
+    afterTreatment: {
+      title: "Danach",
+      instructions: [
+        {
+          title: "Körperhaltung",
+          description: "Für 3–4 Stunden eine aufrechte Haltung bewahren.",
+        },
+        {
+          title: "Sport & Schwimmbad",
+          description:
+            "Vermeiden Sie für 2 Tage körperliche Anstrengung und Schwimmbadbesuche.",
+        },
+        {
+          title: "Wärme & Sonne",
+          description:
+            "1–2 Wochen auf Sauna, Solarium und intensive Sonneneinstrahlung verzichten.",
+        },
+        {
+          title: "UV-Schutz",
+          description:
+            "Achten Sie 4–6 Wochen lang auf konsequenten Sonnenschutz.",
+        },
+        {
+          title: "Gesichtsbehandlungen",
+          description:
+            "2 Wochen lang keine Gesichtsmassagen oder kosmetischen Behandlungen durchführen.",
+        },
+        {
+          title: "Alkohol",
+          description:
+            "Mindestens 2 Tage verzichten, um die volle Wirksamkeit nicht zu beeinträchtigen.",
+        },
+      ],
+    },
+  };
 
     const faqData: FAQSectionProps = {
         title: 'Häufige Fragen & Risiken',
@@ -218,7 +255,7 @@ export default function BotulinumtoxinSpezialPage() {
                     'Ein Lip Flip nutzt Botulinumtoxin, um den Muskel zu entspannen – die Lippe "rollt" optisch aus, bekommt aber kein extra Volumen. Eine Lippenunterspritzung nutzt Hyaluron-Filler, um echtes Volumen und Kontur physikalisch aufzubauen. Oft ist eine Kombination sinnvoll.',
             },
             {
-                question: 'Wie lange hält ein Brow Lift mit Botox?',
+                question: 'Wie lange hält ein Brow Lift mit Botulinumtoxin?',
                 answer:
                     'Da die Muskeln an der Stirn und Augenbraue sehr aktiv sind, hält der Effekt meist ca. 3 bis 4 Monate an. Bei regelmäßiger Anwendung kann sich die Dauer verlängern.',
             },
