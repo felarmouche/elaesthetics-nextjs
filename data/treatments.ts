@@ -290,6 +290,16 @@ export const faltenSkinQuality: Treatment[] = [
     skinbooster // Hyaluron Skinbooster passt hier besser als bei "Volumen"
 ];
 /**
+ * Hyaluron Hub
+ */
+export const hyaluronTreatments: Treatment[] = [
+    filler,
+    skinbooster,
+    profhilo,
+    hylase
+];
+
+/**
  * Filler Page
  */
 export const fillerPageTreatments: Treatment[] = [

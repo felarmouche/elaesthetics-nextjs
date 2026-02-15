@@ -6,6 +6,7 @@ import {
   AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
+import { eigenblut, filler, mesoHaar, mesotherapieHaut, microneedling, polynukleotide } from '@/data/treatments';
  
 export const metadata: Metadata = {
   title: 'Kollagenstimulation Bremen | CaHA & Biostimulatoren | EL Aesthetics',
@@ -65,7 +66,9 @@ export default function KollagenstimulationPage() {
     title: 'Was ist Kollagenstimulation?',
     content: [
       'Die Kollagenstimulation ist ein minimal-invasives Verfahren der ästhetischen Medizin, das mit Biostimulatoren wie Calciumhydroxylapatit die körpereigene Kollagenproduktion anregt und die Haut natürlich strafft.',
-      'Die Technik eignet sich insbesondere zur sanften Verbesserung der Hautqualität und Konturen – für natürlich wirkende Ergebnisse ohne Überkorrektur. Die Behandlung erfolgt minimalinvasiv und ist in der Regel schnell und gut integrierbar in den Alltag.',
+      'Mit zunehmendem Alter verliert die Haut an Festigkeit, Elastizität und Frische – unter anderem durch den Abbau von Kollagen. Eine gezielte Behandlung mit einer Kombination aus Hyaluronsäure und Calciumhydroxylapatit kann diesem Prozess entgegenwirken.',
+      'Während die Hyaluronsäure für eine sofort sichtbare Auffrischung sorgen kann, regen die feinen Calciumhydroxylapatit-Partikel die natürliche Kollagenproduktion in der Tiefe an. Diese Kombination kann zu einer schrittweisen Straffung und Verbesserung der Hautqualität führen – mit einem natürlich wirkenden Ergebnis.',
+      'Im Unterschied zu anderen rein kollagenstimulierenden Verfahren bietet diese Behandlung durch die Hyaluronsäure zusätzlich eine unmittelbare Aufpolsterung sowie einen sanften Straffungseffekt.',
       'Eine ärztliche Voruntersuchung entscheidet über Eignung und Vorgehen.'
     ],
   };
@@ -106,9 +109,8 @@ export default function KollagenstimulationPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Auf einen Blick',
     benefits: [
-      { title: 'Preis', description: `ab ${PRICES.biostimulation.caHydroxylapatitPlusHyaluron}*`, iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Dauer', description: 'ca. 60–90 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Wirkung', description: 'Volumen teils sofort; Kollagenaufbau über Wochen', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Preis', description: `ab ${PRICES.biostimulation.caHydroxylapatitPlusHyaluron},-€*`, iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Behandlungsdauer', description: 'ca. 60–90 Min', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Haltbarkeit', description: 'ca. 18–24 Monate', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Betäubung', description: 'i. d. R. nicht erforderlich', iconUrl: '/assets/icons/Spritze.svg' },
       { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
@@ -196,42 +198,11 @@ export default function KollagenstimulationPage() {
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Verwandte Behandlungen',
     treatments: [
-      {
-        imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
-        imageAlt: 'Hyaluronsäure-Filler',
-        title: 'Hyaluronsäure-Filler',
-        description: 'Kontur, Ausgleich & Support ausgewählter Areale – dezent und maßvoll.',
-        treatmentUrl: '/hyaluron',
-      },
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
-        imageAlt: 'PRF Eigenbluttherapie',
-        title: 'PRF/PRP',
-        description: 'Autologe Regeneration zur Unterstützung der Hautqualität.',
-        treatmentUrl: '/eigenbluttherapie',
-      },
-      {
-        imageUrl: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp',
-        imageAlt: 'Microneedling',
-        title: 'Medizinisches Microneedling',
-        description: 'Struktur & Glow – medizinisches Needling mit Hygiene-Standards.',
-        treatmentUrl: '/medizinisches-microneedling', 
-
-      },
-      {
-        imageUrl: '/assets/mesotherapie/mesotherapie-haut_hero.webp',
-        imageAlt: 'Mesotherapie',
-        title: 'Mesotherapie',
-        description: 'Feuchtigkeits-Boost und Vitalisierung – individuell abgestimmt.',
-        treatmentUrl: '/mesotherapie',
-      },
-      {
-        imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
-        imageAlt: 'Polynukleotide',
-        title: 'Polynukleotide',
-        description: 'Biostimulatorische Unterstützung der Hautqualität.',
-        treatmentUrl: '/polynukleotide',
-      },
+      filler,
+      eigenblut,
+      microneedling,
+      mesotherapieHaut,
+      polynukleotide,
     ],
   };
 

@@ -27,6 +27,7 @@ import {
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { botoxFalten, hylase, skinbooster } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Hyaluron Filler Bremen | Lippen, Jawline & Falten | EL Aesthetics',
@@ -70,7 +71,7 @@ export default function HyaluronFillerBremenPage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: 'Hyaluron Filler in Bremen',
+    title: 'Hyaluronsäure-Filler in Bremen',
     subtitle:
       'Suchen Sie nach einer professionellen Praxis für Hyaluronsäure Filler?\nDann sind Sie bei El Aesthetics genau richtig. Lippen aufspritzen, Falten glätten & Konturen präzisieren ',
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',
@@ -80,10 +81,10 @@ export default function HyaluronFillerBremenPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: 'Was sind Hyaluron Filler? Wirkweise & Funktion',
+    title: 'Was sind Hyaluronsäure-Filler?',
     content: [
       'Hyaluron-Filler sind ein minimal-invasives Verfahren der ästhetischen Medizin zum Volumenaufbau, zur Faltenunterspritzung und Konturierung von Lippen, Wangen und Jawline in Bremen.',
-      'Für Volumen und Kontur verwenden wir je nach Region unterschiedliche Filler-Kohäsionen und -Viskositäten. Unser Anspruch: ein dezentes, typgerechtes Finish, das in Ruhe und Mimik harmonisch wirkt.',
+      'Die Filler-Behandlung ist ein beliebtes Verfahren in der ästhetischen Medizin, da sie eine Vielzahl von Behandlungsmöglichkeiten bietet. Volumendefekte und Falten können unterspritzt und damit "unterfüttert" werden. Mit diesem Wirkstoff lassen sich beeindruckende und natürliche Effekte erzielen – und das in einem risikoarmen, nicht-invasiven Eingriff. Freuen Sie sich nach der kurzen Behandlung auf sofort sichtbare Ergebnisse.',
       'Alle Behandlungen erfolgen ärztlich, mit hochwertigen CE-zertifizierten Präparaten und klaren Hygiene- und Sicherheitsstandards.',
     ],
   };
@@ -128,12 +129,12 @@ export default function HyaluronFillerBremenPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Hyaluron-Filler auf einen Blick',
     benefits: [
-      { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.fillerUnterspritzung}*`, iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Dauer', description: 'ca. 30–45 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Ergebnis', description: 'sofort sichtbar', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.fillerUnterspritzung},-€*`, iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Behandlungsdauer', description: 'ca. 30–45 Min', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Wirkeintritt', description: 'sofort', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Haltbarkeit', description: 'ca. 6–18 Monate', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Betäubung', description: 'i. d. R. nicht nötig (Lidocain im Gel)', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Ausfallzeit', description: 'meist sofort gesellschaftsfähig', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Betäubung', description: 'i. d. R. nicht nötig', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Gesellschaftsfähig', description: 'meist sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note: '*Richtwert; individuelle Abrechnung gemäß GOÄ.',
   };
@@ -151,7 +152,7 @@ export default function HyaluronFillerBremenPage() {
         number: '02',
         title: 'Vorbereitung & Hygiene',
         description:
-          'Reinigung/Desinfektion der Areale; auf Wunsch Betäubungscreme. Einsatz hochwertiger, CE-zertifizierter Filler.',
+          'Reinigung/Desinfektion der Areale. Einsatz hochwertiger, CE-zertifizierter Filler.',
       },
       {
         number: '03',
@@ -175,17 +176,20 @@ export default function HyaluronFillerBremenPage() {
       instructions: [
         { title: 'Medikamente', description: '7 Tage vorher nach Rücksprache keine blutverdünnenden Schmerzmittel (z. B. Ibuprofen, ASS).' },
         { title: 'Alkohol', description: '24 h vorher keinen Alkohol.' },
-        { title: 'Gesundheit', description: 'Kein akuter Infekt/Herpes; keine frischen Impfungen oder Zahnbehandlungen.' },
+        { title: 'Gesundheit', description: '2 Wochen keine Impfungen und keine invasiven Eingriffe wie Permanent Make-up, Laserbehandlungen, Zahnbehandlungen, Zahnreinigungen, Operationen oder Ähnliches planen.' },
         { title: 'Schwangerschaft/Stillzeit', description: 'Keine Behandlung in Schwangerschaft/Stillzeit.' },
+        { title: 'Operation', description: 'Mindestens 4 Wochen vor der Behandlung keine Operation durchführen lassen.' },
+
       ],
     },
     afterTreatment: {
       title: 'Nach der Behandlung',
       instructions: [
-        { title: 'Sport/Hitze', description: '48 h kein Sport; 1–2 Wochen keine Sauna/Solarium/intensive Sonne.' },
+        { title: 'Sport', description: '48 h kein Sport.' },
         { title: 'Druck/Massage', description: 'Areale nicht massieren oder stark drücken.' },
         { title: 'Weitere Eingriffe', description: '2 Wochen keine Impfungen, invasiven/kosmetischen Behandlungen oder Zahnarzt-Eingriffe.' },
         { title: 'Make-up', description: 'Mehrere Stunden pausieren; auf Hygiene achten.' },
+        { title: 'UV-/Hitze-Schutz', description: '2 Wochen keine Sauna, Solarium oder Dampfbad besuchen.' },
       ],
     },
   };
@@ -195,30 +199,9 @@ export default function HyaluronFillerBremenPage() {
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen',
     treatments: [
-      {
-        imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
-        imageAlt: 'Botulinumtoxin für mimische Falten',
-        title: 'Botulinumtoxin (mimische Falten)',
-        description:
-          'Perfekte Ergänzung zu Fillern bei Stirn, Zornesfalte & Krähenfüßen.',
-        treatmentUrl: '/botulinumtoxin/faltenbehandlung',
-      },
-      {
-        imageUrl: '/assets/hyaluron/hyaluron-hylase_hero.webp',
-        imageAlt: 'Hylase Fillerauflösung',
-        title: 'Hylase (Fillerauflösung)',
-        description:
-          'Sicherheitsnetz bei Fehlplatzierung oder Überkorrektur – verantwortungsvoll eingesetzt.',
-        treatmentUrl: '/hyaluron/hylase',
-      },
-      {
-        imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
-        imageAlt: 'Skinbooster zur Hydratation',
-        title: 'Skinbooster (eigene Unterseite)',
-        description:
-          'Für Hydratation & Hautqualität. Details auf der Skinbooster-Seite.',
-        treatmentUrl: '/hyaluron/skinbooster',
-      },
+      botoxFalten,
+      hylase,
+      skinbooster,
     ],
   };
 

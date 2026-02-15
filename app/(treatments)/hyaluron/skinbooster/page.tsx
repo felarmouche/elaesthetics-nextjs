@@ -86,11 +86,14 @@ export default function SkinboosterBremenPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: 'Was ist eine Hyaluron-Skinbooster-Behandlung?',
+    title: 'Was ist eine Skinbooster-Behandlung?',
     content: [
       'Skinbooster-Behandlungen sind ein minimal-invasives Verfahren der ästhetischen Medizin zur tiefenwirksamen Hauthydratation mit unvernetzter Hyaluronsäure.',
+      'Das Ergebnis kann eine nachhaltige Durchfeuchtung der Haut bis in die tiefen Hautschichten, mehr Spannkraft und Hautglätte sein.',
+      'Das Skinbooster-Treatment hat ebenfalls einen sehr positiven Effekt auf Problemhaut, z. B. bei Akne, Pigmentstörungen, eingefallenen Narben oder grobporiger Haut.',
       'So werden feine Linien geglättet, der Teint wirkt ebenmäßiger und die Ausstrahlung frischer. Geeignet für Gesicht, Hals, Dekolleté und Hände.',
       'Die Methode ist gut verträglich und dezent in der Wirkung – ideal für einen natürlichen Glow.',
+      
     ],
   };
 
@@ -131,11 +134,11 @@ export default function SkinboosterBremenPage() {
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Die Behandlung auf einen Blick',
     benefits: [
-      { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.skinbooster1ml}`, iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Dauer', description: '45–60 Min', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.skinbooster1ml},-€`, iconUrl: '/assets/icons/EUR.svg' },
+      { title: 'Behandlungsdauer', description: '45–60 Min', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Wirkeintritt', description: '3–4 Wochen', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Sitzungen', description: '1–4 in der Aufbauphase (produktabhängig)', iconUrl: '/assets/icons/wiederholung.svg' },
-      { title: 'Anästhesie', description: 'auf Wunsch (Betäubungscreme)', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Sitzungen', description: '1–4 (produktabhängig)', iconUrl: '/assets/icons/wiederholung.svg' },
+      { title: 'Betäubung', description: 'auf Wunsch', iconUrl: '/assets/icons/Spritze.svg' },
       { title: 'Gesellschaftsfähig', description: 'meist sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note: '*Richtwert; individuelle Abrechnung nach GOÄ.',
@@ -272,6 +275,11 @@ export default function SkinboosterBremenPage() {
         question: 'Skinbooster, Profhilo oder Filler – was passt zu mir?',
         answer:
           'Skinbooster: Hydratation & Hautqualität (sehr oberflächlich, ohne Volumen). BAP-Technik (Biorevitalisierung): spezielles Remodelling-Konzept (eigene Seite). Filler: Volumen/Kontur & tiefere Falten. Wir beraten individuell.',
+      },
+      {
+        question: 'Mögliche Nebenwirkungen von Skinbooster-Behandlungen?',
+        answer:
+          'Die bei der Behandlung verwendete Hyaluronsäure ist risikoarm und gut verträglich. Wie bei allen Injektionsbehandlungen können jedoch folgende Reaktionen auftreten: Leichte Rötung und Schwellung an den Injektionsstellen für ca. 2–5 Tage, Blaue Flecken und Quaddeln an den Einstichstellen (selten), Allergische Reaktionen auf die Hyaluronsäure (sehr selten).',
       },
     ],
   };

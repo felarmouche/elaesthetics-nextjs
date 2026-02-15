@@ -83,7 +83,7 @@ export default function PolynukleotideBehandlungPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: "Was sind Polynukleotide und wie wirken sie?",
+    title: "Was sind Polynukleotide?",
     content: [
       "Polynukleotide sind ein innovatives, nicht-chirurgisches Verfahren der regenerativen Medizin, bei dem DNA-Fragmente zur Biostimulation der Hautregeneration und Kollagenproduktion eingesetzt werden.",
       "Als Biostimulatoren oder Bioaktivatoren unterstützen Polynukleotide die natürliche Regenerationsfähigkeit Ihrer Haut auf zellulärer Ebene. Sie fördern die Zellregeneration, stimulieren die Kollagenproduktion und verbessern die Durchblutung durch Angiogenese – die Bildung neuer Blutgefäße.",

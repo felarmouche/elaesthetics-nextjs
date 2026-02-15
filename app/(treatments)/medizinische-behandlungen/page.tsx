@@ -16,8 +16,6 @@ import {
     IntroSectionProps,
     TreatmentsSection,
     TreatmentsSectionProps,
-    RelatedLinksSection,
-    RelatedLink,
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema } from '@/lib/schema';
 import {medicalTreatment} from "@/data/treatments";
@@ -104,23 +102,6 @@ export default function BotulinumtoxinBehandlungenPage() {
         backgroundColor: "bg-[#F5FAFF]"
     };
 
-    const relatedLinks: RelatedLink[] = [
-        {
-            href: '/botulinumtoxin/masseter',
-            label: 'Masseter-Behandlung (Bruxismus)',
-            description: 'Überaktive Kaumuskulatur entspannen – gegen Kieferschmerzen, Zähneknirschen und Masseter-Hypertrophie.',
-        },
-        {
-            href: '/botulinumtoxin/migraene',
-            label: 'Migräne-Prophylaxe mit Botulinumtoxin',
-            description: 'Chronische Migräne behandeln nach dem PREEMPT-Schema – weniger Kopfschmerztage, mehr Lebensqualität.',
-        },
-        {
-            href: '/botulinumtoxin/hyperhidrose',
-            label: 'Hyperhidrose-Behandlung',
-            description: 'Übermäßiges Schwitzen an Achseln, Händen oder Stirn gezielt mit Botulinumtoxin reduzieren.',
-        },
-    ];
 
 const faqData: FAQSectionProps = {
   title: "Häufig gestellte Fragen (FAQ)",
@@ -261,7 +242,6 @@ const faqData: FAQSectionProps = {
             <TableOfContents items={tocItems} />
             <IntroSection {...introData} />
             <TreatmentsSection {...treatmentsData} />
-            <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
             <ConsultationSection />
             <FAQSection {...faqData} />
             <CTASection {...ctaData} />

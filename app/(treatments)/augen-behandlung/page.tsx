@@ -14,8 +14,6 @@ import {
     IntroSectionProps,
     TreatmentsSection,
     TreatmentsSectionProps,
-    RelatedLinksSection,
-    RelatedLink,
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema } from '@/lib/schema';
 // Annahme: Du hast diese Datenstruktur analog zu 'haarausfall' erstellt
@@ -82,24 +80,6 @@ export default function AugenHubPage() {
         treatments: augenbehandlungen
     };
 
-    const relatedLinks: RelatedLink[] = [
-        {
-            href: '/botulinumtoxin/faltenbehandlung',
-            label: 'Botulinumtoxin gegen Krähenfüße',
-            description: 'Feine Fältchen um die Augen gezielt mit Muskelrelaxans glätten – für einen wachen, entspannten Blick.',
-        },
-        {
-            href: '/polynukleotide',
-            label: 'Polynukleotide (PDRN)',
-            description: 'Regeneration der dünnen Haut unter den Augen – für mehr Dichte, Elastizität und weniger Schatten.',
-        },
-        {
-            href: '/eigenbluttherapie/vampir-lifting',
-            label: 'Vampir-Lifting (PRF)',
-            description: 'Eigenbluttherapie zur natürlichen Hauterneuerung und Verbesserung der Augenpartie.',
-        },
-    ];
-
     const faqData: FAQSectionProps = {
         title: 'Häufige Fragen zur Augenbehandlung',
         faqs: [
@@ -157,7 +137,6 @@ export default function AugenHubPage() {
             <TableOfContents items={tocItems} />
             <IntroSection {...introData} />
             <TreatmentsSection {...treatmentsData} />
-            <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
             <ConsultationSection />
             <FAQSection {...faqData} />
             <CTASection {...ctaData} />
