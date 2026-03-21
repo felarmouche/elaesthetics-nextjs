@@ -54,11 +54,13 @@ export default function VampirLiftingPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Vampir Lifting (PRF) in Bremen',
-        description: 'Ärztliche Eigenbluttherapie (PRF/PRP) für Hautregeneration und natürliches Lifting.',
-        url: '/eigenbluttherapie/vampir-lifting',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Vampir Lifting (PRF) in Bremen',
+          description: 'Ärztliche Eigenbluttherapie (PRF/PRP) für Hautregeneration und natürliches Lifting.',
+          url: '/eigenbluttherapie/vampir-lifting',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Vampir Lifting mit PRF/PRP',
         type: 'CosmeticProcedure',
@@ -72,7 +74,7 @@ export default function VampirLiftingPage() {
   const heroData: HeroSectionProps = {
     title: 'Vampir Lifting in Bremen',
     subtitle:
-      'Natürliches Lifting ohne Filler: Vampire Facial / Plasma‑Lifting unterstützt die Hautregeneration – dezent, präzise und ärztlich begleitet.',
+      'Natürliches Lifting ohne Filler: Vampire Facial / Plasma-Lifting zur Unterstützung der Hautqualität und eines frischen Hautbilds.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
     imageAlt: 'Vampir Lifting mit Eigenblut-Plasma für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Hautanalyse anfragen', href: '/kontakt' },
@@ -83,8 +85,8 @@ export default function VampirLiftingPage() {
     title: 'Vampir Lifting – was ist das?',
     content: [
       'Das Vampir Lifting (Vampire Facial) ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin, bei dem körpereigenes Plasma zur Unterstützung der Hautregeneration und Verbesserung der Hautqualität eingesetzt wird.',
-      'Sensible Zonen wie Unterlid/Tränenrinne werden besonders behutsam behandelt. Die Planung erfolgt individuell; Ergebnisse und Dauer sind erfahrungsabhängig und können variieren.',
-      'Für tiefergehende medizinische Infos zur Eigenbluttherapie (PRF/PRP) und zur Abgrenzung verlinken wir auf unsere Fachseite – diese Seite fokussiert bewusst die ästhetische Perspektive.',
+      'Die Behandlung kann die natürlichen Regenerationsprozesse der Haut unterstützen und so zu einer Verbesserung von Hautqualität und Hautbild beitragen. Sie wird unter anderem bei ungleichmäßiger Hautstruktur, erweiterten Poren, feinen Linien, Aknenarben, Pigmentunregelmäßigkeiten und dunklen Schatten unter den Augen eingesetzt.',
+      'Auch unreine und empfindliche Haut kann von der Behandlung profitieren.',
     ],
   };
 
@@ -94,19 +96,30 @@ export default function VampirLiftingPage() {
       {
         category: 'Gesicht & Dekolleté',
         items: [
-          { title: 'Augenbereich (Augenringe/Tränenrinne)', description: 'Unterlid, feine Linien – behutsame Anwendung' },
-          { title: 'Gesicht gesamt', description: 'Wangen, Stirn, Schläfen – Textur & Ebenmäßigkeit' },
-          { title: 'Nasolabial-/Marionettenzone', description: 'Unterstützung der Hautqualität' },
-          { title: 'Dekolleté', description: 'Glatteres Erscheinungsbild, Feuchtigkeitsgefühl' },
+          { title: 'Augenbereich (Augenringe/Tränenrinne)', description: 'Unterlid, feine Linien – behutsame und präzise Anwendung' },
+          { title: 'Gesicht gesamt', description: 'Wangen, Stirn, Schläfen – für ein harmonischeres Hautbild' },
+          { title: 'Nasolabial-/Marionettenzone', description: 'Zur Unterstützung von Hautqualität und Ebenmäßigkeit' },
+          { title: 'Dekolleté', description: 'Für ein glatter und gepflegt wirkendes Erscheinungsbild' },
         ],
       },
       {
-        category: 'Hautziele',
+        category: 'Ästhetische Hautziele',
         items: [
+          { title: 'Verfeinerung und Unterstützung eines ebenmäßigeren Hautbildes' },
           { title: 'Feiner erscheinende Poren' },
-          { title: 'Unterstützung bei feinen Linien' },
-          { title: 'Ebenmäßiger wirkender Teint' },
-          { title: 'Begleitend bei atrophen Aknenarben' },
+          { title: 'Unterstützung bei feinen Linien und ersten Fältchen' },
+          { title: 'Verbesserung der Hauttextur' },
+          { title: 'Minderung ungleichmäßiger Pigmentierungen' },
+          { title: 'Begleitende Behandlung atropher Aknenarben' },
+        ],
+      },
+      {
+        category: 'Hautqualität & Revitalisierung',
+        items: [
+          { title: 'Unterstützung natürlicher Regenerationsprozesse der Haut' },
+          { title: 'Unterstützung der Kollagen- und Elastinbildung' },
+          { title: 'Mehr Spannkraft und ein straffer wirkendes Hautbild' },
+          { title: 'Verbesserung der Hautqualität und des Hautgefühls' },
         ],
       },
     ],
@@ -116,22 +129,21 @@ export default function VampirLiftingPage() {
     title: 'Vampir Lifting auf einen Blick',
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.prpPrf.prpPrf}€ pro Sitzung*`, iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Dauer', description: 'ca. 60–90 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Serie', description: '3–6 Sitzungen, Abstand ~4–6 Wochen', iconUrl: '/assets/icons/wiederholung.svg' },
-      { title: 'Wirkeintritt', description: 'schrittweise im Serienverlauf', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Betäubung', description: 'lokal auf Wunsch', iconUrl: '/assets/icons/Spritze.svg' },
+      { title: 'Dauer', description: 'ca. 90-120 Min', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Serie', description: '4–6 Sitzungen, Abstand ~4–6 Wochen', iconUrl: '/assets/icons/wiederholung.svg' },
+      { title: 'Wirkeintritt', description: 'nach ca. 2-3 Behandlungen', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Betäubung', description: 'auf Wunsch', iconUrl: '/assets/icons/Spritze.svg' },
       { title: 'Gesellschaftsfähig', description: 'meist sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
-    note: '*Richtwert; Abrechnung nach GOÄ. Der konkrete Betrag wird im Beratungstermin individuell festgelegt.',
+    note: '* Richtwert; Abrechnung nach GOÄ. Der konkrete Betrag wird im Beratungstermin individuell festgelegt.',
   };
 
   const processData: ProcessSectionProps = {
     title: 'Ablauf vom Vampire‑Lift',
     steps: [
-      { number: '01', title: 'Hautanalyse & Aufklärung', description: 'Indikationsprüfung, Erwartungsmanagement und Fotodokumentation.' },
+      { number: '01', title: 'Hautanalyse & Aufklärung', description: 'In einem Beratungsgespräch wird die Eignung für die Behandlung geprüft und der Ablauf besprochen.' },
       { number: '02', title: 'Vorbereitung', description: 'Auf Wunsch Oberflächenbetäubung; Entnahme und Aufbereitung körpereigener Bestandteile.' },
-      { number: '03', title: 'Injektionen', description: 'Schonende, punktgenaue Applikation in definierten Ebenen – angepasst an Areal und Ziel.' },
-      { number: '04', title: 'Nachsorge & Serie', description: 'Kurze Beruhigungspflege, Hinweise für die ersten Tage, Planung weiterer Sitzungen.' },
+      { number: '03', title: 'Injektion', description: 'Matrix wird mit einer feinen Nadel in Abständen von ca. 1 cm in die betroffenen Bereiche der Haut injiziert.' },
     ],
   };
 
@@ -140,8 +152,8 @@ export default function VampirLiftingPage() {
     beforeTreatment: {
       title: 'Vor der Behandlung',
       instructions: [
-        { title: 'Medikamente', description: 'Blutverdünnende Schmerzmittel nur nach ärztlicher Rücksprache pausieren.' },
-        { title: 'Koffein/Nikotin/Alkohol', description: '48 Std. vorher möglichst reduzieren; am Behandlungstag meiden.' },
+        { title: 'Medikamente', description: '1 Woche vorher keine blutverdünnenden Medikamente einnehmen (z. B. Ibuprofen, Diclofenac, Aspirin). Rücksprache mit Ihrem behandelnden Arzt halten.' },
+        { title: 'Koffein/Nikotin/Alkohol', description: 'Verzicht auf Kaffee, koffeinhaltige Getränke, Nikotin und Alkohol mindestens 2 Tage vorher. Am Behandlungstag komplett darauf verzichten.' },
         { title: 'Hydration & Gesundheit', description: 'Ausreichend trinken, leichte Mahlzeit; nur gesund erscheinen.' },
       ],
     },
@@ -149,14 +161,15 @@ export default function VampirLiftingPage() {
       title: 'Nach der Behandlung',
       instructions: [
         { title: 'Schonung', description: 'Areale möglichst wenig berühren; 24 Std. kein Sport.' },
-        { title: 'Pflege', description: '2–3 Tage milde Produkte; Make‑up nur nach Freigabe (v. a. bei Kombi mit Needling).'},
+        { title: 'Pflege', description: '2–3 Tage milde Produkte; 2–3 Tage kein Make-up/Puder.' },
         { title: 'Behandlungen', description: '7 Tage keine Massagen/Peelings/energetischen Verfahren.' },
-        { title: 'Hitze/UV/Wasser', description: '7 Tage Sauna, Solarium, Sonne, Schwimmbad meiden; konsequenter Sonnenschutz.' },
+        { title: 'Hitze/UV/Wasser', description: '7 Tage Sauna, Solarium, Sonne, Schwimmbad meiden; mindestens LSF 50 verwenden.' },
+        { title: 'Sport', description: '1 Tag auf Sport verzichten.' },
       ],
     },
   };
 
-  
+
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Sinnvolle Alternativen & Kombinationen',
@@ -196,7 +209,12 @@ export default function VampirLiftingPage() {
       {
         question: 'Wie viele Sitzungen sind sinnvoll – und wann sehe ich etwas?',
         answer:
-          'Üblich sind 3–6 Sitzungen im Abstand von etwa 4–6 Wochen. Veränderungen entwickeln sich schrittweise im Serienverlauf; Wahrnehmung und Dauer sind individuell.',
+          'Empfohlen werden 4–6 Sitzungen im Abstand von etwa 4–6 Wochen. Erste Verbesserungen (volleres, rosigeres Hautgefühl) sind häufig nach 1–2 Wochen spürbar; sichtbare Optimierungen verstärken sich im Verlauf der Serie.',
+      },
+      {
+        question: 'Wie lange halten die Ergebnisse an?',
+        answer:
+          'Nach einer vollständigen Behandlungsserie halten die Ergebnisse in der Regel 1–2 Jahre. Faktoren wie Rauchen, intensive Sonnenexposition und der persönliche Lebensstil können eine frühere Auffrischung notwendig machen. Zur Erhaltung empfehlen sich 1–2 Behandlungen pro Jahr.',
       },
       {
         question: 'Eignet sich das Verfahren gegen Augenringe?',
@@ -212,6 +230,11 @@ export default function VampirLiftingPage() {
         question: 'Ist das dasselbe wie PRP/PRF?',
         answer:
           'Vampir Lifting wird im Alltag oft mit PRP/PRF gleichgesetzt. Diese Seite fokussiert die ästhetische Perspektive; detaillierte medizinische Unterschiede erläutern wir auf der Eigenblut‑Fachseite und im Gespräch.',
+      },
+      {
+        question: 'Was sind mögliche Nebenwirkungen?',
+        answer:
+          'Nach der Behandlung können leichte Rötungen, Schwellungen oder ein Spannungsgefühl auftreten. Die Haut beruhigt sich in der Regel innerhalb von ein bis zwei Stunden. Kleinere Blutergüsse können vorkommen, diese können nach 1–2 Tagen problemlos abgedeckt werden. Bei Kombinationsbehandlungen mit Microneedling müssen Sie mit einer längeren Regenerationszeit rechnen.'
       },
     ],
   };

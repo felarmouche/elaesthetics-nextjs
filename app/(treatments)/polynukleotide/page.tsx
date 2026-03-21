@@ -58,11 +58,13 @@ export default function PolynukleotideBehandlungPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Polynukleotide-Behandlung in Bremen',
-        description: 'Ärztliche Biostimulation mit Polynukleotiden für Hautregeneration und Haarwachstumsförderung.',
-        url: '/polynukleotide',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Polynukleotide-Behandlung in Bremen',
+          description: 'Ärztliche Biostimulation mit Polynukleotiden für Hautregeneration und Haarwachstumsförderung.',
+          url: '/polynukleotide',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Polynukleotide-Behandlung',
         type: 'CosmeticProcedure',
@@ -85,9 +87,9 @@ export default function PolynukleotideBehandlungPage() {
   const introData: IntroSectionProps = {
     title: "Was sind Polynukleotide?",
     content: [
-      "Polynukleotide sind ein innovatives, nicht-chirurgisches Verfahren der regenerativen Medizin, bei dem DNA-Fragmente zur Biostimulation der Hautregeneration und Kollagenproduktion eingesetzt werden.",
-      "Als Biostimulatoren oder Bioaktivatoren unterstützen Polynukleotide die natürliche Regenerationsfähigkeit Ihrer Haut auf zellulärer Ebene. Sie fördern die Zellregeneration, stimulieren die Kollagenproduktion und verbessern die Durchblutung durch Angiogenese – die Bildung neuer Blutgefäße.",
-      "In unserer Praxis in Bremen nutzen wir Polynukleotide zur Behandlung verschiedener ästhetischer und medizinischer Anliegen: von der Hautregeneration und Faltenreduktion über die Behandlung von Aknenarben bis hin zur Förderung des Haarwachstums. Die Behandlung ist biologisch verträglich und bietet natürliche, langanhaltende Ergebnisse durch die Aktivierung körpereigener Heilungs- und Regenerationsprozesse."
+      "Polynukleotide sind ein innovatives Verfahren in der regenerativen Medizin. Sie werden aus der DNA von Lachsforellen gewonnen und haben ihren Ursprung in der Wundheilungsforschung. Sie werden nicht nur in der ästhetischen Medizin eingesetzt, sondern auch zur Behandlung chronischer Wunden.",
+      "In der ästhetischen Medizin regen sie die Zellregeneration, Zellneubildung und Kollagenproduktion an. Sie verbessern die Hautstruktur, besonders die empfindliche Haut unter den Augen, bei Augenringen und Fältchen. Sie können ebenso bei Narben, Aknenarben, Schwangerschaftsstreifen, Pigmentstörungen und Haarausfall helfen.",
+      "Darüber hinaus kommen sie auch bei entzündlichen Hautproblemen wie Rosazea zum Einsatz. Die Behandlung ist biologisch verträglich und bietet eine natürliche, nachhaltige Methode, um körpereigene Heilungs- und Regenerationsprozesse zu aktivieren."
     ]
   };
 
@@ -123,7 +125,7 @@ export default function PolynukleotideBehandlungPage() {
           { title: "Verbesserung der Hautqualität um die Augen" }
         ]
       }
-      
+
     ]
   };
 
@@ -223,7 +225,7 @@ export default function PolynukleotideBehandlungPage() {
     }
   };
 
-  
+
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere regenerative Behandlungen in Bremen",
@@ -318,7 +320,7 @@ export default function PolynukleotideBehandlungPage() {
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      
+
       <ConsultationSection />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />

@@ -258,7 +258,7 @@ export default function MesotherapieHaarePage() {
       },
       {
         question: "Für wen ist die Therapie geeignet?",
-        answer: "Die Mesotherapie eignet sich für Frauen und Männer mit verschiedenen Formen von Haarausfall: erblich bedingter Haarausfall (androgenetische Alopezie), diffuser Haarausfall (hormonell, stressbedingt, ernährungsbedingt), kreisrunder Haarausfall in leichten Formen, sowie dünnes, lichtes Haar mit Volumenverlust. Besonders effektiv ist die Behandlung in frühen bis mittleren Stadien des Haarausfalls. Bei sehr fortgeschrittenem Haarausfall mit bereits inaktiven Haarfollikeln sind die Erfolgsaussichten geringer."
+        answer: "Die Mesotherapie eignet sich grundsätzlich für Frauen und Männer mit verschiedenen Formen von Haarausfall: erblich bedingter Haarausfall (androgenetische Alopezie), diffuser Haarausfall (hormonell, stressbedingt, ernährungsbedingt), kreisrunder Haarausfall in leichten Formen, sowie dünnes, lichtes Haar mit Volumenverlust. Besonders effektiv ist die Behandlung in frühen bis mittleren Stadien des Haarausfalls. Wir raten bei bestimmten Allergien, Krebserkrankungen, Blutgerinnungsstörungen sowie während der Schwangerschaft und Stillzeit von dieser Therapieform ab. Die Mesotherapie kann auch als unterstützende Maßnahme nach einer Haartransplantation zum Einsatz kommen."
       },
       {
         question: "Wie viele Behandlungen sind notwendig?",
@@ -266,7 +266,7 @@ export default function MesotherapieHaarePage() {
       },
       {
         question: "Wann sehe ich erste Ergebnisse?",
-        answer: "Die meisten Patienten bemerken ab der 3. Behandlung eine deutliche Reduktion des Haarausfalls – weniger Haare in der Bürste, im Abfluss oder auf dem Kissen. Nach etwa 2-3 Monaten wird das Haar sichtbar dichter und kräftiger. Das Haarwachstum verbessert sich kontinuierlich über mehrere Monate. Wichtig ist Geduld: Haare wachsen langsam (ca. 1cm pro Monat), daher braucht die vollständige Verdichtung Zeit."
+        answer: "Die meisten Patienten bemerken ab der 3. Behandlung eine deutliche Reduktion des Haarausfalls – weniger Haare in der Bürste, im Abfluss oder auf dem Kissen. Nach etwa 2-3 Monaten wird das Haar sichtbar dichter und kräftiger, die Haut wirkt frischer und besser durchblutet, und die Schuppenbildung lässt nach. Das Haarwachstum verbessert sich kontinuierlich über mehrere Monate. Wichtig ist Geduld: Haare wachsen langsam (ca. 1cm pro Monat), daher braucht die vollständige Verdichtung Zeit."
       },
       {
         question: "Gibt es Ausfallzeiten nach der Behandlung?",

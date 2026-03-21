@@ -4,7 +4,6 @@ import {
   TableOfContents,
   TOCItem,
   AreasSection,
-  ConsultationSectionProps,
   AreasSectionProps,
   TreatmentCareSectionProps,
   QuickInfoSection,
@@ -60,11 +59,13 @@ export default function PRFMicroneedlingPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'PRF Microneedling in Bremen',
-        description: 'Ärztliche Kombination aus medizinischem Microneedling und Eigenbluttherapie (PRF) für Hautregeneration.',
-        url: '/eigenbluttherapie/microneedling',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'PRF Microneedling in Bremen',
+          description: 'Ärztliche Kombination aus medizinischem Microneedling und Eigenbluttherapie (PRF) für Hautregeneration.',
+          url: '/eigenbluttherapie/microneedling',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'PRF Microneedling',
         type: 'CosmeticProcedure',
@@ -78,7 +79,7 @@ export default function PRFMicroneedlingPage() {
   const heroData: HeroSectionProps = {
     title: 'PRF Microneedling (Plasma-Needling) in Bremen',
     subtitle:
-      'Microneedling + PRF-Matrix: Die Kombination zur Unterstützung der Regeneration – für verfeinerte Poren, glattere Textur und ein ebenmäßigeres Hautbild, ärztlich durchgeführt.',
+      'Die Kombination aus Microneedling und PRF-Matrix unterstützt die Hautregeneration und kann zu einem verfeinert wirkenden Hautbild, glatterer Hauttextur und einem ebenmäßigeren Erscheinungsbild beitragen.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
     imageAlt: 'PRF Microneedling mit Plasma-Needling – EL Aesthetics Bremen',
     primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
@@ -136,21 +137,27 @@ export default function PRFMicroneedlingPage() {
     steps: [
       {
         number: '01',
-        title: 'Beratung & Vorbereitung',
+        title: 'Beratung & Anästhesie',
         description:
-          'Indikationsprüfung, Hautanalyse und Aufklärung. Optional Anästhesiecreme (Einwirkzeit ~30 Min). Anschließend Blutabnahme und PRF-Herstellung nach Protokoll.'
+          'Indikationsprüfung, Hautanalyse und Aufklärung. Auftragen der Anästhesiecreme – Einwirkzeit ca. 30 Minuten.'
       },
       {
         number: '02',
-        title: 'Microneedling + PRF-Applikation',
+        title: 'Blutentnahme & PRF-Herstellung',
         description:
-          'Needling in geeigneter Eindringtiefe; die PRF-Matrix wird in/auf die Haut eingebracht und verteilt, um die Regeneration zu unterstützen.'
+          'Blutabnahme und Aufbereitung nach PRF-Protokoll (Zentrifugation ohne Antikoagulanzien, Fibrin-Matrix-Bildung).'
       },
       {
         number: '03',
-        title: 'Beruhigung & Schutz',
+        title: 'Microneedling + PRF-Applikation',
         description:
-          'Beruhigende Maske/Abschluss-Pflege und Hinweise zur Nachsorge. Gesamtdauer meist 60–90 Minuten.'
+          'Needling mit dem Dermapen in individuell angepasster Eindringtiefe; die PRF-Matrix wird gleichzeitig in/auf die Haut eingearbeitet.'
+      },
+      {
+        number: '04',
+        title: 'Beruhigende Maske & Nachsorge',
+        description:
+          'Abschließende beruhigende Maske (ca. 15 Minuten) sowie individuelle Nachsorgeinstruktionen. Gesamtdauer meist 60–90 Minuten.'
       }
     ]
   };
@@ -173,7 +180,12 @@ export default function PRFMicroneedlingPage() {
         {
           title: 'Hydration & Ernährung',
           description:
-            'Ausreichend trinken und nicht nüchtern erscheinen; nur behandeln lassen, wenn Sie gesund sind.'
+            'Ausreichend trinken und nicht nüchtern erscheinen.'
+        },
+        {
+          title: 'Gesundheit',
+          description:
+            'Nur behandeln lassen, wenn Sie infektfrei sind – bei akuten Entzündungen oder Erkrankungen Termin verschieben.'
         }
       ]
     },
@@ -185,12 +197,12 @@ export default function PRFMicroneedlingPage() {
         { title: 'Kosmetische Eingriffe', description: '7 Tage keine Massagen, Packungen, Peelings.' },
         { title: 'Hitze & Wasser', description: '7 Tage Sauna, Solarium, Sonnenbäder, Schwimmbad meiden.' },
         { title: 'Sport', description: '24 Stunden Pause.' },
-        { title: 'Sonne & LSF', description: 'Direkte Sonne ca. 2 Wochen meiden; LSF 30–50 verwenden.' }
+        { title: 'Sonne & LSF', description: 'Direkte Sonne ca. 2 Wochen meiden; mindestens LSF 50 verwenden.' }
       ]
     }
   };
 
-  
+
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen mit Eigenblut',
@@ -238,7 +250,12 @@ export default function PRFMicroneedlingPage() {
       {
         question: 'Wie viele Sitzungen sind sinnvoll und wann zeigt sich ein Effekt?',
         answer:
-          'Bewährt sind 3–5 Behandlungen im Abstand von etwa 4 Wochen. Verbesserungen entwickeln sich über Wochen, die sichtbare Textur-Optimierung verstärkt sich im Verlauf der Serie.'
+          'Empfohlen werden 4–6 Behandlungen im Abstand von etwa 4 Wochen. Erste Verbesserungen sind oft nach 1–2 Wochen spürbar (volleres, rosigeres Hautgefühl); die sichtbare Textur-Optimierung verstärkt sich im Verlauf der Serie.'
+      },
+      {
+        question: 'Wie lange halten die Ergebnisse an?',
+        answer:
+          'Nach einer vollständigen Behandlungsserie halten die Ergebnisse in der Regel 1–2 Jahre. Faktoren wie Rauchen, intensive Sonnenexposition und Lebensstil können eine frühere Auffrischung notwendig machen. Zur Erhaltung empfehlen sich 1–2 Auffrischungsbehandlungen pro Jahr.'
       },
       {
         question: 'Welche Nebenwirkungen sind möglich?',
@@ -265,7 +282,7 @@ export default function PRFMicroneedlingPage() {
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' }
   };
 
-   const tocItems: TOCItem[] = [
+  const tocItems: TOCItem[] = [
     { id: 'intro', label: 'Über die Behandlung' },
     { id: 'areas', label: 'Indikationen' },
     { id: 'quickInfos', label: 'Überblick' },

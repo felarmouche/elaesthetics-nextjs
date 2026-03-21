@@ -18,7 +18,7 @@ export const PRICES = {
   hyaluronFiller: {
     fillerUnterspritzung: 250, // "ab"
     hyaluronidase: 180, // "ab"
-    profhilo:280,
+    profhilo: 280,
     skinbooster1ml: 180, // "ab"
     skinbooster2ml: 330, // "ab"
     biorevitalisierungHyaluron: 280, // "ab"
@@ -29,14 +29,14 @@ export const PRICES = {
 
   prpPrf: {
     prpPrf: 300, // "ab"
-    microneedling: 250, // "Einzelbehandlung ab"
+    microneedling: 300, // "Einzelbehandlung ab"
   },
 
   medizinischesMicroneedling: 250,
 
   haare: {
     prpPrf: 300, // "Einzelbehandlung ab"
-    mesotherapie: 250, // "Einzelbehandlung ab"
+    mesotherapie: 220, // "Einzelbehandlung ab"
     polynukleotide2ml: 280, // "Einzelbehandlung ab"
   },
 

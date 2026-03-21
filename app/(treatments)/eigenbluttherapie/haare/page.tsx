@@ -5,7 +5,6 @@ import {
   TOCItem,
   AreasSection,
   AreasSectionProps,
-  ConsultationSectionProps,
   ConsultationSection,
   HubTeaserSection,
   CTASectionProps,
@@ -58,11 +57,13 @@ export default function PRFHaarePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Eigenbluttherapie bei Haarausfall in Bremen',
-        description: 'Ärztliche PRF/PRP-Therapie zur Unterstützung bei Haarausfall und zur Förderung der Haardichte.',
-        url: '/eigenbluttherapie/haare',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Eigenbluttherapie bei Haarausfall in Bremen',
+          description: 'Ärztliche PRF/PRP-Therapie zur Unterstützung bei Haarausfall und zur Förderung der Haardichte.',
+          url: '/eigenbluttherapie/haare',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Eigenbluttherapie bei Haarausfall (PRF/PRP)',
         type: 'MedicalProcedure',
@@ -74,7 +75,7 @@ export default function PRFHaarePage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: 'Eigenbluttherapie Haarausfall Behandlung in Bremen',
+    title: 'Eigenbluttherapie Haarausfall-Behandlung in Bremen',
     subtitle:
       'Eigenbluttherapie Haarausfall Behandlung (PRF/PRP) zur Unterstützung der Haardichte und Kopfhautgesundheit. Bei erblich bedingtem oder kreisrundem Haarausfall, oder nach einer Haartransplantation',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
@@ -153,7 +154,9 @@ export default function PRFHaarePage() {
     afterTreatment: {
       title: 'Nach der Behandlung',
       instructions: [
-        { title: 'Schutz', description: '24–48 Std. keinen intensiven Sport/Schwitzen; 7 Tage starke Hitze/UV meiden.' },
+        { title: 'Einstichstellen', description: 'Behandelte Areale möglichst nicht berühren; Hände vorher reinigen.' },
+        { title: 'Abendliche Spülung', description: 'Am Behandlungsabend die Kopfhaut nur mit klarem Wasser abspülen.' },
+        { title: 'Schutz', description: '24 Stunden keinen Sport; 7 Tage starke Hitze/UV meiden.' },
         { title: 'Haarwäsche', description: 'Ab dem Folgetag mit mildem Shampoo möglich; Kopfhaut nicht reizen.' },
         { title: 'Chemische Behandlungen', description: '1–2 Wochen keine Färbungen/chemische Behandlungen.' },
         { title: 'Pflege', description: 'Milde Kopfhautpflege; Massage erst nach ~48 Std. sanft beginnen.' },
@@ -161,7 +164,7 @@ export default function PRFHaarePage() {
     },
   };
 
-  
+
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Optionen bei Haarausfall',
@@ -173,50 +176,60 @@ export default function PRFHaarePage() {
   };
 
   const faqData: FAQSectionProps = {
-  title: 'Häufige Fragen zu PRF/PRP für die Haare',
-  faqs: [
-    {
-      question: 'PRP Haar-Behandlung für Frauen - macht das Sinn?',
-      answer:
-        'Viele Patientinnen berichten nach einer Behandlungsserie über vollere Haaransätze und eine verbesserte Haarqualität. Die Ergebnisse sind individuell unterschiedlich; eine allgemeingültige Wirkung kann nicht zugesichert werden.',
-    },
-    {
-      question: 'Eigenbluttherapie nach Haartransplantation  – ist das sinnvoll?',
-      answer:
-        'Begleitende PRF/PRP-Behandlungen werden häufig eingesetzt, um das Transplantatmilieu zu unterstützen. Zeitpunkt, Häufigkeit und Nutzen werden individuell mit der behandelnden Fachärztin oder dem Facharzt abgestimmt.',
-    },
-    {
-      question: 'Welche Erfahrungen gibt es mit Eigenbluttherapie bei Haarausfall?',
-      answer:
-        'Rückmeldungen variieren: Oft genannt werden weniger saisonaler Haarausfall, dichtere Areale und eine verbesserte Haarstruktur nach mehreren Sitzungen. Eine objektive Beurteilung erfolgt über Fotodokumentation und Haardichteanalysen.',
-    },
-    {
-      question: 'Zeigen Sie Vorher-Nachher-Bilder zur Eigenbluttherapie?',
-      answer:
-        'Vorher-/Nachher-Vergleiche nutzen wir primär intern zur Verlaufskontrolle. Öffentliche Einzelfall-Darstellungen oder werbende Erfolgsgeschichten vermeiden wir aus Gründen des Heilmittelwerbegesetzes (HWG). Im Beratungsgespräch zeigen wir gerne, wie wir Ergebnisse neutral dokumentieren.',
-    },
-    {
-      question: 'Was kostet eine PRF/PRP-Behandlung?',
-      answer:
-        'Der Richtwert liegt bei etwa 350 € pro Sitzung (GOÄ-orientiert). Paketpreise für Behandlungsserien sind möglich. Der konkrete Betrag hängt von Areal, Material und Zeitaufwand ab.',
-    },
-    {
-      question: 'Wann sind erste Ergebnisse sichtbar?',
-      answer:
-        'Erste Veränderungen (z. B. weniger Haarausfall) zeigen sich häufig nach 2–3 Sitzungen. Eine sichtbare Verdichtung oder verbesserte Haarqualität ist meist nach 3–6 Monaten zu erkennen – abhängig vom individuellen Haarzyklus.',
-    },
-    {
-      question: 'Ist die Behandlung schmerzhaft?',
-      answer:
-        'Mit Betäubungscreme wird die Behandlung in der Regel gut vertragen. Während der Mikro-Injektionen berichten viele über ein kurzes Pieken oder Druckgefühl. Eine mögliche Empfindlichkeit der Kopfhaut klingt meist rasch ab.',
-    },
-    {
-      question: 'Welche Risiken gibt es?',
-      answer:
-        'Gelegentlich können vorübergehende Reaktionen wie Rötung, Schwellung, kleine Hämatome oder ein Spannungsgefühl auftreten. Allergische Reaktionen sind aufgrund der Eigenblutbasis sehr selten. Mögliche Kontraindikationen werden vorab sorgfältig geprüft.',
-    },
-  ],
-};
+    title: 'Häufige Fragen zu PRF/PRP für die Haare',
+    faqs: [
+      {
+        question: 'PRP Haar-Behandlung für Frauen - macht das Sinn?',
+        answer:
+          'Viele Patientinnen berichten nach einer Behandlungsserie über vollere Haaransätze und eine verbesserte Haarqualität. Die Ergebnisse sind individuell unterschiedlich; eine allgemeingültige Wirkung kann nicht zugesichert werden.',
+      },
+      {
+        question: 'Eigenbluttherapie nach Haartransplantation  – ist das sinnvoll?',
+        answer:
+          'Begleitende PRF/PRP-Behandlungen werden häufig eingesetzt, um das Transplantatmilieu zu unterstützen. Zeitpunkt, Häufigkeit und Nutzen werden individuell mit der behandelnden Fachärztin oder dem Facharzt abgestimmt.',
+      },
+      {
+        question: 'Welche Erfahrungen gibt es mit Eigenbluttherapie bei Haarausfall?',
+        answer:
+          'Rückmeldungen variieren: Oft genannt werden weniger saisonaler Haarausfall, dichtere Areale und eine verbesserte Haarstruktur nach mehreren Sitzungen. Eine objektive Beurteilung erfolgt über Fotodokumentation und Haardichteanalysen.',
+      },
+      {
+        question: 'Zeigen Sie Vorher-Nachher-Bilder zur Eigenbluttherapie?',
+        answer:
+          'Vorher-/Nachher-Vergleiche nutzen wir primär intern zur Verlaufskontrolle. Öffentliche Einzelfall-Darstellungen oder werbende Erfolgsgeschichten vermeiden wir aus Gründen des Heilmittelwerbegesetzes (HWG). Im Beratungsgespräch zeigen wir gerne, wie wir Ergebnisse neutral dokumentieren.',
+      },
+      {
+        question: 'Was kostet eine PRF/PRP-Behandlung?',
+        answer:
+          'Der Richtwert liegt bei etwa 350 € pro Sitzung (GOÄ-orientiert). Paketpreise für Behandlungsserien sind möglich. Der konkrete Betrag hängt von Areal, Material und Zeitaufwand ab.',
+      },
+      {
+        question: 'Wann sind erste Ergebnisse sichtbar?',
+        answer:
+          'Erste Veränderungen (z. B. weniger Haarausfall) zeigen sich häufig nach 2–3 Sitzungen. Die maximale Wirksamkeit einer vollständigen Serie (4–6 Sitzungen) ist typischerweise nach ca. 6 Monaten zu beurteilen – abhängig vom individuellen Haarzyklus.',
+      },
+      {
+        question: 'Wie lange halten die Ergebnisse an?',
+        answer:
+          'Nach einer vollständigen Behandlungsserie können die Ergebnisse 1–2 Jahre anhalten. Zur Erhaltung empfehlen sich 1–2 Auffrischungsbehandlungen pro Jahr. Lebensstil, Ernährung und Hormonstatus können die Haltbarkeit beeinflussen.',
+      },
+      {
+        question: 'Welche Kontraindikationen gibt es?',
+        answer:
+          'PRF/PRP-Behandlungen sind nicht geeignet bei Schwangerschaft und Stillzeit, Gerinnungsstörungen oder Einnahme von Antikoagulanzien, akuten oder chronischen Infektionen sowie aktiven Entzündungen im Behandlungsareal. Die individuelle Eignung wird im ärztlichen Gespräch geprüft.',
+      },
+      {
+        question: 'Ist die Behandlung schmerzhaft?',
+        answer:
+          'Mit Betäubungscreme wird die Behandlung in der Regel gut vertragen. Während der Mikro-Injektionen berichten viele über ein kurzes Pieken oder Druckgefühl. Eine mögliche Empfindlichkeit der Kopfhaut klingt meist rasch ab.',
+      },
+      {
+        question: 'Welche Risiken gibt es?',
+        answer:
+          'Gelegentlich können vorübergehende Reaktionen wie Rötung, Schwellung, kleine Hämatome oder ein Spannungsgefühl auftreten. Allergische Reaktionen sind aufgrund der Eigenblutbasis sehr selten. Mögliche Kontraindikationen werden vorab sorgfältig geprüft.',
+      },
+    ],
+  };
 
 
   const ctaData: CTASectionProps = {

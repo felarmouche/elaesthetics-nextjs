@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem} from '@/components/TreatmentPageComponents';
+import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
@@ -33,11 +33,13 @@ export default function MesotherapieHautPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Mesotherapie für die Haut in Bremen',
-        description: 'Ärztliche Mesotherapie-Behandlung zur Verbesserung der Hautqualität mit Mikronährstoffen und Hyaluronsäure.',
-        url: '/mesotherapie/haut',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Mesotherapie für die Haut in Bremen',
+          description: 'Ärztliche Mesotherapie-Behandlung zur Verbesserung der Hautqualität mit Mikronährstoffen und Hyaluronsäure.',
+          url: '/mesotherapie/haut',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Mesotherapie für Gesicht und Hautqualität',
         type: 'CosmeticProcedure',
@@ -110,7 +112,7 @@ export default function MesotherapieHautPage() {
       { title: "Haltbarkeit", description: "6 Monate", iconUrl: "/assets/icons/CAL.svg" },
       { title: "Behandlungen", description: "3-5 Sitzungen alle 2-4 Wochen\nAuffrischung: 2x pro Jahr", iconUrl: "/assets/icons/wiederholung.svg" },
       { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }
+      { title: "Ausfallzeit", description: "in der Regel sofort gesellschaftsfähig", iconUrl: "/assets/icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -195,21 +197,6 @@ export default function MesotherapieHautPage() {
     }
   };
 
-  
-
-  const consultationData: ConsultationSectionProps = {
-    title: "Ihre Expertin für Mesotherapie in Bremen",
-    description: [
-      "Sie möchten Ihre Hautqualität verbessern und Ihrem Gesicht mehr Strahlkraft verleihen?",
-      "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und Gründerin von EL Aesthetics. Mit langjähriger Erfahrung in der Mesotherapie verhelfe ich Ihnen zu einem ebenmäßigen, frischen Teint – individuell auf Ihre Hautbedürfnisse abgestimmt.",
-      "Ich bin zertifiziert für Injektionsbehandlungen und Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT). Durch kontinuierliche Fortbildungen bleibe ich auf dem neuesten Stand der ästhetischen Medizin und Hautverjüngung.",
-      "Bei EL Aesthetics in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihre Haut zum Strahlen bringen kann."
-    ],
-    ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/kontakt",
-    backgroundColor: "bg-[#FDF6F0]"
-  };
-
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere Hautverbesserung-Behandlungen in Bremen",
     treatments: [
@@ -253,7 +240,7 @@ export default function MesotherapieHautPage() {
       },
       {
         question: "Welche Ergebnisse kann ich erwarten?",
-        answer: "Klinische Studien zeigen beeindruckende Ergebnisse: bis zu 43% Reduktion feiner Linien, eine Steigerung der Hautfeuchtigkeit um bis zu 132%, eine Zunahme der Hautdichte um bis zu 24% und eine erhöhte Strahlkraft der Haut um bis zu 144%. Die Haut wirkt frischer, gleichmäßiger und jugendlicher. Besonders bei Augenringen, feinen Falten und fahlem Teint sind die Ergebnisse deutlich sichtbar."
+        answer: "Klinische Studien zeigen beeindruckende Ergebnisse: bis zu 43% Reduktion feiner Linien, eine Steigerung der Hautfeuchtigkeit um bis zu 132%, eine Zunahme der Hautdichte um bis zu 24%, eine Verbesserung der Hautdicke um bis zu 20%, eine gleichmäßigere Hautstruktur (bis zu +52%) und eine erhöhte Strahlkraft der Haut um bis zu 144%. Die Haut wirkt frischer, gleichmäßiger und jugendlicher. Besonders bei Augenringen, feinen Falten und fahlem Teint sind die Ergebnisse deutlich sichtbar."
       },
       {
         question: "Ist die Behandlung schmerzhaft?",
@@ -307,7 +294,7 @@ export default function MesotherapieHautPage() {
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      
+
       <ConsultationSection />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />

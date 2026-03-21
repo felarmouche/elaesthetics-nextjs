@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import {
-  ConsultationSectionProps,
   ConsultationSection,
   TableOfContents,
   TOCItem,
@@ -17,7 +16,6 @@ import {
   CTASection,
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema } from '@/lib/schema';
-import { Review } from '@/types/Review';
 
 export const metadata: Metadata = {
   title: 'Eigenbluttherapie PRF & PRP Bremen | Haut & Haare | EL Aesthetics',
@@ -59,7 +57,7 @@ export default function EigenbluttherapiePRFPage() {
   const heroData: HeroSectionProps = {
     title: 'Eigenbluttherapie in Bremen',
     subtitle:
-      'PRF/PRP – autologe Plasma‑Behandlung für Hautqualität & Haare. Natürlich, ärztlich geplant, mit realistischen Erwartungen.',
+      'PRF/PRP für Hautqualität und Haare. Natürliche autologe Plasma-Behandlung zur ästhetischen Unterstützung von Hautbild und Haaren',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
     imageAlt: 'Eigenbluttherapie PRF/PRP für Haut und Haare – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungsgespräch vereinbaren', href: '/kontakt' },
@@ -69,9 +67,9 @@ export default function EigenbluttherapiePRFPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist eine PRF Behandlung (Eigenbluttherapie)?',
     content: [
-      'Die Eigenbluttherapie (PRF/PRP) ist ein nicht-chirurgisches Verfahren der regenerativen Medizin, bei dem körpereigene Blutbestandteile zur Unterstützung der Haut- und Haarregeneration eingesetzt werden.',
-      'Bei PRF entsteht eine feine Fibrin‑Matrix, die gebundene Faktoren zeitlich verzögert freisetzen kann. PRP ist eine flüssige Aufbereitung mit hoher Thrombozytenkonzentration. Welche Variante sinnvoll ist, hängt vom Areal und Ziel ab; dies wird ärztlich besprochen.',
-      'Typische Anliegen: Unterstützung der Hautqualität (Textur, feine Linien, Poren, Aknenarben), behutsame Anwendung im Unterlidbereich sowie ergänzend bei verschiedenen Formen von Haarausfall (z. B. androgenetisch, diffus) oder nach Haartransplantation.',
+      'Plättchenreiches Fibrin (PRF) ist eine moderne Eigenbluttherapie, die als Weiterentwicklung der bekannten PRP-Therapie gilt.',
+      'Sie ist eine minimalinvasive und innovative Methode zur Biostimulation und Revitalisierung der Haut sowie zur unterstützenden Anwendung bei Haarausfall. Besonders schonend und zu 100 % natürlich, setzt sie ausschließlich auf körpereigene Substanzen.',
+      'Während bei der PRP-Therapie Blutplasma verwendet wird, arbeite ich bei der PRF-Behandlung mit blutplättchenreichem Fibrin. Dieses enthält mehr Wachstumsfaktoren sowie Stammzellen, die mit regenerativen Prozessen der Haut und der Kopfhaut in Verbindung gebracht werden.'
     ],
   };
 
@@ -105,7 +103,7 @@ export default function EigenbluttherapiePRFPage() {
     ],
   };
 
-  
+
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur Behandlung',
