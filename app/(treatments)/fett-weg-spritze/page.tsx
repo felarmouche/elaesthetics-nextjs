@@ -30,7 +30,7 @@ import { botoxFalten, filler, microneedling } from "@/data/treatments";
 import { PRICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
-    title: 'Fett-weg-Spritze Bremen | Injektionslipolyse Doppelkinn | EL Aesthetics',
+    title: 'Fett-weg-Spritze Bremen – Doppelkinn',
     description: 'Fett-weg-Spritze in Bremen: Ärztliche Injektionslipolyse für Doppelkinn und lokale Fettdepots. Beratung zu Ablauf, Sitzungen & Kosten. Jetzt Termin vereinbaren.',
     keywords: ['Fett-weg-Spritze Bremen', 'Injektionslipolyse Bremen', 'Doppelkinn entfernen Bremen', 'Fettreduktion ohne OP Bremen'],
     openGraph: {

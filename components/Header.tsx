@@ -168,8 +168,8 @@ export default function Header() {
                 {/* Wir nutzen fixed positioning um volle Breite zu gewährleisten, aber beschränkt auf den Container */}
                 <div
                   className={`absolute top-full left-1/2 -translate-x-1/2 w-[90vw] max-w-6xl bg-white shadow-xl border-t border-gray-100 rounded-b-xl overflow-hidden transition-all duration-300 transform origin-top ${activeDesktopMenu === 'treatments'
-                      ? 'opacity-100 translate-y-0 visible'
-                      : 'opacity-0 -translate-y-2 invisible pointer-events-none'
+                    ? 'opacity-100 translate-y-0 visible'
+                    : 'opacity-0 -translate-y-2 invisible pointer-events-none'
                     }`}
                 >
                   <div className="flex p-8 gap-8">
@@ -225,6 +225,7 @@ export default function Header() {
 
               <Link href="/preise" className="font-medium text-gray-600 hover:text-black transition-colors duration-200">Preise</Link>
               <Link href="/#about" className="font-medium text-gray-600 hover:text-black transition-colors duration-200">About</Link>
+              <Link href="/kontakt" className="font-medium text-gray-600 hover:text-black transition-colors duration-200">Kontakt</Link>
             </nav>
 
             {/* Rechte Seite: Buttons */}

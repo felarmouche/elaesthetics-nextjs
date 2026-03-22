@@ -6,7 +6,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Contact from '@/components/Contact'
 import Breadcrumbs from '@/components/Breadcrumbs'
-import { getPracticeSchema, getPhysicianSchema } from '@/lib/schema'
+import { getPracticeSchema, getPhysicianSchema, getWebSiteSchema } from '@/lib/schema'
 import { getGoogleReviews } from '@/lib/googleReviews'
 
 const inter = Inter({
@@ -58,6 +58,7 @@ export default async function RootLayout({
   const graphSchema = {
     '@context': 'https://schema.org',
     '@graph': [
+      getWebSiteSchema(),
       getPracticeSchema(aggregateRating),
       getPhysicianSchema(),
     ],

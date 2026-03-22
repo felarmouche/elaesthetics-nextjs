@@ -7,7 +7,7 @@ import { getPriceListSchema } from '@/lib/schema';
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Preise ästhetische Behandlungen Bremen | EL Aesthetics",
+  title: "Preise Ästhetische Behandlungen Bremen",
   description:
     "Preisliste EL Aesthetics Bremen: Botulinumtoxin, Hyaluron, PRF & mehr. Transparente Kostenaufklärung für ästhetische Behandlungen.",
   keywords:

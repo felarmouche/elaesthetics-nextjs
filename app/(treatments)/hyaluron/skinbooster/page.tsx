@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import {PRICES} from '@/lib/constants'
+import { PRICES } from '@/lib/constants'
 import {
   AreasSection,
   AreasSectionProps,
@@ -29,11 +29,10 @@ import {
   TreatmentsSection
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
- 
+
 
 export const metadata: Metadata = {
-  title:
-    'Skinbooster Bremen | Hautfeuchtigkeit & Glow | EL Aesthetics',
+  title: 'Skinbooster Behandlung Bremen',
   description:
     'Skinbooster-Behandlung in Bremen: Hyaluron für glattere, strahlendere Haut. Für Gesicht, Hals & Dekolleté. Jetzt Beratung vereinbaren.',
   keywords:
@@ -60,11 +59,13 @@ export default function SkinboosterBremenPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Skinbooster-Behandlung in Bremen',
-        description: 'Ärztliche Skinbooster-Behandlung mit Hyaluronsäure für Hautfeuchtigkeit und Glow.',
-        url: '/hyaluron/skinbooster',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Skinbooster-Behandlung in Bremen',
+          description: 'Ärztliche Skinbooster-Behandlung mit Hyaluronsäure für Hautfeuchtigkeit und Glow.',
+          url: '/hyaluron/skinbooster',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Skinbooster-Behandlung',
         type: 'CosmeticProcedure',
@@ -79,7 +80,7 @@ export default function SkinboosterBremenPage() {
     title: 'Skinbooster in Bremen',
     subtitle:
       'Suchen Sie nach einer professionellen Skinbooster-Behandlung für Gesicht, Hals, Dekolleté & Hände? \nDann sind Sie bei El Aesthetics genau richtig.',
-    imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp', 
+    imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
     imageAlt: 'Skinbooster-Behandlung mit Hyaluronsäure für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
@@ -93,7 +94,7 @@ export default function SkinboosterBremenPage() {
       'Das Skinbooster-Treatment hat ebenfalls einen sehr positiven Effekt auf Problemhaut, z. B. bei Akne, Pigmentstörungen, eingefallenen Narben oder grobporiger Haut.',
       'So werden feine Linien geglättet, der Teint wirkt ebenmäßiger und die Ausstrahlung frischer. Geeignet für Gesicht, Hals, Dekolleté und Hände.',
       'Die Methode ist gut verträglich und dezent in der Wirkung – ideal für einen natürlichen Glow.',
-      
+
     ],
   };
 
@@ -206,7 +207,7 @@ export default function SkinboosterBremenPage() {
     },
   };
 
-  
+
 
   const consultationData: ConsultationSectionProps = {
     title: 'Ihre Expertin für Skinbooster in Bremen',
@@ -217,7 +218,7 @@ export default function SkinboosterBremenPage() {
     ],
     ctaText: 'Jetzt Beratungstermin buchen',
     ctaHref: '/kontakt',
-    
+
     backgroundColor: 'bg-[#FDF6F0]',
   };
 
@@ -232,7 +233,7 @@ export default function SkinboosterBremenPage() {
         description: "Die Behandlung mit Hyaluron-Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
         treatmentUrl: "/hyaluron/filler"
       },
-      
+
       {
         imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
         // Image Alt: Beschreibend und Keyword-optimiert.
@@ -306,7 +307,7 @@ export default function SkinboosterBremenPage() {
       <QuickInfoSection {...quickInfoData} />
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
-      
+
       <ConsultationSection />
       <HubTeaserSection
         title="Mehr zu Hyaluron‑Behandlungen"

@@ -22,12 +22,12 @@ import {
     TreatmentCareSection,
     HubTeaserSection
 } from '@/components/TreatmentPageComponents';
-import {PRICES} from "@/lib/constants";
+import { PRICES } from "@/lib/constants";
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 
 // 1. METADATA: Abdeckung vieler Long-Tail Keywords in Title & Description
 export const metadata: Metadata = {
-    title: 'Lip Flip, Brow Lift & Gummy Smile Bremen | EL Aesthetics',
+    title: 'Lip Flip & Brow Lift Bremen',
     description: 'Ästhetische Botulinumtoxin-Behandlungen in Bremen: Lip Flip, Nefertiti-Lift, Brow Lift & Gummy Smile. Ärztliche Präzision für harmonische Details. Termin vereinbaren.',
     keywords: ['Lip Flip Bremen', 'Gummy Smile Botox Bremen', 'Nefertiti Lift Bremen', 'Brow Lift Botox Bremen', 'Erdbeerkinn entfernen Bremen', 'Bunny Lines Botox'],
     openGraph: {
@@ -49,11 +49,13 @@ export default function BotulinumtoxinSpezialPage() {
     const jsonLd = {
         '@context': 'https://schema.org',
         '@graph': [
-            { ...getWebPageSchema({
-                name: 'Ästhetische Spezialanwendungen Botulinumtoxin',
-                description: 'Detailbehandlungen wie Lip Flip, Gummy Smile und Nefertiti Lift.',
-                url: '/botulinumtoxin/aesthetische-behandlungen',
-            }), '@context': undefined },
+            {
+                ...getWebPageSchema({
+                    name: 'Ästhetische Spezialanwendungen Botulinumtoxin',
+                    description: 'Detailbehandlungen wie Lip Flip, Gummy Smile und Nefertiti Lift.',
+                    url: '/botulinumtoxin/aesthetische-behandlungen',
+                }), '@context': undefined
+            },
             getMedicalProcedureSchema({ name: 'Lip Flip', type: 'CosmeticProcedure', bodyLocation: 'Lips', description: 'Konturierung der Oberlippe durch gezielte Muskelentspannung.' }),
             getMedicalProcedureSchema({ name: 'Brow Lift', type: 'CosmeticProcedure', bodyLocation: 'Eyebrow', description: 'Leichtes Anheben der Augenbrauen für einen offeneren Blick.' }),
             getMedicalProcedureSchema({ name: 'Gummy Smile Correction', type: 'CosmeticProcedure', bodyLocation: 'Gingiva', description: 'Reduzierung übermäßiger Zahnfleischsichtbarkeit beim Lächeln.' }),
@@ -156,95 +158,95 @@ export default function BotulinumtoxinSpezialPage() {
     };
 
     const processData: ProcessSectionProps = {
-    title: "So läuft Ihre Behandlung in Bremen ab",
-    steps: [
-      {
-        number: "01",
-        title: "Persönliche Beratung",
-        description:
-          "Wir erstellen ein individuelles Behandlungskonzept, um Ihre persönlichen Bedürfnisse zu erfüllen.",
-      },
-      {
-        number: "02",
-        title: "Die Behandlung",
-        description:
-          "Das Botulinumtoxin wird mit einer sehr dünnen Nadel in den Zielmuskel injiziert. Die gesamte Behandlung dauert maximal 30 Minuten.",
-      },
-      {
-        number: "03",
-        title: "Nachsorge & Effekt",
-        description:
-          "In der Regel sind Sie sofort wieder alltagstauglich. Die Wirkung entfaltet sich meist über die nächsten 14 Tage.",
-      },
-    ],
-  };
+        title: "So läuft Ihre Behandlung in Bremen ab",
+        steps: [
+            {
+                number: "01",
+                title: "Persönliche Beratung",
+                description:
+                    "Wir erstellen ein individuelles Behandlungskonzept, um Ihre persönlichen Bedürfnisse zu erfüllen.",
+            },
+            {
+                number: "02",
+                title: "Die Behandlung",
+                description:
+                    "Das Botulinumtoxin wird mit einer sehr dünnen Nadel in den Zielmuskel injiziert. Die gesamte Behandlung dauert maximal 30 Minuten.",
+            },
+            {
+                number: "03",
+                title: "Nachsorge & Effekt",
+                description:
+                    "In der Regel sind Sie sofort wieder alltagstauglich. Die Wirkung entfaltet sich meist über die nächsten 14 Tage.",
+            },
+        ],
+    };
 
-  const treatmentCareData: TreatmentCareSectionProps = {
-    title: "Vorher & Nachher: Wichtige Hinweise",
-    beforeTreatment: {
-      title: "Davor",
-      instructions: [
-        {
-          title: "Blutverdünner",
-          description:
-            "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen.",
+    const treatmentCareData: TreatmentCareSectionProps = {
+        title: "Vorher & Nachher: Wichtige Hinweise",
+        beforeTreatment: {
+            title: "Davor",
+            instructions: [
+                {
+                    title: "Blutverdünner",
+                    description:
+                        "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen.",
+                },
+                {
+                    title: "Alkoholkonsum",
+                    description:
+                        "2 Tage vor der Behandlung kein Alkoholgenuss empfohlen.",
+                },
+                {
+                    title: "Schwangerschaft & Stillzeit",
+                    description:
+                        "Keine Behandlung während Schwangerschaft oder Stillzeit.",
+                },
+                {
+                    title: "Entzündungen",
+                    description:
+                        "Bei Hautentzündungen oder Infektionen im Behandlungsbereich Termin verschieben.",
+                },
+                {
+                    title: "Operationen",
+                    description: "Keine Behandlung 2 Wochen vor oder nach einer OP",
+                },
+            ],
         },
-        {
-          title: "Alkoholkonsum",
-          description:
-            "2 Tage vor der Behandlung kein Alkoholgenuss empfohlen.",
+        afterTreatment: {
+            title: "Danach",
+            instructions: [
+                {
+                    title: "Körperhaltung",
+                    description: "Für 3–4 Stunden eine aufrechte Haltung bewahren.",
+                },
+                {
+                    title: "Sport & Schwimmbad",
+                    description:
+                        "Vermeiden Sie für 2 Tage körperliche Anstrengung und Schwimmbadbesuche.",
+                },
+                {
+                    title: "Wärme & Sonne",
+                    description:
+                        "1–2 Wochen auf Sauna, Solarium und intensive Sonneneinstrahlung verzichten.",
+                },
+                {
+                    title: "UV-Schutz",
+                    description:
+                        "Achten Sie 4–6 Wochen lang auf konsequenten Sonnenschutz.",
+                },
+                {
+                    title: "Gesichtsbehandlungen",
+                    description:
+                        "2 Wochen lang keine Gesichtsmassagen oder kosmetischen Behandlungen durchführen.",
+                },
+                {
+                    title: "Alkohol",
+                    description:
+                        "Mindestens 2 Tage verzichten, um die volle Wirksamkeit nicht zu beeinträchtigen.",
+                },
+            ],
         },
-        {
-          title: "Schwangerschaft & Stillzeit",
-          description:
-            "Keine Behandlung während Schwangerschaft oder Stillzeit.",
-        },
-        {
-          title: "Entzündungen",
-          description:
-            "Bei Hautentzündungen oder Infektionen im Behandlungsbereich Termin verschieben.",
-        },
-        {
-          title: "Operationen",
-          description: "Keine Behandlung 2 Wochen vor oder nach einer OP",
-        },
-      ],
-    },
-    afterTreatment: {
-      title: "Danach",
-      instructions: [
-        {
-          title: "Körperhaltung",
-          description: "Für 3–4 Stunden eine aufrechte Haltung bewahren.",
-        },
-        {
-          title: "Sport & Schwimmbad",
-          description:
-            "Vermeiden Sie für 2 Tage körperliche Anstrengung und Schwimmbadbesuche.",
-        },
-        {
-          title: "Wärme & Sonne",
-          description:
-            "1–2 Wochen auf Sauna, Solarium und intensive Sonneneinstrahlung verzichten.",
-        },
-        {
-          title: "UV-Schutz",
-          description:
-            "Achten Sie 4–6 Wochen lang auf konsequenten Sonnenschutz.",
-        },
-        {
-          title: "Gesichtsbehandlungen",
-          description:
-            "2 Wochen lang keine Gesichtsmassagen oder kosmetischen Behandlungen durchführen.",
-        },
-        {
-          title: "Alkohol",
-          description:
-            "Mindestens 2 Tage verzichten, um die volle Wirksamkeit nicht zu beeinträchtigen.",
-        },
-      ],
-    },
-  };
+    };
 
     const faqData: FAQSectionProps = {
         title: 'Häufige Fragen & Risiken',

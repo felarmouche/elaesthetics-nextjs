@@ -29,7 +29,7 @@ import { PRICES } from "@/lib/constants";
 import { getWebPageSchema, getMedicalProcedureSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Masseter Botox Bremen | Bruxismus & Face Slimming | EL Aesthetics",
+  title: "Masseter Botox Bremen – Face Slimming",
   description:
     "Masseter-Behandlung mit Botulinumtoxin in Bremen: Linderung bei Zähneknirschen (Bruxismus) und optische Gesichtsverschlankung. Ärztliche Beratung. Jetzt Termin buchen.",
   keywords: [

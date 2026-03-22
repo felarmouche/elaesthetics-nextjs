@@ -19,7 +19,7 @@ import { getWebPageSchema } from '@/lib/schema';
 import { longevityRegeneration, longevityTexture, longevityHydration } from '@/data/treatments'
 
 export const metadata: Metadata = {
-  title: 'Longevity & Hautqualität Bremen | Prävention & Regeneration | EL Aesthetics',
+  title: 'Longevity & Hautqualität Bremen',
   description: 'Longevity in Bremen: Präventive Hautmedizin mit Biostimulatoren, Skinboostern & Microneedling. Hautalterung verlangsamen statt korrigieren. Beratung vereinbaren.',
   keywords: ['Longevity Hautpflege Bremen', 'Hautalterung verlangsamen Bremen', 'präventive Ästhetik Bremen', 'Hautqualität verbessern Bremen'],
   openGraph: {

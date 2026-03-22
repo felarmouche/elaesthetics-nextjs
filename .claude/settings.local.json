@@ -12,7 +12,10 @@
       "Bash(ls:*)",
       "WebFetch(domain:www.elaesthetics-bremen.de)",
       "Bash(npx tsc --noEmit --pretty)",
-      "Bash(python3 -c \":*)"
+      "Bash(python3 -c \":*)",
+      "Bash(find c:UsersferriDocumentsGitHubelaesthetics-nextjs -type f -name \"*.tsx\" -path \"*/app/\\(treatments\\)*\")",
+      "Bash(find \"/c/Users/ferri/Documents/GitHub/elaesthetics-nextjs/app/\\(treatments\\)\" -name \"page.tsx\")",
+      "Bash(ls -1 \"/c/Users/ferri/Documents/GitHub/elaesthetics-nextjs/app/\\(treatments\\)\")"
     ]
   }
 }

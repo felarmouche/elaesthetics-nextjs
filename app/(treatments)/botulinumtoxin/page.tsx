@@ -21,7 +21,7 @@ import { getWebPageSchema, getFAQSchema } from '@/lib/schema';
 
 // SEO Metadata: Fokus auf generische Haupt-Keywords
 export const metadata: Metadata = {
-  title: 'Botulinumtoxin Bremen » Ärztliche Behandlung | EL Aesthetics',
+  title: 'Botulinumtoxin Behandlung Bremen',
   description: 'Botulinumtoxin-Behandlungen in Bremen: Faltenglättung, Masseter, Hyperhidrose & Migräne. Ärztliche Expertise & individuelle Beratung. Jetzt Termin vereinbaren.',
   keywords: ['Botulinumtoxin Bremen', 'Botox Bremen', 'Botox Arzt Bremen', 'Botulinumtoxin Behandlung Bremen'],
   alternates: { canonical: 'https://elaesthetics-bremen.de/botulinumtoxin' },
@@ -43,7 +43,7 @@ export default function BotulinumtoxinHubPage() {
   const heroData: HeroSectionProps = {
     title: 'Botulinumtoxin Behandlung in Bremen',
     subtitle:
-        'Gezielte Muskelentspannung für Ästhetik und medizinische Indikationen. Erfahren Sie, wie wir mit Botulinumtoxin nicht nur Falten behandeln und Poren verkleinern, sondern auch Zähneknirschen, Migräne und starkes Schwitzen therapieren können.',
+      'Gezielte Muskelentspannung für Ästhetik und medizinische Indikationen. Erfahren Sie, wie wir mit Botulinumtoxin nicht nur Falten behandeln und Poren verkleinern, sondern auch Zähneknirschen, Migräne und starkes Schwitzen therapieren können.',
     imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
     imageAlt: 'Botulinumtoxin Behandlung Übersicht – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -76,27 +76,27 @@ export default function BotulinumtoxinHubPage() {
       {
         question: 'Wann ist mit dem Wirkeintritt zu rechnen?',
         answer:
-            'Die Wirkung kann abhängig vom Zielmuskel, schon ab dem 5. Tag und spätestens nach 14 Tagen sichtbar sein.',
+          'Die Wirkung kann abhängig vom Zielmuskel, schon ab dem 5. Tag und spätestens nach 14 Tagen sichtbar sein.',
       },
       {
         question: 'Wie lange hält eine Behandlung allgemein an?',
         answer:
-            'Der Körper baut den Wirkstoff natürlich ab. Im Durchschnitt hält die Wirkung zwischen 3 und 6 Monaten an, abhängig von der Stoffwechselaktivität und dem behandelten Areal.',
+          'Der Körper baut den Wirkstoff natürlich ab. Im Durchschnitt hält die Wirkung zwischen 3 und 6 Monaten an, abhängig von der Stoffwechselaktivität und dem behandelten Areal.',
       },
       {
         question: 'Bin ich sofort nach der Injektion gesellschaftsfähig?',
         answer:
-            'Ja. Es entstehen in der Regel nur kleine Einstichstellen, die nach wenigen Minuten kaum noch sichtbar sind. Sport und Sauna sollten jedoch für 24–48 Stunden gemieden werden.',
+          'Ja. Es entstehen in der Regel nur kleine Einstichstellen, die nach wenigen Minuten kaum noch sichtbar sind. Sport und Sauna sollten jedoch für 24–48 Stunden gemieden werden.',
       },
       {
         question: 'Wie setzen sich die Kosten zusammen?',
         answer:
-            'Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Schwierigkeitsgrad der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter "Preise".',
+          'Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Schwierigkeitsgrad der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter "Preise".',
       },
       {
         question: 'Kann die Botulinumtoxin-Wirkung ausbleiben?',
         answer:
-            'Manche Menschen reagieren weniger stark auf den Wirkstoff, etwa durch schnelleren Abbau oder eine Antikörperbildung. Dadurch kann die Wirkung geringer oder kürzer ausfallen. Laut Studiendaten können neutralisierende Antikörper in seltenen Fällen auftreten; häufig wird ein Anteil im niedrigen Prozentbereich genannt (z. B. bis etwa 1,5 %).',
+          'Manche Menschen reagieren weniger stark auf den Wirkstoff, etwa durch schnelleren Abbau oder eine Antikörperbildung. Dadurch kann die Wirkung geringer oder kürzer ausfallen. Laut Studiendaten können neutralisierende Antikörper in seltenen Fällen auftreten; häufig wird ein Anteil im niedrigen Prozentbereich genannt (z. B. bis etwa 1,5 %).',
       },
     ],
   };
@@ -104,7 +104,8 @@ export default function BotulinumtoxinHubPage() {
   const medicalSchema = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
+      {
+        ...getWebPageSchema({
           name: 'Botulinumtoxin Behandlungen Bremen',
           description: 'Übersicht zu Botulinumtoxin-Therapien bei EL Aesthetics.',
           url: '/botulinumtoxin',
@@ -113,7 +114,8 @@ export default function BotulinumtoxinHubPage() {
             name: 'Botulinumtoxin Behandlung',
             procedureType: 'NonSurgicalProcedure',
           },
-      }), '@context': undefined },
+        }), '@context': undefined
+      },
       getFAQSchema(faqData.faqs),
     ],
   };
@@ -121,7 +123,7 @@ export default function BotulinumtoxinHubPage() {
   const ctaData: CTASectionProps = {
     title: 'Ihr Termin für Botulinumtoxin in Bremen',
     subtitle:
-        'Lassen Sie sich fachärztlich beraten. Wir finden gemeinsam heraus, welche Behandlung für Ihr Anliegen die richtige ist.',
+      'Lassen Sie sich fachärztlich beraten. Wir finden gemeinsam heraus, welche Behandlung für Ihr Anliegen die richtige ist.',
     primaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' },
     secondaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
   };
@@ -134,22 +136,22 @@ export default function BotulinumtoxinHubPage() {
   ];
 
   return (
-      <div className="min-h-screen bg-white">
-        <Script
-            id="medical-schema"
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalSchema) }}
-        />
+    <div className="min-h-screen bg-white">
+      <Script
+        id="medical-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(medicalSchema) }}
+      />
 
-        <HeroSection {...heroData} />
-        <TableOfContents items={tocItems} />
-        <IntroSection {...introData} />
-        <DetailedInfoSection />
-        <TreatmentsSection {...treatmentsData} />
-        <ConsultationSection />
-        {/* Deine FAQSection generiert ihr eigenes FAQPage Schema -> Perfekt! */}
-        <FAQSection {...faqData} />
-        <CTASection {...ctaData} />
-      </div>
+      <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
+      <IntroSection {...introData} />
+      <DetailedInfoSection />
+      <TreatmentsSection {...treatmentsData} />
+      <ConsultationSection />
+      {/* Deine FAQSection generiert ihr eigenes FAQPage Schema -> Perfekt! */}
+      <FAQSection {...faqData} />
+      <CTASection {...ctaData} />
+    </div>
   );
 }

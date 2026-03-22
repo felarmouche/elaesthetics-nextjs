@@ -29,7 +29,7 @@ import { getWebPageSchema, getMedicalProcedureSchema } from "@/lib/schema";
 import { PRICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Mesobotox Bremen | Porenverfeinernde Mikro-Injektion | EL Aesthetics",
+  title: "Mesobotox Bremen – Porenverfeinerung",
   description:
     "Mesobotox in Bremen: Mikro-Injektionen zur Porenverfeinerung und Verbesserung der Hauttextur. Ärztlich durchgeführt. Beratungstermin vereinbaren.",
   keywords: [

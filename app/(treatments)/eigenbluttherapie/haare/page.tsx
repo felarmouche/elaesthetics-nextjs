@@ -29,8 +29,7 @@ import { PRICES } from '@/lib/constants';
 // PatientReviews bewusst nicht verwendet (HWG)
 
 export const metadata: Metadata = {
-  title:
-    'Eigenbluttherapie Haare Bremen | PRF & Haarausfall | EL Aesthetics',
+  title: 'Eigenbluttherapie Haare Bremen',
   description:
     'Eigenbluttherapie (PRF/PRP) bei Haarausfall in Bremen: Unterstützung der Haardichte. Infos zu Ablauf, Sitzungen & Kosten. Jetzt beraten lassen.',
   keywords:

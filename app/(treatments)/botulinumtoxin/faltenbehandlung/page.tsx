@@ -34,19 +34,19 @@ import {
 // 1. METADATA OPTIMIERUNG
 // Fokus: Long-Tail Keywords (Zornesfalte, Krähenfüße) + Lokalisierung (Bremen)
 export const metadata: Metadata = {
-  title: "Faltenbehandlung Bremen | Zornesfalte & Stirn | EL Aesthetics",
+  title: "Botulinumtoxin gegen Falten Bremen – Stirn & Zornesfalte",
   description:
-    "Ärztliche Faltenbehandlung mit Botulinumtoxin in Bremen. Gezielte Glättung von Zornesfalten, Stirnfalten & Krähenfüßen. Natürliche Ergebnisse. Jetzt beraten lassen.",
+    "Botulinumtoxin Faltenbehandlung in Bremen: Zornesfalte, Stirnfalten & Krähenfüße gezielt glätten mit Botulinumtoxin. Natürliche Ergebnisse durch ärztliche Präzision.",
   keywords: [
-    "Faltenbehandlung Botox Bremen",
+    "Botulinumtoxin Faltenbehandlung Bremen",
     "Zornesfalte entfernen Bremen",
     "Stirnfalten glätten Bremen",
-    "Krähenfüße Behandlung Bremen",
+    "Krähenfüße Botox Bremen",
   ],
   openGraph: {
-    title: "Faltenbehandlung mit Botulinumtoxin in Bremen – EL Aesthetics",
+    title: "Botulinumtoxin gegen Falten in Bremen – Zornesfalte & Stirnfalten",
     description:
-      "Gezielte Glättung von Zornesfalten, Stirnfalten & Krähenfüßen. Natürliche Ergebnisse in Bremen.",
+      "Zornesfalte, Stirnfalten & Krähenfüße gezielt glätten mit Botulinumtoxin. Ärztliche Behandlung in Bremen.",
     url: "https://elaesthetics-bremen.de/botulinumtoxin/faltenbehandlung",
     siteName: "EL Aesthetics Bremen",
     type: "website",

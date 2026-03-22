@@ -27,18 +27,18 @@ export default function Welcome() {
       </div>
 
       <div className="w-full">
-  <div className="relative w-full aspect-[5/6] bg-[#e8d5c4] rounded-lg shadow-[0_20px_60px_rgba(0,0,0,0.1)] overflow-hidden">
-    <Image
-      src="/assets/Profilbild engere auswahl/IMG_7336.jpg"
-      width={800}
-      height={960}
-      alt="Schwarz Weiß Portrait von dem Gesicht einer Frau"
-      className="absolute inset-0 h-full w-full object-cover"
-      loading="lazy"
-      decoding="async"
-    />
-  </div>
-</div>
+        <div className="relative w-full aspect-[5/6] bg-[#e8d5c4] rounded-lg shadow-[0_20px_60px_rgba(0,0,0,0.1)] overflow-hidden">
+          <Image
+            src="/assets/Profilbild engere auswahl/IMG_7336.jpg"
+            width={800}
+            height={960}
+            alt="Schwarz Weiß Portrait von dem Gesicht einer Frau"
+            className="absolute inset-0 h-full w-full object-cover"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </div>
 
     </section>
   );

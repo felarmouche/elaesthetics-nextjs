@@ -64,105 +64,105 @@ export default function TreatmentSlider() {
   }, [emblaApi]);
 
   return (
-      <section
-          className="relative w-full mx-auto py-16 md:py-32 px-[5%]"
-          aria-label="Slider für verschiedene Behandlungen"
-      >
-        <div className="relative w-full flex flex-col gap-6">
+    <section
+      className="relative w-full mx-auto py-16 md:py-32 px-[5%]"
+      aria-label="Slider für verschiedene Behandlungen"
+    >
+      <div className="relative w-full flex flex-col gap-6">
 
-          {/* Header */}
-          <div className="flex justify-between items-end px-2">
-            <h2 className="text-4xl text-accent-dark uppercase font-light leading-tight">
-              weitere <br /> <span className="font-medium">Behandlungen</span>
-            </h2>
+        {/* Header */}
+        <div className="flex justify-between items-end px-2">
+          <h2 className="text-4xl text-accent-dark uppercase font-light leading-tight">
+            weitere <br /> <span className="font-medium">Behandlungen</span>
+          </h2>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex gap-2">
-              <button
-                  onClick={scrollPrev}
-                  // Deaktivieren, wenn API noch nicht bereit ist (verhindert TS-Errors & leere Klicks)
-                  disabled={!emblaApi}
-                  className="bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 p-3 rounded-full transition-transform hover:scale-105 active:scale-95 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
-                  aria-label="Vorheriges"
-              >
-                <ChevronLeft className="w-6 h-6" />
-              </button>
-              <button
-                  onClick={scrollNext}
-                  disabled={!emblaApi}
-                  className="bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 p-3 rounded-full transition-transform hover:scale-105 active:scale-95 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
-                  aria-label="Nächstes"
-              >
-                <ChevronRight className="w-6 h-6" />
-              </button>
-            </div>
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex gap-2">
+            <button
+              onClick={scrollPrev}
+              // Deaktivieren, wenn API noch nicht bereit ist (verhindert TS-Errors & leere Klicks)
+              disabled={!emblaApi}
+              className="bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 p-3 rounded-full transition-transform hover:scale-105 active:scale-95 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+              aria-label="Vorheriges"
+            >
+              <ChevronLeft className="w-6 h-6" />
+            </button>
+            <button
+              onClick={scrollNext}
+              disabled={!emblaApi}
+              className="bg-white hover:bg-gray-50 border border-gray-200 text-gray-800 p-3 rounded-full transition-transform hover:scale-105 active:scale-95 shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+              aria-label="Nächstes"
+            >
+              <ChevronRight className="w-6 h-6" />
+            </button>
           </div>
+        </div>
 
-          {/* Slider Viewport */}
-          <div className="overflow-hidden cursor-grab active:cursor-grabbing rounded-2xl" ref={emblaRef}>
-            <div className="flex -ml-4">
-              {treatments.map((service, index) => (
-                  <div
-                      key={`${index}-${service.linkUrl}`}
-                      className="flex-[0_0_100%] md:flex-[0_0_33.333%] min-w-0 pl-4"
-                  >
-                    <Link
-                        href={service.linkUrl}
-                        className="group relative block w-full aspect-square overflow-hidden rounded-xl shadow-md"
-                    >
-                      <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-110">
-                        <Image
-                            fill
-                            src={service.src}
-                            alt={service.alt}
-                            className="object-cover"
-                            sizes="(min-width: 768px) 33vw, 100vw"
-                            // Performance: Erstes Bild priority, Rest lazy (optional, hier alle lazy ok)
-                            loading="lazy"
-                        />
-                      </div>
+        {/* Slider Viewport */}
+        <div className="overflow-hidden cursor-grab active:cursor-grabbing rounded-2xl" ref={emblaRef}>
+          <div className="flex -ml-4">
+            {treatments.map((service, index) => (
+              <div
+                key={`${index}-${service.linkUrl}`}
+                className="flex-[0_0_100%] md:flex-[0_0_33.333%] min-w-0 pl-4"
+              >
+                <Link
+                  href={service.linkUrl}
+                  className="group relative block w-full aspect-square overflow-hidden rounded-xl shadow-md"
+                >
+                  <div className="absolute inset-0 transition-transform duration-700 ease-out group-hover:scale-110">
+                    <Image
+                      fill
+                      src={service.src}
+                      alt={service.alt}
+                      className="object-cover"
+                      sizes="(min-width: 768px) 33vw, 100vw"
+                      // Performance: Erstes Bild priority, Rest lazy (optional, hier alle lazy ok)
+                      loading="lazy"
+                    />
+                  </div>
 
-                      {/* Overlay */}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-70" />
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-70" />
 
-                      {/* Content */}
-                      <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8 text-white">
-                        <h3 className="text-2xl md:text-3xl font-light mb-2 uppercase tracking-wider translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
-                          {service.text}
-                        </h3>
-                        <div className="overflow-hidden h-0 group-hover:h-8 transition-all duration-300 ease-in-out">
+                  {/* Content */}
+                  <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-8 text-white">
+                    <h3 className="text-2xl md:text-3xl font-light mb-2 uppercase tracking-wider translate-y-2 transition-transform duration-300 group-hover:translate-y-0">
+                      {service.text}
+                    </h3>
+                    <div className="overflow-hidden h-0 group-hover:h-8 transition-all duration-300 ease-in-out">
                       <span className="text-sm tracking-[2px] uppercase font-light inline-flex items-center gap-2 translate-y-4 transition-transform duration-300 group-hover:translate-y-0 text-white/90">
                         Mehr erfahren <span>&rarr;</span>
                       </span>
-                        </div>
-                      </div>
-                    </Link>
+                    </div>
                   </div>
-              ))}
-            </div>
+                </Link>
+              </div>
+            ))}
           </div>
-
-          {/* Mobile Navigation */}
-          <div className="flex md:hidden justify-center gap-4 mt-4">
-            <button
-                onClick={scrollPrev}
-                disabled={!emblaApi}
-                className="bg-white/90 text-gray-800 p-3 rounded-full shadow-lg active:scale-95 disabled:opacity-50"
-                aria-label="Vorheriges Slide"
-            >
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button
-                onClick={scrollNext}
-                disabled={!emblaApi}
-                className="bg-white/90 text-gray-800 p-3 rounded-full shadow-lg active:scale-95 disabled:opacity-50"
-                aria-label="Nächstes Slide"
-            >
-              <ChevronRight className="w-5 h-5" />
-            </button>
-          </div>
-
         </div>
-      </section>
+
+        {/* Mobile Navigation */}
+        <div className="flex md:hidden justify-center gap-4 mt-4">
+          <button
+            onClick={scrollPrev}
+            disabled={!emblaApi}
+            className="bg-white/90 text-gray-800 p-3 rounded-full shadow-lg active:scale-95 disabled:opacity-50"
+            aria-label="Vorheriges Slide"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            onClick={scrollNext}
+            disabled={!emblaApi}
+            className="bg-white/90 text-gray-800 p-3 rounded-full shadow-lg active:scale-95 disabled:opacity-50"
+            aria-label="Nächstes Slide"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+
+      </div>
+    </section>
   );
 }

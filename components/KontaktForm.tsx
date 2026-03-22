@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { Send, Mail, Phone, MessageCircle, Instagram } from 'lucide-react';
+import { Send, Mail, Phone, MessageCircle, Instagram, Clock } from 'lucide-react';
 import Link from 'next/link';
 import { API_KEY, DOMAIN } from '@/lib/constants';
 
@@ -288,6 +288,27 @@ export default function KontaktForm() {
                             })}
                         </div>
                     </div>
+                </div>
+
+                {/* Öffnungszeiten */}
+                <div className="mt-16 border-t border-gray-200 pt-12">
+                    <div className="flex items-center gap-3 mb-6">
+                        <Clock className="w-6 h-6 text-gray-900" />
+                        <h2 className="text-2xl font-bold uppercase text-gray-900">Öffnungszeiten</h2>
+                    </div>
+                    <div className="grid grid-cols-1 gap-4 max-w-2xl">
+                        <div className="flex justify-between border-b border-gray-100 pb-3">
+                            <span className="font-medium">Montag – Freitag</span>
+                            <span className="font-mono">09:00 – 17:00</span>
+                        </div>
+                        <div className="flex justify-between border-b border-gray-100 pb-3">
+                            <span className="font-medium">Samstag & Sonntag</span>
+                            <span className="font-mono text-gray-700">Geschlossen</span>
+                        </div>
+                    </div>
+                    <p className="text-sm text-gray-500 mt-4">
+                        Termine nach Vereinbarung. Bitte kontaktieren Sie uns vorab per Telefon, WhatsApp oder über das Kontaktformular.
+                    </p>
                 </div>
             </div>
         </div>

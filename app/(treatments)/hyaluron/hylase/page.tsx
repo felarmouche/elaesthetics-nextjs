@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import {PRICES} from '@/lib/constants'
+import { PRICES } from '@/lib/constants'
 import {
   AreasSection,
   AreasSectionProps,
@@ -28,7 +28,7 @@ import {
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Hyaluronidase Behandlung Bremen | Hyaluron auflösen',
+  title: 'Hyaluronidase Bremen – Hyaluron auflösen',
   description: 'Hyaluronidase Behandlung in Bremen: Hyaluron sicher auflösen bei Lippen, Tränenrinne, Knötchen & mehr ➤ Jetzt Termin buchen',
   keywords: 'Hylase Behandlung Bremen, Hylase Kosten Bremen, Hylase Lippen auflösen Bremen, Hyaluron auflösen Bremen, Hylase Erfahrung, Hyaluronidase Bremen, Hylase Nebenwirkungen, Lippen auflösen Hylase, Hylase Wirkung, Hyaluron entfernen Kosten Bremen, Hylase Tränenrinne, Hylase Nase, Hylase Augenringe',
   openGraph: {
@@ -49,11 +49,13 @@ export default function HyaluronidaseHylasePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Hyaluronidase-Behandlung in Bremen',
-        description: 'Ärztliche Behandlung zum Auflösen von Hyaluronsäure mit Hyaluronidase.',
-        url: '/hyaluron/hylase',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Hyaluronidase-Behandlung in Bremen',
+          description: 'Ärztliche Behandlung zum Auflösen von Hyaluronsäure mit Hyaluronidase.',
+          url: '/hyaluron/hylase',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Hyaluronidase-Behandlung (Hylase)',
         type: 'MedicalProcedure',

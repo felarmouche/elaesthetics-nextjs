@@ -18,10 +18,10 @@ import {
   RelatedLink,
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema } from '@/lib/schema';
-import {haarausfall} from "@/data/treatments";
+import { haarausfall } from "@/data/treatments";
 
 export const metadata: Metadata = {
-  title: 'Haarausfall Behandlung Bremen | PRP, Mesotherapie & mehr | EL Aesthetics',
+  title: 'Haarausfall Behandlung Bremen',
   description: 'Haarausfall-Behandlung in Bremen: Ärztliche Analyse & Therapie mit PRP/PRF, Mesotherapie oder Polynukleotiden. Individuelle Beratung. Jetzt Termin vereinbaren.',
   keywords: ['Haarausfall Behandlung Bremen', 'Haarausfall Arzt Bremen', 'Haarausfall Therapie Bremen', 'Haare stärken Bremen'],
   openGraph: {
@@ -81,7 +81,7 @@ export default function HaarausfallHubPage() {
     treatments: haarausfall
   };
 
-  
+
 
   const relatedLinks: RelatedLink[] = [
     {

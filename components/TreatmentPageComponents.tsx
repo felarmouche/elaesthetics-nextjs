@@ -132,9 +132,9 @@ export interface TableOfContentsProps {
 // COMPONENT
 // ============================================================================
 
-export const TableOfContents: React.FC<TableOfContentsProps> = ({ 
+export const TableOfContents: React.FC<TableOfContentsProps> = ({
     title = "Inhalt",
-    items 
+    items
 }) => {
     return (
         <section id="table-of-contents" className="py-12 md:py-16 border-b border-stone-200">
@@ -340,9 +340,9 @@ const detailedInfoSectionData = {
 };
 
 export function DetailedInfoSection() {
-    const title=detailedInfoSectionData.title;
-    const description=detailedInfoSectionData.description;
-    const infoPoints=detailedInfoSectionData.infoPoints;
+    const title = detailedInfoSectionData.title;
+    const description = detailedInfoSectionData.description;
+    const infoPoints = detailedInfoSectionData.infoPoints;
     const ctaText = detailedInfoSectionData.ctaText;
     const ctaHref = detailedInfoSectionData.ctaHref;
     return (
@@ -352,15 +352,15 @@ export function DetailedInfoSection() {
                     <h2 className="text-2xl md:text-4xl font-normal text-accent-dark uppercase tracking-[2px] mb-8">
                         {title}
                     </h2>
-                    
+
                     <p className="text-lg text-stone-600 font-light leading-relaxed mb-10">
                         {description}
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-6 mb-10">
                         {infoPoints.map((point, index) => (
-                            <div 
-                                key={index} 
+                            <div
+                                key={index}
                                 className="flex items-start gap-3 p-4 bg-stone-50 border border-stone-200"
                             >
                                 <span className="text-stone-400 font-light mt-1">—</span>
@@ -490,20 +490,20 @@ export const ProcessSection: React.FC<ProcessSectionProps> = ({ title, steps }) 
     );
 };
 
- const consultationData: ConsultationSectionProps = {
+const consultationData: ConsultationSectionProps = {
     title: "Ihre persönliche Beratung in Bremen",
     description: [
-      "Sie wissen noch nicht welche Behandlung für Sie die richtige ist, oder haben Fragen zu bestimmten Methoden? Ich berate Sie gerne individuell und umfassend. Häufig gibt es verschiedene Ansätze und Möglichkeiten.",
-      "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische und regenerative Medizin und Gründerin von EL Aesthetics.",
-      "Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich stets auf dem neuesten Stand der regenerativen Medizin. ",
-      "Ich bin Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT) und arbeite ausschließlich mit hochwertigen, und CE-zertifizierten Präparaten.",
-      "In meiner Praxis nehme ich mir Zeit für Sie – für eine individuelle Betreuung in einer Atmosphäre, in der Sie sich rundum wohlfühlen können.",
-      "Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin."
+        "Sie wissen noch nicht welche Behandlung für Sie die richtige ist, oder haben Fragen zu bestimmten Methoden? Ich berate Sie gerne individuell und umfassend. Häufig gibt es verschiedene Ansätze und Möglichkeiten.",
+        "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische und regenerative Medizin und Gründerin von EL Aesthetics.",
+        "Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich stets auf dem neuesten Stand der regenerativen Medizin. ",
+        "Ich bin Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT) und arbeite ausschließlich mit hochwertigen, und CE-zertifizierten Präparaten.",
+        "In meiner Praxis nehme ich mir Zeit für Sie – für eine individuelle Betreuung in einer Atmosphäre, in der Sie sich rundum wohlfühlen können.",
+        "Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin."
     ],
     ctaText: "Jetzt Termin anfragen",
     ctaHref: "/kontakt",
     backgroundColor: "bg-[#FDF6F0]"
-  };
+};
 
 export function ConsultationSection() {
     return (
@@ -561,23 +561,23 @@ export function ConsultationSection() {
                             <p className="text-sm font-medium text-stone-900 uppercase tracking-[2px] mb-4">
                                 Qualifikationen & Zertifizierungen
                             </p>
-                            
+
                             <div className="space-y-3">
-                                
+
                                 <div className="flex items-start gap-3">
                                     <CheckCircle className="w-5 h-5 text-stone-900 flex-shrink-0 mt-0.5" />
                                     <p className="text-sm text-stone-600 font-light leading-relaxed">
                                         Mitglied der Deutschen Gesellschaft für ästhetische Botulinum- und Fillertherapie e.V. (DGBT)
                                     </p>
                                 </div>
-                                
+
                                 <div className="flex items-start gap-3">
                                     <CheckCircle className="w-5 h-5 text-stone-900 flex-shrink-0 mt-0.5" />
                                     <p className="text-sm text-stone-600 font-light leading-relaxed">
                                         Regelmäßige Fortbildungen, Workshops und Fachkongresse
                                     </p>
                                 </div>
-                                
+
                                 <div className="flex items-start gap-3">
                                     <CheckCircle className="w-5 h-5 text-stone-900 flex-shrink-0 mt-0.5" />
                                     <p className="text-sm text-stone-600 font-light leading-relaxed">
@@ -589,10 +589,10 @@ export function ConsultationSection() {
                             {/* DGBT Badge */}
                             <div className="mt-6 flex items-center gap-4 bg-white p-4 rounded-sm border border-stone-200">
                                 <div className="overflow-hidden w-16 h-16 border border-stone-200 rounded-full flex items-center justify-center flex-shrink-0">
-                                    <Image 
-                                        alt="DGBT-Logo" 
-                                        src="/assets/dgbt.webp" 
-                                        className="object-cover w-full" 
+                                    <Image
+                                        alt="DGBT-Logo"
+                                        src="/assets/dgbt.webp"
+                                        className="object-cover w-full"
                                         width={80}
                                         height={50}
                                         loading='lazy'
@@ -765,7 +765,7 @@ export const CTASection: React.FC<CTASectionProps> = ({
                         href={secondaryCTA.href}
                         className="inline-flex gap-2 bg-secondary text-primary px-10 py-4 tracking-wide border border-stone-700 hover:border-white transition-colors"
                     >
-                        <Phone className='text-sm'/>
+                        <Phone className='text-sm' />
                         {secondaryCTA.text}
                     </Link>
                 </div>

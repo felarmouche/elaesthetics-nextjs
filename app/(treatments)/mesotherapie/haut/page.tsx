@@ -6,7 +6,7 @@ import { PRICES } from '@/lib/constants';
 import { eigenblut, mesotherapieHaut, peeling, polynukleotide, profhilo } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Mesotherapie Gesicht Bremen | Hautqualität & Glow | EL Aesthetics',
+  title: 'Mesotherapie Gesicht Bremen',
   description: 'Mesotherapie für Gesicht in Bremen: Hyaluronsäure & Mikronährstoffe für strahlende Haut, Augenringe & Falten. Jetzt beraten lassen.',
   keywords: ['Mesotherapie Gesicht Bremen', 'Mesotherapie Hautqualität Bremen', 'Augenringe Behandlung Bremen', 'Hautverjüngung Bremen', 'Skinbooster Bremen'],
   openGraph: {

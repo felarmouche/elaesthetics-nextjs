@@ -20,7 +20,7 @@ import { getWebPageSchema } from '@/lib/schema';
 import { augenbehandlungen } from "@/data/treatments";
 
 export const metadata: Metadata = {
-    title: 'Augenringe & Tränenrinne behandeln Bremen | EL Aesthetics',
+    title: 'Augenringe & Tränenrinne behandeln Bremen',
     description: 'Augenbehandlungen in Bremen: Augenringe, Krähenfüße & Tränenrinnen ärztlich behandeln mit Polynukleotiden, PRP oder Botulinumtoxin. Jetzt beraten lassen.',
     keywords: ['Augenringe behandeln Bremen', 'Tränenrinne unterspritzen Bremen', 'Krähenfüße Bremen', 'Augenbehandlung Bremen'],
     openGraph: {

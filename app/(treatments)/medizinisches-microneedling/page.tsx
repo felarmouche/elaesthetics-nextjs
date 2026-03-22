@@ -31,7 +31,7 @@ import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Medizinisches Microneedling Bremen | Aknenarben & Poren | EL Aesthetics',
+  title: 'Medizinisches Microneedling Bremen',
   description: 'Ärztliches Microneedling in Bremen: Angepasste Nadeltiefe für Aknenarben, Poren & Hautstruktur. Kollagen-Induktionstherapie. Jetzt Beratungstermin vereinbaren.',
   keywords: ['Medizinisches Microneedling Bremen', 'Microneedling Bremen', 'Aknenarben behandeln Bremen', 'Dermapen Bremen', 'Poren verfeinern Bremen'],
   openGraph: {

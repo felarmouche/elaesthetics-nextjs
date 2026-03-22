@@ -20,7 +20,7 @@ import { hyaluronTreatments } from '@/data/treatments';
 import { getWebPageSchema, getFAQSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Hyaluron Behandlung Bremen | Filler, Skinbooster & mehr | EL Aesthetics',
+  title: 'Hyaluron Behandlung Bremen',
   description: 'Hyaluronsäure-Behandlungen in Bremen: Filler für Kontur & Volumen, Skinbooster für Glow, Profhilo für Hautqualität. Ärztliche Beratung. Jetzt Termin vereinbaren.',
   keywords: ['Hyaluron Bremen', 'Hyaluronsäure Bremen', 'Hyaluron Behandlung Bremen', 'Lippen aufspritzen Bremen', 'Faltenunterspritzung Bremen'],
   openGraph: {
@@ -103,7 +103,8 @@ export default function HyaluronBremenPage() {
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
+      {
+        ...getWebPageSchema({
           name: 'Hyaluron Behandlungen Bremen',
           description: 'Übersicht zu Hyaluronsäure-Therapien (Filler, Skinbooster, Profhilo) bei EL Aesthetics.',
           url: '/hyaluron',
@@ -112,7 +113,8 @@ export default function HyaluronBremenPage() {
             name: 'Hyaluronsäure Behandlung',
             procedureType: 'NonSurgicalProcedure',
           },
-      }), '@context': undefined },
+        }), '@context': undefined
+      },
       getFAQSchema(faqData.faqs),
     ],
   };

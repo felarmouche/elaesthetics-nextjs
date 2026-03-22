@@ -31,7 +31,7 @@ import { eigenblut, microneedling, skinbooster } from '@/data/treatments';
 
 
 export const metadata: Metadata = {
-  title: 'Chemisches Peeling Bremen | Hauterneuerung & Pigmente | EL Aesthetics',
+  title: 'Chemisches Peeling Bremen',
   description: 'Chemisches Peeling in Bremen: Kontrollierte Hauterneuerung bei Pigmentflecken, Aknenarben & fahlem Teint. Ärztlich durchgeführt. Beratungstermin vereinbaren.',
   keywords: ['Chemisches Peeling Bremen', 'Fruchtsäurepeeling Bremen', 'Pigmentflecken behandeln Bremen', 'Hauterneuerung Bremen'],
   openGraph: {

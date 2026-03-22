@@ -28,7 +28,7 @@ import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Vampir Lifting Bremen | PRF-Plasma für Glow | EL Aesthetics',
+  title: 'Vampir Lifting Bremen – PRF Glow',
   description:
     'Vampir Lifting / Plasma-Lifting in Bremen: Eigenblut-Behandlung für Hautqualität & Glow. Infos zu Ablauf, Wirkung & Kosten. Jetzt beraten lassen.',
   keywords: ['Vampir Lifting Bremen', 'Plasma Lifting Bremen', 'Vampire Facial Bremen', 'PRF Hautbehandlung Bremen', 'Eigenblut Glow Bremen'],

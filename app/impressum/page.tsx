@@ -7,7 +7,7 @@ import Script from "next/script";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Impressum | EL Aesthetics Bremen – Praxis für Ästhetik Infos",
+  title: "Impressum",
   description:
     "Impressum der Privatpraxis EL Aesthetics Bremen: ästhetische und regenerative Medizin, Ärztin Ola Alona El‑Armouche, Kontaktdaten und rechtliche Angaben.",
   alternates: { canonical: "/impressum" },

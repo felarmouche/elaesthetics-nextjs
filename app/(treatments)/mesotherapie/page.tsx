@@ -19,7 +19,7 @@ import { getWebPageSchema, getFAQSchema } from '@/lib/schema';
 import { mesotherapieHaut, mesoHaar } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Mesotherapie Bremen | Haut & Haare | EL Aesthetics',
+  title: 'Mesotherapie Bremen – Haut & Haare',
   description: 'Mesotherapie in Bremen: Mikronährstoffe & Hyaluronsäure für strahlende Haut und kräftigeres Haar. Ärztliche Beratung für individuelle Behandlung. Jetzt Termin vereinbaren.',
   keywords: ['Mesotherapie Bremen', 'Mesotherapie Gesicht Bremen', 'Mesotherapie Haare Bremen', 'Meso-Glow Bremen'],
   openGraph: {

@@ -30,7 +30,7 @@ import { PRICES } from '@/lib/constants';
 import { botoxFalten, hylase, skinbooster } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Hyaluron Filler Bremen | Lippen, Jawline & Falten | EL Aesthetics',
+  title: 'Hyaluron Filler Bremen – Lippen & Jawline',
   description:
     'Hyaluron-Filler für natürliche Lippen, Jawline & Falten in Bremen. Ärztliche Behandlung mit hochwertigen Präparaten. Jetzt Beratung vereinbaren.',
   keywords: ['Hyaluron Filler Bremen', 'Lippen aufspritzen Bremen', 'Lippenunterspritzung Bremen', 'Faltenunterspritzung Bremen', 'Jawline Bremen', 'Tränenrinne Bremen', 'Kinnaufbau Bremen'],
@@ -55,11 +55,13 @@ export default function HyaluronFillerBremenPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Hyaluron Filler in Bremen',
-        description: 'Ärztliche Hyaluronsäure-Filler-Behandlung für Lippen, Falten und Konturierung.',
-        url: '/hyaluron/filler',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Hyaluron Filler in Bremen',
+          description: 'Ärztliche Hyaluronsäure-Filler-Behandlung für Lippen, Falten und Konturierung.',
+          url: '/hyaluron/filler',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Hyaluron-Filler Unterspritzung',
         type: 'CosmeticProcedure',
@@ -194,7 +196,7 @@ export default function HyaluronFillerBremenPage() {
     },
   };
 
-  
+
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen',

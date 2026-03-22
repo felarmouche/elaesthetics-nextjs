@@ -28,7 +28,7 @@ import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'PRF Microneedling Bremen | Plasma-Needling & Narben | EL Aesthetics',
+  title: 'PRF Microneedling Bremen',
   description:
     'PRF Microneedling in Bremen: Kombination aus Needling und Eigenblut-Plasma für verfeinerte Poren & Narben. Jetzt beraten lassen.',
   keywords:

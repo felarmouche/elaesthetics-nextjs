@@ -25,7 +25,7 @@ export default function Services() {
           breite Palette an minimalinvasiven ästhetischen Behandlungen - von Unterspritzungen mit Hyalurosäure Fillern und Botulinumtoxin bis hin zu modernen regenerativen Verfahren.
         </p>
       </div>
-      
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1300px] mx-auto">
         {services.map((service) => (
           <Link
@@ -34,8 +34,8 @@ export default function Services() {
             href={service.path}>
             <Image
               fill
-              src={service.image} 
-              alt={service.title} 
+              src={service.image}
+              alt={service.title}
               className="w-full h-full object-cover transition-transform duration-400"
             />
             <div className="w-full h-full bg-gradient-to-br from-[#d4a87c] to-[#e8c4a8] flex items-center justify-center text-white text-lg text-center p-8">

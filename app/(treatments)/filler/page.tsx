@@ -21,7 +21,7 @@ import { getWebPageSchema } from '@/lib/schema';
 import { fillerPageTreatments } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Filler Bremen | Volumenaufbau & Konturierung | EL Aesthetics',
+  title: 'Filler Behandlung Bremen',
   description: 'Filler in Bremen: Hyaluron-Filler & Kollagenstimulation für Lippen, Jawline & Wangen. Natürliche Konturierung ohne „künstlichen" Look. Ärztliche Beratung buchen.',
   keywords: ['Filler Bremen', 'Volumenaufbau Gesicht Bremen', 'Wangen Filler Bremen', 'Kinn Filler Bremen'],
   openGraph: {
@@ -60,7 +60,7 @@ export default function FillerHubPage() {
   const heroData: HeroSectionProps = {
     title: 'Filler & Volumenaufbau in Bremen',
     subtitle:
-        'Hyaluronsäure-Filler & Calciumhydroxylapatit (CaHA). Sanftes Lifting, Konturierung & Volumenaufbau für Wangen, Kinn, Jawline & Lippen.',
+      'Hyaluronsäure-Filler & Calciumhydroxylapatit (CaHA). Sanftes Lifting, Konturierung & Volumenaufbau für Wangen, Kinn, Jawline & Lippen.',
     imageSrc: '/assets/filler/filler_hero.webp',
     imageAlt: 'Filler-Behandlung für Lippen, Wangen und Jawline – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -88,57 +88,57 @@ export default function FillerHubPage() {
       {
         question: 'Was ist der Unterschied zwischen Hyaluron- und CaHA-Fillern?',
         answer:
-            'Hyaluron (HA) bindet Wasser, polstert Gewebe und kann bei Bedarf mit Hyaluronidase wieder aufgelöst werden. Calciumhydroxylapatit (CaHA) liefert zunächst Struktur über ein Trägergel und stimuliert zusätzlich körpereigene Kollagenbildung; es ist nicht auflösbar und eignet sich eher für Kontur und Straffheit.',
+          'Hyaluron (HA) bindet Wasser, polstert Gewebe und kann bei Bedarf mit Hyaluronidase wieder aufgelöst werden. Calciumhydroxylapatit (CaHA) liefert zunächst Struktur über ein Trägergel und stimuliert zusätzlich körpereigene Kollagenbildung; es ist nicht auflösbar und eignet sich eher für Kontur und Straffheit.',
       },
       {
         question: 'Für welche Areale eignen sich Hyaluron bzw. CaHA?',
         answer:
-            'Hyaluron: z. B. Lippen, Nasolabial-/Marionettenfalten, Tränenrinne*, Wangen, Kinn, Jawline, Nasenkorrektur ohne OP. CaHA: vor allem Wangen/Mittelgesicht, Jawline, Kinn, Hände; in verdünnter Form auch für Hals/Dekolleté. *CaHA wird üblicherweise nicht in Lippen/Tränenrinne eingesetzt.',
+          'Hyaluron: z. B. Lippen, Nasolabial-/Marionettenfalten, Tränenrinne*, Wangen, Kinn, Jawline, Nasenkorrektur ohne OP. CaHA: vor allem Wangen/Mittelgesicht, Jawline, Kinn, Hände; in verdünnter Form auch für Hals/Dekolleté. *CaHA wird üblicherweise nicht in Lippen/Tränenrinne eingesetzt.',
       },
       {
         question: 'Wie lange hält das Ergebnis?',
         answer:
-            'Hyaluron: je nach Produkt/Region/Metabolismus meist ca. 6–18 Monate. CaHA: häufig 12–18+ Monate durch Kollagenneubildung. Haltbarkeit ist individuell und variiert je nach Lebensstil, Areal und Dosierung (keine Heilversprechen).',
+          'Hyaluron: je nach Produkt/Region/Metabolismus meist ca. 6–18 Monate. CaHA: häufig 12–18+ Monate durch Kollagenneubildung. Haltbarkeit ist individuell und variiert je nach Lebensstil, Areal und Dosierung (keine Heilversprechen).',
       },
       {
         question: 'Wie viele Sitzungen bzw. wie viel Material wird benötigt?',
         answer:
-            'Oft genügt eine Sitzung; gelegentlich folgt ein Feintuning nach 2–6 Wochen. Die benötigte Menge ist individuell (Orientierung: je nach Region häufig 1–2 ml zu Beginn). Ein konkreter Plan wird im Beratungsgespräch erstellt.',
+          'Oft genügt eine Sitzung; gelegentlich folgt ein Feintuning nach 2–6 Wochen. Die benötigte Menge ist individuell (Orientierung: je nach Region häufig 1–2 ml zu Beginn). Ein konkreter Plan wird im Beratungsgespräch erstellt.',
       },
       {
         question: 'Ab wann sehe ich das Resultat?',
         answer:
-            'Hyaluron zeigt in der Regel sofort sichtbare Effekte (leichte Schwellung möglich). Bei CaHA ist ein Anfangseffekt vorhanden; der biostimulative Anteil entwickelt sich über 6–12 Wochen.',
+          'Hyaluron zeigt in der Regel sofort sichtbare Effekte (leichte Schwellung möglich). Bei CaHA ist ein Anfangseffekt vorhanden; der biostimulative Anteil entwickelt sich über 6–12 Wochen.',
       },
       {
         question: 'Gibt es Downtime oder Nebenwirkungen?',
         answer:
-            'Vorübergehende Rötung, Schwellung oder kleine Hämatome sind möglich und klingen meist in 1–3 Tagen ab. Selten: Knötchen/Asymmetrien; sehr selten Gefäßkomplikationen. Wir arbeiten mit sicheren Techniken und Aufklärung – ohne Heilversprechen.',
+          'Vorübergehende Rötung, Schwellung oder kleine Hämatome sind möglich und klingen meist in 1–3 Tagen ab. Selten: Knötchen/Asymmetrien; sehr selten Gefäßkomplikationen. Wir arbeiten mit sicheren Techniken und Aufklärung – ohne Heilversprechen.',
       },
       {
         question: 'Kann Hyaluron wieder aufgelöst werden?',
         answer:
-            'Ja. Unerwünschte Effekte mit Hyaluron können in der Regel mit Hyaluronidase adressiert werden. CaHA ist nicht auflösbar; daher erfolgt hier eine besonders sorgfältige Indikationsstellung und Technik.',
+          'Ja. Unerwünschte Effekte mit Hyaluron können in der Regel mit Hyaluronidase adressiert werden. CaHA ist nicht auflösbar; daher erfolgt hier eine besonders sorgfältige Indikationsstellung und Technik.',
       },
       {
         question: 'Sind Kombinationen von Hyaluron und CaHA möglich?',
         answer:
-            'Ja. Häufig wird mit CaHA Kontur/Struktur aufgebaut und mit Hyaluron fein modelliert oder hydriert. Reihenfolge, Intervalle und Materialwahl werden individuell geplant.',
+          'Ja. Häufig wird mit CaHA Kontur/Struktur aufgebaut und mit Hyaluron fein modelliert oder hydriert. Reihenfolge, Intervalle und Materialwahl werden individuell geplant.',
       },
       {
         question: 'Wer ist (vorübergehend) nicht geeignet?',
         answer:
-            'Bei Schwangerschaft/Stillzeit, akuten Infektionen, entzündlichen Hautzuständen im Behandlungsareal oder unmittelbar nach zahnärztlichen Eingriffen/Impfungen wird in der Regel verschoben. Bei bestimmten Grunderkrankungen/Medikationen ist eine individuelle Abklärung erforderlich.',
+          'Bei Schwangerschaft/Stillzeit, akuten Infektionen, entzündlichen Hautzuständen im Behandlungsareal oder unmittelbar nach zahnärztlichen Eingriffen/Impfungen wird in der Regel verschoben. Bei bestimmten Grunderkrankungen/Medikationen ist eine individuelle Abklärung erforderlich.',
       },
       {
         question: 'Wie bereite ich mich vor und was ist nach der Behandlung zu beachten?',
         answer:
-            'Vorher: Blutverdünner/hochdosierte Omega-3, Alkohol und große Hitze möglichst vermeiden (nach ärztlicher Rücksprache). Nachher: 24 h schwere Sportarten/Hitze meiden, Areal schonen, keine Massage außer empfohlen. Auffälligkeiten bitte direkt melden.',
+          'Vorher: Blutverdünner/hochdosierte Omega-3, Alkohol und große Hitze möglichst vermeiden (nach ärztlicher Rücksprache). Nachher: 24 h schwere Sportarten/Hitze meiden, Areal schonen, keine Massage außer empfohlen. Auffälligkeiten bitte direkt melden.',
       },
       {
         question: 'Was kosten Filler-Behandlungen?',
         answer:
-            'Die Kosten richten sich nach Produkt, Menge und Region. Im Beratungstermin erhalten Sie einen transparenten, individuellen Kostenplan.',
+          'Die Kosten richten sich nach Produkt, Menge und Region. Im Beratungstermin erhalten Sie einen transparenten, individuellen Kostenplan.',
       },
     ],
   };
@@ -147,7 +147,7 @@ export default function FillerHubPage() {
   const ctaData: CTASectionProps = {
     title: 'Bereit für mehr Definition & Volumen?',
     subtitle:
-        'Vereinbaren Sie Ihren Termin zur Filler-Behandlung in Bremen. Ob sinnliche Lippen, eine definierte Jawline, Wangenaufbau oder Korrektur von Asymmetrien – wir beraten Sie ehrlich zu den Möglichkeiten mit Hyaluron und Biostimulatoren.',
+      'Vereinbaren Sie Ihren Termin zur Filler-Behandlung in Bremen. Ob sinnliche Lippen, eine definierte Jawline, Wangenaufbau oder Korrektur von Asymmetrien – wir beraten Sie ehrlich zu den Möglichkeiten mit Hyaluron und Biostimulatoren.',
     primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
@@ -160,20 +160,20 @@ export default function FillerHubPage() {
   ];
 
   return (
-      <div className="min-h-screen bg-white">
-        <Script
-          id="filler-schema"
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-        <HeroSection {...heroData} />
-        <TableOfContents items={tocItems} />
-        <IntroSection {...introData} />
-        <TreatmentsSection {...treatmentsData} />
-        <ConsultationSection />
-        {/* FAQSection generiert JSON-LD automatisch */}
-        <FAQSection {...faqData} />
-        <CTASection {...ctaData}/>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Script
+        id="filler-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <HeroSection {...heroData} />
+      <TableOfContents items={tocItems} />
+      <IntroSection {...introData} />
+      <TreatmentsSection {...treatmentsData} />
+      <ConsultationSection />
+      {/* FAQSection generiert JSON-LD automatisch */}
+      <FAQSection {...faqData} />
+      <CTASection {...ctaData} />
+    </div>
   );
 }

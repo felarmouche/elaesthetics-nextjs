@@ -12,6 +12,21 @@ export interface PracticeSchema {
 }
 
 /**
+ * WebSite entity with @id: "#website"
+ * Injected once in root layout @graph. Enables sitelinks and entity recognition.
+ */
+export function getWebSiteSchema() {
+  return {
+    '@type': 'WebSite',
+    '@id': '#website',
+    name: 'EL Aesthetics Bremen',
+    url: SITE_URL,
+    inLanguage: 'de-DE',
+    publisher: { '@id': '#practice' },
+  };
+}
+
+/**
  * Physician entity with @id: "#physician"
  * Injected once in root layout @graph, referenced via { "@id": "#physician" }.
  */
@@ -21,8 +36,8 @@ export function getPhysicianSchema() {
     '@id': '#physician',
     name: 'Ola El-Armouche',
     medicalSpecialty: 'Dermatology',
-    telephone: '+4915566919635', // Added: Important for local SEO validation
-    image: `${SITE_URL}/assets/Profilbild engere auswahl/IMG_7336.jpg`, // Added: Personal image
+    telephone: '+4915566919635',
+    image: `${SITE_URL}/assets/Profilbild engere auswahl/IMG_7336.jpg`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Richtepad 14',
@@ -31,7 +46,7 @@ export function getPhysicianSchema() {
       postalCode: '28355',
       addressCountry: 'DE',
     },
-    priceRange: '€€', // Added: Required for some rich results
+    priceRange: '€€',
     hasCredential: {
       '@type': 'EducationalOccupationalCredential',
       credentialCategory: 'Mitgliedschaft',
@@ -44,7 +59,6 @@ export function getPhysicianSchema() {
       '@type': 'MedicalOrganization',
       name: 'Ärztekammer Bremen',
     },
-    sameAs: ['https://instagram.com/elaesthetics_bremen'],
     worksFor: { '@id': '#practice' },
   };
 }
@@ -84,6 +98,12 @@ export function getPracticeSchema(aggregateRating?: { ratingValue: number; revie
         opens: '09:00',
         closes: '17:00',
       },
+    ],
+    sameAs: [
+      'https://www.instagram.com/elaesthetics_bremen',
+      // TODO: Google Maps URL ergänzen (Format: https://maps.app.goo.gl/... oder https://www.google.com/maps/place/...)
+      // Der Share-Link https://share.google/srtHTJ0J1WaMjLJe3 ist ein Redirect und keine kanonische Profil-URL.
+      // Bitte die Google Maps URL aus dem Google Business Profile kopieren.
     ],
     priceRange: '€€',
     physician: { '@id': '#physician' },

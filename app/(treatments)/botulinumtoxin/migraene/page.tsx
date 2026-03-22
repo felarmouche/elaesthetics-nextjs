@@ -5,7 +5,7 @@ import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Migräne-Prophylaxe Bremen | Botulinumtoxin-Behandlung | EL Aesthetics',
+  title: 'Migräne-Behandlung mit Botox Bremen',
   description: 'Botulinumtoxin zur Migräne-Prophylaxe in Bremen. Ärztliche Behandlung bei chronischer Migräne. Informationen zu Ablauf, Wirkung & Kosten. Jetzt beraten lassen.',
   keywords: ['Migräne Botox Bremen', 'Migräne Prophylaxe Bremen', 'chronische Migräne Behandlung Bremen', 'Botulinumtoxin Migräne Bremen'],
   openGraph: {
@@ -31,11 +31,13 @@ export default function BotoxMigraenePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Migräne-Prophylaxe mit Botulinumtoxin in Bremen',
-        description: 'Ärztliche Botulinumtoxin-Behandlung bei chronischer Migräne.',
-        url: '/botulinumtoxin/migraene',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Migräne-Prophylaxe mit Botulinumtoxin in Bremen',
+          description: 'Ärztliche Botulinumtoxin-Behandlung bei chronischer Migräne.',
+          url: '/botulinumtoxin/migraene',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Botulinumtoxin-Prophylaxe bei chronischer Migräne',
         type: 'MedicalProcedure',
@@ -113,7 +115,7 @@ export default function BotoxMigraenePage() {
     },
   };
 
-  
+
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Anwendungen mit Botulinumtoxin',

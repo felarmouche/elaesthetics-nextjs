@@ -11,7 +11,7 @@ const ImageSlider = dynamic(() => import('@/components/ImageSlider'));
 const PatientReviews = dynamic(() => import('@/components/PatientReviews'));
 
 export const metadata: Metadata = {
-  title: 'Ästhetische Medizin Bremen | Privatpraxis EL Aesthetics',
+  title: { absolute: 'Ästhetische Medizin Bremen | EL Aesthetics' },
   description: 'Privatpraxis für ästhetische Medizin in Bremen Oberneuland. Ärztliche Behandlungen mit Botulinumtoxin, Hyaluron & Eigenbluttherapie. Jetzt Termin vereinbaren.',
   keywords: ['ästhetische Medizin Bremen', 'Privatpraxis ästhetische Medizin Bremen', 'Schönheitsarzt Bremen', 'ästhetische Behandlungen Bremen Oberneuland'],
   alternates: {

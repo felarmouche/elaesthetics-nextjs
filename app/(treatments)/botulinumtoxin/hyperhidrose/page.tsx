@@ -29,7 +29,7 @@ import { getWebPageSchema, getMedicalProcedureSchema } from "@/lib/schema";
 import { PRICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Hyperhidrose Behandlung Bremen | Schwitzen stoppen | EL Aesthetics",
+  title: "Hyperhidrose Behandlung Bremen",
   description:
     "Übermäßiges Schwitzen behandeln: Botulinumtoxin gegen Hyperhidrose in Bremen. Wirkung, Ablauf & Kosten der ärztlichen Behandlung. Beratungstermin vereinbaren.",
   keywords: [

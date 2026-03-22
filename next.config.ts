@@ -1,17 +1,18 @@
-// next.config.mjs
-const isProd = process.env.NODE_ENV === 'production'
-const repo = 'elaesthetics-bremen-github' // exakt wie auf GitHub
+// next.config.ts
+const isGitHubPages = process.env.DEPLOY_TARGET === 'gh-pages';
+const repo = 'elaesthetics-bremen-github';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Ab Next 13/14 (App oder Pages Router):
   output: 'export',
-  // Wichtig für GitHub Project Pages: /user.github.io/REPO
-  basePath: isProd ? `/${repo}` : '',
-  assetPrefix: isProd ? `/${repo}/` : '',
-  trailingSlash: true, // sorgt dafür, dass /pfad/ -> pfad/index.html auf GH Pages funktioniert
+  trailingSlash: true,
+  // GitHub Pages braucht basePath + assetPrefix; Custom Domain nicht
+  ...(isGitHubPages && {
+    basePath: `/${repo}`,
+    assetPrefix: `/${repo}/`,
+  }),
   images: {
-    unoptimized: true, // Next/Image ohne Optimizer (GH Pages kann das nicht)
+    unoptimized: true,
   },
 }
 export default nextConfig

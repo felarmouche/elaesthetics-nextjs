@@ -30,7 +30,7 @@ import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Polynukleotide Bremen | Hautregeneration & Anti-Aging | EL Aesthetics',
+  title: 'Polynukleotide Bremen – Hautregeneration',
   description: 'Polynukleotide in Bremen: DNA-basierte Hautregeneration für Falten, Augenbereich & Haarausfall. Ärztliche Beratung zu Ablauf & Kosten. Jetzt Termin vereinbaren.',
   keywords: ['Polynukleotide Bremen', 'Polynukleotide Augen Bremen', 'Polynukleotide Haarausfall Bremen', 'DNA Hauttherapie Bremen'],
   openGraph: {

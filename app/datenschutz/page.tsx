@@ -3,7 +3,7 @@ import { Shield, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-    title: 'Datenschutzerklärung | EL Aesthetics Bremen',
+    title: 'Datenschutzerklärung',
     description: 'Datenschutzerklärung der Privatpraxis EL Aesthetics Bremen. Informationen zur Datenverarbeitung gemäß DSGVO.',
     alternates: {
         canonical: 'https://elaesthetics-bremen.de/datenschutz',

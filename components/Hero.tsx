@@ -36,13 +36,14 @@ export default function Hero() {
             <div className="absolute inset-0 bg-black/40 z-[1]" />
 
             <div className="relative z-[2] text-center p-8 text-white max-w-4xl mx-auto animate-fade-up">
-                <h1 className="text-4xl md:text-[4.5rem] tracking-[6px] mb-6 uppercase text-accent">
-                    El Aesthetics Bremen
+                <h1 className="mb-6 uppercase text-accent">
+                    <span className="block text-4xl md:text-[4.5rem] tracking-[6px]">
+                        EL Aesthetics Bremen
+                    </span>
+                    <span className="block text-lg tracking-[2px] mt-4 font-light text-white">
+                        Praxis für ästhetische und regenerative Medizin
+                    </span>
                 </h1>
-
-                <p className="text-lg tracking-[2px] mb-12 font-light uppercase">
-                    Praxis für ästhetische und regenerative Medizin
-                </p>
 
                 <div className="flex justify-center items-center">
                     <Link

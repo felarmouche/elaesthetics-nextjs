@@ -30,7 +30,7 @@ import { getWebPageSchema, getMedicalProcedureSchema } from "@/lib/schema";
 // NEUE KEYWORDS FÜR RECHTLICHE SICHERHEIT UND SEO
 // Marke (Profhilo) nur in Meta/ALT/Schema (nicht sichtbar im Content)
 export const metadata: Metadata = {
-  title: "Biorevitalisierung Bremen | Profhilo & Hautstraffung | EL Aesthetics",
+  title: "Profhilo Bremen – Hautstraffung",
   description:
     "Biorevitalisierung mit Profhilo in Bremen: Hautqualität & Elastizität verbessern. BAP-Technik – schonend & effektiv. Jetzt beraten lassen.",
   keywords: [

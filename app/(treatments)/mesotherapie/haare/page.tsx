@@ -6,7 +6,7 @@ import { PRICES } from '@/lib/constants';
 import { polyHaar, prfHaar } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Mesotherapie Haare Bremen | Haarausfall & Verdichtung | EL Aesthetics',
+  title: 'Mesotherapie Haare Bremen',
   description: 'Mesotherapie gegen Haarausfall in Bremen: Aktiviert Haarwurzeln, fördert Verdichtung. Für Männer & Frauen. Jetzt beraten lassen.',
   keywords: ['Mesotherapie Haare Bremen', 'Haarausfall Behandlung Bremen', 'Haarverdichtung Bremen', 'Haarwachstum fördern Bremen', 'Kopfhaut Mesotherapie Bremen'],
   openGraph: {

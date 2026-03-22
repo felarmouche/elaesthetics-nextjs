@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/generate-sitemap.cjs",
     "build": "next build",
     "preview": "npx serve@latest out",
-    "export": "next build",
+    "export": "node scripts/generate-sitemap.cjs && next build",
     "start": "next start",
-    "gh:export": "cross-env NODE_ENV=production next build && node scripts/nojekyll.cjs",
+    "gh:export": "node scripts/generate-sitemap.cjs && cross-env DEPLOY_TARGET=gh-pages next build && node scripts/nojekyll.cjs",
     "lint": "eslint"
   },
   "dependencies": {

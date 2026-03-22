@@ -1,15 +1,15 @@
 // app/kollagenstimulation/page.tsx
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import {PRICES} from '@/lib/constants'
+import { PRICES } from '@/lib/constants'
 import {
-  AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection
+  AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { eigenblut, filler, mesoHaar, mesotherapieHaut, microneedling, polynukleotide } from '@/data/treatments';
- 
+
 export const metadata: Metadata = {
-  title: 'Kollagenstimulation Bremen | CaHA & Biostimulatoren | EL Aesthetics',
+  title: 'Kollagenstimulation Bremen',
   description: 'Kollagenstimulation in Bremen: CaHA- und Hyaluron-Biostimulatoren für natürliche Hautstraffung an Gesicht, Hals & Händen. Ärztliche Beratung. Termin buchen.',
   keywords: ['Kollagenstimulation Bremen', 'Calciumhydroxylapatit Bremen', 'Hautstraffung ohne OP Bremen', 'Biostimulator Bremen', 'Kollagenaufbau Bremen'],
   openGraph: {
@@ -37,11 +37,13 @@ export default function KollagenstimulationPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Kollagenstimulation in Bremen',
-        description: 'Ärztliche Kollagenstimulation mit Biostimulatoren für natürliche Hautstraffung und Kollagenaufbau.',
-        url: '/kollagenstimulation',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Kollagenstimulation in Bremen',
+          description: 'Ärztliche Kollagenstimulation mit Biostimulatoren für natürliche Hautstraffung und Kollagenaufbau.',
+          url: '/kollagenstimulation',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Kollagenstimulation mit Biostimulatoren',
         type: 'CosmeticProcedure',
@@ -180,7 +182,7 @@ export default function KollagenstimulationPage() {
     },
   };
 
-  
+
 
   const consultationData: ConsultationSectionProps = {
     title: 'Ihre Ärztin für Kollagenstimulation in Bremen',
@@ -191,7 +193,7 @@ export default function KollagenstimulationPage() {
     ],
     ctaText: 'Beratungstermin anfragen',
     ctaHref: '/kontakt',
-    
+
     backgroundColor: 'bg-[#FDF6F0]',
   };
 

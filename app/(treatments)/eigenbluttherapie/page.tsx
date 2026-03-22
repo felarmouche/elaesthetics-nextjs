@@ -18,7 +18,7 @@ import {
 import { getWebPageSchema } from '@/lib/schema';
 
 export const metadata: Metadata = {
-  title: 'Eigenbluttherapie PRF & PRP Bremen | Haut & Haare | EL Aesthetics',
+  title: 'Eigenbluttherapie Bremen – PRF & PRP',
   description: 'Eigenbluttherapie mit PRF/PRP in Bremen: Autologe Plasma-Behandlung für Hautregeneration und bei Haarausfall. Ablauf, Kosten & Beratung. Termin vereinbaren.',
   keywords: ['Eigenbluttherapie Bremen', 'PRP Bremen', 'PRF Behandlung Bremen', 'Platelet Rich Plasma Bremen', 'Eigenblut Behandlung Bremen'],
   openGraph: {
