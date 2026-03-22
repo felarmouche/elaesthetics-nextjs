@@ -26,8 +26,9 @@ import {
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { eigenblut, microneedling, skinbooster } from '@/data/treatments';
 // PatientReviews import bleibt ungenutzt; bei Bedarf HWG-konform entfernen/ersetzen
- 
+
 
 export const metadata: Metadata = {
   title: 'Chemisches Peeling Bremen | Hauterneuerung & Pigmente | EL Aesthetics',
@@ -56,11 +57,13 @@ export default function ChemischesPeelingPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Chemisches Peeling in Bremen',
-        description: 'Ärztliches chemisches Peeling zur Hauterneuerung, Pigmentreduzierung und Verbesserung der Hautstruktur.',
-        url: '/chemisches-peeling',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Chemisches Peeling in Bremen',
+          description: 'Ärztliches chemisches Peeling zur Hauterneuerung, Pigmentreduzierung und Verbesserung der Hautstruktur.',
+          url: '/chemisches-peeling',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Chemisches Peeling',
         type: 'CosmeticProcedure',
@@ -74,7 +77,7 @@ export default function ChemischesPeelingPage() {
   const heroData: HeroSectionProps = {
     title: 'Chemisches Peeling in Bremen',
     subtitle:
-      'Biorevitalisierung mit chemischem Peeling - Es können verschiedene biologische Prozesse angeregt werden, z.B. Bildung von kollagenen Fasern & Freisetzung von Wachstumsfaktoren, welche die Regeneration der Haut unterstützen, die Hautstruktur verbessern & Pigmentstörungen entgegengewirken können.',
+      'Zur Unterstützung der Hautregeneration, Verfeinerung des Hautbildes und Milderung von Pigmentstörungen.',
     imageSrc: '/assets/chemisches-peeling/chemisches-peeling_hero.webp',
     imageAlt: 'Chemisches Peeling zur Hauterneuerung und Pigmentbehandlung – EL Aesthetics Bremen',
     primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
@@ -84,10 +87,10 @@ export default function ChemischesPeelingPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist ein chemisches Peeling?',
     content: [
-      'Das chemische Peeling ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin zur kontrollierten Hauterneuerung bei Pigmentflecken, Aknenarben und fahlem Teint.',
-      'Die eingesetzte Wirkstoffkombination besteht unter anderem aus Trichloressigsäure (TCA), Wasserstoffperoxid und Kojisäure. Durch die spezielle Formulierung dringen die Substanzen bis in mittlere Hautschichten vor, ohne eine sichtbare Abschälung zu verursachen.',
-      'In unserer Praxis kommt das PRX‑T33 zum Einsatz (TCA in patentierter Kombination mit H2O2/Kojisäure). Ziel ist eine Tiefenstimulation –  in der Regel ohne sichtbare Abschälung und ohne Ausfallzeit ',
-      'Eignung u. a. bei Elastizitätsverlust, feinen Falten, Pigmentflecken sowie bei Akne/aknebedingten Veränderungen. Areale: Gesicht, Hals, Dekolleté, Oberarme. Hinweise und Alternativen besprechen wir im Arztgespräch.',
+      'Das chemische Peeling ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin zur kontrollierten Hauterneuerung. Es unterstützt die Behandlung von Pigmentflecken, Aknenarben, feinen Falten und fahlem Teint.',
+      'Die eingesetzte Wirkstoffkombination besteht aus Trichloressigsäure (TCA), Wasserstoffperoxid (H₂O₂) und Kojisäure. TCA ermöglicht das gezielte Eindringen von H₂O₂ bis in mittlere Hautschichten. Dort werden Kollagenbildung und Wachstumsfaktoren angeregt, Entzündungsprozesse reguliert und die zelluläre Regeneration gefördert. Kojisäure wirkt zusätzlich aufhellend bei leichten Pigmentveränderungen – und das alles ohne sichtbare Abschälung.',
+      'In unserer Praxis setzen wir PRX-T33 ein – ein patentiertes Verfahren, das auf dem Konzept der Biorevitalisierung basiert: eine Tiefenstimulation der Haut, in der Regel ohne sichtbare Abschälung und ohne Ausfallzeit.',
+      'Das Verfahren ist grundsätzlich für Frauen und Männer aller Hauttypen, Altersgruppen und Jahreszeiten geeignet. Indikationen umfassen u. a. Elastizitätsverlust, feine Falten, Pigmentflecken sowie aknebedingte Veränderungen. Geeignete Areale: Gesicht, Hals, Dekolleté, Oberarme. Kontraindikationen und Alternativen besprechen wir im Arztgespräch.',
     ],
   };
 
@@ -111,6 +114,16 @@ export default function ChemischesPeelingPage() {
           { title: 'Akne & aknebedingte Narben (je nach Befund)' },
           { title: 'Pigmentflecken/ungleichmäßiger Teint' },
           { title: 'Eingesunkene Narben/Dehnungsstreifen' },
+        ],
+      },
+      {
+        category: 'Kontraindikationen',
+        items: [
+          { title: 'Überempfindlichkeit', description: 'Bekannte Unverträglichkeit gegen TCA, Wasserstoffperoxid oder Kojisäure' },
+          { title: 'Schwangerschaft & Stillzeit' },
+          { title: 'Offene Wunden', description: 'Frische Verletzungen oder offene Wunden im Behandlungsareal' },
+          { title: 'Akute Hautentzündungen' },
+          { title: 'Aktive Infektionen', description: 'Aktive bakterielle Hautinfektionen oder behandlungsbedürftige Hauterkrankungen' },
         ],
       },
     ],
@@ -158,20 +171,18 @@ export default function ChemischesPeelingPage() {
         { title: 'Feuchtigkeit', description: 'Milde, hydratisierende Pflege nutzen.' },
         { title: 'Reizstoffe meiden', description: '2 Wochen keine aggressiven Kosmetika/mechanischen Peelings.' },
         { title: 'Keine Manipulation', description: 'Nicht reiben/kratzen – auch bei leichter Schuppung.' },
-        { title: 'Sport/Schwitzen', description: '24–48 Stunden keinen intensiven Sport.' },
-        { title: 'Sauna/Solarium', description: 'Für 2 Wochen vermeiden.' },
       ],
     },
   };
 
-  
+
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen zur Hautverbesserung',
     treatments: [
-      { imageUrl: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp', imageAlt: 'Medizinisches Microneedling', title: 'Medizinisches Microneedling', description: 'Stimulation von Kollagen/Elastin zur Verbesserung der Hautstruktur (Narben/Poren).', treatmentUrl: '/medizinisches-microneedling' },
-      { imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp', imageAlt: 'Eigenbluttherapie (PRF)', title: 'Eigenbluttherapie (PRF)', description: 'Aufbereitete Eigenblutbestandteile zur Unterstützung der Regeneration.', treatmentUrl: '/hautverbesserung/eigenbluttherapie' },
-      { imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.webp', imageAlt: 'Skinbooster', title: 'Skinbooster (klassisch)', description: 'Flächige Hyaluronbehandlung für Hydration und Struktur.', treatmentUrl: '/hautverbesserung/skinbooster' },
+      microneedling,
+      eigenblut,
+      skinbooster,
     ],
   };
 
@@ -181,11 +192,11 @@ export default function ChemischesPeelingPage() {
       { question: 'Wie viele Behandlungen sind nötig?', answer: 'Für sichtbare Ergebnisse werden häufig 3–5 Sitzungen im Abstand von 1–2 Wochen geplant.' },
       { question: 'Wie lange dauert eine Behandlung?', answer: 'In der Regel ca. 45 Minuten inkl. Vorbereitung.' },
       { question: 'Wann wirkt ein chemisches Peeling?', answer: 'Ein erster Effekt ist oft sofort sichtbar; die Tiefenstimulation entwickelt sich über Wochen.' },
-      { question: 'Welche Vorteile hat ein chemisches Peeling?', answer: 'Unterstützung eines ebenmäßigeren Hautbilds, optische Verfeinerung der Struktur, begleitende Aufhellung von Pigmentierungen (je nach Befund).' },
-      { question: 'Für wen ist es geeignet?', answer: 'Grundsätzlich für viele Hauttypen; Ausnahmen bei Schwangerschaft/Stillzeit, akuten Infektionen oder bekannten Unverträglichkeiten.' },
+      { question: 'Welche Vorteile hat ein chemisches Peeling?', answer: 'Das PRX-T33-Peeling ist ganzjährig anwendbar – auch im Sommer – und verursacht in der Regel keine erhöhte Photosensitivität. Die Behandlung eignet sich für alle Hauttypen und Altersgruppen, erfordert keine Ausfallzeit und ist in der Regel gut verträglich. Ergänzend unterstützt sie ein ebenmäßigeres Hautbild, eine optische Verfeinerung der Hautstruktur sowie eine Aufhellung von Pigmentierungen (je nach Befund).' },
+      { question: 'Für wen ist es geeignet?', answer: 'Grundsätzlich für Frauen und Männer vieler Hauttypen geeignet. Nicht empfohlen bei: bekannter Überempfindlichkeit gegen TCA, Wasserstoffperoxid oder Kojisäure; Schwangerschaft/Stillzeit; offenen Wunden oder frischen Verletzungen im Behandlungsbereich; akuten Hautentzündungen; aktiven bakteriellen Hautinfektionen oder behandlungsbedürftigen Hauterkrankungen.' },
       { question: 'Ist es schmerzhaft?', answer: 'Meist gut toleriert; möglich sind kurzzeitiges Brennen/Wärmegefühl beim Einmassieren.' },
       { question: 'Bei empfindlicher Haut?', answer: 'Je nach Befund möglich; die Konzentration und Sitzungsanzahl werden angepasst.' },
-      { question: 'Welche Nebenwirkungen?', answer: 'Vorübergehende Rötung/Spannungsgefühl; selten stärkere Reaktionen. Nachsorge (UV‑Schutz/Pflege) beachten.' },
+      { question: 'Welche Nebenwirkungen sind möglich?', answer: 'Die Behandlung ist in der Regel gut verträglich. Beim Auftragen kann ein leichtes Brennen und eine leichte Rötung auftreten, die sich typischerweise innerhalb weniger Stunden zurückbilden. Sichtbare Abschälung tritt meist nicht auf; bei empfindlicherer Haut kann gelegentlich leichtes Schuppen vorkommen – das ist harmlos und vorübergehend. Stärkere Reaktionen sind aufgrund der spezifischen Formulierung selten. Eine konsequente Nachsorge (UV-Schutz LSF 50+, milde Pflege) ist wichtig, um das Ergebnis zu schützen.' },
       { question: 'Schwangerschaft?', answer: 'Während Schwangerschaft/Stillzeit wird von chemischen Peelings abgeraten.' },
       { question: 'Hilft es gegen Pigmentflecken oder Falten?', answer: 'Je nach Ursache/Befund kann eine Aufhellung/Glättung unterstützt werden. Eine allgemeine Wirkung kann nicht zugesichert werden.' },
       { question: 'Wie oft für langfristige Ergebnisse?', answer: 'Nach Serie (3–5) ggf. Auffrischungen in größeren Abständen – individuell.' },

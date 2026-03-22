@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection,  CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps,   ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection} from '@/components/TreatmentPageComponents';
+import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, HubTeaserSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { polyHaar, prfHaar } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Mesotherapie Haare Bremen | Haarausfall & Verdichtung | EL Aesthetics',
@@ -33,11 +34,13 @@ export default function MesotherapieHaarePage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Mesotherapie bei Haarausfall in Bremen',
-        description: 'Ärztliche Mesotherapie-Behandlung zur Aktivierung der Haarwurzeln und Förderung des Haarwachstums.',
-        url: '/mesotherapie/haare',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Mesotherapie bei Haarausfall in Bremen',
+          description: 'Ärztliche Mesotherapie-Behandlung zur Aktivierung der Haarwurzeln und Förderung des Haarwachstums.',
+          url: '/mesotherapie/haare',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Mesotherapie gegen Haarausfall',
         type: 'MedicalProcedure',
@@ -50,7 +53,7 @@ export default function MesotherapieHaarePage() {
 
   const heroData: HeroSectionProps = {
     title: "Mesotherapie Haare in Bremen",
-    subtitle: "Leiden Sie unter Haarausfall oder dünner werdendem Haar?\nMit der Mesotherapie Haar-Behandlung aktivieren wir Ihre Haarwurzeln und fördern das Haarwachstum – natürlich und nachhaltig.",
+    subtitle: "Leiden Sie unter Haarausfall oder dünner werdendem Haar?\nMit der Mesotherapie Haar-Behandlung aktivieren wir Ihre Haarwurzeln und fördern das Haarwachstum.",
     imageSrc: "/assets/mesotherapie/mesotherapie-haare_hero.webp",
     imageAlt: "Mesotherapie für Haare bei Haarausfall – EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
@@ -60,7 +63,7 @@ export default function MesotherapieHaarePage() {
   const introData: IntroSectionProps = {
     title: "Was ist Mesotherapie für die Haare?",
     content: [
-      "Die Mesotherapie für die Haare ist ein minimal-invasives Verfahren zur Behandlung von Haarausfall, bei dem ein Wirkstoffcocktail aus Vitaminen und Nährstoffen direkt in die Kopfhaut injiziert wird.",
+      "Die Mesotherapie für die Haare ist ein minimal-invasives Verfahren zur Behandlung von Haarausfall, bei dem verschiedene vitalisierende Stoffe, unter anderem Vitamine und Spurenelemente, direkt in die Kopfhaut injiziert werden.",
       "Der Wirkstoffkomplex versorgt die Haarfollikel intensiv mit essentiellen Nährstoffen, verbessert die Durchblutung der Kopfhaut und aktiviert ruhende Haarwurzeln. Dies führt zu einer deutlichen Reduktion des Haarausfalls und zur Verdichtung des bestehenden Haares.",
       "In unserer Praxis in Bremen behandeln wir mit der Haarmesotherapie sowohl Frauen als auch Männer mit verschiedenen Formen von Haarausfall: erblich bedingter Haarausfall (androgenetische Alopezie), diffuser Haarausfall oder kreisrunder Haarausfall. Die Behandlung ist sanft, nahezu schmerzfrei und erfordert keine Ausfallzeit. Klinische Studien zeigen: 80% der Patienten berichten ab der 3. Behandlung von deutlich weniger Haarausfall."
     ]
@@ -192,7 +195,7 @@ export default function MesotherapieHaarePage() {
     }
   };
 
-  
+
 
   const consultationData: ConsultationSectionProps = {
     title: "Ihre Expertin für Haarmesotherapie in Bremen",
@@ -210,34 +213,9 @@ export default function MesotherapieHaarePage() {
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere Behandlungen gegen Haarausfall in Bremen",
     treatments: [
-      {
-        imageUrl: "/assets/prf/prf_haar_hero.webp",
-        imageAlt: "PRF Eigenbluttherapie für Haare",
-        title: "PRF/PRP-Eigenbluttherapie für Haare",
-        description: "Nutzen Sie die regenerativen Kräfte Ihres eigenen Blutes zur Aktivierung der Haarwurzeln. Besonders effektiv in Kombination mit Mesotherapie.",
-        treatmentUrl: "/haarausfall-behandlung/eigenbluttherapie"
-      },
-      {
-        imageUrl: "/assets/polynukleotide/polynukleotide_haar_hero.webp",
-        imageAlt: "Polynukleotide Behandlung für Haarwurzeln",
-        title: "Polynukleotide für Haare",
-        description: "Innovative Behandlung zur Regeneration der Haarfollikel und Verbesserung der Kopfhaut-Gesundheit. Ideal bei fortgeschrittenem Haarausfall.",
-        treatmentUrl: "/haarausfall-behandlung/polynukleotide"
-      },
-      {
-        imageUrl: "/assets/microneedling/microneedling_haar_hero.webp",
-        imageAlt: "Microneedling der Kopfhaut",
-        title: "Medizinisches Microneedling der Kopfhaut",
-        description: "Fördern Sie die Durchblutung der Kopfhaut und die Aufnahme von Wirkstoffen durch gezielte Mikroverletzungen. Unterstützt das Haarwachstum effektiv.",
-        treatmentUrl: "/haarausfall-behandlung/microneedling"
-      },
-      {
-        imageUrl: "/assets/beratung/haarausfall_beratung.webp",
-        imageAlt: "Umfassende Haarausfall-Beratung",
-        title: "Umfassende Haarausfall-Diagnostik",
-        description: "Lassen Sie uns gemeinsam die Ursachen Ihres Haarausfalls analysieren und einen individuellen Behandlungsplan erstellen.",
-        treatmentUrl: "/haarausfall-behandlung"
-      }
+      prfHaar,
+      polyHaar,
+
     ]
   };
 
@@ -276,7 +254,7 @@ export default function MesotherapieHaarePage() {
         question: "Kann sie mit anderen Haarausfall-Behandlungen kombiniert werden?",
         answer: "Ja, die Mesotherapie lässt sich hervorragend mit anderen Behandlungen kombinieren. Besonders effektiv ist die Kombination mit PRF/PRP-Eigenbluttherapie, Polynukleotiden oder medizinischem Microneedling der Kopfhaut. Auch eine begleitende medikamentöse Therapie (z.B. Minoxidil) ist möglich. In einem persönlichen Beratungsgespräch erstelle ich einen individuellen Behandlungsplan, der optimal auf Ihre Situation abgestimmt ist."
       },
-      
+
     ]
   };
 
@@ -302,6 +280,11 @@ export default function MesotherapieHaarePage() {
       <ProcessSection {...processData} />
       <TreatmentCareSection {...treatmentCareData} />
       <ConsultationSection />
+      <HubTeaserSection
+        title="Zur Übersicht: Mesotherapie"
+        subtitle="Alle Mesotherapie-Behandlungen für Haut & Haare im Überblick."
+        href="/mesotherapie"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />

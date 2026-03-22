@@ -26,8 +26,8 @@ import {
 
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
-import {botoxFalten, filler, fillerPageTreatments, microneedling} from "@/data/treatments";
-import {PRICES} from "@/lib/constants";
+import { botoxFalten, filler, microneedling } from "@/data/treatments";
+import { PRICES } from "@/lib/constants";
 
 export const metadata: Metadata = {
     title: 'Fett-weg-Spritze Bremen | Injektionslipolyse Doppelkinn | EL Aesthetics',
@@ -56,27 +56,29 @@ export const metadata: Metadata = {
 
 export default function FettWegSpritzePage() {
     const jsonLd = {
-      '@context': 'https://schema.org',
-      '@graph': [
-        { ...getWebPageSchema({
-          name: 'Fett-weg-Spritze (Injektionslipolyse) in Bremen',
-          description: 'Ärztliche Injektionslipolyse zur gezielten Fettreduktion an Doppelkinn, Bauch und anderen Problemzonen.',
-          url: '/fett-weg-spritze',
-        }), '@context': undefined },
-        getMedicalProcedureSchema({
-          name: 'Fett-weg-Spritze (Injektionslipolyse)',
-          type: 'MedicalProcedure',
-          bodyLocation: 'Body',
-          description: 'Injektionslipolyse zur nicht-chirurgischen Fettreduktion durch Injektionen, die Fettzellen abbauen.',
-          howPerformed: 'Injektion',
-        }),
-      ],
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                ...getWebPageSchema({
+                    name: 'Fett-weg-Spritze (Injektionslipolyse) in Bremen',
+                    description: 'Ärztliche Injektionslipolyse zur gezielten Fettreduktion an Doppelkinn, Bauch und anderen Problemzonen.',
+                    url: '/fett-weg-spritze',
+                }), '@context': undefined
+            },
+            getMedicalProcedureSchema({
+                name: 'Fett-weg-Spritze (Injektionslipolyse)',
+                type: 'MedicalProcedure',
+                bodyLocation: 'Body',
+                description: 'Injektionslipolyse zur nicht-chirurgischen Fettreduktion durch Injektionen, die Fettzellen abbauen.',
+                howPerformed: 'Injektion',
+            }),
+        ],
     };
 
     const heroData: HeroSectionProps = {
-        title: 'Fett-weg-Spritze (Injektionslipolyse) in Bremen',
+        title: 'Injektionslipolyse / Fettreduktion ohne OP in Bremen',
         subtitle:
-            'Gezielte Fettreduktion ohne Operation: Doppelkinn, Hängebäckchen & lokale Fettdepots dauerhaft auflösen – minimal-invasiv mit langanhaltenden Ergebnissen.',
+            'Fett-weg-Spritze: Gezielte Fettreduktion ohne Operation: Doppelkinn, Hängebäckchen & lokale Fettdepots dauerhaft auflösen.',
         imageSrc: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp',
         imageAlt: 'Fett-weg-Spritze Injektionslipolyse für Doppelkinn – EL Aesthetics Bremen',
         primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -84,12 +86,11 @@ export default function FettWegSpritzePage() {
     };
 
     const introData: IntroSectionProps = {
-        title: 'Was ist die Injektionslipolyse (Fett-weg-Spritze)?',
+        title: 'Was ist eine Fett-weg-Spritze?',
         content: [
-            'Die Fett-weg-Spritze (Injektionslipolyse) ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin zur gezielten Reduktion lokaler Fettdepots wie Doppelkinn oder Hängebäckchen.',
-            'Die Wirkung der Fett-weg-Spritze beruht auf der Injektion der Wirkstoffe Phosphatidylcholin und Desoxycholsäure, die in das Fettgewebe injiziert werden. Diese Wirkstoffe lösen eine Reaktion aus, bei der die Fettzellen aufgelöst und abgebaut werden. Eine Hautstraffung und Körperkonturierung ist dabei eine positive Begleiterscheinung.',
-            'Damit lassen sich Doppelkinn, Hängebäckchen und viele weitere kleinere bis mittelgroße Fettdepots am Körper reduzieren. Die Fett-weg-Spritze stellt keine Methode zur umfassenden Gewichtsreduktion dar, sondern wird gezielt zur Reduktion kleiner bis mittelgroßer, lokalisierter Fettdepots eingesetzt.',
-            'Sie ist am besten für diejenigen geeignet, welche überschüssige kleine bis mittelgroße Fettpolster loswerden möchten, die nicht gut auf Sport und Diäten ansprechen. In der Regel sind 3-5 Behandlungen notwendig, um ein optimales Ergebnis zu erzielen.',
+            'Bei der Fett-weg-Spritze (Injektionslipolyse) werden die Fettzellen durch gezielte Injektionen zerstört, vom Körper auf natürliche Weise verstoffwechselt und ausgeschieden. Folglich verkleinern sich die Fettdepots oder lösen sich dauerhaft auf. Das macht die Injektionslipolyse zu einer Alternative für alle, die sich keiner Operation unterziehen wollen.',
+            'Damit lassen sich Doppelkinn, Hängebäckchen und viele weitere kleinere bis mittelgroße Fettdepots am Körper reduzieren. Die Injektionslipolyse stellt keine Methode zur umfassenden Gewichtsreduktion dar, sondern wird gezielt zur Reduktion kleiner bis mittelgroßer, lokalisierter Fettdepots eingesetzt.',
+            'Sie ist am besten für diejenigen geeignet, welche überschüssige kleine bis mittelgroße Fettpolster loswerden möchten, die nicht gut auf Sport und Diäten ansprechen. In der Regel sind 3–5 Behandlungen notwendig, um ein optimales Ergebnis zu erzielen.',
         ],
     };
 
@@ -134,8 +135,8 @@ export default function FettWegSpritzePage() {
                         description: 'Seitliche Fettansammlungen',
                     },
                     {
-                        title: 'Oberschenkel',
-                        description: 'Innenseite und Außenseite der Oberschenkel',
+                        title: 'Ober- und Unterschenkel',
+                        description: 'Innenseite, Außenseite und Unterschenkelbereich',
                     },
                     {
                         title: 'Knie',
@@ -231,12 +232,6 @@ export default function FettWegSpritzePage() {
                 description:
                     'Anschließend erfolgt eine leichte Massage, um den Wirkstoff optimal zu verteilen. Sie erhalten detaillierte Nachsorgeanweisungen, um den Heilungsprozess zu beschleunigen und das Behandlungsergebnis zu optimieren.',
             },
-            {
-                number: '05',
-                title: 'Folgetermine & Ergebnis',
-                description:
-                    'Die Behandlungen erfolgen alle 2-3 Wochen (abhängig vom gewählten Präparat), bis das gewünschte Ergebnis erreicht ist.',
-            },
         ],
     };
 
@@ -319,9 +314,9 @@ export default function FettWegSpritzePage() {
         },
     };
 
-    
 
-    
+
+
 
 
     const treatmentsData: TreatmentsSectionProps = {
@@ -330,7 +325,7 @@ export default function FettWegSpritzePage() {
             microneedling,
             botoxFalten,
             filler
-            ]
+        ]
     };
 
     const faqData: FAQSectionProps = {

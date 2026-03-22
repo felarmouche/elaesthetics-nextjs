@@ -1,8 +1,9 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem } from '@/components/TreatmentPageComponents';
+import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, HubTeaserSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { eigenblut, mesotherapieHaut, peeling, polynukleotide, profhilo } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Mesotherapie Gesicht Bremen | Hautqualität & Glow | EL Aesthetics',
@@ -63,8 +64,8 @@ export default function MesotherapieHautPage() {
     title: "Was ist Mesotherapie für die Haut?",
     content: [
       "Die Mesotherapie für das Gesicht ist ein minimal-invasives Verfahren der ästhetischen Medizin, bei dem Hyaluronsäure und Mikronährstoffe direkt in die Haut injiziert werden.",
-      "Der Wirkstoffkomplex enthält 12 Vitamine, 23 Aminosäuren, 6 Coenzyme, 6 Mineralien und 8 Antioxidantien – eine einzigartige Kombination, die Ihre Haut intensiv mit Feuchtigkeit versorgt und die Zellregeneration unterstützt.",
-      "In unserer Praxis in Bremen behandeln wir vor allem das Gesicht, insbesondere empfindliche Bereiche wie Augenpartie, Wangen und Stirn. Auch Hals, Dekolleté und Handrücken lassen sich mit dieser Methode wirkungsvoll behandeln. Das Ziel: Ein ebenmäßiger, strahlender Teint mit sichtbar verbesserter Hautstruktur – natürlich und ohne Ausfallzeit."
+      "Diese biorevitalisierende Injektionsbehandlung kombiniert unvernetzte Hyaluronsäure mit einem speziell abgestimmten Komplex aus Vitaminen, Aminosäuren, Mineralstoffen, Coenzymen und Antioxidantien. Ziel ist eine Verbesserung der Hautqualität durch Unterstützung von Zellregeneration und Feuchtigkeitsversorgung.",
+      "Die Behandlung eignet sich besonders zur gezielten Auffrischung empfindlicher Hautareale wie Augenpartie, Wangen, Hals oder Handrücken. Die Injektion erfolgt über eine besonders feine Mikro-Nadeltechnik, die eine präzise und in der Regel gut verträgliche Anwendung ermöglicht."
     ]
   };
 
@@ -200,34 +201,11 @@ export default function MesotherapieHautPage() {
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere Hautverbesserung-Behandlungen in Bremen",
     treatments: [
-      {
-        imageUrl: "/assets/skinbooster/profhilo_hero.webp",
-        imageAlt: "Skinbooster Behandlung für intensive Hautfeuchtigkeit",
-        title: "Skinbooster (BAP-Technik)",
-        description: "Hochkonzentrierte Hyaluronsäure für maximale Feuchtigkeitsversorgung und verbesserte Hautelastizität. Besonders effektiv bei trockener, reifer Haut.",
-        treatmentUrl: "/hautverbesserung/skinbooster-bap"
-      },
-      {
-        imageUrl: "/assets/prf/prf_hero.webp",
-        imageAlt: "PRF Eigenbluttherapie für natürliche Hautverjüngung",
-        title: "PRF/PRP-Eigenbluttherapie für die Haut",
-        description: "Nutzen Sie die regenerativen Kräfte Ihres eigenen Blutes für natürliche Hauterneuerung, verbesserte Hautstruktur und strahlenden Teint.",
-        treatmentUrl: "/hautverbesserung/eigenbluttherapie"
-      },
-      {
-        imageUrl: "/assets/polynukleotide/polynukleotide_hero.webp",
-        imageAlt: "Polynukleotide Behandlung für Hautregeneration",
-        title: "Polynukleotide",
-        description: "Innovative Behandlung zur Zellregeneration und Reparatur geschädigter Haut. Ideal bei Narben, Pigmentflecken und lichtgeschädigter Haut.",
-        treatmentUrl: "/hautverbesserung/polynukleotide"
-      },
-      {
-        imageUrl: "/assets/peeling/peeling_hero.webp",
-        imageAlt: "Chemisches Peeling für ebenmäßige Haut",
-        title: "Chemisches Peeling",
-        description: "Entfernen Sie abgestorbene Hautzellen und fördern Sie die Zellerneuerung für einen ebenmäßigen, strahlenden Teint.",
-        treatmentUrl: "/hautverbesserung/chemisches-peeling"
-      }
+      profhilo,
+      eigenblut,
+      peeling,
+      polynukleotide,
+      mesotherapieHaut
     ]
   };
 
@@ -296,6 +274,11 @@ export default function MesotherapieHautPage() {
       <TreatmentCareSection {...treatmentCareData} />
 
       <ConsultationSection />
+      <HubTeaserSection
+        title="Zur Übersicht: Mesotherapie"
+        subtitle="Alle Mesotherapie-Behandlungen für Haut & Haare im Überblick."
+        href="/mesotherapie"
+      />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
 

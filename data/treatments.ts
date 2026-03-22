@@ -1,4 +1,4 @@
-import {Treatment, TreatmentsSectionProps} from "@/components/TreatmentPageComponents";
+import { Treatment } from "@/components/TreatmentPageComponents";
 
 /* ============================================================
    1. EINZELNE BEHANDLUNGS-OBJEKTE (Wiederverwendbar)
@@ -8,29 +8,29 @@ import {Treatment, TreatmentsSectionProps} from "@/components/TreatmentPageCompo
 export const botoxMasseter: Treatment =
 {
     imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
-        imageAlt: "Masseter-Botulinumtoxin gegen Zähneknirschen (Bruxismus) in Bremen",
+    imageAlt: "Masseter-Botulinumtoxin gegen Zähneknirschen (Bruxismus) in Bremen",
     title: "Masseter-Botulinumtoxin: Entspannung bei Bruxismus & Kieferschmerzen",
     description:
-    "Zielgerichtete Injektionen in den Kaumuskel können Knirschen und Pressen reduzieren, Kieferschmerzen lindern und die Kontur optisch verschlanken – mit funktionellem und ästhetischem Benefit.",
-        treatmentUrl: "/botulinumtoxin/masseter"
+        "Zielgerichtete Injektionen in den Kaumuskel können Knirschen und Pressen reduzieren, Kieferschmerzen lindern und die Kontur optisch verschlanken – mit funktionellem und ästhetischem Benefit.",
+    treatmentUrl: "/botulinumtoxin/masseter"
 };
 export const botoxMigraene: Treatment =
-        {
+{
     imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
-        imageAlt: "Botulinumtoxin zur Migräneprophylaxe in Bremen",
+    imageAlt: "Botulinumtoxin zur Migräneprophylaxe in Bremen",
     title: "Botulinumtoxin bei Migräne",
     description:
-    "Für chronische Migräne kann Botulinumtoxin die Attackenfrequenz senken. Wir besprechen Indikation, Schema und realistische Erwartungen im Rahmen einer ärztlichen Beratung.",
-        treatmentUrl: "/botulinumtoxin/migraene"
+        "Für chronische Migräne kann Botulinumtoxin die Attackenfrequenz senken. Wir besprechen Indikation, Schema und realistische Erwartungen im Rahmen einer ärztlichen Beratung.",
+    treatmentUrl: "/botulinumtoxin/migraene"
 };
 export const botoxHyperhydrose: Treatment =
-    {
+{
     imageUrl: "/assets/botulinumtoxin/botox-hyperhidrose_hero.webp",
-        imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botulinumtoxin in Bremen",
+    imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botulinumtoxin in Bremen",
     title: "Botulinumtoxin bei Hyperhidrose (starkem Schwitzen)",
     description:
-    "In Achseln, Handflächen oder Fußsohlen kann Botulinumtoxin die Schweißproduktion vorübergehend reduzieren. Ziel ist ein spürbar trockeneres und komfortableres Hautgefühl – abhängig vom individuellen Verlauf.",
-        treatmentUrl: "/botulinumtoxin/hyperhidrose"
+        "In Achseln, Handflächen oder Fußsohlen kann Botulinumtoxin die Schweißproduktion vorübergehend reduzieren. Ziel ist ein spürbar trockeneres und komfortableres Hautgefühl – abhängig vom individuellen Verlauf.",
+    treatmentUrl: "/botulinumtoxin/hyperhidrose"
 }
 
 export const skinbooster: Treatment = {
@@ -197,47 +197,47 @@ export const fettWeg: Treatment = {
 // Haarbehandlungen
 
 export const mesoHaar: Treatment =
-        {
-            imageUrl: '/assets/mesotherapie/mesotherapie-haare_hero.webp',
-            imageAlt: 'Mesotherapie für die Kopfhaut',
-            title: 'Mesotherapie (Kopfhaut)',
-            description:
-                'Feine Mikroinjektionen versorgen die Kopfhaut gezielt. Die Kur wird an Befund und Ziele angepasst; Intervalle werden ärztlich geplant.',
-            treatmentUrl: '/mesotherapie/haare'
-        };
+{
+    imageUrl: '/assets/mesotherapie/mesotherapie-haare_hero.webp',
+    imageAlt: 'Mesotherapie für die Kopfhaut',
+    title: 'Mesotherapie (Kopfhaut)',
+    description:
+        'Feine Mikroinjektionen versorgen die Kopfhaut gezielt. Die Kur wird an Befund und Ziele angepasst; Intervalle werden ärztlich geplant.',
+    treatmentUrl: '/mesotherapie/haare'
+};
 export const polyHaar: Treatment =
-        {
-            imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
-            imageAlt: 'Polynukleotide zur Biostimulation',
-            title: 'Polynukleotide für die Haare',
-            description:
-                'Moderne Biostimulation zur Unterstützung des Kopfhautmilieus und der Regenerationsprozesse – als Baustein im individuellen Plan.',
-            treatmentUrl: '/polynukleotide'
-        };
+{
+    imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
+    imageAlt: 'Polynukleotide zur Biostimulation',
+    title: 'Polynukleotide für die Haare',
+    description:
+        'Moderne Biostimulation zur Unterstützung des Kopfhautmilieus und der Regenerationsprozesse – als Baustein im individuellen Plan.',
+    treatmentUrl: '/polynukleotide'
+};
 export const prfHaar: Treatment =
-        {
-            imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
-            imageAlt: 'Mann mit Haarausfall',
-            title: 'Eigenbluttherapie (PRP/PRF)',
-            description:
-                'Körpereigene Ansätze können – je nach Diagnose – in die Serie integriert werden. Details & Indikationsprüfung auf der Behandlungsseite.',
-            treatmentUrl: '/eigenbluttherapie/haare' // bewusst interne Verlinkung, aber keine PRF-Keywords im Hub-SEO
-        };
+{
+    imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
+    imageAlt: 'Mann mit Haarausfall',
+    title: 'Eigenbluttherapie (PRP/PRF)',
+    description:
+        'Körpereigene Ansätze können – je nach Diagnose – in die Serie integriert werden. Details & Indikationsprüfung auf der Behandlungsseite.',
+    treatmentUrl: '/eigenbluttherapie/haare' // bewusst interne Verlinkung, aber keine PRF-Keywords im Hub-SEO
+};
 export const prfMicro: Treatment =
-        {
-            imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
-            imageAlt: 'Microneedling der Kopfhaut',
-            title: 'Kopfhaut-Microneedling + Eigenblut',
-            description:
-                'Gezielte Mikroreize zur Unterstützung des Kopfhautmilieus; kann seriell geplant und mit weiteren PRF kombiniert werden.',
-            treatmentUrl: '/eigenbluttherapie/microneedling'
-        };
+{
+    imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
+    imageAlt: 'Microneedling der Kopfhaut',
+    title: 'Kopfhaut-Microneedling + Eigenblut',
+    description:
+        'Gezielte Mikroreize zur Unterstützung des Kopfhautmilieus; kann seriell geplant und mit weiteren PRF kombiniert werden.',
+    treatmentUrl: '/eigenbluttherapie/microneedling'
+};
 
 /* ============================================================
    2. HILFREICHE GRUPPEN (Arrays) FÜR DEINE SEITEN
    ============================================================ */
 // Haarausfallbehandlungen
-export const haarausfall: Treatment[]=
+export const haarausfall: Treatment[] =
     [
         mesoHaar,
         polyHaar,

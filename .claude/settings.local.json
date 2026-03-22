@@ -10,7 +10,9 @@
       "Bash(powershell -Command:*)",
       "Bash(cat:*)",
       "Bash(ls:*)",
-      "WebFetch(domain:www.elaesthetics-bremen.de)"
+      "WebFetch(domain:www.elaesthetics-bremen.de)",
+      "Bash(npx tsc --noEmit --pretty)",
+      "Bash(python3 -c \":*)"
     ]
   }
 }

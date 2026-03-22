@@ -59,11 +59,13 @@ export default function MedizinischesMicroneedlingPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
-        name: 'Medizinisches Microneedling in Bremen',
-        description: 'Ärztliches Microneedling zur Hautregeneration, Narbenbehandlung und Verbesserung der Hautstruktur.',
-        url: '/medizinisches-microneedling',
-      }), '@context': undefined },
+      {
+        ...getWebPageSchema({
+          name: 'Medizinisches Microneedling in Bremen',
+          description: 'Ärztliches Microneedling zur Hautregeneration, Narbenbehandlung und Verbesserung der Hautstruktur.',
+          url: '/medizinisches-microneedling',
+        }), '@context': undefined
+      },
       getMedicalProcedureSchema({
         name: 'Medizinisches Microneedling',
         type: 'CosmeticProcedure',
@@ -77,7 +79,7 @@ export default function MedizinischesMicroneedlingPage() {
   const heroData: HeroSectionProps = {
     title: "Medizinisches Microneedling in Bremen",
     subtitle:
-      "Schonende Kollagen-Induktion für ein glatteres, feinporiges Hautbild – individuell, präzise und in ärztlicher Hand.",
+      "Ärztlich durchgeführtes Microneedling zur Unterstützung der natürlichen Regenerationsprozesse der Haut – präzise, schonend und individuell abgestimmt.",
     imageSrc: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp",
     imageAlt: "Medizinisches Microneedling gegen Aknenarben und Poren – EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
@@ -85,11 +87,11 @@ export default function MedizinischesMicroneedlingPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: "Medizinisches Microneedling (Kollagen-Induktionstherapie) – kurz erklärt",
+    title: "Was ist Medizinisches Microneedling?",
     content: [
-      "Medizinisches Microneedling ist ein minimal-invasives Verfahren der ästhetischen Medizin zur gezielten Kollagen-Induktion bei Aknenarben, vergrößerten Poren und Hautstrukturverbesserung.",
-      "Kollagen und Elastin werden gebildet, die Haut soll glatter erscheinen - Poren und feine Aknenarben minimiert werden.",
-      "Kosmetisches Needling bleibt dagegen oberflächlicher und sorgt vor allem für einen kurzfristigen „Glow“. Kurz gesagt: Gezielte Therapie statt reiner Schönheitsroutine."
+      "Medizinisches Microneedling ist ein schonendes, minimal-invasives Verfahren zur Hautverjüngung und -regeneration. Ein Gerät mit fortschrittlicher Mikroneedling-Technologie erzeugt mehrere Tausend Mikrokanäle pro Sekunde. Die Nadeltiefe kann präzise auf unterschiedliche Hautzustände und -bereiche eingestellt werden.",
+      "Durch die feinsten Mikroverletzungen werden die Selbstheilungsprozesse und die Bildung von körpereigenem Kollagen, Elastin und Hyaluronsäure angeregt. Das Ergebnis ist ein sichtbar verjüngtes, erfrischtes und ebenmäßiges Hautbild.",
+      "Spezielle Einstellungen ermöglichen auch die Behandlung von Narbengewebe bei guter Verträglichkeit – selbst bei sensibler Haut, Rosazea oder Couperose. Das Verfahren ist für verschiedene Hauttypen und Altersgruppen geeignet."
     ]
   };
 
@@ -102,7 +104,9 @@ export default function MedizinischesMicroneedlingPage() {
           { title: "Aknenarben & Narbenstrukturen" },
           { title: "Feinere Poren & glatteres Hautbild" },
           { title: "Feine Linien & beginnende Fältchen" },
-          { title: "Pigmentunregelmäßigkeiten / Teint" }
+          { title: "Pigmentunregelmäßigkeiten / Teint" },
+          { title: "Rosazea / Couperose" },
+          { title: "Hautrötungen & Schwellungen" }
         ]
       },
       {
@@ -116,6 +120,12 @@ export default function MedizinischesMicroneedlingPage() {
         category: "Kopfhaut",
         items: [
           { title: "Unterstützung bei Haarausfall / Anregung des Haarwachstums" }
+        ]
+      },
+      {
+        category: "Zusätzlich",
+        items: [
+          { title: "Verbesserte Wirkstoffaufnahme (z. B. Hyaluron, PRF)" }
         ]
       }
     ]
@@ -164,7 +174,7 @@ export default function MedizinischesMicroneedlingPage() {
         number: "03",
         title: "Microneedling",
         description:
-          "Mit einem Präzisions-Pen entstehen feine Mikrokanäle. Die Eindringtiefe wird areal- und hauttypgerecht angepasst; optional werden Wirkstoffe wie Hyaluron oder PRF eingebracht."
+          "Mit einem Präzisions-Pen entstehen feine Mikrokanäle. Für jede Behandlung wird ein neuer, steriler Nadelaufsatz verwendet. Die Eindringtiefe wird areal- und hauttypgerecht angepasst; optional werden Wirkstoffe wie Hyaluron oder PRF eingebracht."
       },
       {
         number: "04",
@@ -183,7 +193,7 @@ export default function MedizinischesMicroneedlingPage() {
         {
           title: "Blutgerinnung & Haut",
           description:
-            "Nach ärztlicher Rücksprache blutverdünnende Mittel möglichst 7 Tage pausieren. Solarium und aggressive Peelings vorab meiden."
+            "Nach ärztlicher Rücksprache blutverdünnende Mittel möglichst 7 Tage pausieren. Solarium und aggressive Peelings vor und nach der Behandlung meiden."
         }
       ]
     },
@@ -191,13 +201,13 @@ export default function MedizinischesMicroneedlingPage() {
       title: "Nach der Behandlung",
       instructions: [
         { title: "Schonung", description: "1–2 Tage kein Sport, keine Sauna." },
-        { title: "UV-Schutz", description: "Konsequenter Lichtschutz (mind. LSF 30) für die Folgewoche(n)." },
-        { title: "Hautpflege", description: "Reizende Wirkstoffe (Säuren, Retinoide etc.) für einige Tage aussetzen." }
+        { title: "UV-Schutz", description: "Konsequenter Lichtschutz (mind. LSF 30) für die nächsten Wochen. Kein Solarium." },
+        { title: "Hautpflege", description: "Keine hautreizenden Produkte (Säuren, Retinoide etc.) für einige Tage." }
       ]
     }
   };
 
-  
+
 
   const consultationData: ConsultationSectionProps = {
     title: "Ihre individuelle Microneedling-Beratung in Bremen",
@@ -253,19 +263,34 @@ export default function MedizinischesMicroneedlingPage() {
     title: "Häufig gestellte Fragen (FAQ)",
     faqs: [
       {
+        question: "Wie wirkt Microneedling?",
+        answer:
+          "Beim Microneedling werden mit feinen Nadeln kontrollierte Mikroverletzungen in der Haut erzeugt. Diese aktivieren die natürlichen Heilungsprozesse des Körpers und regen die Neubildung von Kollagen, Elastin und Hyaluronsäure an. Gleichzeitig wird die Aufnahme von Wirkstoffen (z. B. Hyaluron, Vitamine, PRF) deutlich verbessert."
+      },
+      {
         question: "Was ist der Unterschied zwischen medizinischem und kosmetischem Microneedling?",
         answer:
-          "Kosmetisches Needling arbeitet meist bis ~0,5 mm und wirkt v. a. oberflächlich. Medizinisches Needling nutzt je nach Areal ca. 0,5–3 mm, triggert gezielt Regeneration und Kollagenneubildung und gehört in ärztliche Hände."
+          "Kosmetisches Needling arbeitet meist bis ~0,5 mm und wirkt v. a. oberflächlich. Medizinisches Needling nutzt je nach Areal ca. 0,5–3 mm, triggert gezielt Regeneration und Kollagenneubildung und darf nur von Ärzten oder Heilpraktikern durchgeführt werden."
       },
       {
         question: "Für wen ist Microneedling geeignet?",
         answer:
-          "Für viele Hauttypen und -töne geeignet – u. a. bei Aknenarben, Porenvergrößerung, feinen Linien, Pigmentunregelmäßigkeiten, Dehnungsstreifen sowie zur Unterstützung des Haarwuchses."
+          "Für viele Hauttypen und -töne geeignet – u. a. bei Aknenarben, Porenvergrößerung, feinen Linien, Pigmentunregelmäßigkeiten, Dehnungsstreifen, Rosazea, Akne sowie zur Unterstützung des Haarwuchses."
       },
       {
         question: "Wie oft sollte behandelt werden und wann sehe ich Ergebnisse?",
         answer:
-          "Meist 3–6 Sitzungen im Abstand von etwa 4 Wochen. Erste Verbesserungen sind oft früh sichtbar, das finale Hautbild entwickelt sich über Wochen bis Monate. Auffrischungen nach ~6 Monaten sind sinnvoll."
+          "Meist 3–6 Sitzungen im Abstand von etwa 4 Wochen. Erste Verbesserungen sind oft früh sichtbar, das finale Ergebnis zeigt sich nach ca. 12–24 Wochen. Die Kollagenbildung kann bis zu 12 Monate nach der Behandlung anhalten. Auffrischungen nach ~6 Monaten sind sinnvoll."
+      },
+      {
+        question: "Wie lange halten die Ergebnisse an?",
+        answer:
+          "Die Kollagenbildung kann bis zu 12 Monate nach der Behandlung andauern. Bei regelmäßigen Auffrischungen (ca. alle 6 Monate) lassen sich die Ergebnisse langfristig erhalten. Die Haltbarkeit hängt auch von Hautpflege, Sonnenschutz und Lebensstil ab."
+      },
+      {
+        question: "Wie effektiv ist Microneedling?",
+        answer:
+          "Microneedling hat sich als wirksame Methode zur Hautverbesserung etabliert. Es kann die Kollagen- und Elastinproduktion deutlich anregen, Narbengewebe verbessern und die Hautstruktur verfeinern. Die Wirkstoffaufnahme wird durch die Mikrokanäle um ein Vielfaches gesteigert."
       },
       {
         question: "Welche Nebenwirkungen sind möglich?",
@@ -275,12 +300,12 @@ export default function MedizinischesMicroneedlingPage() {
       {
         question: "Gibt es Kontraindikationen?",
         answer:
-          "Akute Hauterkrankungen/Entzündungen, frische Narben, bakterielle Infektionen, bekannte Gerinnungsstörungen; besondere Vorsicht bei bestimmten Vorerkrankungen/Medikamenten. In Schwangerschaft/Stillzeit sowie während Chemo-/Strahlentherapie nicht behandeln."
+          "Akute Hauterkrankungen/Entzündungen, frische Narben, bakterielle Infektionen, bekannte Gerinnungsstörungen, Verdacht auf Hautkrebs, unbehandelte Diabetes. In Schwangerschaft/Stillzeit sowie während Chemo-/Strahlentherapie nicht behandeln."
       },
       {
         question: "Was ist Plasma-Needling (PRF/PRP)?",
         answer:
-          "Dabei wird körpereigenes, plättchenreiches Plasma auf/in die Haut gebracht (z. B. in Kombination mit Needling), um Regeneration und Zellneubildung zusätzlich anzuregen."
+          "Dabei wird körpereigenes, plättchenreiches Plasma (reich an Wachstumsfaktoren) auf/in die Haut gebracht, z. B. in Kombination mit Needling. Dies regt Regeneration und Zellneubildung zusätzlich an. Die Wachstumsfaktoren im Plasma unterstützen die Heilung und sorgen für eine kontinuierliche Verbesserung über mehrere Wochen."
       }
     ]
   };

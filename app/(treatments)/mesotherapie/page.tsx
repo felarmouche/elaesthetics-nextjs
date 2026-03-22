@@ -55,22 +55,22 @@ export default function MesotherapieHubPage() {
       {
         question: 'Für wen ist Mesotherapie geeignet?',
         answer:
-          'Die Mesotherapie eignet sich für Menschen, die ihre Hautqualität verbessern (z. B. bei müder, fahler Haut, feinen Linien, Augenringen) oder Haarausfall entgegenwirken möchten. In einem persönlichen Beratungsgespräch klären wir, ob das Verfahren für Ihre individuellen Ziele sinnvoll ist.',
+          'Die Mesotherapie eignet sich für Menschen, die ihre Hautqualität verbessern (z. B. bei müder, fahler Haut, feinen Linien, Augenringen) oder Haarausfall entgegenwirken möchten. Die Behandlung kann auch als unterstützende Maßnahme nach einer Haartransplantation eingesetzt werden. Wir raten bei bestimmten Allergien (u. a. Schalentier-Unverträglichkeit bei der Hautbehandlung), Krebserkrankungen, Blutgerinnungsstörungen, beeinträchtigter Hautbarriere sowie während der Schwangerschaft und Stillzeit von dieser Therapieform ab.',
       },
       {
         question: 'Wie viele Sitzungen sind nötig?',
         answer:
-          'In der Regel werden 3–6 Sitzungen im Abstand von 2–4 Wochen empfohlen, gefolgt von Auffrischungen alle 3–6 Monate. Die genaue Anzahl hängt vom Befund und den individuellen Zielen ab.',
+          'Für die Haut werden in der Regel 3–5 Sitzungen im Abstand von 2–4 Wochen empfohlen, mit Auffrischungen ca. 2x pro Jahr. Für die Haare sind 6–10 Sitzungen im Abstand von 1–2 Wochen üblich, mit Auffrischungen alle 3–6 Monate. Die genaue Anzahl hängt vom Befund und den individuellen Zielen ab.',
       },
       {
         question: 'Ist die Behandlung schmerzhaft?',
         answer:
-          'Durch die sehr feinen Nadeln und geringe Injektionstiefen ist die Mesotherapie in der Regel gut erträglich. Die Kopfhaut kann etwas empfindlicher sein als das Gesicht. Eine Betäubungscreme kann bei Bedarf vorab aufgetragen werden.',
+          'Die Injektion wird als nahezu schmerzfrei wahrgenommen. Durch die Verwendung besonders feiner Nadeln ist das Hämatomrisiko äußerst gering. Die Kopfhaut kann etwas empfindlicher sein als das Gesicht. Eine Betäubungscreme kann bei Bedarf vorab aufgetragen werden.',
       },
       {
         question: 'Welche Nebenwirkungen gibt es?',
         answer:
-          'Vorübergehend können leichte Rötungen, Schwellungen oder kleine Hämatome auftreten. Diese klingen meist innerhalb weniger Stunden bis Tage ab. Wir klären Sie im Beratungsgespräch umfassend über Risiken und Gegenanzeigen auf.',
+          'Die Mesotherapie gilt als risikoarm und wird im Allgemeinen gut vertragen. Sichtbare Spuren gehen meist innerhalb von 24 Stunden zurück. Leichte Rötungen, Schwellungen oder kleine Hämatome an den Einstichstellen können auftreten, sind aber selten und vorübergehend. Kleinere Knötchenbildung an den Injektionsstellen kann ebenfalls vorkommen, verschwindet jedoch in der Regel von selbst. Allergische Reaktionen sind sehr selten, können aber nicht vollständig ausgeschlossen werden.',
       },
     ],
   };
@@ -78,7 +78,8 @@ export default function MesotherapieHubPage() {
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
-      { ...getWebPageSchema({
+      {
+        ...getWebPageSchema({
           name: 'Mesotherapie in Bremen',
           description: 'Übersicht zu Mesotherapie-Behandlungen für Haut und Haare bei EL Aesthetics.',
           url: '/mesotherapie',
@@ -87,7 +88,8 @@ export default function MesotherapieHubPage() {
             name: 'Mesotherapie',
             procedureType: 'NonSurgicalProcedure',
           },
-      }), '@context': undefined },
+        }), '@context': undefined
+      },
       getFAQSchema(faqData.faqs),
     ],
   };
@@ -95,7 +97,7 @@ export default function MesotherapieHubPage() {
   const heroData: HeroSectionProps = {
     title: 'Mesotherapie in Bremen',
     subtitle:
-      'Gezielte Mikronährstoff-Injektionen für strahlende Haut und kräftigeres Haar. Individuell abgestimmte Wirkstoffcocktails – ärztlich geplant und durchgeführt.',
+      'Gezielte Mikronährstoff-Injektionen gegen Falten und Haarausfall. Hautverjüngung und Revitalisierung der Haut & Haare.',
     imageSrc: '/assets/mesotherapie/mesotherapie-haut_hero.webp',
     imageAlt: 'Mesotherapie-Behandlung für Haut und Haare – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -105,9 +107,7 @@ export default function MesotherapieHubPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist Mesotherapie und wie wirkt sie?',
     content: [
-      'Die Mesotherapie ist ein nicht-chirurgisches Verfahren der ästhetischen und regenerativen Medizin, bei dem individuell abgestimmte Wirkstoffcocktails in geringer Dosierung direkt in die Haut oder Kopfhaut injiziert werden.',
-      'Für die Haut setzt die Mesotherapie (Meso-Glow) auf Hyaluronsäure, Vitamine, Aminosäuren und Antioxidantien, um müde Haut zu revitalisieren, feine Linien zu glätten und einen frischen, strahlenden Teint zu erzeugen.',
-      'Für die Haare versorgen gezielte Mikroinjektionen die Kopfhaut mit wachstumsfördernden Nährstoffen. Das kann die Durchblutung verbessern, Haarwurzeln stärken und Haarausfall entgegenwirken.',
+      'Mesotherapie ist ein minimal-invasives Verfahren der ästhetischen Medizin, bei dem individuell abgestimmte Wirkstoffe gezielt in die Haut eingebracht werden. So können Haut und Kopfhaut direkt versorgt und natürliche Regenerationsprozesse unterstützt werden. Im Gesichtsbereich wird Mesotherapie häufig zur Unterstützung von Hautqualität, Feuchtigkeit, Frische und Ebenmäßigkeit eingesetzt. Im Bereich der Haare kann sie ergänzend angewendet werden, um die Kopfhaut zu unterstützen und diffusem oder erblich bedingtem Haarausfall entgegenzuwirken.'
     ],
   };
 
