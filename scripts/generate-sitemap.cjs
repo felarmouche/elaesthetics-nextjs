@@ -80,4 +80,4 @@ ${pages
 
 const outPath = path.join(__dirname, '..', 'public', 'sitemap.xml');
 fs.writeFileSync(outPath, xml, 'utf-8');
-console.log(`✅ sitemap.xml generated with ${pages.length} URLs (lastmod: ${today})`);
+console.log(`✅ sitemap.xml generated with ${pages.length} URLs`);

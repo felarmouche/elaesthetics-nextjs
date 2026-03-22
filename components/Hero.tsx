@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Hero() {
     return (
         <header
-            className="relative h-[85vh] md:h-[50vh] flex items-center justify-center overflow-hidden"
+            className="relative min-h-[85vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden"
             aria-label="Hero: El Aesthetics Bremen"
         >
             {/* Mobile Bild */}
@@ -33,28 +33,36 @@ export default function Hero() {
                 />
             </div>
 
-            <div className="absolute inset-0 bg-black/40 z-[1]" />
+            {/* Premium Gradient Overlay für bessere Lesbarkeit */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 z-[1]" />
 
-            <div className="relative z-[2] text-center p-8 text-white max-w-4xl mx-auto animate-fade-up">
-                <h1 className="mb-6 uppercase text-accent">
-                    <span className="block text-4xl md:text-[4.5rem] tracking-[6px]">
-                        EL Aesthetics Bremen
-                    </span>
-                    <span className="block text-lg tracking-[2px] mt-4 font-light text-white">
+            {/* Text & Content Container */}
+            <div className="relative z-[2] flex flex-col items-center justify-center text-center px-6 py-12 md:p-12 w-full max-w-5xl mx-auto gap-12 md:gap-16 animate-fade-up">
+
+                {/* Typografie-Block */}
+                <div className="flex flex-col gap-5 md:gap-8 items-center cursor-default">
+                    <h1 className="flex flex-col gap-2 md:gap-4 uppercase drop-shadow-2xl">
+                        <span className="block text-accent font-light text-4xl sm:text-5xl md:text-7xl lg:text-[6rem] tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] leading-none">
+                            EL Aesthetics
+                        </span>
+                        <span className="block text-white/95 font-light text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] leading-none">
+                            Bremen
+                        </span>
+                    </h1>
+                    <p className="max-w-2xl text-sm sm:text-base md:text-xl tracking-[0.05em] sm:tracking-[0.1em] font-light text-white/80 drop-shadow-md">
                         Praxis für ästhetische und regenerative Medizin
-                    </span>
-                </h1>
-
-                <div className="flex justify-center items-center">
-                    <Link
-                        href="/kontakt"
-                        aria-label="Termin bei El Aesthetics Bremen buchen"
-                        className="group flex w-[320px] items-center justify-center px-12 py-4 bg-transparent text-white font-semibold no-underline text-md tracking-[2px] border-2 border-white rounded-full transition-colors duration-300 hover:bg-white/10 hover:border-accent"
-                    >
-                        Jetzt Termin buchen
-                        <ChevronRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-                    </Link>
+                    </p>
                 </div>
+
+                {/* Premium Glassmorphism Button */}
+                <Link
+                    href="/kontakt"
+                    aria-label="Termin bei El Aesthetics Bremen buchen"
+                    className="group inline-flex w-auto items-center justify-center whitespace-nowrap px-8 sm:px-10 py-4 sm:py-5 bg-white/5 backdrop-blur-md text-white uppercase font-light text-xs sm:text-sm tracking-[0.2em] border border-white/20 rounded-full transition-all duration-500 hover:bg-white hover:text-black hover:border-white shadow-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105"
+                >
+                    Jetzt Termin buchen
+                    <ChevronRight className="ml-3 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-500 group-hover:translate-x-1" />
+                </Link>
             </div>
         </header>
     );
