@@ -20,7 +20,7 @@ export default function Services() {
         <h2 className="text-4xl font-normal mb-6 text-accent-dark uppercase tracking-[2px]">
           Leistungen
         </h2>
-        <p className="max-w-[900px] mx-auto mb-4 text-text-primary leading-relaxed text-lg">
+        <p className="max-w-[900px] mx-auto mb-4 text-text-primary">
           El Aesthetics bietet Ihnen eine
           breite Palette an minimalinvasiven ästhetischen Behandlungen - von Unterspritzungen mit Hyalurosäure Fillern und Botulinumtoxin bis hin zu modernen regenerativen Verfahren.
         </p>

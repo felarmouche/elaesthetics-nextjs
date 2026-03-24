@@ -159,6 +159,10 @@
     line-height: 1.6;
   }
 
+  p {
+    @apply font-light leading-[1.9];
+  }
+
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;

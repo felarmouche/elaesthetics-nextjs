@@ -6,9 +6,8 @@ import Welcome from '@/components/Welcome'
 import Services from '@/components/Services'
 import About from '@/components/About'
 import TreatmentSlider from '@/components/TreatmentsSlider'
-
-const ImageSlider = dynamic(() => import('@/components/ImageSlider'));
-const PatientReviews = dynamic(() => import('@/components/PatientReviews'));
+import ImageSlider from '@/components/ImageSlider'
+import PatientReviews from '@/components/PatientReviews'
 
 export const metadata: Metadata = {
   title: { absolute: 'Ästhetische Medizin Bremen | EL Aesthetics' },
@@ -25,12 +24,12 @@ export default function Home() {
     <>
       <Hero />
       <div className='max-w-7xl mx-auto'>
-          <Welcome />
-          <PatientReviews/>
-          <Services />
-          <TreatmentSlider/>
-          <About />
-          <ImageSlider />
+        <Welcome />
+        <PatientReviews />
+        <Services />
+        <TreatmentSlider />
+        <About />
+        <ImageSlider />
       </div>
     </>
   )

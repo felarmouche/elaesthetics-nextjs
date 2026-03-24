@@ -7,22 +7,20 @@ export default function Welcome() {
           Herzlich<br />Willkommen
         </h2>
 
-        <p className="font-light mb-4 md:mb-6 leading-[1.9] text-text-primary text-base">
-          Willkommen bei El Aesthetics, Ihrer Privatpraxis für ästhetische
-          Medizin in Bremen. Hier stehen Sie und Ihre individuellen Bedürfnisse
-          im Mittelpunkt.
+        <p className="mb-4 md:mb-6 text-text-primary">
+          Willkommen bei EL Aesthetics – Ihrer Privatpraxis für ästhetische und regenerative Medizin in Bremen.
         </p>
 
-        <p className="font-light mb-4 md:mb-6 leading-[1.9] text-text-primary text-base">
-          Der Wunsch nach strahlender, gesunder Haut sowie einer jugendlichen und vitalen Ausstrahlung ist in uns allen tief verankert. Die Techniken und Verfahren im Bereich der Ästhetik haben sich in den letzten Jahren kontinuierlich weiterentwickelt. Regenerative Medizin gewinnt dabei immer mehr an Bedeutung.
+        <p className="mb-4 md:mb-6 text-text-primary">
+          Hier stehen Sie mit Zeit, Sorgfalt und Verantwortung im Mittelpunkt. Die Sehnsucht nach Frische und natürlicher Ausstrahlung ist tief in uns verankert – die Wege dorthin sind so individuell wie jeder Mensch. Haut, Gewebe und Haare verändern sich im Laufe der Zeit, und mit ihnen oft auch das eigene Wohlbefinden. Moderne ästhetische Medizin bietet heute weit mehr als reine Korrektur: Sie setzt dort an, wo Regeneration entsteht.
         </p>
 
-        <p className="font-light mb-4 md:mb-6 leading-[1.9] text-text-primary text-base">
-          Sie umfasst verschiedene innovative Behandlungen, die sich die natürliche Heilkraft zunutze machen, die jeder Mensch besitzt, nämlich die Fähigkeit zur Regeneration. Das bedeutet unter anderem Reparatur von Hautschäden und Elastizitätsverlust des Bindegewebes, Förderung von Haarwachstum, Verbesserung von Narben oder Hyperpigmentierungen, um nur einiges zu nennen.
+        <p className="mb-4 md:mb-6 text-text-primary">
+          Die regenerative Medizin nutzt körpereigene Prozesse, um Hautqualität, Elastizität und Vitalität nachhaltig zu unterstützen. Sie kann die Reparatur von Hautstrukturen fördern, das Bindegewebe stärken, Haarwachstum anregen und das Hautbild bei Narben oder Pigmentveränderungen sichtbar verfeinern – nicht durch Überdeckung, sondern durch Aktivierung.
         </p>
 
-        <p className="font-light mb-4 md:mb-6 leading-[1.9] text-text-primary text-base">
-          Die auf Sie zugeschnittene Kombination aus bewährten Behandlungsmethoden und neuen Therapiemöglichkeiten in der Ästhetischen Medizin ist der Schlüssel, Ihrem persönlichen Ideal näher zu kommen. Der stärkste Verbündete auf dem Weg dahin ist Ihr eigener Körper.
+        <p className="mb-4 md:mb-6 text-text-primary">
+          Der wichtigste Partner auf diesem Weg ist Ihr eigener Körper.
         </p>
       </div>
 

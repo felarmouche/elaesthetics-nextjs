@@ -155,28 +155,18 @@ export default function ImageSlider() {
                     </button>
                 </div>
 
-                <div className="w-full p-6 flex flex-col justify-center">
+                <div className="w-full p-0 md:p-6 flex flex-col justify-center">
                     <h2 className="text-4xl font-normal mb-8 leading-[1.3] text-accent-dark uppercase tracking-[2px]">
                         Praxis<br />Einblicke
                     </h2>
 
-                    <p className="font-light mb-6 leading-[1.9] text-text-primary text-base">
+                    <p className="mb-6 text-text-primary">
                         Entdecken Sie die Welt von El Aesthetics - Ihrem neuen Wohlfühlparadies.
                     </p>
 
-                    <p className="font-light mb-6 leading-[1.9] text-text-primary text-base">
+                    <p className="mb-6 text-text-primary">
                         Hier erhalten Sie Einblicke in unsere moderne Ausstattung und die liebevollen Details, die bei Ihrem Besuch bei uns für eine angenehme und entspannte Atmosphäre sorgen.
                     </p>
-
-                    <div className="flex w-full justify-center mt-4">
-                        <Link
-                            href="/kontakt"
-                            aria-label="Termin bei El Aesthetics Bremen buchen"
-                            className="w-full inline-block flex items-center text-center py-4 uppercase text-accent-dark text-sm tracking-[2px] border-2 border-accent-dark rounded-xs transition-all duration-300 hover:bg-primary hover:text-secondary hover:border-secondary"
-                        >
-                            Termin vereinbaren
-                        </Link>
-                    </div>
 
                 </div>
 

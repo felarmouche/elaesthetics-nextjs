@@ -42,14 +42,14 @@ export default function Hero() {
                 {/* Typografie-Block */}
                 <div className="flex flex-col gap-5 md:gap-8 items-center cursor-default">
                     <h1 className="flex flex-col gap-2 md:gap-4 uppercase drop-shadow-2xl">
-                        <span className="block text-accent font-light text-4xl sm:text-5xl md:text-7xl lg:text-[6rem] tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] leading-none">
+                        <span className="block text-accent font-light text-3xl sm:text-4xl md:text-5xl lg:text-7xl tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] leading-none">
                             EL Aesthetics
                         </span>
                         <span className="block text-white/95 font-light text-3xl sm:text-4xl md:text-5xl lg:text-[4rem] tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.25em] leading-none">
                             Bremen
                         </span>
                     </h1>
-                    <p className="max-w-2xl text-sm sm:text-base md:text-xl tracking-[0.05em] sm:tracking-[0.1em] font-light text-white/80 drop-shadow-md">
+                    <p className="max-w-2xl text-md sm:text-base md:text-xl tracking-[0.05em] sm:tracking-[0.1em] font-extralight text-white drop-shadow-md">
                         Praxis für ästhetische und regenerative Medizin
                     </p>
                 </div>
@@ -58,7 +58,7 @@ export default function Hero() {
                 <Link
                     href="/kontakt"
                     aria-label="Termin bei El Aesthetics Bremen buchen"
-                    className="group inline-flex w-auto items-center justify-center whitespace-nowrap px-8 sm:px-10 py-4 sm:py-5 bg-white/5 backdrop-blur-md text-white uppercase font-light text-xs sm:text-sm tracking-[0.2em] border border-white/20 rounded-full transition-all duration-500 hover:bg-white hover:text-black hover:border-white shadow-2xl hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105"
+                    className="group inline-flex w-auto items-center justify-center px-8 sm:px-10 py-4 sm:py-5 bg-white/5  text-white uppercase font-medium text-xs sm:text-sm tracking-[0.2em] border border-white/50 transition-all duration-400 hover:bg-white/80 hover:text-black hover:border-white shadow-2xl"
                 >
                     Jetzt Termin buchen
                     <ChevronRight className="ml-3 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-500 group-hover:translate-x-1" />

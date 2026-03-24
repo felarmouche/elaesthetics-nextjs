@@ -13,7 +13,7 @@ export default function Contact() {
           <p className="text-primary text-base font-light">
             Vereinbaren Sie einen Beratungstermin in unserer Praxis in Bremen
           </p>
-          <Link className='p-4 border w-full inline-block mt-4 text-black border-white bg-white hover:text-white hover:bg-black transition-color' href="/kontakt">Jetzt kontaktieren!</Link>
+          <Link className='p-4 border w-full max-w-[500px] inline-block mt-4 text-black border-white bg-white hover:text-white hover:bg-black transition-color' href="/kontakt">Jetzt kontaktieren!</Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-12">
@@ -55,7 +55,7 @@ export default function Contact() {
               Öffnungszeiten
             </h3>
             <p className="text-white font-light leading-relaxed ">
-              Mo - Fr: 9:00 - 17:00 Uhr <br/>
+              Mo - Fr: 9:00 - 17:00 Uhr <br />
               Sa - So: Geschlossen
             </p>
           </div>

@@ -7,14 +7,14 @@ export default function GoogleMaps() {
     return (
         <>
             {showMap ? <Map /> : (
-                <div className="w-full flex flex-col justify-center items-center gap-4 p-6 mt-10">
+                <div className="w-full flex flex-col justify-center items-center gap-4 mt-10">
                     <p className="font-thin text-sm text-center">
                         Um die Karte anzuzeigen, klicken sie bitte auf den Button &quot;Karte
                         anzeigen&quot;. Dadurch aktivieren Sie Google Maps. Durch die
                         Aktivierung stimmen Sie zu, dass Daten an Google übertragen
                         werden.
                     </p>
-                    <button className='mt-4 p-2 w-[90%] border-2 border-accent text-accent text-xl font-bold' onClick={() => setShowMap(true)}>Karte anzeigen</button>
+                    <button className='p-4 border w-full max-w-[500px] inline-block mt-4 text-accent border-accent bg-black hover:bg-white/10 transition-color' onClick={() => setShowMap(true)}>Karte anzeigen</button>
                 </div>)}
         </>)
 }
