@@ -8,10 +8,10 @@ import { Treatment } from "@/components/TreatmentPageComponents";
 export const botoxMasseter: Treatment =
 {
     imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
-    imageAlt: "Masseter-Botulinumtoxin gegen Zähneknirschen (Bruxismus) in Bremen",
-    title: "Masseter-Botulinumtoxin: Entspannung bei Bruxismus & Kieferschmerzen",
+    imageAlt: "Masseter-Botox gegen Zähneknirschen (Bruxismus) in Bremen",
+    title: "Masseter-Botox",
     description:
-        "Zielgerichtete Injektionen in den Kaumuskel können Knirschen und Pressen reduzieren, Kieferschmerzen lindern und die Kontur optisch verschlanken – mit funktionellem und ästhetischem Benefit.",
+        "Zielgerichtete Injektionen in den Kaumuskel können Knirschen und Pressen reduzieren, Kieferschmerzen lindern und das Gesicht optisch verschmälern.",
     treatmentUrl: "/botulinumtoxin/masseter"
 };
 export const botoxMigraene: Treatment =
@@ -20,7 +20,7 @@ export const botoxMigraene: Treatment =
     imageAlt: "Botulinumtoxin zur Migräneprophylaxe in Bremen",
     title: "Botulinumtoxin bei Migräne",
     description:
-        "Für chronische Migräne kann Botulinumtoxin die Attackenfrequenz senken. Wir besprechen Indikation, Schema und realistische Erwartungen im Rahmen einer ärztlichen Beratung.",
+        'Entspannung bestimmter Muskelgruppen im Kopf- und Nackenbereich mit Botulinumtoxin kann die Häufigkeit und Intensität von Migräneattacken reduzieren.',
     treatmentUrl: "/botulinumtoxin/migraene"
 };
 export const botoxHyperhydrose: Treatment =
@@ -29,7 +29,7 @@ export const botoxHyperhydrose: Treatment =
     imageAlt: "Behandlung von Hyperhidrose (übermäßiges Schwitzen) mit Botulinumtoxin in Bremen",
     title: "Botulinumtoxin bei Hyperhidrose (starkem Schwitzen)",
     description:
-        "In Achseln, Handflächen oder Fußsohlen kann Botulinumtoxin die Schweißproduktion vorübergehend reduzieren. Ziel ist ein spürbar trockeneres und komfortableres Hautgefühl – abhängig vom individuellen Verlauf.",
+        "In Achseln, Handflächen oder Fußsohlen kann Botulinumtoxin die Schweißproduktion vorübergehend reduzieren.",
     treatmentUrl: "/botulinumtoxin/hyperhidrose"
 }
 
@@ -150,19 +150,10 @@ export const botoxAesthetic: Treatment = {
 export const mesobotox: Treatment = {
     imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
     imageAlt: 'Mesobotox Behandlung für feine Poren',
-    title: 'Micro-Botulinumtoxin (Meso-Technik)',
+    title: 'Micro-Botox (Baby-Botox)',
     description:
         'Verdünntes Botulinumtoxin wird oberflächlich injiziert. Es kann die Hautstruktur verfeinern, Poren optisch verkleinern und die Talgproduktion reduzieren, ohne die Mimik deutlich zu beeinträchtigen.',
     treatmentUrl: '/botulinumtoxin/mesobotox'
-};
-
-export const masseter: Treatment = {
-    imageUrl: '/assets/botulinumtoxin/masseter_hero.webp',
-    imageAlt: 'Masseter Botox Behandlung gegen Zähneknirschen',
-    title: 'Masseter Botulinumtoxin (Facial Slimming)',
-    description:
-        'Behandlung des großen Kaumuskels. Kann Zähneknirschen (Bruxismus) lindern und das untere Gesichtsdrittel optisch verschmälern – abhängig vom Befund.',
-    treatmentUrl: '/botulinumtoxin/masseter'
 };
 
 export const hyperhidrose: Treatment = {

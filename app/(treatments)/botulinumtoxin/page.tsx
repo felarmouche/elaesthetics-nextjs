@@ -43,7 +43,7 @@ export default function BotulinumtoxinHubPage() {
   const heroData: HeroSectionProps = {
     title: 'Botulinumtoxin Behandlung in Bremen',
     subtitle:
-      'Gezielte Muskelentspannung für Ästhetik und medizinische Indikationen. Erfahren Sie, wie wir mit Botulinumtoxin nicht nur Falten behandeln und Poren verkleinern, sondern auch Zähneknirschen, Migräne und starkes Schwitzen therapieren können.',
+      'Gezielte Muskelentspannung für ästhetische und medizinische Indikationen: Botulinumtoxin behandelt nicht nur Falten und ermöglicht sanfte Lifting-Effekte, sondern kann auch bei Zähneknirschen, Migräne und starkem Schwitzen eingesetzt werden.',
     imageSrc: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
     imageAlt: 'Botulinumtoxin Behandlung Übersicht – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -53,11 +53,9 @@ export default function BotulinumtoxinHubPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist Botulinumtoxin?',
     content: [
-      // Fokus: Wirkstoff allgemein, Sicherheit, Praxis-Standard.
-      // NICHT: "Wie genau wirkt es an der Stirn" (das gehört auf die Faltenseite).
-      'Die Botulinumtoxin Behandlung ist ein minimal-invasives Verfahren der ästhetischen und medizinischen Therapie, das die Muskelaktivität gezielt und vorübergehend reduziert.',
-      'Ob zur Faltenglättung, bei Zähneknirschen (Masseter), Migräne oder übermäßigem Schwitzen (Hyperhidrose) – wir passen Dosierung und Injektionstechnik individuell an Ihre Anatomie und Zielsetzung an. Das Ziel sind natürliche Ergebnisse, die Ihre Mimik erhalten.',
-      'Es werden ausschließlich zertifizierte Präparate verwendet, und wir klären vorab umfassend über Möglichkeiten und Grenzen der Behandlung auf.',
+      'Botulinumtoxin ist ein bewährter Wirkstoff, der die Aktivität bestimmter Muskeln gezielt reduziert und dadurch zu einer Entspannung der Muskulatur führt. In der ästhetischen Medizin wird diese Eigenschaft vor allem genutzt, um mimisch bedingte Falten zu reduzieren.',
+      'Darüber hinaus bietet Botulinumtoxin heute weit mehr Möglichkeiten als die klassische Faltenbehandlung. Durch eine präzise Anwendung kann es auch zur sanften Gesichtsmodellierung und für dezente Lifting-Effekte eingesetzt werden. Auf diese Weise kann das Gesicht frischer, ausgeglichener und insgesamt jugendlicher wirken, ohne seine Natürlichkeit zu verlieren.',
+      'Neben den ästhetischen Einsatzbereichen wird Botulinumtoxin auch bei verschiedenen medizinischen Beschwerden erfolgreich eingesetzt. Dazu gehören zum Beispiel Zähneknirschen und starkes Kieferpressen (Bruxismus), übermäßiges Schwitzen (Hyperhidrose), chronische Migräne sowie in bestimmten Fällen auch Rosazea oder Akne.'
     ],
   };
 
@@ -79,24 +77,24 @@ export default function BotulinumtoxinHubPage() {
           'Die Wirkung kann abhängig vom Zielmuskel, schon ab dem 5. Tag und spätestens nach 14 Tagen sichtbar sein.',
       },
       {
-        question: 'Wie lange hält eine Behandlung allgemein an?',
+        question: 'Wie lange hält die Wirkung an?',
         answer:
-          'Der Körper baut den Wirkstoff natürlich ab. Im Durchschnitt hält die Wirkung zwischen 3 und 6 Monaten an, abhängig von der Stoffwechselaktivität und dem behandelten Areal.',
+          'Der Körper baut den Wirkstoff natürlich ab. Im Durchschnitt hält die Wirkung zwischen 3 und 6 Monaten an, abhängig von verschiedenen Faktoren.',
       },
       {
         question: 'Bin ich sofort nach der Injektion gesellschaftsfähig?',
         answer:
-          'Ja. Es entstehen in der Regel nur kleine Einstichstellen, die nach wenigen Minuten kaum noch sichtbar sind. Sport und Sauna sollten jedoch für 24–48 Stunden gemieden werden.',
+          'Ja. Es entstehen in der Regel nur kleine Einstichstellen, die nach wenigen Minuten kaum noch sichtbar sind.',
       },
       {
         question: 'Wie setzen sich die Kosten zusammen?',
         answer:
-          'Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Schwierigkeitsgrad der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter "Preise".',
+          'Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Aufwand der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter "Preise".',
       },
       {
         question: 'Kann die Botulinumtoxin-Wirkung ausbleiben?',
         answer:
-          'Manche Menschen reagieren weniger stark auf den Wirkstoff, etwa durch schnelleren Abbau oder eine Antikörperbildung. Dadurch kann die Wirkung geringer oder kürzer ausfallen. Laut Studiendaten können neutralisierende Antikörper in seltenen Fällen auftreten; häufig wird ein Anteil im niedrigen Prozentbereich genannt (z. B. bis etwa 1,5 %).',
+          'Manche Menschen reagieren weniger stark auf den Wirkstoff, etwa durch schnelleren Abbau oder eine Antikörperbildung. Dadurch kann die Wirkung geringer oder kürzer ausfallen.',
       },
     ],
   };
@@ -123,7 +121,7 @@ export default function BotulinumtoxinHubPage() {
   const ctaData: CTASectionProps = {
     title: 'Ihr Termin für Botulinumtoxin in Bremen',
     subtitle:
-      'Lassen Sie sich fachärztlich beraten. Wir finden gemeinsam heraus, welche Behandlung für Ihr Anliegen die richtige ist.',
+      'Lassen Sie sich beraten. Wir finden gemeinsam heraus, welche Behandlung für Ihr Anliegen die richtige ist.',
     primaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' },
     secondaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
   };

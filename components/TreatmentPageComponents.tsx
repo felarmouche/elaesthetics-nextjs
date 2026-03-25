@@ -495,10 +495,10 @@ const consultationData: ConsultationSectionProps = {
     description: [
         "Sie wissen noch nicht welche Behandlung für Sie die richtige ist, oder haben Fragen zu bestimmten Methoden? Ich berate Sie gerne individuell und umfassend. Häufig gibt es verschiedene Ansätze und Möglichkeiten.",
         "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische und regenerative Medizin und Gründerin von EL Aesthetics.",
-        "Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich stets auf dem neuesten Stand der regenerativen Medizin. ",
-        "Ich bin Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT) und arbeite ausschließlich mit hochwertigen, und CE-zertifizierten Präparaten.",
+        "Durch kontinuierliche Fortbildungen und die Teilnahme an internationalen Fachkongressen bleibe ich stets auf dem neuesten Stand. ",
+        "Ich bin Mitglied der Deutschen Gesellschaft für ästhetische Botulinumtoxin- und Fillertherapie e.V. (DGBT) und arbeite ausschließlich mit hochwertigen und CE-zertifizierten Präparaten.",
         "In meiner Praxis nehme ich mir Zeit für Sie – für eine individuelle Betreuung in einer Atmosphäre, in der Sie sich rundum wohlfühlen können.",
-        "Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin."
+        "Vereinbaren Sie Ihren persönlichen Beratungstermin."
     ],
     ctaText: "Jetzt Termin anfragen",
     ctaHref: "/kontakt",

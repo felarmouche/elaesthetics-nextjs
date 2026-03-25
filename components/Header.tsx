@@ -151,7 +151,7 @@ export default function Header() {
 
               {/* DROPDOWN TRIGGER */}
               <div
-                className="relative h-full flex items-center group"
+                className="static h-full flex items-center group"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
               >

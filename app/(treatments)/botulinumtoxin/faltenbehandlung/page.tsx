@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Script from "next/script";
+import { botoxMasseter, mesobotox } from "@/data/treatments";
 import {
   CTASection,
   TOCItem,
@@ -69,7 +69,7 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
   const heroData: HeroSectionProps = {
     title: "Faltenbehandlung mit Botulinumtoxin in Bremen",
     subtitle:
-      "Gezielte Behandlung von Mimik-Falten. Erfahren Sie, wie mit präziser Dosierung verschiedene Falten wie Zornesfalte, Stirnfalten und Krähenfüße effektiv geglättet werden können.",
+      "Gezielte Behandlung von Mimik-Falten, wie z.B. Zornesfalte, Stirnfalten, Krähenfüße & mehr",
     imageSrc: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
     imageAlt:
       "Faltenbehandlung mit Botulinumtoxin an der Stirn – EL Aesthetics Bremen",
@@ -87,12 +87,12 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
   ];
 
   const introData: IntroSectionProps = {
-    title: "Wie funktioniert die Faltenunterspritzung?",
+    title: "Wie funktioniert die Faltenbehandlung?",
     content: [
       // E-E-A-T: Wir erklären es medizinisch korrekt, aber verständlich.
-      "Die Faltenbehandlung mit Botulinumtoxin ist ein ästhetisches, nicht chirurgisches Verfahren zur gezielten Glättung mimischer Falten.",
-      "Botulinumtoxin wirkt, indem es die Signalübertragung zwischen Nerv und Muskel blockiert. Dadurch entspannt sich der Muskel und die darüberliegende Haut glättet sich. Besonders effektiv ist dies bei dynamischen Falten, die durch Muskelbewegungen entstehen, wie der Zornesfalte oder den Krähenfüßen.",
-      "Die Behandlung wird individuell auf Ihre Anatomie und Mimik abgestimmt, um möglichst natürliche Ergebnisse zu erzielen. Bei El Aesthetics Bremen setzen wir auf präzise Dosierung und moderne Injektionstechniken.",
+      "Die Faltenbehandlung mit Botulinumtoxin ist ein minimal-invasives Verfahren zur gezielten Glättung mimischer Falten.",
+      "Botulinumtoxin wirkt, indem es die Signalübertragung zwischen Nerv und Muskel hemmt. Dadurch entspannt sich die Muskulatur, sodass dynamische Falten reduziert werden.",
+      "Die Behandlung wird individuell auf Ihre Anatomie und Mimik abgestimmt, um möglichst natürliche Ergebnisse zu erzielen.",
     ],
   };
 
@@ -126,6 +126,16 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
             title: "Pflasterstein-Kinn",
             description:
               "Unregelmäßige Struktur am Kinn durch den Mentalis-Muskel.",
+          },
+          {
+            title: "Halsfalten",
+            description:
+              "",
+          },
+          {
+            title: "Marionettenfalten",
+            description:
+              "",
           },
         ],
       },
@@ -171,13 +181,13 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
         number: "01",
         title: "Persönliche Beratung",
         description:
-          "Wir erstellen ein individuelles Behandlungskonzept, um Ihre persönlichen Bedürfnisse zu erfüllen.",
+          "Bei einem persönlichen Beratungsgespräch werden Fragen beantwortet und ein Behandlungsplan erstellt.",
       },
       {
         number: "02",
         title: "Die Behandlung",
         description:
-          "Das Botulinumtoxin wird mit einer sehr dünnen Nadel in den Zielmuskel injiziert. Die gesamte Behandlung dauert maximal 30 Minuten.",
+          "Das Botulinumtoxin wird mit einer sehr dünnen Nadel in den Zielmuskel injiziert.",
       },
       {
         number: "03",
@@ -189,14 +199,14 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
   };
 
   const treatmentCareData: TreatmentCareSectionProps = {
-    title: "Vorher & Nachher: Wichtige Hinweise",
+    title: "Vor- und Nachsorge",
     beforeTreatment: {
-      title: "Davor",
+      title: "Vor der Behandlung",
       instructions: [
         {
           title: "Blutverdünner",
           description:
-            "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen.",
+            "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen. Bei Dauermedikation vor dem Absetzen den behandelnden Arzt konsultieren.",
         },
         {
           title: "Alkoholkonsum",
@@ -209,22 +219,23 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
             "Keine Behandlung während Schwangerschaft oder Stillzeit.",
         },
         {
-          title: "Entzündungen",
+          title: "Krankheit",
           description:
-            "Bei Hautentzündungen oder Infektionen im Behandlungsbereich Termin verschieben.",
+            "Bei Hautentzündungen, Krankheit oder Infektionen im Behandlungsbereich Termin verschieben.",
         },
         {
-          title: "Operationen",
-          description: "Keine Behandlung 2 Wochen vor oder nach einer OP",
+          title: "Operationen/Impfung",
+          description: "Keine Behandlung 2 Wochen vor oder nach einer OP/Impfung",
         },
+
       ],
     },
     afterTreatment: {
-      title: "Danach",
+      title: "Nach der Behandlung",
       instructions: [
         {
           title: "Körperhaltung",
-          description: "Für 3–4 Stunden eine aufrechte Haltung bewahren.",
+          description: "Für 3-4 Stunden nicht flach oder auf der Seite liegen.",
         },
         {
           title: "Sport & Schwimmbad",
@@ -235,11 +246,6 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
           title: "Wärme & Sonne",
           description:
             "1–2 Wochen auf Sauna, Solarium und intensive Sonneneinstrahlung verzichten.",
-        },
-        {
-          title: "UV-Schutz",
-          description:
-            "Achten Sie 4–6 Wochen lang auf konsequenten Sonnenschutz.",
         },
         {
           title: "Gesichtsbehandlungen",
@@ -258,22 +264,9 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
   const treatmentsData: TreatmentsSectionProps = {
     title: "Ergänzende Behandlungen",
     treatments: [
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
-        imageAlt: "Masseter Botox Behandlung",
-        title: "Masseter (Facial Slimming)",
-        description:
-          "Behandlung des Kauskels bei Zähneknirschen oder für eine schmalere Gesichtsform.",
-        treatmentUrl: "/botulinumtoxin/masseter",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-microbotox_hero.webp",
-        imageAlt: "Mesobotox Behandlung",
-        title: "Micro-Botulinumtoxin (Hautbild)",
-        description:
-          "Feinste Injektionen für verfeinerte Poren und einen ebenmäßigen Teint.",
-        treatmentUrl: "/botulinumtoxin/mesobotox",
-      },
+      botoxMasseter,
+      mesobotox
+
       // Wir verlinken NICHT auf Hyperhidrose/Migräne hier, um den Kontext "Ästhetik/Gesicht" sauber zu halten (Topical Cluster).
       // Stattdessen z.B. Hyaluron, falls vorhanden, oder wir lassen es bei 2.
     ],
@@ -286,7 +279,7 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
       {
         question: "Wirkt mein Gesicht nach der Behandlung starr?",
         answer:
-          'Nein, bei korrekter Dosierung nicht. Unser Ziel in Bremen ist die Erhaltung Ihrer natürlichen Mimik. Sie sollen entspannt aussehen, nicht "eingefroren" (Frozen Face). Wir dosieren lieber vorsichtig und legen bei Bedarf nach.',
+          'Nein, bei korrekter Dosierung nicht. Ziel ist der Erhalt der natürlichen Mimik. Sie sollen entspannt aussehen, nicht "eingefroren" (Frozen Face). Wir dosieren lieber vorsichtig und legen bei Bedarf nach.',
       },
       {
         question: "Wie lange hält das Ergebnis an der Stirn oder Zornesfalte?",
@@ -296,7 +289,7 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
       {
         question: "Was ist der Unterschied zu Hyaluron?",
         answer:
-          "Botulinumtoxin entspannt Muskeln (gut für Mimikfalten wie Zornesfalte). Hyaluron ist ein Filler, der Volumen gibt (gut für statische Falten wie Nasolabialfalten oder Lippenaufbau). Oft ist eine Kombination sinnvoll.",
+          "Botulinumtoxin entspannt Muskeln (gut für Mimikfalten wie Zornesfalte). Hyaluron ist ein Filler, der Volumen gibt (gut für statische Falten wie Nasolabialfalten oder Lippenaufbau). Manchmal ist eine Kombination sinnvoll.",
       },
       {
         question: "Ab wann sollte man mit Botulinumtoxin anfangen?",
@@ -306,23 +299,23 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
       {
         question: "Was kostet eine Zornesfalten-Behandlung in Bremen?",
         answer:
-          "Die Kosten beginnen meist ab ca. 150€, variieren aber je nach Materialaufwand und GOÄ-Faktor. Ein verbindlicher Preis kann seriös erst nach Ansicht des Befundes genannt werden.",
+          "Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Aufwand der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter \"Preise\".",
       },
       {
         question: "Gibt es Risiken oder Nebenwirkungen?",
         answer:
-          "Ernsthafte Nebenwirkungen sind sehr selten. Möglich sind vorübergehende Rötungen, kleine Blutergüsse oder leichte Kopfschmerzen. Eventuelle Asymmetrien lassen sich meist nach 2 Wochen korrigieren. Da der Wirkstoff vollständig abgebaut wird, sind dauerhafte Schäden ausgeschlossen. Über seltene Restrisiken klären wir Sie vorab persönlich auf.",
+          "Risiken und Nebenwirkungen varieren je nach Behandlung. Eine ausführliche Aufklärung erfolgt im Beratungsgespräch.",
       },
     ],
   };
 
   const ctaData: CTASectionProps = {
-    title: "Wünschen Sie eine Beratung?",
+    title: "Beratung zur Faltenbehandlung",
     subtitle:
-      "Vereinbaren Sie Ihren Termin bei EL Aesthetics in Bremen. Wir analysieren Ihr Gesicht und erstellen einen Behandlungsplan, der zu Ihnen passt.",
+      "Vereinbaren Sie Ihren Termin bei EL Aesthetics in Bremen.",
     primaryCTA: { text: "Termin online buchen", href: "/kontakt" },
     secondaryCTA: {
-      text: "Telefon: +49 155 66919635",
+      text: "+49 155 66919635",
       href: "tel:+4915566919635",
     },
   };
