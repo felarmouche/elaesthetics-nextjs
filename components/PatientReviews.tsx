@@ -33,7 +33,7 @@ export default async function PatientReviews() {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
 
-            <div className="flex flex-col w-full justify-center max-w-[1300px] mx-auto py-16 md:py-32 px-[5%]">
+            <div className="flex flex-col w-full justify-center max-w-325 mx-auto py-16 md:py-32 px-[5%]">
                 <div className="text-left md:text-center">
                     <h2 id="reviews-title"
                         className="text-2xl md:text-4xl font-normal mb-6 text-accent-dark uppercase tracking-[2px]">

@@ -14,20 +14,20 @@ export default function GoogleMaps() {
                         Aktivierung stimmen Sie zu, dass Daten an Google übertragen
                         werden.
                     </p>
-                    <button className='p-4 border w-full max-w-[500px] inline-block mt-4 text-accent border-accent bg-black hover:bg-white/10 transition-color' onClick={() => setShowMap(true)}>Karte anzeigen</button>
+                    <button className='p-4 border w-full max-w-125 inline-block mt-4 text-accent border-accent bg-black hover:bg-white/10 transition-color' onClick={() => setShowMap(true)}>Karte anzeigen</button>
                 </div>)}
         </>)
 }
 
 function Map() {
     return (
-        <div className='flex w-full flex flex-col justify-center items-center'>
+        <div className='flex w-full flex-col justify-center items-center'>
             <div className='w-full flex items-center justify-center'>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.7435818816684!2d8.894745077260676!3d53.09683997221811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b127013ba0a0bb%3A0x1ae9a26859c8919!2sRichtepad%2014%2C%2028355%20Bremen!5e0!3m2!1sde!2sde!4v1715082769754!5m2!1sde!2sde"
                     width="450"
                     height="400"
-                    className="mt-[20px]"
+                    className="mt-5"
                     loading="lazy"
                 ></iframe>
             </div>

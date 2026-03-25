@@ -1,8 +1,8 @@
 'use client'
+import { CalendarCheck, ChevronDown, Menu, Phone, X } from 'lucide-react'
 import Image from 'next/image'
-import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { CalendarCheck, Phone, ChevronDown, ChevronRight, Menu, X } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
 
 // --- DATENSTRUKTUR FÜR DAS MENÜ ---
 // Hier bilden wir deine Ordnerstruktur exakt ab.
