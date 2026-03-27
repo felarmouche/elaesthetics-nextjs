@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { PRICES } from '@/lib/constants'
+import { filler, profhilo, hylase } from '@/data/treatments';
 import {
   AreasSection,
   AreasSectionProps,
@@ -191,7 +192,7 @@ export default function SkinboosterBremenPage() {
     beforeTreatment: {
       title: 'Vor der Behandlung',
       instructions: [
-        { title: 'Medikamente', description: '7 Tage vorher nach Rücksprache keine Blutverdünner.' },
+        { title: 'Medikamente', description: '7 Tage vorher keine Blutverdünner – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.' },
         { title: 'Kosmetische Procedere', description: 'Keine Peelings, Mikrodermabrasion oder Laser vorab; Sonne/Solarium meiden.' },
         { title: 'Alkohol', description: '24 h vorher keinen Alkohol.' },
         { title: 'Gesundheit', description: 'Kein akuter Infekt/Herpes.' },
@@ -224,33 +225,7 @@ export default function SkinboosterBremenPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Hyaluron-Behandlungen',
-    treatments: [
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
-        title: "Hyaluronsäure-Filler (Falten & Volumen)",
-        description: "Die Behandlung mit Hyaluron-Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
-        treatmentUrl: "/hyaluron/filler"
-      },
-
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt: "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
-        title: "Hyaluron-Skinbooster nach BAP-Technik",
-        description: "Biorevitalisierung und Bioremodulierung mit BAP-Technik – ist eine gewebestimulierende Hyaluron-Behandlung, die die Hautqualität sichtbar verbessert: mehr Elastizität, feinere Linien, gleichmäßigerer Teint.",
-        treatmentUrl: "/hyaluron/profhilo"
-      },
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt: "Nahaufnahme einer Hylase-Flasche",
-        title: "Hylase (Hyaluronidase)",
-        description: "Hyaluronidase, häufig als Hylase bezeichnet, ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen.",
-        treatmentUrl: "/hyaluron/hylase"
-      }
-    ],
+    treatments: [filler, profhilo, hylase],
   };
 
   const faqData: FAQSectionProps = {

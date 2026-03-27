@@ -16,6 +16,7 @@ import {
   CTASection,
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema } from '@/lib/schema';
+import { prfHaar, eigenblut, eigenblutMicroneedling } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Eigenbluttherapie Bremen – PRF & PRP',
@@ -75,32 +76,7 @@ export default function EigenbluttherapiePRFPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Anwendungsbereiche der Eigenbluttherapie',
-    treatments: [
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
-        imageAlt: 'PRF bei Haarausfall in Bremen',
-        title: 'Eigenbluttherapie für die Haare',
-        description:
-          'Autologe Plasma‑Behandlung (PRF/PRP) kann die Kopfhaut unterstützen und die Vitalität von Haarfollikeln fördern – allein oder ergänzend nach Haartransplantation.',
-        treatmentUrl: '/eigenbluttherapie/haare',
-      },
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
-        imageAlt: 'Eigenbluttherapie für die Haut in Bremen',
-        title: 'Eigenbluttherapie für die Haut',
-        description:
-          'Unterstützung der Hautqualität: Textur, feine Linien, Poren & Aknenarben. Für ästhetische Synonyme (Vampir Lifting/Vampire Facial) siehe eigene Seite.',
-        treatmentUrl: '/eigenbluttherapie/vampir-lifting',
-      },
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
-        imageAlt: 'Microneedling mit Eigenbluttherapie in Bremen',
-        title: 'Microneedling mit Eigenbluttherapie',
-        description:
-          'Zeitversetzte Kombination von medizinischem Microneedling mit PRF/PRP zur intensiven Regeneration – z. B. bei Aknenarben.',
-        treatmentUrl: '/eigenbluttherapie/microneedling',
-      },
-    ],
+    treatments: [prfHaar, eigenblut, eigenblutMicroneedling],
   };
 
 

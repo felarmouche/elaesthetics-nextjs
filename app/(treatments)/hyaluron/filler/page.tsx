@@ -176,7 +176,7 @@ export default function HyaluronFillerBremenPage() {
     beforeTreatment: {
       title: 'Vor der Behandlung',
       instructions: [
-        { title: 'Medikamente', description: '7 Tage vorher nach Rücksprache keine blutverdünnenden Schmerzmittel (z. B. Ibuprofen, ASS).' },
+        { title: 'Medikamente', description: '7 Tage vorher keine blutverdünnenden Schmerzmittel (z. B. Ibuprofen, ASS) – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.' },
         { title: 'Alkohol', description: '24 h vorher keinen Alkohol.' },
         { title: 'Gesundheit', description: '2 Wochen keine Impfungen und keine invasiven Eingriffe wie Permanent Make-up, Laserbehandlungen, Zahnbehandlungen, Zahnreinigungen, Operationen oder Ähnliches planen.' },
         { title: 'Schwangerschaft/Stillzeit', description: 'Keine Behandlung in Schwangerschaft/Stillzeit.' },

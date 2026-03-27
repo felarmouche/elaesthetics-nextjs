@@ -26,6 +26,7 @@ import {
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { microneedling, eigenblut, prfHaar } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'PRF Microneedling Bremen',
@@ -82,8 +83,8 @@ export default function PRFMicroneedlingPage() {
       'Die Kombination aus Microneedling und PRF-Matrix unterstützt die Hautregeneration und kann zu einem verfeinert wirkenden Hautbild, glatterer Hauttextur und einem ebenmäßigeren Erscheinungsbild beitragen.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
     imageAlt: 'PRF Microneedling mit Plasma-Needling – EL Aesthetics Bremen',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' }
+    primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' }
   };
 
   const introData: IntroSectionProps = {
@@ -170,7 +171,7 @@ export default function PRFMicroneedlingPage() {
         {
           title: 'Medikamente',
           description:
-            'Nach ärztlicher Rücksprache 1 Woche zuvor möglichst keine blutverdünnenden Mittel (z. B. Ibuprofen, Diclofenac, Aspirin).'
+            '1 Woche zuvor möglichst keine blutverdünnenden Mittel (z. B. Ibuprofen, Diclofenac, Aspirin) – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.'
         },
         {
           title: 'Koffein, Nikotin, Alkohol',
@@ -206,32 +207,7 @@ export default function PRFMicroneedlingPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen mit Eigenblut',
-    treatments: [
-      {
-        imageUrl: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp',
-        imageAlt: 'Medizinisches Microneedling mit Dermapen 4 ohne PRF',
-        title: 'Medizinisches Microneedling ohne PRF',
-        description:
-          'Kollagen-Induktion ohne PRF-Matrix – sinnvoll, wenn eine reine Needling-Serie ausreicht.',
-        treatmentUrl: '/medizinisches-microneedling'
-      },
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-vampire-lifting_hero.webp',
-        imageAlt: 'Gesicht einer Frau bei einer PRF-Eigenbluttherapie',
-        title: 'PRF-Eigenbluttherapie (Vampire Lifting)',
-        description:
-          'Eigenbluttherapie als reine Injektion – ohne Needling; für fokussierte Areale.',
-        treatmentUrl: '/eigenbluttherapie/vampir-lifting'
-      },
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
-        imageAlt: 'PRF-Therapie bei Haarausfall',
-        title: 'PRF bei Haarausfall',
-        description:
-          'Spezielle PRF-Anwendung für die Kopfhaut zur Unterstützung des Haarwuchses.',
-        treatmentUrl: '/eigenbluttherapie/haare'
-      }
-    ]
+    treatments: [microneedling, eigenblut, prfHaar],
   };
 
   const faqData: FAQSectionProps = {

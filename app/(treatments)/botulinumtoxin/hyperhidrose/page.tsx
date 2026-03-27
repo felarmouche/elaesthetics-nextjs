@@ -27,6 +27,7 @@ import {
 import { getWebPageSchema, getMedicalProcedureSchema } from "@/lib/schema";
 // PatientReviews entfernt (HWG)
 import { PRICES } from "@/lib/constants";
+import { botoxFalten, botoxMasseter, mesobotox, migraene } from "@/data/treatments";
 
 export const metadata: Metadata = {
   title: "Hyperhidrose Behandlung Bremen",
@@ -96,10 +97,10 @@ export default function BotoxHyperhidrosePage() {
   };
 
   const introData: IntroSectionProps = {
-    title: "Botulinumtoxin a gegen schwitzen – Allgemeine Infos",
+    title: "Botulinumtoxin gegen starkes schwitzen",
     content: [
       "Die Hyperhidrose-Behandlung mit Botulinumtoxin ist ein minimal-invasives Verfahren zur Reduktion übermäßigen Schwitzens, die sich in den letzten Jahren als sehr effektiv erwiesen hat.",
-      "Botulinumtoxin kann die Signalübertragung an den Nervenendigungen der Schweißdrüsen vorübergehend hemmen. Infolgedessen kann die Schweißproduktion in den behandelten Arealen reduziert sein. Ob und in welchem Ausmaß dies für Sie sinnvoll ist, wird im ärztlichen Gespräch geklärt.",
+      "Botulinumtoxin kann die Signalübertragung an den Nervenendigungen der Schweißdrüsen vorübergehend hemmen. Infolgedessen kann die Schweißproduktion in den behandelten Arealen reduziert werden.",
     ],
   };
 
@@ -123,7 +124,7 @@ export default function BotoxHyperhidrosePage() {
   };
 
   const benefitsData: QuickInfoSectionProps = {
-    title: "Überblick zur Behandlung gegen übermäßiges Schwitzen",
+    title: "Überblick - Behandlung gegen starkes Schwitzen",
     benefits: [
       {
         title: "Preis",
@@ -172,13 +173,13 @@ export default function BotoxHyperhidrosePage() {
         number: "02",
         title: "Behandlung",
         description:
-          "Die Behandlung besteht aus einer Vielzahl von Injektionen, die unangenehm sein können. Deshalb werden die Bereiche vor der Behandlung mit einer Lidocain-Creme betäubt. Nach ca. 30 Minuten werden die Bereiche desinfiziert und das Botulinumtoxin in einem Raster von ca. 1 cm oberflächlich in die Haut injiziert.",
+          "Die betroffenen Bereiche werden vor der Behandlung mit einer Lidocain-Creme betäubt. Nach ca. 30 Minuten werden die Bereiche desinfiziert und das Botulinumtoxin in einem Raster von ca. 1 cm oberflächlich in die Haut injiziert.",
       },
       {
         number: "03",
         title: "Kontrolle & ggf. Auffrischung",
         description:
-          "Beurteilung des Effekts nach etwa 10–14 Tagen. Auffrischungen können – je nach Verlauf – nach 3–6 Monaten erwogen werden.",
+          "Beurteilung des Effekts nach etwa 10–14 Tagen. Auffrischungen können je nach Verlauf erwogen werden.",
       },
     ],
   };
@@ -234,43 +235,7 @@ export default function BotoxHyperhidrosePage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere Anwendungen mit Botulinumtoxin in Bremen",
-    treatments: [
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
-        imageAlt:
-          "Faltenbehandlung mit Botulinumtoxin (Stirn, Zornesfalte, Krähenfüße)",
-        title: "Faltenbehandlung",
-        description:
-          "Mimikfalten wie Stirn, Zornesfalte, Krähenfüße – Aufklärung und individuelle Dosierungsplanung.",
-        treatmentUrl: "/botulinumtoxin/faltenbehandlung",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
-        imageAlt: "Masseter/Bruxismus – Anwendung von Botulinumtoxin",
-        title: "Masseter / Bruxismus",
-        description:
-          "Individuelle Bewertung bei Kieferbeschwerden/Zähneknirschen. Aufklärung zu Nutzen und Risiken.",
-        treatmentUrl: "/botulinumtoxin/masseter",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-microbotox_hero.webp",
-        imageAlt:
-          "Oberflächliche Botulinumtoxin-Anwendung (sog. Mesobotox / Microbotox)",
-        title: "Mesobotox / Micro-Botulinumtoxin",
-        description:
-          "Hautbild-orientierte Anwendung; Eignung wird individuell geprüft.",
-        treatmentUrl: "/botulinumtoxin/mesobotox",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
-        imageAlt:
-          "Botulinumtoxin bei chronischer Migräne (ärztliche Anwendung)",
-        title: "Migräne",
-        description:
-          "Therapieoption bei chronischer Migräne gemäß ärztlicher Indikation.",
-        treatmentUrl: "/botulinumtoxin/migraene",
-      },
-    ],
+    treatments: [botoxFalten, botoxMasseter, mesobotox, migraene],
   };
 
   const faqData: FAQSectionProps = {

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { PRICES } from "@/lib/constants";
+import { filler, skinbooster, hylase } from "@/data/treatments";
 import {
   AreasSection,
   AreasSectionProps,
@@ -222,7 +223,7 @@ export default function ProfhiloBAPPage() {
         {
           title: "Medikamente",
           description:
-            "Blutverdünner nur nach ärztlicher Rücksprache anpassen.",
+            "Blutverdünner möglichst 7 Tage vorher pausieren – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.",
         },
         {
           title: "Hautvorbereitung",
@@ -265,38 +266,7 @@ export default function ProfhiloBAPPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Sinnvolle Ergänzungen",
-    treatments: [
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-filler_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt:
-          "Nahaufnahme einer Hyaluronsäure-Filler Behandlung für Falten",
-        title: "Hyaluronsäure-Filler (Falten & Volumen)",
-        description:
-          "Die Behandlung mit Hyaluron-Fillern ist ein bewährtes Verfahren, um Falten wie Nasolabial- oder Marionettenfalten zu unterfüttern und Volumendefizite auszugleichen. Mit diesem Wirkstoff erzielen wir in Bremen beeindruckende und natürliche Effekte – in einem risikoarmen, minimal-invasiven Eingriff. Freuen Sie sich auf sofort sichtbare Ergebnisse.",
-        treatmentUrl: "/hyaluron/filler",
-      },
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt:
-          "Symbolbild für Feuchtigkeit durch eine Skinbooster-Behandlung",
-        title: "Skinbooster (Hydratation & Glow)",
-        description:
-          "Skinbooster revitalisieren Ihre Haut von innen heraus. Durch die tiefe Hydratation mit unvernetzter Hyaluronsäure werden feine Linien geglättet und die Haut erhält eine frische, strahlende Ausstrahlung. Diese Behandlung eignet sich in unserer Praxis in Bremen hervorragend für Gesicht, Hals, Dekolleté und Hände.",
-        treatmentUrl: "/hyaluron/skinbooster",
-      },
-
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-hylase_hero.webp",
-        // Image Alt: Beschreibend und Keyword-optimiert.
-        imageAlt: "Nahaufnahme einer Hylase-Flasche",
-        title: "Hylase (Hyaluronidase)",
-        description:
-          "Hyaluronidase, häufig als Hylase bezeichnet, ist ein natürlich im menschlichen Körper vorkommendes Enzym, das die Fähigkeit besitzt, Hyaluronsäure gezielt aufzulösen und abzubauen.",
-        treatmentUrl: "/hyaluron/hylase",
-      },
-    ],
+    treatments: [filler, skinbooster, hylase],
   };
 
   const faqData: FAQSectionProps = {

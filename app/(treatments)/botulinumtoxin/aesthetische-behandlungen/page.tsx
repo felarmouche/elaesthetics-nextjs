@@ -64,10 +64,10 @@ export default function BotulinumtoxinSpezialPage() {
     };
 
     const heroData: HeroSectionProps = {
-        title: 'Ästhetische Anwendungen mit Botulinumtoxin',
+        title: 'Ästhetische Behandlungen mit Botulinumtoxin',
         subtitle:
-            'Lip Flip, Erdbeerkinn, Nefertiti-Lift (Hals), Brow Lift & mehr. Neben der klassischen Faltenbehandlung bieten wir spezialisierte Techniken an, um Lippenkontur, Kinn, Hals oder die Augenpartie harmonisch zu optimieren – ganz ohne Operation.',
-        imageSrc: '/assets/botulinumtoxin/aesthetische-behandlungen_hero.png', // Passendes Bild (z.B. Lippen- oder Kinnfokus)
+            'Lip Flip, Gummy-Smile, Erdbeerkinn, Nefertiti-Lift (Hals), Brow Lift & mehr.',
+        imageSrc: '/assets/botulinumtoxin/aesthetische-behandlungen_hero.webp', // Passendes Bild (z.B. Lippen- oder Kinnfokus)
         imageAlt: 'Ästhetische Botulinumtoxin-Behandlung Lip Flip und Kinn – EL Aesthetics Bremen',
         primaryCTA: { text: 'Beratung vereinbaren', href: '/kontakt' },
         secondaryCTA: { text: 'Zu den Details', href: '#areas' },
@@ -85,14 +85,13 @@ export default function BotulinumtoxinSpezialPage() {
     const introData: IntroSectionProps = {
         title: 'Lip Flip, Brow Lift, Nefertiti Lift & Co. – was steckt dahinter?',
         content: [
-            'Ästhetische Botulinumtoxin-Behandlungen sind nicht-chirurgische Verfahren zur gezielten Harmonisierung von Gesichtsdetails in Bremen.',
-            'Diese erfordern höchste anatomische Kenntnis, da hier nicht primär Falten geglättet, sondern Muskelzüge (Vektoren) im Gesicht ausbalanciert werden (Myomodulation).',
-            'In Bremen beraten wir Sie ehrlich: Was ist mit Botulinumtoxin möglich ("Lip Flip"), und wo ist ein Filler (Volumen) die bessere Wahl? Wir legen Wert auf natürliche Ergebnisse, die Ihre Persönlichkeit unterstreichen.',
+            'Botulinumtoxin hat neben der Faltenreduktion eine Vielzahl weiterer ästhetischer Anwendungen. Es kann verwendet werden, um das Gesicht harmonischer erscheinen zu lassen. Durch die gezielte Aktivitätsreduktion bestimmter Muskulatur können verschiedene Gesichtspartien modelliert werden.',
+            'So lassen sich beispielsweise mit einem Lip Flip die Oberlippe sanft betonen, mit einem Brow Lift die Augenpartie öffnen oder ein Gummy Smile korrigieren. Auch Behandlungen wie das Erdbeerkinn, ein sanftes Face Slimming zur Verschmälerung der Kieferpartie oder ein Halslifting im Sinne des Nefertiti Neck Lifts sind möglich.',
         ],
     };
 
     const areasData: AreasSectionProps = {
-        title: 'Unsere Spezialanwendungen im Detail',
+        title: 'Ästhetische Behandlungen mit Botulinumtoxin',
         categories: [
             {
                 category: 'Mund & Lippen',
@@ -170,7 +169,7 @@ export default function BotulinumtoxinSpezialPage() {
                 number: "02",
                 title: "Die Behandlung",
                 description:
-                    "Das Botulinumtoxin wird mit einer sehr dünnen Nadel in den Zielmuskel injiziert. Die gesamte Behandlung dauert maximal 30 Minuten.",
+                    "Das Botulinumtoxin wird mit einer dünnen Nadel in den Zielmuskel injiziert.",
             },
             {
                 number: "03",
@@ -189,7 +188,7 @@ export default function BotulinumtoxinSpezialPage() {
                 {
                     title: "Blutverdünner",
                     description:
-                        "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen.",
+                        "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.",
                 },
                 {
                     title: "Alkoholkonsum",

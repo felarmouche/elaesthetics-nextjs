@@ -60,7 +60,7 @@ export default function AugenHubPage() {
         title: 'Augenbehandlungen in Bremen',
         subtitle:
             'Ein wacher, frischer Blick lässt das gesamte Gesicht strahlen. Wir behandeln Augenringe, Tränenrinnen und Fältchen mit sanften, nicht-chirurgischen Methoden – individuell abgestimmt auf Ihre Anatomie.',
-        imageSrc: '/assets/augen-behandlung/augen-behandlung_hero.png',
+        imageSrc: '/assets/augen-behandlung/augen-behandlung_hero.webp',
         imageAlt: 'Augenbehandlung gegen Augenringe und Tränenrinne – EL Aesthetics Bremen',
         primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
         secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' }

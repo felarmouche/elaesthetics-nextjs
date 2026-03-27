@@ -56,8 +56,8 @@ export default function MesotherapieHaarePage() {
     subtitle: "Leiden Sie unter Haarausfall oder dünner werdendem Haar?\nMit der Mesotherapie Haar-Behandlung aktivieren wir Ihre Haarwurzeln und fördern das Haarwachstum.",
     imageSrc: "/assets/mesotherapie/mesotherapie-haare_hero.webp",
     imageAlt: "Mesotherapie für Haare bei Haarausfall – EL Aesthetics Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
-    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
+    secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" }
   };
 
   const introData: IntroSectionProps = {
@@ -152,7 +152,7 @@ export default function MesotherapieHaarePage() {
       instructions: [
         {
           title: "Blutverdünnende Medikamente",
-          description: "Verzichten Sie nach ärztlicher Rücksprache ca. 1 Woche vor der Behandlung auf blutverdünnende Medikamente (z.B. Aspirin, Ibuprofen), um das Risiko von Blutergüssen zu minimieren."
+          description: "Verzichten Sie ca. 1 Woche vor der Behandlung auf blutverdünnende Medikamente (z.B. Aspirin, Ibuprofen), um das Risiko von Blutergüssen zu minimieren. Das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden."
         },
         {
           title: "Haare waschen",

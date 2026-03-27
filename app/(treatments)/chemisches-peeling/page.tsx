@@ -80,8 +80,8 @@ export default function ChemischesPeelingPage() {
       'Zur Unterstützung der Hautregeneration, Verfeinerung des Hautbildes und Milderung von Pigmentstörungen.',
     imageSrc: '/assets/chemisches-peeling/chemisches-peeling_hero.webp',
     imageAlt: 'Chemisches Peeling zur Hauterneuerung und Pigmentbehandlung – EL Aesthetics Bremen',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 
   const introData: IntroSectionProps = {
@@ -161,7 +161,7 @@ export default function ChemischesPeelingPage() {
         { title: 'Hautreizungen vermeiden', description: 'Vorab keine aggressiven Peelings/Dermabrasion.' },
         { title: 'UV‑Exposition minimieren', description: 'Sonne/Solarium in der Woche zuvor meiden.' },
         { title: 'Gesundheitszustand', description: 'Bei Infekten, Herpes oder offenen Wunden verschieben.' },
-        { title: 'Medikamente', description: 'Einnahme (z. B. Retinoide/Antibiotika) ärztlich mitteilen.' },
+        { title: 'Medikamente', description: 'Einnahme (z. B. Retinoide/Antibiotika) ärztlich mitteilen. Das Absetzen von Medikamenten muss vorher mit dem behandelnden Arzt abgestimmt werden.' },
       ],
     },
     afterTreatment: {

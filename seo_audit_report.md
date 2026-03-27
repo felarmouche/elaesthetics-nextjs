@@ -209,7 +209,7 @@ Allow: /
 | Check | Status | Notes |
 |-------|--------|-------|
 | Alt text on images | ✅ Pass | All hero images, treatment cards have descriptive alt text |
-| Modern formats (WebP) | ✅ Mostly | Most images are `.webp`, some legacy `.jpg` and `.png` remain |
+| Modern formats (WebP) | ✅ Mostly | Most images are `.webp`, some legacy `.webp` and `.webp` remain |
 | Descriptive file names | ✅ Pass | `botox-faltenbehandlung_hero.webp`, `hyaluron-filler_hero.webp` |
 | Lazy loading | ✅ Pass | Non-critical components use `dynamic()` imports |
 | Responsive images | ⚠️ Limited | `unoptimized: true` disables Next.js responsive image generation |

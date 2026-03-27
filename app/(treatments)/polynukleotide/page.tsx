@@ -28,6 +28,7 @@ import {
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { profhilo, kollagenstimulation, eigenblut, mesotherapieHaut } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Polynukleotide Bremen – Hautregeneration',
@@ -80,8 +81,8 @@ export default function PolynukleotideBehandlungPage() {
     subtitle: "Biostimulation der neuesten Generation für natürliche Hautregeneration, Faltenreduktion und Haarwachstum.\nEntdecken Sie die regenerative Kraft biologischer DNA-Therapie.",
     imageSrc: "/assets/polynukleotide/polynukleotide_hero.webp",
     imageAlt: "Polynukleotide-Behandlung für Hautregeneration und Anti-Aging – EL Aesthetics Bremen",
-    primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
-    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
+    primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
+    secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" }
   };
 
   const introData: IntroSectionProps = {
@@ -194,7 +195,7 @@ export default function PolynukleotideBehandlungPage() {
         },
         {
           title: "Blutverdünnende Medikamente",
-          description: "Informieren Sie mich über blutverdünnende Medikamente oder Neigung zu Blutergüssen. Nach ärztlicher Rücksprache sollten diese nach Möglichkeit einige Tage vor der Behandlung pausiert werden."
+          description: "Informieren Sie mich über blutverdünnende Medikamente oder Neigung zu Blutergüssen. Diese sollten nach Möglichkeit einige Tage vor der Behandlung pausiert werden – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden."
         },
         {
           title: "Schwangerschaft & Stillzeit",
@@ -229,36 +230,7 @@ export default function PolynukleotideBehandlungPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere regenerative Behandlungen in Bremen",
-    treatments: [
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
-        imageAlt: "Hyaluronsäure Skinbooster BAP-Technik für Hautregeneration",
-        title: "Hyaluronsäure Skinbooster (BAP-Technik)",
-        description: "Hyaluronsäure-Skinbooster mit der innovativen BAP-Technik verbessern die Hautqualität durch intensive Hydratation und Stimulation der Kollagenproduktion. Ideal für einen frischen, strahlenden Teint.",
-        treatmentUrl: "/hyaluron/profhilo"
-      },
-      {
-        imageUrl: "/assets/kollagenstimulation/kollagenstimulation_hero.webp",
-        imageAlt: "Kollagenstimulation mit Calciumhydroxylapatit und Hyaluronsäure",
-        title: "Kollagenstimulation",
-        description: "Die Kombination aus Calciumhydroxylapatit und Hyaluronsäure stimuliert die körpereigene Kollagenproduktion für natürliche Hautstraffung und langanhaltende Volumengabe.",
-        treatmentUrl: "/kollagenstimulation"
-      },
-      {
-        imageUrl: "/assets/eigenbluttherapie/eigenbluttherapie_hero.webp",
-        imageAlt: "Bild von einer Frau, welche PRF im Gesicht hat",
-        title: "PRF Eigenbluttherapie",
-        description: "Mit Eigenblut (Platelet-Rich Fibrin) fördern wir natürliche Regenerationsprozesse für Haut und Haare. Eine biologische Behandlung für nachhaltige Anti-Aging-Effekte.",
-        treatmentUrl: "/prf"
-      },
-      {
-        imageUrl: "/assets/mesotherapie/mesotherapie-haut_hero.webp",
-        imageAlt: "Mesotherapie für die Haut mit Revitalisierung",
-        title: "Mesotherapie für die Haut",
-        description: "Die Mesotherapie versorgt Ihre Haut mit einem individuellen Wirkstoffcocktail. Vitamine, Mineralstoffe und Hyaluronsäure verbessern die Hautqualität von innen heraus.",
-        treatmentUrl: "/mesotherapie"
-      }
-    ]
+    treatments: [profhilo, kollagenstimulation, eigenblut, mesotherapieHaut],
   };
 
   const faqData: FAQSectionProps = {

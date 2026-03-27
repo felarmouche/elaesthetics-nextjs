@@ -138,8 +138,8 @@ export const TableOfContents: React.FC<TableOfContentsProps> = ({
 }) => {
     return (
         <section id="table-of-contents" className="py-12 md:py-16 border-b border-stone-200">
-            <div className="container mx-auto px-6 max-w-4xl  bg-background-primary px-8 py-12">
-                <p className="text-lg md:text-xl font-light text-stone-400 uppercase tracking-[2px] mb-6">
+            <div className="container mx-auto max-w-4xl  bg-background-primary px-8 py-12">
+                <p className="text-lg md:text-xl font-light text-stone-700 uppercase tracking-[2px] mb-6">
                     {title}
                 </p>
                 <nav aria-label="Inhaltsverzeichnis">

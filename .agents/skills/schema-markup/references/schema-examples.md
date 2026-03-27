@@ -26,7 +26,7 @@ For company/brand homepage or about page.
   "@type": "Organization",
   "name": "Example Company",
   "url": "https://example.com",
-  "logo": "https://example.com/logo.png",
+  "logo": "https://example.com/logo.webp",
   "sameAs": [
     "https://twitter.com/example",
     "https://linkedin.com/company/example",
@@ -74,7 +74,7 @@ For blog posts and news articles.
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "How to Implement Schema Markup",
-  "image": "https://example.com/image.jpg",
+  "image": "https://example.com/image.webp",
   "datePublished": "2024-01-15T08:00:00+00:00",
   "dateModified": "2024-01-20T10:00:00+00:00",
   "author": {
@@ -87,7 +87,7 @@ For blog posts and news articles.
     "name": "Example Company",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://example.com/logo.png"
+      "url": "https://example.com/logo.webp"
     }
   },
   "description": "A complete guide to implementing schema markup...",
@@ -109,7 +109,7 @@ For product pages (e-commerce or SaaS).
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Premium Widget",
-  "image": "https://example.com/widget.jpg",
+  "image": "https://example.com/widget.webp",
   "description": "Our best-selling widget for professionals",
   "sku": "WIDGET-001",
   "brand": {
@@ -269,7 +269,7 @@ For local business location pages.
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Example Coffee Shop",
-  "image": "https://example.com/shop.jpg",
+  "image": "https://example.com/shop.webp",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "123 Main Street",
@@ -315,7 +315,7 @@ For event pages, webinars, conferences.
     "@type": "VirtualLocation",
     "url": "https://example.com/conference"
   },
-  "image": "https://example.com/conference.jpg",
+  "image": "https://example.com/conference.webp",
   "description": "Join us for our annual marketing conference...",
   "offers": {
     "@type": "Offer",

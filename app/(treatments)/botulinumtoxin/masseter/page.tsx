@@ -26,6 +26,7 @@ import {
   HubTeaserSection,
 } from "@/components/TreatmentPageComponents";
 import { PRICES } from "@/lib/constants";
+import { botoxFalten, hyperhidrose, mesobotox, migraene } from "@/data/treatments";
 import { getWebPageSchema, getMedicalProcedureSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
@@ -93,13 +94,13 @@ export default function BotoxMasseterPage() {
     imageAlt:
       "Masseter-Behandlung mit Botulinumtoxin am Kiefer – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
-    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" },
+    secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" },
   };
 
   const introData: IntroSectionProps = {
     title: "Was ist die Masseter-Behandlung?",
     content: [
-      "Die Masseter-Behandlung mit Botulinumtoxin ist ein minimal-invasives Verfahren zur Entspannung des Kaumuskels bei Bruxismus und zur ästhetischen Gesichtsverschlankung in Bremen.",
+      "Die Masseter-Behandlung mit Botulinumtoxin ist ein minimal-invasives Verfahren zur Entspannung des Kaumuskels bei Bruxismus und zur ästhetischen Gesichtsverschlankung.",
       "Zu den typischen Symptomen gehören unter anderem: Schmerzen in den Kiefergelenken, Zahnschmerzen, Migräne, Tinnitus, Verspannungen im Kopf- und Nackenbereich",
       "Die Behandlung kann auch zur Konturierung der unteren Gesichtshälfte und zum verschmälern markanter Gesichtszüge eingesetzt werden",
       "Bei der Masseter Behandlung wird Botulinumtoxin in definierte Punkte des Muskels injiziert. Der Wirkstoff kann die Signalübertragung zwischen Nerven und Muskel vorübergehend hemmen. Dadurch entspannt sich der Muskel und kann bei wiederholter Anwendung an Volumen verlieren. In welchem Ausmaß dies sinnvoll ist, wird ärztlich geklärt.",
@@ -212,7 +213,7 @@ export default function BotoxMasseterPage() {
         {
           title: "Medikamente",
           description:
-            "7 Tage vorher möglichst auf blutverdünnende Mittel (z. B. Aspirin, Ibuprofen) verzichten.",
+            "7 Tage vorher möglichst auf blutverdünnende Mittel (z. B. Aspirin, Ibuprofen) verzichten – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.",
         },
         {
           title: "Alkohol",
@@ -260,40 +261,7 @@ export default function BotoxMasseterPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere Botulinumtoxin-Anwendungen",
-    treatments: [
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
-        imageAlt: "Faltenbehandlung mit Botulinumtoxin",
-        title: "Faltenbehandlung",
-        description:
-          "Planung und Dosierung nach Befund – Ziel ist eine Entspannung mimischer Falten.",
-        treatmentUrl: "/botulinumtoxin/faltenbehandlung",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-hyperhidrose_hero.webp",
-        imageAlt: "Anwendung gegen Schwitzen",
-        title: "Hyperhidrose",
-        description:
-          "Information zur lokalen Anwendung bei axillärer Hyperhidrose – individuelle Eignung erforderlich.",
-        treatmentUrl: "/botulinumtoxin/hyperhidrose",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-microbotox_hero.webp",
-        imageAlt: "Microbotox",
-        title: "Mesobotox",
-        description:
-          "Oberflächliche Anwendung zur Hautbild-Optimierung – Eignung wird geprüft.",
-        treatmentUrl: "/botulinumtoxin/mesobotox",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
-        imageAlt: "Migräne",
-        title: "Migräne",
-        description:
-          "Therapieoption bei chronischer Migräne im Rahmen der ärztlichen Indikation.",
-        treatmentUrl: "/botulinumtoxin/migraene",
-      },
-    ],
+    treatments: [botoxFalten, hyperhidrose, mesobotox, migraene],
   };
 
   const faqData: FAQSectionProps = {

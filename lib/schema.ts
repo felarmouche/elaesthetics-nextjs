@@ -37,7 +37,7 @@ export function getPhysicianSchema() {
     name: 'Ola El-Armouche',
     medicalSpecialty: 'Dermatology',
     telephone: '+4915566919635',
-    image: `${SITE_URL}/assets/Profilbild engere auswahl/IMG_7336.jpg`,
+    image: `${SITE_URL}/assets/Profilbild engere auswahl/IMG_7336.webp`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Richtepad 14',

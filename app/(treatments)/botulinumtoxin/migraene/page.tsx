@@ -3,6 +3,7 @@ import Script from 'next/script';
 import { TableOfContents, TOCItem, ConsultationSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentCareSectionProps, TreatmentsSection, TreatmentsSectionProps, CTASection, HubTeaserSection } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { botoxFalten, botoxMasseter, hyperhidrose, mesobotox } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Migräne-Behandlung mit Botox Bremen',
@@ -119,12 +120,7 @@ export default function BotoxMigraenePage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Anwendungen mit Botulinumtoxin',
-    treatments: [
-      { imageUrl: '/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp', imageAlt: 'Faltenbehandlung', title: 'Faltenbehandlung', description: 'Planung und Dosierung nach Befund – Ziel ist eine Entspannung mimischer Falten.', treatmentUrl: '/botulinumtoxin/faltenbehandlung' },
-      { imageUrl: '/assets/botulinumtoxin/botox-masseter_hero.webp', imageAlt: 'Masseter/Bruxismus', title: 'Masseter / Bruxismus', description: 'Individuelle Bewertung bei Kieferpressen/Zähneknirschen. Aufklärung zu Nutzen und Risiken.', treatmentUrl: '/botulinumtoxin/masseter' },
-      { imageUrl: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp', imageAlt: 'Hyperhidrose', title: 'Hyperhidrose', description: 'Information zur lokalen Anwendung bei axillärer Hyperhidrose – individuelle Eignung erforderlich.', treatmentUrl: '/botulinumtoxin/hyperhidrose' },
-      { imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp', imageAlt: 'Mesobotox/Microbotox', title: 'Mesobotox / Micro-Botulinumtoxin', description: 'Oberflächliche Anwendung zur Unterstützung der Hautqualität – Eignung wird geprüft.', treatmentUrl: '/botulinumtoxin/mesobotox' },
-    ],
+    treatments: [botoxFalten, botoxMasseter, hyperhidrose, mesobotox],
   };
 
   const faqData: FAQSectionProps = {

@@ -15,29 +15,28 @@ export default function Hero() {
                     src="/assets/cover-cutted.webp"
                     alt="El Aesthetics Bremen"
                     fill
-                    priority
+                    fetchPriority="high"
                     sizes="100vw"
                     className="object-cover object-center"
                 />
             </div>
 
-            {/* Desktop Bild */}
             <div className="absolute inset-0 hidden md:block">
                 <Image
-                    src="/assets/chatGPT-picture-small.jpg"
+                    src="/assets/chatGPT-picture-small.webp"
                     alt="El Aesthetics Bremen"
                     fill
-                    priority
+                    fetchPriority="high"
                     sizes="100vw"
                     className="object-cover object-center"
                 />
             </div>
 
             {/* Premium Gradient Overlay für bessere Lesbarkeit */}
-            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 z-[1]" />
+            <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/40 to-black/70 z-1" />
 
             {/* Text & Content Container */}
-            <div className="relative z-[2] flex flex-col items-center justify-center text-center px-6 py-12 md:p-12 w-full max-w-5xl mx-auto gap-12 md:gap-16 animate-fade-up">
+            <div className="relative z-2 flex flex-col items-center justify-center text-center px-6 py-12 md:p-12 w-full max-w-5xl mx-auto gap-12 md:gap-16 animate-fade-up">
 
                 {/* Typografie-Block */}
                 <div className="flex flex-col gap-5 md:gap-8 items-center cursor-default">
@@ -49,7 +48,7 @@ export default function Hero() {
                             Bremen
                         </span>
                     </h1>
-                    <p className="max-w-2xl text-md sm:text-base md:text-xl tracking-[0.05em] sm:tracking-[0.1em] font-extralight text-white drop-shadow-md">
+                    <p className="max-w-2xl text-md sm:text-base md:text-xl tracking-[0.05em] sm:tracking-widest font-extralight text-white drop-shadow-md">
                         Praxis für ästhetische und regenerative Medizin
                     </p>
                 </div>

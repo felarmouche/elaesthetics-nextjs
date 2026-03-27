@@ -81,7 +81,7 @@ export default function FettWegSpritzePage() {
             'Fett-weg-Spritze: Gezielte Fettreduktion ohne Operation: Doppelkinn, Hängebäckchen & lokale Fettdepots dauerhaft auflösen.',
         imageSrc: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp',
         imageAlt: 'Fett-weg-Spritze Injektionslipolyse für Doppelkinn – EL Aesthetics Bremen',
-        primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
+        primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
         secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
     };
 
@@ -243,7 +243,7 @@ export default function FettWegSpritzePage() {
                 {
                     title: 'Medikamente',
                     description:
-                        'Keine blutverdünnenden Medikamente einnehmen (nach Rücksprache mit Ihrem Arzt).',
+                        'Keine blutverdünnenden Medikamente einnehmen – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.',
                 },
                 {
                     title: 'Alkohol',
@@ -308,7 +308,7 @@ export default function FettWegSpritzePage() {
                 {
                     title: 'Medikamente nach Behandlung',
                     description:
-                        'Nehmen Sie 7 Tage lang nach der Behandlung keine entzündungshemmenden oder blutverdünnenden Medikamente ein (z.B. Ibuprofen, Diclofenac, Aspirin).',
+                        'Nehmen Sie 7 Tage lang nach der Behandlung keine entzündungshemmenden oder blutverdünnenden Medikamente ein (z.B. Ibuprofen, Diclofenac, Aspirin). Das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.',
                 },
             ],
         },

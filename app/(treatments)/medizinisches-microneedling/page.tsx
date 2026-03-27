@@ -29,6 +29,7 @@ import {
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { eigenblutMicroneedling, mesotherapieHaut, peeling, skinbooster } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Medizinisches Microneedling Bremen',
@@ -223,40 +224,7 @@ export default function MedizinischesMicroneedlingPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Verwandte Behandlungen",
-    treatments: [
-      {
-        imageUrl: "/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp",
-        imageAlt: "PRF Plasma-Needling zur Intensivierung",
-        title: "PRF-Microneedling (Plasma-Needling)",
-        description:
-          "Kombination aus Needling und körpereigenem Plasma (PRF/PRP) zur zusätzlichen Regenerations-Stimulation.",
-        treatmentUrl: "/eigenbluttherapie/microneedling"
-      },
-      {
-        imageUrl: "/assets/mesotherapie/mesotherapie-haut_hero.webp",
-        imageAlt: "Mesotherapie für Hautqualität",
-        title: "Mesotherapie (Haut)",
-        description:
-          "Fein dosierte Wirkstoff-Cocktails für Glow, Feuchtigkeit und Hautqualität – ergänzend oder alternativ.",
-        treatmentUrl: "/mesotherapie"
-      },
-      {
-        imageUrl: "/assets/chemisches-peeling/chemisches-peeling_hero.webp",
-        imageAlt: "Chemisches Peeling",
-        title: "Chemisches Peeling",
-        description:
-          "Peelings unterschiedlicher Stärke für Teint-Verfeinerung und Pigmentausgleich.",
-        treatmentUrl: "/chemisches-peeling"
-      },
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-skinbooster_hero.webp",
-        imageAlt: "Skinbooster",
-        title: "Skinbooster",
-        description:
-          "Intensive, langanhaltende Durchfeuchtung mittels unvernetzter Hyaluronsäure.",
-        treatmentUrl: "/hyaluron/skinbooster"
-      }
-    ]
+    treatments: [eigenblutMicroneedling, mesotherapieHaut, peeling, skinbooster],
   };
 
   const faqData: FAQSectionProps = {

@@ -27,6 +27,7 @@ import {
 } from "@/components/TreatmentPageComponents";
 import { getWebPageSchema, getMedicalProcedureSchema } from "@/lib/schema";
 import { PRICES } from "@/lib/constants";
+import { botoxFalten, botoxMasseter, hyperhidrose, migraene } from "@/data/treatments";
 
 export const metadata: Metadata = {
   title: "Mesobotox Bremen – Porenverfeinerung",
@@ -92,7 +93,7 @@ export default function MicrobotoxPage() {
     imageAlt:
       "Mesobotox-Behandlung zur Porenverfeinerung – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
-    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" },
+    secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" },
   };
 
   const introData: IntroSectionProps = {
@@ -226,7 +227,7 @@ export default function MicrobotoxPage() {
         {
           title: "Medikamente",
           description:
-            "7 Tage vorher möglichst auf blutverdünnende Mittel (z. B. Aspirin, Ibuprofen) verzichten.",
+            "7 Tage vorher möglichst auf blutverdünnende Mittel (z. B. Aspirin, Ibuprofen) verzichten – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.",
         },
         {
           title: "Alkohol",
@@ -274,40 +275,7 @@ export default function MicrobotoxPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere Anwendungen mit Botulinumtoxin",
-    treatments: [
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
-        imageAlt: "Faltenbehandlung mit Botulinumtoxin",
-        title: "Faltenbehandlung",
-        description:
-          "Klassische Anwendung bei mimischen Falten – Dosierung nach Befund. Keine Erfolgsgarantie.",
-        treatmentUrl: "/botulinumtoxin/faltenbehandlung",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-masseter_hero.webp",
-        imageAlt: "Masseter/Bruxismus – Kaumuskel",
-        title: "Masseter / Bruxismus",
-        description:
-          "Lokal begrenzte Anwendung am Kaumuskel – Eignung wird individuell geprüft.",
-        treatmentUrl: "/botulinumtoxin/masseter",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-hyperhidrose_hero.webp",
-        imageAlt: "Anwendung gegen Schwitzen",
-        title: "Hyperhidrose",
-        description:
-          "Information zur axillären Hyperhidrose – individuelle Indikation erforderlich.",
-        treatmentUrl: "/botulinumtoxin/hyperhidrose",
-      },
-      {
-        imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
-        imageAlt: "Migräne",
-        title: "Migräne",
-        description:
-          "Therapieoption bei chronischer Migräne im Rahmen der ärztlichen Indikation.",
-        treatmentUrl: "/botulinumtoxin/migraene",
-      },
-    ],
+    treatments: [botoxFalten, botoxMasseter, hyperhidrose, migraene],
   };
 
   const faqData: FAQSectionProps = {

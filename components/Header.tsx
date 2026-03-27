@@ -347,7 +347,7 @@ export default function Header() {
             </Link>
             <Link
               href="/kontakt"
-              className="w-full justify-center inline-flex items-center px-4 py-3 border border-transparent shadow-sm text-base font-medium text-white bg-[#ac9769] hover:bg-[#8f7e56]"
+              className="w-full justify-center inline-flex items-center px-4 py-3 border border-transparent shadow-sm text-base font-medium text-white bg-[#917d53]"
               onClick={() => setIsOpen(false)}
             >
               Termin vereinbaren

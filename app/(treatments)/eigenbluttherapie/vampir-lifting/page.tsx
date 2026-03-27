@@ -26,6 +26,7 @@ import {
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { eigenblutMicroneedling, skinbooster, polynukleotide } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Vampir Lifting Bremen – PRF Glow',
@@ -77,8 +78,8 @@ export default function VampirLiftingPage() {
       'Natürliches Lifting ohne Filler: Vampire Facial / Plasma-Lifting zur Unterstützung der Hautqualität und eines frischen Hautbilds.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
     imageAlt: 'Vampir Lifting mit Eigenblut-Plasma für Glow – EL Aesthetics Bremen',
-    primaryCTA: { text: 'Hautanalyse anfragen', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 
   const introData: IntroSectionProps = {
@@ -152,7 +153,7 @@ export default function VampirLiftingPage() {
     beforeTreatment: {
       title: 'Vor der Behandlung',
       instructions: [
-        { title: 'Medikamente', description: '1 Woche vorher keine blutverdünnenden Medikamente einnehmen (z. B. Ibuprofen, Diclofenac, Aspirin). Rücksprache mit Ihrem behandelnden Arzt halten.' },
+        { title: 'Medikamente', description: '1 Woche vorher keine blutverdünnenden Medikamente einnehmen (z. B. Ibuprofen, Diclofenac, Aspirin) – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.' },
         { title: 'Koffein/Nikotin/Alkohol', description: 'Verzicht auf Kaffee, koffeinhaltige Getränke, Nikotin und Alkohol mindestens 2 Tage vorher. Am Behandlungstag komplett darauf verzichten.' },
         { title: 'Hydration & Gesundheit', description: 'Ausreichend trinken, leichte Mahlzeit; nur gesund erscheinen.' },
       ],
@@ -173,29 +174,7 @@ export default function VampirLiftingPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Sinnvolle Alternativen & Kombinationen',
-    treatments: [
-      {
-        imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
-        imageAlt: 'Microneedling (Regeneration)',
-        title: 'Microneedling (Regeneration)',
-        description: 'Mechanischer Reiz zur Textur‑Optimierung; optional zeitversetzte Kombination möglich.',
-        treatmentUrl: '/eigenbluttherapie/microneedling',
-      },
-      {
-        imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
-        imageAlt: 'Hyaluron Skinbooster',
-        title: 'Hyaluron Skinbooster',
-        description: 'Feuchtigkeits‑Boost für Glow und Elastizität – Ergänzung ohne Volumenaufbau.',
-        treatmentUrl: '/hyaluron/skinbooster',
-      },
-      {
-        imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
-        imageAlt: 'Polynukleotide (PN)',
-        title: 'Polynukleotide (PN)',
-        description: 'Biostimulation zur Unterstützung der Hautqualität – allein oder kombiniert.',
-        treatmentUrl: '/polynukleotide',
-      },
-    ],
+    treatments: [eigenblutMicroneedling, skinbooster, polynukleotide],
   };
 
   const faqData: FAQSectionProps = {

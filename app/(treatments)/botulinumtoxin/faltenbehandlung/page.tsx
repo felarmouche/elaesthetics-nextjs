@@ -206,7 +206,7 @@ export default function BotulinumtoxinFaltenbehandlungPage() {
         {
           title: "Blutverdünner",
           description:
-            "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen. Bei Dauermedikation vor dem Absetzen den behandelnden Arzt konsultieren.",
+            "7 Tage vor der Behandlung möglichst keine blutverdünnenden Medikamente (z. B. Aspirin, Ibuprofen, Diclofenac) einnehmen. Das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.",
         },
         {
           title: "Alkoholkonsum",

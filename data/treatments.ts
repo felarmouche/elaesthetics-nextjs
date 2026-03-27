@@ -139,7 +139,7 @@ export const botoxFalten: Treatment = {
 };
 
 export const botoxAesthetic: Treatment = {
-    imageUrl: '/assets/botulinumtoxin/aesthetische-behandlungen_hero.png',
+    imageUrl: '/assets/botulinumtoxin/aesthetische-behandlungen_hero.webp',
     imageAlt: 'Ästhetische Behandlungen mit Botox',
     title: 'Ästhetische Behandlungen mit Botulinumtoxin',
     description:
@@ -152,21 +152,21 @@ export const mesobotox: Treatment = {
     imageAlt: 'Mesobotox Behandlung für feine Poren',
     title: 'Micro-Botox (Baby-Botox)',
     description:
-        'Verdünntes Botulinumtoxin wird oberflächlich injiziert. Es kann die Hautstruktur verfeinern, Poren optisch verkleinern und die Talgproduktion reduzieren, ohne die Mimik deutlich zu beeinträchtigen.',
+        'Verdünntes Botulinumtoxin wird oberflächlich injiziert. Es kann die Hautstruktur verfeinern, Poren optisch verkleinern und die Talgproduktion reduzieren.',
     treatmentUrl: '/botulinumtoxin/mesobotox'
 };
 
 export const hyperhidrose: Treatment = {
-    imageUrl: '/assets/botulinumtoxin/hyperhidrose_hero.webp',
+    imageUrl: '/assets/botulinumtoxin/botox-hyperhidrose_hero.webp',
     imageAlt: 'Hyperhidrose Behandlung gegen starkes Schwitzen',
     title: 'Hyperhidrose (Starkes Schwitzen)',
     description:
-        'Ärztlich eingesetztes Botulinumtoxin kann übermäßiges Schwitzen (z. B. Achseln) vorübergehend reduzieren. Wirkung und Dauer sind individuell.',
+        'Botulinumtoxin kann übermäßiges Schwitzen (z. B. Achseln) reduzieren.',
     treatmentUrl: '/botulinumtoxin/hyperhidrose'
 };
 
 export const migraene: Treatment = {
-    imageUrl: '/assets/botulinumtoxin/migraene_hero.webp',
+    imageUrl: '/assets/botulinumtoxin/botox-migräne_hero.webp',
     imageAlt: 'Botox Behandlung bei Migräne',
     title: 'Migräne-Therapie',
     description:
@@ -221,6 +221,15 @@ export const prfMicro: Treatment =
     title: 'Kopfhaut-Microneedling + Eigenblut',
     description:
         'Gezielte Mikroreize zur Unterstützung des Kopfhautmilieus; kann seriell geplant und mit weiteren PRF kombiniert werden.',
+    treatmentUrl: '/eigenbluttherapie/microneedling'
+};
+
+export const eigenblutMicroneedling: Treatment = {
+    imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
+    imageAlt: 'Microneedling mit Eigenblut (PRF) für die Haut',
+    title: 'Microneedling mit Eigenbluttherapie',
+    description:
+        'Zeitversetzte Kombination von medizinischem Microneedling mit PRF/PRP zur intensiven Regeneration – z. B. bei Aknenarben.',
     treatmentUrl: '/eigenbluttherapie/microneedling'
 };
 

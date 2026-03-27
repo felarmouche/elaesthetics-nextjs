@@ -60,7 +60,7 @@ export default function KollagenstimulationPage() {
       'Interesse an einer professionellen Kollagenstimulation in Bremen?\nDann sind Sie bei El Aesthetics genau richtig. Jetzt Beratung vereinbaren!',
     imageSrc: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
     imageAlt: 'Kollagenstimulation mit Biostimulatoren zur Hautstraffung – EL Aesthetics Bremen',
-    primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
+    primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 

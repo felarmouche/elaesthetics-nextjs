@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { PRICES } from '@/lib/constants'
+import { filler, skinbooster, profhilo } from '@/data/treatments';
 import {
   AreasSection,
   AreasSectionProps,
@@ -71,8 +72,8 @@ export default function HyaluronidaseHylasePage() {
     subtitle: 'Hyaluron mit Hyaluronidase (Hylase) auflösen: Lippen, Knötchen & Asymmetrien korrigieren. Minimal-invasiv mit schneller Wirkung.',
     imageSrc: '/assets/hyaluron/hyaluron-hylase_hero.webp',
     imageAlt: 'Hyaluronidase-Behandlung zum Auflösen von Hyaluron – EL Aesthetics Bremen',
-    primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 
   const introData: IntroSectionProps = {
@@ -220,7 +221,7 @@ export default function HyaluronidaseHylasePage() {
       instructions: [
         {
           title: 'Medikamente',
-          description: 'Keine blutverdünnenden Medikamente vor der Behandlung einnehmen (nach Rücksprache mit Ihrem Arzt).',
+          description: 'Keine blutverdünnenden Medikamente vor der Behandlung einnehmen – das Absetzen muss vorher mit dem behandelnden Arzt abgestimmt werden.',
         },
         {
           title: 'Allergien abklären',
@@ -253,30 +254,7 @@ export default function HyaluronidaseHylasePage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Behandlungen mit Hyaluronsäure in Bremen',
-    treatments: [
-      {
-        imageUrl: '/assets/hyaluron/hyaluron-filler_hero.webp',
-        imageAlt: 'Hyaluron Filler Behandlung Bremen',
-        title: 'Hyaluron Filler (Unterspritzung)',
-        description: 'Natürliche Faltenglättung und Volumenaufbau mit Hyaluronsäure in Bremen – für harmonische Gesichtskonturen. Bei Bedarf mit Hyaluronidase korrigierbar.',
-        treatmentUrl: '/hyaluron/filler',
-      },
-      {
-        imageUrl: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
-        imageAlt: 'Skinbooster Behandlung Bremen',
-        title: 'Skinbooster',
-        description:
-          'Intensive Hauthydratation mit Hyaluronsäure in Bremen. Für strahlende Haut und verbesserte Hautqualität.',
-        treatmentUrl: '/hyaluron/skinbooster',
-      },
-      {
-        imageUrl: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
-        imageAlt: "Profhilo Behandlung Bremen",
-        title: "Hyaluron-Remodellierung (BAP-Technik)",
-        description: "Bioremodulierung mit Hyaluronsäure in Bremen: Gewebestimulierende Behandlung für mehr Elastizität und feinere Linien – ohne Volumenaufbau.",
-        treatmentUrl: "/hyaluron/profhilo"
-      },
-    ],
+    treatments: [filler, skinbooster, profhilo],
   };
 
   const faqData: FAQSectionProps = {

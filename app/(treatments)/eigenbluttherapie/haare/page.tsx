@@ -26,6 +26,7 @@ import {
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
+import { mesoHaar, prfMicro, polyHaar } from '@/data/treatments';
 // PatientReviews bewusst nicht verwendet (HWG)
 
 export const metadata: Metadata = {
@@ -167,11 +168,7 @@ export default function PRFHaarePage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Weitere Optionen bei Haarausfall',
-    treatments: [
-      { imageUrl: '/assets/mesotherapie/mesotherapie-haare_hero.webp', imageAlt: 'Mesotherapie Haare', title: 'Mesotherapie bei Haarausfall', description: 'Mikroinjektionen von Nährstoffen zur Unterstützung von Kopfhaut und Haarwurzeln.', treatmentUrl: '/mesotherapie/haare' },
-      { imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp', imageAlt: 'Microneedling + PRF', title: 'Microneedling + PRF (Kopfhaut)', description: 'Kombination aus Needling und Eigenblutkonzentrat – Synergieeffekte möglich.', treatmentUrl: '/eigenbluttherapie/microneedling' },
-      { imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp', imageAlt: 'Polynukleotide', title: 'Polynukleotide (PN)', description: 'Biostimulatoren zur Stabilisierung des Kopfhautmilieus – auch kombinierbar.', treatmentUrl: '/polynukleotide' },
-    ],
+    treatments: [mesoHaar, prfMicro, polyHaar],
   };
 
   const faqData: FAQSectionProps = {

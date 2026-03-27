@@ -31,7 +31,7 @@ Jede Behandlungsseite muss folgende **Snippet-optimierte Blöcke** enthalten:
 | Alt-Tags | Beschreibend + Keyword: `"Faltenbehandlung mit Botulinumtoxin an der Stirn – EL Aesthetics Bremen"` |
 | Dateinamen | Kebab-Case mit Keyword: `faltenbehandlung-botulinumtoxin-stirn.webp` |
 | OG-Images | Jede Behandlungsseite bekommt ein eigenes OG-Image (1200×630). Kein generisches Praxisbild. |
-| WebP-Format | Alle Bilder als `.webp` ausliefern. Fallback auf `.jpg` nur wenn nötig. |
+| WebP-Format | Alle Bilder als `.webp` ausliefern. Fallback auf `.webp` nur wenn nötig. |
 | Keine Vorher-Nachher | Gemäß HWG §11 Abs. 1 Nr. 5: Keine Vorher-Nachher-Bilder von Patienten. Stattdessen: Illustrationen, Schema-Zeichnungen, Praxis-/Behandlungsraum-Aufnahmen. |
 
 ---
