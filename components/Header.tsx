@@ -25,7 +25,7 @@ const TREATMENT_MENU: { [key: string]: MenuItem[] } = {
         { label: 'Masseter (Zähneknirschen)', href: '/botulinumtoxin/masseter' },
         { label: 'Hyperhidrose (Schwitzen)', href: '/botulinumtoxin/hyperhidrose' },
         { label: 'Migräne', href: '/botulinumtoxin/migraene' },
-        { label: 'Mesobotox', href: '/botulinumtoxin/mesobotox' },
+        { label: 'Baby-Botox (Mesobotox)', href: '/botulinumtoxin/mesobotox' },
       ]
     },
     {
@@ -35,7 +35,7 @@ const TREATMENT_MENU: { [key: string]: MenuItem[] } = {
         { label: 'Filler (Volumen)', href: '/hyaluron/filler' },
         { label: 'Skinbooster', href: '/hyaluron/skinbooster' },
         { label: 'Profhilo', href: '/hyaluron/profhilo' },
-        { label: 'Hylase (Auflösung)', href: '/hyaluron/hylase' },
+        { label: 'Hyaluronidase (Hylase)', href: '/hyaluron/hylase' },
       ]
     },
     { label: 'Kollagenstimulation', href: '/kollagenstimulation' },

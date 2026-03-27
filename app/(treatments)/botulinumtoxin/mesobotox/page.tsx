@@ -86,7 +86,7 @@ export default function MicrobotoxPage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: "Micro-Botox/Skin Botox in Bremen",
+    title: "Baby-Botox (Mesobotox) in Bremen",
     subtitle:
       "Sehr oberflächliche Mikro-Injektionen können die Hauttextur verbessern, Poren verfeinern und feine Linien mildern – im Gesicht, am Hals und im Dekolleté.",
     imageSrc: "/assets/botulinumtoxin/botox-microbotox_hero.webp",
@@ -97,10 +97,10 @@ export default function MicrobotoxPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: "Was ist Micro-Botox/Skin Botox?",
+    title: "Was ist Baby-Botox (Mesobotox)?",
     content: [
-      'Micro-Botox (auch "Mesobotox" genannt) ist eine ästhetische Behandlung, bei der stark verdünntes Botulinumtoxin in sehr oberflächliche Hautschichten injiziert wird, um Poren zu verfeinern und die Hauttextur zu verbessern.',
-      "Dies unterscheidet sich von der klassischen Botulinumtoxin-Behandlung, die tiefer in die Muskelschichten wirkt. Microbotox zielt vor allem auf die Verfeinerung des Hautbildes ab, besonders bei großporiger und öliger Haut.",
+      'Baby-Botox (auch "Mesobotox" genannt) ist eine ästhetische Behandlung, bei der stark verdünntes Botulinumtoxin in sehr oberflächliche Hautschichten injiziert wird, um Poren zu verfeinern und die Hauttextur zu verbessern.',
+      "Dies unterscheidet sich von der klassischen Botulinumtoxin-Behandlung, die tiefer in die Muskelschichten wirkt. Mesobotox zielt vor allem auf die Verfeinerung des Hautbildes ab, besonders bei großporiger und öliger Haut.",
       "Je nach Ausgangsbefund kann die Aktivität von Talg- und Schweißdrüsen sowie feinsten mimischen Muskelfasern reduziert werden; ob und in welchem Ausmaß, wird individuell geprüft.",
     ],
   };
@@ -124,7 +124,7 @@ export default function MicrobotoxPage() {
         ],
       },
       {
-        category: "Funktion (lokal)",
+        category: "Funktion",
         items: [
           {
             title: "Verminderung der Talgproduktion (Reduktion von Talgglanz)",
@@ -143,7 +143,7 @@ export default function MicrobotoxPage() {
   };
 
   const benefitsData: QuickInfoSectionProps = {
-    title: "Micro-Botulinumtoxin auf einen Blick",
+    title: "Baby-Botox auf einen Blick",
     benefits: [
       {
         title: "Preis",
@@ -279,70 +279,70 @@ export default function MicrobotoxPage() {
   };
 
   const faqData: FAQSectionProps = {
-    title: "Häufige Fragen zu Mesobotox",
+    title: "Häufige Fragen",
     faqs: [
       {
-        question: "Was ist Mesobotox und wie funktioniert die Behandlung?",
+        question: "Was ist Baby-Botox und wie funktioniert die Behandlung?",
         answer:
           "Es handelt sich um eine oberflächliche Anwendung stark verdünnten Botulinumtoxins über Mikro‑Injektionen (alternativ begleitendes Needling). Ziel ist die Unterstützung eines verfeinerten Hautbilds, u.\u00A0a. durch Einfluss auf Talg-/Schweißdrüsen und sehr feine Muskelfasern.",
       },
       {
         question:
-          "Was ist der Unterschied zwischen klassischem Botulinumtoxin und Mesobotox?",
+          "Was ist der Unterschied zwischen klassischem Botulinumtoxin und Baby-Botox?",
         answer:
           "Klassische Botulinumtoxin-Behandlungen zielen meist auf eine deutlichere Muskelentspannung (tiefer, punktuell). Mesobotox arbeitet sehr oberflächlich und fokussiert auf Hautqualität (Poren/Glanz/feine Fältchen) bei weitgehend erhaltener Mimik.",
       },
       {
-        question: "Wie lange hält das Ergebnis einer Mesobotox-Behandlung an?",
+        question: "Wie lange hält das Ergebnis an?",
         answer:
           "Die beobachtete Wirkzeit liegt häufig bei etwa 3–6 Monaten. Abweichungen sind möglich.",
       },
       {
-        question: "Was kostet eine Mesobotox-Behandlung?",
-        answer: `Mesobotox kosten (Richtwert): ab ca. ${PRICES.botulinum.microBotox}\u00A0€. Der Betrag hängt von Areal, Menge und Aufwand ab. Die Abrechnung erfolgt GOÄ-orientiert; der konkrete Preis wird individuell festgelegt.`,
+        question: "Was kostet eine Baby-Botox-Behandlung?",
+        answer: `Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Aufwand der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter "Preise".`,
       },
       {
-        question: "Ist Mesobotox sicherund gibt es Nebenwirkungen?",
+        question: "Ist die Behandlung sicherund gibt es Nebenwirkungen?",
         answer:
           "Die Injektionen mit sehr feinen Nadeln sind in der Regel gut tolerierbar. Mögliche, meist vorübergehende Reaktionen: Rötungen, Schwellungen, kleine Hämatome; gelegentlich Kopfschmerz/Unwohlsein. Kontraindikationen werden vorab besprochen.",
       },
       {
         question:
-          "Lohnt sich Mesobotox im Vergleich zu klassischem Botulinumtoxin?",
+          "Lohnt sich Baby-Botox im Vergleich zu klassischem Botulinumtoxin?",
         answer:
           "Das hängt von Ihrem Ziel ab: Für starke Mimikfalten eignen sich häufig klassische Anwendungen. Für Hautqualität (Poren/Glanz/feine Fältchen) kann Mesobotox erwogen werden. Eine allgemeine Empfehlung ist nicht möglich; wir beraten individuell.",
       },
       {
-        question: "Wann sieht man das Ergebnis von Mesobotox?",
+        question: "Wann sieht man ein Ergebnis?",
         answer:
           "Erste Effekte können nach wenigen Tagen sichtbar sein, die Beurteilung erfolgt meist bis etwa 14 Tage nach der Behandlung.",
       },
       {
-        question: "Welche Hautprobleme lassen sich mit Mesobotox behandeln?",
+        question: "Welche Hautprobleme lassen sich behandeln?",
         answer:
           "Je nach Ausgangsbefund: großporige/ölige Haut, Glanz, oberflächliche Knitterfältchen. Bei Rosazea/Akne kann eine unterstützende Anwendung erwogen werden (nicht im akuten Schub).",
       },
       {
         question:
-          "Kann man Mesobotox mit Hyaluron oder Microneedling kombinieren?",
+          "Kann man die Behandlung mit Hyaluron oder Microneedling kombinieren?",
         answer:
           "Kombinationen sind möglich (z.\u00A0B. Microneedling, chemische Peelings, Hyaluron in getrennten Sitzungen/Arealen). Das genaue Vorgehen wird individuell geplant, um Risiken zu minimieren.",
       },
       {
-        question: "Wie läuft eine Mesobotox-Behandlung ab?",
+        question: "Wie läuft die Behandlung ab?",
         answer:
           "Beratung und Hautanalyse, anschließend Reinigung/Desinfektion und ggf. Betäubungscreme. Sehr oberflächliche Mikro‑Injektionen im Raster oder begleitendes Needling. Danach beruhigende Pflege und Nachsorgehinweise.",
       },
       {
-        question: "Welche Nebenwirkungen können bei Microbotox auftreten?",
+        question: "Welche Nebenwirkungen können auftreten?",
         answer:
-          "Microbotox gilt als sehr sicher. Möglich sind vorübergehende Rötungen, Schwellungen oder kleine Blutergüsse an den Einstichstellen. Da der Wirkstoff stärker verdünnt ist, kann er sich in seltenen Fällen etwas leichter im Gewebe verteilen und benachbarte Muskeln vorübergehend schwächen. Diese Effekte sind jedoch temporär und bilden sich vollständig zurück.",
+          "Baby-Botox gilt als sehr sicher. Möglich sind vorübergehende Rötungen, Schwellungen oder kleine Blutergüsse an den Einstichstellen. Da der Wirkstoff stärker verdünnt ist, kann er sich in seltenen Fällen etwas leichter im Gewebe verteilen und benachbarte Muskeln vorübergehend schwächen. Diese Effekte sind jedoch temporär und bilden sich vollständig zurück.",
       },
     ],
   };
 
   const ctaData: CTASectionProps = {
-    title: "Beratung zu Mesobotox",
+    title: "Beratung zu Mesobotox in Bremen",
     subtitle:
       "Sie möchten mehr zu Anwendung, Sicherheit und mesobotox kosten erfahren? Wir beraten Sie gerne.",
     primaryCTA: { text: "Termin anfragen", href: "/kontakt" },

@@ -77,8 +77,8 @@ export default function PolynukleotideBehandlungPage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: "Polynukleotide-Behandlung in Bremen",
-    subtitle: "Biostimulation der neuesten Generation für natürliche Hautregeneration, Faltenreduktion und Haarwachstum.\nEntdecken Sie die regenerative Kraft biologischer DNA-Therapie.",
+    title: "Polynukleotid-Filler in Bremen",
+    subtitle: "Biostimulation der neuesten Generation.\nRegenerative biologische DNA-Therapie. Für Faltenreduktion & Haarwachstum.",
     imageSrc: "/assets/polynukleotide/polynukleotide_hero.webp",
     imageAlt: "Polynukleotide-Behandlung für Hautregeneration und Anti-Aging – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
@@ -88,14 +88,14 @@ export default function PolynukleotideBehandlungPage() {
   const introData: IntroSectionProps = {
     title: "Was sind Polynukleotide?",
     content: [
-      "Polynukleotide sind ein innovatives Verfahren in der regenerativen Medizin. Sie werden aus der DNA von Lachsforellen gewonnen und haben ihren Ursprung in der Wundheilungsforschung. Sie werden nicht nur in der ästhetischen Medizin eingesetzt, sondern auch zur Behandlung chronischer Wunden.",
-      "In der ästhetischen Medizin regen sie die Zellregeneration, Zellneubildung und Kollagenproduktion an. Sie verbessern die Hautstruktur, besonders die empfindliche Haut unter den Augen, bei Augenringen und Fältchen. Sie können ebenso bei Narben, Aknenarben, Schwangerschaftsstreifen, Pigmentstörungen und Haarausfall helfen.",
-      "Darüber hinaus kommen sie auch bei entzündlichen Hautproblemen wie Rosazea zum Einsatz. Die Behandlung ist biologisch verträglich und bietet eine natürliche, nachhaltige Methode, um körpereigene Heilungs- und Regenerationsprozesse zu aktivieren."
+      "Polynukleotide sind Ketten von DNA/RNA-Bausteinen, die aus Lachssperma gewonnen werden und für ihre regenerativen Eigenschaften bekannt sind. Diese Moleküle sind essenziell für die Zellfunktion, da sie die genetischen Informationen enthalten, die für das Wachstum, die Entwicklung und die Reparatur von Zellen und Geweben notwendig sind.",
+      "Polynukleotide werden daher oft als Biostimulatoren oder Bioaktivatoren bezeichnet. In der Medizin unterstützen injizierbare Polynukleotide die Wundheilung und Hautregeneration. Kosmetisch werden sie unter anderem als Skin Booster und Filler genutzt.",
+      "Sie reduzieren Falten und Narben, Hyperpigmentierungen, revitalisieren und regenerieren effektiv die Haut. Zudem verbessern sie die Spannkraft, die Elastizität und die Hydratation der Haut. Anwendungsbereiche sind vor allem Gesicht, Augenbereich, Hals, Dekolleté, Aknenarben und Haare."
     ]
   };
 
   const areasData: AreasSectionProps = {
-    title: "Anwendungsbereiche der Polynukleotide-Behandlung",
+    title: "Anwendungsbereiche der Polynukleotid-Filler",
     categories: [
       {
         category: "Haare",
@@ -131,7 +131,7 @@ export default function PolynukleotideBehandlungPage() {
   };
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: "Die Polynukleotide-Behandlung auf einen Blick",
+    title: "Die Polynukleotid-Behandlung auf einen Blick",
     benefits: [
       { title: "Preis", description: `ab ${PRICES.hyaluronFiller.polynukleotideHautAugenHaare || '280'}€*`, iconUrl: "/assets/icons/EUR.svg" },
       { title: "Dauer", description: "ca. 30-60 Min", iconUrl: "/assets/icons/TIME.svg" },
@@ -155,7 +155,7 @@ export default function PolynukleotideBehandlungPage() {
   ];
 
   const processData: ProcessSectionProps = {
-    title: "Ablauf Ihrer Polynukleotide-Behandlung in Bremen",
+    title: "Ablauf der Behandlung mit Polynukleotiden",
     steps: [
       {
         number: "01",
@@ -181,7 +181,7 @@ export default function PolynukleotideBehandlungPage() {
   };
 
   const treatmentCareData: TreatmentCareSectionProps = {
-    title: "Wichtige Hinweise zur Polynukleotide-Behandlung",
+    title: "Wichtige Hinweise zur Behandlung",
     beforeTreatment: {
       title: "Vor der Behandlung",
       instructions: [
@@ -229,12 +229,12 @@ export default function PolynukleotideBehandlungPage() {
 
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: "Weitere regenerative Behandlungen in Bremen",
+    title: "Weitere regenerative Behandlungen",
     treatments: [profhilo, kollagenstimulation, eigenblut, mesotherapieHaut],
   };
 
   const faqData: FAQSectionProps = {
-    title: "Häufige Fragen zur Polynukleotide-Behandlung",
+    title: "Häufige Fragen zur Behandlung",
     faqs: [
       {
         question: "Wie wirken Polynukleotide auf die Haut?",

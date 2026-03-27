@@ -28,7 +28,7 @@ export default function About() {
 
         {/* Block 3: Vertrauen & Zeit (Der USP) */}
         <p className="text-text-primary mb-4">
-          Da kein Gesicht dem anderen gleicht und medizinische Eingriffe Verantwortung bedeuten, lege ich größten Wert auf Aufklärung. Ihr erster Besuch dauert vielleicht etwas länger als gewohnt, doch für ein sicheres Ergebnis nehme ich mir diese Zeit gerne. Und Sie sollten es auch!
+          Da kein Gesicht dem anderen gleicht und medizinische Eingriffe Verantwortung bedeuten, lege ich größten Wert auf Aufklärung. Ihr erster Besuch dauert vielleicht etwas länger als gewohnt, doch für ein sicheres Ergebnis nehme ich mir diese Zeit gerne.
         </p>
 
         {/* Block 4: Atmosphäre & Abschluss */}

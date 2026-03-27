@@ -5,7 +5,6 @@ import { filler, skinbooster, profhilo } from '@/data/treatments';
 import {
   AreasSection,
   AreasSectionProps,
-  ConsultationSectionProps,
   ConsultationSection,
   HubTeaserSection,
   TableOfContents,
@@ -69,7 +68,7 @@ export default function HyaluronidaseHylasePage() {
 
   const heroData: HeroSectionProps = {
     title: 'Hyaluronidase Behandlung in Bremen',
-    subtitle: 'Hyaluron mit Hyaluronidase (Hylase) auflösen: Lippen, Knötchen & Asymmetrien korrigieren. Minimal-invasiv mit schneller Wirkung.',
+    subtitle: 'Hyaluron mit Hyaluronidase (Hylase) auflösen: Lippen, Knötchen & Asymmetrien korrigieren.',
     imageSrc: '/assets/hyaluron/hyaluron-hylase_hero.webp',
     imageAlt: 'Hyaluronidase-Behandlung zum Auflösen von Hyaluron – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -79,15 +78,13 @@ export default function HyaluronidaseHylasePage() {
   const introData: IntroSectionProps = {
     title: 'Was ist Hyaluronidase?',
     content: [
-      'Die Hyaluronidase-Behandlung ist ein minimal-invasives Verfahren zur gezielten Auflösung von Hyaluronsäure-Fillern bei Überkorrekturen, Asymmetrien oder Komplikationen.',
-      'Die Wirkung setzt in der Regel zeitnah ein. Je nach Menge des aufzulösenden Hyalurons sind erste Veränderungen meist innerhalb von Stunden sichtbar, der vollständige Abbau erfolgt üblicherweise innerhalb von 24–48 Stunden.',
-      'Besonders wichtig: Hyaluronidase (Hylase) dient auch als unverzichtbares Notfall-Medikament bei Gefäßverschlüssen. Jede seriöse Praxis, die Hyaluron-Unterspritzungen durchführt, sollte das Enzym stets griffbereit haben.',
-      'Bei EL Aesthetics in Bremen bieten wir die Hyaluronidase-Behandlung zur Korrektur von Hyaluron-Fillern sowie als Notfallvorsorge an.',
+      'Hylase (Hyaluronidase) ist ein Enzym, das natürlicherweise im menschlichen Körper vorkommt und die Hyaluronsäure auflösen kann. Das ermöglicht die Korrektur von unerwünschten Ergebnissen, Knötchen oder Überkorrekturen mit Hyaluronsäure-Fillern.',
+      'Hylase ist für besondere Fälle gedacht. Dazu gehören Komplikationen bei Fillerbehandlungen, Fehlbehandlungen, grobe Überspritzungen oder das Auftreten von Knötchen als Nebenwirkung einer Hyaluron-Unterspritzung. Es sollte jedoch nicht der Eindruck entstehen, dass Gesichtsregionen beliebig im Wechselspiel zwischen Hyaluronsäure-Fillern und Hyaluronidase modelliert werden können.'
     ],
   };
 
   const areasData: AreasSectionProps = {
-    title: 'Hyaluron auflösen: Anwendungsbereiche in Bremen',
+    title: 'Hyaluron auflösen: Anwendungsbereiche',
     categories: [
       {
         category: 'Häufigste Bereiche',
@@ -151,7 +148,7 @@ export default function HyaluronidaseHylasePage() {
   };
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: 'Auf einen Blick',
+    title: 'Die Hyaluronidase-Behandlung auf einen Blick',
     benefits: [
       {
         title: 'Kosten',
@@ -253,7 +250,7 @@ export default function HyaluronidaseHylasePage() {
   };
 
   const treatmentsData: TreatmentsSectionProps = {
-    title: 'Weitere Behandlungen mit Hyaluronsäure in Bremen',
+    title: 'Behandlungen mit Hyaluronsäure in Bremen',
     treatments: [filler, skinbooster, profhilo],
   };
 
@@ -265,11 +262,11 @@ export default function HyaluronidaseHylasePage() {
         answer: 'Hyaluronidase (Hylase) ist ein Enzym, das Hyaluronsäure-Moleküle spaltet und abbaut. Nach der Injektion beginnt das Enzym, den Filler aufzulösen. Erste Veränderungen sind oft bereits nach wenigen Stunden sichtbar, die vollständige Auflösung erfolgt üblicherweise innerhalb von 24–48 Stunden. Die abgebauten Fragmente werden vom Körper natürlich über das Lymphsystem abtransportiert.',
       },
       {
-        question: 'Warum muss Hyaluronidase vorsichtig dosiert werden?',
+        question: 'Warum muss Hylase vorsichtig dosiert werden?',
         answer: 'Das Enzym unterscheidet nicht zwischen künstlich injiziertem Filler und körpereigener Hyaluronsäure. Eine zu hohe Dosierung könnte auch die natürliche Hyaluronsäure in der Haut abbauen, was vorübergehend zu Dellen führen kann. Der Körper gleicht dies normalerweise innerhalb weniger Wochen aus – dennoch ist eine präzise, erfahrene Dosierung entscheidend.',
       },
       {
-        question: 'In welchen Fällen wird Hyaluronidase eingesetzt?',
+        question: 'In welchen Fällen wird Hylase eingesetzt?',
         answer: 'Die häufigsten Indikationen sind: 1) Ästhetische Korrekturen bei Überkorrekturen, Asymmetrien oder unnatürlichen Ergebnissen. 2) Komplikationen wie Knötchen, Tyndall-Effekt oder Filler-Migration. 3) Notfälle bei arteriellen Gefäßverschlüssen – hier ist die sofortige Injektion lebensrettend. 4) Patientenwunsch bei Unzufriedenheit mit dem Ergebnis.',
       },
       {

@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import { PRICES } from '@/lib/constants'
 import {
-  AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection
+  AreasSection, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem, CTASection
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { eigenblut, filler, mesoHaar, mesotherapieHaut, microneedling, polynukleotide } from '@/data/treatments';
@@ -57,7 +57,7 @@ export default function KollagenstimulationPage() {
   const heroData: HeroSectionProps = {
     title: 'Kollagenstimulation in Bremen',
     subtitle:
-      'Interesse an einer professionellen Kollagenstimulation in Bremen?\nDann sind Sie bei El Aesthetics genau richtig. Jetzt Beratung vereinbaren!',
+      'Hautstraffung ohne OP – mit Hyaluronsäure und Calciumhydroxylapatit.',
     imageSrc: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
     imageAlt: 'Kollagenstimulation mit Biostimulatoren zur Hautstraffung – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -71,7 +71,6 @@ export default function KollagenstimulationPage() {
       'Mit zunehmendem Alter verliert die Haut an Festigkeit, Elastizität und Frische – unter anderem durch den Abbau von Kollagen. Eine gezielte Behandlung mit einer Kombination aus Hyaluronsäure und Calciumhydroxylapatit kann diesem Prozess entgegenwirken.',
       'Während die Hyaluronsäure für eine sofort sichtbare Auffrischung sorgen kann, regen die feinen Calciumhydroxylapatit-Partikel die natürliche Kollagenproduktion in der Tiefe an. Diese Kombination kann zu einer schrittweisen Straffung und Verbesserung der Hautqualität führen – mit einem natürlich wirkenden Ergebnis.',
       'Im Unterschied zu anderen rein kollagenstimulierenden Verfahren bietet diese Behandlung durch die Hyaluronsäure zusätzlich eine unmittelbare Aufpolsterung sowie einen sanften Straffungseffekt.',
-      'Eine ärztliche Voruntersuchung entscheidet über Eignung und Vorgehen.'
     ],
   };
 
@@ -182,20 +181,6 @@ export default function KollagenstimulationPage() {
     },
   };
 
-
-
-  const consultationData: ConsultationSectionProps = {
-    title: 'Ihre Ärztin für Kollagenstimulation in Bremen',
-    description: [
-      'Ich bin Ola El-Armouche, Ärztin für ästhetische & regenerative Medizin. Bei EL Aesthetics verbinde ich präzise Techniken mit einem natürlichen Behandlungsansatz.',
-      'Ziel ist eine maßvolle Unterstützung von Hautfestigkeit und -qualität – ohne unnatürliche Überkorrekturen. Grundlage jeder Behandlung ist eine ausführliche Anamnese und ehrliche Beratung.',
-      'Gern prüfe ich mit Ihnen, ob die Kollagenstimulation mit Hyaluronsäure & Calciumhydroxylapatit für Ihre Wünsche geeignet ist.',
-    ],
-    ctaText: 'Beratungstermin anfragen',
-    ctaHref: '/kontakt',
-
-    backgroundColor: 'bg-[#FDF6F0]',
-  };
 
   const treatmentsData: TreatmentsSectionProps = {
     title: 'Verwandte Behandlungen',

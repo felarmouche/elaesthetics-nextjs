@@ -25,6 +25,7 @@ import {
   TreatmentCareSectionProps,
   TreatmentsSectionProps,
   TreatmentsSection,
+  CTASection,
 } from "@/components/TreatmentPageComponents";
 import { getWebPageSchema, getMedicalProcedureSchema } from "@/lib/schema";
 
@@ -92,19 +93,16 @@ export default function ProfhiloBAPPage() {
     imageAlt:
       "Biorevitalisierung mit BAP-Technik (Profhilo) – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratung anfragen", href: "/kontakt" },
-    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" },
+    secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" },
   };
 
   const introData: IntroSectionProps = {
     // Fokus auf Biorevitalisierung (statt Remodellierung)
     title: "Was bedeutet Biorevitalisierung der Haut mit BAP-Technik?",
     content: [
-      "Die Biorevitalisierung mit BAP-Technik ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin zur gezielten Verbesserung von Hautqualität und Elastizität durch hybride Hyaluronsäure.",
-      "Es ist eine tiefenwirksame Behandlung mit hochreiner Hyaluronsäure, die darauf abzielt, die Qualität und Elastizität der Haut sichtbar zu verbessern. Im Gegensatz zu klassischen Fillern steht hier nicht der Volumenaufbau im Vordergrund, sondern die nachhaltige Geweberegeneration und Hydratation.",
-      "Die BAP-Technik (Bio Aesthetic Points) nutzt eine standardisierte Methode, bei der eine besonders fließfähige, hybride Hyaluron-Formulierung an wenigen, exakt definierten Punkten pro Gesichtshälfte eingebracht wird. Von dort aus verteilt sich das Präparat großflächig im Gewebe und stimuliert die körpereigene Produktion von Kollagen und Elastin.",
-      "Dieser Ansatz ist ideal bei leichter Hautlaxität, feinen Knitterfältchen und einem allgemein müden Hautbild. Behandelt werden können Gesicht, Hals, Dekolleté oder Hände, um ein natürlich frisches Aussehen mit spürbarer Strukturverbesserung zu erzielen.",
-      "Das Behandlungskonzept sieht in der Regel eine kurze Serie von zwei Sitzungen im Abstand weniger Wochen vor, gefolgt von Erhaltungsbehandlungen in individuellen Intervallen. Die Ausfallzeit ist minimal, sodass Sie Ihren Alltag schnell wieder aufnehmen können.",
-      "Wir verwenden ausschließlich CE-gekennzeichnete Präparate, wie hochreine hybride Hyaluron-Formulierungen nach BAP-Standard, und klären Sie transparent über alle Schritte und eventuellen Risiken auf. In Bremen beraten wir Sie persönlich, ob die Biorevitalisierung die beste Lösung für Ihre Hautziele darstellt.",
+      "Die Biorevitalisierung mit BAP-Technik (oft auch als Profhilo bekannt) ist ein Verfahren der ästhetischen Medizin zur gezielten Verbesserung von Hautqualität und Elastizität durch hybride Hyaluronsäure.",
+      "Bei dieser Behandlung wird eine Hyaluronsäure verwendet, die ohne Zusätze wie chemische Vernetzungsmittel auskommt. Ihre spezifisch abgestimmte Formulierung ermöglicht eine gleichmäßige Verteilung im Gewebe und trägt dazu bei, die Hautstruktur, -elastizität und Feuchtigkeitsbindung gezielt zu unterstützen.",
+      "Die Anwendung erfolgt nach dem sogenannten BAP-Schema (Bio Aesthetic Points), bei dem das Präparat über nur fünf definierte Injektionspunkte pro Gesichtshälfte eingebracht wird. Dadurch ist eine flächige Wirkung mit vergleichsweise wenigen Injektionen möglich. Diese moderne Methode eignet sich insbesondere für Areale wie Gesicht, Hals, Dekolleté oder Handrücken und wird ambulant durchgeführt. In der Regel ist sie gut verträglich."
     ],
   };
 
@@ -196,7 +194,7 @@ export default function ProfhiloBAPPage() {
     steps: [
       {
         number: "01",
-        title: ">Beratung",
+        title: "Beratung",
         description:
           "Aufklärung zu Methode, Wirkstoff, Ablauf, Risiken; individuelle Planung basierend auf Hautanalyse und Zielen.",
       },
@@ -307,7 +305,7 @@ export default function ProfhiloBAPPage() {
   };
 
   const ctaData: CTASectionProps = {
-    title: "Biorevitalisierung in Bremen gewünscht?",
+    title: "Fragen zur Behandlung?",
     subtitle:
       "Lassen Sie sich individuell beraten – wir erstellen einen passenden Behandlungsplan zur Verbesserung Ihrer Hautqualität.",
     primaryCTA: { text: "Beratung anfragen", href: "/kontakt" },
@@ -336,6 +334,7 @@ export default function ProfhiloBAPPage() {
       />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
+      <CTASection {...ctaData} />
     </div>
   );
 }

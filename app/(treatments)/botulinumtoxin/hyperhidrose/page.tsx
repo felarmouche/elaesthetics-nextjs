@@ -242,7 +242,7 @@ export default function BotoxHyperhidrosePage() {
     title: "Häufige Fragen zu Botulinumtoxin gegen Schwitzen",
     faqs: [
       {
-        question: "Wie funktioniert Botulinumtoxin gegen Schwitzen?",
+        question: "Wie funktioniert die Behandlung von Hyperhidrose?",
         answer:
           "Der Wirkstoff kann die Freisetzung von Acetylcholin an den Nervenendigungen hemmen. Dadurch kann die Aktivität der Schweißdrüsen im behandelten Areal vorübergehend reduziert sein.",
       },
@@ -254,12 +254,12 @@ export default function BotoxHyperhidrosePage() {
       },
       {
         question:
-          "Kann Botulinumtoxin bei Schwitzen in den Wechseljahren helfen?",
+          "Kann es bei Schwitzen in den Wechseljahren helfen?",
         answer:
           "Hitzewallungen und Schwitzen in den Wechseljahren haben vielfältige Ursachen. Botulinumtoxin zielt lokal auf Schweißdrüsen in einem definierten Areal (z. B. Achseln). Ob dies bei menopausalen Beschwerden sinnvoll ist, wird ärztlich geprüft; eine allgemeine Aussage ist nicht möglich.",
       },
       {
-        question: "Zahlt die Krankenkasse Botulinumtoxin gegen Schwitzen?",
+        question: "Zahlt die Krankenkasse die Hyperhidrose-Behandlung?",
         answer:
           "Bei gesetzlich Versicherten handelt es sich in der Regel um eine Selbstzahlerleistung. In Einzelfällen kann eine Kostenübernahme erwogen werden, z. B. bei nachgewiesener, therapieresistenter axillärer Hyperhidrose und entsprechender Antragstellung. Bitte wenden Sie sich an Ihre Kasse.",
       },
@@ -268,7 +268,7 @@ export default function BotoxHyperhidrosePage() {
         answer: `Die Kosten starten meist ab etwa ${PRICES.botulinum.hyperhidrose}\u00A0€ (Richtwert) und richten sich nach Areal, Dosierung und individuellem Aufwand. Abrechnung GOÄ-orientiert.`,
       },
       {
-        question: "Wie lange hält Botulinumtoxin gegen Schwitzen?",
+        question: "Wie lange hält die Wirkung an?",
         answer:
           "Die beobachtete Wirkzeit liegt häufig im Bereich von etwa 3–6 Monaten. Abweichungen sind möglich; es gibt keine Garantie für Dauer oder Ausmaß.",
       },
@@ -277,19 +277,13 @@ export default function BotoxHyperhidrosePage() {
         answer:
           "Vorübergehende Rötungen, Schwellungen oder kleine Hämatome an den Einstichstellen sind möglich. Selten Unverträglichkeiten. Kontraindikationen (z. B. neuromuskuläre Erkrankungen, Schwangerschaft/Stillzeit) werden im Gespräch besprochen.",
       },
-      {
-        question:
-          "Gibt es Alternativen zur Botulinumtoxin Schwitzen Behandlung?",
-        answer:
-          "Je nach Ausprägung: Antitranspirantien, Leitungswasser-Iontophorese, medikamentöse Optionen (ärztliche Verordnung erforderlich), operative Verfahren. Welche Maßnahme passt, hängt vom Einzelfall ab.",
-      },
     ],
   };
 
   const ctaData: CTASectionProps = {
     title: "Beratung zur Hyperhidrose in Bremen",
     subtitle:
-      'Sie wünschen eine ärztliche Einschätzung zur \"botulinumtoxin schwitzen\" Behandlung? Vereinbaren Sie einen Termin zur individuellen Aufklärung.',
+      'Sie wünschen eine ärztliche Einschätzung zur Botulinumtoxin-Behandlung gegen starkes Schwitzen? Vereinbaren Sie einen Termin zur individuellen Aufklärung.',
     primaryCTA: { text: "Termin anfragen", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" },
   };
@@ -322,7 +316,7 @@ export default function BotoxHyperhidrosePage() {
       <TreatmentCareSection {...treatmentCareData} />
       <ConsultationSection />
       <HubTeaserSection
-        title="Alle Botulinumtoxin‑Behandlungen im Überblick"
+        title="Botulinumtoxin‑Behandlungen im Überblick"
         subtitle="Übersicht, Abläufe, Indikationen & Hinweise."
         href="/botulinumtoxin"
       />

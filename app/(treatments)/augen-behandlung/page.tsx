@@ -59,7 +59,7 @@ export default function AugenHubPage() {
     const heroData: HeroSectionProps = {
         title: 'Augenbehandlungen in Bremen',
         subtitle:
-            'Ein wacher, frischer Blick lässt das gesamte Gesicht strahlen. Wir behandeln Augenringe, Tränenrinnen und Fältchen mit sanften, nicht-chirurgischen Methoden – individuell abgestimmt auf Ihre Anatomie.',
+            'Augenringe, Tränenrinnen oder Fältchen? Ein wacher, frischer Blick lässt das gesamte Gesicht strahlen',
         imageSrc: '/assets/augen-behandlung/augen-behandlung_hero.webp',
         imageAlt: 'Augenbehandlung gegen Augenringe und Tränenrinne – EL Aesthetics Bremen',
         primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
@@ -67,11 +67,11 @@ export default function AugenHubPage() {
     };
 
     const introData: IntroSectionProps = {
-        title: 'Müde Augen? Wir finden die passende Lösung.',
+        title: 'Müde Augen behandeln: Augenringe, Krähenfüße & Tränenrinne ohne OP',
         content: [
-            'Augenbehandlungen sind nicht-chirurgische Verfahren der ästhetischen Medizin zur Behandlung von Augenringen, Tränenrinnen und Krähenfüßen mit Polynukleotiden, PRP oder Botulinumtoxin.',
-            'Nicht jede "Augenring-Behandlung" ist für jeden geeignet. Ein dunkler Schatten durch Pigmentierung benötigt eine andere Therapie als eine tiefe Tränenrinne durch Volumenmangel. Auch Wassereinlagerungen (Malar Bags) müssen ausgeschlossen werden.',
-            'Wir analysieren Ihre Anatomie präzise: Ob PRP/PRF für Zellerneuerung, Muskelrelaxantien gegen Krähenfüße oder Polynukleotide zur Regeneration der Hautqualität – wir planen Ihre Behandlung für ein natürliches, erholtes Ergebnis.'
+            'Ein wacher, strahlender Blick ist das Zentrum unserer Ausstrahlung. Wenn Sie dunkle Augenringe entfernen, tiefe Tränenrinnen unterspritzen oder Krähenfüße glätten möchten, bieten wir Ihnen sanfte und individuell abgestimmte Behandlungen ohne OP.',
+            'Die Ursachen für müde Augen und Schatten unter den Augen sind vielfältig. Oft sind ein altersbedingter Volumenverlust, eine sehr dünne Haut am Unterlid, störende Falten unter den Augen oder auch beginnende Tränensäcke der Grund für einen erschöpften Gesichtsausdruck.',
+            'Abhängig von Ihrem Befund setzen wir auf modernste, minimalinvasive Verfahren. Mit innovativen Methoden wie Polynukleotiden, PRP (Vampir-Lifting), PRF, feuchtigkeitsspendenden Skinboostern oder Botulinumtoxin regenerieren wir die Augenpartie gezielt – für ein frisches, natürliches Ergebnis und eine sichtbar verjüngte Hautstruktur.'
         ]
     };
 

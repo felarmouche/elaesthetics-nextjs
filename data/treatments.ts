@@ -47,7 +47,7 @@ export const profhilo: Treatment = {
     imageAlt: 'Profhilo Bio-Remodeling Behandlung in Bremen',
     title: 'Biorevitalisierung (BAP-Technik)',
     description:
-        'Die Anti-Aging-Sensation: Hochkonzentrierte Hyaluronsäure flutet das Gewebe und stimuliert 4 Arten von Kollagen und Elastin. Es polstert nicht künstlich auf, sondern "repariert" erschlafftes Gewebe.',
+        'Hochkonzentrierte Hyaluronsäure flutet das Gewebe und stimuliert 4 Arten von Kollagen und Elastin. Es polstert nicht künstlich auf, sondern "repariert" erschlafftes Gewebe.',
     treatmentUrl: '/hyaluron/profhilo'
 };
 

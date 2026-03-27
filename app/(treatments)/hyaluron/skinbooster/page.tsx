@@ -27,7 +27,8 @@ import {
   TreatmentCareSection,
   TreatmentCareSectionProps,
   TreatmentsSectionProps,
-  TreatmentsSection
+  TreatmentsSection,
+  CTASection
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 
@@ -80,7 +81,7 @@ export default function SkinboosterBremenPage() {
   const heroData: HeroSectionProps = {
     title: 'Skinbooster in Bremen',
     subtitle:
-      'Suchen Sie nach einer professionellen Skinbooster-Behandlung für Gesicht, Hals, Dekolleté & Hände? \nDann sind Sie bei El Aesthetics genau richtig.',
+      'Skinbooster-Behandlung für Gesicht, Hals, Dekolleté & Hände – Spannkraft & Glow.',
     imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
     imageAlt: 'Skinbooster-Behandlung mit Hyaluronsäure für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -92,10 +93,9 @@ export default function SkinboosterBremenPage() {
     content: [
       'Skinbooster-Behandlungen sind ein minimal-invasives Verfahren der ästhetischen Medizin zur tiefenwirksamen Hauthydratation mit unvernetzter Hyaluronsäure.',
       'Das Ergebnis kann eine nachhaltige Durchfeuchtung der Haut bis in die tiefen Hautschichten, mehr Spannkraft und Hautglätte sein.',
-      'Das Skinbooster-Treatment hat ebenfalls einen sehr positiven Effekt auf Problemhaut, z. B. bei Akne, Pigmentstörungen, eingefallenen Narben oder grobporiger Haut.',
-      'So werden feine Linien geglättet, der Teint wirkt ebenmäßiger und die Ausstrahlung frischer. Geeignet für Gesicht, Hals, Dekolleté und Hände.',
-      'Die Methode ist gut verträglich und dezent in der Wirkung – ideal für einen natürlichen Glow.',
-
+      'Die Behandlung hat ebenfalls einen sehr positiven Effekt auf Problemhaut, z. B. bei Akne, Pigmentstörungen, eingefallenen Narben oder grobporiger Haut.',
+      'So können feine Linien geglättet werden, der Teint ebenmäßiger und die Ausstrahlung frischer wirken.',
+      'Geeignet sind Skinbooster vor allem für Gesicht, Hals, Dekolleté und Hände.',
     ],
   };
 
@@ -242,18 +242,7 @@ export default function SkinboosterBremenPage() {
           'Rund 45–60 Minuten (ggf. plus Betäubungszeit). In der Regel sind Sie anschließend sofort wieder gesellschaftsfähig.',
       },
       {
-        question: 'Welche Reaktionen können auftreten?',
-        answer:
-          'Kurzfristig möglich: Rötungen, Schwellungen, kleine Quaddeln oder Hämatome – sie klingen meist binnen weniger Tage ab.',
-      },
-
-      {
-        question: 'Skinbooster, Profhilo oder Filler – was passt zu mir?',
-        answer:
-          'Skinbooster: Hydratation & Hautqualität (sehr oberflächlich, ohne Volumen). BAP-Technik (Biorevitalisierung): spezielles Remodelling-Konzept (eigene Seite). Filler: Volumen/Kontur & tiefere Falten. Wir beraten individuell.',
-      },
-      {
-        question: 'Mögliche Nebenwirkungen von Skinbooster-Behandlungen?',
+        question: 'Was sind mögliche Nebenwirkungen?',
         answer:
           'Die bei der Behandlung verwendete Hyaluronsäure ist risikoarm und gut verträglich. Wie bei allen Injektionsbehandlungen können jedoch folgende Reaktionen auftreten: Leichte Rötung und Schwellung an den Injektionsstellen für ca. 2–5 Tage, Blaue Flecken und Quaddeln an den Einstichstellen (selten), Allergische Reaktionen auf die Hyaluronsäure (sehr selten).',
       },
@@ -261,10 +250,10 @@ export default function SkinboosterBremenPage() {
   };
 
   const ctaData: CTASectionProps = {
-    title: 'Mehr Glow & bessere Hautqualität?',
+    title: 'Noch Fragen zu der Behandlung?',
     subtitle:
       'Buchen Sie Ihre persönliche Beratung für Skinbooster in Bremen.',
-    primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
+    primaryCTA: { text: 'Beratungstermin buchen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };
 
@@ -291,6 +280,7 @@ export default function SkinboosterBremenPage() {
       />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
+      <CTASection {...ctaData} />
 
     </div>
   );

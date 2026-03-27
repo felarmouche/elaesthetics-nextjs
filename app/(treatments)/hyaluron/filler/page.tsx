@@ -75,17 +75,17 @@ export default function HyaluronFillerBremenPage() {
   const heroData: HeroSectionProps = {
     title: 'Hyaluronsäure-Filler in Bremen',
     subtitle:
-      'Suchen Sie nach einer professionellen Praxis für Hyaluronsäure Filler?\nDann sind Sie bei El Aesthetics genau richtig. Lippen aufspritzen, Falten glätten & Konturen präzisieren ',
+      'Lippen aufspritzen, Falten glätten & Konturen präzisieren. Ärztliche Behandlung mit hochwertigen Präparaten für natürliche Ergebnisse.',
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',
     imageAlt: 'Hyaluron-Filler-Behandlung für Lippen, Falten und Konturen – EL Aesthetics Bremen',
     primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 
   const introData: IntroSectionProps = {
     title: 'Was sind Hyaluronsäure-Filler?',
     content: [
-      'Hyaluron-Filler sind ein minimal-invasives Verfahren der ästhetischen Medizin zum Volumenaufbau, zur Faltenunterspritzung und Konturierung von Lippen, Wangen und Jawline in Bremen.',
+      'Hyaluronsäure-Filler sind ein minimal-invasives Verfahren der ästhetischen Medizin zum Volumenaufbau, zur Faltenunterspritzung und Konturierung von Lippen, Wangen und Jawline in Bremen.',
       'Die Filler-Behandlung ist ein beliebtes Verfahren in der ästhetischen Medizin, da sie eine Vielzahl von Behandlungsmöglichkeiten bietet. Volumendefekte und Falten können unterspritzt und damit "unterfüttert" werden. Mit diesem Wirkstoff lassen sich beeindruckende und natürliche Effekte erzielen – und das in einem risikoarmen, nicht-invasiven Eingriff. Freuen Sie sich nach der kurzen Behandlung auf sofort sichtbare Ergebnisse.',
       'Alle Behandlungen erfolgen ärztlich, mit hochwertigen CE-zertifizierten Präparaten und klaren Hygiene- und Sicherheitsstandards.',
     ],
@@ -97,7 +97,7 @@ export default function HyaluronFillerBremenPage() {
       {
         category: 'Lippen & Mundbereich',
         items: [
-          { title: 'Lippenaufspritzen & -konturierung' },
+          { title: 'Lippen aufspritzen & -konturierung' },
           { title: 'Oberlippenfältchen (Plisséfalten)' },
           { title: 'Marionettenfalten' },
         ],
@@ -129,7 +129,7 @@ export default function HyaluronFillerBremenPage() {
   };
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: 'Hyaluron-Filler auf einen Blick',
+    title: 'Filler-Behandlung auf einen Blick',
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.fillerUnterspritzung},-€*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Behandlungsdauer', description: 'ca. 30–45 Min', iconUrl: '/assets/icons/TIME.svg' },
@@ -142,7 +142,7 @@ export default function HyaluronFillerBremenPage() {
   };
 
   const processData: ProcessSectionProps = {
-    title: 'Ablauf der Filler-Behandlung',
+    title: 'Ablauf der Behandlung',
     steps: [
       {
         number: '01',
@@ -172,7 +172,7 @@ export default function HyaluronFillerBremenPage() {
   };
 
   const treatmentCareData: TreatmentCareSectionProps = {
-    title: 'Vor- und Nachsorge bei Fillern',
+    title: 'Vor- und Nachsorge',
     beforeTreatment: {
       title: 'Vor der Behandlung',
       instructions: [
@@ -208,7 +208,7 @@ export default function HyaluronFillerBremenPage() {
   };
 
   const faqData: FAQSectionProps = {
-    title: 'Häufige Fragen zu Hyaluron-Fillern',
+    title: 'Häufige Fragen zu Hyaluronsäure-Fillern',
     faqs: [
       {
         question: 'Wie lange hält das Ergebnis?',
@@ -274,8 +274,8 @@ export default function HyaluronFillerBremenPage() {
       <TreatmentCareSection {...treatmentCareData} />
       <ConsultationSection />
       <HubTeaserSection
-        title="Mehr zu Hyaluron‑Behandlungen"
-        subtitle="Übersicht der Anwendungen, Abläufe & Hinweise."
+        title="Mehr zu Hyaluronsäure‑Behandlungen"
+        subtitle="Übersicht der Anwendungen & Hinweise."
         href="/hyaluron"
       />
       <TreatmentsSection {...treatmentsData} />
