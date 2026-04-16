@@ -81,7 +81,7 @@ export default function SkinboosterBremenPage() {
   const heroData: HeroSectionProps = {
     title: 'Skinbooster in Bremen',
     subtitle:
-      'Skinbooster-Behandlung für Gesicht, Hals, Dekolleté & Hände – Spannkraft & Glow.',
+      'Skinbooster-Behandlung für Gesicht, Hals, Dekolleté & Hände – Spannkraft, Hydratation & Glow.',
     imageSrc: '/assets/hyaluron/hyaluron-skinbooster_hero.webp',
     imageAlt: 'Skinbooster-Behandlung mit Hyaluronsäure für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -123,13 +123,6 @@ export default function SkinboosterBremenPage() {
           { title: 'Feuchtigkeits-Boost & ebenere Oberfläche' },
         ],
       },
-      {
-        category: 'Besondere Indikationen',
-        items: [
-          { title: 'eingesunkene Aknenarben (adjunktiv)' },
-          { title: 'unterstützend bei Pigmentunregelmäßigkeiten*' },
-        ],
-      },
     ],
   };
 
@@ -138,8 +131,7 @@ export default function SkinboosterBremenPage() {
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.skinbooster1ml},-€`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Behandlungsdauer', description: '45–60 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: '3–4 Wochen', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Sitzungen', description: '1–4 (produktabhängig)', iconUrl: '/assets/icons/wiederholung.svg' },
+      { title: 'Sitzungen', description: '2–3 (produktabhängig)', iconUrl: '/assets/icons/wiederholung.svg' },
       { title: 'Betäubung', description: 'auf Wunsch', iconUrl: '/assets/icons/Spritze.svg' },
       { title: 'Gesellschaftsfähig', description: 'meist sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
@@ -234,7 +226,7 @@ export default function SkinboosterBremenPage() {
       {
         question: 'Wann zeigt sich der Effekt?',
         answer:
-          'Der sichtbare Effekt baut sich über 3–4 Wochen auf. In der Aufbauphase sind je nach Hautbild 1–4 Sitzungen üblich.',
+          'Der sichtbare Effekt baut sich über 3–4 Wochen auf. In der Aufbauphase sind je nach Hautbild 2-3 Sitzungen üblich.',
       },
       {
         question: 'Wie lang dauert die Behandlung und bin ich danach einsatzfähig?',
@@ -244,7 +236,7 @@ export default function SkinboosterBremenPage() {
       {
         question: 'Was sind mögliche Nebenwirkungen?',
         answer:
-          'Die bei der Behandlung verwendete Hyaluronsäure ist risikoarm und gut verträglich. Wie bei allen Injektionsbehandlungen können jedoch folgende Reaktionen auftreten: Leichte Rötung und Schwellung an den Injektionsstellen für ca. 2–5 Tage, Blaue Flecken und Quaddeln an den Einstichstellen (selten), Allergische Reaktionen auf die Hyaluronsäure (sehr selten).',
+          'Die bei der Behandlung verwendete Hyaluronsäure ist risikoarm und gut verträglich. Wie bei allen Injektionsbehandlungen können jedoch folgende Reaktionen auftreten: Leichte Rötung und Schwellung an den Injektionsstellen, blaue Flecken und Quaddeln an den Einstichstellen, Allergische Reaktionen auf die Hyaluronsäure sind in seltenen Fällen möglich.',
       },
     ],
   };

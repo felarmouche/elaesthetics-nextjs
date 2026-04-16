@@ -38,7 +38,7 @@ export const skinbooster: Treatment = {
     imageAlt: 'Bio-Remodelierung Behandlung für verbesserte Hautqualität und Feuchtigkeitsboost',
     title: 'Hyaluron Skinbooster',
     description:
-        'Reine Hyaluronsäure verteilt sich fächerförmig im Gewebe. Ergebnis: intensive Hydratation, verbesserte Elastizität und sichtbar glattere, prallere Haut. Geeignet für Gesicht, Hals, Dekolleté u.v.m.',
+        'Reine Hyaluronsäure verteilt sich oberflächlich im Gewebe. Ziel: intensive Hydratation, verbesserte Elastizität und sichtbar glattere, prallere Haut. Geeignet für Gesicht, Hals, Dekolleté u.v.m.',
     treatmentUrl: '/hyaluron/skinbooster'
 };
 
@@ -47,7 +47,7 @@ export const profhilo: Treatment = {
     imageAlt: 'Profhilo Bio-Remodeling Behandlung in Bremen',
     title: 'Biorevitalisierung (BAP-Technik)',
     description:
-        'Hochkonzentrierte Hyaluronsäure flutet das Gewebe und stimuliert 4 Arten von Kollagen und Elastin. Es polstert nicht künstlich auf, sondern "repariert" erschlafftes Gewebe.',
+        'Hochkonzentrierte Hyaluronsäure flutet das Gewebe und stimuliert die Produktion von Kollagen und Elastin. Das Ziel ist eine Hydratation und Verbesserung der Hautqualität.',
     treatmentUrl: '/hyaluron/profhilo'
 };
 
@@ -65,7 +65,7 @@ export const hylase: Treatment = {
     imageAlt: 'Hylase-Behandlung zur Korrektur von Hyaluron',
     title: 'Hyaluronidase (Auflösung von Hyaluronsäure)',
     description:
-        'Korrektur von unerwünschten oder misslungenen Hyaluron-Behandlungen durch das Enzym Hyaluronidase. Sichere und schnelle Auflösung von Fillern.',
+        'Korrektur von unerwünschten Filler-Behandlungen durch das Enzym Hyaluronidase.',
     treatmentUrl: '/hyaluron/hylase'
 };
 

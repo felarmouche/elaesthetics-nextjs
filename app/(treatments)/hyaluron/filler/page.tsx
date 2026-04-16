@@ -3,7 +3,6 @@ import Script from 'next/script';
 import {
   AreasSection,
   AreasSectionProps,
-  ConsultationSectionProps,
   ConsultationSection,
   HubTeaserSection,
   TableOfContents,
@@ -75,7 +74,7 @@ export default function HyaluronFillerBremenPage() {
   const heroData: HeroSectionProps = {
     title: 'Hyaluronsäure-Filler in Bremen',
     subtitle:
-      'Lippen aufspritzen, Falten glätten & Konturen präzisieren. Ärztliche Behandlung mit hochwertigen Präparaten für natürliche Ergebnisse.',
+      'Hyaluronsäure-Filler für Faltenunterspritzung, Volumenaufbau, Lifting und Konturierung von Lippen, Wangen, Kinn, Jawline & mehr.',
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',
     imageAlt: 'Hyaluron-Filler-Behandlung für Lippen, Falten und Konturen – EL Aesthetics Bremen',
     primaryCTA: { text: 'Jetzt Termin buchen', href: '/kontakt' },
@@ -85,9 +84,8 @@ export default function HyaluronFillerBremenPage() {
   const introData: IntroSectionProps = {
     title: 'Was sind Hyaluronsäure-Filler?',
     content: [
-      'Hyaluronsäure-Filler sind ein minimal-invasives Verfahren der ästhetischen Medizin zum Volumenaufbau, zur Faltenunterspritzung und Konturierung von Lippen, Wangen und Jawline in Bremen.',
-      'Die Filler-Behandlung ist ein beliebtes Verfahren in der ästhetischen Medizin, da sie eine Vielzahl von Behandlungsmöglichkeiten bietet. Volumendefekte und Falten können unterspritzt und damit "unterfüttert" werden. Mit diesem Wirkstoff lassen sich beeindruckende und natürliche Effekte erzielen – und das in einem risikoarmen, nicht-invasiven Eingriff. Freuen Sie sich nach der kurzen Behandlung auf sofort sichtbare Ergebnisse.',
-      'Alle Behandlungen erfolgen ärztlich, mit hochwertigen CE-zertifizierten Präparaten und klaren Hygiene- und Sicherheitsstandards.',
+      'Mit zunehmendem Alter kommt es zu einem Abbau von Fett-, Knochen- und Muskelgewebe. Gleichzeitig nimmt die Produktion von Kollagen und Elastin ab. Die Folge sind ein Absinken der Gesichtszüge, nachlassende Spannkraft sowie der Verlust klarer Konturen. Durch die präzise Platzierung von Hyaluronsäure-Fillern kann verlorenes Volumen gezielt wieder aufgebaut, die Gesichtsharmonie verbessert und natürliche Strukturen schonend rekonstruiert werden.',
+      'Neben dem Ausgleich von Volumenverlust können Filler auch genutzt werden, um bestehende Gesichtszüge ästhetisch zu verfeinern. Durch gezielte Konturierung lassen sich beispielsweise Kinn, Wangen, Lippen oder Nase harmonisieren und definieren.',
     ],
   };
 
@@ -107,7 +105,7 @@ export default function HyaluronFillerBremenPage() {
         items: [
           { title: 'Nasolabialfalten' },
           { title: 'Wangenaufbau (Liquid Lift)' },
-          { title: 'Tränenrinne (Augenringe, selektiert)' },
+          { title: 'Schläfen' },
         ],
       },
       {
@@ -132,9 +130,9 @@ export default function HyaluronFillerBremenPage() {
     title: 'Filler-Behandlung auf einen Blick',
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.hyaluronFiller.fillerUnterspritzung},-€*`, iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Behandlungsdauer', description: 'ca. 30–45 Min', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Behandlungsdauer', description: 'ca. 40-60 Min', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Wirkeintritt', description: 'sofort', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Haltbarkeit', description: 'ca. 6–18 Monate', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Haltbarkeit', description: 'ca. 6–24 Monate', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Betäubung', description: 'i. d. R. nicht nötig', iconUrl: '/assets/icons/Spritze.svg' },
       { title: 'Gesellschaftsfähig', description: 'meist sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
@@ -213,7 +211,7 @@ export default function HyaluronFillerBremenPage() {
       {
         question: 'Wie lange hält das Ergebnis?',
         answer:
-          'Je nach Region, Produkt und Stoffwechsel etwa 6–18 Monate. Bei Bedarf kann das Ergebnis aufgefrischt werden.',
+          'Je nach Region, Produkt und Stoffwechsel etwa 6–24 Monate. Bei Bedarf kann das Ergebnis aufgefrischt werden.',
       },
       {
         question: 'Ist die Behandlung schmerzhaft?',
@@ -223,12 +221,7 @@ export default function HyaluronFillerBremenPage() {
       {
         question: 'Welche Risiken gibt es?',
         answer:
-          'Kurzfristig sind Rötungen, Schwellungen oder Hämatome möglich. Sehr selten treten Gefäßkomplikationen auf – hierfür besteht ein klarer Notfall-Algorithmus (u. a. Hyaluronidase).',
-      },
-      {
-        question: 'Was kostet die Filler-Behandlung?',
-        answer:
-          'Ab 250€. Der individuelle Preis richtet sich nach Materialmenge, Areal und Aufwand; die Abrechnung erfolgt gemäß GOÄ.',
+          'Kurzfristig sind Rötungen, Schwellungen oder Hämatome möglich.',
       },
       {
         question: 'Kann man Filler bei Bedarf wieder auflösen?',

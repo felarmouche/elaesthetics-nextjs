@@ -102,7 +102,7 @@ export default function ProfhiloBAPPage() {
     content: [
       "Die Biorevitalisierung mit BAP-Technik (oft auch als Profhilo bekannt) ist ein Verfahren der ästhetischen Medizin zur gezielten Verbesserung von Hautqualität und Elastizität durch hybride Hyaluronsäure.",
       "Bei dieser Behandlung wird eine Hyaluronsäure verwendet, die ohne Zusätze wie chemische Vernetzungsmittel auskommt. Ihre spezifisch abgestimmte Formulierung ermöglicht eine gleichmäßige Verteilung im Gewebe und trägt dazu bei, die Hautstruktur, -elastizität und Feuchtigkeitsbindung gezielt zu unterstützen.",
-      "Die Anwendung erfolgt nach dem sogenannten BAP-Schema (Bio Aesthetic Points), bei dem das Präparat über nur fünf definierte Injektionspunkte pro Gesichtshälfte eingebracht wird. Dadurch ist eine flächige Wirkung mit vergleichsweise wenigen Injektionen möglich. Diese moderne Methode eignet sich insbesondere für Areale wie Gesicht, Hals, Dekolleté oder Handrücken und wird ambulant durchgeführt. In der Regel ist sie gut verträglich."
+      "Die Anwendung erfolgt nach dem sogenannten BAP-Schema (Bio Aesthetic Points), bei dem das Präparat über nur fünf definierte Injektionspunkte pro Gesichtshälfte eingebracht wird. Dadurch ist eine flächige Wirkung mit vergleichsweise wenigen Injektionen möglich. Diese moderne Methode eignet sich insbesondere für Areale wie Gesicht, Hals, Dekolleté oder Handrücken. Aufgrund der wenigen Einstichstellen ist diese Methode sehr schonend."
     ],
   };
 
@@ -208,7 +208,7 @@ export default function ProfhiloBAPPage() {
         number: "03",
         title: "Injektion",
         description:
-          "Insgesamt werden 2 ml der hochkonzentrierten Hyaluronsäure pro Sitzung an 10 definierten Punkten direkt unter die Hautoberfläche injiziert (10-Punkte-Technik). Nach der Injektion verteilt sich die Substanz im Gewebe. Zeitweise können kleine Knötchen oder Klumpen auftreten, die jedoch in der Regel von selbst wieder verschwinden und keine Behandlung erfordern.",
+          "Insgesamt werden 2 ml der hochkonzentrierten Hyaluronsäure pro Sitzung an 10 definierten Punkten direkt unter die Hautoberfläche injiziert (10-Punkte-Technik). Nach der Injektion verteilt sich die Substanz im Gewebe.",
       },
     ],
   };
@@ -277,29 +277,19 @@ export default function ProfhiloBAPPage() {
           "Biorevitalisierung zielt auf Hautqualität, Elastizität und langanhaltende Hydratation ab – ohne künstlichen Volumenaufbau oder Formung. Volumenbehandlungen dienen hingegen der Korrektur von Falten und dem Aufbau einzelner Bereiche.",
       },
       {
-        question: "Wie funktioniert die BAP-Technik?",
-        answer:
-          "Es wird eine flüssige Hyaluronformulierung an wenigen, definierten BAP-Punkten pro Seite injiziert. Die Substanz verteilt sich anschließend von selbst flächenhaft im umliegenden Gewebe, um einen umfassenden Effekt zu erzielen.",
-      },
-      {
-        question: "Wie viele Sitzungen sind sinnvoll?",
-        answer:
-          "Für ein optimales Ergebnis werden in der Regel zwei Sitzungen im Abstand von ca. 4 Wochen durchgeführt. Anschließend sind individuelle Erhaltungssitzungen in regelmäßigen Intervallen ratsam.",
-      },
-      {
         question: "Bin ich nach der Behandlung sofort gesellschaftsfähig?",
         answer:
-          "Meist ja. Kurzfristig können kleine Rötungen, Quaddeln oder leichte Schwellungen an den Einstichstellen entstehen, die jedoch in der Regel binnen weniger Stunden rasch abklingen.",
+          "Meist ja. Kurzfristig können kleine Rötungen, Quaddeln oder leichte Schwellungen an den Einstichstellen entstehen.",
       },
       {
         question: "Für welche Körperregionen eignet sich die Methode?",
         answer:
-          "Die Behandlung eignet sich hervorragend für Gesicht, Hals, Dekolleté und Hände – insbesondere bei feinen Linien, leichter Erschlaffung (Laxität) und einem fahlen, müden Hautbild.",
+          "Die Behandlung eignet sich hervorragend für Gesicht, Hals, Dekolleté und Hände. Weitere Anwendungsbereiche: Knie, Ellenbogen, Innenseite der Oberarme oder Bauch.",
       },
       {
         question: "Welche Nebenwirkungen können auftreten?",
         answer:
-          "Die Behandlung gilt als sehr schonend und verursacht in der Regel nur geringe Schmerzen. Nach der Injektion können vorübergehend leichte Schwellungen oder Rötungen auftreten, die meist rasch von selbst abklingen. Kleinere Hämatome an den Einstichstellen sind möglich, können jedoch nicht vollständig ausgeschlossen werden. Gelegentlich können zeitweise kleine Knötchen oder Klumpen an den Injektionsstellen entstehen, die sich in der Regel ohne weitere Behandlung zurückbilden. Allergische Reaktionen sind selten, sollten aber vor der Behandlung abgeklärt werden.",
+          "Die Behandlung gilt als sehr schonend. Nach der Injektion können vorübergehend leichte Schwellungen oder Rötungen auftreten, die meist rasch von selbst abklingen. Kleinere Hämatome an den Einstichstellen sind möglich, können jedoch nicht vollständig ausgeschlossen werden. Gelegentlich können zeitweise kleine Knötchen an den Injektionsstellen entstehen, die sich in der Regel ohne weitere Behandlung zurückbilden.",
       },
     ],
   };

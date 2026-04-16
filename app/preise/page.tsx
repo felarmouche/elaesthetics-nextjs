@@ -42,7 +42,7 @@ export default function PreisePage() {
 
       {/* Navigation */}
       <nav className=" bg-white border-b border-gray-400 pb-12 z-10">
-        <p className="px-[5%] w-full my-4 text-2xl md:text-3xl text-left md:text-center font-thin text-accent-dark">
+        <p className="px-[5%] w-full my-4 text-2xl md:text-3xl text-left md:text-center font-semibold text-accent-dark">
           Alle Behandlungen in Bremen
         </p>
         <div className="max-w-4xl mx-auto px-6 py-4">
@@ -59,10 +59,10 @@ export default function PreisePage() {
       </nav>
 
       <div className="max-w-4xl mx-auto px-6 py-12 space-y-16">
-          <p className=" fond-bold text-gray-500 leading-relaxed">
-            *Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).
-            Die Kosten für ästhetische Behandlungen werden nicht von gesetzlichen oder privaten Krankenkassen übernommen.
-          </p>
+        <p className=" fond-bold text-gray-500 leading-relaxed">
+          *Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).
+          Die Kosten für ästhetische Behandlungen werden nicht von gesetzlichen oder privaten Krankenkassen übernommen.
+        </p>
         {/* Botulinumtoxin */}
         <Section id="botulinum" title="Botulinumtoxin">
           <Treatment title="Faltenbehandlung">

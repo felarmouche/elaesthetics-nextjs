@@ -48,7 +48,7 @@ export default function HyaluronBremenPage() {
   const heroData: HeroSectionProps = {
     title: 'Hyaluron Behandlung in Bremen',
     subtitle:
-      'Ob Volumenaufbau, Konturierung, Faltenglättung oder tiefenwirksame Hauthydratation – Hyaluronsäure bietet vielseitige Möglichkeiten. Erfahren Sie, welche Behandlung zu Ihren Zielen passt.',
+      'Ob Volumenaufbau, Konturierung, Faltenglättung oder tiefenwirksame Hauthydratation – Hyaluronsäure bietet vielseitige Möglichkeiten.',
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',
     imageAlt: 'Hyaluronsäure-Behandlung mit Filler und Skinbooster – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -80,17 +80,17 @@ export default function HyaluronBremenPage() {
       {
         question: 'Wie lange hält das Ergebnis?',
         answer:
-          'Die Haltbarkeit hängt vom verwendeten Produkt, der behandelten Region und dem individuellen Stoffwechsel ab. In der Regel zwischen 6 und 18 Monaten. Auffrischungen sind jederzeit möglich.',
+          'Die Haltbarkeit hängt vom verwendeten Produkt, der behandelten Region und dem individuellen Stoffwechsel ab. In der Regel zwischen 6 und 24 Monaten.',
       },
       {
         question: 'Ist die Behandlung schmerzhaft?',
         answer:
-          'Die meisten Patienten empfinden die Behandlung als gut erträglich. Hochwertige Präparate enthalten bereits ein lokales Betäubungsmittel (Lidocain). Zusätzlich kann eine Betäubungscreme aufgetragen werden.',
+          'Die meisten Patienten empfinden die Behandlung als gut erträglich. Viele Präparate enthalten bereits ein lokales Betäubungsmittel (Lidocain). Zusätzlich kann eine Betäubungscreme aufgetragen werden.',
       },
       {
         question: 'Welche Nebenwirkungen können auftreten?',
         answer:
-          'Leichte Rötungen, Schwellungen oder kleine Blutergüsse an der Einstichstelle sind normal und klingen meist innerhalb weniger Tage ab. Über ernstere, aber sehr seltene Risiken klären wir Sie vorab auf.',
+          'Leichte Rötungen, Schwellungen oder kleine Blutergüsse an der Einstichstelle sind normal und klingen meist innerhalb weniger Tage ab. Über Risiken werden Sie im Beratungsgespräch aufgeklärt.',
       },
       {
         question: 'Wie setzen sich die Kosten zusammen?',

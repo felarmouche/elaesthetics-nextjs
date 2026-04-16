@@ -108,23 +108,19 @@ export default function BotoxHyperhidrosePage() {
     title: "Anwendungsbereiche - Hyperhidrose Behandlung",
     categories: [
       {
-        category: "Am häufigsten",
-        items: [{ title: "Achseln (axilläre Hyperhidrose)" }],
-      },
-      {
-        category: "Hinweis",
+        category: "Anwendungsgebiete",
         items: [
-          {
-            title:
-              "Weitere Areale nur nach individueller ärztlicher Prüfung und wenn medizinisch vertretbar.",
-          },
+          { title: "Achseln (axilläre Hyperhidrose)" },
+          { title: "Handflächen (palmar)" },
+          { title: "Fußsohlen (plantar)" },
+          { title: "Gesicht" },
         ],
-      },
+      }
     ],
   };
 
   const benefitsData: QuickInfoSectionProps = {
-    title: "Überblick - Behandlung gegen starkes Schwitzen",
+    title: "Überblick",
     benefits: [
       {
         title: "Preis",
@@ -143,7 +139,7 @@ export default function BotoxHyperhidrosePage() {
       },
       {
         title: "Mögliche Wirkdauer",
-        description: "etwa 4–6 Monate",
+        description: "etwa 3–6 Monate",
         iconUrl: "/assets/icons/TIME.svg",
       },
       {
@@ -152,7 +148,7 @@ export default function BotoxHyperhidrosePage() {
         iconUrl: "/assets/icons/Spritze.svg",
       },
       {
-        title: "Alltag",
+        title: "Gesellschaftsfähig",
         description: "i.d.R. sofort",
         iconUrl: "/assets/icons/gesellschaft.svg",
       },
@@ -167,7 +163,7 @@ export default function BotoxHyperhidrosePage() {
         number: "01",
         title: "Ärztliche Beratung & Indikationsprüfung",
         description:
-          "Umfassende Anamnese, Klärung von Kontraindikationen und individuelle Aufklärung zu Möglichkeiten, Grenzen und Risiken der Behandlung.",
+          "Umfassende Anamnese, Klärung von Kontraindikationen und individuelle Aufklärung.",
       },
       {
         number: "02",
@@ -250,22 +246,7 @@ export default function BotoxHyperhidrosePage() {
         question:
           "Kann man übermäßiges Schwitzen mit Botulinumtoxin behandeln?",
         answer:
-          "Bei axillärer Hyperhidrose kann eine ärztlich indizierte Anwendung erwogen werden, insbesondere wenn andere Maßnahmen nicht ausreichend geholfen haben. Ob die Behandlung für Sie geeignet ist, klären wir individuell.",
-      },
-      {
-        question:
-          "Kann es bei Schwitzen in den Wechseljahren helfen?",
-        answer:
-          "Hitzewallungen und Schwitzen in den Wechseljahren haben vielfältige Ursachen. Botulinumtoxin zielt lokal auf Schweißdrüsen in einem definierten Areal (z. B. Achseln). Ob dies bei menopausalen Beschwerden sinnvoll ist, wird ärztlich geprüft; eine allgemeine Aussage ist nicht möglich.",
-      },
-      {
-        question: "Zahlt die Krankenkasse die Hyperhidrose-Behandlung?",
-        answer:
-          "Bei gesetzlich Versicherten handelt es sich in der Regel um eine Selbstzahlerleistung. In Einzelfällen kann eine Kostenübernahme erwogen werden, z. B. bei nachgewiesener, therapieresistenter axillärer Hyperhidrose und entsprechender Antragstellung. Bitte wenden Sie sich an Ihre Kasse.",
-      },
-      {
-        question: "Was kostet eine Botulinumtoxin‑Behandlung gegen Schwitzen?",
-        answer: `Die Kosten starten meist ab etwa ${PRICES.botulinum.hyperhidrose}\u00A0€ (Richtwert) und richten sich nach Areal, Dosierung und individuellem Aufwand. Abrechnung GOÄ-orientiert.`,
+          "Bei Hyperhidrose kann eine ärztlich indizierte Anwendung erwogen werden, insbesondere wenn andere Maßnahmen nicht ausreichend geholfen haben. Ob die Behandlung für Sie geeignet ist, klären wir individuell.",
       },
       {
         question: "Wie lange hält die Wirkung an?",
@@ -275,7 +256,7 @@ export default function BotoxHyperhidrosePage() {
       {
         question: "Welche Nebenwirkungen sind möglich?",
         answer:
-          "Vorübergehende Rötungen, Schwellungen oder kleine Hämatome an den Einstichstellen sind möglich. Selten Unverträglichkeiten. Kontraindikationen (z. B. neuromuskuläre Erkrankungen, Schwangerschaft/Stillzeit) werden im Gespräch besprochen.",
+          "Vorübergehende Rötungen, Schwellungen oder kleine Hämatome an den Einstichstellen sind möglich. Selten Unverträglichkeiten.",
       },
     ],
   };

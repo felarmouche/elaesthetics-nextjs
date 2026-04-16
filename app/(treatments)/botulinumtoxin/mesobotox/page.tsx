@@ -100,8 +100,8 @@ export default function MicrobotoxPage() {
     title: "Was ist Baby-Botox (Mesobotox)?",
     content: [
       'Baby-Botox (auch "Mesobotox" genannt) ist eine ästhetische Behandlung, bei der stark verdünntes Botulinumtoxin in sehr oberflächliche Hautschichten injiziert wird, um Poren zu verfeinern und die Hauttextur zu verbessern.',
-      "Dies unterscheidet sich von der klassischen Botulinumtoxin-Behandlung, die tiefer in die Muskelschichten wirkt. Mesobotox zielt vor allem auf die Verfeinerung des Hautbildes ab, besonders bei großporiger und öliger Haut.",
-      "Je nach Ausgangsbefund kann die Aktivität von Talg- und Schweißdrüsen sowie feinsten mimischen Muskelfasern reduziert werden; ob und in welchem Ausmaß, wird individuell geprüft.",
+      "Dies unterscheidet sich von der klassischen Botulinumtoxin-Behandlung, die tiefer in die Muskelschichten wirkt.",
+      "Je nach Ausgangsbefund kann die Aktivität von Talg- und Schweißdrüsen vermindert werden. Mesobotox zielt vor allem auf die Verfeinerung des Hautbildes ab, besonders bei großporiger und öliger Haut.",
     ],
   };
 
@@ -167,7 +167,7 @@ export default function MicrobotoxPage() {
       },
       {
         title: "Gesellschaftsfähig",
-        description: "i.d.R. nach 1-2 Stunden",
+        description: "i.d.R. sofort",
         iconUrl: "/assets/icons/gesellschaft.svg",
       },
     ],
@@ -193,7 +193,7 @@ export default function MicrobotoxPage() {
         number: "03",
         title: "Mikro-Injektionen / Needling",
         description:
-          "Stark verdünntes Botulinumtoxin sehr oberflächlich im ca. 1×1‑cm Raster injiziert.",
+          "Stark verdünntes Botulinumtoxin sehr oberflächlich im ca. 1×1‑cm Raster injiziert oder per Microneedling eingearbeitet.",
       },
       {
         number: "04",
@@ -284,7 +284,7 @@ export default function MicrobotoxPage() {
       {
         question: "Was ist Baby-Botox und wie funktioniert die Behandlung?",
         answer:
-          "Es handelt sich um eine oberflächliche Anwendung stark verdünnten Botulinumtoxins über Mikro‑Injektionen (alternativ begleitendes Needling). Ziel ist die Unterstützung eines verfeinerten Hautbilds, u.\u00A0a. durch Einfluss auf Talg-/Schweißdrüsen und sehr feine Muskelfasern.",
+          "Es handelt sich um eine oberflächliche Anwendung stark verdünnten Botulinumtoxins über Mikro‑Injektionen (alternativ Microneedling). Ziel ist eine Verfeinerung des Hautbildes, u.\u00A0a. durch Einfluss auf Talg-/Schweißdrüsen und feiner Muskelfasern.",
       },
       {
         question:
@@ -302,20 +302,14 @@ export default function MicrobotoxPage() {
         answer: `Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Aufwand der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter "Preise".`,
       },
       {
-        question: "Ist die Behandlung sicherund gibt es Nebenwirkungen?",
+        question: "Ist die Behandlung sicher und gibt es Nebenwirkungen?",
         answer:
-          "Die Injektionen mit sehr feinen Nadeln sind in der Regel gut tolerierbar. Mögliche, meist vorübergehende Reaktionen: Rötungen, Schwellungen, kleine Hämatome; gelegentlich Kopfschmerz/Unwohlsein. Kontraindikationen werden vorab besprochen.",
-      },
-      {
-        question:
-          "Lohnt sich Baby-Botox im Vergleich zu klassischem Botulinumtoxin?",
-        answer:
-          "Das hängt von Ihrem Ziel ab: Für starke Mimikfalten eignen sich häufig klassische Anwendungen. Für Hautqualität (Poren/Glanz/feine Fältchen) kann Mesobotox erwogen werden. Eine allgemeine Empfehlung ist nicht möglich; wir beraten individuell.",
+          "Die Injektionen mit sehr feinen Nadeln sind in der Regel gut tolerierbar. Mögliche, meist vorübergehende Reaktionen: Rötungen, Schwellungen und kleine Hämatome. Kontraindikationen werden vorab besprochen.",
       },
       {
         question: "Wann sieht man ein Ergebnis?",
         answer:
-          "Erste Effekte können nach wenigen Tagen sichtbar sein, die Beurteilung erfolgt meist bis etwa 14 Tage nach der Behandlung.",
+          "Der Wirkeintritt ist nach ca.10-14 Tagen zu erwarten.",
       },
       {
         question: "Welche Hautprobleme lassen sich behandeln?",
@@ -323,20 +317,9 @@ export default function MicrobotoxPage() {
           "Je nach Ausgangsbefund: großporige/ölige Haut, Glanz, oberflächliche Knitterfältchen. Bei Rosazea/Akne kann eine unterstützende Anwendung erwogen werden (nicht im akuten Schub).",
       },
       {
-        question:
-          "Kann man die Behandlung mit Hyaluron oder Microneedling kombinieren?",
-        answer:
-          "Kombinationen sind möglich (z.\u00A0B. Microneedling, chemische Peelings, Hyaluron in getrennten Sitzungen/Arealen). Das genaue Vorgehen wird individuell geplant, um Risiken zu minimieren.",
-      },
-      {
-        question: "Wie läuft die Behandlung ab?",
-        answer:
-          "Beratung und Hautanalyse, anschließend Reinigung/Desinfektion und ggf. Betäubungscreme. Sehr oberflächliche Mikro‑Injektionen im Raster oder begleitendes Needling. Danach beruhigende Pflege und Nachsorgehinweise.",
-      },
-      {
         question: "Welche Nebenwirkungen können auftreten?",
         answer:
-          "Baby-Botox gilt als sehr sicher. Möglich sind vorübergehende Rötungen, Schwellungen oder kleine Blutergüsse an den Einstichstellen. Da der Wirkstoff stärker verdünnt ist, kann er sich in seltenen Fällen etwas leichter im Gewebe verteilen und benachbarte Muskeln vorübergehend schwächen. Diese Effekte sind jedoch temporär und bilden sich vollständig zurück.",
+          "Möglich sind vorübergehende Rötungen, Schwellungen oder kleine Blutergüsse an den Einstichstellen.",
       },
     ],
   };

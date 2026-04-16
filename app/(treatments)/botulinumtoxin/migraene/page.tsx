@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { TableOfContents, TOCItem, ConsultationSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentCareSectionProps, TreatmentsSection, TreatmentsSectionProps, CTASection, HubTeaserSection } from '@/components/TreatmentPageComponents';
+import { TableOfContents, TOCItem, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentCareSectionProps, TreatmentsSection, TreatmentsSectionProps, CTASection, HubTeaserSection } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 import { botoxFalten, botoxMasseter, hyperhidrose, mesobotox } from '@/data/treatments';
@@ -61,8 +61,7 @@ export default function BotoxMigraenePage() {
   const introData: IntroSectionProps = {
     title: 'Wie wirkt Botulinumtoxin bei Migräne?',
     content: [
-      'Die Migräne-Prophylaxe mit Botulinumtoxin ist ein zugelassenes, minimal-invasives Verfahren zur Reduktion chronischer Migräneattacken durch gezielte Injektionen an Kopf und Nacken.',
-      'Eine Reduktion um ein Drittel gilt in der Regel als Maß für den Therapieerfolg.',
+      'Die Migräne-Behandlung mit Botulinumtoxin ist ein zugelassenes, minimal-invasives Verfahren zur Reduktion chronischer Migräneattacken durch gezielte Injektionen an Kopf und Nacken.',
       'Studien belegen, dass selbst bei Patienten, bei denen die Migränefrequenz trotz Botulinumtoxin unverändert bleibt, dennoch eine Linderung der Kopfschmerzen festgestellt wurde.',
       'Wichtig: Botulinumtoxin wirkt nicht bei allen Patienten mit Migräne. Jeder Fall ist individuell, und die Behandlungsergebnisse können von Person zu Person variieren.',
       'Ob die Migränebehandlung mit Botulinumtoxin für Sie geeignet ist, klären wir im ärztlichen Gespräch.',
@@ -76,7 +75,6 @@ export default function BotoxMigraenePage() {
       { title: 'Behandlungszeit', description: 'ca. 30–45 Minuten', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Möglicher Wirkeintritt', description: 'ca. 10–14 Tagen', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Mögliche Wirkdauer', description: 'etwa 3–6 Monate', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Folgebehandlungen', description: ' ca. alle 12 Wochen', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Betäubung', description: 'Keine', iconUrl: '/assets/icons/Spritze.svg' },
       { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
@@ -86,10 +84,10 @@ export default function BotoxMigraenePage() {
   const processData: ProcessSectionProps = {
     title: 'Ablauf der botulinumtoxin migränebehandlung',
     steps: [
-      { number: '01', title: 'Beratungsgespräch & Indikationsprüfung', description: 'In einem Beratungsgespräch wird zunächst geprüft, ob eine Migräne-Behandlung mit Botulinumtoxin geeignet ist.' },
+      { number: '01', title: 'Beratungsgespräch & Indikationsprüfung', description: 'In einem Beratungsgespräch wird zunächst geprüft, ob eine Migräne-Behandlung mit Botulinumtoxin sinnvoll ist.' },
       { number: '02', title: 'Erstbehandlung', description: 'Die erste Behandlung erfolgt mit insgesamt 31 Injektionspunkten nach einem Standardschema an der Stirn, den Schläfen, dem Hinterkopf und Nacken.' },
       { number: '03', title: 'Kontrolle & ggf. Anpassung', description: 'Beurteilung nach etwa 14 Tagen. Bei unzureichendem Ansprechen kann die Dosierung/Verteilung angepasst werden.' },
-      { number: '04', title: 'Regelmäßige Folgebehandlungen', description: 'Zur Aufrechterhaltung des Effekts werden Intervalle von ca. 12 Wochen erwogen, um anhaltende Linderung zu erziehlen' },
+      { number: '04', title: 'Regelmäßige Folgebehandlungen', description: 'Zur Aufrechterhaltung des Effekts sind Folgebehandlungen notwendig.' },
     ],
   };
 
@@ -126,14 +124,11 @@ export default function BotoxMigraenePage() {
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur botulinumtoxin migränebehandlung',
     faqs: [
-      { question: 'Kann Botulinumtoxin bei Migräne wirklich helfen?', answer: 'Bei chronischer Migräne kann eine Anwendung erwogen werden. Einige Personen berichten über eine Verringerung der Anfallstage und/oder der Schmerzintensität. Eine Wirkung ist nicht in jedem Fall zu erwarten.' },
-      { question: 'Wie wirkt es bei Migräne?', answer: 'Die Wirkung beruht u. a. auf einer Modulation von Schmerzsignalen und einer Entspannung beteiligter Muskulatur in definierten Kopf-/Nackenarealen. Die genaue Wirkweise ist Gegenstand der Forschung.' },
-      { question: 'Wie oft muss die Behandlung gegen Migräne durchgeführt werden?', answer: 'Zur Aufrechterhaltung des Effekts werden Folgebehandlungen in Intervallen von etwa 12 Wochen erwogen – abhängig vom Verlauf.' },
+      { question: 'Kann Botulinumtoxin bei Migräne wirklich helfen?', answer: 'Bei chronischer Migräne kann eine Anwendung erwogen werden. Einige Personen berichten über eine Verringerung der Häufigkeit und/oder der Schmerzintensität. Eine Wirkung ist nicht in jedem Fall zu erwarten.' },
+      { question: 'Wie wirkt es bei Migräne?', answer: 'Die Wirkung beruht u. a. auf einer Modulation von Schmerzsignalen und einer Entspannung beteiligter Muskulatur in definierten Kopf-/Nackenarealen.' },
       { question: 'Was kostet die Behandlung gegen Migräne?', answer: `Richtwert: ab etwa ${PRICES.botulinum.migraene}\u00A0€. Der Betrag richtet sich nach Dosis und Aufwand. Abrechnung GOÄ-orientiert; der konkrete Preis wird nach Aufklärung festgelegt.` },
-      { question: 'Übernimmt die Krankenkasse die Kosten für die Behandlung?', answer: 'Bei gesetzlich Versicherten ist eine Kostenübernahme grundsätzlich im Rahmen der zugelassenen Indikation möglich, meist in neurologischer Versorgung. In der privatärztlichen Praxis handelt es sich häufig um eine Selbstzahlerleistung. Bitte klären Sie dies mit Ihrer Krankenkasse/Privatversicherung.' },
       { question: 'Wie lange hält die Wirkung an?', answer: 'Die beobachtete Wirkzeit liegt häufig bei etwa 3–6 Monaten. Abweichungen sind möglich.' },
-      { question: 'Was passiert, wenn die Behandlung nicht wirkt?', answer: 'Bei fehlendem Ansprechen werden Intervalle/Dosierung überprüft oder alternative/ergänzende Therapieoptionen (z. B. medikamentöse Prophylaxe, CGRP-Antikörper) erwogen – in Abstimmung mit der behandelnden Ärztin/dem Arzt.' },
-      { question: 'Ist Botulinumtoxin gegen Migräne sicher und gibt es Nebenwirkungen?', answer: 'Die Behandlung ist in der Regel gut verträglich. Botulinumtoxin wird bei Migräne in relativ hohen Dosen gespritzt, dabei kann es in seltenen Fällen zu Nacken- und Kopfschmerzen, Übelkeit, Schwindel und Sehstörungen kommen. Diese Symptome sind jedoch vorübergehend und verschwinden normalerweise nach 1–2 Tagen. Eine seltene Nebenwirkung bei der Injektion von Botulinumtoxin in der Nähe der Augenpartie ist ein zeitweiliges Doppelsehen (Diplopie). Diese Sehstörung kann länger anhalten, gibt sich aber zumeist im Verlauf von längstens 2 bis 3 Wochen. Kleine Blutergüsse können auftreten, wenn eine Vene bei der Injektion getroffen wird. Aufgrund der höheren Dosis, die in die Stirn injiziert wird, besteht die Möglichkeit von herabsinkenden Augenbrauen (Ptosis). Ich versuche, dies bei meinen Patienten zu vermeiden, jedoch lässt es sich nicht vollständig ausschließen. Beachten Sie, dass Botulinumtoxin bei Migräne nicht immer erfolgreich ist. Daher sollten die Erwartungen des Patienten realistisch sein, um mögliche Enttäuschungen zu vermeiden.' },
+      { question: 'Ist Botulinumtoxin gegen Migräne sicher und gibt es Nebenwirkungen?', answer: 'Die Behandlung ist in der Regel gut verträglich. Botulinumtoxin wird bei Migräne in relativ hohen Dosen gespritzt, dabei kann es in seltenen Fällen zu Nacken- und Kopfschmerzen, Übelkeit, Schwindel und Sehstörungen kommen. Diese Symptome sind jedoch vorübergehend und verschwinden normalerweise innerhalb weniger Tage. Alle möglichen Nebenwirkungen werden im Beratungsgespräch ausführlich besprochen.' },
     ],
   };
 

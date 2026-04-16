@@ -23,7 +23,8 @@ import {
   TreatmentCareSection,
   TreatmentCareSectionProps,
   TreatmentsSectionProps,
-  TreatmentsSection
+  TreatmentsSection,
+  CTASection
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 
@@ -68,7 +69,7 @@ export default function HyaluronidaseHylasePage() {
 
   const heroData: HeroSectionProps = {
     title: 'Hyaluronidase Behandlung in Bremen',
-    subtitle: 'Hyaluron mit Hyaluronidase (Hylase) auflösen: Lippen, Knötchen & Asymmetrien korrigieren.',
+    subtitle: 'Filler mit Hyaluronidase (Hylase) auflösen',
     imageSrc: '/assets/hyaluron/hyaluron-hylase_hero.webp',
     imageAlt: 'Hyaluronidase-Behandlung zum Auflösen von Hyaluron – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -79,18 +80,18 @@ export default function HyaluronidaseHylasePage() {
     title: 'Was ist Hyaluronidase?',
     content: [
       'Hylase (Hyaluronidase) ist ein Enzym, das natürlicherweise im menschlichen Körper vorkommt und die Hyaluronsäure auflösen kann. Das ermöglicht die Korrektur von unerwünschten Ergebnissen, Knötchen oder Überkorrekturen mit Hyaluronsäure-Fillern.',
-      'Hylase ist für besondere Fälle gedacht. Dazu gehören Komplikationen bei Fillerbehandlungen, Fehlbehandlungen, grobe Überspritzungen oder das Auftreten von Knötchen als Nebenwirkung einer Hyaluron-Unterspritzung. Es sollte jedoch nicht der Eindruck entstehen, dass Gesichtsregionen beliebig im Wechselspiel zwischen Hyaluronsäure-Fillern und Hyaluronidase modelliert werden können.'
+      'Hylase ist für besondere Fälle gedacht. Dazu gehören Komplikationen bei Fillerbehandlungen, Fehlbehandlungen, grobe Überspritzungen oder das Auftreten von Knötchen als Nebenwirkung einer Hyaluron-Unterspritzung.'
     ],
   };
 
   const areasData: AreasSectionProps = {
-    title: 'Hyaluron auflösen: Anwendungsbereiche',
+    title: 'Hyaluronsäure auflösen: Anwendungsbereiche',
     categories: [
       {
         category: 'Häufigste Bereiche',
         items: [
           {
-            title: 'Lippen auflösen',
+            title: 'Lippen-Filler auflösen',
             description: 'Auflösung von Überkorrekturen, Asymmetrien, Knötchen und zu viel Hyaluron in den Lippen. Häufigster Anwendungsbereich mit schneller Wirkung.',
           },
           {
@@ -131,10 +132,6 @@ export default function HyaluronidaseHylasePage() {
             description: 'Sofortige Enzym-Injektion bei arterieller Okklusion zur Vermeidung von Nekrosen – lebensrettende Notfallbehandlung.',
           },
           {
-            title: 'Asymmetrien korrigieren',
-            description: 'Angleichung ungleichmäßiger Filler-Verteilungen und Korrektur von Asymmetrien.',
-          },
-          {
             title: 'Migration von Fillern',
             description: 'Auflösung von Fillern, die sich aus dem ursprünglichen Injektionsbereich verlagert haben.',
           },
@@ -172,7 +169,7 @@ export default function HyaluronidaseHylasePage() {
       },
       {
         title: 'Gesellschaftsfähig',
-        description: 'i.d.R. sofort',
+        description: 'Regionabhängig',
         iconUrl: '/assets/icons/gesellschaft.svg',
       },
     ],
@@ -196,12 +193,12 @@ export default function HyaluronidaseHylasePage() {
       {
         number: '01',
         title: 'Beratung',
-        description: 'Im Beratungsgespräch analysiere ich: Welcher Bereich soll behandelt werden? Wie viel Hyaluron wurde injiziert? Wie sind Ihre Erfahrungen mit dem bisherigen Ergebnis? Basierend darauf bestimme ich die optimale Dosierung.',
+        description: 'Im Beratungsgespräch klären wir Ihre Wünsche und Ziele.',
       },
       {
         number: '02',
         title: 'Präzise Injektion',
-        description: 'Die Hyaluronidase wird mit feiner Nadel gezielt in die Bereiche injiziert, in denen das Hyaluron aufgelöst werden soll. Die Dosierung wird individuell an die Menge des vorhandenen Fillers angepasst.',
+        description: 'Die Hyaluronidase wird mit feiner Nadel gezielt in die Bereiche injiziert, in denen die Hyaluronsäure aufgelöst werden soll. Die Dosierung wird individuell an die Menge des vorhandenen Fillers angepasst.',
       },
       {
         number: '03',
@@ -258,60 +255,28 @@ export default function HyaluronidaseHylasePage() {
     title: 'Häufige Fragen zur Hyaluronidase-Behandlung',
     faqs: [
       {
-        question: 'Wie funktioniert die Hyaluronidase-Behandlung?',
-        answer: 'Hyaluronidase (Hylase) ist ein Enzym, das Hyaluronsäure-Moleküle spaltet und abbaut. Nach der Injektion beginnt das Enzym, den Filler aufzulösen. Erste Veränderungen sind oft bereits nach wenigen Stunden sichtbar, die vollständige Auflösung erfolgt üblicherweise innerhalb von 24–48 Stunden. Die abgebauten Fragmente werden vom Körper natürlich über das Lymphsystem abtransportiert.',
-      },
-      {
         question: 'Warum muss Hylase vorsichtig dosiert werden?',
         answer: 'Das Enzym unterscheidet nicht zwischen künstlich injiziertem Filler und körpereigener Hyaluronsäure. Eine zu hohe Dosierung könnte auch die natürliche Hyaluronsäure in der Haut abbauen, was vorübergehend zu Dellen führen kann. Der Körper gleicht dies normalerweise innerhalb weniger Wochen aus – dennoch ist eine präzise, erfahrene Dosierung entscheidend.',
       },
       {
         question: 'In welchen Fällen wird Hylase eingesetzt?',
-        answer: 'Die häufigsten Indikationen sind: 1) Ästhetische Korrekturen bei Überkorrekturen, Asymmetrien oder unnatürlichen Ergebnissen. 2) Komplikationen wie Knötchen, Tyndall-Effekt oder Filler-Migration. 3) Notfälle bei arteriellen Gefäßverschlüssen – hier ist die sofortige Injektion lebensrettend. 4) Patientenwunsch bei Unzufriedenheit mit dem Ergebnis.',
+        answer: 'Die häufigsten Indikationen sind: 1) Ästhetische Korrekturen bei Überkorrekturen, Asymmetrien oder unnatürlichen Ergebnissen. 2) Komplikationen wie Knötchen, Tyndall-Effekt oder Filler-Migration. 3) Notfälle bei arteriellen Gefäßverschlüssen 4) Patientenwunsch bei Unzufriedenheit mit dem Ergebnis.',
       },
       {
         question: 'Wie schnell wirkt Hyaluronidase?',
-        answer: 'Die Wirkung setzt in der Regel rasch ein. Erste Veränderungen können häufig innerhalb weniger Stunden beobachtet werden, das vollständige Auflösen erfolgt üblicherweise innerhalb von 24–48 Stunden. Die Geschwindigkeit hängt von der Menge des aufzulösenden Hyalurons und der Dosierung ab.',
-      },
-      {
-        question: 'Ist die Behandlung schmerzhaft?',
-        answer: 'Die meisten Patienten empfinden die Hyaluronidase-Behandlung als deutlich weniger schmerzhaft als die ursprüngliche Filler-Injektion. Die Injektionen verursachen nur ein kurzes Stechen. Auf Wunsch kann vorab eine Betäubungscreme aufgetragen werden.',
-      },
-      {
-        question: 'Wie viele Sitzungen sind notwendig?',
-        answer: 'In den meisten Fällen reicht bereits eine einzige Sitzung aus. Die Anzahl hängt von der Menge des ursprünglich injizierten Hyalurons ab, wie lange die Filler-Behandlung zurückliegt, und ob eine vollständige oder teilweise Auflösung gewünscht ist. Bei sehr großen Mengen kann eine zweite Sitzung nach 1–2 Wochen notwendig sein.',
+        answer: 'Die Wirkung setzt in der Regel rasch ein. Erste Veränderungen können häufig innerhalb weniger Stunden beobachtet werden. Die Geschwindigkeit hängt von der Menge des aufzulösenden Hyalurons und der Dosierung ab.',
       },
       {
         question: 'Welche Nebenwirkungen können auftreten?',
-        answer: 'Die Nebenwirkungen sind in der Regel mild: Rötungen an den Einstichstellen, vorübergehend verstärkte Schwellung für einige Stunden und mögliche Hämatome. Eine vorübergehende Auflockerung des umliegenden Gewebes normalisiert sich innerhalb von 2–6 Wochen. Allergische Reaktionen auf Hyaluronidase sind sehr selten.',
+        answer: 'Die Nebenwirkungen sind in der Regel mild: Rötungen an den Einstichstellen, vorübergehend verstärkte Schwellung für einige Stunden und mögliche Hämatome. Eine vorübergehende Auflockerung des umliegenden Gewebes normalisiert sich innerhalb von 2–6 Wochen. Allergische Reaktionen auf Hyaluronidase sind möglich.',
       },
       {
         question: 'Wann darf nach der Behandlung wieder Hyaluron gespritzt werden?',
-        answer: 'Nach einer Hyaluronidase-Behandlung sollte eine Wartezeit von mindestens 2 Wochen, idealerweise 4–6 Wochen eingehalten werden. Diese Karenzzeit ist wichtig, damit sich das Gewebe vollständig erholen kann und die Enzymwirkung komplett abgeklungen ist.',
+        answer: 'Nach einer Hyaluronidase-Behandlung ist eine Wartezeit von ca. 2 Wochen empfohlen.',
       },
       {
         question: 'Kann jeder Filler mit Hyaluronidase aufgelöst werden?',
-        answer: 'Nein, das Enzym löst ausschließlich Hyaluronsäure-basierte Filler auf. Permanente Filler (z. B. Silikon, PMMA) oder andere Filler-Typen wie Calciumhydroxylapatit oder Poly-L-Milchsäure können nicht aufgelöst werden. Dies ist ein weiterer Grund, warum ausschließlich Hyaluronsäure-Filler verwendet werden sollten – sie bieten die Sicherheit, bei Bedarf korrigierbar zu sein.',
-      },
-      {
-        question: 'Bin ich nach der Behandlung sofort gesellschaftsfähig?',
-        answer: 'In der Regel ja. Die Behandlung hinterlässt meist nur leichte Rötungen an den Einstichstellen, die rasch abklingen. In den ersten Stunden kann es zu einer vorübergehenden Schwellung kommen. Kleine Hämatome lassen sich mit Make-up abdecken. Die meisten Patienten können direkt ihren normalen Aktivitäten nachgehen.',
-      },
-      {
-        question: 'Was bedeutet Hyaluronidase als Notfall-Medikament?',
-        answer: 'Bei unsachgemäßen Hyaluron-Injektionen kann es in sehr seltenen Fällen zu einem Verschluss arterieller Gefäße kommen – ein medizinischer Notfall. Anzeichen sind plötzliche starke Schmerzen, Blässe oder Verfärbung der Haut. In solchen Fällen muss rasch Hyaluronidase injiziert werden, um die Durchblutung wiederherzustellen und Gewebenekrosen zu verhindern. Bei EL Aesthetics in Bremen ist das Enzym jederzeit verfügbar.',
-      },
-      {
-        question: 'Wie läuft das Auflösen von Lippen-Fillern ab?',
-        answer: 'Das Auflösen von Lippen-Hyaluron ist einer der häufigsten Anwendungsbereiche. Das Enzym wird gezielt in die überfüllten oder asymmetrischen Bereiche injiziert. Die Wirkung setzt innerhalb weniger Stunden ein und ermöglicht einen kompletten Neustart oder eine teilweise Korrektur. Nach der Behandlung sollten Sie 4–6 Wochen warten, bevor wieder Hyaluron in die Lippen gespritzt wird.',
-      },
-      {
-        question: 'Kann Hyaluronidase selbst gespritzt werden?',
-        answer: 'Nein, davon wird dringend abgeraten. Die Behandlung erfordert medizinische Fachkenntnis: falsche Dosierung, unsaubere Technik und fehlende Notfallversorgung können zu schweren Komplikationen führen. Eine zu hohe Dosierung kann körpereigene Hyaluronsäure abbauen und zu Dellen führen. Die Behandlung sollte ausschließlich von erfahrenen Ärzten durchgeführt werden.',
-      },
-      {
-        question: 'Was muss ich nach der Behandlung beachten?',
-        answer: 'Kühlen Sie die behandelten Bereiche regelmäßig in den ersten 24 Stunden. Vermeiden Sie Sport, Sauna und Solarium für 24–48 Stunden. Verzichten Sie auf Make-up für 6–12 Stunden. Massieren Sie die Bereiche nicht übermäßig. Eine vorübergehende Schwellung ist normal. Warten Sie mindestens 2–6 Wochen, bevor Sie wieder Hyaluron spritzen lassen.',
+        answer: 'Nein, das Enzym löst ausschließlich Hyaluronsäure-basierte Filler auf. Permanente Filler (z. B. Silikon, PMMA) oder andere Filler-Typen wie Calciumhydroxylapatit oder Poly-L-Milchsäure können nicht aufgelöst werden.',
       },
     ],
   };
@@ -345,6 +310,7 @@ export default function HyaluronidaseHylasePage() {
       />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
+      <CTASection {...ctaData} />
     </div>
   );
 }

@@ -86,7 +86,7 @@ export default function BotulinumtoxinSpezialPage() {
         title: 'Lip Flip, Brow Lift, Nefertiti Lift & Co. – was steckt dahinter?',
         content: [
             'Botulinumtoxin hat neben der Faltenreduktion eine Vielzahl weiterer ästhetischer Anwendungen. Es kann verwendet werden, um das Gesicht harmonischer erscheinen zu lassen. Durch die gezielte Aktivitätsreduktion bestimmter Muskulatur können verschiedene Gesichtspartien modelliert werden.',
-            'So lassen sich beispielsweise mit einem Lip Flip die Oberlippe sanft betonen, mit einem Brow Lift die Augenpartie öffnen oder ein Gummy Smile korrigieren. Auch Behandlungen wie das Erdbeerkinn, ein sanftes Face Slimming zur Verschmälerung der Kieferpartie oder ein Halslifting im Sinne des Nefertiti Neck Lifts sind möglich.',
+            'So lassen sich beispielsweise mit einem Lip Flip die Oberlippe sanft betonen, mit einem Brow Lift die Augenpartie öffnen oder ein Gummy Smile korrigieren. Auch Behandlungen wie das Erdbeerkinn, Anheben der Nasenspitze oder Mundwinkel, sanftes Face Slimming zur Verschmälerung der Kieferpartie oder ein Halslifting im Sinne des Nefertiti Neck Lifts sind möglich.',
         ],
     };
 
@@ -125,6 +125,23 @@ export default function BotulinumtoxinSpezialPage() {
                         title: 'Face Slimming (Masseter)',
                         description: 'Verschmälerung des unteren Gesichtsdrittels durch Entspannung des großen Kaumuskels. (Auch bei Zähneknirschen).'
                     },
+                    {
+                        title: 'Anheben der Nasenspitze',
+                        description: 'Sanfte Anhebung der Nasenspitze durch gezielte Entspannung des Nasenmuskelgewebs.'
+                    },
+                    {
+                        title: 'Anheben der Mundwinkel',
+                        description: 'Sanfte Anhebung der Mundwinkel durch gezielte Entspannung des Muskelgewebs.'
+                    },
+                    {
+                        title: 'Lower face',
+                        description: 'Lifting der unteren Gesichtspartie.'
+                    },
+                    {
+                        title: 'Full face',
+                        description: 'Ganzheitliches Lifting des Gesichts'
+
+                    }
                 ],
             },
             {
@@ -253,7 +270,7 @@ export default function BotulinumtoxinSpezialPage() {
             {
                 question: 'Lip Flip oder Lippenunterspritzung – was ist der Unterschied?',
                 answer:
-                    'Ein Lip Flip nutzt Botulinumtoxin, um den Muskel zu entspannen – die Lippe "rollt" optisch aus, bekommt aber kein extra Volumen. Eine Lippenunterspritzung nutzt Hyaluron-Filler, um echtes Volumen und Kontur physikalisch aufzubauen. Oft ist eine Kombination sinnvoll.',
+                    'Ein Lip Flip nutzt Botulinumtoxin, um den Muskel zu entspannen – die Lippe "rollt" optisch aus, bekommt aber kein extra Volumen. Eine Lippenunterspritzung nutzt Hyaluron-Filler, um echtes Volumen und Kontur aufzubauen.',
             },
             {
                 question: 'Wie lange hält ein Brow Lift mit Botulinumtoxin?',
@@ -263,22 +280,22 @@ export default function BotulinumtoxinSpezialPage() {
             {
                 question: 'Hilft Face Slimming wirklich?',
                 answer:
-                    'Ja, wenn die Ursache ein hypertropher (vergrößerter) Masseter-Muskel ist. Durch die Entspannung bildet sich der Muskel etwas zurück (Atrophie), wodurch das untere Gesichtsdrittel schmaler und weicher wirkt.',
+                    'Ja, wenn die Ursache ein hypertropher (vergrößerter) Masseter-Muskel ist. Durch die Entspannung bildet sich der Muskel etwas zurück, wodurch das untere Gesichtsdrittel schmaler und weicher wirkt.',
             },
             {
                 question: 'Was ist das Nefertiti Lift?',
                 answer:
-                    'Eine Technik, bei der Botulinumtoxin entlang der Kieferlinie und in die Platysma-Bänder des Halses injiziert wird. Dies verhindert das "Herunterziehen" der Gesichtszüge und sorgt für eine definiertere Jawline und einen glatteren Hals.',
+                    'Eine Technik, bei der Botulinumtoxin entlang der Kieferlinie und in die Platysma-Bänder des Halses injiziert wird. Dies verhindert das "Herunterziehen" der Gesichtszüge und sorgt für eine definiertere Jawline und einen glatteren Hals. Dadurch kann ein sanfter Lifting-Effekt erzielt werden.',
             },
             {
                 question: 'Welche Nebenwirkungen können auftreten?',
                 answer:
-                    'Ernsthafte Komplikationen sind sehr selten. Häufig sind leichte Rötungen, kleine blaue Flecken (Hämatome) oder Schwellungen an den Einstichstellen, die nach wenigen Tagen abklingen. Kopfschmerzen können gelegentlich auftreten. Asymmetrien sind selten, können aber meist beim Kontrolltermin korrigiert werden. Es bleiben keine dauerhaften Schäden, da der Wirkstoff abgebaut wird.',
+                    'Ernsthafte Komplikationen sind sehr selten. Häufig sind leichte Rötungen, kleine blaue Flecken (Hämatome) oder Schwellungen an den Einstichstellen, die nach kurzer Zeit abklingen. Kopfschmerzen können gelegentlich auftreten. Botulinumtoxin wird in den meisten Fällen nach spätesten 6 Monaten vollständig abgebaut.',
             },
             {
                 question: 'Kann ich mit einem Gummy Smile behandelt werden?',
                 answer:
-                    'Meistens ja. Wir müssen jedoch vorher prüfen, ob die Ursache muskulär ist (zu starker Hebemuskel). In diesen Fällen ist die Behandlung sehr effektiv und minimalinvasiv.',
+                    'Meistens ja. Es muss geprüft werden, ob die Ursache muskulär ist (zu starker Hebemuskel).',
             },
         ],
     };

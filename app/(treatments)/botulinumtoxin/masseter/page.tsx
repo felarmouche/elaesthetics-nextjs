@@ -101,9 +101,9 @@ export default function BotoxMasseterPage() {
     title: "Was ist die Masseter-Behandlung?",
     content: [
       "Die Masseter-Behandlung mit Botulinumtoxin ist ein minimal-invasives Verfahren zur Entspannung des Kaumuskels bei Bruxismus und zur ästhetischen Gesichtsverschlankung.",
-      "Zu den typischen Symptomen gehören unter anderem: Schmerzen in den Kiefergelenken, Zahnschmerzen, Migräne, Tinnitus, Verspannungen im Kopf- und Nackenbereich",
-      "Die Behandlung kann auch zur Konturierung der unteren Gesichtshälfte und zum verschmälern markanter Gesichtszüge eingesetzt werden",
-      "Bei der Masseter Behandlung wird Botulinumtoxin in definierte Punkte des Muskels injiziert. Der Wirkstoff kann die Signalübertragung zwischen Nerven und Muskel vorübergehend hemmen. Dadurch entspannt sich der Muskel und kann bei wiederholter Anwendung an Volumen verlieren. In welchem Ausmaß dies sinnvoll ist, wird ärztlich geklärt.",
+      "Zu den typischen Symptomen von Bruxismus gehören unter anderem: Schmerzen in den Kiefergelenken, Zahnschmerzen, Migräne, Tinnitus, Verspannungen im Kopf- und Nackenbereich",
+      "Die Behandlung kann auch zur Verschmälerung des Gesichts eingesetzt werden.",
+      "Bei der Masseter Behandlung wird Botulinumtoxin in definierte Punkte des Muskels injiziert. Der Wirkstoff kann die Signalübertragung zwischen Nerven und Muskel vorübergehend hemmen. Dadurch entspannt sich der Muskel und kann an Volumen verlieren.",
       "In der Regel reduziert sich das Zähneknirschen für etwa 3–6 Monate, während das Botulinumtoxin vom Körper schrittweise abgebaut wird. Die Dauer der Wirkung kann individuell unterschiedlich sein.",
       "Bei regelmäßiger Behandlung kommt es häufig zu einer leichten Rückbildung des Masseter-Muskels. Dadurch ist es möglich, dass sich die Behandlungsintervalle im Laufe der Zeit verlängern lassen.",
     ],
@@ -115,15 +115,15 @@ export default function BotoxMasseterPage() {
       {
         category: "Ästhetisch",
         items: [
-          { title: "Verschmälerung einer breiten Kieferpartie" },
+          { title: "Gesichtsverschmälerung" },
           { title: "Unterstützung einer definierteren Jawline" },
         ],
       },
       {
         category: "Funktionell",
         items: [
-          { title: "Bruxismus (Zähneknirschen) – individuelle Prüfung" },
-          { title: "Kieferverspannungen – je nach Befund" },
+          { title: "Bruxismus (Zähneknirschen)" },
+          { title: "Kieferverspannungen (CMD)" },
         ],
       },
     ],
@@ -179,7 +179,7 @@ export default function BotoxMasseterPage() {
         number: "02",
         title: "Mikro-Injektionen",
         description:
-          "Injektion an 3-4 Punkten pro Seite mit feiner Kanüle. Die Dosierung richtet sich nach Muskelstärke und Zielsetzung.",
+          "Injektion an 3-4 Punkten pro Seite. Die Dosierung richtet sich nach Muskelstärke und Zielsetzung.",
       },
       {
         number: "03",
@@ -268,17 +268,6 @@ export default function BotoxMasseterPage() {
     title: "Häufige Fragen zur Masseter Behandlung",
     faqs: [
       {
-        question: "Was ist eine Masseter-Behandlung und wie funktioniert sie?",
-        answer:
-          "Botulinumtoxin wird in den Masseter (Kaumuskel) injiziert. Der Wirkstoff kann die Freisetzung von Acetylcholin hemmen und so die Muskelaktivität vorübergehend reduzieren. Ziel ist eine Entspannung des Muskels; ästhetisch kann die Kieferkontur schmaler wirken, funktionell können Pressen/Knirschen reduziert werden – je nach Befund.",
-      },
-      {
-        question:
-          "Übernimmt die Krankenkasse die Kosten für Masseter-Botox bei Zähneknirschen (Bruxismus)?",
-        answer:
-          "In der Regel handelt es sich für gesetzlich Versicherte um eine Selbstzahlerleistung. Eine Kostenübernahme kann nur in Einzelfällen nach Antragstellung und individueller Prüfung erfolgen. Bitte kontaktieren Sie Ihre Krankenkasse.",
-      },
-      {
         question: "Lohnt sich Botulinumtoxin im Kaumuskel wirklich?",
         answer:
           "Ob sich die Behandlung „lohnt“, ist individuell. Einige Personen berichten über eine schmalere Kontur und Entlastung bei Bruxismus. Andere bevorzugen Alternativen (z.\u00A0B. Aufbissschiene, Physiotherapie). Wir besprechen Ziele, Möglichkeiten und Grenzen im Termin.",
@@ -286,7 +275,7 @@ export default function BotoxMasseterPage() {
       {
         question: "Wann sieht man das Ergebnis einer Bruxismus-Behandlung?",
         answer:
-          "Eine Entspannung ist häufig nach 10–14 Tagen spürbar. Sichtbare Konturveränderungen zeigen sich meist nach 4–8 Wochen, wenn der Muskel bei geringerer Aktivität an Umfang verliert.",
+          "Eine Entspannung ist häufig nach 10–14 Tagen spürbar. Sichtbare Konturveränderungen zeigen sich meist etwas später, wenn der Muskel bei geringerer Aktivität an Umfang verliert.",
       },
       {
         question: "Wie lange hält das Ergebnis einer Masseter-Behandlung an?",
@@ -302,7 +291,7 @@ export default function BotoxMasseterPage() {
       {
         question: "Gibt es Risiken oder Nebenwirkungen?",
         answer:
-          "Ernsthafte Komplikationen sind äußerst selten. Möglich sind vorübergehende Rötungen, kleine Blutergüsse oder leichte Schwellungen an den Einstichstellen. Gelegentlich treten harmlose Kopfschmerzen auf. Eventuelle Asymmetrien lassen sich meist in einer Nachbehandlung nach ca. 2 Wochen korrigieren. Da der Wirkstoff vollständig abgebaut wird, sind dauerhafte Schäden ausgeschlossen. Über seltene Restrisiken klären wir Sie vor der Behandlung persönlich auf.",
+          "Möglich sind vorübergehende Rötungen, kleine Blutergüsse oder leichte Schwellungen an den Einstichstellen. Gelegentlich treten harmlose Kopfschmerzen auf. Eventuelle Asymmetrien lassen sich meist in einer Nachbehandlung nach ca. 2 Wochen korrigieren. Da der Wirkstoff vollständig abgebaut wird, sind dauerhafte Schäden ausgeschlossen. Über seltene Restrisiken klären wir Sie vor der Behandlung persönlich auf.",
       },
       {
         question:
