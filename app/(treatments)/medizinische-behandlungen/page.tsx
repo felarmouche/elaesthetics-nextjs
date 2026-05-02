@@ -70,9 +70,9 @@ export default function BotulinumtoxinBehandlungenPage() {
   const introData: IntroSectionProps = {
     title: "Wie hilft Botulinumtoxin bei Bruxismus, Migräne und Hyperhidrose?",
     content: [
-      "Es kann zur gezielten Therapie von Bruxismus, chronischer Migräne und Hyperhidrose eingesetzt werden. Richtig angewendet können Symptome bei chronischer Migräne, Hyperhidrose und Bruxismus spürbar reduziert werden.",
-      "Die Behandlung erfolgt durch gezielte Injektionen in die betroffenen Muskeln oder Drüsen – mit dem Ziel, die überaktive Muskulatur zu entspannen, die Schweißproduktion zu hemmen oder die Migränefrequenz zu senken.",
-      "Die Therapie wird individuell auf Ihre Bedürfnisse abgestimmt, um bestmögliche Ergebnisse bei maximaler Sicherheit zu erzielen."
+      "Es kann zur gezielten Therapie von Bruxismus (CMD), chronischer Migräne und Hyperhidrose eingesetzt werden. Richtig angewendet können die Beschwerden spürbar reduziert werden.",
+      "Die Behandlung erfolgt durch gezielte Injektionen in die betroffenen Bereiche – mit dem Ziel, die überaktive Muskulatur zu entspannen, die Schweißproduktion zu hemmen oder die Migränefrequenz zu senken.",
+      "Die Therapie wird individuell auf Ihre Bedürfnisse abgestimmt."
     ]
 
   };
@@ -88,45 +88,6 @@ export default function BotulinumtoxinBehandlungenPage() {
     { id: 'consultation', label: 'Beratung' },
     { id: 'faq', label: 'Häufige Fragen' },
   ];
-
-
-  const faqData: FAQSectionProps = {
-    title: "Häufig gestellte Fragen (FAQ)",
-    faqs: [
-      {
-        question: "Wie wirkt Botulinumtoxin eigentlich?",
-        answer:
-          "Botulinumtoxin (BoNT) blockiert in Nervenendigungen die Ausschüttung von Acetylcholin. Dadurch werden gezielt Muskeln oder – bei Hyperhidrose – cholinerge Schweißdrüsen vorübergehend ‚ruhiggestellt‘. Die Wirkung setzt schrittweise ein und ist vollständig reversibel."
-      },
-      {
-        question: "Wie schnell setzt die Wirkung ein und wie lange hält sie?",
-        answer:
-          "Meist beginnen Effekte nach 2–5 Tagen, der Höhepunkt liegt nach 1–2 Wochen. Die Dauer beträgt typischerweise 3–6 Monate (je nach Areal, Dosierung und individueller Aktivität)."
-      },
-
-      // — SICHERHEIT / ORGANISATION —
-      {
-        question: "Wer sollte nicht behandelt werden?",
-        answer:
-          "Kontraindikationen sind u. a. Infektionen im Injektionsareal, bestimmte neuromuskuläre Erkrankungen (z. B. Myasthenia gravis), bekannte Überempfindlichkeit sowie Schwangerschaft und Stillzeit."
-      },
-      {
-        question: "Gibt es Wechselwirkungen mit Medikamenten?",
-        answer:
-          "Vorsicht z. B. bei Aminoglykosid-Antibiotika oder anderen Substanzen, die die neuromuskuläre Übertragung beeinflussen. Bitte Ihre Medikation im Vorgespräch angeben."
-      },
-      {
-        question: "Bildet der Körper ‘Resistenzen’ gegen BoNT?",
-        answer:
-          "Neutralisierende Antikörper sind selten. Angepasste Dosierungen, sinnvolle Intervalle und die Vermeidung unnötig hoher Gesamtmengen reduzieren das Risiko."
-      },
-      {
-        question: "Was kostet die Behandlung?",
-        answer:
-          "Die Kosten hängen von Areal, Anzahl der Injektionspunkte und benötigter Dosis ab. Nach ärztlicher Beratung erhalten Sie einen transparenten, individuellen Kostenplan."
-      }
-    ]
-  };
 
 
   const ctaData: CTASectionProps = {
@@ -149,7 +110,6 @@ export default function BotulinumtoxinBehandlungenPage() {
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
       <ConsultationSection />
-      <FAQSection {...faqData} />
       <CTASection {...ctaData} />
     </div>
   );

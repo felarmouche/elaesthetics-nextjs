@@ -28,7 +28,7 @@ const pathNameMap: Record<string, string> = {
   'medizinische-behandlungen': 'Medizinische Behandlungen',
 
   // Standalone-Behandlungen
-  kollagenstimulation: 'Kollagenstimulation',
+  biostimulation: 'Biostimulation',
   polynukleotide: 'Polynukleotide',
   'medizinisches-microneedling': 'Medizinisches Microneedling',
   'fett-weg-spritze': 'Fett-weg-Spritze',
@@ -92,8 +92,8 @@ export default function Breadcrumbs() {
   }
 
   return (
-    <nav 
-      aria-label="Breadcrumb" 
+    <nav
+      aria-label="Breadcrumb"
       className="bg-gray-50 border-b border-gray-200"
     >
       <script
@@ -121,15 +121,15 @@ export default function Breadcrumbs() {
               <li key={breadcrumb.href} className="flex items-center">
                 {/* Separator */}
                 {!isFirst && (
-                  <ChevronRight 
-                    className="w-4 h-4 text-gray-400 mx-2" 
+                  <ChevronRight
+                    className="w-4 h-4 text-gray-400 mx-2"
                     aria-hidden="true"
                   />
                 )}
 
                 {/* Breadcrumb Link oder Text */}
                 {isLast ? (
-                  <span 
+                  <span
                     className="text-gray-900 font-medium flex items-center"
                     aria-current="page"
                   >

@@ -123,7 +123,7 @@ export function getPracticeSchema(aggregateRating?: { ratingValue: number; revie
       { '@type': 'MedicalProcedure', name: 'Profhilo', url: `${SITE_URL}/hyaluron/profhilo` },
       { '@type': 'MedicalProcedure', name: 'Masseter-Behandlung', url: `${SITE_URL}/botulinumtoxin/masseter` },
       { '@type': 'MedicalProcedure', name: 'Eigenbluttherapie (PRP/PRF)', url: `${SITE_URL}/eigenbluttherapie` },
-      { '@type': 'MedicalProcedure', name: 'Kollagenstimulation', url: `${SITE_URL}/kollagenstimulation` },
+      { '@type': 'MedicalProcedure', name: 'Biostimulation', url: `${SITE_URL}/biostimulation` },
       { '@type': 'MedicalProcedure', name: 'Polynukleotide', url: `${SITE_URL}/polynukleotide` },
       { '@type': 'MedicalProcedure', name: 'Chemisches Peeling', url: `${SITE_URL}/chemisches-peeling` },
       { '@type': 'MedicalProcedure', name: 'Fett-weg-Spritze', url: `${SITE_URL}/fett-weg-spritze` },
@@ -255,7 +255,7 @@ export function getPriceListSchema() {
 
     // Weitere Behandlungen
     { name: 'Fett-weg-Spritze (Injektionslipolyse)', desc: 'Dauerhafte Fettzellreduktion', price: PRICES.fettWegSpritze },
-    { name: 'Kollagenstimulation (CaHA + Hyaluronsäure)', desc: 'Biostimulator für Hautstraffung und Kollagenaufbau', price: PRICES.biostimulation.caHydroxylapatitPlusHyaluron },
+    { name: 'Biostimulation (CaHA + Hyaluronsäure)', desc: 'Biostimulator für Hautstraffung und Kollagenaufbau', price: PRICES.biostimulation.caHydroxylapatitPlusHyaluron },
   ];
 
   return {

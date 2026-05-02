@@ -22,11 +22,11 @@ import { fillerPageTreatments } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Filler Behandlung Bremen',
-  description: 'Filler in Bremen: Hyaluron-Filler & Kollagenstimulation für Lippen, Jawline & Wangen. Natürliche Konturierung ohne „künstlichen" Look. Ärztliche Beratung buchen.',
+  description: 'Filler in Bremen: Hyaluron-Filler & Biostimulation für Lippen, Jawline & Wangen. Natürliche Konturierung ohne „künstlichen" Look. Ärztliche Beratung buchen.',
   keywords: ['Filler Bremen', 'Volumenaufbau Gesicht Bremen', 'Wangen Filler Bremen', 'Kinn Filler Bremen'],
   openGraph: {
     title: 'Filler & Volumenaufbau in Bremen – EL Aesthetics',
-    description: 'Hyaluron-Filler & Kollagenstimulation für natürliche Konturierung in Bremen. Lippen, Jawline, Wangen & mehr.',
+    description: 'Hyaluron-Filler & Biostimulation für natürliche Konturierung in Bremen. Lippen, Jawline, Wangen & mehr.',
     url: 'https://elaesthetics-bremen.de/filler',
     siteName: 'EL Aesthetics Bremen',
     type: 'website',

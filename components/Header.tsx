@@ -38,7 +38,7 @@ const TREATMENT_MENU: { [key: string]: MenuItem[] } = {
         { label: 'Hyaluronidase (Hylase)', href: '/hyaluron/hylase' },
       ]
     },
-    { label: 'Kollagenstimulation', href: '/kollagenstimulation' },
+    { label: 'Biostimulation', href: '/biostimulation' },
     { label: 'Medizinische Behandlungen', href: '/medizinische-behandlungen' },
   ],
   // Spalte 2: Hautqualität & Regeneration

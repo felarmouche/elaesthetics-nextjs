@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import Script from 'next/script';
 import {
   AreasSection,
-  ConsultationSectionProps,
   AreasSectionProps,
   TreatmentCareSectionProps,
   QuickInfoSection,
@@ -24,19 +23,20 @@ import {
   ProcessSectionProps,
   TreatmentCareSection,
   TreatmentsSection,
-  TreatmentsSectionProps
+  TreatmentsSectionProps,
+  CTASection
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
-import { profhilo, kollagenstimulation, eigenblut, mesotherapieHaut } from '@/data/treatments';
+import { profhilo, biostimulation, eigenblut, mesotherapieHaut } from '@/data/treatments';
 
 export const metadata: Metadata = {
   title: 'Polynukleotide Bremen – Hautregeneration',
-  description: 'Polynukleotide in Bremen: DNA-basierte Hautregeneration für Falten, Augenbereich & Haarausfall. Ärztliche Beratung zu Ablauf & Kosten. Jetzt Termin vereinbaren.',
-  keywords: ['Polynukleotide Bremen', 'Polynukleotide Augen Bremen', 'Polynukleotide Haarausfall Bremen', 'DNA Hauttherapie Bremen'],
+  description: 'Polynukleotide in Bremen: Lachs-DNA-basierte Hautregeneration für Falten, Augenbereich & Haarausfall. Ärztliche Beratung zu Ablauf & Kosten. Jetzt Termin vereinbaren.',
+  keywords: ['Polynukleotide Bremen', 'Polynukleotide Augen Bremen', 'Polynukleotide Haarausfall Bremen', 'Lachs-DNA Hauttherapie Bremen'],
   openGraph: {
     title: 'Polynukleotide-Behandlung in Bremen – EL Aesthetics',
-    description: 'DNA-basierte Hautregeneration für Falten, Augenbereich & Haarausfall. Ärztliche Behandlung in Bremen.',
+    description: 'Lachs-DNA-basierte Hautregeneration für Falten, Augenbereich & Haarausfall. Ärztliche Behandlung in Bremen.',
     url: 'https://elaesthetics-bremen.de/polynukleotide',
     siteName: 'EL Aesthetics Bremen',
     type: 'website',
@@ -70,15 +70,15 @@ export default function PolynukleotideBehandlungPage() {
         name: 'Polynukleotide-Behandlung',
         type: 'CosmeticProcedure',
         bodyLocation: 'Face',
-        description: 'Biostimulation mit DNA-Fragmenten (Polynukleotiden) zur Förderung der Hautregeneration, Faltenreduktion und Haarwachstum.',
+        description: 'Biostimulation mit Lachs-DNA-Fragmenten (Polynukleotiden) zur Förderung der Hautregeneration, Faltenreduktion und Haarwachstum.',
         howPerformed: 'Injektion',
       }),
     ],
   };
 
   const heroData: HeroSectionProps = {
-    title: "Polynukleotid-Filler in Bremen",
-    subtitle: "Biostimulation der neuesten Generation.\nRegenerative biologische DNA-Therapie. Für Faltenreduktion & Haarwachstum.",
+    title: "Polynukleotide in Bremen",
+    subtitle: "Biostimulation mit Polynukleotiden (Lachs-DNA) - Hautregeneration, Faltenreduktion & Haarwachstum",
     imageSrc: "/assets/polynukleotide/polynukleotide_hero.webp",
     imageAlt: "Polynukleotide-Behandlung für Hautregeneration und Anti-Aging – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
@@ -88,9 +88,10 @@ export default function PolynukleotideBehandlungPage() {
   const introData: IntroSectionProps = {
     title: "Was sind Polynukleotide?",
     content: [
-      "Polynukleotide sind Ketten von DNA/RNA-Bausteinen, die aus Lachssperma gewonnen werden und für ihre regenerativen Eigenschaften bekannt sind. Diese Moleküle sind essenziell für die Zellfunktion, da sie die genetischen Informationen enthalten, die für das Wachstum, die Entwicklung und die Reparatur von Zellen und Geweben notwendig sind.",
-      "Polynukleotide werden daher oft als Biostimulatoren oder Bioaktivatoren bezeichnet. In der Medizin unterstützen injizierbare Polynukleotide die Wundheilung und Hautregeneration. Kosmetisch werden sie unter anderem als Skin Booster und Filler genutzt.",
-      "Sie reduzieren Falten und Narben, Hyperpigmentierungen, revitalisieren und regenerieren effektiv die Haut. Zudem verbessern sie die Spannkraft, die Elastizität und die Hydratation der Haut. Anwendungsbereiche sind vor allem Gesicht, Augenbereich, Hals, Dekolleté, Aknenarben und Haare."
+      "Polynukleotide sind Ketten von DNA/RNA-Bausteinen, die aus Lachs-DNA gewonnen werden und für ihre regenerativen Eigenschaften bekannt sind. Diese Moleküle sind essenziell für die Zellfunktion, die für das Wachstum, die Entwicklung und die Reparatur von Zellen und Geweben notwendig sind.",
+      "Polynukleotide werden daher oft als Biostimulatoren oder Bioaktivatoren bezeichnet.",
+      "Die Behandlung kann Falten und Hyperpigmentierungen reduzieren, sowie die Haut revitalisieren und regenerieren. Zudem kann die Spannkraft, die Elastizität und die Hydratation der Haut verbessert werden.",
+      "Besondere Anwendungsbereiche sind die Augenregion, Narben (insbesondere Aknenarben) und Haarausfall."
     ]
   };
 
@@ -136,9 +137,9 @@ export default function PolynukleotideBehandlungPage() {
       { title: "Preis", description: `ab ${PRICES.hyaluronFiller.polynukleotideHautAugenHaare || '280'}€*`, iconUrl: "/assets/icons/EUR.svg" },
       { title: "Dauer", description: "ca. 30-60 Min", iconUrl: "/assets/icons/TIME.svg" },
       { title: "Wirkeintritt", description: "nach 2-4 Wochen sichtbar", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Behandlungen", description: "3-6 Sitzungen (Abstand 2-3 Wochen)", iconUrl: "/assets/icons/wiederholung.svg" },
+      { title: "Behandlungen", description: "3-4 Sitzungen (Abstand 2-3 Wochen)", iconUrl: "/assets/icons/wiederholung.svg" },
       { title: "Betäubung", description: "auf Wunsch möglich", iconUrl: "/assets/icons/Spritze.svg" },
-      { title: "Ausfallzeit", description: "i.d.R. sofort (Augen: 1 Tag)", iconUrl: "/assets/icons/gesellschaft.svg" }
+      { title: "Gesellschaftsfähig", description: "i.d.R. sofort (Augen: nach ca. 1 Tag)", iconUrl: "/assets/icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
   };
@@ -160,22 +161,23 @@ export default function PolynukleotideBehandlungPage() {
       {
         number: "01",
         title: "Ausführliche Beratung und Hautanalyse",
-        description: "In unserer Bremer Praxis analysiere ich zunächst Ihren Hautzustand und bespreche mit Ihnen Ihre individuellen Wünsche und Ziele. Wir klären gemeinsam ab, ob die Polynukleotide-Behandlung für Sie geeignet ist und welche Ergebnisse realistisch zu erwarten sind. Ich erkläre Ihnen die Wirkungsweise der Behandlung und beantworte all Ihre Fragen."
+        description: "Umfassende Anamnese, Klärung von Kontraindikationen und individuelle Aufklärung.",
+
       },
       {
         number: "02",
         title: "Vorbereitung und Betäubung",
-        description: "Die zu behandelnden Bereiche werden gründlich gereinigt und desinfiziert. Bei besonders empfindlichen Bereichen wie dem Augenbereich oder auf Wunsch kann eine Betäubungscreme aufgetragen werden, die etwa 20-30 Minuten einwirken muss. Nach meiner Erfahrung ist eine Betäubung bei Polynukleotid-Injektionen jedoch in der Regel nicht erforderlich."
+        description: "Die zu behandelnden Bereiche werden gründlich gereinigt und desinfiziert. Bei besonders empfindlichen Bereichen wie dem Augenbereich oder auf Wunsch kann eine Betäubungscreme aufgetragen werden, die etwa 20-30 Minuten einwirken muss."
       },
       {
         number: "03",
-        title: "Präzise Injektion der Polynukleotide",
-        description: "Mit einer sehr feinen Nadel wird das Polynukleotid-Gel gezielt und oberflächlich in die Haut injiziert. Die Behandlung erfolgt präzise an den vorher markierten Stellen. Die Injektion dauert je nach Behandlungsareal zwischen 15 und 30 Minuten. Ich achte dabei auf die optimale Verteilung für ein gleichmäßiges Ergebnis."
+        title: "Injektion der Polynukleotide",
+        description: "Mit einer sehr feinen Nadel wird der Wirkstoff gezielt und oberflächlich in die Haut injiziert."
       },
       {
         number: "04",
         title: "Nachbehandlung und Pflege",
-        description: "Nach der Injektion bekommen Sie eine beruhigende Maske aufgelegt, die die Haut kühlt und pflegt. Die gesamte Behandlung inklusive Betäubungscreme dauert etwa 45-60 Minuten. Ich gebe Ihnen detaillierte Anweisungen für die optimale Nachsorge mit. Ein Kontrolltermin nach 2-3 Wochen ermöglicht die Beurteilung des Behandlungserfolgs."
+        description: "Nach der Injektion bekommen Sie eine beruhigende Maske aufgelegt, die die Haut kühlt und pflegt."
       }
     ]
   };
@@ -230,7 +232,7 @@ export default function PolynukleotideBehandlungPage() {
 
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere regenerative Behandlungen",
-    treatments: [profhilo, kollagenstimulation, eigenblut, mesotherapieHaut],
+    treatments: [profhilo, biostimulation, eigenblut, mesotherapieHaut],
   };
 
   const faqData: FAQSectionProps = {
@@ -242,32 +244,20 @@ export default function PolynukleotideBehandlungPage() {
       },
       {
         question: "Wie werden Polynukleotide gewonnen und sind sie sicher?",
-        answer: "Injizierbare Polynukleotide werden aus Lachssperma gewonnen, was ihnen eine hohe biologische Verträglichkeit verleiht. Der Gewinnungsprozess umfasst die Isolation, Reinigung und Fragmentierung der DNA in kleinere, biologisch aktive Polynukleotide. Sie sind mit menschlichem Gewebe kompatibel und minimieren das Risiko allergischer Reaktionen. Die Sicherheit ist durch zahlreiche medizinische Studien belegt."
-      },
-      {
-        question: "Ist die Polynukleotide-Behandlung schmerzhaft?",
-        answer: "Die Behandlung verursacht nur minimale Beschwerden. Die Injektionen erfolgen mit sehr feinen Nadeln oberflächlich in die Haut. Die meisten Patienten beschreiben das Gefühl als leichtes Pieken. Bei besonders empfindlichen Bereichen wie dem Augenbereich kann auf Wunsch eine Betäubungscreme aufgetragen werden. Nach meiner Erfahrung ist eine lokale Betäubung jedoch grundsätzlich nicht erforderlich."
+        answer: "Injizierbare Polynukleotide werden aus Lachssperma gewonnen. Sie sind mit menschlichem Gewebe kompatibel. Die Sicherheit ist durch zahlreiche medizinische Studien belegt."
       },
       {
         question: "Wie viele Behandlungen sind notwendig und wie lange halten die Ergebnisse?",
-        answer: "Bereits nach der ersten Sitzung können Sie positive Ergebnisse sehen. Für ein zufriedenstellendes Endergebnis empfehle ich 3-6 Behandlungssitzungen im Abstand von 2-3 Wochen. Die Anzahl richtet sich nach Ihrem individuellen Hautzustand und den gewünschten Ergebnissen. Bei fortgeschrittenen Alterserscheinungen können auch 4-5 Sitzungen sinnvoll sein. Auffrischungen sind 2-3 Mal pro Jahr empfehlenswert, um die Ergebnisse langfristig zu erhalten."
-      },
-      {
-        question: "Wann sehe ich erste Ergebnisse nach der Behandlung?",
-        answer: "Die Wirkung der Polynukleotide entfaltet sich schrittweise, da sie zelluläre Regenerationsprozesse anregen. Erste sichtbare Verbesserungen zeigen sich in der Regel nach 2-4 Wochen. Das vollständige Ergebnis entwickelt sich über mehrere Wochen und wird mit jeder weiteren Sitzung deutlicher. Die Haut wird zunehmend straffer, glatter und erhält mehr Spannkraft und Elastizität."
+        answer: "Bereits 2 Wochen nach der ersten Behandlung können erste Ergebnisse sichtbar sein. Für ein zufriedenstellendes Endergebnis werden 3-4 Behandlungssitzungen im Abstand von 2-3 Wochen empfohlen. Die Anzahl richtet sich nach Ihrem individuellen Hautzustand, der Indikation und den gewünschten Ergebnissen."
       },
       {
         question: "Welche Nebenwirkungen können auftreten?",
-        answer: "Die häufigsten Nebenwirkungen sind leichte Rötungen, Schwellungen und mögliche kleine Blutergüsse an den Injektionsstellen. Diese sind in der Regel mild und verschwinden innerhalb weniger Tage. In sehr seltenen Fällen kann es zu allergischen Reaktionen kommen, die innerhalb weniger Stunden oder zeitverzögert auftreten können. Personen mit bekannter Fischallergie sollten dies vorab mit mir besprechen."
+        answer: "Mögliche Nebenwirkungen sind beispielsweise leichte Rötungen, Schwellungen und mögliche kleine Blutergüsse an den Injektionsstellen. Diese sind in der Regel mild und verschwinden innerhalb weniger Stunden bis Tage. Sie werden im Beratungsgespräch ausführlich über alle möglichen Nebenwirkungen informiert."
       },
       {
         question: "Können Polynukleotide auch bei Haarausfall helfen?",
         answer: "Ja, Polynukleotide sind sehr effektiv zur Behandlung von Haarausfall. Sie revitalisieren die Haarfollikel, fördern und beschleunigen das Haarwachstum und verbessern die Gesundheit der Kopfhaut. Die Behandlung kann eigenständig oder in Kombination mit anderen Therapien durchgeführt werden. Besonders bewährt hat sich die Polynukleotide-Behandlung auch als unterstützende Therapie nach Haartransplantationen."
       },
-      {
-        question: "Was kostet eine Polynukleotide-Behandlung in Bremen?",
-        answer: "Die Kosten für eine Polynukleotide-Behandlung beginnen bei etwa 280€ und richten sich nach dem Behandlungsareal und der benötigten Menge. Da in der Regel mehrere Sitzungen notwendig sind, erstelle ich Ihnen im persönlichen Beratungsgespräch in unserer Bremer Praxis einen transparenten und individuellen Behandlungsplan mit allen Kosten."
-      }
     ]
   };
 
@@ -296,6 +286,7 @@ export default function PolynukleotideBehandlungPage() {
       <ConsultationSection />
       <TreatmentsSection {...treatmentsData} />
       <FAQSection {...faqData} />
+      <CTASection {...ctaData} />
 
     </div>
   );

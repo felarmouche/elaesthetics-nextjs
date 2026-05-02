@@ -234,7 +234,7 @@ export default function PreisePage() {
         <Section id="bio" title="Biostimulation">
           <Treatment title="Calciumhydroxylapatit + Hyaluronsäure" price={ab(PRICES.biostimulation.caHydroxylapatitPlusHyaluron)}>
             <Description>
-              Kollagenstimulation und Verbesserung der Hautqualität mit sanftem Straffungseffekt
+              Biostimulation und Verbesserung der Hautqualität mit sanftem Straffungseffekt
             </Description>
 
           </Treatment>

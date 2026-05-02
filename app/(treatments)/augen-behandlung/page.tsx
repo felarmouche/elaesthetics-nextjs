@@ -46,8 +46,8 @@ export const metadata: Metadata = {
 
 export default function AugenHubPage() {
     const schema = getWebPageSchema({
-        name: 'Augenbehandlungen in Bremen',
-        description: 'Übersicht zu Augenbehandlungen: Augenringe, Tränenrinnen und Krähenfüße mit Polynukleotiden, PRP oder Botulinumtoxin.',
+        name: 'Behandlung der Augenregion in Bremen',
+        description: 'Augenringe, Tränenrinne, Augenfalten mit Polynukleotiden, PRP, Biostimulation oder Botulinumtoxin behandeln.',
         url: '/augen-behandlung',
         about: {
             type: 'MedicalTherapy',
@@ -57,9 +57,9 @@ export default function AugenHubPage() {
     });
 
     const heroData: HeroSectionProps = {
-        title: 'Augenbehandlungen in Bremen',
+        title: 'Behandlung der Augenregion in Bremen',
         subtitle:
-            'Augenringe, Tränenrinnen oder Fältchen? Ein wacher, frischer Blick lässt das gesamte Gesicht strahlen',
+            'Malar Bags, Augenringe, Tränenrinne, Tänensäcke mit Polynukleotiden, PRP, Biostimulation oder Botulinumtoxin behandeln.',
         imageSrc: '/assets/augen-behandlung/augen-behandlung_hero.webp',
         imageAlt: 'Augenbehandlung gegen Augenringe und Tränenrinne – EL Aesthetics Bremen',
         primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
@@ -67,11 +67,10 @@ export default function AugenHubPage() {
     };
 
     const introData: IntroSectionProps = {
-        title: 'Müde Augen behandeln: Augenringe, Krähenfüße & Tränenrinne ohne OP',
+        title: 'Malar Bags, Augenringe, Tränenrinnen & Tänensäcke behandeln',
         content: [
-            'Ein wacher, strahlender Blick ist das Zentrum unserer Ausstrahlung. Wenn Sie dunkle Augenringe entfernen, tiefe Tränenrinnen unterspritzen oder Krähenfüße glätten möchten, bieten wir Ihnen sanfte und individuell abgestimmte Behandlungen ohne OP.',
-            'Die Ursachen für müde Augen und Schatten unter den Augen sind vielfältig. Oft sind ein altersbedingter Volumenverlust, eine sehr dünne Haut am Unterlid, störende Falten unter den Augen oder auch beginnende Tränensäcke der Grund für einen erschöpften Gesichtsausdruck.',
-            'Abhängig von Ihrem Befund setzen wir auf modernste, minimalinvasive Verfahren. Mit innovativen Methoden wie Polynukleotiden, PRP (Vampir-Lifting), PRF, feuchtigkeitsspendenden Skinboostern oder Botulinumtoxin regenerieren wir die Augenpartie gezielt – für ein frisches, natürliches Ergebnis und eine sichtbar verjüngte Hautstruktur.'
+            'Die Ursachen für müde Augen und Schatten unter den Augen sind vielfältig. Oft sind ein altersbedingter Volumenverlust, eine sehr dünne Haut am Unterlid, Falten unter den Augen oder auch beginnende Tränensäcke der Grund für einen erschöpften Gesichtsausdruck.',
+            'Abhängig von Ihrem Befund können verschiede Verfahren zum Einsatz kommen, wie beispielsweise: Polynukleotide, PRP/PRF (Eigenbluttherapie), enzymatische Behandlungen, Botulinumtoxin.',
         ]
     };
 
@@ -80,36 +79,6 @@ export default function AugenHubPage() {
         treatments: augenbehandlungen
     };
 
-    const faqData: FAQSectionProps = {
-        title: 'Häufige Fragen zur Augenbehandlung',
-        faqs: [
-            {
-                question: 'Was hilft am besten gegen dunkle Augenringe?',
-                answer:
-                    'Das kommt auf die Ursache an. Schimmert das Gewebe bläulich durch oder ist die Haut dünn, arbeiten wir oft regenerativ mit Polynukleotiden oder Mesotherapie zur Verdickung der Dermis.'
-            },
-            {
-                question: 'Ist die Unterspritzung am Auge gefährlich?',
-                answer:
-                    'Die Augenregion ist eine anatomisch anspruchsvolle Zone. Wir nutzen spezialisierte Techniken (z. B. stumpfe Kanülen), um das Risiko von Hämatomen und Gefäßverletzungen zu minimieren. Eine fundierte ärztliche Anatomiekenntnis ist hier unerlässlich.'
-            },
-            {
-                question: 'Wie lange hält das Ergebnis an?',
-                answer:
-                    'Je nach verwendetem Material und Stoffwechsel variiert die Wirkdauer individuell. Muskelrelaxantien gegen Krähenfüße wirken meist 3 bis 5 Monate. Regenerative Biostimulatoren entfalten ihre Wirkung über mehrere Wochen und halten langfristig an.'
-            },
-            {
-                question: 'Sehe ich nach der Behandlung „gemacht“ aus?',
-                answer:
-                    'Nein. Unser oberstes Ziel ist es, dass Sie „erholt“ aussehen, nicht „anders“. Wir dosieren Filler an den Augen sehr konservativ, um Schwellungen (Puffy Eyes) zu vermeiden. Weniger ist hier oft mehr.'
-            },
-            {
-                question: 'Gibt es Ausfallzeiten?',
-                answer:
-                    'In der Regel sind Sie sofort gesellschaftsfähig. Leichte Schwellungen oder kleine blaue Flecke (Hämatome) sind möglich, lassen sich aber meist gut überschminken und klingen nach wenigen Tagen ab.'
-            }
-        ]
-    };
 
     const ctaData: CTASectionProps = {
         title: 'Wünschen Sie sich einen frischeren Blick?',
@@ -138,7 +107,6 @@ export default function AugenHubPage() {
             <IntroSection {...introData} />
             <TreatmentsSection {...treatmentsData} />
             <ConsultationSection />
-            <FAQSection {...faqData} />
             <CTASection {...ctaData} />
         </div>
     );

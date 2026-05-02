@@ -29,11 +29,11 @@ import {
 
 export const metadata: Metadata = {
   title: 'Faltenbehandlung Bremen – Alle Methoden',
-  description: 'Faltenbehandlung in Bremen: Alle Methoden im Vergleich – Botulinumtoxin, Hyaluron, Kollagenstimulation & Polynukleotide. Welche Methode passt zu Ihnen? Jetzt beraten lassen.',
+  description: 'Faltenbehandlung in Bremen: Alle Methoden im Vergleich – Botulinumtoxin, Hyaluron, Biostimulation & Polynukleotide. Welche Methode passt zu Ihnen? Jetzt beraten lassen.',
   keywords: ['Faltenbehandlung Bremen', 'Falten entfernen Bremen', 'Anti-Aging Bremen', 'Faltenunterspritzung Bremen'],
   openGraph: {
     title: 'Faltenbehandlung Bremen – Alle Methoden im Vergleich',
-    description: 'Botulinumtoxin, Hyaluron, Kollagenstimulation oder Polynukleotide? Ärztliche Faltenbehandlung in Bremen.',
+    description: 'Botulinumtoxin, Hyaluron, Biostimulation oder Polynukleotide? Ärztliche Faltenbehandlung in Bremen.',
     url: 'https://elaesthetics-bremen.de/faltenbehandlung',
     siteName: 'EL Aesthetics Bremen',
     type: 'website',
@@ -67,7 +67,7 @@ export default function FaltenbehandlungHubPage() {
   const heroData: HeroSectionProps = {
     title: 'Faltenbehandlung in Bremen – Alle Methoden',
     subtitle:
-      'Welche Methode passt zu Ihren Falten? Botulinumtoxin, Hyaluronsäure, Kollagenstimulation oder Polynukleotide – hier finden Sie alle Behandlungsansätze im Überblick. Lassen Sie sich individuell beraten!',
+      'Welche Methode passt zu Ihren Falten? Botulinumtoxin, Hyaluronsäure, Biostimulation oder Polynukleotide – hier finden Sie alle Behandlungsansätze im Überblick. Lassen Sie sich individuell beraten!',
     imageSrc: '/assets/faltenbehandlung/faltenbehandlung_hero.webp',
     imageAlt: 'Faltenbehandlung mit Hyaluron und Botulinumtoxin – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -80,7 +80,7 @@ export default function FaltenbehandlungHubPage() {
       'Die Faltenbehandlung umfasst nicht-chirurgische Verfahren der ästhetischen Medizin wie Botulinumtoxin, Hyaluronsäure und regenerative Methoden zur Glättung von Falten und Verbesserung der Hautqualität in Bremen.',
       'Botulinumtoxin entspannt die Muskulatur und kann gezielt mimische Falten glätten und die Gesichtszüge entspannen.',
       'Hyaluronsäure kann Volumenverluste ausgleichen, Falten sanft polstern und Konturen modellieren – etwa an Lippen, Wangen, Kinn, Jawline oder Nasolabialfalten.',
-      'Die Kollagenstimulation wirkt strukturbildend: Sie unterstützt die körpereigene Kollagenneubildung und Straffung der Haut.',
+      'Die Biostimulation wirkt strukturbildend: Sie unterstützt die körpereigene Kollagenneubildung und Straffung der Haut.',
       'PRF und Polynukleotide sind regenerative Ansätze zur Verbesserung der Hautqualität: Sie können Feuchtigkeit, Elastizität und Dichte fördern und eignen sich besonders für feine Fältchen sowie empfindliche Zonen.',
       'Je nach Zielsetzung lassen sich die Methoden kombinieren. Lassen Sie sich individuell beraten!',
     ],
@@ -116,8 +116,8 @@ export default function FaltenbehandlungHubPage() {
       description: 'Nasolabialfalten, Marionettenfalten und Wangen mit Hyaluronsäure auffüllen und modellieren.',
     },
     {
-      href: '/kollagenstimulation',
-      label: 'Kollagenstimulation',
+      href: '/biostimulation',
+      label: 'Biostimulation',
       description: 'Körpereigene Kollagenneubildung anregen für langfristige Straffung und Hautfestigkeit.',
     },
   ];
@@ -127,9 +127,9 @@ export default function FaltenbehandlungHubPage() {
     faqs: [
       {
         question:
-          'Was ist der Unterschied zwischen Hyaluronfiller, PRF, Polynukleotiden und der Kollagenstimulation?',
+          'Was ist der Unterschied zwischen Hyaluronfiller, PRF, Polynukleotiden und der Biostimulation?',
         answer:
-          'Hyaluronfiller polstern auf und modellieren – ideal für Volumen, Konturen und statische Falten. PRF und Polynukleotide verbessern die Hautqualität (Feuchtigkeit, Elastizität, Dichte) und sind sehr gut für feine Fältchen und sensible Areale geeignet. Die Kollagenstimulation (z. B. CaHA/PLLA) wirkt strukturbildend, unterstützt die körpereigene Kollagenneubildung und definiert Konturen.',
+          'Hyaluronfiller polstern auf und modellieren – ideal für Volumen, Konturen und statische Falten. PRF und Polynukleotide verbessern die Hautqualität (Feuchtigkeit, Elastizität, Dichte) und sind sehr gut für feine Fältchen und sensible Areale geeignet. Die Biostimulation (z. B. CaHA/PLLA) wirkt strukturbildend, unterstützt die körpereigene Kollagenneubildung und definiert Konturen.',
       },
       {
         question: 'Welche Areale lassen sich behandeln?',
@@ -139,7 +139,7 @@ export default function FaltenbehandlungHubPage() {
       {
         question: 'Wie lange hält das Ergebnis?',
         answer:
-          'Hyaluronfiller: je nach Produkt/Region meist 6–12 Monate (Lippen eher 6–9 Monate, Kinn/Jawline/Wangen oft länger). Kollagenstimulation (z. B. CaHA/PLLA): häufig 12–18 Monate. PRF & Polynukleotide werden häufig in Serien (z. B. 2–3 Sitzungen) angewendet; der Effekt baut sich über Wochen auf und hält mehrere Monate.',
+          'Hyaluronfiller: je nach Produkt/Region meist 6–12 Monate (Lippen eher 6–9 Monate, Kinn/Jawline/Wangen oft länger). Biostimulation (z. B. CaHA/PLLA): häufig 12–18 Monate. PRF & Polynukleotide werden häufig in Serien (z. B. 2–3 Sitzungen) angewendet; der Effekt baut sich über Wochen auf und hält mehrere Monate.',
       },
       {
         question: 'Was eignet sich am besten zum Falten wegspritzen?',
@@ -154,7 +154,7 @@ export default function FaltenbehandlungHubPage() {
       {
         question: 'Kann man die Verfahren kombinieren?',
         answer:
-          'Ja – sehr häufig sinnvoll: z. B. Botulinumtoxin für mimische Falten, Hyaluronfiller für Volumen/Kontur, PRF/Polynukleotide für Hautqualität und Kollagenstimulation für mehr Straffheit. Reihenfolge und Intervalle stimme ich individuell ab.',
+          'Ja – sehr häufig sinnvoll: z. B. Botulinumtoxin für mimische Falten, Hyaluronfiller für Volumen/Kontur, PRF/Polynukleotide für Hautqualität und Biostimulation für mehr Straffheit. Reihenfolge und Intervalle stimme ich individuell ab.',
       },
       {
         question: 'Welche Risiken, Nebenwirkungen und Gegenanzeigen gibt es?',
@@ -172,7 +172,7 @@ export default function FaltenbehandlungHubPage() {
   const ctaData: CTASectionProps = {
     title: 'Natürlich frischer wirken – ohne künstlichen Look',
     subtitle:
-      'Vereinbaren Sie jetzt Ihren Termin für Hyaluronfiller, PRF, Polynukleotide oder Kollagenstimulation in Bremen.',
+      'Vereinbaren Sie jetzt Ihren Termin für Hyaluronfiller, PRF, Polynukleotide oder Biostimulation in Bremen.',
     primaryCTA: { text: 'Jetzt Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };

@@ -11,3 +11,8 @@
 - /hyaluron/skinbooster/
 - /hyaluron/profhilo/
 - /hyaluron/hylase/
+
+- /biostimulation
+- /medizinische-behandlungen
+- /augen-behandlung
+- /polynukleotide

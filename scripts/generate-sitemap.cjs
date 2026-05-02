@@ -43,7 +43,7 @@ const pages = [
   { path: '/mesotherapie/haare/', priority: '0.8', changefreq: 'monthly' },
 
   // Standalone-Behandlungen
-  { path: '/kollagenstimulation/', priority: '0.8', changefreq: 'monthly' },
+  { path: '/biostimulation/', priority: '0.8', changefreq: 'monthly' },
   { path: '/polynukleotide/', priority: '0.9', changefreq: 'monthly' },
   { path: '/medizinisches-microneedling/', priority: '0.8', changefreq: 'monthly' },
   { path: '/fett-weg-spritze/', priority: '0.8', changefreq: 'monthly' },

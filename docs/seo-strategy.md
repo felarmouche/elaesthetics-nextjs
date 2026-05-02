@@ -584,14 +584,14 @@ Alle Routen mit `<lastmod>`, `<changefreq>` und `<priority>`:
 
 #### STANDALONE-SEITEN (kein Cluster)
 
-##### `/kollagenstimulation`
+##### `/biostimulation`
 
 | Element | Wert |
 |---|---|
-| **Page Title** | `Kollagenstimulation Bremen | CaHA & Biostimulatoren | EL Aesthetics` |
-| **Meta Description** | `Kollagenstimulation in Bremen: CaHA- und Hyaluron-Biostimulatoren für natürliche Hautstraffung an Gesicht, Hals & Händen. Ärztliche Beratung. Termin buchen.` |
-| **H1** | `Kollagenstimulation in Bremen` |
-| **Primary KW** | `Kollagenstimulation Bremen` |
+| **Page Title** | `Biostimulation Bremen | CaHA & Biostimulatoren | EL Aesthetics` |
+| **Meta Description** | `Biostimulation in Bremen: CaHA- und Hyaluron-Biostimulatoren für natürliche Hautstraffung an Gesicht, Hals & Händen. Ärztliche Beratung. Termin buchen.` |
+| **H1** | `Biostimulation in Bremen` |
+| **Primary KW** | `Biostimulation Bremen` |
 | **Secondary KW** | `Calciumhydroxylapatit Bremen`, `Hautstraffung ohne OP Bremen`, `Biostimulator Bremen`, `Kollagenaufbau Bremen` |
 
 ##### `/polynukleotide`
@@ -647,7 +647,7 @@ Alle Routen mit `<lastmod>`, `<changefreq>` und `<priority>`:
 | **H1** | `Faltenbehandlung in Bremen` |
 | **Primary KW** | `Faltenbehandlung Bremen` |
 | **Secondary KW** | `Falten entfernen Bremen`, `Faltenunterspritzung Bremen`, `Anti-Aging Arzt Bremen` |
-| **Rolle** | Lösungsseite — verlinkt auf Botox-Falten-Spoke, Filler-Spoke, Kollagenstimulation |
+| **Rolle** | Lösungsseite — verlinkt auf Botox-Falten-Spoke, Filler-Spoke, Biostimulation |
 
 ##### `/haarausfall-behandlung`
 
@@ -687,11 +687,11 @@ Alle Routen mit `<lastmod>`, `<changefreq>` und `<priority>`:
 | Element | Wert |
 |---|---|
 | **Page Title** | `Filler Bremen | Volumenaufbau & Konturierung | EL Aesthetics` |
-| **Meta Description** | `Filler in Bremen: Hyaluron-Filler & Kollagenstimulation für Lippen, Jawline & Wangen. Natürliche Konturierung ohne „künstlichen" Look. Ärztliche Beratung buchen.` |
+| **Meta Description** | `Filler in Bremen: Hyaluron-Filler & Biostimulation für Lippen, Jawline & Wangen. Natürliche Konturierung ohne „künstlichen" Look. Ärztliche Beratung buchen.` |
 | **H1** | `Filler & Volumenaufbau in Bremen` |
 | **Primary KW** | `Filler Bremen` |
 | **Secondary KW** | `Volumenaufbau Gesicht Bremen`, `Wangen Filler Bremen`, `Kinn Filler Bremen` |
-| **Rolle** | Lösungsseite — verlinkt auf Hyaluron-Filler-Spoke, Kollagenstimulation |
+| **Rolle** | Lösungsseite — verlinkt auf Hyaluron-Filler-Spoke, Biostimulation |
 
 ##### `/medizinische-behandlungen`
 
@@ -791,7 +791,7 @@ Lösungsseiten (Problem-Intent)          Wirkstoff-Hubs (Informations-Intent)
 ────────────────────────────────        ────────────────────────────────────
 /faltenbehandlung ──────────────────►   /botulinumtoxin/faltenbehandlung
                   ──────────────────►   /hyaluron/filler
-                  ──────────────────►   /kollagenstimulation
+                  ──────────────────►   /biostimulation
 
 /haarausfall-behandlung ────────────►   /eigenbluttherapie/haare
                         ────────────►   /mesotherapie/haare

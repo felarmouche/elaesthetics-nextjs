@@ -24,7 +24,7 @@ const treatments: TreatmentSlide[] = [
   { src: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp', alt: 'Microneedling', text: 'Medizinisches Microneedling', linkUrl: '/medizinisches-microneedling' },
   { src: '/assets/polynukleotide/polynukleotide_hero.webp', alt: 'Polynukleotide', text: 'Polynukleotide', linkUrl: '/polynukleotide' },
   { src: '/assets/chemisches-peeling/chemisches-peeling_hero.webp', alt: 'Chemisches Peeling', text: 'Chemisches Peeling', linkUrl: '/chemisches-peeling' },
-  { src: '/assets/kollagenstimulation/kollagenstimulation_hero.webp', alt: 'Kollagenstimulation', text: 'Kollagenstimulation', linkUrl: '/kollagenstimulation' },
+  { src: '/assets/biostimulation/biostimulation_hero.webp', alt: 'Biostimulation', text: 'Biostimulation', linkUrl: '/biostimulation' },
 ];
 
 export default function TreatmentSlider() {

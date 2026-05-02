@@ -1,4 +1,4 @@
-// app/kollagenstimulation/page.tsx
+// app/biostimulation/page.tsx
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import { PRICES } from '@/lib/constants'
@@ -9,27 +9,27 @@ import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { eigenblut, filler, mesoHaar, mesotherapieHaut, microneedling, polynukleotide } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Kollagenstimulation Bremen',
-  description: 'Kollagenstimulation in Bremen: CaHA- und Hyaluron-Biostimulatoren für natürliche Hautstraffung an Gesicht, Hals & Händen. Ärztliche Beratung. Termin buchen.',
-  keywords: ['Kollagenstimulation Bremen', 'Calciumhydroxylapatit Bremen', 'Hautstraffung ohne OP Bremen', 'Biostimulator Bremen', 'Kollagenaufbau Bremen'],
+  title: 'Biostimulation Bremen',
+  description: 'Biostimulation in Bremen: CaHA- und Hyaluron-Biostimulatoren für natürliche Hautstraffung an Gesicht, Hals & Händen. Ärztliche Beratung. Termin buchen.',
+  keywords: ['Biostimulation Bremen', 'Calciumhydroxylapatit Bremen', 'Hautstraffung ohne OP Bremen', 'Biostimulator Bremen', 'Kollagenaufbau Bremen'],
   openGraph: {
-    title: 'Kollagenstimulation in Bremen – EL Aesthetics',
+    title: 'Biostimulation in Bremen – EL Aesthetics',
     description: 'CaHA- und Hyaluron-Biostimulatoren für natürliche Hautstraffung an Gesicht, Hals & Händen in Bremen.',
-    url: 'https://elaesthetics-bremen.de/kollagenstimulation',
+    url: 'https://elaesthetics-bremen.de/biostimulation',
     siteName: 'EL Aesthetics Bremen',
     type: 'website',
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/kollagen/og-kollagenstimulation-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/kollagen/og-biostimulation-bremen.webp',
         width: 1200,
         height: 630,
-        alt: 'Kollagenstimulation in Bremen – EL Aesthetics',
+        alt: 'Biostimulation in Bremen – EL Aesthetics',
       },
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/kollagenstimulation',
+    canonical: 'https://elaesthetics-bremen.de/biostimulation',
   },
 };
 
@@ -39,13 +39,13 @@ export default function KollagenstimulationPage() {
     '@graph': [
       {
         ...getWebPageSchema({
-          name: 'Kollagenstimulation in Bremen',
-          description: 'Ärztliche Kollagenstimulation mit Biostimulatoren für natürliche Hautstraffung und Kollagenaufbau.',
-          url: '/kollagenstimulation',
+          name: 'Biostimulation in Bremen',
+          description: 'Ärztliche Biostimulation mit Biostimulatoren für natürliche Hautstraffung und Kollagenaufbau.',
+          url: '/biostimulation',
         }), '@context': undefined
       },
       getMedicalProcedureSchema({
-        name: 'Kollagenstimulation mit Biostimulatoren',
+        name: 'Biostimulation mit Biostimulatoren',
         type: 'CosmeticProcedure',
         bodyLocation: 'Face',
         description: 'Behandlung mit CaHA- und Hyaluron-Biostimulatoren zur Anregung der körpereigenen Kollagenproduktion für natürliche Hautstraffung.',
@@ -55,22 +55,20 @@ export default function KollagenstimulationPage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: 'Kollagenstimulation in Bremen',
+    title: 'Biostimulation in Bremen',
     subtitle:
-      'Hautstraffung ohne OP – mit Hyaluronsäure und Calciumhydroxylapatit.',
-    imageSrc: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
-    imageAlt: 'Kollagenstimulation mit Biostimulatoren zur Hautstraffung – EL Aesthetics Bremen',
+      'Hautstraffung und natürlicher Volumenaufbau durch Biostimulation – Calciumhydroxylapatit & Poly-L-Milchsäure (PLLA, PDLLA).',
+    imageSrc: '/assets/biostimulation/biostimulation_hero.webp',
+    imageAlt: 'Biostimulation mit Biostimulatoren zur Hautstraffung – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
   };
 
   const introData: IntroSectionProps = {
-    title: 'Was ist Kollagenstimulation?',
+    title: 'Was ist Biostimulation?',
     content: [
-      'Die Kollagenstimulation ist ein minimal-invasives Verfahren der ästhetischen Medizin, das mit Biostimulatoren wie Calciumhydroxylapatit die körpereigene Kollagenproduktion anregt und die Haut natürlich strafft.',
-      'Mit zunehmendem Alter verliert die Haut an Festigkeit, Elastizität und Frische – unter anderem durch den Abbau von Kollagen. Eine gezielte Behandlung mit einer Kombination aus Hyaluronsäure und Calciumhydroxylapatit kann diesem Prozess entgegenwirken.',
-      'Während die Hyaluronsäure für eine sofort sichtbare Auffrischung sorgen kann, regen die feinen Calciumhydroxylapatit-Partikel die natürliche Kollagenproduktion in der Tiefe an. Diese Kombination kann zu einer schrittweisen Straffung und Verbesserung der Hautqualität führen – mit einem natürlich wirkenden Ergebnis.',
-      'Im Unterschied zu anderen rein kollagenstimulierenden Verfahren bietet diese Behandlung durch die Hyaluronsäure zusätzlich eine unmittelbare Aufpolsterung sowie einen sanften Straffungseffekt.',
+      'Die Biostimulation ist ein minimal-invasives Verfahren der ästhetischen Medizin. Durch den Einsatz von Biostimulatoren wie Calciumhydroxylapatit, Poly-L-Milchsäure (PLLA, PDLLA), Hybrid-Filler oder Polynukleotiden wird die körpereigene Kollagenproduktion angeregt. Dadurch lässt sich natürliches Volumen wiederaufbauen, die Haut straffen und die allgemeine Hautqualität nachhaltig verbessern.',
+      'Mit zunehmendem Alter verliert die Haut Kollagen, Elastin und Hyaluronsäure und somit auch an Festigkeit, Elastizität und Frische. Biostimulatoren können diesem Prozess entgegenwirken.',
     ],
   };
 
@@ -82,37 +80,37 @@ export default function KollagenstimulationPage() {
         items: [
           { title: 'Wangen & Mittelgesicht' },
           { title: 'Jawline/Kinnlinie & Kinn' },
-          { title: 'Marionettenbereich' },
-          { title: 'Nasolabialregion (indirekt/umgebend)' }
+          { title: 'Marionettenfalten' },
+          { title: 'Nasolabialfalten' }
         ],
       },
       {
         category: 'Hals & Dekolleté',
         items: [
-          { title: 'Hals (Hautqualität & -festigkeit)' },
+          { title: 'Hals' },
           { title: 'Dekolleté' },
         ],
       },
       {
         category: 'Weitere Areale',
         items: [
-          { title: 'Handrücken' },
-          { title: 'Oberarme (Hautqualität)' },
-          { title: 'Bauch/Dehnungszonen (individuell)' },
+          { title: 'Hände' },
+          { title: 'Oberarme' },
+          { title: 'Bauch/Dehnungszonen' },
         ],
       },
     ],
   };
 
   // Optional: zentrale Preise, falls vorhanden:
-  // const priceFrom = PRICES?.kollagenstimulation?.basis ?? 900;
+  // const priceFrom = PRICES?.biostimulation?.basis ?? 900;
 
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Auf einen Blick',
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.biostimulation.caHydroxylapatitPlusHyaluron},-€*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Behandlungsdauer', description: 'ca. 60–90 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Haltbarkeit', description: 'ca. 18–24 Monate', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Haltbarkeit', description: 'ca. 12–24 Monate', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Betäubung', description: 'i. d. R. nicht erforderlich', iconUrl: '/assets/icons/Spritze.svg' },
       { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
@@ -137,25 +135,25 @@ export default function KollagenstimulationPage() {
         number: '01',
         title: 'Ärztliche Beratung & Planung',
         description:
-          'Anamnese, Indikationsprüfung, Auswahl der Areale und Dosierung. Realistische Zieldefinition ohne Heilsversprechen.',
+          'Anamnese, Indikationsprüfung, Auswahl der Areale und Dosierung. Realistische Zieldefinition.',
       },
       {
         number: '02',
         title: 'Vorbereitung',
         description:
-          'Reinigung/Desinfektion der Haut; auf Wunsch betäubende Creme. Markierung der Zugänge.',
+          'Reinigung/Desinfektion der Haut.',
       },
       {
         number: '03',
-        title: 'Gewebeschonende Injektion (C-Approach)',
+        title: 'Gewebeschonende Injektion',
         description:
-          'Einbringen über wenige Zugangspunkte mit stumpfer Mikrokanüle; fächerförmige Verteilung zur gleichmäßigen Platzierung. Abschließende sanfte Massage.',
+          'Einbringen des Biostimulators über wenige Zugangspunkte mit stumpfer Mikrokanüle.',
       },
       {
         number: '04',
         title: 'Nachsorge & Kontrolle',
         description:
-          'Alltag meist sofort möglich. Kontrolle des Effekts; bei Bedarf Nachsteuerung. Hinweise zu Sport/Hitze/Sonne beachten.',
+          'Alltag meist sofort möglich. Kontrolle des Effekts; bei Bedarf Nachsteuerung.',
       },
     ],
   };
@@ -197,39 +195,24 @@ export default function KollagenstimulationPage() {
     title: 'Häufig gestellte Fragen | FAQ',
     faqs: [
       {
-        question: 'Wie funktioniert die Behandlung?',
+        question: 'Für wen ist eine Biostimulation geeignet?',
         answer:
-          'Hyaluronsäure sorgt für einen unmittelbaren Auffrischungseffekt, während mikronisierte Calciumhydroxylapatit-Partikel die körpereigene Kollagenbildung anregen können. So wird die Hautstruktur schrittweise unterstützt.',
-      },
-      {
-        question: 'Für wen ist die Behandlung geeignet?',
-        answer:
-          'Geeignet bei Wunsch nach sanfter Unterstützung der Hautqualität und bei ersten Zeichen von Elastizitätsverlust. Die individuelle Eignung klären wir im Arztgespräch.',
+          'Geeignet bei Elastizitätsverlust, Erschlaffung des Gewebes oder Volumenverlust. Die individuelle Eignung klären wir im Arztgespräch.',
       },
       {
         question: 'Wann sehe ich Ergebnisse?',
         answer:
-          'Ein Teil des Effekts kann sofort sichtbar sein (Hyaluronsäure). Der kollagenstimulierende Anteil entwickelt sich über Wochen bis mehrere Monate.',
+          'Abhängig vom Präparat und der individuellen Reaktion können Ergebnisse sofort sichtbar sein oder sich innerhalb von 6 Monaten schrittweise aufbauen.',
       },
       {
         question: 'Wie lange hält das Ergebnis?',
         answer:
-          'Die Haltbarkeit liegt – abhängig von Areal, Stoffwechsel und Lebensstil – typischerweise im Bereich von etwa 18–24 Monaten.',
+          'Die Haltbarkeit liegt – abhängig von Areal, Stoffwechsel und Lebensstil – typischerweise im Bereich von etwa 12–24 Monaten.',
       },
       {
         question: 'Wie viele Sitzungen sind nötig?',
         answer:
-          'Häufig genügt eine Behandlung; je nach Ausgangsbefund können Wiederholungen sinnvoll sein.',
-      },
-      {
-        question: 'Gibt es Nebenwirkungen oder Risiken?',
-        answer:
-          'Vorübergehend sind Rötungen, leichte Schwellungen oder kleine Hämatome möglich. Seltener können Knötchen/Verhärtungen auftreten. Sehr selten: Infektionen oder allergische Reaktionen. Wir besprechen Risiken, Alternativen und Notfallzeichen vor Ort.',
-      },
-      {
-        question: 'Kontraindikationen',
-        answer:
-          'Nicht behandeln bei akuten Entzündungen/Infektionen, bekannter Überempfindlichkeit gegen Inhaltsstoffe, bestimmten Autoimmun-/schweren Systemerkrankungen, Blutgerinnungsstörungen oder in Schwangerschaft/Stillzeit. Arzneimittel und Vorerkrankungen bitte angeben.',
+          'Abhängig vom Präparat und der individuellen Reaktion können 1 bis 3 Sitzungen sinnvoll sein.',
       },
     ],
   };
@@ -244,7 +227,7 @@ export default function KollagenstimulationPage() {
   return (
     <div className="min-h-screen bg-white">
       <Script
-        id="kollagenstimulation-schema"
+        id="biostimulation-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

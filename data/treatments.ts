@@ -89,13 +89,13 @@ export const eigenblut: Treatment = {
     treatmentUrl: '/eigenbluttherapie/vampir-lifting'
 };
 
-export const kollagenstimulation: Treatment = {
-    imageUrl: '/assets/kollagenstimulation/kollagenstimulation_hero.webp',
-    imageAlt: 'Kollagenstimulation mit Radiesse oder Sculptra',
-    title: 'Kollagenstimulation (Biostimulatoren)',
+export const biostimulation: Treatment = {
+    imageUrl: '/assets/biostimulation/biostimulation_hero.webp',
+    imageAlt: 'Biostimulation mit Radiesse oder Sculptra',
+    title: 'Biostimulation (Biostimulatoren)',
     description:
         'Nachhaltiger Aufbau des haut eigenen Stützgerüsts. Biostimulatoren (z.B. Calciumhydroxylapatit) regen die körpereigene Kollagenproduktion an für langfristig festere Haut.',
-    treatmentUrl: '/kollagenstimulation'
+    treatmentUrl: '/biostimulation'
 };
 
 // --- HAUTBILD & TEXTUR ---
@@ -249,7 +249,7 @@ export const haarausfall: Treatment[] =
 export const longevityRegeneration: Treatment[] = [
     polynukleotide,
     eigenblut,
-    kollagenstimulation
+    biostimulation
 ];
 
 export const longevityHydration: Treatment[] = [
@@ -277,7 +277,7 @@ export const faltenRelaxation: Treatment[] = [
 // Kategorie 2: Volumen, Kontur & Lifting
 export const faltenVolume: Treatment[] = [
     filler, // Hyaluron Filler
-    kollagenstimulation, // Radiesse/Sculptra
+    biostimulation, // Radiesse/Sculptra
     // Optional: Fadenlifting, falls du das anbietest
 ];
 
@@ -304,7 +304,7 @@ export const hyaluronTreatments: Treatment[] = [
  */
 export const fillerPageTreatments: Treatment[] = [
     filler,              // Hyaluronsäure Filler
-    kollagenstimulation, // Radiesse / Sculptra
+    biostimulation, // Radiesse / Sculptra
     hylase               // WICHTIG: Die "Sicherheit" / Korrektur
 ];
 

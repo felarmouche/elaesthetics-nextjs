@@ -17,7 +17,7 @@ const FOOTER_SECTIONS = [
     links: [
       { label: 'Haarausfall-Behandlung', href: '/haarausfall-behandlung' },
       { label: 'Fett-weg-Spritze', href: '/fett-weg-spritze' },
-      { label: 'Kollagenstimulation', href: '/kollagenstimulation' },
+      { label: 'Biostimulation', href: '/biostimulation' },
       { label: 'Preise', href: '/preise' },
     ],
   },
