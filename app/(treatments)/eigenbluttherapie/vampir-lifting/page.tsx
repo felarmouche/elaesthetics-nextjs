@@ -75,7 +75,7 @@ export default function VampirLiftingPage() {
   const heroData: HeroSectionProps = {
     title: 'Vampir Lifting in Bremen',
     subtitle:
-      'Natürliches Lifting ohne Filler: Vampire Facial / Plasma-Lifting zur Unterstützung der Hautqualität und eines frischen Hautbilds.',
+      'Vampir Lifting mit PRP & PRF – natürliche Hautverjüngung durch hautverjüngende Wachstumsfaktoren und Stammzellen.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
     imageAlt: 'Vampir Lifting mit Eigenblut-Plasma für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -83,11 +83,9 @@ export default function VampirLiftingPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: 'Vampir Lifting – was ist das?',
+    title: 'Was ist Vampir Lifting?',
     content: [
-      'Das Vampir Lifting (Vampire Facial) ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin, bei dem körpereigenes Plasma zur Unterstützung der Hautregeneration und Verbesserung der Hautqualität eingesetzt wird.',
-      'Die Behandlung kann die natürlichen Regenerationsprozesse der Haut unterstützen und so zu einer Verbesserung von Hautqualität und Hautbild beitragen. Sie wird unter anderem bei ungleichmäßiger Hautstruktur, erweiterten Poren, feinen Linien, Aknenarben, Pigmentunregelmäßigkeiten und dunklen Schatten unter den Augen eingesetzt.',
-      'Auch unreine und empfindliche Haut kann von der Behandlung profitieren.',
+      'Das Vampir Lifting mit PRP oder PRF fördert die Bildung von neuen Fibroblasten, Kollagen und Elastin in der Haut. Das Ergebnis kann eine Verbesserung der Hautstruktur, Verfeinerung der Poren, Reduktion von Hyperpigmentierungen, feinen Linien, Akne und Aknenarben sein. Entzündliche Prozesse in der Haut können positiv beeinflusst werden (z.B. Rosazea).',
     ],
   };
 
@@ -97,10 +95,10 @@ export default function VampirLiftingPage() {
       {
         category: 'Gesicht & Dekolleté',
         items: [
-          { title: 'Augenbereich (Augenringe/Tränenrinne)', description: 'Unterlid, feine Linien – behutsame und präzise Anwendung' },
-          { title: 'Gesicht gesamt', description: 'Wangen, Stirn, Schläfen – für ein harmonischeres Hautbild' },
-          { title: 'Nasolabial-/Marionettenzone', description: 'Zur Unterstützung von Hautqualität und Ebenmäßigkeit' },
-          { title: 'Dekolleté', description: 'Für ein glatter und gepflegt wirkendes Erscheinungsbild' },
+          { title: 'Gesicht', description: 'Wangen, Stirn, Schläfen' },
+          { title: 'Augenbereich (Augenringe/Tränenrinne)' },
+          { title: 'Nasolabial-/Marionettenzone' },
+          { title: 'Dekolleté' },
         ],
       },
       {
@@ -127,24 +125,25 @@ export default function VampirLiftingPage() {
   };
 
   const quickInfoData: QuickInfoSectionProps = {
-    title: 'Vampir Lifting auf einen Blick',
+    title: 'Auf einen Blick',
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.prpPrf.prpPrf}€ pro Sitzung*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: 'ca. 90-120 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Serie', description: '4–6 Sitzungen, Abstand ~4–6 Wochen', iconUrl: '/assets/icons/wiederholung.svg' },
+      { title: 'Serie', description: '3-4 Sitzungen, Abstand ~4–6 Wochen', iconUrl: '/assets/icons/wiederholung.svg' },
       { title: 'Wirkeintritt', description: 'nach ca. 2-3 Behandlungen', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Betäubung', description: 'auf Wunsch', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'meist sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Gesellschaftsfähig', description: 'je nach Methode', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note: '* Richtwert; Abrechnung nach GOÄ. Der konkrete Betrag wird im Beratungstermin individuell festgelegt.',
   };
 
   const processData: ProcessSectionProps = {
-    title: 'Ablauf vom Vampire‑Lift',
+    title: 'Ablauf',
     steps: [
       { number: '01', title: 'Hautanalyse & Aufklärung', description: 'In einem Beratungsgespräch wird die Eignung für die Behandlung geprüft und der Ablauf besprochen.' },
-      { number: '02', title: 'Vorbereitung', description: 'Auf Wunsch Oberflächenbetäubung; Entnahme und Aufbereitung körpereigener Bestandteile.' },
+      { number: '02', title: 'Vorbereitung', description: 'Auf Wunsch Oberflächenbetäubung. Blutentnahme und PRF-Aufbereitung.' },
       { number: '03', title: 'Injektion', description: 'Matrix wird mit einer feinen Nadel in Abständen von ca. 1 cm in die betroffenen Bereiche der Haut injiziert.' },
+      { number: '04', title: '(Optional) Microneedling', description: 'Optional kann die Behandlung um eine Microneedling-Behandlung ergänzt werden' },
     ],
   };
 
@@ -181,14 +180,9 @@ export default function VampirLiftingPage() {
     title: 'Häufige Fragen zum Vampir Lifting',
     faqs: [
       {
-        question: 'Was ist der Unterschied zwischen Vampir Lifting und Vampire Facial?',
-        answer:
-          'Beide Begriffe werden häufig synonym verwendet. Gemeint ist eine ästhetische Behandlung, die körpereigene Bestandteile nutzt, um die Hautregeneration zu unterstützen. Details zur Eigenblut‑Methodik erläutern wir in der Beratung.',
-      },
-      {
         question: 'Wie viele Sitzungen sind sinnvoll – und wann sehe ich etwas?',
         answer:
-          'Empfohlen werden 4–6 Sitzungen im Abstand von etwa 4–6 Wochen. Erste Verbesserungen (volleres, rosigeres Hautgefühl) sind häufig nach 1–2 Wochen spürbar; sichtbare Optimierungen verstärken sich im Verlauf der Serie.',
+          'Empfohlen werden 3-4 Sitzungen im Abstand von etwa 4–6 Wochen. Erste Verbesserungen (volleres, rosigeres Hautgefühl) sind häufig nach 1–2 Wochen spürbar; sichtbare Optimierungen verstärken sich im Verlauf der Serie.',
       },
       {
         question: 'Wie lange halten die Ergebnisse an?',

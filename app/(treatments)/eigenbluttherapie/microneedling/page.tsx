@@ -90,9 +90,7 @@ export default function PRFMicroneedlingPage() {
   const introData: IntroSectionProps = {
     title: 'Warum Microneedling mit PRF in Bremen?',
     content: [
-      'PRF Microneedling ist ein minimal-invasives Kombinationsverfahren der ästhetischen Medizin, bei dem medizinisches Microneedling mit körpereigenem Plasma (PRF) zur intensiven Hautregeneration verbunden wird.',
-      'Die Synergie aus PRF-Injektionen und Microneedling kann zu einer deutlichen Verbesserung des Hautbildes führen und eignet sich bei vielen Hautproblemen und Indikationen. Zum Beispiel zur Textur-Verbesserung, Porenverfeinerung und zur begleitenden Behandlung von Aknenarben.',
-      'Nadeltiefe und PRF-Applikation werden individuell an Hautzustand und Areal angepasst.'
+      'Das Microneedling kombiniert die Vorteile von PRF mit den regenerativen Effekten des Needlings. Durch das Needling wird die Haut angeregt, mehr Kollagen zu produzieren, während PRF den Heilungsprozess beschleunigt und die Hauterneuerung fördert. Die Kombination aus PRF-Injektionen und Microneedling kann zu einer deutlichen Verbesserung des Hautbildes führen und eignet sich bei vielen Hautproblemen und Indikationen.'
     ]
   };
 
@@ -125,34 +123,33 @@ export default function PRFMicroneedlingPage() {
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.prpPrf.microneedling} €*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: 'ca. 60–90 Min', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: 'im Verlauf einer Serie (3–5 Termine)', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Intervall', description: 'ca. alle ~4 Wochen', iconUrl: '/assets/icons/wiederholung.svg' },
+      { title: 'Intervall', description: 'ca. alle 4 Wochen (3-4 Sitzungen)', iconUrl: '/assets/icons/wiederholung.svg' },
       { title: 'Betäubung', description: 'lokal auf Wunsch', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Downtime', description: 'meist 1–3 Tage', iconUrl: '/assets/icons/gesellschaft.svg' }
+      { title: 'Gesellschaftsfähig', description: 'meist 1–3 Tage', iconUrl: '/assets/icons/gesellschaft.svg' }
     ],
     note: '*Preise sind Richtwerte nach GOÄ; individueller Kostenplan im Beratungsgespräch.'
   };
 
   const processData: ProcessSectionProps = {
-    title: 'Ablauf Ihrer PRF-Microneedling-Behandlung',
+    title: 'Ablauf',
     steps: [
       {
         number: '01',
         title: 'Beratung & Anästhesie',
         description:
-          'Indikationsprüfung, Hautanalyse und Aufklärung. Auftragen der Anästhesiecreme – Einwirkzeit ca. 30 Minuten.'
+          'Indikationsprüfung, Hautanalyse und Aufklärung.'
       },
       {
         number: '02',
         title: 'Blutentnahme & PRF-Herstellung',
         description:
-          'Blutabnahme und Aufbereitung nach PRF-Protokoll (Zentrifugation ohne Antikoagulanzien, Fibrin-Matrix-Bildung).'
+          'Blutabnahme und Aufbereitung nach PRF-Protokoll'
       },
       {
         number: '03',
         title: 'Microneedling + PRF-Applikation',
         description:
-          'Needling mit dem Dermapen in individuell angepasster Eindringtiefe; die PRF-Matrix wird gleichzeitig in/auf die Haut eingearbeitet.'
+          'Needling mit dem Dermapen 4 in individuell angepasster Eindringtiefe; die PRF-Matrix wird gleichzeitig in/auf die Haut eingearbeitet.'
       },
       {
         number: '04',

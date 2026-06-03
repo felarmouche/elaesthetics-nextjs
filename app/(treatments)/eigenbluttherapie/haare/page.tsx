@@ -77,7 +77,7 @@ export default function PRFHaarePage() {
   const heroData: HeroSectionProps = {
     title: 'Eigenbluttherapie Haarausfall-Behandlung in Bremen',
     subtitle:
-      'Eigenbluttherapie Haarausfall Behandlung (PRF/PRP) zur Unterstützung der Haardichte und Kopfhautgesundheit. Bei erblich bedingtem oder kreisrundem Haarausfall, oder nach einer Haartransplantation',
+      'Eigenbluttherapie Haarausfall Behandlung (PRF/PRP) - Unterstützung des Haarwachstums und der Kopfhautgesundheit. Bei verschiedenen Formen von Haarausfall',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
     imageAlt: 'Eigenbluttherapie PRF/PRP bei Haarausfall – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -85,11 +85,9 @@ export default function PRFHaarePage() {
   };
 
   const introData: IntroSectionProps = {
-    title: 'Wie PRF / PRP bei Haarausfall eingesetzt wird',
+    title: 'PRF/PRP bei Haarausfall',
     content: [
-      'Die Eigenbluttherapie bei Haarausfall (PRF/PRP) ist ein nicht-chirurgisches Verfahren der regenerativen Medizin zur Unterstützung der Haardichte und Kopfhautgesundheit.',
-      'PRF wird ohne Antikoagulanzien hergestellt und bildet eine Fibrin‑Matrix. Diese kann Wachstumsfaktoren über einen längeren Zeitraum freisetzen. Ziel ist die Unterstützung der Follikelaktivität und des Haarzyklus.',
-      'Einsatz je nach Befund u. a. bei androgenetischer Alopezie (erblich), diffusem Haarausfall, ausgewählten Fällen von Alopecia areata sowie zur Begleitung nach Haartransplantation. Eignung und Alternativen werden ärztlich geprüft.',
+      'Die Eigenblut-Therapie eignet sich sehr gut als Behandlung bei Haarausfall. Sie stimuliert das Haarwachstum durch eine Revitalisierung der Haarfollikel. PRF-Therapie kann dazu beitragen, dass die Haardichte und der Haardurchmesser zunimmt. Die Behandlung kann bei verschiedenen Formen des Haarausfalls zum Einsatz kommen, wie z.B erblich bedingten, diffusem oder kreisrundem Haarausfall, sowie zur Unterstützung vor und nach einer Haartransplantation .',
     ],
   };
 
@@ -100,7 +98,8 @@ export default function PRFHaarePage() {
         category: 'Haarausfallformen',
         items: [
           { title: 'Erblicher Haarausfall (androgenetische Alopezie)', description: 'z. B. Geheimratsecken, Tonsur/Scheitel' },
-          { title: 'Nach Haartransplantation', description: 'begleitende PRF/PRP‑Anwendung kann erwogen werden' },
+          { title: 'Nach einer Haartransplantation', description: 'begleitende PRF/PRP‑Anwendung kann erwogen werden' },
+          { title: 'Vor einer Haartransplantation', description: 'begleitende PRF/PRP‑Anwendung kann erwogen werden' },
           { title: 'Diffuser Haarausfall', description: 'gleichmäßige Ausdünnung der Kopfhaut' },
           { title: 'Kreisrunder Haarausfall (Alopecia areata)', description: 'lokalisierte Areale – individuelle Eignung' },
         ],
@@ -120,10 +119,10 @@ export default function PRFHaarePage() {
     title: 'Eigenbluttherapie für die Haare auf einen Blick',
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.haare.prpPrf}€ pro Sitzung*`, iconUrl: '/assets/icons/EUR.svg' },
-      { title: 'Dauer', description: 'ca. 60–120 Minuten inkl. Aufbereitung', iconUrl: '/assets/icons/TIME.svg' },
+      { title: 'Dauer', description: 'ca. 60–120 Minuten', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Behandlungsserie', description: '4–6 Sitzungen im Abstand von 4–6 Wochen', iconUrl: '/assets/icons/wiederholung.svg' },
       { title: 'Beurteilung', description: 'Verlaufskontrolle nach 2–3 Terminen', iconUrl: '/assets/icons/CAL.svg' },
-      { title: 'Erhaltung', description: 'Auffrischung 1–2×/Jahr', iconUrl: '/assets/icons/CAL.svg' },
+      { title: 'Erhaltung', description: 'Auffrischung individuell nach Verlauf', iconUrl: '/assets/icons/CAL.svg' },
     ],
     note: '*GOÄ‑orientierter Richtwert. Der konkrete Betrag richtet sich nach Areal und Aufwand und wird individuell festgelegt.',
   };
@@ -132,10 +131,10 @@ export default function PRFHaarePage() {
     title: 'Ablauf der PRF / PRP Haarausfallbehandlung',
     steps: [
       { number: '01', title: 'Haaranalyse & Beratung', description: 'Befund (Muster, Verlauf, Auslöser) und Zieldefinition; Fotodokumentation als Verlaufskontrolle.' },
-      { number: '02', title: 'Vorbereitung', description: 'Optional Betäubungscreme (30–60 Min.). Blutentnahme und sterile Aufbereitung.' },
-      { number: '03', title: 'Aufbereitung PRF/PRP', description: 'Zentrifugation; bei PRF Bildung einer Fibrin‑Matrix mit gebundenen Wachstumsfaktoren.' },
-      { number: '04', title: 'Injektionen', description: 'Mikro‑Injektionen der Konzentrate im ca. 1‑cm‑Raster in betroffene Areale.' },
-      { number: '05', title: 'Nachsorge & Serie', description: 'Heimpflege/Verhaltenshinweise; Planung weiterer Sitzungen und Kontrollen.' },
+      { number: '02', title: 'Vorbereitung', description: 'Optional Betäubungscreme (30–60 Min.). Blutentnahme.' },
+      { number: '03', title: 'Aufbereitung PRF/PRP', description: '' },
+      { number: '04', title: 'Injektionen', description: 'Mikro‑Injektionen der Matrix im ca. 1 cm‑Raster in betroffene Areale.' },
+      { number: '05', title: 'Nachsorge & Planung', description: '' },
     ],
   };
 

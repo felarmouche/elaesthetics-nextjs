@@ -58,7 +58,7 @@ export default function EigenbluttherapiePRFPage() {
   const heroData: HeroSectionProps = {
     title: 'Eigenbluttherapie in Bremen',
     subtitle:
-      'PRF/PRP für Hautqualität und Haare. Natürliche autologe Plasma-Behandlung zur ästhetischen Unterstützung von Hautbild und Haaren',
+      'PRF/PRP-Eigenbluttherapie - Natürliche Behandlung zur Unterstützung von Hautqualität und Haarwachstum',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
     imageAlt: 'Eigenbluttherapie PRF/PRP für Haut und Haare – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungsgespräch vereinbaren', href: '/kontakt' },
@@ -66,11 +66,12 @@ export default function EigenbluttherapiePRFPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: 'Was ist eine PRF Behandlung (Eigenbluttherapie)?',
+    title: 'Was ist Eigenbluttherapie?',
     content: [
       'Plättchenreiches Fibrin (PRF) ist eine moderne Eigenbluttherapie, die als Weiterentwicklung der bekannten PRP-Therapie gilt.',
-      'Sie ist eine minimalinvasive und innovative Methode zur Biostimulation und Revitalisierung der Haut sowie zur unterstützenden Anwendung bei Haarausfall. Besonders schonend und zu 100 % natürlich, setzt sie ausschließlich auf körpereigene Substanzen.',
-      'Während bei der PRP-Therapie Blutplasma verwendet wird, arbeite ich bei der PRF-Behandlung mit blutplättchenreichem Fibrin. Dieses enthält mehr Wachstumsfaktoren sowie Stammzellen, die mit regenerativen Prozessen der Haut und der Kopfhaut in Verbindung gebracht werden.'
+      'Sie ist eine minimalinvasive und innovative Methode zur Biostimulation und Revitalisierung der Haut sowie bei Haarausfall. Besonders schonend und zu 100 % natürlich, setzt sie ausschließlich auf körpereigene Substanzen.',
+      'Während bei der PRP-Therapie Blutplasma verwendet wird, kommt bei der PRF-Behandlung plättchenreiches Fibrin zum Einsatz. Dieses enthält einen höheren Anteil an Wachstumsfaktoren sowie Stammzellen, welche regenerative Prozesse der Haut und der Kopfhaut unterstützen können.',
+      'Durch den Verzicht auf Gerinnungshemmer bleibt die injizierte Fibrinmatrix länger im Gewebe und gibt Wachstumsfaktoren über einen längeren Zeitraum ab.'
     ],
   };
 
@@ -87,32 +88,12 @@ export default function EigenbluttherapiePRFPage() {
       {
         question: 'Für was ist eine Eigenbluttherapie gut?',
         answer:
-          'Zur Unterstützung der Hautqualität (Textur, feine Linien, Poren, Aknenarben) sowie ergänzend bei Haarausfall. Es handelt sich um eine autologe Plasma‑Behandlung mit körpereigenen Bestandteilen.',
+          'Zur Verbesserung der Hautqualität. Zum Beispiel bei feinen Linien, Trockenheit, Akne, Aknenarben, Rosazea, sowie bei Haarausfall.',
       },
       {
         question: 'Was ist der Unterschied zwischen PRF und PRP?',
         answer:
-          'PRF (thrombozytenreiches Fibrin) bildet eine Matrix, die Faktoren zeitversetzt freisetzen kann; PRP (thrombozytenreiches Plasma) ist flüssig und hochkonzentriert. Auswahl je nach Areal/Ziel – wir beraten individuell.',
-      },
-      {
-        question: 'Wie viele Sitzungen sind nötig und wann sieht man etwas?',
-        answer:
-          'Oft 4–6 Sitzungen im Abstand von 4–6 Wochen, danach Auffrischungen. Veränderungen entwickeln sich schrittweise; bei Haaren ist Geduld nötig (Haarzyklus).',
-      },
-      {
-        question: 'Was kostet eine Eigenbluttherapie beim Arzt?',
-        answer:
-          'Ab etwa 300 € pro Sitzung (Richtwert, GOÄ‑orientiert). Ein individueller Kostenplan erfolgt nach Untersuchung und Zieldefinition.',
-      },
-      {
-        question: 'Ist das dasselbe wie „Vampir Lifting“?',
-        answer:
-          'Der Begriff „Vampir Lifting“ wird umgangssprachlich für ästhetische Anwendungen genutzt. Um Keyword‑Kannibalisierung zu vermeiden, finden Sie diese Begriffe und Details separat auf unserer Seite zum Vampir Lifting.',
-      },
-      {
-        question: 'Gibt es Nebenwirkungen oder Kontraindikationen?',
-        answer:
-          'Vorübergehend möglich: Rötung, Schwellung, Hämatome, Spannungsgefühl. Nicht geeignet u. a. bei Schwangerschaft/Stillzeit, relevanten Gerinnungsstörungen, akuten Infektionen. Wir klären dies vorab.',
+          'PRF (thrombozytenreiches Fibrin) bildet eine Matrix, die Wachstumsfaktoren über längere Zeit freisetzen kann als PRP (thrombozytenreiches Plasma).',
       },
     ],
   };
