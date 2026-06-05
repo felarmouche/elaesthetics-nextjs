@@ -75,7 +75,7 @@ export default function VampirLiftingPage() {
   const heroData: HeroSectionProps = {
     title: 'Vampir Lifting in Bremen',
     subtitle:
-      'Vampir Lifting mit PRP & PRF – natürliche Hautverjüngung durch hautverjüngende Wachstumsfaktoren und Stammzellen.',
+      'Vampir Lifting mit PRP & PRF – natürliche Hautverjüngung durch Wachstumsfaktoren und Stammzellen.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
     imageAlt: 'Vampir Lifting mit Eigenblut-Plasma für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },

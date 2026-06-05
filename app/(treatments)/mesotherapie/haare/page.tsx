@@ -6,7 +6,7 @@ import { PRICES } from '@/lib/constants';
 import { polyHaar, prfHaar } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Mesotherapie Haare Bremen',
+  title: 'Mesotherapie für die Haare in Bremen',
   description: 'Mesotherapie gegen Haarausfall in Bremen: Aktiviert Haarwurzeln, fördert Verdichtung. Für Männer & Frauen. Jetzt beraten lassen.',
   keywords: ['Mesotherapie Haare Bremen', 'Haarausfall Behandlung Bremen', 'Haarverdichtung Bremen', 'Haarwachstum fördern Bremen', 'Kopfhaut Mesotherapie Bremen'],
   openGraph: {
@@ -52,8 +52,8 @@ export default function MesotherapieHaarePage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: "Mesotherapie Haare in Bremen",
-    subtitle: "Leiden Sie unter Haarausfall oder dünner werdendem Haar?\nMit der Mesotherapie Haar-Behandlung aktivieren wir Ihre Haarwurzeln und fördern das Haarwachstum.",
+    title: "Mesotherapie für die Haare in Bremen",
+    subtitle: "Mesotherapie für die Haare - Mikronährstoff-Injektionen gegen Haarausfall und Verbesserung der Haarstruktur ",
     imageSrc: "/assets/mesotherapie/mesotherapie-haare_hero.webp",
     imageAlt: "Mesotherapie für Haare bei Haarausfall – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
@@ -61,11 +61,10 @@ export default function MesotherapieHaarePage() {
   };
 
   const introData: IntroSectionProps = {
-    title: "Was ist Mesotherapie für die Haare?",
+    title: "Mesotherapie bei Haarausfall",
     content: [
-      "Die Mesotherapie für die Haare ist ein minimal-invasives Verfahren zur Behandlung von Haarausfall, bei dem verschiedene vitalisierende Stoffe, unter anderem Vitamine und Spurenelemente, direkt in die Kopfhaut injiziert werden.",
-      "Der Wirkstoffkomplex versorgt die Haarfollikel intensiv mit essentiellen Nährstoffen, verbessert die Durchblutung der Kopfhaut und aktiviert ruhende Haarwurzeln. Dies führt zu einer deutlichen Reduktion des Haarausfalls und zur Verdichtung des bestehenden Haares.",
-      "In unserer Praxis in Bremen behandeln wir mit der Haarmesotherapie sowohl Frauen als auch Männer mit verschiedenen Formen von Haarausfall: erblich bedingter Haarausfall (androgenetische Alopezie), diffuser Haarausfall oder kreisrunder Haarausfall. Die Behandlung ist sanft, nahezu schmerzfrei und erfordert keine Ausfallzeit. Klinische Studien zeigen: 80% der Patienten berichten ab der 3. Behandlung von deutlich weniger Haarausfall."
+      "Die Mesotherapie für die Haare ist ein minimal-invasives Verfahren zur Behandlung von Haarausfall, bei dem verschiedene vitalisierende Stoffe, unter anderem Vitamine und Spurenelemente, in hoch konzentrierter Form in die Kopfhaut injiziert werden.",
+      "Der Wirkstoffkomplex versorgt die Haarfollikel intensiv mit essentiellen Nährstoffen, verbessert die Durchblutung der Kopfhaut und aktiviert ruhende Haarwurzeln. Dies kann zu einer deutlichen Reduktion des Haarausfalls und zur Verdichtung des bestehenden Haares führen.",
     ]
   };
 
@@ -81,7 +80,7 @@ export default function MesotherapieHaarePage() {
   ];
 
   const areasData: AreasSectionProps = {
-    title: "Für welche Arten von Haarausfall ist die Mesotherapie geeignet?",
+    title: "Anwendungsbereiche",
     categories: [
       {
         category: "Häufigste Indikationen",
@@ -124,8 +123,8 @@ export default function MesotherapieHaarePage() {
     steps: [
       {
         number: "01",
-        title: "Analyse und Beratung",
-        description: "In unserer Bremer Praxis führe ich zunächst eine gründliche Analyse Ihrer Kopfhaut und Haarstruktur durch. Wir besprechen die Art Ihres Haarausfalls, mögliche Ursachen und Ihre Erwartungen. Ich erkläre Ihnen genau, wie die Mesotherapie wirkt und welche Ergebnisse Sie erwarten können."
+        title: "Beratung",
+        description: "Im Beratungsgespräch klären wir Ihre Wünsche und Ziele."
       },
       {
         number: "02",
@@ -196,20 +195,6 @@ export default function MesotherapieHaarePage() {
   };
 
 
-
-  const consultationData: ConsultationSectionProps = {
-    title: "Ihre Expertin für Haarmesotherapie in Bremen",
-    description: [
-      "Sie leiden unter Haarausfall und möchten Ihre Haarwurzeln stärken?",
-      "Mein Name ist Ola El-Armouche, ich bin Ärztin mit Spezialisierung auf ästhetische Medizin und regenerative Therapien. Mit langjähriger Erfahrung in der Mesotherapie helfe ich Ihnen, Haarausfall zu reduzieren und volleres, kräftigeres Haar zu fördern – individuell auf Ihre Situation abgestimmt.",
-      "Ich bin zertifiziert für Injektionsbehandlungen und bilde mich kontinuierlich in modernen Haarausfall-Therapien fort. Bei EL Aesthetics kombiniere ich fundiertes medizinisches Wissen mit einem empathischen Verständnis für die emotionale Belastung, die Haarausfall bedeuten kann.",
-      "Bei EL Aesthetics in Bremen steht Ihre Zufriedenheit im Mittelpunkt. Vereinbaren Sie noch heute Ihren persönlichen Beratungstermin und entdecken Sie, wie die Mesotherapie Ihr Haar wieder stärken kann."
-    ],
-    ctaText: "Jetzt Beratungstermin anfragen",
-    ctaHref: "/kontakt",
-    backgroundColor: "bg-[#FDF6F0]"
-  };
-
   const treatmentsData: TreatmentsSectionProps = {
     title: "Weitere Behandlungen gegen Haarausfall in Bremen",
     treatments: [
@@ -223,36 +208,20 @@ export default function MesotherapieHaarePage() {
     title: "Häufig gestellte Fragen (FAQ)",
     faqs: [
       {
-        question: "Wie wirkt die Mesotherapie gegen Haarausfall?",
-        answer: "Die Mesotherapie versorgt die Haarfollikel direkt mit einem hochkonzentrierten Wirkstoffcocktail aus Vitaminen, Spurenelementen, Aminosäuren und durchblutungsfördernden Substanzen. Diese Nährstoffe aktivieren ruhende Haarwurzeln, stärken bestehende Haarfollikel und verbessern die Durchblutung der Kopfhaut. Das Ergebnis: Der Haarausfall wird reduziert, das bestehende Haar wird kräftiger und dichter, und die Haarwachstumsphase wird verlängert."
+        question: "Wann sind die Ergebnisse der Mesotherapie sichtbar?",
+        answer: "Für ein sichtbares Ergebnis sollte die Mesotherapie mehrfach in kurzen Abständen wiederholt werden. Schon nach einigen Wochen lässt sich meist ein verbesserter Haarwuchs beobachten. Zwei bis drei Monate nach der Behandlung wächst das Haar gesünder und voller nach.\n\nDie Haut wirkt frischer und besser durchblutet, die Schuppenbildung lässt nach.\n\nAnwendungsbeobachtungen haben gezeigt, dass bei einer Mesotherapie in etwa 80% der Fälle der Haarausfall ab der dritten Behandlung abnimmt. Nach zwei bis drei Monaten lässt sich ein deutlich gesünderes und volleres Haarwachstum beobachten."
       },
       {
-        question: "Welche Erfolgsrate hat die Haarmesotherapie?",
-        answer: "Klinische Studien zeigen beeindruckende Ergebnisse: Etwa 80% der Patienten berichten ab der 3. Behandlung von einer deutlichen Reduktion des Haarausfalls. Nach 2-3 Monaten ist bei den meisten Patienten eine sichtbare Verdichtung des Haares erkennbar. Die Erfolgsrate ist besonders hoch bei erblich bedingtem und diffusem Haarausfall in frühen bis mittleren Stadien."
+        question: "Wie lange hält das Ergebnis und lässt sich die Behandlung wiederholen?",
+        answer: "Die genaue Wirkungsdauer ist individuell unterschiedlich und hängt auch von der Ausprägung des Haarausfalls ab. Um das Ergebnis dauerhaft zu erhalten, empfiehlt es sich, nach der Erstbehandlung regelmäßige Auffrischungen durchzuführen."
       },
       {
-        question: "Ist die Behandlung schmerzhaft?",
-        answer: "Die Haarmesotherapie wird als gut verträglich beschrieben. Durch die Verwendung sehr feiner Nadeln und die spezielle Injektionstechnik ist die Behandlung nahezu schmerzfrei. Die meisten Patienten empfinden nur ein leichtes Prickeln oder Druckgefühl. Eine Betäubung ist in der Regel nicht erforderlich, kann aber bei Bedarf mit einer betäubenden Creme erfolgen."
+        question: "Für wen eignet sich eine Mesotherapie?",
+        answer: "Da es sich um eine nebenwirkungsarme Anwendung handelt, ist sie grundsätzlich für jeden Patienten geeignet. Allerdings raten wir bei bestimmten Allergien und Erkrankungen wie Krebs oder Blutgerinnungsstörungen sowie während der Schwangerschaft und Stillzeit von dieser Therapieform ab.\n\nDie Mesotherapie kann als unterstützende Maßnahme nach einer Haartransplantation zum Einsatz kommen."
       },
       {
-        question: "Für wen ist die Therapie geeignet?",
-        answer: "Die Mesotherapie eignet sich grundsätzlich für Frauen und Männer mit verschiedenen Formen von Haarausfall: erblich bedingter Haarausfall (androgenetische Alopezie), diffuser Haarausfall (hormonell, stressbedingt, ernährungsbedingt), kreisrunder Haarausfall in leichten Formen, sowie dünnes, lichtes Haar mit Volumenverlust. Besonders effektiv ist die Behandlung in frühen bis mittleren Stadien des Haarausfalls. Wir raten bei bestimmten Allergien, Krebserkrankungen, Blutgerinnungsstörungen sowie während der Schwangerschaft und Stillzeit von dieser Therapieform ab. Die Mesotherapie kann auch als unterstützende Maßnahme nach einer Haartransplantation zum Einsatz kommen."
-      },
-      {
-        question: "Wie viele Behandlungen sind notwendig?",
-        answer: "Für optimale Ergebnisse empfehle ich eine Intensivphase von 6-10 Behandlungen im Abstand von 1-2 Wochen. Erste Verbesserungen – deutlich weniger Haarausfall – zeigen sich meist ab der 3. Behandlung. Das vollständige Ergebnis mit dichterem, kräftigerem Haar entwickelt sich nach 2-3 Monaten. Zur Erhaltung des Ergebnisses sind Auffrischungen alle 3-6 Monate sinnvoll."
-      },
-      {
-        question: "Wann sehe ich erste Ergebnisse?",
-        answer: "Die meisten Patienten bemerken ab der 3. Behandlung eine deutliche Reduktion des Haarausfalls – weniger Haare in der Bürste, im Abfluss oder auf dem Kissen. Nach etwa 2-3 Monaten wird das Haar sichtbar dichter und kräftiger, die Haut wirkt frischer und besser durchblutet, und die Schuppenbildung lässt nach. Das Haarwachstum verbessert sich kontinuierlich über mehrere Monate. Wichtig ist Geduld: Haare wachsen langsam (ca. 1cm pro Monat), daher braucht die vollständige Verdichtung Zeit."
-      },
-      {
-        question: "Gibt es Ausfallzeiten nach der Behandlung?",
-        answer: "Nein, die Haarmesotherapie erfordert keine Ausfallzeit. Sie können direkt nach der Behandlung Ihren normalen Alltag fortsetzen. Leichte Rötungen oder minimale Schwellungen der Kopfhaut können auftreten, sind aber in der Regel innerhalb weniger Stunden verschwunden. Sie sollten lediglich für 24 Stunden auf Haarwäsche und intensives Schwitzen verzichten."
-      },
-      {
-        question: "Kann sie mit anderen Haarausfall-Behandlungen kombiniert werden?",
-        answer: "Ja, die Mesotherapie lässt sich hervorragend mit anderen Behandlungen kombinieren. Besonders effektiv ist die Kombination mit PRF/PRP-Eigenbluttherapie, Polynukleotiden oder medizinischem Microneedling der Kopfhaut. Auch eine begleitende medikamentöse Therapie (z.B. Minoxidil) ist möglich. In einem persönlichen Beratungsgespräch erstelle ich einen individuellen Behandlungsplan, der optimal auf Ihre Situation abgestimmt ist."
+        question: "Mögliche Nebenwirkungen",
+        answer: "Die Mesotherapie ist eine besonders schonende, minimalinvasive Behandlungsform gegen Haarausfall.\n\nNach der Mesotherapie kann es zu leichten Schmerzen, Rötungen, Schwellungen oder Blutergüssen im Behandlungsbereich kommen. Diese Symptome sind aber nur vorübergehend und klingen selbstständig wieder ab.\n\nSelten kommt es im Zuge der Mesotherapie zu allergischen Reaktionen. Um solche Komplikationen zu vermeiden, werden Sie im Vorfeld der Behandlung eingehend zu bekannten Allergien befragt."
       },
 
     ]

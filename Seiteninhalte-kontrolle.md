@@ -16,3 +16,4 @@
 - /medizinische-behandlungen
 - /augen-behandlung
 - /polynukleotide
+- /prf alles

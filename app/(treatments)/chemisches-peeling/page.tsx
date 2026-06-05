@@ -77,7 +77,7 @@ export default function ChemischesPeelingPage() {
   const heroData: HeroSectionProps = {
     title: 'Chemisches Peeling in Bremen',
     subtitle:
-      'Zur Unterstützung der Hautregeneration, Verfeinerung des Hautbildes und Milderung von Pigmentstörungen.',
+      'Biorevitalisierung durch chemisches Peeling - Pigmentstörungen, Hauterneuerung und Hautverbesserung',
     imageSrc: '/assets/chemisches-peeling/chemisches-peeling_hero.webp',
     imageAlt: 'Chemisches Peeling zur Hauterneuerung und Pigmentbehandlung – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -87,10 +87,9 @@ export default function ChemischesPeelingPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist ein chemisches Peeling?',
     content: [
-      'Das chemische Peeling ist ein nicht-chirurgisches Verfahren der ästhetischen Medizin zur kontrollierten Hauterneuerung. Es unterstützt die Behandlung von Pigmentflecken, Aknenarben, feinen Falten und fahlem Teint.',
-      'Die eingesetzte Wirkstoffkombination besteht aus Trichloressigsäure (TCA), Wasserstoffperoxid (H₂O₂) und Kojisäure. TCA ermöglicht das gezielte Eindringen von H₂O₂ bis in mittlere Hautschichten. Dort werden Kollagenbildung und Wachstumsfaktoren angeregt, Entzündungsprozesse reguliert und die zelluläre Regeneration gefördert. Kojisäure wirkt zusätzlich aufhellend bei leichten Pigmentveränderungen – und das alles ohne sichtbare Abschälung.',
-      'In unserer Praxis setzen wir PRX-T33 ein – ein patentiertes Verfahren, das auf dem Konzept der Biorevitalisierung basiert: eine Tiefenstimulation der Haut, in der Regel ohne sichtbare Abschälung und ohne Ausfallzeit.',
-      'Das Verfahren ist grundsätzlich für Frauen und Männer aller Hauttypen, Altersgruppen und Jahreszeiten geeignet. Indikationen umfassen u. a. Elastizitätsverlust, feine Falten, Pigmentflecken sowie aknebedingte Veränderungen. Geeignete Areale: Gesicht, Hals, Dekolleté, Oberarme. Kontraindikationen und Alternativen besprechen wir im Arztgespräch.',
+      'Das chemische Peeling ist ein Verfahren der ästhetischen Medizin zur kontrollierten Hauterneuerung. Es unterstützt die Behandlung von Pigmentflecken, Elastizitätsverlust/Hauterschlaffung, Akne & aknebedingte Narben, Dehnungsstreifen, feinen Falten und fahlem Teint.',
+      'Die eingesetzte Wirkstoffkombination besteht unter anderem aus Trichloressigsäure (TCA), Wasserstoffperoxid und Kojisäure. Durch die spezielle Formulierung dringen die Substanzen bis in mittlere Hautschichten vor, ohne eine sichtbare Abschälung zu verursachen.',
+      'In dieser Tiefe können verschiedene biologische Prozesse angeregt werden, etwa die Bildung von kollagenen Fasern oder die Freisetzung von Wachstumsfaktoren, die eine Regeneration der Haut bewirken können.',
     ],
   };
 
@@ -134,10 +133,9 @@ export default function ChemischesPeelingPage() {
     benefits: [
       { title: 'Preis', description: `ab ${PRICES.chemPeeling}€ pro Behandlung*`, iconUrl: '/assets/icons/EUR.svg' },
       { title: 'Dauer', description: 'ca. 45 Minuten', iconUrl: '/assets/icons/TIME.svg' },
-      { title: 'Wirkeintritt', description: 'sofort + Aufbau über Wochen', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Wirkdauer', description: 'häufig ca. 9–12 Monate', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Betäubung', description: 'nicht erforderlich', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Gesellschaftsfähig', description: 'i.d.R. sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note: '*Richtwert; Abrechnung GOÄ-orientiert. Der konkrete Betrag richtet sich nach Areal/Umfang und wird individuell festgelegt.',
   };
@@ -145,11 +143,15 @@ export default function ChemischesPeelingPage() {
   const processData: ProcessSectionProps = {
     title: 'Ablauf der chemischen Peeling‑Behandlung',
     steps: [
-      { number: '01', title: 'Beratung & Hautvorbereitung', description: 'Analyse von Hauttyp und Zielen; Besprechung von Alternativen/Kontraindikationen. Reizende Maßnahmen vorab meiden.' },
+      {
+        number: "01",
+        title: "Beratung",
+        description: "Im Beratungsgespräch klären wir Ihre Wünsche und Ziele."
+      },
       { number: '02', title: 'Reinigung & Vorbereitung', description: 'Gründliche Reinigung/Desinfektion für optimales Eindringen der Wirkstoffe.' },
       { number: '03', title: 'Auftragen & Einmassieren', description: 'PRX‑T33 wird schrittweise appliziert und einmassiert (mögliches Wärme-/Brenngefühl). Einwirkzeit ca. 10–15 Minuten.' },
       { number: '04', title: 'Neutralisation & Pflege', description: 'Abwaschen/Neutralisation, beruhigende Maske und angepasste Pflege.' },
-      { number: '05', title: 'Nachsorge & Verlauf', description: 'Heimpflege inkl. konsequentem UV‑Schutz (LSF 50+). Beurteilung des Effekts über die folgenden Wochen; ggf. Serie (3–5 Sitzungen) im 1–2‑Wochen‑Abstand.' },
+      { number: '05', title: 'Nachsorge & Verlauf', description: 'Heimpflege inkl. konsequentem UV‑Schutz (LSF 50+).' },
     ],
   };
 
@@ -189,18 +191,12 @@ export default function ChemischesPeelingPage() {
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zum chemischen Peeling',
     faqs: [
-      { question: 'Wie viele Behandlungen sind nötig?', answer: 'Für sichtbare Ergebnisse werden häufig 3–5 Sitzungen im Abstand von 1–2 Wochen geplant.' },
-      { question: 'Wie lange dauert eine Behandlung?', answer: 'In der Regel ca. 45 Minuten inkl. Vorbereitung.' },
-      { question: 'Wann wirkt ein chemisches Peeling?', answer: 'Ein erster Effekt ist oft sofort sichtbar; die Tiefenstimulation entwickelt sich über Wochen.' },
-      { question: 'Welche Vorteile hat ein chemisches Peeling?', answer: 'Das PRX-T33-Peeling ist ganzjährig anwendbar – auch im Sommer – und verursacht in der Regel keine erhöhte Photosensitivität. Die Behandlung eignet sich für alle Hauttypen und Altersgruppen, erfordert keine Ausfallzeit und ist in der Regel gut verträglich. Ergänzend unterstützt sie ein ebenmäßigeres Hautbild, eine optische Verfeinerung der Hautstruktur sowie eine Aufhellung von Pigmentierungen (je nach Befund).' },
-      { question: 'Für wen ist es geeignet?', answer: 'Grundsätzlich für Frauen und Männer vieler Hauttypen geeignet. Nicht empfohlen bei: bekannter Überempfindlichkeit gegen TCA, Wasserstoffperoxid oder Kojisäure; Schwangerschaft/Stillzeit; offenen Wunden oder frischen Verletzungen im Behandlungsbereich; akuten Hautentzündungen; aktiven bakteriellen Hautinfektionen oder behandlungsbedürftigen Hauterkrankungen.' },
-      { question: 'Ist es schmerzhaft?', answer: 'Meist gut toleriert; möglich sind kurzzeitiges Brennen/Wärmegefühl beim Einmassieren.' },
-      { question: 'Bei empfindlicher Haut?', answer: 'Je nach Befund möglich; die Konzentration und Sitzungsanzahl werden angepasst.' },
-      { question: 'Welche Nebenwirkungen sind möglich?', answer: 'Die Behandlung ist in der Regel gut verträglich. Beim Auftragen kann ein leichtes Brennen und eine leichte Rötung auftreten, die sich typischerweise innerhalb weniger Stunden zurückbilden. Sichtbare Abschälung tritt meist nicht auf; bei empfindlicherer Haut kann gelegentlich leichtes Schuppen vorkommen – das ist harmlos und vorübergehend. Stärkere Reaktionen sind aufgrund der spezifischen Formulierung selten. Eine konsequente Nachsorge (UV-Schutz LSF 50+, milde Pflege) ist wichtig, um das Ergebnis zu schützen.' },
-      { question: 'Schwangerschaft?', answer: 'Während Schwangerschaft/Stillzeit wird von chemischen Peelings abgeraten.' },
-      { question: 'Hilft es gegen Pigmentflecken oder Falten?', answer: 'Je nach Ursache/Befund kann eine Aufhellung/Glättung unterstützt werden. Eine allgemeine Wirkung kann nicht zugesichert werden.' },
-      { question: 'Wie oft für langfristige Ergebnisse?', answer: 'Nach Serie (3–5) ggf. Auffrischungen in größeren Abständen – individuell.' },
-      { question: 'Ist ein chemisches Peeling besser als Fruchtsäure?', answer: 'Unterschiedliche Mechanismen: Fruchtsäure wirkt oberflächlich exfolierend; PRX‑T33 zielt auf Tiefenstimulation bei meist kurzer Auszeit. Auswahl individuell.' },
+      { question: 'Wofür kann die Behandlung angewendet werden?', answer: 'Für Gesicht, Hals, Dekolleté und Oberarme bei: Elastizitätsverlust der Haut, Haut-Erschlaffung, Falten, Akne und Aknenarben, Pigmentflecken, eingesunkenen Narben sowie Dehnungsstreifen.' },
+      { question: 'Wie wirkt das chemische Peeling?', answer: 'Die Hauptbestandteile sind Trichloressigsäure (TCA), Wasserstoffperoxid und Kojisäure. TCA unterstützt das Eindringen von Wasserstoffperoxid in die Haut und moduliert dessen Aggressivität. Beide Substanzen dringen in die mittlere Hautschicht ein und fördern die Neubildung von kollagenen Fasern, kontrollieren Entzündungsprozesse und setzen Wachstumsfaktoren frei. Diese Synergie ermöglicht eine tiefere Wirkung ohne Schälung. Kojisäure wirkt aufhellend und hilft bei leichten Pigmentstörungen.' },
+      { question: 'Was ist das Besondere an der Behandlung?', answer: 'Die Behandlung kann auch im Sommer durchgeführt werden, hat keine Ausfallzeit dank sehr guter Verträglichkeit, ist für alle Hauttypen geeignet, kennt kein Alterslimit und verursacht keine Fotosensibilität.' },
+      { question: 'Wann sollte die Behandlung nicht durchgeführt werden?', answer: 'Die Behandlung sollte nicht durchgeführt werden bei bekannter Überempfindlichkeit gegenüber TCA, Wasserstoffperoxid oder Kojisäure, während Schwangerschaft und Stillzeit, bei offenen Hautstellen oder frischen Wunden, bei akuten Hautentzündungen sowie bei bakteriellen Hautinfektionen oder anderen behandlungsbedürftigen Hauterkrankungen.' },
+      { question: 'Für wen ist die Behandlung geeignet?', answer: 'Die Methode ist grundsätzlich für Frauen und Männer aller Hauttypen, Altersgruppen und Jahreszeiten geeignet. Mögliche Effekte sind: Stimulation tieferer Hautschichten, Förderung der Hautelastizität, Regulierung der Talgproduktion, Aufhellung von Pigmentunregelmäßigkeiten sowie Verbesserung von Hautstruktur und -gleichmäßigkeit.' },
+      { question: 'Mögliche Nebenwirkungen?', answer: 'Die Behandlung wird im Allgemeinen sehr gut vertragen. Häufig treten nur ein leichtes Brennen und eine milde Rötung auf, die innerhalb weniger Stunden abklingen. Ein sichtbarer Peelingeffekt bleibt in der Regel aus; bei sehr empfindlicher Haut kann eine leichte, unbedenkliche Abschuppung auftreten. Stärkere Hautreaktionen sind aufgrund der speziellen Produktzusammensetzung selten, können jedoch nicht vollständig ausgeschlossen werden.' },
     ],
   };
 

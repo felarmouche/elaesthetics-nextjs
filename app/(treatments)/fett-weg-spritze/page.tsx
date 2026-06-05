@@ -78,7 +78,7 @@ export default function FettWegSpritzePage() {
     const heroData: HeroSectionProps = {
         title: 'Injektionslipolyse / Fettreduktion ohne OP in Bremen',
         subtitle:
-            'Fett-weg-Spritze: Gezielte Fettreduktion ohne Operation: Doppelkinn, Hängebäckchen & lokale Fettdepots dauerhaft auflösen.',
+            'Fett-weg-Spritze: Gezielte Fettreduktion ohne Operation: Doppelkinn, Hängebäckchen & lokale Fettdepots auflösen lassen',
         imageSrc: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp',
         imageAlt: 'Fett-weg-Spritze Injektionslipolyse für Doppelkinn – EL Aesthetics Bremen',
         primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -209,16 +209,15 @@ export default function FettWegSpritzePage() {
         title: 'Ablauf der Fett-weg-Spritze Behandlung in Bremen',
         steps: [
             {
-                number: '01',
-                title: 'Beratung & Präparatauswahl',
-                description:
-                    'Je nach individueller Situation und Behandlungsziel verwende ich verschiedene Präparate zur Fettreduktion. Die Auswahl des jeweiligen Produkts erfolgt nach sorgfältiger Beratung und Ihrer persönlichen Eignung. Dabei berücksichtige ich sowohl medizinische Faktoren als auch Ihre Erwartungen an das Behandlungsergebnis. Wir besprechen die Anzahl der notwendigen Behandlungen, den Behandlungsverlauf sowie mögliche Nachsorgemaßnahmen.',
+                number: "01",
+                title: "Beratung",
+                description: "Im Beratungsgespräch klären wir Ihre Wünsche und Ziele."
             },
             {
                 number: '02',
                 title: 'Vorbereitung & Markierung',
                 description:
-                    'Die zuvor festgelegten Behandlungsareale werden markiert und desinfiziert. Die Injektionslipolyse gilt zwar als schmerzarm, auf Wunsch kann jedoch eine Betäubungscreme aufgetragen werden. Dies verlängert die Behandlungsdauer um ca. 30 Minuten.',
+                    'Die zuvor festgelegten Behandlungsareale werden markiert und desinfiziert. Auf Wunsch kann eine Betäubungscreme aufgetragen werden.',
             },
             {
                 number: '03',
@@ -230,7 +229,7 @@ export default function FettWegSpritzePage() {
                 number: '04',
                 title: 'Massage & Nachbereitung',
                 description:
-                    'Anschließend erfolgt eine leichte Massage, um den Wirkstoff optimal zu verteilen. Sie erhalten detaillierte Nachsorgeanweisungen, um den Heilungsprozess zu beschleunigen und das Behandlungsergebnis zu optimieren.',
+                    'Anschließend erfolgt eine leichte Massage, um den Wirkstoff optimal zu verteilen.',
             },
         ],
     };
@@ -331,56 +330,12 @@ export default function FettWegSpritzePage() {
     const faqData: FAQSectionProps = {
         title: 'Häufige Fragen zur Fett-weg-Spritze',
         faqs: [
-            {
-                question: 'Wie funktioniert die Fett-weg-Spritze genau?',
-                answer:
-                    'Die Fett-weg-Spritze wirkt durch die Injektion von Wirkstoffen wie Phosphatidylcholin und Desoxycholsäure direkt in das Fettgewebe. Diese Substanzen lösen die Zellmembranen der Fettzellen auf, wodurch die Fettzellen zerstört werden. Der Körper baut die aufgelösten Fettzellen dann natürlich ab und scheidet sie über das Lymphsystem und die Leber aus. Die behandelten Fettzellen sind dauerhaft entfernt und können sich nicht regenerieren.',
-            },
-            {
-                question: 'Für wen ist die Fett-weg-Spritze geeignet?',
-                answer:
-                    'Die Injektionslipolyse ist ideal für Personen mit kleinen bis mittelgroßen, lokalisierten Fettdepots, die trotz Sport und Diät nicht verschwinden. Besonders geeignet für: Doppelkinn, Hängebäckchen, Oberarme, seitliche Bauchfettpolster, Love Handles, innere Oberschenkel. NICHT geeignet ist die Behandlung zur allgemeinen Gewichtsreduktion oder bei starker Fettleibigkeit (BMI > 30). Sie ersetzt keine gesunde Ernährung und Bewegung.',
-            },
-            {
-                question: 'Wann darf die Fett-weg-Spritze NICHT angewendet werden?',
-                answer:
-                    'Absolute Kontraindikationen: Schwangerschaft und Stillzeit, Diabetes mit Gefäßerkrankungen (Mikroangiopathien). Relative Kontraindikationen: Autoimmunerkrankungen (z.B. Sklerodermie), schwere Leber- oder Nierenerkrankungen, Allergien gegen Inhaltsstoffe, Blutgerinnungsstörungen, akute Infektionen, schwere Fettleibigkeit (BMI > 30). Im Beratungsgespräch klären wir Ihre individuelle Eignung.',
-            },
-            {
-                question: 'Wie viele Behandlungen brauche ich?',
-                answer:
-                    'Die Anzahl der notwendigen Behandlungen wird im Beratungsgespräch festgelegt. In der Regel erfolgen Behandlungen alle 2-8 Wochen (abhängig vom gewählten Präparat), bis das gewünschte Ergebnis erreicht ist. Meistens sind 3-5 Behandlungen notwendig, um ein optimales Ergebnis zu erzielen. Erste Veränderungen können nach 2 Behandlungen sichtbar werden. Die Wirkung variiert je nach individueller Reaktion, Menge des injizierten Wirkstoffs und Anzahl der Behandlungen.',
-            },
-            {
-                question: 'Wie lange halten die Ergebnisse?',
-                answer:
-                    'Mit der Fett-weg-Spritze werden die Fettzellen in den behandelten Bereichen dauerhaft aufgelöst und vom Körper abtransportiert. Daher sind die Ergebnisse bei guter Ernährung und ausreichender Bewegung langfristig und dauerhaft. Die behandelten Fettzellen können sich nicht regenerieren. Um die Ergebnisse zu erhalten, ist eine gesunde Lebensweise entscheidend. Bei starker Gewichtszunahme können sich allerdings andere Fettzellen im Körper vergrößern.',
-            },
-            {
-                question: 'Ist die Behandlung schmerzhaft?',
-                answer:
-                    'Die Injektionslipolyse gilt als schmerzarm. Die meisten Patienten beschreiben ein leichtes Brennen oder Stechen während der Injektionen. Auf Wunsch kann eine Betäubungscreme aufgetragen werden, was den Komfort erhöht (verlängert die Behandlung um ca. 30 Minuten). Nach der Behandlung können Schmerzen oder ein ziehendes Gefühl wie Muskelkater auftreten, die nach einigen Tagen abklingen.',
-            },
-            {
-                question: 'Welche Nebenwirkungen können auftreten?',
-                answer:
-                    'Häufige Nebenwirkungen sind: Rötungen und Schwellungen an den Injektionsstellen (normal und erwünscht), Hämatome (Blutergüsse), Schmerzen oder ziehendes Gefühl wie Muskelkater, Verhärtungen oder kleine Knoten unter der Haut (bilden sich meist zurück). Seltene Nebenwirkungen: allergische Reaktionen oder Überempfindlichkeiten. Die Ausprägung und Dauer der Nebenwirkungen sind individuell verschieden und abhängig vom verwendeten Präparat. Die meisten Nebenwirkungen klingen innerhalb von 1-2 Wochen ab.',
-            },
-            {
-                question: 'Bin ich nach der Behandlung sofort gesellschaftsfähig?',
-                answer:
-                    'In der Regel sind Sie sofort gesellschaftsfähig. Es können jedoch Schwellungen und Rötungen im Behandlungsbereich auftreten, die einige Tage sichtbar sein können. Bei Behandlungen im Gesicht (z.B. Doppelkinn) sollten Sie 2-3 Tage soziale Puffer einplanen. Sie sollten eine Woche auf intensive körperliche Aktivität, Sauna und Solarium verzichten. Planen Sie am besten ein verlängertes Wochenende für die Behandlung ein.',
-            },
-            {
-                question: 'Welche Präparate werden verwendet?',
-                answer:
-                    'Je nach individueller Situation und Behandlungsziel verwende ich verschiedene Präparate zur Fettreduktion. Die Auswahl erfolgt nach sorgfältiger Beratung und Ihrer persönlichen Eignung. Häufig verwendete Wirkstoffe sind Phosphatidylcholin und Desoxycholsäure. Die Präparate unterscheiden sich in Wirkstoffkonzentration, Wirkdauer und Behandlungsintervallen. Im Beratungsgespräch erkläre ich Ihnen die Unterschiede und empfehle das für Sie am besten geeignete Präparat.',
-            },
-            {
-                question: 'Was kostet die Fett-weg-Spritze in Bremen?',
-                answer:
-                    'Eine Behandlung kostet ab 180€ (je nach Behandlungsareal, verwendetem Präparat und benötigter Menge). Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ). Für eine komplette Behandlungsserie (3-5 Sitzungen) können Paketpreise angeboten werden. Einen transparenten, individuellen Kostenplan erhalten Sie im persönlichen Beratungsgespräch.',
-            },
+            { question: 'Was ist die Injektionslipolyse?', answer: 'Die Wirkung der Fett-weg-Spritze beruht auf der Injektion der Wirkstoffe Phosphatidylcholin und Desoxycholsäure direkt in das Fettgewebe. Diese Wirkstoffe lösen eine Reaktion aus, bei der die Fettzellen aufgelöst und abgebaut werden. Eine Hautstraffung und Körperkonturierung ist dabei eine positive Begleiterscheinung.' },
+            { question: 'Welche Bereiche können behandelt werden?', answer: 'Behandelt werden können: Doppelkinn, Hängebäckchen, Malar Bags (Schwellungen unter den Augen), Oberarme, Bauch, Rücken, Po, Hüften, Ober- und Unterschenkel, Knie, männliche Brust, Cellulite sowie Lipome. Die Fett-weg-Spritze ist am besten für Personen geeignet, die kleine bis mittelgroße Fettpolster loswerden möchten, die nicht gut auf Sport und Diät ansprechen – sie ist jedoch keinesfalls zur Gewichtsreduktion geeignet.' },
+            { question: 'Wann sollte keine Fett-weg-Spritze durchgeführt werden?', answer: 'Absolut kontraindiziert ist die Behandlung bei Schwangeren, stillenden Müttern sowie Diabetikern mit Gefäßerkrankungen. Relativ kontraindiziert ist sie bei Autoimmunerkrankungen (z. B. Sklerodermie), schweren Leber- oder Nierenerkrankungen, Allergien gegen Inhaltsstoffe, Blutgerinnungsstörungen, akuten Infektionen sowie schwerer Fettleibigkeit (BMI > 30).' },
+            { question: 'Wann tritt die Wirkung ein?', answer: 'Behandlungen erfolgen in der Regel alle 2–8 Wochen, abhängig vom gewählten Präparat. Meistens sind 3–5 Behandlungen notwendig, um ein Ergebnis zu erzielen. Erste Veränderungen können bereits nach 2 Behandlungen sichtbar werden. Die genaue Wirkung variiert je nach individueller Reaktion, Wirkstoffmenge und Anzahl der Sitzungen.' },
+            { question: 'Wie lange wirkt die Fett-weg-Spritze?', answer: 'Die behandelten Fettzellen werden dauerhaft aufgelöst und vom Körper abtransportiert. Bei gesunder Ernährung und ausreichender Bewegung sind die Ergebnisse daher langfristig. Eine gesunde Lebensweise ist entscheidend, um die Ergebnisse zu erhalten.' },
+            { question: 'Mögliche Nebenwirkungen?', answer: 'Mögliche Nebenwirkungen sind Rötungen und Schwellungen an den Injektionsstellen, Hämatome, Schmerzen oder ein ziehendes Gefühl wie Muskelkater sowie Verhärtungen oder kleine Knoten unter der Haut, die sich meist zurückbilden. Seltene allergische Reaktionen sind möglich. Ausprägung und Dauer der Nebenwirkungen sind individuell verschieden und hängen vom verwendeten Präparat ab.' },
         ],
     };
 

@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 
 export default function LongevityPage() {
   const schema = getWebPageSchema({
-    name: 'Longevity & Hautqualität in Bremen',
+    name: 'Longevity in Bremen',
     description: 'Übersicht zu präventiven Hautmedizin-Therapien: Biostimulatoren, Skinbooster und Microneedling bei EL Aesthetics.',
     url: '/longevity',
     about: {
@@ -56,9 +56,9 @@ export default function LongevityPage() {
   });
 
   const heroData: HeroSectionProps = {
-    title: 'Longevity & Verbesserung der Hautqualität in Bremen',
+    title: 'Longevity in Bremen',
     subtitle:
-      'Gesundes Altern durch den Erhalt von Zellgesundheit, Regeneration und Gewebefunktion. Regenerative Therapien wie Biostimulatoren, Polynukleotide, PRF/PRP oder medizinisches Microneedling unterstützen die nachhaltige Verbesserung von Hautstruktur und Kollagen.',
+      'Gesundes Altern durch den Erhalt von Zellgesundheit, Regeneration und Gewebefunktion.',
     imageSrc: '/assets/longevity/longevity_hero.webp',
     imageAlt: 'Longevity-Behandlung für Hautqualität und Prävention – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -98,30 +98,11 @@ export default function LongevityPage() {
           'Das hängt von Ihrem Hautbild ab. Für Feuchtigkeitsaufbau und Elastizität ist Bio-Remodelierung ideal. Bei beginnender Erschlaffung und für Zellregeneration sind Polynukleotide sinnvoll. Für natürliche Regeneration eignet sich Eigenblut (PRF/PRP). Strukturthemen profitieren von Microneedling oder sanften Peelings. Meist überzeugt ein individueller Mix.'
       },
       {
-        question: 'Was hilft wirklich gegen Hautalterung?',
-        answer:
-          'Nachweislich wirksam: Kollagenstimulatoren, Hyaluronsäure‑Boost, Polynukleotide, Wachstumsfaktoren aus Eigenblut, medizinisches Microneedling und chemische Peelings. Diese Verfahren unterstützen körpereigene Regenerationsprozesse und verbessern die Hautqualität messbar.'
-      },
-      {
         question: 'Kann man Hautalterung rückgängig machen?',
         answer:
           'Komplett zurückdrehen lässt sie sich nicht. Ziel ist eine sichtbare Verjüngungstendenz: mehr Straffung, bessere Textur, frischere Ausstrahlung und Reduktion feiner Linien. Tiefe Falten können gemildert, nicht „gelöscht” werden. Realistische, natürliche Ergebnisse stehen im Fokus.'
       },
-      {
-        question: 'Welche Gesichtsbehandlung ist ideal bei dünner Haut?',
-        answer:
-          'Sanfte Optionen wie Bio-Remodelierung (Verbesserung der Hautdicke), Polynukleotide (schonende Zellregeneration) und PRF sind besonders geeignet. Kollagenstimulatoren können langfristig Festigkeit aufbauen. Zu aggressive Peelings oder zu intensives Needling vermeiden wir bei sehr dünner Haut.'
-      },
-      {
-        question: 'Wie erhalte ich natürliches Volumen zurück?',
-        answer:
-          'Kollagenstimulatoren regen körpereigenen Aufbau an, PRF unterstützt Geweberegeneration. Bio-Remodelierung verbessert die Qualität und kann dezent polstern. Bei deutlichem Volumenverlust sind Hyaluron‑Filler oft die effizienteste Ergänzung – in natürlicher Dosierung.'
-      },
-      {
-        question: 'Kollagen fördern – was wirkt?',
-        answer:
-          'Effektiv sind Kollagenstimulatoren (z. B. Calcium-Basis), medizinisches Microneedling, PRF/PRP und Polynukleotide. Mittelstarke Peelings können zusätzlich die Neubildung anstoßen. Ergebnisse brauchen Zeit und entwickeln sich über 8–12 Wochen.'
-      },
+
       {
         question: 'Welche Ergebnisse sind realistisch?',
         answer:
@@ -132,16 +113,6 @@ export default function LongevityPage() {
         answer:
           'Nach 2–4 Wochen zeigen sich erste Verbesserungen, nach 4–8 Wochen mehr Straffung und gleichmäßigere Textur, nach 8–12 Wochen ist der Peak erreicht. Die Veränderungen wirken natürlich und bauen aufeinander auf.'
       },
-      {
-        question: 'Welche Nebenwirkungen sind möglich?',
-        answer:
-          'Meist mild und vorübergehend: Rötung, Schwellung, kleine Hämatome, Spannungsgefühl. Spezifisch je nach Methode (z. B. Schuppung nach Peelings). Kontraindikationen: u. a. Schwangerschaft/Stillzeit, akute Infektionen; Blutverdünner nur nach Rücksprache. Wir klären Sie vorab ausführlich auf.'
-      },
-      {
-        question: 'Was kostet die Hauterneuerung in Bremen?',
-        answer:
-          'Richtwerte (GOÄ): Bio-Remodelierung ca. 400–450€ pro Sitzung (meist 2×), Polynukleotide ca. 350–500€ (Serie), PRF/PRP ca. 250–400€ (2–3×), Biostimulation ca. 400–800€ je nach Areal, Microneedling ca. 150–300€ (3–6×), Peeling ca. 100–300€ je nach Tiefe. Kombis individuell kalkuliert.'
-      }
 
     ]
   };

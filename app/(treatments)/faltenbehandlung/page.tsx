@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import {
-  ConsultationSectionProps,
   ConsultationSection,
   TableOfContents,
   TOCItem,
@@ -15,12 +14,9 @@ import {
   IntroSectionProps,
   TreatmentsSection,
   TreatmentsSectionProps,
-  RelatedLinksSection,
-  RelatedLink,
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema } from '@/lib/schema';
 
-// Import der zentralen Daten aus deiner treatments.ts
 import {
   faltenRelaxation,
   faltenSkinQuality,
@@ -65,9 +61,9 @@ export default function FaltenbehandlungHubPage() {
   });
 
   const heroData: HeroSectionProps = {
-    title: 'Faltenbehandlung in Bremen – Alle Methoden',
+    title: 'Faltenbehandlung in Bremen',
     subtitle:
-      'Welche Methode passt zu Ihren Falten? Botulinumtoxin, Hyaluronsäure, Biostimulation oder Polynukleotide – hier finden Sie alle Behandlungsansätze im Überblick. Lassen Sie sich individuell beraten!',
+      'Welche Methode passt zu Ihren Falten? Botulinumtoxin, Hyaluronsäure, Biostimulation oder Polynukleotide?',
     imageSrc: '/assets/faltenbehandlung/faltenbehandlung_hero.webp',
     imageAlt: 'Faltenbehandlung mit Hyaluron und Botulinumtoxin – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
@@ -77,50 +73,30 @@ export default function FaltenbehandlungHubPage() {
   const introData: IntroSectionProps = {
     title: 'Welche Methode gegen Falten passt zu Ihnen?',
     content: [
-      'Die Faltenbehandlung umfasst nicht-chirurgische Verfahren der ästhetischen Medizin wie Botulinumtoxin, Hyaluronsäure und regenerative Methoden zur Glättung von Falten und Verbesserung der Hautqualität in Bremen.',
+      'Die Faltenbehandlung umfasst Verfahren der ästhetischen Medizin wie Botulinumtoxin, Hyaluronsäure und regenerative Methoden zur Glättung von Falten und Verbesserung der Hautqualität.',
       'Botulinumtoxin entspannt die Muskulatur und kann gezielt mimische Falten glätten und die Gesichtszüge entspannen.',
       'Hyaluronsäure kann Volumenverluste ausgleichen, Falten sanft polstern und Konturen modellieren – etwa an Lippen, Wangen, Kinn, Jawline oder Nasolabialfalten.',
       'Die Biostimulation wirkt strukturbildend: Sie unterstützt die körpereigene Kollagenneubildung und Straffung der Haut.',
       'PRF und Polynukleotide sind regenerative Ansätze zur Verbesserung der Hautqualität: Sie können Feuchtigkeit, Elastizität und Dichte fördern und eignen sich besonders für feine Fältchen sowie empfindliche Zonen.',
-      'Je nach Zielsetzung lassen sich die Methoden kombinieren. Lassen Sie sich individuell beraten!',
+      'Je nach Zielsetzung lassen sich die Methoden kombinieren. In der persönlichen Beratung klären wir, welche Behandlung oder Kombination am besten zu Ihren Zielen und Ihrer Anatomie passt.',
     ],
   };
 
-  // --- KATEGORIE 1: MIMIK (Zornesfalte, Stirn, Krähenfüße) ---
   const relaxationData: TreatmentsSectionProps = {
     title: 'Mimische Falten',
     treatments: faltenRelaxation
   };
 
-  // --- KATEGORIE 2: VOLUMEN (Nasolabial, Marionettenfalten) ---
   const volumeData: TreatmentsSectionProps = {
     title: 'Statische Falten & Volumenverlust',
     treatments: faltenVolume
   };
 
-  // --- KATEGORIE 3: HAUTQUALITÄT (Wangenlinien, Plisseefältchen) ---
   const qualityData: TreatmentsSectionProps = {
     title: 'Knitterfältchen & Feine Linien',
     treatments: faltenSkinQuality
   };
 
-  const relatedLinks: RelatedLink[] = [
-    {
-      href: '/botulinumtoxin/faltenbehandlung',
-      label: 'Botulinumtoxin gegen Mimikfalten',
-      description: 'Zornesfalte, Stirnfalten und Krähenfüße gezielt mit Muskelrelaxans glätten.',
-    },
-    {
-      href: '/hyaluron/filler',
-      label: 'Hyaluron-Filler für Volumen & Kontur',
-      description: 'Nasolabialfalten, Marionettenfalten und Wangen mit Hyaluronsäure auffüllen und modellieren.',
-    },
-    {
-      href: '/biostimulation',
-      label: 'Biostimulation',
-      description: 'Körpereigene Kollagenneubildung anregen für langfristige Straffung und Hautfestigkeit.',
-    },
-  ];
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur Faltenbehandlung',
@@ -197,26 +173,20 @@ export default function FaltenbehandlungHubPage() {
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
 
-      {/* Sektion 1: Mimik */}
       <div id="mimik" className="scroll-mt-24">
         <TreatmentsSection {...relaxationData} />
       </div>
 
-      {/* Sektion 2: Volumen */}
       <div id="volumen" className="scroll-mt-24 -mt-16 md:-mt-24">
         <TreatmentsSection {...volumeData} />
       </div>
 
-      {/* Sektion 3: Hautqualität */}
       <div id="quality" className="scroll-mt-24 -mt-16 md:-mt-24">
         <TreatmentsSection {...qualityData} />
       </div>
 
-      <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
-
       <ConsultationSection />
 
-      {/* Die FAQSection generiert ihr Schema jetzt selbst! */}
       <FAQSection {...faqData} />
 
       <CTASection {...ctaData} />

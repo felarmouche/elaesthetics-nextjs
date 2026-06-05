@@ -14,8 +14,7 @@ import {
   IntroSectionProps,
   TreatmentsSection,
   TreatmentsSectionProps,
-  RelatedLinksSection,
-  RelatedLink,
+
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema } from '@/lib/schema';
 import { haarausfall } from "@/data/treatments";
@@ -60,7 +59,7 @@ export default function HaarausfallHubPage() {
   const heroData: HeroSectionProps = {
     title: 'Haarausfall Behandlung in Bremen',
     subtitle:
-      'Der Weg zu voller wirkendem Haar beginnt mit einer fundierten Analyse der Kopfhaut. Es gibt mehrere Mittel gegen Haarausfall. Wir adressieren Ursachen – und planen Ihre Therapie realistisch & individuell.',
+      'Haarausfall-Therapien: PRP/PRF, Mesotherapie & Polynukleotide',
     imageSrc: '/assets/haarausfall-behandlung/haarausfall-behandlung_hero.webp',
     imageAlt: 'Haarausfall-Behandlung mit PRP und Mesotherapie – EL Aesthetics Bremen',
     primaryCTA: { text: 'Termin anfragen', href: '/kontakt' },
@@ -68,11 +67,11 @@ export default function HaarausfallHubPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: 'Behandlungen gegen Haarausfall - Welche passt zu mir?',
+    title: 'Behandlungen gegen Haarausfall',
     content: [
-      'Die Haarausfall-Behandlung umfasst nicht-chirurgische Verfahren wie PRP/PRF, Mesotherapie und Polynukleotide zur Unterstützung der Haardichte in Bremen.',
+      'Die Haarausfall-Behandlung umfasst nicht-chirurgische Verfahren wie PRP/PRF, Mesotherapie und Polynukleotide zur Unterstützung der Haargesundheit, Haarwachstum und Haardichte.',
       'Ein ungünstiges Kopfhautmilieu (z. B. verhärtetes Gewebe/Fibroseareale, Reste älterer Füllstoffe, eingeschränkte Mikrozirkulation) kann die Versorgung der Haarwurzeln beeinträchtigen.',
-      'Auf dieser Basis planen wir die Therapie: von unterstützenden Kopfhautbehandlungen über Mesotherapie bis hin zur Eigenbluttherapie mit PRP/PRF. Ziel ist ein nachvollziehbarer, individueller Behandlungsplan – ohne unrealistische Versprechen.'
+      'Auf dieser Basis planen wir die Therapie: von unterstützenden Kopfhautbehandlungen über Mesotherapie bis hin zur Eigenbluttherapie mit PRP/PRF. Ziel ist ein nachvollziehbarer, individueller Behandlungsplan.'
     ]
   };
 
@@ -82,24 +81,6 @@ export default function HaarausfallHubPage() {
   };
 
 
-
-  const relatedLinks: RelatedLink[] = [
-    {
-      href: '/eigenbluttherapie/haare',
-      label: 'Eigenbluttherapie (PRP/PRF) für die Haare',
-      description: 'Haarwurzeln mit körpereigenen Wachstumsfaktoren aus Eigenblut stärken und Haarausfall entgegenwirken.',
-    },
-    {
-      href: '/mesotherapie/haare',
-      label: 'Mesotherapie für die Haare',
-      description: 'Nährstoffcocktails direkt in die Kopfhaut injizieren – für bessere Durchblutung und kräftigeres Haar.',
-    },
-    {
-      href: '/polynukleotide',
-      label: 'Polynukleotide (PDRN)',
-      description: 'Zellregeneration und Gewebereparatur der Kopfhaut mit biokompatiblen Polynukleotiden.',
-    },
-  ];
 
   const faqData: FAQSectionProps = {
     title: 'Häufige Fragen zur Haarausfall-Behandlung',
@@ -127,7 +108,7 @@ export default function HaarausfallHubPage() {
       {
         question: 'Ist das schmerzhaft – und gibt es Risiken oder Nebenwirkungen?',
         answer:
-          'Die Kopfhautbehandlungen werden mit feinen Nadeln durchgeführt und sind in der Regel gut toleriert. Möglich sind vorübergehende Rötungen, Schwellungen oder Druckempfindlichkeit. Wir klären Sie vorab individuell auf.'
+          'Die Kopfhautbehandlungen werden mit feinen Nadeln durchgeführt und sind in der Regel gut toleriert. Möglich sind vorübergehende Rötungen, Schwellungen oder Druckempfindlichkeit. Vorab werden Sie individuell aufgeklärt.'
       }
     ]
   };
@@ -158,7 +139,6 @@ export default function HaarausfallHubPage() {
       <TableOfContents items={tocItems} />
       <IntroSection {...introData} />
       <TreatmentsSection {...treatmentsData} />
-      <RelatedLinksSection title="Verwandte Behandlungen" links={relatedLinks} />
       <ConsultationSection />
       <FAQSection {...faqData} />
       <CTASection {...ctaData} />
