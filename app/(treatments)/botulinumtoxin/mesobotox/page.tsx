@@ -4,7 +4,6 @@ import {
   TableOfContents,
   TOCItem,
   AreasSection,
-  ConsultationSectionProps,
   AreasSectionProps,
   TreatmentCareSectionProps,
   QuickInfoSection,
@@ -49,7 +48,7 @@ export const metadata: Metadata = {
     locale: "de_DE",
     images: [
       {
-        url: "https://elaesthetics-bremen.de/assets/botulinumtoxin/botox-microbotox_hero.webp",
+        url: "https://elaesthetics-bremen.de/assets/botulinumtoxin/baby-botox_hero.webp",
         width: 1200,
         height: 630,
         alt: "Mesobotox-Behandlung in Bremen – EL Aesthetics",
@@ -89,7 +88,7 @@ export default function MicrobotoxPage() {
     title: "Baby-Botox (Mesobotox) in Bremen",
     subtitle:
       "Sehr oberflächliche Mikro-Injektionen können die Hauttextur verbessern, Poren verfeinern und feine Linien mildern – im Gesicht, am Hals und im Dekolleté.",
-    imageSrc: "/assets/botulinumtoxin/botox-microbotox_hero.webp",
+    imageSrc: "/assets/botulinumtoxin/baby-botox_hero.webp",
     imageAlt:
       "Mesobotox-Behandlung zur Porenverfeinerung – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },

@@ -82,8 +82,8 @@ export const polynukleotide: Treatment = {
 
 export const eigenblut: Treatment = {
     imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
-    imageAlt: 'Eigenbluttherapie PRF für natürliche Hautregeneration',
-    title: 'Eigenbluttherapie (PRP/PRF)',
+    imageAlt: 'Vampir-Lifting mit körpereigenen Wachstumsfaktoren (PRF/PRP)',
+    title: 'Vampir-Lifting (PRP/PRF)',
     description:
         'Natürliche Regeneration durch körpereigene Wachstumsfaktoren. Das Blutkonzentrat stimuliert Kollagen und Zellerneuerung. 100% biologisch und verträglich.',
     treatmentUrl: '/eigenbluttherapie/vampir-lifting'
@@ -148,7 +148,7 @@ export const botoxAesthetic: Treatment = {
 };
 
 export const mesobotox: Treatment = {
-    imageUrl: '/assets/botulinumtoxin/botox-microbotox_hero.webp',
+    imageUrl: '/assets/botulinumtoxin/baby-botox_hero.webp',
     imageAlt: 'Mesobotox Behandlung für feine Poren',
     title: 'Micro-Botox (Baby-Botox)',
     description:
@@ -209,10 +209,10 @@ export const prfHaar: Treatment =
 {
     imageUrl: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
     imageAlt: 'Mann mit Haarausfall',
-    title: 'Eigenbluttherapie (PRP/PRF)',
+    title: 'PRF/PRP-Eigenbluttherapie für die Haare',
     description:
         'Körpereigene Ansätze können – je nach Diagnose – in die Serie integriert werden. Details & Indikationsprüfung auf der Behandlungsseite.',
-    treatmentUrl: '/eigenbluttherapie/haare' // bewusst interne Verlinkung, aber keine PRF-Keywords im Hub-SEO
+    treatmentUrl: '/eigenbluttherapie/haare'
 };
 export const prfMicro: Treatment =
 {
