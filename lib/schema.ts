@@ -227,7 +227,7 @@ export function getPriceListSchema() {
     { name: 'Nefertiti Lift (Kinn/Kinnlinie)', desc: 'Straffung und Konturierung der Kinnregion', price: PRICES.botulinum.nefertiti.kinn },
     { name: 'Nefertiti Lift (Kinn, Kinnlinie, Hals)', desc: 'Umfassende Hals- und Kinnstraffung', price: PRICES.botulinum.nefertiti.kinnKinnlinieHals },
     { name: 'Face-Slimming / Masseter-Behandlung', desc: 'Gesichtsverschlankung durch Kaumuskelreduktion', price: PRICES.botulinum.faceSlimming },
-    { name: 'Mesobotox / Microbotox', desc: 'Glass Skin-Effekt und sanfte Faltenreduktion', price: PRICES.botulinum.microBotox },
+    { name: 'Baby Botox / Mesobotox', desc: 'Glass Skin-Effekt und sanfte Faltenreduktion', price: PRICES.botulinum.microBotox },
     { name: 'Masseter-Behandlung (Bruxismus)', desc: 'Behandlung bei Zähneknirschen', price: PRICES.botulinum.masseter },
     { name: 'Migräne-Behandlung mit Botulinumtoxin', desc: 'Prophylaktische Migränebehandlung', price: PRICES.botulinum.migraene },
     { name: 'Hyperhidrose-Behandlung', desc: 'Behandlung gegen übermäßiges Schwitzen', price: PRICES.botulinum.hyperhidrose },

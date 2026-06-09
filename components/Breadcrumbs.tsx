@@ -37,7 +37,7 @@ const pathNameMap: Record<string, string> = {
   // Botulinumtoxin Spokes
   'aesthetische-behandlungen': 'Ästhetische Behandlungen',
   masseter: 'Masseter',
-  mesobotox: 'Mesobotox / Microbotox',
+  mesobotox: 'Baby Botox / Mesobotox',
   migraene: 'Migräne',
   hyperhidrose: 'Hyperhidrose',
 
