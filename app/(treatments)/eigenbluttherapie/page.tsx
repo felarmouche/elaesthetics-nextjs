@@ -86,14 +86,49 @@ export default function EigenbluttherapiePRFPage() {
     title: 'Häufige Fragen zur Behandlung',
     faqs: [
       {
-        question: 'Für was ist eine Eigenbluttherapie gut?',
+        question: 'Wie funktioniert die Eigenbluttherapie mit PRF?',
         answer:
-          'Zur Verbesserung der Hautqualität. Zum Beispiel bei feinen Linien, Trockenheit, Akne, Aknenarben, Rosazea, sowie bei Haarausfall.',
+          'Bei der PRF-Methode werden Blutplättchen und Wachstumsproteine aus dem Blut extrahiert und in konzentrierter Form dem Patienten wieder zugeführt. Die Blutplättchen können Wachstumsfaktoren über Tage hinweg abgeben.\n\nEin Beispiel zur Veranschaulichung: Bei einer Wunde beginnt sofort der Prozess der Blutgerinnung. Die Blutplättchen (Thrombozyten) verkleben miteinander und mit den Gefäßwänden. Das Eiweiß Fibrin wirkt dabei wie ein Klebstoff, der die Wunde verschließt. Gleichzeitig setzen Blutplättchen Wachstumsfaktoren frei, die Heilungsprozesse anregen, die Teilung von Knochen- und Bindegewebszellen fördern und sogar die Bildung neuer Blutgefäße unterstützen.\n\nPRF enthält:\n• Blutplättchen (Thrombozyten)\n• Fibrin\n• Wachstumsfaktoren\n• Stammzellen',
       },
       {
-        question: 'Was ist der Unterschied zwischen PRF und PRP?',
+        question: 'Welche Wirkung hat PRF?',
         answer:
-          'PRF (thrombozytenreiches Fibrin) bildet eine Matrix, die Wachstumsfaktoren über längere Zeit freisetzen kann als PRP (thrombozytenreiches Plasma).',
+          '• Regeneration von Bindegewebe\n• Entzündungshemmende Wirkung\n• Bildung von Kollagen\n• Zellerneuerung\n• Verbesserung der Mikrozirkulation\n• Aktivierung von Heilungsprozessen',
+      },
+      {
+        question: 'PRP und PRF – Was ist der Unterschied?',
+        answer:
+          'PRF ist die Weiterentwicklung der bekannten PRP-Therapie (auch „Vampire-Lifting“ genannt). Während bei PRF keine Gerinnungshemmer eingesetzt werden, macht PRF die Eigenbluttherapie zu 100 % natürlich. PRF enthält mehr Blutplättchen und nutzt Fibrin, das eine gelartige Matrix bildet. Dadurch können Wachstumsfaktoren länger wirken und die regenerative Wirkung verstärken. PRF enthält außerdem Stammzellen, die den Regenerationsprozess weiter fördern.',
+      },
+      {
+        question: 'Wo wird die PRF-Therapie noch eingesetzt?',
+        answer:
+          'Neben der Hautverjüngung und Behandlung von Haarausfall wird PRF in der Medizin erfolgreich eingesetzt, z. B. in der Zahnmedizin, Implantologie, Orthopädie, Urologie oder zur Förderung der Wundheilung nach chirurgischen Eingriffen.',
+      },
+      {
+        question: 'Was sind mögliche Nebenwirkungen?',
+        answer:
+          'Nach der Behandlung können vorübergehend leichte Rötungen, Schwellungen und ein Spannungsgefühl auftreten. Die PRF-Therapie gilt als sicher und ist mit keinen größeren Nebenwirkungen verbunden, da ausschließlich körpereigene Substanzen verwendet werden.'
+      },
+      {
+        question: 'Wann kommt die PRF-Behandlung NICHT infrage?',
+        answer:
+          '• Schwangere und stillende Frauen\n• Personen mit Erkrankungen, die mit einer Störung der Blutgerinnung einhergehen\n• Akute oder chronische Infektionen\n• Akute Entzündungen im Behandlungsbereich',
+      },
+      {
+        question: 'Ist die PRF-Behandlung schmerzhaft?',
+        answer:
+          'Durch die Verwendung einer lokalanästhetischen Creme sind die Injektionen spürbar, jedoch gut erträglich.',
+      },
+      {
+        question: 'Wie lange hält die Wirkung an?',
+        answer:
+          'Nach einer Serie von Behandlungen kann das positive Ergebnis 1–2 Jahre anhalten. Faktoren wie Rauchen, Sonneneinwirkung und Lebensgewohnheiten können eine vorzeitige Wiederholung erforderlich machen. Zur Erhaltung empfehlen wir eine Auffrischung 1–2 Mal pro Jahr.',
+      },
+      {
+        question: 'Wie viele Behandlungen mit PRF sind notwendig?',
+        answer:
+          'Die Anzahl der Behandlungen hängt vom gewünschten Ergebnis und dem Zustand von Haut oder Haaren ab. In der Regel werden 4–6 Behandlungen im Abstand von 4–6 Wochen benötigt. Zur Erhaltung der Wirkung ist eine Auffrischung 1–2 Mal pro Jahr empfehlenswert.',
       },
     ],
   };

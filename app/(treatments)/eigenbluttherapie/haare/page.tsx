@@ -174,34 +174,9 @@ export default function PRFHaarePage() {
     title: 'Häufige Fragen zu PRF/PRP für die Haare',
     faqs: [
       {
-        question: 'PRP Haar-Behandlung für Frauen - macht das Sinn?',
+        question: 'Womit ist nach der Haar-Behandlung mit PRF zu rechnen?',
         answer:
-          'Viele Patientinnen berichten nach einer Behandlungsserie über vollere Haaransätze und eine verbesserte Haarqualität. Die Ergebnisse sind individuell unterschiedlich; eine allgemeingültige Wirkung kann nicht zugesichert werden.',
-      },
-      {
-        question: 'Eigenbluttherapie nach Haartransplantation  – ist das sinnvoll?',
-        answer:
-          'Begleitende PRF/PRP-Behandlungen werden häufig eingesetzt, um das Transplantatmilieu zu unterstützen. Zeitpunkt, Häufigkeit und Nutzen werden individuell mit der behandelnden Fachärztin oder dem Facharzt abgestimmt.',
-      },
-      {
-        question: 'Welche Erfahrungen gibt es mit Eigenbluttherapie bei Haarausfall?',
-        answer:
-          'Rückmeldungen variieren: Oft genannt werden weniger saisonaler Haarausfall, dichtere Areale und eine verbesserte Haarstruktur nach mehreren Sitzungen. Eine objektive Beurteilung erfolgt über Fotodokumentation und Haardichteanalysen.',
-      },
-      {
-        question: 'Zeigen Sie Vorher-Nachher-Bilder zur Eigenbluttherapie?',
-        answer:
-          'Vorher-/Nachher-Vergleiche nutzen wir primär intern zur Verlaufskontrolle. Öffentliche Einzelfall-Darstellungen oder werbende Erfolgsgeschichten vermeiden wir aus Gründen des Heilmittelwerbegesetzes (HWG). Im Beratungsgespräch zeigen wir gerne, wie wir Ergebnisse neutral dokumentieren.',
-      },
-      {
-        question: 'Was kostet eine PRF/PRP-Behandlung?',
-        answer:
-          'Der Richtwert liegt bei etwa 350 € pro Sitzung (GOÄ-orientiert). Paketpreise für Behandlungsserien sind möglich. Der konkrete Betrag hängt von Areal, Material und Zeitaufwand ab.',
-      },
-      {
-        question: 'Wann sind erste Ergebnisse sichtbar?',
-        answer:
-          'Erste Veränderungen (z. B. weniger Haarausfall) zeigen sich häufig nach 2–3 Sitzungen. Die maximale Wirksamkeit einer vollständigen Serie (4–6 Sitzungen) ist typischerweise nach ca. 6 Monaten zu beurteilen – abhängig vom individuellen Haarzyklus.',
+          'Mehrere Sitzungen sind notwendig, um optimale Ergebnisse zu erzielen. Der maximale Effekt wird nach etwa sechs Monaten sichtbar. Geduld und Kontinuität sind entscheidend für den Erfolg der Behandlung.\n\nPRF kann ruhende Haarfollikel reaktivieren, die Haardicke bei dünnem Haar erhöhen und die Haare insgesamt dichter erscheinen lassen. Der Erfolg hängt von Faktoren wie der Ursache des Haarausfalls, dem Zustand der Haarfollikel und individuellen Gegebenheiten ab. Diese Faktoren werden in einem persönlichen Gespräch besprochen.',
       },
       {
         question: 'Wie lange halten die Ergebnisse an?',
@@ -219,10 +194,11 @@ export default function PRFHaarePage() {
           'Mit Betäubungscreme wird die Behandlung in der Regel gut vertragen. Während der Mikro-Injektionen berichten viele über ein kurzes Pieken oder Druckgefühl. Eine mögliche Empfindlichkeit der Kopfhaut klingt meist rasch ab.',
       },
       {
-        question: 'Welche Risiken gibt es?',
+        question: 'Was sind mögliche Nebenwirkungen?',
         answer:
-          'Gelegentlich können vorübergehende Reaktionen wie Rötung, Schwellung, kleine Hämatome oder ein Spannungsgefühl auftreten. Allergische Reaktionen sind aufgrund der Eigenblutbasis sehr selten. Mögliche Kontraindikationen werden vorab sorgfältig geprüft.',
+          'Nach der Behandlung können vorübergehend leichte Rötungen, Schwellungen und ein Spannungsgefühl auftreten. Die PRF-Therapie gilt als sicher und ist mit keinen größeren Nebenwirkungen verbunden, da ausschließlich körpereigene Substanzen verwendet werden.'
       },
+
     ],
   };
 

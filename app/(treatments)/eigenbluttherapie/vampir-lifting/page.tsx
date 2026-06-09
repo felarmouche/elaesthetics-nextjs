@@ -177,38 +177,24 @@ export default function VampirLiftingPage() {
   };
 
   const faqData: FAQSectionProps = {
-    title: 'Häufige Fragen zum Vampir Lifting',
+    title: 'Häufige Fragen',
     faqs: [
-      {
-        question: 'Wie viele Sitzungen sind sinnvoll – und wann sehe ich etwas?',
-        answer:
-          'Empfohlen werden 3-4 Sitzungen im Abstand von etwa 4–6 Wochen. Erste Verbesserungen (volleres, rosigeres Hautgefühl) sind häufig nach 1–2 Wochen spürbar; sichtbare Optimierungen verstärken sich im Verlauf der Serie.',
-      },
-      {
-        question: 'Wie lange halten die Ergebnisse an?',
-        answer:
-          'Nach einer vollständigen Behandlungsserie halten die Ergebnisse in der Regel 1–2 Jahre. Faktoren wie Rauchen, intensive Sonnenexposition und der persönliche Lebensstil können eine frühere Auffrischung notwendig machen. Zur Erhaltung empfehlen sich 1–2 Behandlungen pro Jahr.',
-      },
       {
         question: 'Eignet sich das Verfahren gegen Augenringe?',
         answer:
-          'Je nach Ursache (Volumen, Gefäße, Pigment) kann eine behutsame Behandlung des Unterlids sinnvoll sein. Wir prüfen Indikation und Alternativen (z. B. Skinbooster, PN) im Termin.',
-      },
-      {
-        question: 'Ist das schmerzhaft?',
-        answer:
-          'Mit lokaler Betäubungscreme wird die Anwendung meist gut vertragen. Kurzzeitige Rötung/Schwellung oder kleine Hämatome sind möglich und bilden sich in der Regel rasch zurück.',
-      },
-      {
-        question: 'Ist das dasselbe wie PRP/PRF?',
-        answer:
-          'Vampir Lifting wird im Alltag oft mit PRP/PRF gleichgesetzt. Diese Seite fokussiert die ästhetische Perspektive; detaillierte medizinische Unterschiede erläutern wir auf der Eigenblut‑Fachseite und im Gespräch.',
+          'Je nach Ursache (Volumen, Gefäße, Pigment) kann eine behutsame Behandlung des Unterlids sinnvoll sein.',
       },
       {
         question: 'Was sind mögliche Nebenwirkungen?',
         answer:
           'Nach der Behandlung können leichte Rötungen, Schwellungen oder ein Spannungsgefühl auftreten. Die Haut beruhigt sich in der Regel innerhalb von ein bis zwei Stunden. Kleinere Blutergüsse können vorkommen, diese können nach 1–2 Tagen problemlos abgedeckt werden. Bei Kombinationsbehandlungen mit Microneedling müssen Sie mit einer längeren Regenerationszeit rechnen.'
       },
+      {
+        question: 'Womit ist nach der Vampir Lifting Behandlung zu rechnen?',
+        answer:
+          'Nach der Behandlung beginnt die Haut unmittelbar mit den regenerativen Prozessen. In den ersten 1–2 Wochen fühlt sich die Haut praller, rosiger und genährter an. Nach etwa zwei Wochen geht dieser Effekt vorübergehend etwas zurück, während die regenerativen Prozesse weiterlaufen.\n\nSichtbare Verbesserungen sind nach 3–4 Behandlungen zu erwarten. Die Ergebnisse können je nach Person variieren, da dieses natürliche Verfahren von der individuellen Aktivität der Blutplättchen abhängt.',
+      },
+      
     ],
   };
 
