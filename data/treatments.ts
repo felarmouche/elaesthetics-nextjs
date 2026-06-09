@@ -43,7 +43,7 @@ export const skinbooster: Treatment = {
 };
 
 export const profhilo: Treatment = {
-    imageUrl: '/assets/hyaluron/hyaluron-profhilo_hero.webp',
+    imageUrl: '/assets/hyaluron/hyaluron-profhilo_hero1.webp',
     imageAlt: 'Profhilo Bio-Remodeling Behandlung in Bremen',
     title: 'Biorevitalisierung (BAP-Technik)',
     description:
@@ -119,7 +119,7 @@ export const peeling: Treatment = {
 };
 
 export const mesotherapieHaut: Treatment = {
-    imageUrl: '/assets/mesotherapie/mesotherapie-haut_hero.webp',
+    imageUrl: '/assets/mesotherapie/nctf_hero.webp',
     imageAlt: 'Mesotherapie Haut Behandlung',
     title: 'Mesotherapie (Meso-Glow)',
     description:

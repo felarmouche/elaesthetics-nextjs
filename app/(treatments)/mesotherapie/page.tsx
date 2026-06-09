@@ -98,7 +98,7 @@ export default function MesotherapieHubPage() {
     title: 'Mesotherapie in Bremen',
     subtitle:
       'Gezielte Mikronährstoff-Injektionen gegen Falten und Haarausfall. Hautverjüngung und Revitalisierung der Haut & Haare.',
-    imageSrc: '/assets/mesotherapie/mesotherapie-haut_hero.webp',
+    imageSrc: '/assets/mesotherapie/nctf_hero.webp',
     imageAlt: 'Mesotherapie-Behandlung für Haut und Haare – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungen ansehen', href: '#treatments' },

@@ -20,7 +20,7 @@ const treatments: TreatmentSlide[] = [
   { src: '/assets/hyaluron/hyaluron-filler_hero.webp', alt: 'Hyaluron Behandlung', text: 'Hyaluron', linkUrl: '/hyaluron' },
   { src: '/assets/fett-weg-spritze/fett-weg-spritze_hero.webp', alt: 'Fett-weg-Spritze', text: 'Fett-weg-Spritze', linkUrl: '/fett-weg-spritze' },
   { src: '/assets/eigenbluttherapie/eigenbluttherapie-vampire-lifting_hero.webp', alt: 'PRF Eigenbluttherapie', text: 'PRF (Eigenbluttherapie)', linkUrl: '/eigenbluttherapie' },
-  { src: '/assets/mesotherapie/mesotherapie-haut_hero.webp', alt: 'Mesotherapie', text: 'Mesotherapie', linkUrl: '/mesotherapie' },
+  { src: '/assets/mesotherapie/nctf_hero.webp', alt: 'NCTF Mesotherapie', text: 'Mesotherapie', linkUrl: '/mesotherapie' },
   { src: '/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp', alt: 'Microneedling', text: 'Medizinisches Microneedling', linkUrl: '/medizinisches-microneedling' },
   { src: '/assets/polynukleotide/polynukleotide_hero.webp', alt: 'Polynukleotide', text: 'Polynukleotide', linkUrl: '/polynukleotide' },
   { src: '/assets/chemisches-peeling/chemisches-peeling_hero.webp', alt: 'Chemisches Peeling', text: 'Chemisches Peeling', linkUrl: '/chemisches-peeling' },

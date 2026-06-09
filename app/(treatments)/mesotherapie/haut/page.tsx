@@ -1,16 +1,16 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { AreasSection, ConsultationSectionProps, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, HubTeaserSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem } from '@/components/TreatmentPageComponents';
+import { AreasSection, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, HubTeaserSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
 import { eigenblut, mesotherapieHaut, peeling, polynukleotide, profhilo } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'Mesotherapie Gesicht Bremen',
+  title: 'NCTF Bremen',
   description: 'Mesotherapie für Gesicht in Bremen: Hyaluronsäure & Mikronährstoffe für strahlende Haut, Augenringe & Falten. Jetzt beraten lassen.',
   keywords: ['Mesotherapie Gesicht Bremen', 'Mesotherapie Hautqualität Bremen', 'Augenringe Behandlung Bremen', 'Hautverjüngung Bremen', 'Skinbooster Bremen'],
   openGraph: {
-    title: 'Mesotherapie Gesicht Bremen | Hautqualität & Glow | EL Aesthetics',
+    title: 'Mesotherapie Bremen | Hautqualität & Glow | EL Aesthetics',
     description: 'Mesotherapie für Gesicht in Bremen: Hyaluronsäure & Mikronährstoffe für strahlende Haut, Augenringe & Falten.',
     url: 'https://elaesthetics-bremen.de/mesotherapie/haut',
     siteName: 'EL Aesthetics Bremen',
@@ -54,7 +54,7 @@ export default function MesotherapieHautPage() {
   const heroData: HeroSectionProps = {
     title: "Mesotherapie für die Haut in Bremen",
     subtitle: "Verbesserung der Hautqualität durch biorevitalisierende Injektionsbehandlung",
-    imageSrc: "/assets/mesotherapie/mesotherapie-haut_hero.webp",
+    imageSrc: "/assets/mesotherapie/nctf_hero.webp",
     imageAlt: "NCTF Mesotherapie für die Haut – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
     secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" }

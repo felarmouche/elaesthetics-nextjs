@@ -5,7 +5,6 @@ import { filler, skinbooster, hylase } from "@/data/treatments";
 import {
   AreasSection,
   AreasSectionProps,
-  ConsultationSectionProps,
   ConsultationSection,
   HubTeaserSection,
   TableOfContents,
@@ -89,9 +88,9 @@ export default function ProfhiloBAPPage() {
     title: "Biorevitalisierung (BAP-Technik) in Bremen",
     subtitle:
       "Hautqualität & Elastizität gezielt verbessern – wenige Injektionspunkte, schonende Behandlung.",
-    imageSrc: "/assets/hyaluron/hyaluron-profhilo_hero.webp",
+    imageSrc: "/assets/hyaluron/hyaluron-profhilo_hero1.webp",
     imageAlt:
-      "Biorevitalisierung mit BAP-Technik (Profhilo) – EL Aesthetics Bremen",
+      "Profhilo Biorevitalisierung mit BAP-Technik – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratung anfragen", href: "/kontakt" },
     secondaryCTA: { text: "Behandlungsdetails", href: "#quickInfos" },
   };
