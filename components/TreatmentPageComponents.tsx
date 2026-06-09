@@ -417,7 +417,7 @@ export const TreatmentsSection: React.FC<TreatmentsSectionProps> = ({ title, tre
                             </p>
                             <Link
                                 href={treatment.treatmentUrl}
-                                className="mt-auto inline-block pt-2 text-blue-600 hover:text-blue-400 transition-colors underline"
+                                className="mt-auto inline-block pt-2 text-accent-dark hover:text-accent transition-colors underline"
                             >
                                 Mehr erfahren →
                             </Link>

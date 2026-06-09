@@ -18,14 +18,14 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/botulinumtoxin/botox-migräne_hero.webp',
+        url: 'https://elaesthetics-bremen.de/assets/botulinumtoxin/botox-migraene_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Migräne-Behandlung mit Botulinumtoxin in Bremen – EL Aesthetics',
       },
     ],
   },
-  alternates: { canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/migraene' },
+  alternates: { canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/migraene/' },
 };
 
 export default function BotoxMigraenePage() {
@@ -52,7 +52,7 @@ export default function BotoxMigraenePage() {
   const heroData: HeroSectionProps = {
     title: 'Botulinumtoxin Migräne Behandlung in Bremen',
     subtitle: 'Die Botulinumtoxin Migräne-Behandlung kann gezielt bei Menschen mit häufigen Migräneattacken eingesetzt werden, um Symptome zu lindern.',
-    imageSrc: '/assets/botulinumtoxin/botox-migräne_hero.webp',
+    imageSrc: '/assets/botulinumtoxin/botox-migraene_hero.webp',
     imageAlt: 'Migräne-Prophylaxe mit Botulinumtoxin – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
     secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' },
@@ -82,7 +82,7 @@ export default function BotoxMigraenePage() {
   };
 
   const processData: ProcessSectionProps = {
-    title: 'Ablauf der botulinumtoxin migränebehandlung',
+    title: 'Ablauf der Botulinumtoxin-Migränebehandlung',
     steps: [
       { number: '01', title: 'Beratungsgespräch & Indikationsprüfung', description: 'In einem Beratungsgespräch wird zunächst geprüft, ob eine Migräne-Behandlung mit Botulinumtoxin sinnvoll ist.' },
       { number: '02', title: 'Erstbehandlung', description: 'Die erste Behandlung erfolgt mit insgesamt 31 Injektionspunkten nach einem Standardschema an der Stirn, den Schläfen, dem Hinterkopf und Nacken.' },
@@ -122,7 +122,7 @@ export default function BotoxMigraenePage() {
   };
 
   const faqData: FAQSectionProps = {
-    title: 'Häufige Fragen zur botulinumtoxin migränebehandlung',
+    title: 'Häufige Fragen zur Botulinumtoxin-Migränebehandlung',
     faqs: [
       { question: 'Kann Botulinumtoxin bei Migräne wirklich helfen?', answer: 'Bei chronischer Migräne kann eine Anwendung erwogen werden. Einige Personen berichten über eine Verringerung der Häufigkeit und/oder der Schmerzintensität. Eine Wirkung ist nicht in jedem Fall zu erwarten.' },
       { question: 'Wie wirkt es bei Migräne?', answer: 'Die Wirkung beruht u. a. auf einer Modulation von Schmerzsignalen und einer Entspannung beteiligter Muskulatur in definierten Kopf-/Nackenarealen.' },
@@ -134,7 +134,7 @@ export default function BotoxMigraenePage() {
 
   const ctaData: CTASectionProps = {
     title: 'Beratung zur Migränebehandlung',
-    subtitle: 'Sie möchten wissen, ob „botulinumtoxin migräne“ für Sie in Frage kommt und welche Kosten zu erwarten sind? Wir beraten Sie gerne.',
+    subtitle: 'Sie möchten wissen, ob „Botulinumtoxin Migräne“ für Sie in Frage kommt und welche Kosten zu erwarten sind? Wir beraten Sie gerne.',
     primaryCTA: { text: 'Jetzt Termin anfragen', href: '/kontakt' },
     secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
   };

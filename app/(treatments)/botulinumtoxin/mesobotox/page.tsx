@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     locale: "de_DE",
     images: [
       {
-        url: "https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-microbotox-bremen.webp",
+        url: "https://elaesthetics-bremen.de/assets/botulinumtoxin/botox-microbotox_hero.webp",
         width: 1200,
         height: 630,
         alt: "Mesobotox-Behandlung in Bremen – EL Aesthetics",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://elaesthetics-bremen.de/botulinumtoxin/mesobotox",
+    canonical: "https://elaesthetics-bremen.de/botulinumtoxin/mesobotox/",
   },
 };
 
@@ -327,7 +327,7 @@ export default function MicrobotoxPage() {
   const ctaData: CTASectionProps = {
     title: "Beratung zu Mesobotox in Bremen",
     subtitle:
-      "Sie möchten mehr zu Anwendung, Sicherheit und mesobotox kosten erfahren? Wir beraten Sie gerne.",
+      "Sie möchten mehr zu Anwendung, Sicherheit und den Kosten von Mesobotox erfahren? Wir beraten Sie gerne.",
     primaryCTA: { text: "Termin anfragen", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" },
   };

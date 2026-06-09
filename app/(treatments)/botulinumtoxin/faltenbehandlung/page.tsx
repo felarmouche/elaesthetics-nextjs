@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     locale: "de_DE",
     images: [
       {
-        url: "/assets/botulinumtoxin/og-image-botox-faltenbehandlung-bremen.webp",
+        url: "/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp",
         width: 1200,
         height: 630,
         alt: "Faltenbehandlung mit Botulinumtoxin bei EL Aesthetics Bremen",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://elaesthetics-bremen.de/botulinumtoxin/faltenbehandlung",
+    canonical: "https://elaesthetics-bremen.de/botulinumtoxin/faltenbehandlung/",
   },
 };
 

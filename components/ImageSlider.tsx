@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface ImageSlide {
@@ -15,61 +14,55 @@ interface ImageSlide {
 const images: ImageSlide[] = [
     {
         src: '/assets/tinified/DJI_20241219_140752_335.webp',
-        alt: 'Luftaufnahme - Drohnenfoto vom 19. Dezember 2024',
+        alt: 'Luftaufnahme des Praxisstandorts von EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
     {
         src: '/assets/tinified/IMG_7295.webp',
-        alt: 'Galeriebild 2 - Architektur und Design',
+        alt: 'Empfangs- und Wartebereich der Praxis EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
     {
         src: '/assets/tinified/IMG_7364.webp',
-        alt: 'Galeriebild 3 - Detailaufnahme',
+        alt: 'Behandlungsraum mit moderner Ausstattung bei EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
     {
         src: '/assets/tinified/IMG_7775.webp',
-        alt: 'Galeriebild 4 - Innenansicht',
+        alt: 'Einblick in die Räumlichkeiten der Praxis EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
     {
         src: '/assets/tinified/IMG_8555.webp',
-        alt: 'Galeriebild 5 - Außenbereich',
+        alt: 'Detail der Praxiseinrichtung von EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
     {
         src: '/assets/tinified/IMG_8570.webp',
-        alt: 'Galeriebild 6 - Designdetail',
+        alt: 'Gemütliche Atmosphäre in der Praxis EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
     {
         src: '/assets/tinified/IMG_8579.webp',
-        alt: 'Galeriebild 7 - Perspektive',
+        alt: 'Behandlungsbereich der Praxis EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
     {
         src: '/assets/tinified/IMG_8618.webp',
-        alt: 'Galeriebild 8 - Ambiente',
+        alt: 'Wohlfühlambiente bei EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
     {
         src: '/assets/tinified/IMG_8631.webp',
-        alt: 'Galeriebild 9 - Gesamtansicht',
-        width: 1920,
-        height: 1080,
-    },
-    {
-        src: '/assets/tinified/IMG_7295.webp',
-        alt: 'Galeriebild 10 - Weitere Ansicht',
+        alt: 'Gesamtansicht der Praxisräume von EL Aesthetics Bremen',
         width: 1920,
         height: 1080,
     },
@@ -161,7 +154,7 @@ export default function ImageSlider() {
                     </h2>
 
                     <p className="mb-6 text-text-primary">
-                        Entdecken Sie die Welt von El Aesthetics - Ihrem neuen Wohlfühlparadies.
+                        Entdecken Sie die Welt von EL Aesthetics - Ihrem neuen Wohlfühlparadies.
                     </p>
 
                     <p className="mb-6 text-text-primary">

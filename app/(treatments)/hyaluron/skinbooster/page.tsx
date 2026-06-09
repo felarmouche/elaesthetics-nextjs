@@ -49,11 +49,11 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets/skinbooster/og-skinbooster-bremen.webp',
+      'https://elaesthetics-bremen.de/assets/hyaluron/hyaluron-skinbooster_hero.webp',
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hyaluron/skinbooster',
+    canonical: 'https://elaesthetics-bremen.de/hyaluron/skinbooster/',
   },
 };
 

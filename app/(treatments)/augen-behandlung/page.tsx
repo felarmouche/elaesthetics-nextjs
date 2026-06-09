@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         images: [
             {
-                url: 'https://elaesthetics-bremen.de/assets/augen-behandlung/og-image-augen-bremen.webp',
+                url: 'https://elaesthetics-bremen.de/assets/augen-behandlung/augen-behandlung_hero.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Augenbehandlungen in Bremen – EL Aesthetics',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         ],
     },
     alternates: {
-        canonical: 'https://elaesthetics-bremen.de/augen-behandlung',
+        canonical: 'https://elaesthetics-bremen.de/augen-behandlung/',
     },
 };
 
@@ -59,7 +59,7 @@ export default function AugenHubPage() {
     const heroData: HeroSectionProps = {
         title: 'Behandlung der Augenregion in Bremen',
         subtitle:
-            'Malar Bags, Augenringe, Tränenrinne, Tänensäcke mit Polynukleotiden, PRP, Biostimulation oder Botulinumtoxin behandeln.',
+            'Malar Bags, Augenringe, Tränenrinne, Tränensäcke mit Polynukleotiden, PRP, Biostimulation oder Botulinumtoxin behandeln.',
         imageSrc: '/assets/augen-behandlung/augen-behandlung_hero.webp',
         imageAlt: 'Augenbehandlung gegen Augenringe und Tränenrinne – EL Aesthetics Bremen',
         primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
@@ -67,7 +67,7 @@ export default function AugenHubPage() {
     };
 
     const introData: IntroSectionProps = {
-        title: 'Malar Bags, Augenringe, Tränenrinnen & Tänensäcke behandeln',
+        title: 'Malar Bags, Augenringe, Tränenrinnen & Tränensäcke behandeln',
         content: [
             'Die Ursachen für müde Augen und Schatten unter den Augen sind vielfältig. Oft sind ein altersbedingter Volumenverlust, eine sehr dünne Haut am Unterlid, Falten unter den Augen oder auch beginnende Tränensäcke der Grund für einen erschöpften Gesichtsausdruck.',
             'Abhängig von Ihrem Befund können verschiede Verfahren zum Einsatz kommen, wie beispielsweise: Polynukleotide, PRP/PRF (Eigenbluttherapie), enzymatische Behandlungen, Botulinumtoxin.',

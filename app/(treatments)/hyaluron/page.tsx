@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/hyaluron/og-image-hyaluron-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/hyaluron/hyaluron-filler_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Hyaluron Behandlung in Bremen – EL Aesthetics',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hyaluron',
+    canonical: 'https://elaesthetics-bremen.de/hyaluron/',
   },
 };
 

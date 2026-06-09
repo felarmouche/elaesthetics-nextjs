@@ -3,10 +3,10 @@ import Script from 'next/script';
 import { AreasSection, AreasSectionProps, TreatmentCareSectionProps, QuickInfoSection, QuickInfoSectionProps, ConsultationSection, HubTeaserSection, CTASectionProps, FAQSection, FAQSectionProps, HeroSection, HeroSectionProps, IntroSection, IntroSectionProps, ProcessSection, ProcessSectionProps, TreatmentCareSection, TreatmentsSection, TreatmentsSectionProps, TableOfContents, TOCItem } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema, getMedicalProcedureSchema } from '@/lib/schema';
 import { PRICES } from '@/lib/constants';
-import { eigenblut, mesotherapieHaut, peeling, polynukleotide, profhilo } from '@/data/treatments';
+import { eigenblut, skinbooster, peeling, polynukleotide, profhilo } from '@/data/treatments';
 
 export const metadata: Metadata = {
-  title: 'NCTF Bremen',
+  title: 'Mesotherapie für die Haut Bremen – Hyaluron & Mikronährstoffe',
   description: 'Mesotherapie für Gesicht in Bremen: Hyaluronsäure & Mikronährstoffe für strahlende Haut, Augenringe & Falten. Jetzt beraten lassen.',
   keywords: ['Mesotherapie Gesicht Bremen', 'Mesotherapie Hautqualität Bremen', 'Augenringe Behandlung Bremen', 'Hautverjüngung Bremen', 'Skinbooster Bremen'],
   openGraph: {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haut-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/mesotherapie/nctf_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Mesotherapie Gesicht Bremen | Hautqualität & Glow | EL Aesthetics',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/mesotherapie/haut',
+    canonical: 'https://elaesthetics-bremen.de/mesotherapie/haut/',
   },
 };
 
@@ -198,7 +198,7 @@ export default function MesotherapieHautPage() {
       eigenblut,
       peeling,
       polynukleotide,
-      mesotherapieHaut
+      skinbooster
     ]
   };
 

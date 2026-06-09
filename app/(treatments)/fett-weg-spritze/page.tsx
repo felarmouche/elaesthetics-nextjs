@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         locale: 'de_DE',
         images: [
             {
-                url: 'https://elaesthetics-bremen.de/assets/fett-weg-spritze/og-fett-weg-spritze-bremen.webp',
+                url: 'https://elaesthetics-bremen.de/assets/fett-weg-spritze/fett-weg-spritze_hero.webp',
                 width: 1200,
                 height: 630,
                 alt: 'Fett-weg-Spritze in Bremen – EL Aesthetics',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
         ],
     },
     alternates: {
-        canonical: 'https://elaesthetics-bremen.de/fett-weg-spritze',
+        canonical: 'https://elaesthetics-bremen.de/fett-weg-spritze/',
     },
 };
 

@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets/hylase/og-hyaluronidase-bremen.webp',
+      'https://elaesthetics-bremen.de/assets/hyaluron/hyaluron-hylase_hero.webp',
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hyaluron/hylase',
+    canonical: 'https://elaesthetics-bremen.de/hyaluron/hylase/',
   },
 };
 

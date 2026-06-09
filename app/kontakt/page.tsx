@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     description: 'Kontaktieren Sie EL Aesthetics in Bremen Oberneuland. Termin vereinbaren per WhatsApp, Telefon oder Kontaktformular. Privatpraxis für ästhetische Medizin.',
     keywords: ['EL Aesthetics Bremen Kontakt', 'ästhetische Medizin Bremen Termin', 'Privatpraxis Bremen Oberneuland'],
     alternates: {
-        canonical: 'https://elaesthetics-bremen.de/kontakt',
+        canonical: 'https://elaesthetics-bremen.de/kontakt/',
     },
     openGraph: {
         title: 'Kontakt & Termin – EL Aesthetics Bremen',

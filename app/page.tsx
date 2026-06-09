@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   description: 'Privatpraxis für ästhetische Medizin in Bremen Oberneuland. Ärztliche Behandlungen mit Botulinumtoxin, Hyaluron & Eigenbluttherapie. Jetzt Termin vereinbaren.',
   keywords: ['ästhetische Medizin Bremen', 'Privatpraxis ästhetische Medizin Bremen', 'Schönheitsarzt Bremen', 'ästhetische Behandlungen Bremen Oberneuland'],
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de',
+    canonical: 'https://elaesthetics-bremen.de/',
   },
 };
 

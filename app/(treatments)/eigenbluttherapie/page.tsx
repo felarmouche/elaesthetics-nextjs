@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/eigenbluttherapie/og-eigenbluttherapie-prf.webp',
+        url: 'https://elaesthetics-bremen.de/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Eigenbluttherapie (PRF/PRP) in Bremen – EL Aesthetics',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie',
+    canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie/',
   },
 };
 

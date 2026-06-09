@@ -65,7 +65,7 @@ export default function Footer() {
         {/* Trennlinie + Copyright */}
         <div className="border-t border-gray-800 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-primary text-sm font-light">
-            &copy; {year} El Aesthetics Bremen. Alle Rechte vorbehalten.
+            &copy; {year} EL Aesthetics Bremen. Alle Rechte vorbehalten.
           </p>
           <p className="text-xs text-gray-400">
             Entwickelt mit ❤️ in Bremen

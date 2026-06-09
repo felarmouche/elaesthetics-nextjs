@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "de_DE",
     images: [
-      "https://elaesthetics-bremen.de/assets/profhilo/og-profhilo-bremen.webp",
+      "https://elaesthetics-bremen.de/assets/hyaluron/hyaluron-profhilo_hero1.webp",
     ],
   },
   alternates: {
-    canonical: "https://elaesthetics-bremen.de/hyaluron/profhilo",
+    canonical: "https://elaesthetics-bremen.de/hyaluron/profhilo/",
   },
 };
 
@@ -144,7 +144,7 @@ export default function ProfhiloBAPPage() {
     benefits: [
       {
         title: "Preis",
-        description: `ab ${PRICES.botulinum.masseter},-\u20AC*`,
+        description: `ab ${PRICES.hyaluronFiller.profhilo},-\u20AC*`,
         iconUrl: "/assets/icons/EUR.svg",
       },
       {

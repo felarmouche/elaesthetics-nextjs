@@ -5,7 +5,7 @@ import { ExternalLink } from "lucide-react";
 export default async function PatientReviews() {
     const googleReviewsData = await getGoogleReviews();
     const title = "Das sagen meine Patienten";
-    const subtitle = "Echte Erfahrungen und ehrliches Feedback zur Behandlung bei El Aesthetic.";
+    const subtitle = "Echte Erfahrungen und ehrliches Feedback zur Behandlung bei EL Aesthetics.";
 
     const reviews = googleReviewsData?.reviews;
     const url = googleReviewsData?.url;
@@ -14,7 +14,7 @@ export default async function PatientReviews() {
     // Auch im Schema den gekürzten Namen verwenden!
     const jsonLd = {
         "@context": "https://schema.org",
-        "@type": "MedicalBusiness",
+        "@type": "MedicalClinic",
         "@id": "#practice",
         "review": reviews.map((r) => ({
             "@type": "Review",

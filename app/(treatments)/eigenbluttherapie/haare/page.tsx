@@ -45,11 +45,11 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets/prf/og-prf-haare-haarausfall-bremen.webp',
+      'https://elaesthetics-bremen.de/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie/haare',
+    canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie/haare/',
   },
 };
 
@@ -87,7 +87,7 @@ export default function PRFHaarePage() {
   const introData: IntroSectionProps = {
     title: 'PRF/PRP bei Haarausfall',
     content: [
-      'Die Eigenblut-Therapie eignet sich sehr gut als Behandlung bei Haarausfall. Sie stimuliert das Haarwachstum durch eine Revitalisierung der Haarfollikel. PRF-Therapie kann dazu beitragen, dass die Haardichte und der Haardurchmesser zunimmt. Die Behandlung kann bei verschiedenen Formen des Haarausfalls zum Einsatz kommen, wie z.B erblich bedingten, diffusem oder kreisrundem Haarausfall, sowie zur Unterstützung vor und nach einer Haartransplantation .',
+      'Die Eigenblut-Therapie eignet sich sehr gut als Behandlung bei Haarausfall. Sie stimuliert das Haarwachstum durch eine Revitalisierung der Haarfollikel. PRF-Therapie kann dazu beitragen, dass die Haardichte und der Haardurchmesser zunimmt. Die Behandlung kann bei verschiedenen Formen des Haarausfalls zum Einsatz kommen, wie z. B. erblich bedingten, diffusem oder kreisrundem Haarausfall, sowie zur Unterstützung vor und nach einer Haartransplantation.',
     ],
   };
 

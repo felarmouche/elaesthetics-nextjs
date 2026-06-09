@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/longevity/og-longevity-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/longevity/longevity_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Longevity & Hautqualität in Bremen – EL Aesthetics',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/longevity',
+    canonical: 'https://elaesthetics-bremen.de/longevity/',
   },
 };
 
@@ -69,7 +69,7 @@ export default function LongevityPage() {
     title: 'Longevity - länger vital & gesund',
     content: [
       'Longevity-Behandlungen sind ganzheitliche Verfahren der ästhetischen Medizin, die auf zellulärer Ebene ansetzen, um spürbare Verbesserungen von Hautqualität und Vitalität zu erreichen. Mit den Jahren verlangsamt sich die Erneuerung der Haut, Kollagen und Elastinfasern nehmen ab, Feuchtigkeit geht verloren. Moderne regenerative Methoden setzen hier an, aktivieren körpereigene Prozesse und stärken die Haut von innen.',
-      'Dazu können zum Beispiel Biostimulatoren, Polynukleotide, Eigenbluttherapie (PRP/PRF), medizinisches Microneedling und gezielte Infusionen gehören. Die Ergebnisse entwickeln sich schrittweise über Wichen, wirken natürlich und nachhaltig. Longevity ist dabei mehr als Ästhetik, es ist eine langfristige Strategie für Gesundheit und Wohlbefinden. Gemeinsam finden wir die passende Strategie für Ihre Vitalität, Hautgesundheit und Regeneration.'
+      'Dazu können zum Beispiel Biostimulatoren, Polynukleotide, Eigenbluttherapie (PRP/PRF), medizinisches Microneedling und gezielte Infusionen gehören. Die Ergebnisse entwickeln sich schrittweise über Wochen, wirken natürlich und nachhaltig. Longevity ist dabei mehr als Ästhetik, es ist eine langfristige Strategie für Gesundheit und Wohlbefinden. Gemeinsam finden wir die passende Strategie für Ihre Vitalität, Hautgesundheit und Regeneration.'
 
     ]
   };
@@ -93,14 +93,14 @@ export default function LongevityPage() {
     title: 'Häufige Fragen zu Hauterneuerung & Anti‑Aging',
     faqs: [
       {
-        question: 'Welche Methode ist die „beste” für mich?',
+        question: 'Welche Methode ist die „beste“ für mich?',
         answer:
           'Das hängt von Ihrem Hautbild ab. Für Feuchtigkeitsaufbau und Elastizität ist Bio-Remodelierung ideal. Bei beginnender Erschlaffung und für Zellregeneration sind Polynukleotide sinnvoll. Für natürliche Regeneration eignet sich Eigenblut (PRF/PRP). Strukturthemen profitieren von Microneedling oder sanften Peelings. Meist überzeugt ein individueller Mix.'
       },
       {
         question: 'Kann man Hautalterung rückgängig machen?',
         answer:
-          'Komplett zurückdrehen lässt sie sich nicht. Ziel ist eine sichtbare Verjüngungstendenz: mehr Straffung, bessere Textur, frischere Ausstrahlung und Reduktion feiner Linien. Tiefe Falten können gemildert, nicht „gelöscht” werden. Realistische, natürliche Ergebnisse stehen im Fokus.'
+          'Komplett zurückdrehen lässt sie sich nicht. Ziel ist eine sichtbare Verjüngungstendenz: mehr Straffung, bessere Textur, frischere Ausstrahlung und Reduktion feiner Linien. Tiefe Falten können gemildert, nicht „gelöscht“ werden. Realistische, natürliche Ergebnisse stehen im Fokus.'
       },
 
       {

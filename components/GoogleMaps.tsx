@@ -25,9 +25,9 @@ function Map() {
             <div className='w-full flex items-center justify-center'>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2395.7435818816684!2d8.894745077260676!3d53.09683997221811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b127013ba0a0bb%3A0x1ae9a26859c8919!2sRichtepad%2014%2C%2028355%20Bremen!5e0!3m2!1sde!2sde!4v1715082769754!5m2!1sde!2sde"
-                    width="450"
+                    width="100%"
                     height="400"
-                    className="mt-5"
+                    className="mt-5 w-full max-w-[600px]"
                     loading="lazy"
                 ></iframe>
             </div>

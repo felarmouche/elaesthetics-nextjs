@@ -8,7 +8,7 @@ export default function About() {
       <div className="flex flex-col max-w-[1300px] mx-auto">
         <h2 className="text-4xl font-normal mb-8 text-accent-dark uppercase tracking-[2px]">
           Über <br />
-          El Aesthetics
+          EL Aesthetics
         </h2>
 
         {/* Originalzitat (wieder voll) */}
@@ -39,7 +39,7 @@ export default function About() {
         <div className="flex justify-center my-8 md:mt-10">
           <Link
             href="/kontakt"
-            aria-label="Termin bei El Aesthetics Bremen buchen"
+            aria-label="Termin bei EL Aesthetics Bremen buchen"
             className="group inline-flex w-[300px] items-center justify-center bg-stone-900 px-7 sm:px-9 py-3.5 sm:py-4 text-white font-medium tracking-wide shadow-lg shadow-stone-900/10 hover:shadow-stone-900/20 hover:bg-stone-800 transition"
           >
             Termin vereinbaren

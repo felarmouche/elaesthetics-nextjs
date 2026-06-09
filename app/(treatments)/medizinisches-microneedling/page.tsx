@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/microneedling/og-microneedling-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Medizinisches Microneedling in Bremen – EL Aesthetics',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/medizinisches-microneedling',
+    canonical: 'https://elaesthetics-bremen.de/medizinisches-microneedling/',
   },
 };
 

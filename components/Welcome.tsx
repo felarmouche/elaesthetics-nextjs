@@ -27,7 +27,7 @@ export default function Welcome() {
       <div className="w-full">
         <div className="relative w-full aspect-[5/6] bg-[#e8d5c4] rounded-lg shadow-[0_20px_60px_rgba(0,0,0,0.1)] overflow-hidden">
           <Image
-            src="/assets/Profilbild engere auswahl/IMG_7336.jpg"
+            src="/assets/profilbild/IMG_7336.webp"
             width={800}
             height={960}
             alt="Schwarz Weiß Portrait von dem Gesicht einer Frau"

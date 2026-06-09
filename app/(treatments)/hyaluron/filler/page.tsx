@@ -42,11 +42,11 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets/hyaluron/og-hyaluron-filler-bremen.webp',
+      'https://elaesthetics-bremen.de/assets/hyaluron/hyaluron-filler_hero.webp',
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/hyaluron/filler',
+    canonical: 'https://elaesthetics-bremen.de/hyaluron/filler/',
   },
 };
 

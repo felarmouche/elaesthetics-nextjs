@@ -28,7 +28,7 @@ export default function KontaktForm() {
             label: 'WhatsApp',
             color: '#25D366',
             value: '+49 155 66919635',
-            href: 'https://wa.me/491566919635',
+            href: 'https://wa.me/4915566919635',
             description: 'Chat direkt'
         },
         {
@@ -44,7 +44,7 @@ export default function KontaktForm() {
             label: 'Telefon',
             color: '#21BDFD',
             value: '+49 155 66919635',
-            href: 'tel:+491566919635',
+            href: 'tel:+4915566919635',
             description: 'Rufen Sie an'
         },
         {

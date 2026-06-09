@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/filler/og-image-faltenbehandlung-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/faltenbehandlung/faltenbehandlung_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Faltenbehandlung in Bremen – EL Aesthetics',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/faltenbehandlung',
+    canonical: 'https://elaesthetics-bremen.de/faltenbehandlung/',
   },
 };
 

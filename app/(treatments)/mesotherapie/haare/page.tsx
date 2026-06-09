@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/mesotherapie/og-image-mesotherapie-haare-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/mesotherapie/mesotherapie-haare_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Mesotherapie Haare Bremen | Haarausfall & Verdichtung | EL Aesthetics',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/mesotherapie/haare',
+    canonical: 'https://elaesthetics-bremen.de/mesotherapie/haare/',
   },
 };
 

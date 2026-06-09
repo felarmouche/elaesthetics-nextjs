@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/botulinumtoxin/botox-faltenbehandlung_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Medizinische Behandlungen in Bremen – EL Aesthetics',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/medizinische-behandlungen',
+    canonical: 'https://elaesthetics-bremen.de/medizinische-behandlungen/',
   },
 };
 
@@ -58,7 +58,7 @@ export default function BotulinumtoxinBehandlungenPage() {
   });
 
   const heroData: HeroSectionProps = {
-    title: "Medizische Botulinumtoxin-Behandlungen in Bremen",
+    title: "Medizinische Botulinumtoxin-Behandlungen in Bremen",
     subtitle:
       "Bei Bruxismus, chronischer Migräne und Hyperhidrose",
     imageSrc: "/assets/medizinische-behandlungen/medizinische-behandlunge_hero.webp",

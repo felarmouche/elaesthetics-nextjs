@@ -43,11 +43,11 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'de_DE',
     images: [
-      'https://elaesthetics-bremen.de/assets/prf/og-prf-vampire-lifting-haut-bremen.webp',
+      'https://elaesthetics-bremen.de/assets/eigenbluttherapie/eigenbluttherapie-vampire-lifting_hero.webp',
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie/vampir-lifting',
+    canonical: 'https://elaesthetics-bremen.de/eigenbluttherapie/vampir-lifting/',
   },
 };
 

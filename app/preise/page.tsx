@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   keywords:
     ['Preise Bremen', 'Behandlungskosten Bremen', 'Botulinumtoxin Kosten Bremen', 'Hyaluron Filler Preise Bremen', 'ästhetische Behandlungen Preisliste Bremen'],
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/preise',
+    canonical: 'https://elaesthetics-bremen.de/preise/',
   },
 };
 
@@ -52,14 +52,14 @@ export default function PreisePage() {
             <NavButton id='hyaluron'>Hyaluronsäure</NavButton>
             <NavButton id='bio'>Biostimulation</NavButton>
             <NavButton id='prp'>Eigenbluttherapie (PRF/PRP)</NavButton>
-            <NavButton id='haare'>Haarbehadlungen</NavButton>
+            <NavButton id='haare'>Haarbehandlungen</NavButton>
             <NavButton id='fett'>Fett-weg-Spritze</NavButton>
           </div>
         </div>
       </nav>
 
       <div className="max-w-4xl mx-auto px-6 py-12 space-y-16">
-        <p className=" fond-bold text-gray-500 leading-relaxed">
+        <p className="font-bold text-gray-500 leading-relaxed">
           *Die genannten Preise sind Richtwerte. Die individuelle Abrechnung richtet sich nach der Gebührenordnung der Ärzte (GOÄ).
           Die Kosten für ästhetische Behandlungen werden nicht von gesetzlichen oder privaten Krankenkassen übernommen.
         </p>

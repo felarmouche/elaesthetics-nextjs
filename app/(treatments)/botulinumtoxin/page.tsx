@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   title: 'Botulinumtoxin Behandlung Bremen',
   description: 'Botulinumtoxin-Behandlungen in Bremen: Faltenglättung, Masseter, Hyperhidrose & Migräne. Ärztliche Expertise & individuelle Beratung. Jetzt Termin vereinbaren.',
   keywords: ['Botulinumtoxin Bremen', 'Botox Bremen', 'Botox Arzt Bremen', 'Botulinumtoxin Behandlung Bremen'],
-  alternates: { canonical: 'https://elaesthetics-bremen.de/botulinumtoxin' },
+  alternates: { canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/' },
   openGraph: {
     title: 'Botulinumtoxin Behandlung in Bremen – EL Aesthetics',
     description: 'Ärztliche Botulinumtoxin-Behandlungen in Bremen: Faltenglättung, Masseter, Hyperhidrose & Migräne. Individuelle Beratung.',

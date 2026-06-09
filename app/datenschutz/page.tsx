@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: 'Datenschutzerklärung',
     description: 'Datenschutzerklärung der Privatpraxis EL Aesthetics Bremen. Informationen zur Datenverarbeitung gemäß DSGVO.',
     alternates: {
-        canonical: 'https://elaesthetics-bremen.de/datenschutz',
+        canonical: 'https://elaesthetics-bremen.de/datenschutz/',
     },
 };
 
@@ -34,7 +34,7 @@ export default function DatenschutzPage() {
                     </div>
                     
                     <p className="text-lg text-gray-600">
-                        Stand: Oktober 2024
+                        Stand: Juni 2026
                     </p>
                 </div>
             </div>

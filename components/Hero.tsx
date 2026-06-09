@@ -7,13 +7,13 @@ export default function Hero() {
     return (
         <header
             className="relative min-h-[85vh] md:min-h-[85vh] flex items-center justify-center overflow-hidden"
-            aria-label="Hero: El Aesthetics Bremen"
+            aria-label="Hero: EL Aesthetics Bremen"
         >
             {/* Mobile Bild */}
             <div className="absolute inset-0 block md:hidden">
                 <Image
                     src="/assets/cover-cutted.webp"
-                    alt="El Aesthetics Bremen"
+                    alt="EL Aesthetics Bremen"
                     fill
                     fetchPriority="high"
                     sizes="100vw"
@@ -24,7 +24,7 @@ export default function Hero() {
             <div className="absolute inset-0 hidden md:block">
                 <Image
                     src="/assets/chatGPT-picture-small.webp"
-                    alt="El Aesthetics Bremen"
+                    alt="EL Aesthetics Bremen"
                     fill
                     fetchPriority="high"
                     sizes="100vw"
@@ -56,7 +56,7 @@ export default function Hero() {
                 {/* Premium Glassmorphism Button */}
                 <Link
                     href="/kontakt"
-                    aria-label="Termin bei El Aesthetics Bremen buchen"
+                    aria-label="Termin bei EL Aesthetics Bremen buchen"
                     className="group inline-flex w-auto items-center justify-center px-8 sm:px-10 py-4 sm:py-5 bg-white/5  text-white uppercase font-medium text-xs sm:text-sm tracking-[0.2em] border border-white/50 transition-all duration-400 hover:bg-white/80 hover:text-black hover:border-white shadow-2xl"
                 >
                     Jetzt Termin buchen

@@ -37,10 +37,10 @@ export const metadata: Metadata = {
         siteName: 'EL Aesthetics Bremen',
         type: 'website',
         locale: 'de_DE',
-        images: [{ url: '/assets/botulinumtoxin/og-image-botox-spezial.webp', width: 1200, height: 630, alt: 'Ästhetische Botulinumtoxin-Behandlungen bei EL Aesthetics Bremen' }],
+        images: [{ url: '/assets/botulinumtoxin/aesthetische-behandlungen_hero.webp', width: 1200, height: 630, alt: 'Ästhetische Botulinumtoxin-Behandlungen bei EL Aesthetics Bremen' }],
     },
     alternates: {
-        canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/aesthetische-behandlungen',
+        canonical: 'https://elaesthetics-bremen.de/botulinumtoxin/aesthetische-behandlungen/',
     },
 };
 

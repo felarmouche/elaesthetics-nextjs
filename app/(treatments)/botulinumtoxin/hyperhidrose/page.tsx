@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://elaesthetics-bremen.de/botulinumtoxin/hyperhidrose",
+    canonical: "https://elaesthetics-bremen.de/botulinumtoxin/hyperhidrose/",
   },
 };
 
@@ -223,7 +223,7 @@ export default function BotoxHyperhidrosePage() {
         },
         {
           title: "Alkohol",
-          description: "In den 2-3 Tage Stunden besser vermeiden.",
+          description: "In den ersten 2-3 Tagen besser vermeiden.",
         },
       ],
     },

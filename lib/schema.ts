@@ -37,7 +37,7 @@ export function getPhysicianSchema() {
     name: 'Ola El-Armouche',
     medicalSpecialty: 'Dermatology',
     telephone: '+4915566919635',
-    image: `${SITE_URL}/assets/Profilbild engere auswahl/IMG_7336.webp`,
+    image: `${SITE_URL}/assets/profilbild/IMG_7336.webp`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: 'Richtepad 14',
@@ -88,8 +88,8 @@ export function getPracticeSchema(aggregateRating?: { ratingValue: number; revie
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: 53.1057,
-      longitude: 8.9006,
+      latitude: 53.0968,
+      longitude: 8.8947,
     },
     openingHoursSpecification: [
       {

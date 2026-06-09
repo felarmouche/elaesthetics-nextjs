@@ -21,8 +21,8 @@ export default function Services() {
           Leistungen
         </h2>
         <p className="max-w-[900px] mx-auto mb-4 text-text-primary">
-          El Aesthetics bietet Ihnen eine
-          breite Palette an minimalinvasiven ästhetischen Behandlungen - von Unterspritzungen mit Hyalurosäure Fillern und Botulinumtoxin bis hin zu modernen regenerativen Verfahren.
+          EL Aesthetics bietet Ihnen eine
+          breite Palette an minimalinvasiven ästhetischen Behandlungen - von Unterspritzungen mit Hyaluronsäure Fillern und Botulinumtoxin bis hin zu modernen regenerativen Verfahren.
         </p>
       </div>
 

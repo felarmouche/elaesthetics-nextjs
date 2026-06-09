@@ -16,7 +16,7 @@ export const botoxMasseter: Treatment =
 };
 export const botoxMigraene: Treatment =
 {
-    imageUrl: "/assets/botulinumtoxin/botox-migräne_hero.webp",
+    imageUrl: "/assets/botulinumtoxin/botox-migraene_hero.webp",
     imageAlt: "Botulinumtoxin zur Migräneprophylaxe in Bremen",
     title: "Botulinumtoxin bei Migräne",
     description:
@@ -94,7 +94,7 @@ export const biostimulation: Treatment = {
     imageAlt: 'Biostimulation mit Radiesse oder Sculptra',
     title: 'Biostimulation (Biostimulatoren)',
     description:
-        'Nachhaltiger Aufbau des haut eigenen Stützgerüsts. Biostimulatoren (z.B. Calciumhydroxylapatit) regen die körpereigene Kollagenproduktion an für langfristig festere Haut.',
+        'Nachhaltiger Aufbau des hauteigenen Stützgerüsts. Biostimulatoren (z.B. Calciumhydroxylapatit) regen die körpereigene Kollagenproduktion an für langfristig festere Haut.',
     treatmentUrl: '/biostimulation'
 };
 
@@ -166,7 +166,7 @@ export const hyperhidrose: Treatment = {
 };
 
 export const migraene: Treatment = {
-    imageUrl: '/assets/botulinumtoxin/botox-migräne_hero.webp',
+    imageUrl: '/assets/botulinumtoxin/botox-migraene_hero.webp',
     imageAlt: 'Botox Behandlung bei Migräne',
     title: 'Migräne-Therapie',
     description:

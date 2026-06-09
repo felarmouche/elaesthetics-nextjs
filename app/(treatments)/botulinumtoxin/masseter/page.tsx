@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     locale: "de_DE",
     images: [
       {
-        url: "https://elaesthetics-bremen.de/assets/botulinumtoxin/og-image-botox-masseter-bremen.webp",
+        url: "https://elaesthetics-bremen.de/assets/botulinumtoxin/botox-masseter_hero.webp",
         width: 1200,
         height: 630,
         alt: "Masseter-Behandlung in Bremen – EL Aesthetics",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://elaesthetics-bremen.de/botulinumtoxin/masseter",
+    canonical: "https://elaesthetics-bremen.de/botulinumtoxin/masseter/",
   },
 };
 
@@ -305,7 +305,7 @@ export default function BotoxMasseterPage() {
   const ctaData: CTASectionProps = {
     title: "Individuelle Beratung zur Masseter Behandlung",
     subtitle:
-      "Sie möchten wissen, ob die Anwendung für Sie geeignet ist und welche masseter behandlung kosten einzuplanen sind? Wir beraten Sie gerne.",
+      "Sie möchten wissen, ob die Anwendung für Sie geeignet ist und welche Kosten für eine Masseter-Behandlung einzuplanen sind? Wir beraten Sie gerne.",
     primaryCTA: { text: "Termin anfragen", href: "/kontakt" },
     secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" },
   };

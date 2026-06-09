@@ -43,14 +43,14 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/peeling/og-chemisches-peeling-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/chemisches-peeling/chemisches-peeling_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Chemisches Peeling in Bremen – EL Aesthetics',
       },
     ],
   },
-  alternates: { canonical: 'https://elaesthetics-bremen.de/chemisches-peeling' },
+  alternates: { canonical: 'https://elaesthetics-bremen.de/chemisches-peeling/' },
 };
 
 export default function ChemischesPeelingPage() {

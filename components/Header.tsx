@@ -158,6 +158,8 @@ export default function Header() {
                 <button
                   className={`font-medium inline-flex items-center gap-1 transition-colors duration-200 py-6 ${activeDesktopMenu === 'treatments' ? 'text-[#ac9769]' : 'text-gray-600 hover:text-black'
                     }`}
+                  onClick={() => setActiveDesktopMenu(activeDesktopMenu === 'treatments' ? null : 'treatments')}
+                  aria-haspopup="true"
                   aria-expanded={activeDesktopMenu === 'treatments'}
                 >
                   Behandlungen

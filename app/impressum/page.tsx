@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: "Impressum",
   description:
     "Impressum der Privatpraxis EL Aesthetics Bremen: ästhetische und regenerative Medizin, Ärztin Ola Alona El‑Armouche, Kontaktdaten und rechtliche Angaben.",
-  alternates: { canonical: "/impressum" },
+  alternates: { canonical: "/impressum/" },
   robots: { index: true, follow: true },
   openGraph: {
     title: "Impressum | EL Aesthetics Bremen",
@@ -38,7 +38,7 @@ const schemaOrg = {
     addressLocality: "Bremen",
     addressCountry: "DE",
   },
-  medicalSpecialty: ["RegenerativeMedicine", "CosmeticSurgery"],
+  medicalSpecialty: "Dermatology",
   founder: {
     "@type": "Person",
     name: "Ola Alona El-Armouche",
@@ -124,7 +124,7 @@ export default function ImpressumPage() {
         <div className="mt-3 rounded-2xl border p-5">
           <dl className="grid grid-cols-1 gap-y-2 sm:grid-cols-3 sm:gap-4">
             <dt className="font-medium">Berufsbezeichnung</dt>
-            <dd className="sm:col-span-2">Arzt</dd>
+            <dd className="sm:col-span-2">Ärztin</dd>
             <dt className="font-medium">Zuständige Kammer</dt>
             <dd className="sm:col-span-2">
               Ärztekammer Bremen

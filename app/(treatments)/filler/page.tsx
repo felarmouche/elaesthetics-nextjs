@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     locale: 'de_DE',
     images: [
       {
-        url: 'https://elaesthetics-bremen.de/assets/filler/og-image-filler-bremen.webp',
+        url: 'https://elaesthetics-bremen.de/assets/filler/filler_hero.webp',
         width: 1200,
         height: 630,
         alt: 'Filler & Volumenaufbau in Bremen – EL Aesthetics',
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://elaesthetics-bremen.de/filler',
+    canonical: 'https://elaesthetics-bremen.de/filler/',
   },
 };
 
