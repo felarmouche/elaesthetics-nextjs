@@ -78,9 +78,9 @@ export default function PRFMicroneedlingPage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: 'PRF Microneedling (Plasma-Needling) in Bremen',
+    title: 'PRF-Microneedling in Bremen',
     subtitle:
-      'Die Kombination aus Microneedling und PRF-Matrix unterstützt die Hautregeneration und kann zu einem verfeinert wirkenden Hautbild, glatterer Hauttextur und einem ebenmäßigeren Erscheinungsbild beitragen.',
+      'Medizinisches Microneedling kombiniert mit den Vorteilen von plättchenreichem Fibrin (PRF) zur Verbesserung der Hautgesundheit.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie-microneedling_hero.webp',
     imageAlt: 'PRF Microneedling mit Plasma-Needling – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -100,10 +100,12 @@ export default function PRFMicroneedlingPage() {
       {
         category: 'Gesicht, Hals & Dekolleté',
         items: [
-          { title: 'Porenverfeinerung & Textur-Glättung' },
-          { title: 'Aknenarben & Narbenstrukturen' },
-          { title: 'Feine Fältchen & Elastizität' },
-          { title: 'Pigmentunregelmäßigkeiten / Teint' }
+          { title: 'Porenverfeinerung' },
+          { title: 'Akne & Aknenarben' },
+          { title: 'Feine Fältchen' },
+          { title: 'Hyperpigmentierungen' },
+          { title: 'Rosazea' },
+          { title: 'Kollagenstimulation' }
         ]
       },
       {

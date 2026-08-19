@@ -75,7 +75,7 @@ export default function VampirLiftingPage() {
   const heroData: HeroSectionProps = {
     title: 'Vampir Lifting in Bremen',
     subtitle:
-      'Vampir Lifting mit PRP & PRF – natürliche Hautverjüngung durch Wachstumsfaktoren und Stammzellen.',
+      'Vampir Lifting mit PRP & PRF – natürliche Hautverjüngung durch Wachstumsfaktoren.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie_hero.webp',
     imageAlt: 'Vampir Lifting mit Eigenblut-Plasma für Glow – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -93,32 +93,33 @@ export default function VampirLiftingPage() {
     title: 'Behandlungsbereiche & Ziele',
     categories: [
       {
-        category: 'Gesicht & Dekolleté',
+        category: 'Bereiche',
         items: [
           { title: 'Gesicht', description: 'Wangen, Stirn, Schläfen' },
           { title: 'Augenbereich (Augenringe/Tränenrinne)' },
-          { title: 'Nasolabial-/Marionettenzone' },
           { title: 'Dekolleté' },
+          { title: 'Hals' },
         ],
       },
       {
         category: 'Ästhetische Hautziele',
         items: [
-          { title: 'Verfeinerung und Unterstützung eines ebenmäßigeren Hautbildes' },
-          { title: 'Feiner erscheinende Poren' },
-          { title: 'Unterstützung bei feinen Linien und ersten Fältchen' },
-          { title: 'Verbesserung der Hauttextur' },
-          { title: 'Minderung ungleichmäßiger Pigmentierungen' },
-          { title: 'Begleitende Behandlung atropher Aknenarben' },
+          { title: 'Verfeinerung des Hautbildes' },
+          { title: 'Poren' },
+          { title: 'Fältchen' },
+          { title: 'Hauttextur' },
+          { title: 'Pigmentierungen' },
+          { title: 'Akne & Aknenarben' },
+          { title: 'Rosazea' },
         ],
       },
       {
         category: 'Hautqualität & Revitalisierung',
         items: [
-          { title: 'Unterstützung natürlicher Regenerationsprozesse der Haut' },
-          { title: 'Unterstützung der Kollagen- und Elastinbildung' },
-          { title: 'Mehr Spannkraft und ein straffer wirkendes Hautbild' },
-          { title: 'Verbesserung der Hautqualität und des Hautgefühls' },
+          { title: 'Natürliche Regeneration der Haut' },
+          { title: 'Kollagen- und Elastinbildung' },
+          { title: 'Spannkraft' },
+          { title: 'Verbesserung der Hautqualität' },
         ],
       },
     ],
@@ -162,9 +163,9 @@ export default function VampirLiftingPage() {
       instructions: [
         { title: 'Schonung', description: 'Areale möglichst wenig berühren; 24 Std. kein Sport.' },
         { title: 'Pflege', description: '2–3 Tage milde Produkte; 2–3 Tage kein Make-up/Puder.' },
-        { title: 'Behandlungen', description: '7 Tage keine Massagen/Peelings/energetischen Verfahren.' },
+        { title: 'Behandlungen', description: '14 Tage keine weiteren kosmetischen Behandlungen.' },
         { title: 'Hitze/UV/Wasser', description: '7 Tage Sauna, Solarium, Sonne, Schwimmbad meiden; mindestens LSF 50 verwenden.' },
-        { title: 'Sport', description: '1 Tag auf Sport verzichten.' },
+        { title: 'Sport', description: '2-3 Tage auf Sport verzichten.' },
       ],
     },
   };
@@ -194,7 +195,7 @@ export default function VampirLiftingPage() {
         answer:
           'Nach der Behandlung beginnt die Haut unmittelbar mit den regenerativen Prozessen. In den ersten 1–2 Wochen fühlt sich die Haut praller, rosiger und genährter an. Nach etwa zwei Wochen geht dieser Effekt vorübergehend etwas zurück, während die regenerativen Prozesse weiterlaufen.\n\nSichtbare Verbesserungen sind nach 3–4 Behandlungen zu erwarten. Die Ergebnisse können je nach Person variieren, da dieses natürliche Verfahren von der individuellen Aktivität der Blutplättchen abhängt.',
       },
-      
+
     ],
   };
 

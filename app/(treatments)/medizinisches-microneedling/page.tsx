@@ -80,19 +80,19 @@ export default function MedizinischesMicroneedlingPage() {
   const heroData: HeroSectionProps = {
     title: "Medizinisches Microneedling in Bremen",
     subtitle:
-      "Medizinisches Microneedling mit dem Dermapen 4 - Verfahren zur Hautverjüngung & Regeneration",
+      "Medizinisches Microneedling mit dem Dermapen 4® zur Verbesserung des Hautbildes",
     imageSrc: "/assets/medizinisches-microneedling/medizinisches-microneedling_hero.webp",
     imageAlt: "Medizinisches Microneedling gegen Aknenarben und Poren – EL Aesthetics Bremen",
     primaryCTA: { text: "Termin vereinbaren", href: "/kontakt" },
-    secondaryCTA: { text: "+49 155 66919635", href: "tel:+4915566919635" }
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' }
   };
 
   const introData: IntroSectionProps = {
     title: "Was ist Medizinisches Microneedling?",
     content: [
-      "Das Medizinische Microneedling ist ein schonendes, minimal-invasives Verfahren zur Hautverjüngung und Regeneration. Der Dermapen 4 erzeugt mehrere Tausend Mikrokanäle pro Sekunde. Die Nadeltiefe kann präzise auf unterschiedliche Hautzustände und -bereiche eingestellt werden.",
-      "Durch die feinsten Mikroverletzungen werden die Selbstheilungsprozesse und die Bildung von körpereigenem Kollagen, Elastin und Hyaluronsäure angeregt. Das Ergebnis kann ein verjüngtes, erfrischtes und ebenmäßiges Hautbild sein.",
-      "Spezielle Einstellungen ermöglichen auch die Behandlung von Narbengewebe bei guter Verträglichkeit – selbst bei sensibler Haut, Rosazea oder Couperose. Das Verfahren ist für verschiedene Hauttypen und Altersgruppen geeignet."
+      "Das medizinische Microneedling ist ein minimal-invasives Verfahren zur Hautregeneration und Verbesserung der Hautqualität. Mit dem Dermapen 4 werden bis zu 1.920 präzise Mikrokanäle pro Sekunde erzeugt. Die Eindringtiefe der Nadeln wird individuell an den jeweiligen Hautbereich und den Hautbefund angepasst.",
+      "Die gezielt gesetzten Mikroverletzungen aktivieren die natürlichen Regenerationsprozesse der Haut und fördern die Neubildung von Kollagen, Elastin und Hyaluronsäure. Dadurch können Hautstruktur, Spannkraft und Hautbild nachhaltig verbessert werden.",
+      "Die Behandlung kann an verschiedenen Körperregionen, insbesondere im Gesicht, am Hals, am Dekolleté und an den Händen durchgeführt werden. Je nach Hautbefund kann das medizinische Microneedling sinnvoll mit ausgewählten Wirkstoffen oder regenerativen Therapien kombiniert werden, um die Behandlung individuell auf die Bedürfnisse der Haut abzustimmen."
     ]
   };
 
@@ -102,25 +102,27 @@ export default function MedizinischesMicroneedlingPage() {
       {
         category: "Gesicht, Hals & Dekolleté",
         items: [
-          { title: "Aknenarben & Narbenstrukturen" },
-          { title: "Feinere Poren & glatteres Hautbild" },
+          { title: "Akne & Aknenarben" },
+          { title: "Rosazea" },
+          { title: "Vergrößerte Poren" },
+          { title: "Melasma" },
           { title: "Feine Linien & beginnende Fältchen" },
-          { title: "Pigmentunregelmäßigkeiten / Teint" },
-          { title: "Rosazea / Couperose" },
-          { title: "Hautrötungen & Schwellungen" }
+          { title: "Hyperpigmentierungen" },
+          { title: "Narben" },
+          { title: "Kollagenbildung" },
+
         ]
       },
       {
         category: "Körper",
         items: [
-          { title: "Dehnungsstreifen (z. B. Bauch, Hüfte, Oberschenkel)" },
-          { title: "Allgemeine Hautstraffung / Bindegewebe" }
+          { title: "Dehnungsstreifen" },
         ]
       },
       {
         category: "Kopfhaut",
         items: [
-          { title: "Unterstützung bei Haarausfall / Anregung des Haarwachstums" }
+          { title: "Unterstützung bei Haarausfall" }
         ]
       },
       {

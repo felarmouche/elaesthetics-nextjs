@@ -126,20 +126,21 @@ export default function BotulinumtoxinSpezialPage() {
                         description: 'Verschmälerung des unteren Gesichtsdrittels durch Entspannung des großen Kaumuskels. (Auch bei Zähneknirschen).'
                     },
                     {
-                        title: 'Anheben der Nasenspitze',
-                        description: 'Sanfte Anhebung der Nasenspitze durch gezielte Entspannung des Nasenmuskelgewebs.'
-                    },
-                    {
-                        title: 'Anheben der Mundwinkel',
-                        description: 'Sanfte Anhebung der Mundwinkel durch gezielte Entspannung des Muskelgewebs.'
-                    },
-                    {
                         title: 'Lower face',
                         description: 'Lifting der unteren Gesichtspartie.'
                     },
                     {
                         title: 'Full face',
                         description: 'Ganzheitliches Lifting des Gesichts'
+
+                    },
+                    {
+                        title: 'Jawline Definition',
+                        description: ''
+                    },
+                    {
+                        title: 'Trap Tox',
+                        description: ''
 
                     }
                 ],
@@ -154,6 +155,10 @@ export default function BotulinumtoxinSpezialPage() {
                     {
                         title: 'Bunny Lines',
                         description: 'Feine Fältchen seitlich am Nasenrücken, die oft beim Lachen entstehen ("Häschen-Falten").'
+                    },
+                    {
+                        title: 'Anheben der Nasenspitze',
+                        description: 'Sanfte Anhebung der Nasenspitze durch gezielte Entspannung des Nasenmuskelgewebs.'
                     },
                 ],
             },

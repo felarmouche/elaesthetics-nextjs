@@ -110,12 +110,14 @@ export default function PolynukleotideBehandlungPage() {
         category: "Gesicht & Haut",
         items: [
           { title: "Hautregeneration und Hautverjüngung" },
-          { title: "Faltenreduktion (feine Linien und tiefere Falten)" },
+          { title: "Faltenreduktion" },
           { title: "Verbesserung der Hautstruktur und Elastizität" },
-          { title: "Behandlung von Aknenarben und Narbengewebe" },
+          { title: "Behandlung von Narben" },
           { title: "Reduktion von Hyperpigmentierungen" },
           { title: "Hals und Dekolleté" },
-          { title: "Verbesserung der Hauthydratation" }
+          { title: "Verbesserung der Hauthydratation" },
+          { title: "Rosazea" }
+
         ]
       },
       {
@@ -123,7 +125,6 @@ export default function PolynukleotideBehandlungPage() {
         items: [
           { title: "Reduktion dunkler Augenringe" },
           { title: "Glättung feiner Linien und Fältchen" },
-          { title: "Straffung der empfindlichen Augenpartie" },
           { title: "Verbesserung der Hautqualität um die Augen" }
         ]
       }

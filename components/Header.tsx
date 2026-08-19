@@ -25,11 +25,11 @@ const TREATMENT_MENU: { [key: string]: MenuItem[] } = {
         { label: 'Masseter (Zähneknirschen)', href: '/botulinumtoxin/masseter' },
         { label: 'Hyperhidrose (Schwitzen)', href: '/botulinumtoxin/hyperhidrose' },
         { label: 'Migräne', href: '/botulinumtoxin/migraene' },
-        { label: 'Baby-Botox (Mesobotox)', href: '/botulinumtoxin/mesobotox' },
+        { label: 'Microbotox (Mesobotox)', href: '/botulinumtoxin/mesobotox' },
       ]
     },
     {
-      label: 'Hyaluron',
+      label: 'Hyaluronsäure',
       href: '/hyaluron',
       children: [
         { label: 'Filler (Volumen)', href: '/hyaluron/filler' },
@@ -38,15 +38,13 @@ const TREATMENT_MENU: { [key: string]: MenuItem[] } = {
         { label: 'Hyaluronidase (Hylase)', href: '/hyaluron/hylase' },
       ]
     },
-    { label: 'Biostimulation', href: '/biostimulation' },
-    { label: 'Medizinische Behandlungen', href: '/medizinische-behandlungen' },
   ],
   // Spalte 2: Hautqualität & Regeneration
   skin: [
-    { label: 'Augen-Behandlung', href: '/augen-behandlung' },
+    { label: 'Biostimulatoren', href: '/biostimulation' },
     { label: 'Polynukleotide', href: '/polynukleotide' },
     {
-      label: 'Eigenbluttherapie',
+      label: 'PRP / PRF',
       href: '/eigenbluttherapie',
       children: [
         { label: 'Vampir Lifting', href: '/eigenbluttherapie/vampir-lifting' },
@@ -58,16 +56,19 @@ const TREATMENT_MENU: { [key: string]: MenuItem[] } = {
       label: 'Mesotherapie',
       href: '/mesotherapie',
       children: [
-        { label: 'Meso-Glow (Haut)', href: '/mesotherapie/haut' },
-        { label: 'Meso-Hair (Haare)', href: '/mesotherapie/haare' },
+        { label: 'Für die Haut', href: '/mesotherapie/haut' },
+        { label: 'Für die Haare', href: '/mesotherapie/haare' },
       ]
     },
     { label: 'Medizinisches Microneedling', href: '/medizinisches-microneedling' },
     { label: 'Chemisches Peeling', href: '/chemisches-peeling' },
+    { label: 'Infusionen', href: '/infusionen' },
+
   ],
   // Spalte 3: Lösungen & Körper
   solutions: [
     { label: 'Falten-Behandlung (Übersicht)', href: '/faltenbehandlung' },
+    { label: 'Augen-Behandlung', href: '/augen-behandlung' },
     { label: 'Haarausfall-Behandlung', href: '/haarausfall-behandlung' },
     { label: 'Longevity', href: '/longevity' },
     { label: 'Fett-Weg-Spritze', href: '/fett-weg-spritze' },
@@ -177,7 +178,7 @@ export default function Header() {
                   <div className="flex p-8 gap-8">
                     {/* Spalte 1: Injektionen */}
                     <div className="flex-1 space-y-6">
-                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b pb-2">Injektionen & Medizin</h3>
+                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b pb-2"></h3>
                       <ul className="space-y-3">
                         {TREATMENT_MENU.injections.map((item) => (
                           <DesktopMenuItem key={item.label} item={item} closeMenu={() => setActiveDesktopMenu(null)} />
@@ -187,7 +188,7 @@ export default function Header() {
 
                     {/* Spalte 2: Haut & Regeneration */}
                     <div className="flex-1 space-y-6 border-l border-gray-100 pl-8">
-                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b pb-2">Hautqualität & Regeneration</h3>
+                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b pb-2"></h3>
                       <ul className="space-y-3">
                         {TREATMENT_MENU.skin.map((item) => (
                           <DesktopMenuItem key={item.label} item={item} closeMenu={() => setActiveDesktopMenu(null)} />
@@ -197,7 +198,7 @@ export default function Header() {
 
                     {/* Spalte 3: Lösungen */}
                     <div className="flex-1 space-y-6 border-l border-gray-100 pl-8">
-                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b pb-2">Lösungen & Körper</h3>
+                      <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-4 border-b pb-2"></h3>
                       <ul className="space-y-3">
                         {TREATMENT_MENU.solutions.map((item) => (
                           <DesktopMenuItem key={item.label} item={item} closeMenu={() => setActiveDesktopMenu(null)} />
@@ -370,7 +371,7 @@ function DesktopMenuItem({ item, closeMenu }: { item: MenuItem, closeMenu: () =>
         <Link
           href={item.href}
           onClick={closeMenu}
-          className="block text-sm text-gray-600 hover:text-[#ac9769] hover:translate-x-1 transition-all"
+          className="block text-sm font-semibold text-gray-800 mb-1 hover:text-[#ac9769] hover:translate-x-1 transition-all"
         >
           {item.label}
         </Link>

@@ -46,7 +46,7 @@ export const metadata: Metadata = {
 
 export default function HyaluronBremenPage() {
   const heroData: HeroSectionProps = {
-    title: 'Hyaluron Behandlung in Bremen',
+    title: 'Hyaluronsäure Behandlung in Bremen',
     subtitle:
       'Ob Volumenaufbau, Konturierung, Faltenglättung oder tiefenwirksame Hauthydratation – Hyaluronsäure bietet vielseitige Möglichkeiten.',
     imageSrc: '/assets/hyaluron/hyaluron-filler_hero.webp',

@@ -84,8 +84,8 @@ export default function HyaluronFillerBremenPage() {
   const introData: IntroSectionProps = {
     title: 'Was sind Hyaluronsäure-Filler?',
     content: [
-      'Mit zunehmendem Alter kommt es zu einem Abbau von Fett-, Knochen- und Muskelgewebe. Gleichzeitig nimmt die Produktion von Kollagen und Elastin ab. Die Folge sind ein Absinken der Gesichtszüge, nachlassende Spannkraft sowie der Verlust klarer Konturen. Durch die präzise Platzierung von Hyaluronsäure-Fillern kann verlorenes Volumen gezielt wieder aufgebaut, die Gesichtsharmonie verbessert und natürliche Strukturen schonend rekonstruiert werden.',
-      'Neben dem Ausgleich von Volumenverlust können Filler auch genutzt werden, um bestehende Gesichtszüge ästhetisch zu verfeinern. Durch gezielte Konturierung lassen sich beispielsweise Kinn, Wangen, Lippen oder Nase harmonisieren und definieren.',
+      'Mit zunehmendem Alter kommt es zu einem Abbau von Fett-, Knochen- und Muskelgewebe. Gleichzeitig nimmt die Produktion von Kollagen und Elastin ab. Die Folgen sind Falten, ein Absinken der Gesichtszüge, nachlassende Spannkraft sowie der Verlust klarer Konturen. Durch die präzise Platzierung von Hyaluronsäure-Fillern kann verlorenes Volumen gezielt wieder aufgebaut, die Gesichtsharmonie verbessert und natürliche Strukturen schonend rekonstruiert werden.',
+      'Neben der Faltenunterspritzng und dem Ausgleich von Volumenverlust, können Filler auch genutzt werden, um bestehende Gesichtszüge ästhetisch zu verfeinern. Durch gezielte Konturierung lassen sich beispielsweise Kinn, Wangen, Lippen oder Nase harmonisieren und definieren.',
     ],
   };
 

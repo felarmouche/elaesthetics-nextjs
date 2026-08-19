@@ -57,7 +57,7 @@ export default function KollagenstimulationPage() {
   const heroData: HeroSectionProps = {
     title: 'Biostimulation in Bremen',
     subtitle:
-      'Hautstraffung und natürlicher Volumenaufbau durch Biostimulation – Calciumhydroxylapatit & Poly-L-Milchsäure (PLLA, PDLLA).',
+      'Hautstraffung und natürlicher Volumenaufbau durch Biostimulation mit Calciumhydroxylapatit & Poly-L-Milchsäure (PLLA, PDLLA).',
     imageSrc: '/assets/biostimulation/biostimulation_hero.webp',
     imageAlt: 'Biostimulation mit Biostimulatoren zur Hautstraffung – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -67,8 +67,11 @@ export default function KollagenstimulationPage() {
   const introData: IntroSectionProps = {
     title: 'Was ist Biostimulation?',
     content: [
-      'Die Biostimulation ist ein minimal-invasives Verfahren der ästhetischen Medizin. Durch den Einsatz von Biostimulatoren wie Calciumhydroxylapatit, Poly-L-Milchsäure (PLLA, PDLLA), Hybrid-Filler oder Polynukleotiden wird die körpereigene Kollagenproduktion angeregt. Dadurch lässt sich natürliches Volumen wiederaufbauen, die Haut straffen und die allgemeine Hautqualität nachhaltig verbessern.',
-      'Mit zunehmendem Alter verliert die Haut Kollagen, Elastin und Hyaluronsäure und somit auch an Festigkeit, Elastizität und Frische. Biostimulatoren können diesem Prozess entgegenwirken.',
+      'Die Biostimulation ist ein minimal-invasives Verfahren zur Förderung körpereigenen Regeneration, Festigung des Gewebes und Verbesserung der Hautqualität.',
+      'Mit zunehmendem Alter nimmt die Produktion von Kollagen, Elastin und Hyaluronsäure ab. Die Haut verliert an Festigkeit, Elastizität und Spannkraft. Biostimulatoren können diesen Veränderungen entgegenwirken, indem sie die körpereigene Kollagenbildung fördern. Die Wirkung entwickelt sich schrittweise über Wochen bis Monate und kann zu einer verbesserten Hautstruktur, mehr Festigkeit, Straffung und einem natürlichen Volumenaufbau beitragen.',
+      'Je nach Hautzustand, Behandlungsregion und individuellem Ziel stehen unterschiedliche Biostimulatoren zur Verfügung, beispielsweise auf Basis von Calciumhydroxylapatit, Poly-L-Milchsäure (PLLA), Poly-D,L-Milchsäure (PDLLA), Hybrid-Fillern oder Polynukleotiden. Diese unterscheiden sich in ihrer Wirkweise und ihren Einsatzmöglichkeiten.',
+      'Welcher Biostimulator geeignet ist, wird individuell anhand der Hautqualität, des Gewebes, des Ausmaßes der altersbedingten Veränderungen und der gewünschten Behandlungsergebnisse ausgewählt. So kann ein maßgeschneidertes Behandlungskonzept für Gesicht, Hals, Dekolleté, Hände oder andere geeignete Regionen erstellt werden.'
+
     ],
   };
 
@@ -76,34 +79,34 @@ export default function KollagenstimulationPage() {
     title: 'Typische Behandlungsareale',
     categories: [
       {
-        category: 'Gesicht',
+        category: 'Behandlungsareale',
         items: [
-          { title: 'Wangen & Mittelgesicht' },
-          { title: 'Jawline/Kinnlinie & Kinn' },
-          { title: 'Marionettenfalten' },
-          { title: 'Nasolabialfalten' }
-        ],
-      },
-      {
-        category: 'Hals & Dekolleté',
-        items: [
+          { title: 'Gesicht' },
           { title: 'Hals' },
           { title: 'Dekolleté' },
+          { title: 'Hände' },
+          { title: 'Gesäß' },
+          { title: 'Bauch' },
+          { title: 'Beine' },
+          { title: 'Oberarme' },
         ],
       },
       {
-        category: 'Weitere Areale',
+        category: 'Ziele',
         items: [
-          { title: 'Hände' },
-          { title: 'Oberarme' },
-          { title: 'Bauch/Dehnungszonen' },
+          { title: 'Hautfestigung' },
+          { title: 'Straffung' },
+          { title: 'Verbesserung der Hautqualität' },
+          { title: 'Faltenreduktion' },
+          { title: 'Volumenaufbau' },
+          { title: 'Narbenverbesserung' },
+          { title: 'Dehnungsstreifen' },
+          { title: 'Aknenarben' }
         ],
       },
     ],
   };
 
-  // Optional: zentrale Preise, falls vorhanden:
-  // const priceFrom = PRICES?.biostimulation?.basis ?? 900;
 
   const quickInfoData: QuickInfoSectionProps = {
     title: 'Auf einen Blick',

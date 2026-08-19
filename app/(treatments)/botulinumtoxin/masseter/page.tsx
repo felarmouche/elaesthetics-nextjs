@@ -149,7 +149,7 @@ export default function BotoxMasseterPage() {
       },
       {
         title: "Mögliche Wirkdauer",
-        description: "etwa 3–6 Monate",
+        description: "4–6 Monate",
         iconUrl: "/assets/icons/CAL.svg",
       },
       {
@@ -167,7 +167,7 @@ export default function BotoxMasseterPage() {
   };
 
   const processData: ProcessSectionProps = {
-    title: "Ablauf in unserer Praxis",
+    title: "Ablauf",
     steps: [
       {
         number: "01",

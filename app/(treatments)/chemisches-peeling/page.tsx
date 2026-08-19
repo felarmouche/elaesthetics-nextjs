@@ -88,8 +88,6 @@ export default function ChemischesPeelingPage() {
     title: 'Was ist ein chemisches Peeling?',
     content: [
       'Das chemische Peeling ist ein Verfahren der ästhetischen Medizin zur kontrollierten Hauterneuerung. Es unterstützt die Behandlung von Pigmentflecken, Elastizitätsverlust/Hauterschlaffung, Akne & aknebedingte Narben, Dehnungsstreifen, feinen Falten und fahlem Teint.',
-      'Die eingesetzte Wirkstoffkombination besteht unter anderem aus Trichloressigsäure (TCA), Wasserstoffperoxid und Kojisäure. Durch die spezielle Formulierung dringen die Substanzen bis in mittlere Hautschichten vor, ohne eine sichtbare Abschälung zu verursachen.',
-      'In dieser Tiefe können verschiedene biologische Prozesse angeregt werden, etwa die Bildung von kollagenen Fasern oder die Freisetzung von Wachstumsfaktoren, die eine Regeneration der Haut bewirken können.',
     ],
   };
 
@@ -102,7 +100,6 @@ export default function ChemischesPeelingPage() {
           { title: 'Gesicht', description: 'Vollgesicht (Stirn, Wangen, Kinn) – für ein ebenmäßigeres Hautbild' },
           { title: 'Hals', description: 'Unterstützung der Hautelastizität' },
           { title: 'Dekolleté', description: 'Aufhellung sonnengeschädigter Haut' },
-          { title: 'Oberarme', description: 'Verbesserung der Hautstruktur' },
         ],
       },
       {
@@ -110,21 +107,13 @@ export default function ChemischesPeelingPage() {
         items: [
           { title: 'Elastizitätsverlust/Hauterschlaffung' },
           { title: 'Feine Falten/Knitterfältchen' },
-          { title: 'Akne & aknebedingte Narben (je nach Befund)' },
+          { title: 'Akne & Aknenarben' },
           { title: 'Pigmentflecken/ungleichmäßiger Teint' },
           { title: 'Eingesunkene Narben/Dehnungsstreifen' },
+          { title: 'Kollagenstimulation' },
+
         ],
-      },
-      {
-        category: 'Kontraindikationen',
-        items: [
-          { title: 'Überempfindlichkeit', description: 'Bekannte Unverträglichkeit gegen TCA, Wasserstoffperoxid oder Kojisäure' },
-          { title: 'Schwangerschaft & Stillzeit' },
-          { title: 'Offene Wunden', description: 'Frische Verletzungen oder offene Wunden im Behandlungsareal' },
-          { title: 'Akute Hautentzündungen' },
-          { title: 'Aktive Infektionen', description: 'Aktive bakterielle Hautinfektionen oder behandlungsbedürftige Hauterkrankungen' },
-        ],
-      },
+      }
     ],
   };
 
@@ -135,7 +124,7 @@ export default function ChemischesPeelingPage() {
       { title: 'Dauer', description: 'ca. 45 Minuten', iconUrl: '/assets/icons/TIME.svg' },
       { title: 'Wirkdauer', description: 'häufig ca. 9–12 Monate', iconUrl: '/assets/icons/CAL.svg' },
       { title: 'Betäubung', description: 'nicht erforderlich', iconUrl: '/assets/icons/Spritze.svg' },
-      { title: 'Gesellschaftsfähig', description: 'i.d.R. sofort', iconUrl: '/assets/icons/gesellschaft.svg' },
+      { title: 'Gesellschaftsfähig', description: 'präparatabhängig', iconUrl: '/assets/icons/gesellschaft.svg' },
     ],
     note: '*Richtwert; Abrechnung GOÄ-orientiert. Der konkrete Betrag richtet sich nach Areal/Umfang und wird individuell festgelegt.',
   };

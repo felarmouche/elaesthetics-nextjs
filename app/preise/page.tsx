@@ -67,15 +67,15 @@ export default function PreisePage() {
         <Section id="botulinum" title="Botulinumtoxin">
           <Treatment title="Faltenbehandlung">
             <div className="grid grid-cols-3 gap-3 mb-4">
-              <PriceBox label="1 Zone" price={fmt(PRICES.botulinum.faltenbehandlung.zone1)} />
-              <PriceBox label="2 Zonen" price={fmt(PRICES.botulinum.faltenbehandlung.zone2)} />
-              <PriceBox label="3 Zonen" price={fmt(PRICES.botulinum.faltenbehandlung.zone3)} />
+              <PriceBox label="1 Zone" price={fmt(PRICES.botulinum.faltenbehandlung.zone1).concat("*")} />
+              <PriceBox label="2 Zonen" price={fmt(PRICES.botulinum.faltenbehandlung.zone2).concat("*")} />
+              <PriceBox label="3 Zonen" price={fmt(PRICES.botulinum.faltenbehandlung.zone3).concat("*")} />
             </div>
             <Description>
               Zornesfalte, Stirnfalten oder Lachfalten (&quot;Krähenfüße&quot;)
             </Description>
             <Note>
-              Preis variiert je nach Verbrauch · Nachbehandlung nach 2 Wochen inkl.
+              * Der Preis kann je nach Verbrauch variieren | Eventuelle Nachbehandlung nach 2 Wochen ist im Preis enthalten
             </Note>
 
           </Treatment>
@@ -128,7 +128,7 @@ export default function PreisePage() {
 
         {/* Hyaluronsäure */}
         <Section id="hyaluron" title="Hyaluronsäure">
-          <Treatment title="Filler / Liquid Lifting" price={ab(PRICES.hyaluronFiller.fillerUnterspritzung)}>
+          <Treatment title="Filler" price={ab(PRICES.hyaluronFiller.fillerUnterspritzung)}>
             <Description>
               Falten, Wangen, Jawline, Kinn, Nasenkorrektur, Lippen · Präzise Korrekturen und Volumenaufbau
             </Description>
@@ -150,18 +150,18 @@ export default function PreisePage() {
 
           </Treatment>
 
-          <Treatment title="Biorevitalisierung mit hochreiner Hyaluronsäure" price={ab(PRICES.hyaluronFiller.biorevitalisierungHyaluron)}>
+          <Treatment title="Biorevitalisierung (BAP-Technik)" price={ab(PRICES.hyaluronFiller.biorevitalisierungHyaluron)}>
 
           </Treatment>
 
-          <Treatment title="Mesotherapie" price={`Einzelbehandlung ${ab(PRICES.hyaluronFiller.mesotherapieHaut)}`}>
+          <Treatment title="Mesotherapie" price={`ab ${ab(PRICES.hyaluronFiller.mesotherapieHaut)}`}>
             <Description>
               Skinbooster mit Vitaminen, Aminosäuren, Co-Enzymen. Ideal für empfindliche Bereiche durch Nanosoft-Technik
             </Description>
 
           </Treatment>
 
-          <Treatment title="Polynukleotide" price={`Einzelbehandlung ${ab(PRICES.hyaluronFiller.polynukleotideHautAugenHaare)}`}>
+          <Treatment title="Polynukleotide" price={`ab ${ab(PRICES.hyaluronFiller.polynukleotideHautAugenHaare)}`}>
             <Description>
               Fisch-DNA für Hautregeneration. Anwendbar im Gesicht, Hals, Dekolleté, Augenbereich und gegen Haarausfall
             </Description>
@@ -169,23 +169,20 @@ export default function PreisePage() {
           </Treatment>
 
           <Treatment title="Chemisches Peeling" price={ab(PRICES.hyaluronFiller.chemischesPeeling)}>
-            <Description>
-              Sommerpeeling ohne Photosensibilisierung · Straffung und Regeneration ohne Abschälung
-            </Description>
 
           </Treatment>
         </Section>
 
         {/* PRP/PRF */}
         <Section id="prp" title="PRP/PRF">
-          <Treatment title="Eigenbluttherapie" price={ab(PRICES.prpPrf.prpPrf)}>
+          <Treatment title="Eigenbluttherapie (Injektion & Needling)" price={ab(PRICES.prpPrf.prpPrf)}>
             <Description>
               Gesicht, Hals, Dekolleté oder Kopfhaut · Biostimulation und Revitalisierung für Haut und Haare
             </Description>
 
           </Treatment>
 
-          <Treatment title="Medizinisches Microneedling" price={`Einzelbehandlung ${ab(PRICES.prpPrf.microneedling)}`}>
+          <Treatment title="Medizinisches Microneedling" price={`ab ${ab(PRICES.prpPrf.microneedling)}`}>
             <Description>
               Hautverjüngung, Faltenreduktion, Pigmentierungen, Rosazea, Aknenarben
             </Description>
@@ -195,21 +192,21 @@ export default function PreisePage() {
 
         {/* Haare */}
         <Section id="haare" title="Haare">
-          <Treatment title="PRP/PRF-Eigenbluttherapie" price={`Einzelbehandlung ${ab(PRICES.haare.prpPrf)}`}>
+          <Treatment title="PRP/PRF-Eigenbluttherapie" price={`ab ${ab(PRICES.haare.prpPrf)}`}>
             <Description>
               Natürliche Lösung gegen Haarausfall und zur Revitalisierung
             </Description>
 
           </Treatment>
 
-          <Treatment title="Mesotherapie" price={`Einzelbehandlung ${ab(PRICES.haare.mesotherapie)}`}>
+          <Treatment title="Mesotherapie" price={`ab ${ab(PRICES.haare.mesotherapie)}`}>
             <Description>
               Schonende Injektionstechnik für die Haargesundheit
             </Description>
 
           </Treatment>
 
-          <Treatment title="Polynukleotide (2 ml)" price={`Einzelbehandlung ${ab(PRICES.haare.polynukleotide2ml)}`}>
+          <Treatment title="Polynukleotide (2 ml)" price={`ab ${ab(PRICES.haare.polynukleotide2ml)}`}>
             <Description>
               Unterstützung der Haarregeneration mit Fisch-DNA
             </Description>
@@ -232,7 +229,7 @@ export default function PreisePage() {
 
         {/* Biostimulation */}
         <Section id="bio" title="Biostimulation">
-          <Treatment title="Calciumhydroxylapatit + Hyaluronsäure" price={ab(PRICES.biostimulation.caHydroxylapatitPlusHyaluron)}>
+          <Treatment title="Calciumhydroxylapatit, Poly-L-Milchsäure, Hybrid-Präparate" price={ab(PRICES.biostimulation.caHydroxylapatitPlusHyaluron)}>
             <Description>
               Biostimulation und Verbesserung der Hautqualität mit sanftem Straffungseffekt
             </Description>
@@ -296,7 +293,7 @@ function Description({ children }: { children: React.ReactNode }) {
 
 function Note({ children }: { children: React.ReactNode }) {
   return (
-    <p className="text-xs text-gray-500 italic mt-2">
+    <p className="text-sm font-semibold text-gray-600 italic mt-2">
       {children}
     </p>
   );

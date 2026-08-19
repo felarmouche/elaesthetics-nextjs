@@ -75,19 +75,19 @@ export default function PRFHaarePage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: 'Eigenbluttherapie Haarausfall-Behandlung in Bremen',
+    title: 'Eigenbluttherapie bei Haarausfall in Bremen',
     subtitle:
-      'Eigenbluttherapie Haarausfall Behandlung (PRF/PRP) - Unterstützung des Haarwachstums und der Kopfhautgesundheit. Bei verschiedenen Formen von Haarausfall',
+      'Eigenbluttherapie bei Haarausfall (PRF/PRP) - Unterstützung des Haarwachstums und der Kopfhautgesundheit. Bei verschiedenen Formen von Haarausfall.',
     imageSrc: '/assets/eigenbluttherapie/eigenbluttherapie-haare_hero.webp',
     imageAlt: 'Eigenbluttherapie PRF/PRP bei Haarausfall – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratung anfragen', href: '/kontakt' },
-    secondaryCTA: { text: '+49 155 66919635', href: 'tel:+4915566919635' },
+    secondaryCTA: { text: 'Behandlungsdetails', href: '#quickInfos' }
   };
 
   const introData: IntroSectionProps = {
     title: 'PRF/PRP bei Haarausfall',
     content: [
-      'Die Eigenblut-Therapie eignet sich sehr gut als Behandlung bei Haarausfall. Sie stimuliert das Haarwachstum durch eine Revitalisierung der Haarfollikel. PRF-Therapie kann dazu beitragen, dass die Haardichte und der Haardurchmesser zunimmt. Die Behandlung kann bei verschiedenen Formen des Haarausfalls zum Einsatz kommen, wie z. B. erblich bedingten, diffusem oder kreisrundem Haarausfall, sowie zur Unterstützung vor und nach einer Haartransplantation.',
+      'Die Eigenblut-Therapie stimuliert das Haarwachstum durch eine Revitalisierung der Haarfollikel. PRF-Therapie kann dazu beitragen, dass die Haardichte und der Haardurchmesser zunimmt. Die Behandlung kann bei verschiedenen Formen des Haarausfalls zum Einsatz kommen, wie z. B. erblich bedingten, diffusem oder kreisrundem Haarausfall, sowie zur Unterstützung vor und nach einer Haartransplantation.',
     ],
   };
 
@@ -97,7 +97,7 @@ export default function PRFHaarePage() {
       {
         category: 'Haarausfallformen',
         items: [
-          { title: 'Erblicher Haarausfall (androgenetische Alopezie)', description: 'z. B. Geheimratsecken, Tonsur/Scheitel' },
+          { title: 'Erblicher Haarausfall', description: 'z. B. Geheimratsecken, Tonsur/Scheitel' },
           { title: 'Nach einer Haartransplantation', description: 'begleitende PRF/PRP‑Anwendung kann erwogen werden' },
           { title: 'Vor einer Haartransplantation', description: 'begleitende PRF/PRP‑Anwendung kann erwogen werden' },
           { title: 'Diffuser Haarausfall', description: 'gleichmäßige Ausdünnung der Kopfhaut' },
@@ -107,9 +107,9 @@ export default function PRFHaarePage() {
       {
         category: 'Behandlungsziele',
         items: [
-          { title: 'Unterstützung der Haardichte' },
-          { title: 'Haardurchmesser/Qualität verbessern' },
-          { title: 'Kopfhautmilieu stabilisieren' },
+          { title: 'Haardichte' },
+          { title: 'Haardurchmesser' },
+          { title: 'Kopfhaut-Gesundheit' },
         ],
       },
     ],

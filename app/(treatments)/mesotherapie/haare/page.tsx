@@ -85,18 +85,17 @@ export default function MesotherapieHaarePage() {
       {
         category: "Häufigste Indikationen",
         items: [
-          { title: "Erblich bedingter Haarausfall (androgenetische Alopezie)" },
-          { title: "Diffuser Haarausfall (hormonell, stressbedingt, ernährungsbedingt)" },
-          { title: "Kreisrunder Haarausfall (Alopecia areata, leichte Formen)" },
-          { title: "Dünnes, lichtes Haar mit Volumenverlust" },
-          { title: "Haarausfall nach Schwangerschaft oder Stillzeit" }
+          { title: "Erblich bedingter Haarausfall" },
+          { title: "Diffuser Haarausfall" },
+          { title: "Kreisrunder Haarausfall" },
+          { title: "Dünnes, lichtes Haar" },
         ]
       },
       {
         category: "Supportive Anwendung",
         items: [
-          { title: "Nach Haartransplantation (unterstützende Therapie)" },
-          { title: "Vorbeugung bei familiärer Veranlagung" },
+          { title: "Nach Haartransplantation" },
+          { title: "Vorbeugend" },
           { title: "Stärkung der Haarwurzeln bei beginnendem Haarausfall" },
           { title: "Verbesserung der Kopfhaut-Gesundheit" }
         ]
@@ -109,8 +108,6 @@ export default function MesotherapieHaarePage() {
     benefits: [
       { title: "Preis", description: `ab ${PRICES.haare.mesotherapie}€*`, iconUrl: "/assets/icons/EUR.svg" },
       { title: "Dauer", description: "ca. 30-45 Min", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Wirkung", description: "ab 3. Behandlung spürbar\nvollständig nach 2-3 Monaten", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Haltbarkeit", description: "6-12 Monate", iconUrl: "/assets/icons/CAL.svg" },
       { title: "Behandlungen", description: "6-10 Sitzungen alle 1-2 Wochen\nAuffrischung: alle 3-6 Monate", iconUrl: "/assets/icons/wiederholung.svg" },
       { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
       { title: "Ausfallzeit", description: "keine (sofort gesellschaftsfähig)", iconUrl: "/assets/icons/gesellschaft.svg" }

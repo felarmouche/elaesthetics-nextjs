@@ -69,7 +69,7 @@ export default function HyaluronidaseHylasePage() {
 
   const heroData: HeroSectionProps = {
     title: 'Hyaluronidase Behandlung in Bremen',
-    subtitle: 'Filler mit Hyaluronidase (Hylase) auflösen',
+    subtitle: 'Filler mit Hyaluronidase (Hylase®) auflösen',
     imageSrc: '/assets/hyaluron/hyaluron-hylase_hero.webp',
     imageAlt: 'Hyaluronidase-Behandlung zum Auflösen von Hyaluron – EL Aesthetics Bremen',
     primaryCTA: { text: 'Beratungstermin vereinbaren', href: '/kontakt' },
@@ -79,8 +79,8 @@ export default function HyaluronidaseHylasePage() {
   const introData: IntroSectionProps = {
     title: 'Was ist Hyaluronidase?',
     content: [
-      'Hylase (Hyaluronidase) ist ein Enzym, das natürlicherweise im menschlichen Körper vorkommt und die Hyaluronsäure auflösen kann. Das ermöglicht die Korrektur von unerwünschten Ergebnissen, Knötchen oder Überkorrekturen mit Hyaluronsäure-Fillern.',
-      'Hylase ist für besondere Fälle gedacht. Dazu gehören Komplikationen bei Fillerbehandlungen, Fehlbehandlungen, grobe Überspritzungen oder das Auftreten von Knötchen als Nebenwirkung einer Hyaluron-Unterspritzung.'
+      'Hyaluronidase (Hylase®) ist ein Enzym, das natürlicherweise im menschlichen Körper vorkommt und die Hyaluronsäure auflösen kann. Das ermöglicht die Korrektur von unerwünschten Ergebnissen, Knötchen oder Überkorrekturen mit Hyaluronsäure-Fillern.',
+      'Hyaluronidase ist für besondere Fälle gedacht. Dazu gehören Komplikationen bei Fillerbehandlungen, Fehlbehandlungen, grobe Überspritzungen oder das Auftreten von Knötchen als Nebenwirkung einer Hyaluron-Unterspritzung.'
     ],
   };
 
@@ -255,11 +255,11 @@ export default function HyaluronidaseHylasePage() {
     title: 'Häufige Fragen zur Hyaluronidase-Behandlung',
     faqs: [
       {
-        question: 'Warum muss Hylase vorsichtig dosiert werden?',
+        question: 'Warum muss Hyaluronidase vorsichtig dosiert werden?',
         answer: 'Das Enzym unterscheidet nicht zwischen künstlich injiziertem Filler und körpereigener Hyaluronsäure. Eine zu hohe Dosierung könnte auch die natürliche Hyaluronsäure in der Haut abbauen, was vorübergehend zu Dellen führen kann. Der Körper gleicht dies normalerweise innerhalb weniger Wochen aus – dennoch ist eine präzise, erfahrene Dosierung entscheidend.',
       },
       {
-        question: 'In welchen Fällen wird Hylase eingesetzt?',
+        question: 'In welchen Fällen wird Hyaluronidase eingesetzt?',
         answer: 'Die häufigsten Indikationen sind: 1) Ästhetische Korrekturen bei Überkorrekturen, Asymmetrien oder unnatürlichen Ergebnissen. 2) Komplikationen wie Knötchen, Tyndall-Effekt oder Filler-Migration. 3) Notfälle bei arteriellen Gefäßverschlüssen 4) Patientenwunsch bei Unzufriedenheit mit dem Ergebnis.',
       },
       {

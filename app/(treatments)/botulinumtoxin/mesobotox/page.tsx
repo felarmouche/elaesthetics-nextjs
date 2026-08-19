@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     locale: "de_DE",
     images: [
       {
-        url: "https://elaesthetics-bremen.de/assets/botulinumtoxin/baby-botox_hero.webp",
+        url: "https://elaesthetics-bremen.de/assets/botulinumtoxin/Micro-Botox_hero.webp",
         width: 1200,
         height: 630,
         alt: "Mesobotox-Behandlung in Bremen – EL Aesthetics",
@@ -85,10 +85,10 @@ export default function MicrobotoxPage() {
   };
 
   const heroData: HeroSectionProps = {
-    title: "Baby-Botox (Mesobotox) in Bremen",
+    title: "Micro-Botox (Mesobotox) in Bremen",
     subtitle:
       "Sehr oberflächliche Mikro-Injektionen können die Hauttextur verbessern, Poren verfeinern und feine Linien mildern – im Gesicht, am Hals und im Dekolleté.",
-    imageSrc: "/assets/botulinumtoxin/baby-botox_hero.webp",
+    imageSrc: "/assets/botulinumtoxin/Micro-Botox_hero.webp",
     imageAlt:
       "Mesobotox-Behandlung zur Porenverfeinerung – EL Aesthetics Bremen",
     primaryCTA: { text: "Beratungstermin vereinbaren", href: "/kontakt" },
@@ -96,11 +96,11 @@ export default function MicrobotoxPage() {
   };
 
   const introData: IntroSectionProps = {
-    title: "Was ist Baby-Botox (Mesobotox)?",
+    title: "Was ist Micro-Botox?",
     content: [
-      'Baby-Botox (auch "Mesobotox" genannt) ist eine ästhetische Behandlung, bei der stark verdünntes Botulinumtoxin in sehr oberflächliche Hautschichten injiziert wird, um Poren zu verfeinern und die Hauttextur zu verbessern.',
-      "Dies unterscheidet sich von der klassischen Botulinumtoxin-Behandlung, die tiefer in die Muskelschichten wirkt.",
-      "Je nach Ausgangsbefund kann die Aktivität von Talg- und Schweißdrüsen vermindert werden. Mesobotox zielt vor allem auf die Verfeinerung des Hautbildes ab, besonders bei großporiger und öliger Haut.",
+      'Micro-Botox (auch "Mesobotox" genannt) ist eine ästhetische Behandlung, bei der stark verdünntes Botulinumtoxin in sehr oberflächliche Hautschichten injiziert wird, um Poren zu verfeinern und die Hauttextur zu verbessern.',
+      "Die Behandlung unterscheidet sich von der klassischen Botulinumtoxin-Behandlung, die tiefer in die Muskelschichten wirkt.",
+      "Je nach Ausgangsbefund kann die Aktivität von Talg- und Schweißdrüsen, Rötungen (z.B. bei Rosazea) und Akne vermindert werden.",
     ],
   };
 
@@ -142,7 +142,7 @@ export default function MicrobotoxPage() {
   };
 
   const benefitsData: QuickInfoSectionProps = {
-    title: "Baby-Botox auf einen Blick",
+    title: "Micro-Botox auf einen Blick",
     benefits: [
       {
         title: "Preis",
@@ -281,13 +281,13 @@ export default function MicrobotoxPage() {
     title: "Häufige Fragen",
     faqs: [
       {
-        question: "Was ist Baby-Botox und wie funktioniert die Behandlung?",
+        question: "Was ist Micro-Botox und wie funktioniert die Behandlung?",
         answer:
           "Es handelt sich um eine oberflächliche Anwendung stark verdünnten Botulinumtoxins über Mikro‑Injektionen (alternativ Microneedling). Ziel ist eine Verfeinerung des Hautbildes, u.\u00A0a. durch Einfluss auf Talg-/Schweißdrüsen und feiner Muskelfasern.",
       },
       {
         question:
-          "Was ist der Unterschied zwischen klassischem Botulinumtoxin und Baby-Botox?",
+          "Was ist der Unterschied zwischen klassischem Botulinumtoxin und Micro-Botox?",
         answer:
           "Klassische Botulinumtoxin-Behandlungen zielen meist auf eine deutlichere Muskelentspannung (tiefer, punktuell). Mesobotox arbeitet sehr oberflächlich und fokussiert auf Hautqualität (Poren/Glanz/feine Fältchen) bei weitgehend erhaltener Mimik.",
       },
@@ -297,7 +297,7 @@ export default function MicrobotoxPage() {
           "Die beobachtete Wirkzeit liegt häufig bei etwa 3–6 Monaten. Abweichungen sind möglich.",
       },
       {
-        question: "Was kostet eine Baby-Botox-Behandlung?",
+        question: "Was kostet eine Micro-Botox-Behandlung?",
         answer: `Die Abrechnung erfolgt transparent nach der Gebührenordnung für Ärzte (GOÄ). Der Preis hängt von der Menge des verbrauchten Materials (Einheiten) und dem Aufwand der Behandlung ab. Weitere Informationen erhalten Sie auf den jeweiligen Unterseiten oder unter "Preise".`,
       },
       {

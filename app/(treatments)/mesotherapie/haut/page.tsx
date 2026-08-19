@@ -63,7 +63,7 @@ export default function MesotherapieHautPage() {
   const introData: IntroSectionProps = {
     title: "Was ist Mesotherapie für die Haut?",
     content: [
-      "Die Mesotherapie für die Haut (auch unter dem Namen NCTF bekannt) kombiniert unvernetzte Hyaluronsäure mit einem speziell abgestimmten Komplex aus Vitaminen, Aminosäuren, Mineralstoffen, Coenzymen und Antioxidantien. Ziel ist eine Verbesserung der Hautqualität durch Unterstützung von Zellregeneration und Feuchtigkeitsversorgung. Die Behandlung eignet sich besonders zur gezielten Auffrischung empfindlicher Hautareale wie Augenpartie, Wangen, Hals oder Handrücken. Die Injektion erfolgt über eine besonders feine Mikro-Nadeltechnik, die eine präzise und in der Regel gut verträgliche Anwendung ermöglicht.",
+      "Die Mesotherapie kombiniert verschiedene Substanzen wie Vitaminen, Aminosäuren, Mineralstoffen, Coenzymen, Antioxidantien und Hyaluronsäure, welche oberflächlich in die Haut injiziert werden. Ziel ist eine Verbesserung der Hautqualität durch Unterstützung von Zellregeneration und Feuchtigkeitsversorgung. Die Behandlung eignet sich besonders zur gezielten Auffrischung empfindlicher Hautareale wie Augenpartie, Wangen, Hals oder Handrücken. Die Injektion erfolgt über eine besonders feine Mikro-Nadeltechnik, die eine präzise und in der Regel gut verträgliche Anwendung ermöglicht.",
     ]
   };
 
@@ -82,23 +82,25 @@ export default function MesotherapieHautPage() {
     title: "Behandlungsbereiche der Mesotherapie",
     categories: [
       {
-        category: "Gesicht",
+        category: "Bereiche",
         items: [
-          { title: "Augenpartie (Augenringe, Tränenfurchen, Krähenfüße)" },
-          { title: "Wangen (erschlaffte Haut, Elastizitätsverlust)" },
-          { title: "Stirn (feine Linien, Knitterfalten)" },
-          { title: "Mund (Raucherfalten, Oberlippenfalten)" },
-          { title: "Gesamtes Gesicht (Hautqualität, Strahlkraft)" }
+          { title: "Gesicht" },
+          { title: "Hals" },
+          { title: "Dekolleté" },
+          { title: "Augenpartie" },
+          { title: "Hände" },
         ]
       },
       {
-        category: "Weitere Körperbereiche",
+        category: "Ziele",
         items: [
-          { title: "Hals (Halsfalten, schlaffe Haut)" },
-          { title: "Dekolleté (Knitterfalten, Pigmentflecken)" },
-          { title: "Handrücken (Volumenverlust, Altersflecken)" }
+          { title: "Müde Haut" },
+          { title: "Trockene Haut" },
+          { title: "Fältchen" },
+          { title: "Hyperpigmentierungen" },
         ]
       }
+
     ]
   };
 
@@ -107,10 +109,10 @@ export default function MesotherapieHautPage() {
     benefits: [
       { title: "Preis", description: `ab ${PRICES.hyaluronFiller.mesotherapieHaut}€*`, iconUrl: "/assets/icons/EUR.svg" },
       { title: "Dauer", description: "ca. 45-60 Min (inkl. Peeling & Maske)", iconUrl: "/assets/icons/TIME.svg" },
-      { title: "Wirkung", description: "nach 2-3 Behandlungen sichtbar", iconUrl: "/assets/icons/TIME.svg" },
+      { title: "Wirkung", description: "nach ca. 2-3 Behandlungen", iconUrl: "/assets/icons/TIME.svg" },
       { title: "Haltbarkeit", description: "6 Monate", iconUrl: "/assets/icons/CAL.svg" },
-      { title: "Behandlungen", description: "3-5 Sitzungen alle 2-4 Wochen\nAuffrischung: 2x pro Jahr", iconUrl: "/assets/icons/wiederholung.svg" },
-      { title: "Betäubung", description: "nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
+      { title: "Behandlungen", description: "3-5 Sitzungen alle 2-3 Wochen\nAuffrischung: 2-3x pro Jahr", iconUrl: "/assets/icons/wiederholung.svg" },
+      { title: "Betäubung", description: "meist nicht erforderlich", iconUrl: "/assets/icons/Spritze.svg" },
       { title: "Ausfallzeit", description: "in der Regel sofort gesellschaftsfähig", iconUrl: "/assets/icons/gesellschaft.svg" }
     ],
     note: "*Die genannten Preise sind Richtwerte und orientieren sich an der Gebührenordnung für Ärzte (GOÄ). Der finale Preis wird im Beratungsgespräch festgelegt."
@@ -206,14 +208,6 @@ export default function MesotherapieHautPage() {
     title: "Häufige Fragen zur Mesotherapie für die Haut",
     faqs: [
       {
-        question: "Für welche Bereiche die Behandlung geeignet?",
-        answer: "Die Behandlung ist für alle Patienten geeignet, die oberflächliche Falten entfernen lassen möchten oder sich eine insgesamt verfeinerte, erfrischte und strahlendere Haut wünschen. Besonders für die sensible Augenregion, insbesondere zur Korrektur von Augenringen.\n\nGeeignete Bereiche:\n• Dunkle Augenringe\n• Krähenfüße\n• Falten um den Mund und Lippen (Raucherfalten, Oberlippenfalten)\n• Halsfalten\n• Wangenfalten\n• Knitterfalten im Gesicht, am Hals oder im Dekolleté\n• Verjüngung der Handrücken"
-      },
-      {
-        question: "Wie kann die Behandlung auf die Haut wirken?",
-        answer: "Die eingesetzte Formulierung wurde laut Hersteller über mehrere Jahre hinweg klinisch getestet. In diesen Studien wurden unter anderem folgende Veränderungen dokumentiert*:\n• Bis zu 43 % Reduktion feiner Linien und Fältchen\n• Steigerung der Hautfeuchtigkeit um bis zu 132 %\n• Zunahme der Hautdichte um bis zu 24 %\n• Verbesserung der Hautdicke um bis zu 20 %\n• Gleichmäßigere Hautstruktur (bis zu +52 %)\n• Erhöhte Strahlkraft der Haut um bis zu 144 %"
-      },
-      {
         question: "Wer sollte die Behandlung NICHT durchführen?",
         answer: "Die Behandlung sollte nicht durchgeführt werden bei beeinträchtigter Hautbarriere, Hauterkrankungen oder -verletzungen, während einer Immuntherapie, während der Schwangerschaft und Stillzeit sowie bei einer Unverträglichkeit gegen Schalentiere."
       },
@@ -223,7 +217,7 @@ export default function MesotherapieHautPage() {
       },
       {
         question: "Mögliche Nebenwirkungen",
-        answer: "Die Behandlung mit dem Hyaluronsäure-Nährstoff-Komplex gilt als risikoarm und wird im Allgemeinen gut vertragen. Das Gewebe wird schonend behandelt, weshalb sichtbare Spuren der Behandlung meist innerhalb von 24 Stunden zurückgehen.\n\nLeichte Rötungen, Schwellungen oder kleine Blutergüsse (Hämatome) an den Einstichstellen können auftreten, sind aber selten und vorübergehend. Kleinere Knötchenbildung an den Injektionsstellen kann ebenfalls vorkommen, verschwindet jedoch in der Regel von selbst.\n\nAllergische Reaktionen sind sehr selten, können aber nicht vollständig ausgeschlossen werden."
+        answer: "Die Behandlung gilt als risikoarm und wird im Allgemeinen gut vertragen. Das Gewebe wird schonend behandelt, weshalb sichtbare Spuren der Behandlung meist innerhalb von 24 Stunden zurückgehen.\n\nLeichte Rötungen, Schwellungen oder kleine Blutergüsse (Hämatome) an den Einstichstellen können auftreten, sind aber selten und vorübergehend. Kleinere Knötchenbildung an den Injektionsstellen kann ebenfalls vorkommen, verschwindet jedoch in der Regel von selbst.\n\nAllergische Reaktionen sind sehr selten, können aber nicht vollständig ausgeschlossen werden."
       },
     ]
   };

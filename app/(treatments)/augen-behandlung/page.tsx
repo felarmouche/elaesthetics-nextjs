@@ -59,7 +59,7 @@ export default function AugenHubPage() {
     const heroData: HeroSectionProps = {
         title: 'Behandlung der Augenregion in Bremen',
         subtitle:
-            'Malar Bags, Augenringe, Tränenrinne, Tränensäcke mit Polynukleotiden, PRP, Biostimulation oder Botulinumtoxin behandeln.',
+            'Malar Bags, Augenringe, Tränenrinne, Augenfalten und Tränensäcke behandeln.',
         imageSrc: '/assets/augen-behandlung/augen-behandlung_hero.webp',
         imageAlt: 'Augenbehandlung gegen Augenringe und Tränenrinne – EL Aesthetics Bremen',
         primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
