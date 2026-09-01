@@ -76,8 +76,8 @@ export default function FaltenbehandlungHubPage() {
       'Die Faltenbehandlung umfasst Verfahren der ästhetischen Medizin wie Botulinumtoxin, Hyaluronsäure und regenerative Methoden zur Glättung von Falten und Verbesserung der Hautqualität.',
       'Botulinumtoxin entspannt die Muskulatur und kann gezielt mimische Falten glätten und die Gesichtszüge entspannen.',
       'Hyaluronsäure kann Volumenverluste ausgleichen, Falten sanft polstern und Konturen modellieren – etwa an Lippen, Wangen, Kinn, Jawline oder Nasolabialfalten.',
-      'Die Biostimulation wirkt strukturbildend: Sie unterstützt die körpereigene Kollagenneubildung und Straffung der Haut.',
-      'PRF und Polynukleotide sind regenerative Ansätze zur Verbesserung der Hautqualität: Sie können Feuchtigkeit, Elastizität und Dichte fördern und eignen sich besonders für feine Fältchen sowie empfindliche Zonen.',
+      'Die Biostimulation wirkt strukturbildend: Sie unterstützt die körpereigene Kollagenneubildung und Straffung der Haut. Schrittweise und nachhaltig.',
+      'PRF und Polynukleotide sind moderne regenerative Behandlungsansätze zur Verbesserung der Hautqualität. Sie können Feuchtigkeitsgehalt, Elastizität und Dichte der Haut positiv beeinflussen. Besonders geeignet sind sie für feine Fältchen, empfindliche Areale sowie zur unterstützenden Regeneration der Haut.',
       'Je nach Zielsetzung lassen sich die Methoden kombinieren. In der persönlichen Beratung klären wir, welche Behandlung oder Kombination am besten zu Ihren Zielen und Ihrer Anatomie passt.',
     ],
   };

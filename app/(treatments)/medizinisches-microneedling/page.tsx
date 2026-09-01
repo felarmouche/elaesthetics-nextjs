@@ -91,7 +91,7 @@ export default function MedizinischesMicroneedlingPage() {
     title: "Was ist Medizinisches Microneedling?",
     content: [
       "Das medizinische Microneedling ist ein minimal-invasives Verfahren zur Hautregeneration und Verbesserung der Hautqualität. Mit dem Dermapen 4 werden bis zu 1.920 präzise Mikrokanäle pro Sekunde erzeugt. Die Eindringtiefe der Nadeln wird individuell an den jeweiligen Hautbereich und den Hautbefund angepasst.",
-      "Die gezielt gesetzten Mikroverletzungen aktivieren die natürlichen Regenerationsprozesse der Haut und fördern die Neubildung von Kollagen, Elastin und Hyaluronsäure. Dadurch können Hautstruktur, Spannkraft und Hautbild nachhaltig verbessert werden.",
+      "Die gezielt gesetzten Mikroverletzungen aktivieren die natürlichen Regenerationsprozesse der Haut und fördern die Neubildung von Kollagen, Elastin und Hyaluronsäure. Dadurch können Hautstruktur, Spannkraft und Hautbild nachhaltig verbessert werden. Gleichzeitig eignet sich med. Microneedling zur Behandlung von Aknenarben und anderen atrophischen Narben.",
       "Die Behandlung kann an verschiedenen Körperregionen, insbesondere im Gesicht, am Hals, am Dekolleté und an den Händen durchgeführt werden. Je nach Hautbefund kann das medizinische Microneedling sinnvoll mit ausgewählten Wirkstoffen oder regenerativen Therapien kombiniert werden, um die Behandlung individuell auf die Bedürfnisse der Haut abzustimmen."
     ]
   };

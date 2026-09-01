@@ -69,9 +69,9 @@ export default function HaarausfallHubPage() {
   const introData: IntroSectionProps = {
     title: 'Behandlungen gegen Haarausfall',
     content: [
-      'Die Haarausfall-Behandlung umfasst nicht-chirurgische Verfahren wie PRP/PRF, Mesotherapie und Polynukleotide zur Unterstützung der Haargesundheit, Haarwachstum und Haardichte.',
-      'Ein ungünstiges Kopfhautmilieu (z. B. verhärtetes Gewebe/Fibroseareale, Reste älterer Füllstoffe, eingeschränkte Mikrozirkulation) kann die Versorgung der Haarwurzeln beeinträchtigen.',
-      'Auf dieser Basis planen wir die Therapie: von unterstützenden Kopfhautbehandlungen über Mesotherapie bis hin zur Eigenbluttherapie mit PRP/PRF. Ziel ist ein nachvollziehbarer, individueller Behandlungsplan.'
+      'Die Haarausfall-Behandlung umfasst verschiedene Verfahren wie PRP/PRF, Mesotherapie, Polynukleotide und Infusionen zur Unterstützung der Haargesundheit, Haarwachstum und Haardichte.',
+      'Häufig sind kombinierte Ansätze sinnvoll, um die unterschiedlichen Aspekten von Haarausfall zu adressieren.',
+      'Abhängig von der zugrunde liegenden Ursache des Haarausfalls, wird der Behandlungsplan individuell abgestimmt.'
     ]
   };
 

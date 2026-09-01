@@ -59,7 +59,7 @@ export default function AugenHubPage() {
     const heroData: HeroSectionProps = {
         title: 'Behandlung der Augenregion in Bremen',
         subtitle:
-            'Malar Bags, Augenringe, Tränenrinne, Augenfalten und Tränensäcke behandeln.',
+            'Augenringe, Tränenrinnen, Tränensäcke & Malar Bags behandeln.',
         imageSrc: '/assets/augen-behandlung/augen-behandlung_hero.webp',
         imageAlt: 'Augenbehandlung gegen Augenringe und Tränenrinne – EL Aesthetics Bremen',
         primaryCTA: { text: 'Termin vereinbaren', href: '/kontakt' },
@@ -67,10 +67,10 @@ export default function AugenHubPage() {
     };
 
     const introData: IntroSectionProps = {
-        title: 'Malar Bags, Augenringe, Tränenrinnen & Tränensäcke behandeln',
+        title: 'Augenringe, Tränenrinnen, Tränensäcke & Malar Bags behandeln',
         content: [
-            'Die Ursachen für müde Augen und Schatten unter den Augen sind vielfältig. Oft sind ein altersbedingter Volumenverlust, eine sehr dünne Haut am Unterlid, Falten unter den Augen oder auch beginnende Tränensäcke der Grund für einen erschöpften Gesichtsausdruck.',
-            'Abhängig von Ihrem Befund können verschiede Verfahren zum Einsatz kommen, wie beispielsweise: Polynukleotide, PRP/PRF (Eigenbluttherapie), enzymatische Behandlungen, Botulinumtoxin.',
+            'Die Ursachen für müde Augen und Schatten unter den Augen sind vielfältig. Oft sind ein altersbedingter Volumenverlust, eine sehr dünne Haut am Unterlid, Falten unter den Augen, Hyperpigmentierungen oder auch beginnende Tränensäcke der Grund für einen erschöpften Gesichtsausdruck.',
+            'Abhängig von Ihrem Befund können verschiede Verfahren zum Einsatz kommen, wie beispielsweise: Biostimulatoren, Polynukleotide, PRP/PRF (Eigenbluttherapie), enzymatische Behandlungen, Botulinumtoxin.',
         ]
     };
 

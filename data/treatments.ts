@@ -38,7 +38,7 @@ export const skinbooster: Treatment = {
     imageAlt: 'Bio-Remodelierung Behandlung für verbesserte Hautqualität und Feuchtigkeitsboost',
     title: 'Hyaluron Skinbooster',
     description:
-        'Reine Hyaluronsäure verteilt sich oberflächlich im Gewebe. Ziel: intensive Hydratation, verbesserte Elastizität und sichtbar glattere, prallere Haut. Geeignet für Gesicht, Hals, Dekolleté u.v.m.',
+        'Reine Hyaluronsäure verteilt sich oberflächlich im Gewebe. Ziel: intensive Hydratation, verbesserte Elastizität und sichtbar glattere, prallere Haut. Geeignet für Gesicht, Hals, Dekolleté, Hände u.v.m.',
     treatmentUrl: '/hyaluron/skinbooster'
 };
 
@@ -74,7 +74,7 @@ export const hylase: Treatment = {
 export const polynukleotide: Treatment = {
     imageUrl: '/assets/polynukleotide/polynukleotide_hero.webp',
     imageAlt: 'Polynukleotide zur Zellregeneration',
-    title: 'Polynukleotide (PDRN)',
+    title: 'Polynukleotide (Lachs-DNA)',
     description:
         'Molekulare Hautregeneration: DNA-Fragmente (aus Lachsforellen) fördern Zellerneuerung, verbessern Hautdicke und wirken entzündungshemmend. Ideal für Augenringe, Narben und Rosazea.',
     treatmentUrl: '/polynukleotide'
@@ -94,7 +94,7 @@ export const biostimulation: Treatment = {
     imageAlt: 'Biostimulation mit Radiesse oder Sculptra',
     title: 'Biostimulation (Biostimulatoren)',
     description:
-        'Nachhaltiger Aufbau des hauteigenen Stützgerüsts. Biostimulatoren (z.B. Calciumhydroxylapatit) regen die körpereigene Kollagenproduktion an für langfristig festere Haut.',
+        'Nachhaltiger Aufbau des hauteigenen Stützgerüsts. Biostimulatoren (z.B. Calciumhydroxylapatit und Poly-L-Milchsäure) regen die körpereigene Kollagenproduktion an für langfristig festere Haut.',
     treatmentUrl: '/biostimulation'
 };
 
@@ -105,7 +105,7 @@ export const microneedling: Treatment = {
     imageAlt: 'Medizinisches Microneedling Behandlung',
     title: 'Medizinisches Microneedling',
     description:
-        'Feinste Nadelimpulse regen die Selbstheilung an. Poren verfeinern sich, Narben verblassen und Wirkstoffe können tief eingeschleust werden.',
+        'Das medizinische Microneedling ist ein minimal-invasives Verfahren zur Hautregeneration und Verbesserung der Hautqualität. Durch die Vielzahl an Mikrokanälen werden die hauteigenen Selbstheilungsprozesse angeregt und Wirkstoffe können tiefer in die Haut eingeschleust werden.',
     treatmentUrl: '/medizinisches-microneedling'
 };
 
@@ -121,9 +121,9 @@ export const peeling: Treatment = {
 export const mesotherapieHaut: Treatment = {
     imageUrl: '/assets/mesotherapie/nctf_hero.webp',
     imageAlt: 'Mesotherapie Haut Behandlung',
-    title: 'Mesotherapie (Meso-Glow)',
+    title: 'Mesotherapie',
     description:
-        'Injektion von Vitamin-Cocktails, Aminosäuren und unvernetztem Hyaluron direkt in die Haut. Revitalisiert müde Haut und sorgt für Frische.',
+        'Mesotherapie ist ein minimal-invasives Verfahren der ästhetischen Medizin, bei dem individuell abgestimmte Wirkstoffe gezielt in die Haut eingebracht werden. So können Haut und Kopfhaut direkt versorgt und natürliche Regenerationsprozesse unterstützt werden.',
     treatmentUrl: '/mesotherapie/haut'
 };
 
@@ -150,9 +150,9 @@ export const botoxAesthetic: Treatment = {
 export const mesobotox: Treatment = {
     imageUrl: '/assets/botulinumtoxin/baby-botox_hero.webp',
     imageAlt: 'Mesobotox Behandlung für feine Poren',
-    title: 'Micro-Botox (Baby-Botox)',
+    title: 'Mesobotox (Micro-Botox)',
     description:
-        'Verdünntes Botulinumtoxin wird oberflächlich injiziert. Es kann die Hautstruktur verfeinern, Poren optisch verkleinern und die Talgproduktion reduzieren.',
+        'Verdünntes Botulinumtoxin wird oberflächlich injiziert. Es kann die Hautstruktur verfeinern, Poren optisch verkleinern, Rötungen reduzieren und die Talgproduktion regulieren.',
     treatmentUrl: '/botulinumtoxin/mesobotox'
 };
 
@@ -193,7 +193,7 @@ export const mesoHaar: Treatment =
     imageAlt: 'Mesotherapie für die Kopfhaut',
     title: 'Mesotherapie (Kopfhaut)',
     description:
-        'Feine Mikroinjektionen versorgen die Kopfhaut gezielt. Die Kur wird an Befund und Ziele angepasst; Intervalle werden ärztlich geplant.',
+        'Feine Mikroinjektionen versorgen die Kopfhaut gezielt mit verschiedenen Nährstoffen.',
     treatmentUrl: '/mesotherapie/haare'
 };
 export const polyHaar: Treatment =
@@ -202,7 +202,7 @@ export const polyHaar: Treatment =
     imageAlt: 'Polynukleotide zur Biostimulation',
     title: 'Polynukleotide für die Haare',
     description:
-        'Moderne Biostimulation zur Unterstützung des Kopfhautmilieus und der Regenerationsprozesse – als Baustein im individuellen Plan.',
+        'Moderne Biostimulation zur Unterstützung der Kopfhautgesundheit und Regeneration der Haarfolikel.',
     treatmentUrl: '/polynukleotide'
 };
 export const prfHaar: Treatment =
@@ -211,7 +211,7 @@ export const prfHaar: Treatment =
     imageAlt: 'Mann mit Haarausfall',
     title: 'PRF/PRP-Eigenbluttherapie für die Haare',
     description:
-        'Körpereigene Ansätze können – je nach Diagnose – in die Serie integriert werden. Details & Indikationsprüfung auf der Behandlungsseite.',
+        'Körpereigene Wachsumsfaktoren regen die Regeneration der Haarfolikel an und können so die Haargesundheit und das Haarwachstum unterstützen.',
     treatmentUrl: '/eigenbluttherapie/haare'
 };
 export const prfMicro: Treatment =
@@ -247,9 +247,10 @@ export const haarausfall: Treatment[] =
 
 // Für die "Longevity & Hautqualität" Seite
 export const longevityRegeneration: Treatment[] = [
+    biostimulation,
     polynukleotide,
     eigenblut,
-    biostimulation
+
 ];
 
 export const longevityHydration: Treatment[] = [
@@ -262,6 +263,10 @@ export const longevityTexture: Treatment[] = [
     microneedling,
     peeling,
     mesobotox
+];
+
+export const longevityBotox: Treatment[] = [
+    botoxFalten,
 ];
 
 // Für eine "Medizinische Ästhetik" Seite (verwendet in medizinische-behandlungen)
@@ -331,7 +336,7 @@ export const augenbehandlungen: Treatment[] = [
     microneedling,  // Straffung der Lider / Hautstruktur
 
     // 7. Sicherheit (Wichtig für das Vertrauen bei Augenbehandlungen)
-    hylase          // Signalisiert: Wir können korrigieren (Sicherheit!)
+    biostimulation,         // Signalisiert: Wir können korrigieren (Sicherheit!)
 ];
 
 export const botoxTreatments: Treatment[] = [

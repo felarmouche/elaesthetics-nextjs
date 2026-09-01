@@ -88,6 +88,7 @@ export default function ChemischesPeelingPage() {
     title: 'Was ist ein chemisches Peeling?',
     content: [
       'Das chemische Peeling ist ein Verfahren der ästhetischen Medizin zur kontrollierten Hauterneuerung. Es unterstützt die Behandlung von Pigmentflecken, Elastizitätsverlust/Hauterschlaffung, Akne & aknebedingte Narben, Dehnungsstreifen, feinen Falten und fahlem Teint.',
+      'Je nach verwendeter Wirkstoffkombination können chemische Peelings dabei unterschiedlich tief und auf unterschiedliche Weise wirken. Während klassische Peelings eine kontrollierte Ablösung und Erneuerung oberflächlicher Hautschickten bewirken, gibt es Formulierungen, die ohne ausgeprägtes Abschälen der Haut auskommen und gezielt biologische Prozesse in tieferen Hautschichten stimulieren.'
     ],
   };
 

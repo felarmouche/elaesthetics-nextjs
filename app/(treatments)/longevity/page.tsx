@@ -16,7 +16,7 @@ import {
   DetailedInfoSection, TreatmentsSectionProps,
 } from '@/components/TreatmentPageComponents';
 import { getWebPageSchema } from '@/lib/schema';
-import { longevityRegeneration, longevityTexture, longevityHydration } from '@/data/treatments'
+import { longevityRegeneration, longevityTexture, longevityHydration, botoxFalten, longevityBotox } from '@/data/treatments'
 
 export const metadata: Metadata = {
   title: 'Longevity & Hautqualität Bremen',
@@ -68,6 +68,7 @@ export default function LongevityPage() {
   const introData: IntroSectionProps = {
     title: 'Longevity - länger vital & gesund',
     content: [
+      'Longevity steht für gesundes Altern durch den Erhalt von Zellgesundheit, Regeneration und Gewebefunktion. Die Haut spiegelt diese Prozesse sichtbar wider, und regenerative Therapien wie Biostimulatoren, Polynukleotide, PRF/PRP oder medizinisches Microneedling unterstützen die nachhaltige Verbesserung von Hautstruktur und Kollagen',
       'Longevity-Behandlungen sind ganzheitliche Verfahren der ästhetischen Medizin, die auf zellulärer Ebene ansetzen, um spürbare Verbesserungen von Hautqualität und Vitalität zu erreichen. Mit den Jahren verlangsamt sich die Erneuerung der Haut, Kollagen und Elastinfasern nehmen ab, Feuchtigkeit geht verloren. Moderne regenerative Methoden setzen hier an, aktivieren körpereigene Prozesse und stärken die Haut von innen.',
       'Dazu können zum Beispiel Biostimulatoren, Polynukleotide, Eigenbluttherapie (PRP/PRF), medizinisches Microneedling und gezielte Infusionen gehören. Die Ergebnisse entwickeln sich schrittweise über Wochen, wirken natürlich und nachhaltig. Longevity ist dabei mehr als Ästhetik, es ist eine langfristige Strategie für Gesundheit und Wohlbefinden. Gemeinsam finden wir die passende Strategie für Ihre Vitalität, Hautgesundheit und Regeneration.'
 
@@ -78,6 +79,12 @@ export default function LongevityPage() {
     title: 'Biostimulation & Kollagenaufbau',
     treatments: longevityRegeneration
   };
+
+  const botoxData: TreatmentsSectionProps = {
+    title: 'Faltenbehandlung',
+    treatments: longevityBotox
+  };
+
 
   const hydrationData: TreatmentsSectionProps = {
     title: 'Tiefenhydration & Bio-Remodeling',
@@ -149,6 +156,11 @@ export default function LongevityPage() {
       {/* Sektion 1: Core Longevity */}
       <div id="regeneration" className="scroll-mt-24">
         <TreatmentsSection {...regenerationData} />
+      </div>
+
+      {/* Sektion 1: Core Longevity */}
+      <div id="botox" className="scroll-mt-24">
+        <TreatmentsSection {...botoxData} />
       </div>
 
       {/* Sektion 2: Hydration (mit etwas weniger Padding oben, damit es kompakter wirkt) */}

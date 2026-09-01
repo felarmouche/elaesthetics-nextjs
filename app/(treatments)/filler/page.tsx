@@ -71,8 +71,8 @@ export default function FillerHubPage() {
     title: 'Volumenaufbau & Konturierung mit Fillern',
     content: [
       'Filler-Behandlungen sind minimal-invasive Verfahren der ästhetischen Medizin zum gezielten Volumenaufbau und zur Konturierung.',
-      'Filler eignen sich besonders für die Konturierung von Wangen, Kinn und Jawline sowie für die Formung und Volumensteigerung der Lippen. Durch die Verwendung hochwertiger, biokompatibler Materialien können natürliche Ergebnisse erzielt werden, die Ihre individuellen Gesichtszüge harmonisch unterstreichen – ohne den „künstlichen“ Look.',
-      'Jede Behandlung wird individuell auf Ihre Wünsche und anatomischen Gegebenheiten abgestimmt. In einem ausführlichen Beratungsgespräch analysiere ich gemeinsam mit Ihnen Ihre Ziele und entwickle ein maßgeschneidertes Behandlungskonzept. Dabei lege ich großen Wert auf Sicherheit, Präzision und ein ästhetisches Ergebnis, das zu Ihnen passt.',
+      'Filler eignen sich besonders für die Konturierung von Wangen, Kinn und Jawline sowie für die Formung der Lippen. Sie können zudem zum Ausgleich bestehender Asymmetrien oder zur Faltenunterspritzung genutzt werden. Durch die Verwendung hochwertiger, biokompatibler Materialien können natürliche Ergebnisse erzielt werden, die Ihre individuellen Gesichtszüge harmonisch unterstreichen.',
+      'Jede Behandlung wird individuell auf Ihre Wünsche und anatomischen Gegebenheiten abgestimmt. In einem ausführlichen Beratungsgespräch analysiere ich gemeinsam mit Ihnen Ihre Ziele und entwickle ein maßgeschneidertes Behandlungskonzept.',
     ],
   };
 

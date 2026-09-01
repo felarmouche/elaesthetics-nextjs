@@ -193,12 +193,12 @@ export default function FettWegSpritzePage() {
             },
             {
                 title: 'Gesellschaftsfähig',
-                description: 'i.d.R. sofort',
+                description: 'präparatabhängig',
                 iconUrl: '/assets/icons/gesellschaft.svg',
             },
             {
                 title: 'Wiederholungen',
-                description: '3-5 Behandlungen, Abstand 2-3 Wochen',
+                description: '3-5 Behandlungen',
                 iconUrl: '/assets/icons/wiederholung.svg',
             },
         ],
