@@ -9,9 +9,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Preise Ästhetische Behandlungen Bremen",
   description:
-    "Preisliste EL Aesthetics Bremen: Botulinumtoxin, Hyaluron, PRF & mehr. Transparente Kostenaufklärung für ästhetische Behandlungen.",
+    "Preisliste EL Aesthetics Bremen: Botulinumtoxin, Hyaluron, PRF, Infusionstherapie und mehr. Transparente Kostenaufklärung nach GOÄ.",
   keywords:
-    ['Preise Bremen', 'Behandlungskosten Bremen', 'Botulinumtoxin Kosten Bremen', 'Hyaluron Filler Preise Bremen', 'ästhetische Behandlungen Preisliste Bremen'],
+    ['Preise Bremen', 'Behandlungskosten Bremen', 'Botulinumtoxin Kosten Bremen', 'Hyaluron Filler Preise Bremen', 'Infusionstherapie Kosten Bremen', 'ästhetische Behandlungen Preisliste Bremen'],
   alternates: {
     canonical: 'https://elaesthetics-bremen.de/preise/',
   },
@@ -54,6 +54,7 @@ export default function PreisePage() {
             <NavButton id='prp'>Eigenbluttherapie (PRF/PRP)</NavButton>
             <NavButton id='haare'>Haarbehandlungen</NavButton>
             <NavButton id='fett'>Fett-weg-Spritze</NavButton>
+            <NavButton id='infusionen'>Infusionen</NavButton>
           </div>
         </div>
       </nav>
@@ -224,6 +225,12 @@ export default function PreisePage() {
               Preis wird individuell nach Region und Materialmenge berechnet
             </Note>
 
+          </Treatment>
+        </Section>
+
+        {/* Infusionstherapie */}
+        <Section id="infusionen" title="Infusionstherapie">
+          <Treatment title="Aminosäuren, Vitamine, Mikronährstoffe, etc." price={`${ab(PRICES.infusionen)}`}>
           </Treatment>
         </Section>
 

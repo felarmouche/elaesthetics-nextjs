@@ -127,6 +127,7 @@ export function getPracticeSchema(aggregateRating?: { ratingValue: number; revie
       { '@type': 'MedicalProcedure', name: 'Polynukleotide', url: `${SITE_URL}/polynukleotide` },
       { '@type': 'MedicalProcedure', name: 'Chemisches Peeling', url: `${SITE_URL}/chemisches-peeling` },
       { '@type': 'MedicalProcedure', name: 'Fett-weg-Spritze', url: `${SITE_URL}/fett-weg-spritze` },
+      { '@type': 'MedicalProcedure', name: 'Infusionstherapie', url: `${SITE_URL}/infusionen` },
     ],
   };
 }

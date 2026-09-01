@@ -42,6 +42,8 @@ export const PRICES = {
 
   fettWegSpritze: 180, // "ab" (präparatabhängig),
 
+  infusionen: 150,
+
   biostimulation: {
     caHydroxylapatitPlusHyaluron: 550, // "ab"
   },
